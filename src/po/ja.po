@@ -1219,7 +1219,7 @@ msgid "E197: Cannot set language to \"%s\""
 msgstr "E197: 言語を \"%s\" に設定できません"
 
 msgid "Entering Ex mode.  Type \"visual\" to go to Normal mode."
-msgstr "Exモードに入ります. ノーマルに戻るには\"visual\"と入力してください."
+msgstr "Exモードに入ります. ノーマルモードに戻るには\"visual\"と入力してください."
 
 msgid "E501: At end-of-file"
 msgstr "E501: ファイルの終了位置"
