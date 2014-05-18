@@ -3,7 +3,7 @@
 # Do ":help uganda"  in Vim to read copying and usage conditions.
 # Do ":help credits" in Vim to see a list of people who contributed.
 #
-# Last Change: 2013 Jul 06
+# Last Change: 2014 May 18
 #
 # Copyright (C) 2001-13 MURAOKA Taro <koron.kaoriya@gmail.com>
 # THIS FILE IS DISTRIBUTED UNDER THE VIM LICENSE.
@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-06 13:50+0900\n"
-"PO-Revision-Date: 2014-05-04 20:55+0900\n"
+"PO-Revision-Date: 2014-05-18 14:22+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language: Japanese\n"
@@ -640,14 +640,14 @@ msgid "<empty>"
 msgstr "<空>"
 
 msgid "E240: No connection to Vim server"
-msgstr "E240: Vim サーバへの接続がありません"
+msgstr "E240: Vim サーバーへの接続がありません"
 
 #, c-format
 msgid "E241: Unable to send to %s"
 msgstr "E241: %s へ送ることができません"
 
 msgid "E277: Unable to read a server reply"
-msgstr "E277: サーバの応答がありません"
+msgstr "E277: サーバーの応答がありません"
 
 msgid "remove() argument"
 msgstr "remove() の引数"
@@ -2845,14 +2845,14 @@ msgid "cannot get line"
 msgstr "行を取得できません"
 
 msgid "Unable to register a command server name"
-msgstr "命令サーバの名前を登録できません"
+msgstr "命令サーバーの名前を登録できません"
 
 msgid "E248: Failed to send command to the destination program"
 msgstr "E248: 目的のプログラムへのコマンド送信に失敗しました"
 
 #, c-format
 msgid "E573: Invalid server id used: %s"
-msgstr "E573: 無効なサーバIDが使われました: %s"
+msgstr "E573: 無効なサーバーIDが使われました: %s"
 
 msgid "E251: VIM instance registry property is badly formed.  Deleted!"
 msgstr "E251: VIM 実体の登録プロパティが不正です. 消去しました!"
@@ -3110,16 +3110,16 @@ msgid "-x\t\t\tEdit encrypted files"
 msgstr "-x\t\t\t暗号化されたファイルを編集する"
 
 msgid "-display <display>\tConnect vim to this particular X-server"
-msgstr "-display <display>\tvimを指定した X サーバに接続する"
+msgstr "-display <display>\tvimを指定した X サーバーに接続する"
 
 msgid "-X\t\t\tDo not connect to X server"
-msgstr "-X\t\t\tXサーバに接続しない"
+msgstr "-X\t\t\tXサーバーに接続しない"
 
 msgid "--remote <files>\tEdit <files> in a Vim server if possible"
-msgstr "--remote <files>\t可能ならばVimサーバで <files> を編集する"
+msgstr "--remote <files>\t可能ならばVimサーバーで <files> を編集する"
 
 msgid "--remote-silent <files>  Same, don't complain if there is no server"
-msgstr "--remote-silent <files>  同上, サーバが無くても警告文を出力しない"
+msgstr "--remote-silent <files>  同上, サーバーが無くても警告文を出力しない"
 
 msgid ""
 "--remote-wait <files>  As --remote but wait for files to have been edited"
@@ -3127,7 +3127,7 @@ msgstr "--remote-wait <files>\t--remote後 ファイルの編集が終わるの�
 
 msgid ""
 "--remote-wait-silent <files>  Same, don't complain if there is no server"
-msgstr "--remote-wait-silent <files>  同上, サーバが無くても警告文を出力しない"
+msgstr "--remote-wait-silent <files>  同上, サーバーが無くても警告文を出力しない"
 
 msgid ""
 "--remote-tab[-wait][-silent] <files>  As --remote but use tab page per file"
@@ -3136,16 +3136,16 @@ msgstr ""
 "ページを開く"
 
 msgid "--remote-send <keys>\tSend <keys> to a Vim server and exit"
-msgstr "--remote-send <keys>\tVimサーバに <keys> を送信して終了する"
+msgstr "--remote-send <keys>\tVimサーバーに <keys> を送信して終了する"
 
 msgid "--remote-expr <expr>\tEvaluate <expr> in a Vim server and print result"
-msgstr "--remote-expr <expr>\tサーバで <expr> を実行して結果を表示する"
+msgstr "--remote-expr <expr>\tサーバーで <expr> を実行して結果を表示する"
 
 msgid "--serverlist\t\tList available Vim server names and exit"
-msgstr "--serverlist\t\tVimサーバ名の一覧を表示して終了する"
+msgstr "--serverlist\t\tVimサーバー名の一覧を表示して終了する"
 
 msgid "--servername <name>\tSend to/become the Vim server <name>"
-msgstr "--servername <name>\tVimサーバ <name> に送信/名前設定する"
+msgstr "--servername <name>\tVimサーバー <name> に送信/名前設定する"
 
 msgid "--startuptime <file>\tWrite startup timing messages to <file>"
 msgstr "--startuptime <file>\t起動にかかった時間の詳細を <file> へ出力する"
@@ -4496,7 +4496,7 @@ msgstr "Vim: 致命的シグナルを検知しました\n"
 
 #, c-format
 msgid "Opening the X display took %ld msec"
-msgstr "Xサーバへの接続に %ld ミリ秒かかりました"
+msgstr "Xサーバーへの接続に %ld ミリ秒かかりました"
 
 msgid ""
 "\n"
@@ -6391,7 +6391,7 @@ msgstr "E36: ウィンドウに十分な高さもしくは幅がありません"
 
 #, c-format
 msgid "E247: no registered server named \"%s\""
-msgstr "E247: %s という名前の登録されたサーバはありません"
+msgstr "E247: %s という名前の登録されたサーバーはありません"
 
 #, c-format
 msgid "E482: Can't create file %s"
