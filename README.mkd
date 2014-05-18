@@ -9,7 +9,7 @@ Vimに付属する日本語翻訳ファイルを管理するリポジトリ
 scripts/ |(予定) 管理用のスクリプトを置いてあります。
 src/po/, runtime/lang |Vimに付属の日本語翻訳ファイルが置いてあります。
 src/po/ja.po |Vimのメッセージ翻訳ファイルのマスター(UTF-8)
-runtime/lang/menu\_ja.utf-8.vim |Vimの日本語メニューファイルのマスター(UTF-8)
+runtime/lang/menu\_ja\_jp.utf-8.vim |Vimの日本語メニューファイルのマスター(UTF-8)
 
 src/po/ 及び runtime/lang/ 配下の、上記以外のファイルは基本的にマスターから変換するものなので通常直接は編集しないでください。
 
