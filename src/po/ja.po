@@ -3552,7 +3552,7 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"それから.swpファイルを削除してください\n"
+"元の.swpファイルは削除しても構いません\n"
 "\n"
 
 msgid "Using crypt key from swap file for the text file.\n"
