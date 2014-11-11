@@ -3,7 +3,7 @@
 # Do ":help uganda"  in Vim to read copying and usage conditions.
 # Do ":help credits" in Vim to see a list of people who contributed.
 #
-# Last Change: 2013 Jul 06
+# Last Change: 2014 May 18
 #
 # Copyright (C) 2001-13 MURAOKA Taro <koron.kaoriya@gmail.com>
 # Copyright (C) 2014 vim-jp (http://vim-jp.org/)
@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-06 13:50+0900\n"
-"PO-Revision-Date: 2014-05-04 20:55+0900\n"
+"PO-Revision-Date: 2014-05-18 14:22+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: vim-jp (https://github.com/vim-jp/lang-ja)\n"
 "Language: Japanese\n"
@@ -294,7 +294,7 @@ msgid " Command-line completion (^V^N^P)"
 msgstr " コマンドライン補完 (^V^N^P)"
 
 msgid " User defined completion (^U^N^P)"
-msgstr " ユーザ定義補完 (^U^N^P)"
+msgstr " ユーザー定義補完 (^U^N^P)"
 
 msgid " Omni completion (^O^N^P)"
 msgstr " オムニ補完 (^O^N^P)"
@@ -641,14 +641,14 @@ msgid "<empty>"
 msgstr "<空>"
 
 msgid "E240: No connection to Vim server"
-msgstr "E240: Vim サーバへの接続がありません"
+msgstr "E240: Vim サーバーへの接続がありません"
 
 #, c-format
 msgid "E241: Unable to send to %s"
 msgstr "E241: %s へ送ることができません"
 
 msgid "E277: Unable to read a server reply"
-msgstr "E277: サーバの応答がありません"
+msgstr "E277: サーバーの応答がありません"
 
 msgid "remove() argument"
 msgstr "remove() の引数"
@@ -1239,7 +1239,7 @@ msgid "End of function"
 msgstr "関数の最後です"
 
 msgid "E464: Ambiguous use of user-defined command"
-msgstr "E464: ユーザ定義コマンドのあいまいな使用です"
+msgstr "E464: ユーザー定義コマンドのあいまいな使用です"
 
 msgid "E492: Not an editor command"
 msgstr "E492: エディタのコマンドではありません"
@@ -1284,7 +1284,7 @@ msgstr ""
 "    名前        引数 範囲  補完      定義"
 
 msgid "No user-defined commands found"
-msgstr "ユーザ定義コマンドが見つかりませんでした"
+msgstr "ユーザー定義コマンドが見つかりませんでした"
 
 msgid "E175: No attribute specified"
 msgstr "E175: 属性は定義されていません"
@@ -1309,14 +1309,14 @@ msgid "E182: Invalid command name"
 msgstr "E182: 無効なコマンド名です"
 
 msgid "E183: User defined commands must start with an uppercase letter"
-msgstr "E183: ユーザ定義コマンドは英大文字で始まらなければなりません"
+msgstr "E183: ユーザー定義コマンドは英大文字で始まらなければなりません"
 
 msgid "E841: Reserved name, cannot be used for user defined command"
-msgstr "E841: 予約名なので, ユーザ定義コマンドに利用できません"
+msgstr "E841: 予約名なので, ユーザー定義コマンドに利用できません"
 
 #, c-format
 msgid "E184: No such user-defined command: %s"
-msgstr "E184: そのユーザ定義コマンドはありません: %s"
+msgstr "E184: そのユーザー定義コマンドはありません: %s"
 
 #, c-format
 msgid "E180: Invalid complete value: %s"
@@ -2846,14 +2846,14 @@ msgid "cannot get line"
 msgstr "行を取得できません"
 
 msgid "Unable to register a command server name"
-msgstr "命令サーバの名前を登録できません"
+msgstr "命令サーバーの名前を登録できません"
 
 msgid "E248: Failed to send command to the destination program"
 msgstr "E248: 目的のプログラムへのコマンド送信に失敗しました"
 
 #, c-format
 msgid "E573: Invalid server id used: %s"
-msgstr "E573: 無効なサーバIDが使われました: %s"
+msgstr "E573: 無効なサーバーIDが使われました: %s"
 
 msgid "E251: VIM instance registry property is badly formed.  Deleted!"
 msgstr "E251: VIM 実体の登録プロパティが不正です. 消去しました!"
@@ -3111,16 +3111,16 @@ msgid "-x\t\t\tEdit encrypted files"
 msgstr "-x\t\t\t暗号化されたファイルを編集する"
 
 msgid "-display <display>\tConnect vim to this particular X-server"
-msgstr "-display <display>\tvimを指定した X サーバに接続する"
+msgstr "-display <display>\tvimを指定した X サーバーに接続する"
 
 msgid "-X\t\t\tDo not connect to X server"
-msgstr "-X\t\t\tXサーバに接続しない"
+msgstr "-X\t\t\tXサーバーに接続しない"
 
 msgid "--remote <files>\tEdit <files> in a Vim server if possible"
-msgstr "--remote <files>\t可能ならばVimサーバで <files> を編集する"
+msgstr "--remote <files>\t可能ならばVimサーバーで <files> を編集する"
 
 msgid "--remote-silent <files>  Same, don't complain if there is no server"
-msgstr "--remote-silent <files>  同上, サーバが無くても警告文を出力しない"
+msgstr "--remote-silent <files>  同上, サーバーが無くても警告文を出力しない"
 
 msgid ""
 "--remote-wait <files>  As --remote but wait for files to have been edited"
@@ -3128,7 +3128,7 @@ msgstr "--remote-wait <files>\t--remote後 ファイルの編集が終わるの�
 
 msgid ""
 "--remote-wait-silent <files>  Same, don't complain if there is no server"
-msgstr "--remote-wait-silent <files>  同上, サーバが無くても警告文を出力しない"
+msgstr "--remote-wait-silent <files>  同上, サーバーが無くても警告文を出力しない"
 
 msgid ""
 "--remote-tab[-wait][-silent] <files>  As --remote but use tab page per file"
@@ -3137,16 +3137,16 @@ msgstr ""
 "ページを開く"
 
 msgid "--remote-send <keys>\tSend <keys> to a Vim server and exit"
-msgstr "--remote-send <keys>\tVimサーバに <keys> を送信して終了する"
+msgstr "--remote-send <keys>\tVimサーバーに <keys> を送信して終了する"
 
 msgid "--remote-expr <expr>\tEvaluate <expr> in a Vim server and print result"
-msgstr "--remote-expr <expr>\tサーバで <expr> を実行して結果を表示する"
+msgstr "--remote-expr <expr>\tサーバーで <expr> を実行して結果を表示する"
 
 msgid "--serverlist\t\tList available Vim server names and exit"
-msgstr "--serverlist\t\tVimサーバ名の一覧を表示して終了する"
+msgstr "--serverlist\t\tVimサーバー名の一覧を表示して終了する"
 
 msgid "--servername <name>\tSend to/become the Vim server <name>"
-msgstr "--servername <name>\tVimサーバ <name> に送信/名前設定する"
+msgstr "--servername <name>\tVimサーバー <name> に送信/名前設定する"
 
 msgid "--startuptime <file>\tWrite startup timing messages to <file>"
 msgstr "--startuptime <file>\t起動にかかった時間の詳細を <file> へ出力する"
@@ -3610,7 +3610,7 @@ msgid ""
 "         user name: "
 msgstr ""
 "\n"
-"          ユーザ名: "
+"        ユーザー名: "
 
 msgid "   host name: "
 msgstr "   ホスト名: "
@@ -4497,7 +4497,7 @@ msgstr "Vim: 致命的シグナルを検知しました\n"
 
 #, c-format
 msgid "Opening the X display took %ld msec"
-msgstr "Xサーバへの接続に %ld ミリ秒かかりました"
+msgstr "Xサーバーへの接続に %ld ミリ秒かかりました"
 
 msgid ""
 "\n"
@@ -6041,31 +6041,31 @@ msgid "   system vimrc file: \""
 msgstr "      システム vimrc: \""
 
 msgid "     user vimrc file: \""
-msgstr "        ユーザ vimrc: \""
+msgstr "      ユーザー vimrc: \""
 
 msgid " 2nd user vimrc file: \""
-msgstr "     第2ユーザ vimrc: \""
+msgstr "   第2ユーザー vimrc: \""
 
 msgid " 3rd user vimrc file: \""
-msgstr "     第3ユーザ vimrc: \""
+msgstr "   第3ユーザー vimrc: \""
 
 msgid "      user exrc file: \""
-msgstr "         ユーザ exrc: \""
+msgstr "       ユーザー exrc: \""
 
 msgid "  2nd user exrc file: \""
-msgstr "      第2ユーザ exrc: \""
+msgstr "    第2ユーザー exrc: \""
 
 msgid "  system gvimrc file: \""
 msgstr "     システム gvimrc: \""
 
 msgid "    user gvimrc file: \""
-msgstr "       ユーザ gvimrc: \""
+msgstr "     ユーザー gvimrc: \""
 
 msgid "2nd user gvimrc file: \""
-msgstr "    第2ユーザ gvimrc: \""
+msgstr "  第2ユーザー gvimrc: \""
 
 msgid "3rd user gvimrc file: \""
-msgstr "    第3ユーザ gvimrc: \""
+msgstr "  第3ユーザー gvimrc: \""
 
 msgid "    system menu file: \""
 msgstr "    システムメニュー: \""
@@ -6146,7 +6146,7 @@ msgid "Sponsor Vim development!"
 msgstr "Vimの開発を応援してください!"
 
 msgid "Become a registered Vim user!"
-msgstr "Vimの登録ユーザになってください!"
+msgstr "Vimの登録ユーザーになってください!"
 
 msgid "type  :help sponsor<Enter>    for information "
 msgstr "詳細な情報は           :help sponsor<Enter>   "
@@ -6392,7 +6392,7 @@ msgstr "E36: ウィンドウに十分な高さもしくは幅がありません"
 
 #, c-format
 msgid "E247: no registered server named \"%s\""
-msgstr "E247: %s という名前の登録されたサーバはありません"
+msgstr "E247: %s という名前の登録されたサーバーはありません"
 
 #, c-format
 msgid "E482: Can't create file %s"
