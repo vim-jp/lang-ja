@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-06 13:50+0900\n"
-"PO-Revision-Date: 2013-07-06 15:00+0900\n"
+"PO-Revision-Date: 2014-05-04 20:55+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language: Japanese\n"
@@ -5541,7 +5541,7 @@ msgstr "E415: 予期せぬ等号です: %s"
 
 #, c-format
 msgid "E416: missing equal sign: %s"
-msgstr "E416: 等号ががありません: %s"
+msgstr "E416: 等号がありません: %s"
 
 #, c-format
 msgid "E417: missing argument: %s"
