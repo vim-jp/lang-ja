@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-06 13:50+0900\n"
+"POT-Creation-Date: 2014-11-13 23:24+0900\n"
 "PO-Revision-Date: 2014-05-04 20:55+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: vim-jp (https://github.com/vim-jp/lang-ja)\n"
@@ -84,6 +84,9 @@ msgstr "1 個のバッファが破棄されました"
 msgid "%d buffers wiped out"
 msgstr "%d 個のバッファが破棄されました"
 
+msgid "E90: Cannot unload last buffer"
+msgstr "E90: 最後のバッファは解放できません"
+
 msgid "E84: No modified buffer found"
 msgstr "E84: 変更されたバッファはありません"
 
@@ -104,9 +107,6 @@ msgstr "E88: 最初のバッファより前へは移動できません"
 #, c-format
 msgid "E89: No write since last change for buffer %ld (add ! to override)"
 msgstr "E89: バッファ %ld の変更は保存されていません (! で変更を破棄)"
-
-msgid "E90: Cannot unload last buffer"
-msgstr "E90: 最後のバッファは解放できません"
 
 msgid "W14: Warning: List of file names overflow"
 msgstr "W14: 警告: ファイル名のリストが長過ぎます"
@@ -206,6 +206,24 @@ msgstr "%s のサイン:"
 #, c-format
 msgid "    line=%ld  id=%d  name=%s"
 msgstr "    行=%ld  識別子=%d  名前=%s"
+
+msgid "E821: File is encrypted with unknown method"
+msgstr "E821: ファイルが未知の方法で暗号化されています"
+
+msgid "Warning: Using a weak encryption method; see :help 'cm'"
+msgstr "警告: 弱い暗号化方式を利用しています。:help 'cm' を参照してください"
+
+msgid "Enter encryption key: "
+msgstr "暗号化用のキーを入力してください: "
+
+msgid "Enter same key again: "
+msgstr "もう一度同じキーを入力してください: "
+
+msgid "Keys don't match!"
+msgstr "キーが一致しません"
+
+msgid "[crypted]"
+msgstr "[暗号化]"
 
 #, c-format
 msgid "E96: Can not diff more than %ld buffers"
@@ -480,7 +498,7 @@ msgstr "E109: '?' の後に ':' がありません"
 msgid "E691: Can only compare List with List"
 msgstr "E691: リスト型はリスト型としか比較できません"
 
-msgid "E692: Invalid operation for Lists"
+msgid "E692: Invalid operation for List"
 msgstr "E692: リスト型には無効な操作です"
 
 msgid "E735: Can only compare Dictionary with Dictionary"
@@ -666,8 +684,14 @@ msgstr "E258: クライアントへ送ることができません"
 msgid "sort() argument"
 msgstr "sort() の引数"
 
+msgid "uniq() argument"
+msgstr "uniq() の引数"
+
 msgid "E702: Sort compare function failed"
 msgstr "E702: ソートの比較関数が失敗しました"
+
+msgid "E882: Uniq compare function failed"
+msgstr "E882: Uniqの比較関数が失敗しました"
 
 msgid "(Invalid)"
 msgstr "(無効)"
@@ -764,8 +788,12 @@ msgid "E129: Function name required"
 msgstr "E129: 関数名が要求されます"
 
 #, c-format
-msgid "E128: Function name must start with a capital or contain a colon: %s"
-msgstr "E128: 関数名は大文字で始まるかコロンを含まなければなりません: %s"
+msgid "E128: Function name must start with a capital or \"s:\": %s"
+msgstr "E128: 関数名は大文字か \"s:\" で始まらなければなりません: %s"
+
+#, c-format
+msgid "E884: Function name cannot contain a colon: %s"
+msgstr "E884: 関数名はコロンを含むことは出来ません: %s"
 
 #, c-format
 msgid "E131: Cannot delete function %s: It is in use"
@@ -881,6 +909,10 @@ msgstr "E138: viminfoファイル %s を保存できません!"
 #, c-format
 msgid "Writing viminfo file \"%s\""
 msgstr "viminfoファイル \"%s\" を書込み中"
+
+#, c-format
+msgid "E886: Can't rename viminfo file to %s!"
+msgstr "E886: viminfoファイルを %s にリネームできません!"
 
 #. Write the info:
 #, c-format
@@ -1082,6 +1114,10 @@ msgstr "E158: 無効なバッファ名です: %s"
 msgid "E157: Invalid sign ID: %ld"
 msgstr "E157: 無効なsign識別子です: %ld"
 
+#, c-format
+msgid "E885: Not possible to change sign %s"
+msgstr "E885: sign %s を変更できません"
+
 # Added at 27-Jan-2004.
 msgid " (NOT FOUND)"
 msgstr "  (見つかりません)"
@@ -1220,7 +1256,8 @@ msgid "E197: Cannot set language to \"%s\""
 msgstr "E197: 言語を \"%s\" に設定できません"
 
 msgid "Entering Ex mode.  Type \"visual\" to go to Normal mode."
-msgstr "Exモードに入ります. ノーマルモードに戻るには\"visual\"と入力してください."
+msgstr ""
+"Exモードに入ります. ノーマルモードに戻るには\"visual\"と入力してください."
 
 msgid "E501: At end-of-file"
 msgstr "E501: ファイルの終了位置"
@@ -1663,12 +1700,6 @@ msgstr "[未変換]"
 msgid "[converted]"
 msgstr "[変換済]"
 
-msgid "[blowfish]"
-msgstr "[blowfish暗号化]"
-
-msgid "[crypted]"
-msgstr "[暗号化]"
-
 #, c-format
 msgid "[CONVERSION ERROR in line %ld]"
 msgstr "[%ld 行目で変換エラー]"
@@ -1688,9 +1719,6 @@ msgstr "'charconvert' による変換が失敗しました"
 
 msgid "can't read output of 'charconvert'"
 msgstr "'charconvert' の出力を読込めませんでした"
-
-msgid "E821: File is encrypted with unknown method"
-msgstr "E821: ファイルが未知の方法で暗号化されています"
 
 msgid "E676: No matching autocommands for acwrite buffer"
 msgstr "E676: acwriteバッファの該当するautocommandは存在しません"
@@ -2622,19 +2650,6 @@ msgstr "範囲外の行番号です"
 msgid "not allowed in the Vim sandbox"
 msgstr "サンドボックスでは許されません"
 
-#, c-format
-msgid "E370: Could not load library %s"
-msgstr "E370: ライブラリ %s をロードできませんでした"
-
-msgid "Sorry, this command is disabled: the Perl library could not be loaded."
-msgstr ""
-"このコマンドは無効です, ごめんなさい: Perlライブラリをロードできませんでした."
-
-msgid "E299: Perl evaluation forbidden in sandbox without the Safe module"
-msgstr ""
-"E299: サンドボックスでは Safe モジュールを使用しないPerlスクリプトは禁じられ"
-"ています"
-
 msgid "E836: This Vim cannot execute :python after using :py3"
 msgstr "E836: このVimでは :py3 を使った後に :python を使えません"
 
@@ -2644,6 +2659,13 @@ msgid ""
 msgstr ""
 "E263: このコマンドは無効です,ごめんなさい: Pythonライブラリをロードできません"
 "でした."
+
+msgid ""
+"E887: Sorry, this command is disabled, the Python's site module could not be "
+"loaded."
+msgstr ""
+"E887: このコマンドは無効です,ごめんなさい: Pythonのsiteモジュールをロードでき"
+"ませんでした."
 
 # Added at 07-Feb-2004.
 msgid "E659: Cannot invoke Python recursively"
@@ -3968,13 +3990,6 @@ msgstr " (割込まれました)"
 msgid "Beep!"
 msgstr "ビーッ!"
 
-msgid "Vim: preserving files...\n"
-msgstr "Vim: ファイルを保存中...\n"
-
-#. close all memfiles, without deleting
-msgid "Vim: Finished.\n"
-msgstr "Vim: 終了しました.\n"
-
 msgid "ERROR: "
 msgstr "エラー: "
 
@@ -4023,15 +4038,6 @@ msgstr "E548: 数値が必要です"
 
 msgid "E549: Illegal percentage"
 msgstr "E549: 不正なパーセンテージです"
-
-msgid "Enter encryption key: "
-msgstr "暗号化用のキーを入力してください: "
-
-msgid "Enter same key again: "
-msgstr "もう一度同じキーを入力してください: "
-
-msgid "Keys don't match!"
-msgstr "キーが一致しません"
 
 msgid "E854: path too long for completion"
 msgstr "E854: パスが長過ぎて補完できません"
@@ -4202,6 +4208,11 @@ msgstr ""
 #, c-format
 msgid "E574: Unknown register type %d"
 msgstr "E574: 未知のレジスタ型 %d です"
+
+msgid ""
+"E883: search pattern and expression register may not contain two or more "
+"lines"
+msgstr "E883: 検索パターンと式レジスタは複数行含むことは出来ません"
 
 #, c-format
 msgid "%ld Cols; "
@@ -4484,17 +4495,6 @@ msgstr "E244: 文字セット名 \"%s\" は不正です (フォント名 \"%s\")
 msgid "E245: Illegal char '%c' in font name \"%s\""
 msgstr "E245: '%c' は不正な文字です (フォント名 \"%s\")"
 
-msgid "Vim: Double signal, exiting\n"
-msgstr "Vim: 2重のシグナルのため, 終了します\n"
-
-#, c-format
-msgid "Vim: Caught deadly signal %s\n"
-msgstr "Vim: 致命的シグナル %s を検知しました\n"
-
-#, c-format
-msgid "Vim: Caught deadly signal\n"
-msgstr "Vim: 致命的シグナルを検知しました\n"
-
 #, c-format
 msgid "Opening the X display took %ld msec"
 msgstr "Xサーバへの接続に %ld ミリ秒かかりました"
@@ -4525,6 +4525,19 @@ msgid ""
 msgstr ""
 "\n"
 "セキュリティコンテキストを設定できません "
+
+msgid "Could not set security context "
+msgstr "セキュリティコンテキストを設定できません: "
+
+#~ msgid " for "
+#~ msgstr ""
+
+#. no enough size OR unexpected error
+msgid "Could not get security context "
+msgstr "セキュリティコンテキストを取得できません: "
+
+#~ msgid ". Removing it!\n"
+#~ msgstr ""
 
 msgid ""
 "\n"
@@ -4803,19 +4816,31 @@ msgstr "E554: %s{...} 内に文法エラーがあります"
 msgid "External submatches:\n"
 msgstr "外部の部分該当:\n"
 
+#, c-format
+msgid "E888: (NFA regexp) cannot repeat %s"
+msgstr "E888: (NFA 正規表現) 繰り返せません: %s"
+
 msgid ""
 "E864: \\%#= can only be followed by 0, 1, or 2. The automatic engine will be "
 "used "
 msgstr ""
-"E864: \\%#= には 0, 1 もしくは 2 のみが続けられます。"
-"正規表現エンジンは自動選択されます。"
+"E864: \\%#= には 0, 1 もしくは 2 のみが続けられます。正規表現エンジンは自動選"
+"択されます。"
+
+msgid "Switching to backtracking RE engine for pattern: "
+msgstr "次のパターンをバックトラッキング正規表現エンジンに切り替えます: "
+
+msgid "E865: (NFA) Regexp end encountered prematurely"
+msgstr "E865: (NFA) 期待より早く正規表現の終端に到達しました"
 
 #, c-format
 msgid "E866: (NFA regexp) Misplaced %c"
 msgstr "E866: (NFA 正規表現) 位置が誤っています: %c"
 
-msgid "E865: (NFA) Regexp end encountered prematurely"
-msgstr "E865: (NFA) 期待より早く正規表現の終端に到達しました"
+#
+#, c-format
+msgid "E877: (NFA regexp) Invalid character class: %ld"
+msgstr "E877: (NFA 正規表現) 不正な文字クラス: %ld"
 
 #, c-format
 msgid "E867: (NFA) Unknown operator '\\z%c'"
@@ -4857,8 +4882,8 @@ msgid ""
 "E875: (NFA regexp) (While converting from postfix to NFA), too many states "
 "left on stack"
 msgstr ""
-"E875: (NFA 正規表現) (後置文字列をNFAに変換中に) "
-"スタックに残されたステートが多過ぎます"
+"E875: (NFA 正規表現) (後置文字列をNFAに変換中に) スタックに残されたステートが"
+"多過ぎます"
 
 msgid "E876: (NFA regexp) Not enough space to store the whole NFA "
 msgstr "E876: (NFA 正規表現) NFA全体を保存するには空きスペースが足りません"
@@ -4868,8 +4893,9 @@ msgstr "E878: (NFA) 現在横断中のブランチに十分なメモリを割り
 
 msgid ""
 "Could not open temporary log file for writing, displaying on stderr ... "
-msgstr "NFA正規表現エンジン用のログファイルを書込用として開けません。"
-"ログは標準出力に出力します。"
+msgstr ""
+"NFA正規表現エンジン用のログファイルを書込用として開けません。ログは標準出力に"
+"出力します。"
 
 #, c-format
 msgid "(NFA) COULD NOT OPEN %s !"
@@ -5318,12 +5344,12 @@ msgid "E765: 'spellfile' does not have %ld entries"
 msgstr "E765: 'spellfile' には %ld 個のエントリはありません"
 
 #, c-format
-msgid "Word removed from %s"
-msgstr "%s から単語が削除されました"
+msgid "Word '%.*s' removed from %s"
+msgstr "単語 '%.*s' が %s から削除されました"
 
 #, c-format
-msgid "Word added to %s"
-msgstr "%s に単語が追加されました"
+msgid "Word '%.*s' added to %s"
+msgstr "単語 '%.*s' が %s に追加されました"
 
 msgid "E763: Word characters differ between spell files"
 msgstr "E763: 単語の文字がスペルファイルと異なります"
@@ -5712,8 +5738,8 @@ msgstr "空の選択領域のかわりにCUT_BUFFER0が使用されました"
 
 #. This happens when the FileChangedRO autocommand changes the
 #. * file in a way it becomes shorter.
-msgid "E834: Line count changed unexpectedly"
-msgstr "E834: 予期せず行カウントが変わりました"
+msgid "E881: Line count changed unexpectedly"
+msgstr "E881: 予期せず行カウントが変わりました"
 
 #. must display the prompt
 msgid "No undo possible; continue anyway"
@@ -6194,6 +6220,22 @@ msgstr "E446: カーソルの下にファイル名がありません"
 msgid "E447: Can't find file \"%s\" in path"
 msgstr "E447: pathには \"%s\" というファイルがありません"
 
+msgid "List or number required"
+msgstr "リストか数値が必要です"
+
+#, c-format
+msgid "E370: Could not load library %s"
+msgstr "E370: ライブラリ %s をロードできませんでした"
+
+msgid "Sorry, this command is disabled: the Perl library could not be loaded."
+msgstr ""
+"このコマンドは無効です, ごめんなさい: Perlライブラリをロードできませんでした."
+
+msgid "E299: Perl evaluation forbidden in sandbox without the Safe module"
+msgstr ""
+"E299: サンドボックスでは Safe モジュールを使用しないPerlスクリプトは禁じられ"
+"ています"
+
 msgid "Edit with &multiple Vims"
 msgstr "複数のVimで編集する (&M)"
 
@@ -6412,6 +6454,9 @@ msgstr "E485: ファイル %s を読込めません"
 msgid "E37: No write since last change (add ! to override)"
 msgstr "E37: 最後の変更が保存されていません (! を追加で変更を破棄)"
 
+msgid "E37: No write since last change"
+msgstr "E37: 最後の変更が保存されていません"
+
 msgid "E38: Null argument"
 msgstr "E38: 引数が空です"
 
@@ -6609,7 +6654,7 @@ msgstr "C言語の int 型としては値が大き過ぎます"
 msgid "value is too small to fit into C int type"
 msgstr "C言語の int 型としては値が小さ過ぎます"
 
-msgid "number must be greater then zero"
+msgid "number must be greater than zero"
 msgstr "数値は 0 より大きくなければなりません"
 
 msgid "number must be greater or equal to zero"
@@ -6667,15 +6712,31 @@ msgstr "リスト範囲外のインデックスです"
 msgid "internal error: failed to get vim list item %d"
 msgstr "内部エラー: vimのリスト要素 %d の取得に失敗しました"
 
-msgid "failed to add item to list"
-msgstr "リストへの要素追加に失敗しました"
+msgid "slice step cannot be zero"
+msgstr "スライスのステップを 0 にすることはできません"
+
+#, c-format
+msgid "attempt to assign sequence of size greater than %d to extended slice"
+msgstr "サイズ %d より大きいシーケンスを拡張スライスに割り当てようとしました"
 
 #, c-format
 msgid "internal error: no vim list item %d"
 msgstr "内部エラー: vimのリスト要素 %d はありません"
 
+msgid "internal error: not enough list items"
+msgstr "内部エラー: 十分なリスト要素がありません"
+
 msgid "internal error: failed to add item to list"
 msgstr "内部エラー: リストへの要素追加に失敗しました"
+
+#, c-format
+msgid "attempt to assign sequence of size %d to extended slice of size %d"
+msgstr ""
+"サイズ %d より大きいシーケンスをサイズ %d の拡張スライスに割り当てようとしま"
+"した"
+
+msgid "failed to add item to list"
+msgstr "リストへの要素追加に失敗しました"
 
 msgid "cannot delete vim.List attributes"
 msgstr "vim.List 属性は消せません"
@@ -6807,3 +6868,21 @@ msgid ""
 msgstr ""
 "パスの設定に失敗しました: sys.path がリストではありません\n"
 "すぐに vim.VIM_SPECIAL_PATH を sys.path に追加してください"
+
+#~ msgid "[blowfish]"
+#~ msgstr "[blowfish暗号化]"
+
+#~ msgid "Vim: preserving files...\n"
+#~ msgstr "Vim: ファイルを保存中...\n"
+
+#~ msgid "Vim: Finished.\n"
+#~ msgstr "Vim: 終了しました.\n"
+
+#~ msgid "Vim: Double signal, exiting\n"
+#~ msgstr "Vim: 2重のシグナルのため, 終了します\n"
+
+#~ msgid "Vim: Caught deadly signal %s\n"
+#~ msgstr "Vim: 致命的シグナル %s を検知しました\n"
+
+#~ msgid "Vim: Caught deadly signal\n"
+#~ msgstr "Vim: 致命的シグナルを検知しました\n"
