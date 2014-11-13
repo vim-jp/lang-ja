@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-10 23:19+0900\n"
+"POT-Creation-Date: 2014-11-13 23:24+0900\n"
 "PO-Revision-Date: 2014-05-04 20:55+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: vim-jp (https://github.com/vim-jp/lang-ja)\n"
@@ -209,6 +209,9 @@ msgstr "    行=%ld  識別子=%d  名前=%s"
 
 msgid "E821: File is encrypted with unknown method"
 msgstr "E821: ファイルが未知の方法で暗号化されています"
+
+msgid "Warning: Using a weak encryption method; see :help 'cm'"
+msgstr "警告: 弱い暗号化方式を利用しています。:help 'cm' を参照してください"
 
 msgid "Enter encryption key: "
 msgstr "暗号化用のキーを入力してください: "
@@ -1253,7 +1256,8 @@ msgid "E197: Cannot set language to \"%s\""
 msgstr "E197: 言語を \"%s\" に設定できません"
 
 msgid "Entering Ex mode.  Type \"visual\" to go to Normal mode."
-msgstr "Exモードに入ります. ノーマルモードに戻るには\"visual\"と入力してください."
+msgstr ""
+"Exモードに入ります. ノーマルモードに戻るには\"visual\"と入力してください."
 
 msgid "E501: At end-of-file"
 msgstr "E501: ファイルの終了位置"
@@ -6713,8 +6717,7 @@ msgstr "スライスのステップを 0 にすることはできません"
 
 #, c-format
 msgid "attempt to assign sequence of size greater than %d to extended slice"
-msgstr ""
-"サイズ %d より大きいシーケンスを拡張スライスに割り当てようとしました"
+msgstr "サイズ %d より大きいシーケンスを拡張スライスに割り当てようとしました"
 
 #, c-format
 msgid "internal error: no vim list item %d"
