@@ -3566,7 +3566,7 @@ msgid "   In current directory:\n"
 msgstr "   現在のディレクトリ:\n"
 
 msgid "   Using specified name:\n"
-msgstr "   ある名前を使用中:\n"
+msgstr "   以下の名前を使用中:\n"
 
 msgid "   In directory "
 msgstr "   ディレクトリ "
