@@ -230,7 +230,7 @@ msgid "E99: Current buffer is not in diff mode"
 msgstr "E99: 現在のバッファは差分モードではありません"
 
 msgid "E793: No other buffer in diff mode is modifiable"
-msgstr "E793: 差分モードである他のバッファは変更可能です"
+msgstr "E793: 差分モードである他のバッファは変更できません"
 
 msgid "E100: No other buffer in diff mode"
 msgstr "E100: 差分モードである他のバッファはありません"
