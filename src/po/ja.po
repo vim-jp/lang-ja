@@ -1665,13 +1665,13 @@ msgid "Illegal file name"
 msgstr "不正なファイル名"
 
 msgid "is a directory"
-msgstr " はディレクトリです"
+msgstr "はディレクトリです"
 
 msgid "is not a file"
-msgstr " はファイルではありません"
+msgstr "はファイルではありません"
 
 msgid "is a device (disabled with 'opendevice' option)"
-msgstr " はデバイスです ('opendevice' オプションで回避できます)"
+msgstr "はデバイスです ('opendevice' オプションで回避できます)"
 
 msgid "[New File]"
 msgstr "[新ファイル]"
