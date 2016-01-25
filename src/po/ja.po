@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-25 23:17+0900\n"
-"PO-Revision-Date: 2016-01-26 00:35+0900\n"
+"PO-Revision-Date: 2016-01-26 00:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: vim-jp (https://github.com/vim-jp/lang-ja)\n"
 "Language: Japanese\n"
@@ -308,7 +308,7 @@ msgid " Command-line completion (^V^N^P)"
 msgstr " コマンドライン補完 (^V^N^P)"
 
 msgid " User defined completion (^U^N^P)"
-msgstr " ユーザ定義補完 (^U^N^P)"
+msgstr " ユーザー定義補完 (^U^N^P)"
 
 msgid " Omni completion (^O^N^P)"
 msgstr " オムニ補完 (^O^N^P)"
@@ -1295,7 +1295,7 @@ msgid "End of function"
 msgstr "関数の最後です"
 
 msgid "E464: Ambiguous use of user-defined command"
-msgstr "E464: ユーザ定義コマンドのあいまいな使用です"
+msgstr "E464: ユーザー定義コマンドのあいまいな使用です"
 
 msgid "E492: Not an editor command"
 msgstr "E492: エディタのコマンドではありません"
@@ -1340,7 +1340,7 @@ msgstr ""
 "    名前        引数       アドレス  補完      定義"
 
 msgid "No user-defined commands found"
-msgstr "ユーザ定義コマンドが見つかりませんでした"
+msgstr "ユーザー定義コマンドが見つかりませんでした"
 
 msgid "E175: No attribute specified"
 msgstr "E175: 属性は定義されていません"
@@ -1368,14 +1368,14 @@ msgid "E182: Invalid command name"
 msgstr "E182: 無効なコマンド名です"
 
 msgid "E183: User defined commands must start with an uppercase letter"
-msgstr "E183: ユーザ定義コマンドは英大文字で始まらなければなりません"
+msgstr "E183: ユーザー定義コマンドは英大文字で始まらなければなりません"
 
 msgid "E841: Reserved name, cannot be used for user defined command"
-msgstr "E841: 予約名なので, ユーザ定義コマンドに利用できません"
+msgstr "E841: 予約名なので, ユーザー定義コマンドに利用できません"
 
 #, c-format
 msgid "E184: No such user-defined command: %s"
-msgstr "E184: そのユーザ定義コマンドはありません: %s"
+msgstr "E184: そのユーザー定義コマンドはありません: %s"
 
 msgid "E180: Invalid address type value: %s"
 msgstr "E180: 無効なアドレスタイプ値です: %s"
@@ -3674,7 +3674,7 @@ msgid ""
 "         user name: "
 msgstr ""
 "\n"
-"          ユーザ名: "
+"        ユーザー名: "
 
 msgid "   host name: "
 msgstr "   ホスト名: "
@@ -6115,31 +6115,31 @@ msgid "   system vimrc file: \""
 msgstr "      システム vimrc: \""
 
 msgid "     user vimrc file: \""
-msgstr "        ユーザ vimrc: \""
+msgstr "      ユーザー vimrc: \""
 
 msgid " 2nd user vimrc file: \""
-msgstr "     第2ユーザ vimrc: \""
+msgstr "   第2ユーザー vimrc: \""
 
 msgid " 3rd user vimrc file: \""
-msgstr "     第3ユーザ vimrc: \""
+msgstr "   第3ユーザー vimrc: \""
 
 msgid "      user exrc file: \""
-msgstr "         ユーザ exrc: \""
+msgstr "       ユーザー exrc: \""
 
 msgid "  2nd user exrc file: \""
-msgstr "      第2ユーザ exrc: \""
+msgstr "    第2ユーザー exrc: \""
 
 msgid "  system gvimrc file: \""
 msgstr "     システム gvimrc: \""
 
 msgid "    user gvimrc file: \""
-msgstr "       ユーザ gvimrc: \""
+msgstr "     ユーザー gvimrc: \""
 
 msgid "2nd user gvimrc file: \""
-msgstr "    第2ユーザ gvimrc: \""
+msgstr "  第2ユーザー gvimrc: \""
 
 msgid "3rd user gvimrc file: \""
-msgstr "    第3ユーザ gvimrc: \""
+msgstr "  第3ユーザー gvimrc: \""
 
 msgid "    system menu file: \""
 msgstr "    システムメニュー: \""
@@ -6220,7 +6220,7 @@ msgid "Sponsor Vim development!"
 msgstr "Vimの開発を応援してください!"
 
 msgid "Become a registered Vim user!"
-msgstr "Vimの登録ユーザになってください!"
+msgstr "Vimの登録ユーザーになってください!"
 
 msgid "type  :help sponsor<Enter>    for information "
 msgstr "詳細な情報は           :help sponsor<Enter>   "
@@ -6469,7 +6469,7 @@ msgstr "E36: ウィンドウに十分な高さもしくは幅がありません"
 
 #, c-format
 msgid "E247: no registered server named \"%s\""
-msgstr "E247: %s という名前の登録されたサーバはありません"
+msgstr "E247: %s という名前の登録されたサーバーはありません"
 
 #, c-format
 msgid "E482: Can't create file %s"

@@ -2,9 +2,10 @@
 "
 " Menu Translations:	Japanese (UTF-8)
 " Translated By:	MURAOKA Taro  <koron.kaoriya@gmail.com>
-" Last Change:		12-May-2013.
+" Last Change:		26-Jan-2016.
 "
-" Copyright (C) 2001-13 MURAOKA Taro <koron.kaoriya@gmail.com>
+" Copyright (C) 2001-16 MURAOKA Taro <koron.kaoriya@gmail.com>
+" Copyright (C) 2016 vim-jp (http://vim-jp.org/)
 " THIS FILE IS DISTRIBUTED UNDER THE VIM LICENSE.
 
 " Quit when menu translations have already been done.
@@ -20,7 +21,7 @@ scriptencoding utf-8
 " Help menu
 menutrans &Help			ヘルプ(&H)
 menutrans &Overview<Tab><F1>	概略(&O)<Tab><F1>
-menutrans &User\ Manual		ユーザマニュアル(&U)
+menutrans &User\ Manual		ユーザーマニュアル(&U)
 menutrans &How-to\ links	&How-toリンク
 menutrans &Credits		クレジット(&C)
 menutrans Co&pying		著作権情報(&P)
