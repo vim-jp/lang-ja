@@ -13,6 +13,42 @@ runtime/lang/menu\_ja\_jp.utf-8.vim |Vimの日本語メニューファイルの�
 
 src/po/ 及び runtime/lang/ 配下の、上記以外のファイルは基本的にマスターから変換するものなので通常直接は編集しないでください。
 
-## 更新手順
+## ja.po 更新手順
 
-(TODO: そのうち書く)
+1.  vim.pot を作成(要xgettext)
+
+    Vimのソースで以下を実行して、生成される vim.pot を src/po へコピー
+
+        $ cd src/po
+        $ make vim.pot
+
+2.  ja.po に vim.pot をマージ (古いのは ja.po.old へ退避)
+
+        $ mv ja.po ja.po.old
+        $ msgmerge ja.po.old vim.pot -o ja.po
+
+3.  ja.po のコピーライトやヘッダーを適宜修正
+
+    これはPRを作るだけの場合は、やらないほうが良いかも。
+
+4.  翻訳する
+
+    Vimを使って下記の検索コマンドで翻訳すべき場所を探すと良い。
+
+        /fuzzy\|^msgstr ""\(\n"\)\@!
+
+5.  不要な情報の削除
+
+    Vim で以下のようにする。
+
+        :source cleanup.vim
+
+    cleanup.vim は Vim 本体からのコピー
+
+6.  チェック
+
+        $ vim -S check.vim ja.po
+
+7.  euc-jp と sjis 版の作成
+
+    本来なら自動化すべきところなので、今は忘れて良い。
