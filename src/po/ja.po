@@ -40,7 +40,7 @@ msgid "E819: Blowfish test failed"
 msgstr "E819: Blowfish暗号のテストに失敗しました"
 
 msgid "[Location List]"
-msgstr "[場所リスト]"
+msgstr "[ロケーションリスト]"
 
 msgid "[Quickfix List]"
 msgstr "[Quickfixリスト]"
@@ -6525,7 +6525,7 @@ msgid "E42: No Errors"
 msgstr "E42: エラーはありません"
 
 msgid "E776: No location list"
-msgstr "E776: 場所リストはありません"
+msgstr "E776: ロケーションリストはありません"
 
 msgid "E43: Damaged match string"
 msgstr "E43: 該当文字列が破損しています"
