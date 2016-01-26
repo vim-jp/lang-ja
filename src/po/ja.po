@@ -2626,7 +2626,7 @@ msgid ""
 "could not be loaded."
 msgstr ""
 "E895: このコマンドは無効です,ごめんなさい. "
-"MzScheme の racket ベースのモジュールがロードできませんでした."
+"MzScheme の racket/base モジュールがロードできませんでした."
 
 msgid "invalid expression"
 msgstr "無効な式です"
