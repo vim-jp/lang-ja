@@ -610,7 +610,7 @@ msgstr "extend() の引数"
 
 #, c-format
 msgid "E737: Key already exists: %s"
-msgstr "E737: キーはすでに存在します: %s"
+msgstr "E737: キーは既に存在します: %s"
 
 msgid "map() argument"
 msgstr "map() の引数"
