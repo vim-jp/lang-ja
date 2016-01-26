@@ -229,7 +229,7 @@ msgid "E810: Cannot read or write temp files"
 msgstr "E810: 一時ファイルの読込もしくは書込ができません"
 
 msgid "E97: Cannot create diffs"
-msgstr "E97: 差分を作成できません "
+msgstr "E97: 差分を作成できません"
 
 msgid "Patch file"
 msgstr "パッチファイル"
@@ -287,7 +287,7 @@ msgid " Whole line completion (^L^N^P)"
 msgstr " 行(全体)補完 (^L^N^P)"
 
 msgid " File name completion (^F^N^P)"
-msgstr "ファイル名補完 (^F^N^P)"
+msgstr " ファイル名補完 (^F^N^P)"
 
 msgid " Tag completion (^]^N^P)"
 msgstr " タグ補完 (^]^N^P)"
@@ -575,7 +575,7 @@ msgstr "E117: 未知の関数です: %s"
 
 #, c-format
 msgid "E119: Not enough arguments for function: %s"
-msgstr "E119: 関数の引数が少な過ぎます: %s"
+msgstr "E119: 関数の引数が足りません: %s"
 
 #, c-format
 msgid "E120: Using <SID> not in a script context: %s"
@@ -610,7 +610,7 @@ msgstr "extend() の引数"
 
 #, c-format
 msgid "E737: Key already exists: %s"
-msgstr "E737: キーは既に存在します: %s"
+msgstr "E737: キーはすでに存在します: %s"
 
 msgid "map() argument"
 msgstr "map() の引数"
@@ -889,7 +889,7 @@ msgstr "E136: viminfo: エラーが多過ぎるので, 以降はスキップし�
 
 #, c-format
 msgid "Reading viminfo file \"%s\"%s%s%s"
-msgstr "viminfoファイル \"%s\"%s%s%s を読込み中 "
+msgstr "viminfoファイル \"%s\"%s%s%s を読込み中"
 
 msgid " info"
 msgstr " 情報"
@@ -1132,7 +1132,7 @@ msgstr "E885: 変更できない sign です: %s"
 
 # Added at 27-Jan-2004.
 msgid " (NOT FOUND)"
-msgstr "  (見つかりません)"
+msgstr " (見つかりません)"
 
 msgid " (not supported)"
 msgstr " (非サポート)"
@@ -1826,7 +1826,7 @@ msgstr " 変換エラー"
 
 #, c-format
 msgid " in line %ld;"
-msgstr "行 %ld;"
+msgstr " 行 %ld;"
 
 msgid "[Device]"
 msgstr "[デバイス]"
@@ -6229,7 +6229,7 @@ msgid "type  :help register<Enter>   for information "
 msgstr "詳細な情報は           :help register<Enter>  "
 
 msgid "menu  Help->Sponsor/Register  for information    "
-msgstr "詳細はメニューの ヘルプ→スポンサー/登録 を参照して下さい   "
+msgstr "詳細はメニューの ヘルプ→スポンサー/登録 を参照して下さい"
 
 msgid "WARNING: Windows 95/98/ME detected"
 msgstr "   警告: Windows 95/98/Me を検出  "
@@ -6297,7 +6297,7 @@ msgid "gvimext.dll error"
 msgstr "gvimext.dll エラー"
 
 msgid "Path length too long!"
-msgstr "パスが長すぎます!"
+msgstr "パスが長過ぎます!"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
