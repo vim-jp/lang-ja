@@ -51,7 +51,15 @@ src/po/ 及び runtime/lang/ 配下の、上記以外のファイルは基本的
 
         $ vim -S check.vim ja.po
 
-7.  euc-jp と sjis 版の作成
+7.  もう1回msgmergeして、整形と消しすぎたコメントの復活
+
+        $ mv ja.po ja.po.bak
+        $ msgmerge ja.po.bak vim.pot -o ja.po
+        $ vim ja.po
+        :source cleanup.vim
+        :wq
+
+8.  euc-jp と sjis 版の作成
 
     本来なら自動化すべきところなので、今は忘れて良い。
 
