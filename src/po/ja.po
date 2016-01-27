@@ -229,7 +229,7 @@ msgid "E810: Cannot read or write temp files"
 msgstr "E810: 一時ファイルの読込もしくは書込ができません"
 
 msgid "E97: Cannot create diffs"
-msgstr "E97: 差分を作成できません "
+msgstr "E97: 差分を作成できません"
 
 msgid "Patch file"
 msgstr "パッチファイル"
@@ -287,7 +287,7 @@ msgid " Whole line completion (^L^N^P)"
 msgstr " 行(全体)補完 (^L^N^P)"
 
 msgid " File name completion (^F^N^P)"
-msgstr "ファイル名補完 (^F^N^P)"
+msgstr " ファイル名補完 (^F^N^P)"
 
 msgid " Tag completion (^]^N^P)"
 msgstr " タグ補完 (^]^N^P)"
@@ -575,7 +575,7 @@ msgstr "E117: 未知の関数です: %s"
 
 #, c-format
 msgid "E119: Not enough arguments for function: %s"
-msgstr "E119: 関数の引数が少な過ぎます: %s"
+msgstr "E119: 関数の引数が足りません: %s"
 
 #, c-format
 msgid "E120: Using <SID> not in a script context: %s"
@@ -655,14 +655,14 @@ msgid "<empty>"
 msgstr "<空>"
 
 msgid "E240: No connection to Vim server"
-msgstr "E240: Vim サーバへの接続がありません"
+msgstr "E240: Vim サーバーへの接続がありません"
 
 #, c-format
 msgid "E241: Unable to send to %s"
 msgstr "E241: %s へ送ることができません"
 
 msgid "E277: Unable to read a server reply"
-msgstr "E277: サーバの応答がありません"
+msgstr "E277: サーバーの応答がありません"
 
 msgid "remove() argument"
 msgstr "remove() の引数"
@@ -889,7 +889,7 @@ msgstr "E136: viminfo: エラーが多過ぎるので, 以降はスキップし�
 
 #, c-format
 msgid "Reading viminfo file \"%s\"%s%s%s"
-msgstr "viminfoファイル \"%s\"%s%s%s を読込み中 "
+msgstr "viminfoファイル \"%s\"%s%s%s を読込み中"
 
 msgid " info"
 msgstr " 情報"
@@ -1132,7 +1132,7 @@ msgstr "E885: 変更できない sign です: %s"
 
 # Added at 27-Jan-2004.
 msgid " (NOT FOUND)"
-msgstr "  (見つかりません)"
+msgstr " (見つかりません)"
 
 msgid " (not supported)"
 msgstr " (非サポート)"
@@ -1826,7 +1826,7 @@ msgstr " 変換エラー"
 
 #, c-format
 msgid " in line %ld;"
-msgstr "行 %ld;"
+msgstr " 行 %ld;"
 
 msgid "[Device]"
 msgstr "[デバイス]"
@@ -2626,7 +2626,7 @@ msgid ""
 "could not be loaded."
 msgstr ""
 "E895: このコマンドは無効です,ごめんなさい. "
-"MzScheme の racket ベースのモジュールがロードできませんでした."
+"MzScheme の racket/base モジュールがロードできませんでした."
 
 msgid "invalid expression"
 msgstr "無効な式です"
@@ -2910,14 +2910,14 @@ msgid "cannot get line"
 msgstr "行を取得できません"
 
 msgid "Unable to register a command server name"
-msgstr "命令サーバの名前を登録できません"
+msgstr "命令サーバーの名前を登録できません"
 
 msgid "E248: Failed to send command to the destination program"
 msgstr "E248: 目的のプログラムへのコマンド送信に失敗しました"
 
 #, c-format
 msgid "E573: Invalid server id used: %s"
-msgstr "E573: 無効なサーバIDが使われました: %s"
+msgstr "E573: 無効なサーバーIDが使われました: %s"
 
 msgid "E251: VIM instance registry property is badly formed.  Deleted!"
 msgstr "E251: VIM 実体の登録プロパティが不正です. 消去しました!"
@@ -3175,16 +3175,16 @@ msgid "-x\t\t\tEdit encrypted files"
 msgstr "-x\t\t\t暗号化されたファイルを編集する"
 
 msgid "-display <display>\tConnect vim to this particular X-server"
-msgstr "-display <display>\tvimを指定した X サーバに接続する"
+msgstr "-display <display>\tvimを指定した X サーバーに接続する"
 
 msgid "-X\t\t\tDo not connect to X server"
-msgstr "-X\t\t\tXサーバに接続しない"
+msgstr "-X\t\t\tXサーバーに接続しない"
 
 msgid "--remote <files>\tEdit <files> in a Vim server if possible"
-msgstr "--remote <files>\t可能ならばVimサーバで <files> を編集する"
+msgstr "--remote <files>\t可能ならばVimサーバーで <files> を編集する"
 
 msgid "--remote-silent <files>  Same, don't complain if there is no server"
-msgstr "--remote-silent <files>  同上, サーバが無くても警告文を出力しない"
+msgstr "--remote-silent <files>  同上, サーバーが無くても警告文を出力しない"
 
 msgid ""
 "--remote-wait <files>  As --remote but wait for files to have been edited"
@@ -3192,7 +3192,7 @@ msgstr "--remote-wait <files>\t--remote後 ファイルの編集が終わるの�
 
 msgid ""
 "--remote-wait-silent <files>  Same, don't complain if there is no server"
-msgstr "--remote-wait-silent <files>  同上, サーバが無くても警告文を出力しない"
+msgstr "--remote-wait-silent <files>  同上, サーバーが無くても警告文を出力しない"
 
 msgid ""
 "--remote-tab[-wait][-silent] <files>  As --remote but use tab page per file"
@@ -3201,16 +3201,16 @@ msgstr ""
 "ページを開く"
 
 msgid "--remote-send <keys>\tSend <keys> to a Vim server and exit"
-msgstr "--remote-send <keys>\tVimサーバに <keys> を送信して終了する"
+msgstr "--remote-send <keys>\tVimサーバーに <keys> を送信して終了する"
 
 msgid "--remote-expr <expr>\tEvaluate <expr> in a Vim server and print result"
-msgstr "--remote-expr <expr>\tサーバで <expr> を実行して結果を表示する"
+msgstr "--remote-expr <expr>\tサーバーで <expr> を実行して結果を表示する"
 
 msgid "--serverlist\t\tList available Vim server names and exit"
-msgstr "--serverlist\t\tVimサーバ名の一覧を表示して終了する"
+msgstr "--serverlist\t\tVimサーバー名の一覧を表示して終了する"
 
 msgid "--servername <name>\tSend to/become the Vim server <name>"
-msgstr "--servername <name>\tVimサーバ <name> に送信/名前設定する"
+msgstr "--servername <name>\tVimサーバー <name> に送信/名前設定する"
 
 msgid "--startuptime <file>\tWrite startup timing messages to <file>"
 msgstr "--startuptime <file>\t起動にかかった時間の詳細を <file> へ出力する"
@@ -4543,7 +4543,7 @@ msgstr "E245: '%c' は不正な文字です (フォント名 \"%s\")"
 
 #, c-format
 msgid "Opening the X display took %ld msec"
-msgstr "Xサーバへの接続に %ld ミリ秒かかりました"
+msgstr "Xサーバーへの接続に %ld ミリ秒かかりました"
 
 msgid ""
 "\n"
@@ -6229,7 +6229,7 @@ msgid "type  :help register<Enter>   for information "
 msgstr "詳細な情報は           :help register<Enter>  "
 
 msgid "menu  Help->Sponsor/Register  for information    "
-msgstr "詳細はメニューの ヘルプ→スポンサー/登録 を参照して下さい   "
+msgstr "詳細はメニューの ヘルプ→スポンサー/登録 を参照して下さい"
 
 msgid "WARNING: Windows 95/98/ME detected"
 msgstr "   警告: Windows 95/98/Me を検出  "
@@ -6297,7 +6297,7 @@ msgid "gvimext.dll error"
 msgstr "gvimext.dll エラー"
 
 msgid "Path length too long!"
-msgstr "パスが長すぎます!"
+msgstr "パスが長過ぎます!"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
