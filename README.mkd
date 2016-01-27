@@ -10,6 +10,8 @@ scripts/ |(予定) 管理用のスクリプトを置いてあります。
 src/po/, runtime/lang |Vimに付属の日本語翻訳ファイルが置いてあります。
 src/po/ja.po |Vimのメッセージ翻訳ファイルのマスター(UTF-8)
 runtime/lang/menu\_ja\_jp.utf-8.vim |Vimの日本語メニューファイルのマスター(UTF-8)
+runtime/doc/\*-ja.UTF-8.1 |日本語manファイル(UTF-8)
+runtime/doc/\*.1 |原文manファイル
 
 src/po/ 及び runtime/lang/ 配下の、上記以外のファイルは基本的にマスターから変換するものなので通常直接は編集しないでください。
 
@@ -52,3 +54,29 @@ src/po/ 及び runtime/lang/ 配下の、上記以外のファイルは基本的
 7.  euc-jp と sjis 版の作成
 
     本来なら自動化すべきところなので、今は忘れて良い。
+
+
+## manファイル更新手順
+
+1.  原文manファイルの更新
+
+    Vimのソースファイルの runtime/doc/ ディレクトリから、原文manファイルを本リポジトリにコピー。
+
+        $ cd /path/to/vim/runtime/doc
+        $ cp evim.1 vim.1 vimdiff.1 vimtutor.1 xxd.1 /path/to/lang-ja/runtime/doc
+
+2.  翻訳
+
+    原文の差分を見つつ翻訳ファイルを更新する。
+
+        $ git diff | gvim -R -
+
+3.  表示確認
+
+    以下のコマンドで表示を確認できる。
+
+        $ groff -Tutf8 -Dutf8 -mandoc -mja vim-ja.UTF-8.1 | less -R
+
+4.  コミット
+
+    原文と日本語訳は常に同じバージョンがコミットされているように注意すること。
