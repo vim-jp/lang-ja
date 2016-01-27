@@ -1,22 +1,17 @@
-# Japanese translation for Vim			vim:set foldmethod=marker:
+# Japanese translation for Vim
 #
 # Do ":help uganda"  in Vim to read copying and usage conditions.
 # Do ":help credits" in Vim to see a list of people who contributed.
 #
-# Last Change: 2016 Jan 25
-#
-# Copyright (C) 2001-16 MURAOKA Taro <koron.kaoriya@gmail.com>
 # Copyright (C) 2016 vim-jp (http://vim-jp.org/)
 # THIS FILE IS DISTRIBUTED UNDER THE VIM LICENSE.
-#
-# Original translations.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-25 23:17+0900\n"
-"PO-Revision-Date: 2016-01-26 01:12+0900\n"
+"POT-Creation-Date: 2016-01-28 06:16+0900\n"
+"PO-Revision-Date: 2016-01-28 06:25+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: vim-jp (https://github.com/vim-jp/lang-ja)\n"
 "Language: Japanese\n"
@@ -202,6 +197,18 @@ msgstr "%s のサイン:"
 #, c-format
 msgid "    line=%ld  id=%d  name=%s"
 msgstr "    行=%ld  識別子=%d  名前=%s"
+
+msgid "E999: All channels are in use"
+msgstr "E999: 全チャンネルが使用中です"
+
+msgid "E999: Cannot connect to port after retry2"
+msgstr "E999: 2回のリトライをしてもポートに接続できません"
+
+msgid "E999: Cannot connect to port"
+msgstr "E999: ポートに接続できません"
+
+msgid "E999: read from channel"
+msgstr "E999: チャンネルから読み込み"
 
 msgid "E821: File is encrypted with unknown method"
 msgstr "E821: ファイルが未知の方法で暗号化されています"
@@ -540,7 +547,8 @@ msgid "E697: Missing end of List ']': %s"
 msgstr "E697: リスト型の最後に ']' がありません: %s"
 
 msgid "Not enough memory to set references, garbage collection aborted!"
-msgstr "ガーベッジコレクションを中止しました! 参照を作成するのにメモリが不足しました"
+msgstr ""
+"ガーベッジコレクションを中止しました! 参照を作成するのにメモリが不足しました"
 
 #, c-format
 msgid "E720: Missing colon in Dictionary: %s"
@@ -795,9 +803,11 @@ msgstr "E746: 関数名がスクリプトのファイル名と一致しません
 msgid "E129: Function name required"
 msgstr "E129: 関数名が要求されます"
 
+#, c-format
 msgid "E128: Function name must start with a capital or \"s:\": %s"
 msgstr "E128: 関数名は大文字か \"s:\" で始まらなければなりません: %s"
 
+#, c-format
 msgid "E884: Function name cannot contain a colon: %s"
 msgstr "E884: 関数名にはコロンは含められません: %s"
 
@@ -916,6 +926,7 @@ msgstr "E138: viminfoファイル %s を保存できません!"
 msgid "Writing viminfo file \"%s\""
 msgstr "viminfoファイル \"%s\" を書込み中"
 
+#, c-format
 msgid "E886: Can't rename viminfo file to %s!"
 msgstr "E886: viminfoファイルを %s へ名前変更できません!"
 
@@ -1377,6 +1388,7 @@ msgstr "E841: 予約名なので, ユーザー定義コマンドに利用でき�
 msgid "E184: No such user-defined command: %s"
 msgstr "E184: そのユーザー定義コマンドはありません: %s"
 
+#, c-format
 msgid "E180: Invalid address type value: %s"
 msgstr "E180: 無効なアドレスタイプ値です: %s"
 
@@ -2625,8 +2637,8 @@ msgid ""
 "E895: Sorry, this command is disabled, the MzScheme's racket/base module "
 "could not be loaded."
 msgstr ""
-"E895: このコマンドは無効です,ごめんなさい. "
-"MzScheme の racket/base モジュールがロードできませんでした."
+"E895: このコマンドは無効です,ごめんなさい. MzScheme の racket/base モジュール"
+"がロードできませんでした."
 
 msgid "invalid expression"
 msgstr "無効な式です"
@@ -2706,8 +2718,8 @@ msgid ""
 "E887: Sorry, this command is disabled, the Python's site module could not be "
 "loaded."
 msgstr ""
-"E887: このコマンドは無効です,ごめんなさい. "
-"Python の site モジュールをロードできませんでした."
+"E887: このコマンドは無効です,ごめんなさい. Python の site モジュールをロード"
+"できませんでした."
 
 # Added at 07-Feb-2004.
 msgid "E659: Cannot invoke Python recursively"
@@ -3192,7 +3204,8 @@ msgstr "--remote-wait <files>\t--remote後 ファイルの編集が終わるの�
 
 msgid ""
 "--remote-wait-silent <files>  Same, don't complain if there is no server"
-msgstr "--remote-wait-silent <files>  同上, サーバーが無くても警告文を出力しない"
+msgstr ""
+"--remote-wait-silent <files>  同上, サーバーが無くても警告文を出力しない"
 
 msgid ""
 "--remote-tab[-wait][-silent] <files>  As --remote but use tab page per file"
@@ -4108,19 +4121,10 @@ msgstr "E346: cdpathにはこれ以上 \"%s\" というファイルがありま�
 msgid "E347: No more file \"%s\" found in path"
 msgstr "E347: パスにはこれ以上 \"%s\" というファイルがありません"
 
-msgid "Cannot connect to Netbeans #2"
-msgstr "Netbeans #2 に接続できません"
-
-msgid "Cannot connect to Netbeans"
-msgstr "Netbeans に接続できません"
-
 #, c-format
 msgid "E668: Wrong access mode for NetBeans connection info file: \"%s\""
 msgstr ""
 "E668: NetBeansの接続情報ファイルのアクセスモードに問題があります: \"%s\""
-
-msgid "read from Netbeans socket"
-msgstr "Netbeans のソケットを読込み"
 
 #, c-format
 msgid "E658: NetBeans connection lost for buffer %ld"
@@ -4572,18 +4576,13 @@ msgstr ""
 "\n"
 "セキュリティコンテキストを設定できません "
 
-msgid "Could not set security context "
-msgstr "セキュリティコンテキストを設定できません "
+#, c-format
+msgid "Could not set security context %s for %s"
+msgstr "セキュリティコンテキスト %s を %s に設定できません"
 
-msgid " for "
-msgstr " for "
-
-#. no enough size OR unexpected error
-msgid "Could not get security context "
-msgstr "セキュリティコンテキストを取得できません "
-
-msgid ". Removing it!\n"
-msgstr ". 削除します!\n"
+#, c-format
+msgid "Could not get security context %s for %s. Removing it!"
+msgstr "セキュリティコンテキスト %s を %s から取得できません. 削除します!"
 
 msgid ""
 "\n"
@@ -4862,6 +4861,7 @@ msgstr "E554: %s{...} 内に文法エラーがあります"
 msgid "External submatches:\n"
 msgstr "外部の部分該当:\n"
 
+#, c-format
 msgid "E888: (NFA regexp) cannot repeat %s"
 msgstr "E888: (NFA 正規表現) 繰り返せません %s"
 
@@ -4883,6 +4883,7 @@ msgid "E866: (NFA regexp) Misplaced %c"
 msgstr "E866: (NFA 正規表現) 位置が誤っています: %c"
 
 #
+#, c-format
 msgid "E877: (NFA regexp) Invalid character class: %ld"
 msgstr "E877: (NFA 正規表現) 無効な文字クラス: %ld"
 
@@ -5387,9 +5388,11 @@ msgstr "実行しました!"
 msgid "E765: 'spellfile' does not have %ld entries"
 msgstr "E765: 'spellfile' には %ld 個のエントリはありません"
 
+#, c-format
 msgid "Word '%.*s' removed from %s"
 msgstr "単語 '%.*s' が %s から削除されました"
 
+#, c-format
 msgid "Word '%.*s' added to %s"
 msgstr "単語 '%.*s' が %s へ追加されました"
 
@@ -5531,6 +5534,7 @@ msgstr "E847: 構文の取り込み(include)が多過ぎます"
 msgid "E789: Missing ']': %s"
 msgstr "E789: ']' がありません: %s"
 
+#, c-format
 msgid "E890: trailing char after ']': %s]%s"
 msgstr "E890: ']' の後ろに余分な文字があります: %s]%s"
 
@@ -6771,6 +6775,7 @@ msgstr "内部エラー: リストに十分な要素がありません"
 msgid "internal error: failed to add item to list"
 msgstr "内部エラー: リストへの要素追加に失敗しました"
 
+#, c-format
 msgid "attempt to assign sequence of size %d to extended slice of size %d"
 msgstr "長さ %d のスライスを %d の拡張スライスに割り当てようとしました"
 
