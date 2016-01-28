@@ -4873,7 +4873,7 @@ msgstr ""
 "択されます。"
 
 msgid "Switching to backtracking RE engine for pattern: "
-msgstr "次のパターンのためにバックトラッキング正規表現エンジンに切り替えます: "
+msgstr "次のパターンにバックトラッキング RE エンジンを適用します: %s"
 
 msgid "E865: (NFA) Regexp end encountered prematurely"
 msgstr "E865: (NFA) 期待より早く正規表現の終端に到達しました"
