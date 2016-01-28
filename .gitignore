@@ -1,2 +1,3 @@
-/src/po/vim.pot
+/src/po/*.po.bak
 /src/po/*.po.old
+/src/po/vim.pot
