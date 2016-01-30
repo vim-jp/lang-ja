@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-28 06:16+0900\n"
-"PO-Revision-Date: 2016-01-28 06:25+0900\n"
+"PO-Revision-Date: 2016-01-28 23:30+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: vim-jp (https://github.com/vim-jp/lang-ja)\n"
 "Language: Japanese\n"
@@ -3816,7 +3816,7 @@ msgstr ""
 "\n"
 "(1) 別のプログラムが同じファイルを編集しているかもしれません.\n"
 "    この場合には, 変更をしてしまうと1つのファイルに対して異なる2つの\n"
-"    インスタンスができてしまうので, そうしないように気を付けてください.\n"
+"    インスタンスができてしまうので, そうしないように気をつけてください.\n"
 
 msgid "  Quit, or continue with caution.\n"
 msgstr "    終了するか, 注意しながら続けてください.\n"
@@ -4873,7 +4873,7 @@ msgstr ""
 "択されます。"
 
 msgid "Switching to backtracking RE engine for pattern: "
-msgstr "次のパターンのためにバックトラッキング正規表現エンジンに切り替えます: "
+msgstr "次のパターンにバックトラッキング RE エンジンを適用します: %s"
 
 msgid "E865: (NFA) Regexp end encountered prematurely"
 msgstr "E865: (NFA) 期待より早く正規表現の終端に到達しました"
@@ -6203,19 +6203,19 @@ msgid "type  :help cp-default<Enter> for info on this"
 msgstr "詳細な情報は           :help cp-default<Enter>"
 
 msgid "menu  Help->Orphans           for information    "
-msgstr "詳細はメニューの ヘルプ→孤児 を参照して下さい   "
+msgstr "詳細はメニューの ヘルプ->孤児 を参照して下さい   "
 
 msgid "Running modeless, typed text is inserted"
 msgstr "モード無で実行中, タイプした文字が挿入されます"
 
 msgid "menu  Edit->Global Settings->Toggle Insert Mode  "
-msgstr "メニューの 編集→全体設定→挿入(初心者)モード切替 "
+msgstr "メニューの 編集->全体設定->挿入(初心者)モード切替 "
 
 msgid "                              for two modes      "
 msgstr "                              でモード有に       "
 
 msgid "menu  Edit->Global Settings->Toggle Vi Compatible"
-msgstr "メニューの 編集→全体設定→Vi互換モード切替      "
+msgstr "メニューの 編集->全体設定->Vi互換モード切替      "
 
 msgid "                              for Vim defaults   "
 msgstr "                              でVimとして動作    "
@@ -6233,7 +6233,7 @@ msgid "type  :help register<Enter>   for information "
 msgstr "詳細な情報は           :help register<Enter>  "
 
 msgid "menu  Help->Sponsor/Register  for information    "
-msgstr "詳細はメニューの ヘルプ→スポンサー/登録 を参照して下さい"
+msgstr "詳細はメニューの ヘルプ->スポンサー/登録 を参照して下さい"
 
 msgid "WARNING: Windows 95/98/ME detected"
 msgstr "   警告: Windows 95/98/Me を検出  "

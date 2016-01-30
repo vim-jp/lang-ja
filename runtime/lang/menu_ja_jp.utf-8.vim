@@ -1,10 +1,9 @@
 " vi:set ts=8 sts=8 sw=8 tw=0:
 "
 " Menu Translations:	Japanese (UTF-8)
-" Translated By:	MURAOKA Taro  <koron.kaoriya@gmail.com>
-" Last Change:		26-Jan-2016.
+" Last Translator:	MURAOKA Taro  <koron.kaoriya@gmail.com>
+" Last Change:		28-Jan-2016.
 "
-" Copyright (C) 2001-16 MURAOKA Taro <koron.kaoriya@gmail.com>
 " Copyright (C) 2016 vim-jp (http://vim-jp.org/)
 " THIS FILE IS DISTRIBUTED UNDER THE VIM LICENSE.
 
@@ -139,7 +138,7 @@ menutrans &Tools			ツール(&T)
 menutrans &Jump\ to\ this\ tag<Tab>g^]	タグジャンプ(&J)<Tab>g^]
 menutrans Jump\ &back<Tab>^T		戻る(&B)<Tab>^T
 menutrans Build\ &Tags\ File		タグファイル作成(&T)
-menutrans &Make<Tab>:make		メイク(&M)<Tab>:make
+menutrans &Make<Tab>:make		ビルド(&M)<Tab>:make
 menutrans &List\ Errors<Tab>:cl		エラーリスト(&L)<Tab>:cl
 menutrans L&ist\ Messages<Tab>:cl!	メッセージリスト(&I)<Tab>:cl!
 menutrans &Next\ Error<Tab>:cn		次のエラーへ(&N)<Tab>:cn
