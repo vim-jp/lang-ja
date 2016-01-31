@@ -1,5 +1,9 @@
 /src/po/*.po.bak
 /src/po/*.po.old
-/src/po/vim.pot
-/src/po/sjiscorr.exe
 /src/po/sjiscorr
+/src/po/sjiscorr.exe
+/src/po/vim.pot
+/vim-lang-ja*.tar.gz
+/vim-lang-ja*.tar.bz2
+/vim-lang-ja*.tar.xz
+/vim-lang-ja*/
