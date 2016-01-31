@@ -5,6 +5,7 @@
 " Last Change:		28-Jan-2016.
 "
 " Copyright (C) 2016 vim-jp (http://vim-jp.org/)
+"
 " THIS FILE IS DISTRIBUTED UNDER THE VIM LICENSE.
 
 " Quit when menu translations have already been done.
