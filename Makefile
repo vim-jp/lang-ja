@@ -5,6 +5,8 @@ ARCHIVE_FILE = $(ARCHIVE).tar.$(ARCHIVE_EXT)
 
 archive: $(ARCHIVE_FILE)
 
+archive-dir: $(ARCHIVE_DIR)
+
 release: force-update-all
 	@rm -rf $(ARCHIVE_DIR) $(ARCHIVE_FILE)
 	$(MAKE) $(ARCHIVE_FILE)
