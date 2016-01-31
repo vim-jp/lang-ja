@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-28 06:16+0900\n"
-"PO-Revision-Date: 2016-01-28 23:30+0900\n"
+"POT-Creation-Date: 2016-01-31 23:04+0900\n"
+"PO-Revision-Date: 2016-01-31 23:10+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: vim-jp (https://github.com/vim-jp/lang-ja)\n"
 "Language: Japanese\n"
@@ -615,6 +615,12 @@ msgstr "E785: complete() は挿入モードでしか利用できません"
 #.
 msgid "&Ok"
 msgstr "&Ok"
+
+msgid "E999: Invalid callback argument"
+msgstr "E999: 無効なコールバック引数です"
+
+msgid "E999: not an open channel"
+msgstr "E999: 開いていないチャンネルです"
 
 msgid "extend() argument"
 msgstr "extend() の引数"
