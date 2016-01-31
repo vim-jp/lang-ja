@@ -4,7 +4,8 @@
 " Last Translator:	MURAOKA Taro  <koron.kaoriya@gmail.com>
 " Last Change:		28-Jan-2016.
 "
-" Copyright (C) 2016 vim-jp (http://vim-jp.org/)
+" Copyright (C) 2001-2016 MURAOKA Taro <koron.kaoriya@gmail.com>,
+"			  vim-jp (http://vim-jp.org/)
 "
 " THIS FILE IS DISTRIBUTED UNDER THE VIM LICENSE.
 
