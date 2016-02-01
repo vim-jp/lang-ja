@@ -4,7 +4,7 @@
 # Do ":help credits" in Vim to see a list of people who contributed.
 #
 # Copyright (C) 2001-2016 MURAOKA Taro <koron.kaoriya@gmail.com>,
-#			  vim-jp (http://vim-jp.org/)
+# 			  vim-jp (http://vim-jp.org/)
 #
 # THIS FILE IS DISTRIBUTED UNDER THE VIM LICENSE.
 #
@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-31 23:04+0900\n"
-"PO-Revision-Date: 2016-01-31 23:30+0900\n"
+"POT-Creation-Date: 2016-02-01 09:02+0900\n"
+"PO-Revision-Date: 2016-02-01-09:08+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: vim-jp (https://github.com/vim-jp/lang-ja)\n"
 "Language: Japanese\n"
@@ -202,17 +202,17 @@ msgstr "%s のサイン:"
 msgid "    line=%ld  id=%d  name=%s"
 msgstr "    行=%ld  識別子=%d  名前=%s"
 
-msgid "E999: All channels are in use"
-msgstr "E999: 全チャンネルが使用中です"
+msgid "E897: All channels are in use"
+msgstr "E897: 全チャンネルが使用中です"
 
-msgid "E999: Cannot connect to port after retry2"
-msgstr "E999: 2回のリトライをしてもポートに接続できません"
+msgid "E899: Cannot connect to port after retry2"
+msgstr "E899: 2回のリトライをしてもポートに接続できません"
 
-msgid "E999: Cannot connect to port"
-msgstr "E999: ポートに接続できません"
+msgid "E902: Cannot connect to port"
+msgstr "E902: ポートに接続できません"
 
-msgid "E999: read from channel"
-msgstr "E999: チャンネルから読み込み"
+msgid "E896: read from channel"
+msgstr "E896: チャンネルから読み込み"
 
 msgid "E821: File is encrypted with unknown method"
 msgstr "E821: ファイルが未知の方法で暗号化されています"
@@ -4883,7 +4883,7 @@ msgstr ""
 "択されます。"
 
 msgid "Switching to backtracking RE engine for pattern: "
-msgstr "次のパターンにバックトラッキング RE エンジンを適用します: %s"
+msgstr "次のパターンにバックトラッキング RE エンジンを適用します: "
 
 msgid "E865: (NFA) Regexp end encountered prematurely"
 msgstr "E865: (NFA) 期待より早く正規表現の終端に到達しました"
