@@ -24,11 +24,9 @@ src/po/ 及び runtime/lang/ 配下の、上記以外のファイルは基本的
         $ cd src/po
         $ make vim.pot
 
-2.  ja.po に vim.pot をマージ (古いのは ja.po.old へ退避)
+2.  ja.po に vim.pot をマージ (古いのは ja.po.old へ退避します)
 
         $ make merge
-        $ mv ja.po ja.po.old
-        $ mv ja.po.new ja.po
 
 3.  ja.po のコピーライトやヘッダーを適宜修正
 
@@ -55,8 +53,6 @@ src/po/ 及び runtime/lang/ 配下の、上記以外のファイルは基本的
 7.  もう1回マージして、整形と消しすぎたコメントの復活
 
         $ make merge
-        $ mv ja.po ja.po.bak
-        $ mv ja.po.new ja.po
         $ vim ja.po
         :source cleanup.vim
         :wq
