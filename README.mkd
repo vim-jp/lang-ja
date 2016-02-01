@@ -21,10 +21,9 @@ runtime/doc/\*.1 |原文manファイル
         $ cd src/po
         $ make vim.pot
 
-2.  ja.po に vim.pot をマージ (古いのは ja.po.old へ退避)
+2.  ja.po に vim.pot をマージ (古いのは ja.po.old へ退避します)
 
-        $ mv ja.po ja.po.old
-        $ msgmerge ja.po.old vim.pot -o ja.po
+        $ make merge
 
 3.  ja.po のコピーライトやヘッダーを適宜修正
 
@@ -48,10 +47,9 @@ runtime/doc/\*.1 |原文manファイル
 
         $ vim -S check.vim ja.po
 
-7.  もう1回msgmergeして、整形と消しすぎたコメントの復活
+7.  もう1回マージして、整形と消しすぎたコメントの復活
 
-        $ mv ja.po ja.po.bak
-        $ msgmerge ja.po.bak vim.pot -o ja.po
+        $ make merge
         $ vim ja.po
         :source cleanup.vim
         :wq

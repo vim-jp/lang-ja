@@ -20,11 +20,13 @@ force: touch
 touch: $(MASTER_PO)
 	touch $<
 
-merge: ja.po.new
+merge: ja.po
 
 clean:
 	rm -f sjiscorr sjiscorr.exe
 	rm -f ja.sjis.po ja.euc-jp.po
 
-ja.po.new: vim.pot
-	msgmerge ja.po vim.pot -o $@
+ja.po: vim.pot
+	rm -f $@.old
+	mv $@ $@.old
+	msgmerge $@.old $< -o $@
