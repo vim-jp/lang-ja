@@ -14,6 +14,8 @@ release: force-update-all
 
 clean:
 	rm -rf $(ARCHIVE_DIR) $(ARCHIVE_FILE)
+	$(MAKE) -C src/po clean
+	$(MAKE) -C runtime/lang clean
 
 distclean: clean
 	rm -f *.tar.bz2 *.tar.gz *.tar.xz
