@@ -15,3 +15,6 @@ force: touch
 
 touch: $(MASTER_MENU)
 	touch $<
+
+clean:
+	rm -f menu_ja_jp.euc-jp.vim menu_japanese_japan.932.vim

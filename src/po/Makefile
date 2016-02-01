@@ -24,6 +24,7 @@ merge: ja.po.new
 
 clean:
 	rm -f sjiscorr sjiscorr.exe
+	rm -f ja.sjis.po ja.euc-jp.po
 
 ja.po.new: vim.pot
 	msgmerge ja.po vim.pot -o $@
