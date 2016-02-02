@@ -35,7 +35,7 @@ force-update-lang:
 	$(MAKE) -C runtime/lang force
 
 force-update-tutor:
-	cd runtime/tutor && $(MAKE) force
+	$(MAKE) -C runtime/tutor force
 
 $(ARCHIVE_DIR):
 	mkdir -p $@/src/po
