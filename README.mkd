@@ -11,6 +11,8 @@ src/po/ja.po |Vimのメッセージ翻訳ファイルのマスター(UTF-8)
 runtime/lang/menu\_ja\_jp.utf-8.vim |Vimの日本語メニューファイルのマスター(UTF-8)
 runtime/doc/\*-ja.UTF-8.1 |日本語manファイル(UTF-8)
 runtime/doc/\*.1 |原文manファイル
+runtime/tutor/tutor.ja.utf-8 |日本語チュートリアルファイル(UTF-8)
+runtime/tutor/tutor |原文チュートリアルファイル
 
 ## ja.po 更新手順
 
@@ -76,6 +78,25 @@ runtime/doc/\*.1 |原文manファイル
         $ groff -Tutf8 -Dutf8 -mandoc -mja vim-ja.UTF-8.1 | less -R
 
 4.  コミット
+
+    原文と日本語訳は常に同じバージョンがコミットされているように注意すること。
+
+## チュートリアルファイル更新手順
+
+1.  原文チュートリアルファイルの更新
+
+    Vimのソースファイルの runtime/tutor/ ディレクトリから、原文チュートリアルファイルを本リポジトリにコピー。
+
+        $ cd /path/to/vim/runtime/tutor
+        $ cp tutor /path/to/lang-ja/runtime/tutor
+
+2.  翻訳
+
+    原文の差分を見つつ翻訳ファイルを更新する。
+
+        $ git diff | gvim -R -
+
+3.  コミット
 
     原文と日本語訳は常に同じバージョンがコミットされているように注意すること。
 
