@@ -9,8 +9,13 @@ archive-dir: $(ARCHIVE_DIR)
 
 release: force-update-all
 	@rm -rf $(ARCHIVE_DIR) $(ARCHIVE_FILE)
+	$(MAKE) test
 	$(MAKE) $(ARCHIVE_FILE)
 	rm -rf $(ARCHIVE_DIR)
+
+test:
+	$(MAKE) -C src/po test
+	$(MAKE) -C runtime/lang test
 
 clean:
 	rm -rf $(ARCHIVE_DIR) $(ARCHIVE_FILE)
@@ -24,10 +29,10 @@ distclean: clean
 force-update-all: force-update-po force-update-lang force-update-tutor
 
 force-update-po:
-	cd src/po && $(MAKE) force
+	$(MAKE) -C src/po force
 
 force-update-lang:
-	cd runtime/lang && $(MAKE) force
+	$(MAKE) -C runtime/lang force
 
 force-update-tutor:
 	cd runtime/tutor && $(MAKE) force

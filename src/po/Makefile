@@ -1,4 +1,13 @@
 MASTER_PO = ja.po
+TEST_TARGETS = ja.mo \
+	       ja.euc-jp.mo \
+	       ja.sjis.mo
+
+MSGFMT = OLD_PO_FILE_INPUT=yes msgfmt
+
+.SUFFIXES: .po .mo
+
+test: $(TEST_TARGETS)
 
 update: ja.sjis.po ja.euc-jp.po
 
@@ -25,8 +34,12 @@ merge: ja.po
 clean:
 	rm -f sjiscorr sjiscorr.exe
 	rm -f ja.sjis.po ja.euc-jp.po
+	rm -f *.mo
 
 ja.po: vim.pot
 	rm -f $@.old
 	mv $@ $@.old
 	msgmerge $@.old $< -o $@
+
+.po.mo:
+	$(MSGFMT) -v -o $@ $<
