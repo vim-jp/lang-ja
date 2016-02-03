@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-02 22:13+0900\n"
-"PO-Revision-Date: 2016-02-01-09:08+0900\n"
+"POT-Creation-Date: 2016-02-03 20:15+0900\n"
+"PO-Revision-Date: 2016-02-03-20:18+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: vim-jp (https://github.com/vim-jp/lang-ja)\n"
 "Language: Japanese\n"
@@ -606,6 +606,12 @@ msgstr "add() の引数"
 msgid "E699: Too many arguments"
 msgstr "E699: 引数が多過ぎます"
 
+msgid "E906: not an open channel"
+msgstr "E906: 開いていないチャンネルです"
+
+msgid "E999: Invalid callback argument"
+msgstr "E999: 無効なコールバック引数です"
+
 msgid "E785: complete() can only be used in Insert mode"
 msgstr "E785: complete() は挿入モードでしか利用できません"
 
@@ -616,12 +622,6 @@ msgstr "E785: complete() は挿入モードでしか利用できません"
 #.
 msgid "&Ok"
 msgstr "&Ok"
-
-msgid "E999: Invalid callback argument"
-msgstr "E999: 無効なコールバック引数です"
-
-msgid "E906: not an open channel"
-msgstr "E906: 開いていないチャンネルです"
 
 msgid "extend() argument"
 msgstr "extend() の引数"
