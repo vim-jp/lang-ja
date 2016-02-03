@@ -969,8 +969,8 @@ NOTE: 補完は多くのコマンドで動作します。そして CTRL-D と <T
 
   Modified for Vim by Bram Moolenaar.
 
-  日本語訳  松本 泰弘  <mattn_jp@hotmail.com>
-  監修      村岡 太郎  <koron@tka.att.ne.jp>
+  日本語訳  松本 泰弘  <mattn.jp@gmail.com>
+  監修      村岡 太郎  <koron.kaoriya@gmail.com>
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  vi:set ts=8 sts=4 sw=4 tw=78:
