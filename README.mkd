@@ -51,7 +51,7 @@ runtime/tutor/tutor |原文チュートリアルファイル
 
 7.  もう1回マージして、整形と消しすぎたコメントの復活
 
-        $ make merge
+        $ make merge-force
         $ vim ja.po
         :source cleanup.vim
         :wq

@@ -31,6 +31,10 @@ touch: $(MASTER_PO)
 
 merge: ja.po
 
+merge-force:
+	touch vim.pot
+	@$(MAKE) merge
+
 clean:
 	rm -f sjiscorr sjiscorr.exe
 	rm -f ja.sjis.po ja.euc-jp.po
