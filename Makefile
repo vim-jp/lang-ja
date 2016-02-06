@@ -13,6 +13,9 @@ release: force-update-all
 	$(MAKE) $(ARCHIVE_FILE)
 	rm -rf $(ARCHIVE_DIR)
 
+release-today:
+	$(MAKE) release ARCHIVE=vim-lang-ja-`date +%Y%m%d`
+
 test:
 	$(MAKE) -C src/po test
 	$(MAKE) -C runtime/lang test
