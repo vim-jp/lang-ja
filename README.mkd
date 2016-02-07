@@ -104,7 +104,7 @@ runtime/tutor/tutor |原文チュートリアルファイル
 
 以下を実行してください。
 
-    $ make release ARCHIVE=vim-lang-ja-`date +%Y%m%d`
+    $ make release-today
 
 `vim-lang-ja-20160131.tar.xz` のようなアーカイブファイルができます。
 `20160131` の部分は実行した日付に置き換わります。
