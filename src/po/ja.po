@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-03 20:15+0900\n"
-"PO-Revision-Date: 2016-02-03-20:18+0900\n"
+"POT-Creation-Date: 2016-03-10 23:16+0900\n"
+"PO-Revision-Date: 2016-03-10-23:35+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: vim-jp (https://github.com/vim-jp/lang-ja)\n"
 "Language: Japanese\n"
@@ -202,17 +202,8 @@ msgstr "%s のサイン:"
 msgid "    line=%ld  id=%d  name=%s"
 msgstr "    行=%ld  識別子=%d  名前=%s"
 
-msgid "E897: All channels are in use"
-msgstr "E897: 全チャンネルが使用中です"
-
-msgid "E899: Cannot connect to port after retry2"
-msgstr "E899: 2回のリトライをしてもポートに接続できません"
-
 msgid "E902: Cannot connect to port"
 msgstr "E902: ポートに接続できません"
-
-msgid "E896: read from channel"
-msgstr "E896: チャンネルから読み込み"
 
 msgid "E821: File is encrypted with unknown method"
 msgstr "E821: ファイルが未知の方法で暗号化されています"
@@ -526,6 +517,9 @@ msgstr "E110: ')' が見つかりません"
 msgid "E695: Cannot index a Funcref"
 msgstr "E695: 関数参照型はインデックスできません"
 
+msgid "E909: Cannot index a special variable"
+msgstr "E909: 特殊変数はインデックスできません"
+
 #, c-format
 msgid "E112: Option name missing: %s"
 msgstr "E112: オプション名がありません: %s"
@@ -606,11 +600,18 @@ msgstr "add() の引数"
 msgid "E699: Too many arguments"
 msgstr "E699: 引数が多過ぎます"
 
+msgid "E999: Invalid callback argument"
+msgstr "E999: 無効なコールバック引数です"
+
 msgid "E906: not an open channel"
 msgstr "E906: 開いていないチャンネルです"
 
-msgid "E999: Invalid callback argument"
-msgstr "E999: 無効なコールバック引数です"
+#, c-format
+msgid "E917: Cannot use a callback with %s()"
+msgstr "E917: %s() にコールバックは使えません"
+
+msgid "E912: cannot use ch_evalexpr()/ch_sendexpr() with a raw or nl channel"
+msgstr "E912: 生や nl チャンネルに ch_evalexpr()/ch_sendexpr は使えません"
 
 msgid "E785: complete() can only be used in Insert mode"
 msgstr "E785: complete() は挿入モードでしか利用できません"
@@ -659,6 +660,19 @@ msgstr "insert() の引数"
 
 msgid "E786: Range not allowed"
 msgstr "E786: 範囲指定は許可されていません"
+
+msgid "E916: not a valid job"
+msgstr "E916: 有効なジョブではありません"
+
+msgid "E920: -io file requires -name to be set"
+msgstr "E920: -io ファイルは -name の設定が必要です"
+
+msgid "E915: in-io buffer requires in-buf or in-name to be set"
+msgstr "E915: in-io バッファは in-buf か in-name の設定が必要です"
+
+#, c-format
+msgid "E918: buffer must be loaded: %s"
+msgstr "E918: バッファがロードされてなければなりません: %s"
 
 msgid "E701: Invalid type for len()"
 msgstr "E701: len() には無効な型です"
@@ -725,6 +739,12 @@ msgstr "E745: リスト型を数値として扱っています"
 msgid "E728: Using a Dictionary as a Number"
 msgstr "E728: 辞書型を数値として扱っています"
 
+msgid "E910: Using a Job as a Number"
+msgstr "E910: ジョブを数値として扱っています"
+
+msgid "E913: Using a Channel as a Number"
+msgstr "E913: チャンネルを数値として扱っています。"
+
 msgid "E891: Using a Funcref as a Float"
 msgstr "E891: 関数参照型を浮動小数点数として扱っています。"
 
@@ -737,6 +757,15 @@ msgstr "E893: リスト型を浮動小数点数として扱っています"
 msgid "E894: Using a Dictionary as a Float"
 msgstr "E894: 辞書型を浮動小数点数として扱っています"
 
+msgid "E907: Using a special value as a Float"
+msgstr "E907: 特殊値を浮動小数点数として扱っています"
+
+msgid "E911: Using a Job as a Float"
+msgstr "E911: ジョブを浮動小数点数として扱っています"
+
+msgid "E914: Using a Channel as a Float"
+msgstr "E914: チャンネルを浮動小数点数として扱っています。"
+
 msgid "E729: using Funcref as a String"
 msgstr "E729: 関数参照型を文字列として扱っています"
 
@@ -745,6 +774,9 @@ msgstr "E730: リスト型を文字列として扱っています"
 
 msgid "E731: using Dictionary as a String"
 msgstr "E731: 辞書型を文字列として扱っています"
+
+msgid "E908: using an invalid value as a String"
+msgstr "E908: 向こうな値を文字列として扱っています"
 
 #, c-format
 msgid "E706: Variable type mismatch for: %s"
@@ -1233,8 +1265,8 @@ msgid "Searching for \"%s\""
 msgstr "\"%s\" を検索中"
 
 #, c-format
-msgid "not found in 'runtimepath': \"%s\""
-msgstr "'runtimepath' の中には見つかりません: \"%s\""
+msgid "not found in '%s': \"%s\""
+msgstr "'%s' の中にはありません: \"%s\""
 
 msgid "Source Vim script"
 msgstr "Vimスクリプトの取込み"
@@ -2170,6 +2202,18 @@ msgstr "Vim ダイアログ"
 msgid "E232: Cannot create BalloonEval with both message and callback"
 msgstr "E232: メッセージとコールバックのある BalloonEval を作成できません"
 
+msgid "_Cancel"
+msgstr "キャンセル(_C)"
+
+msgid "_Save"
+msgstr "別名で保存(_S)"
+
+msgid "_Open"
+msgstr "開く (_O)"
+
+msgid "_OK"
+msgstr "_OK"
+
 msgid ""
 "&Yes\n"
 "&No\n"
@@ -2178,6 +2222,12 @@ msgstr ""
 "はい(&Y)\n"
 "いいえ(&N)\n"
 "キャンセル(&C)"
+
+msgid "Yes"
+msgstr "はい"
+
+msgid "No"
+msgstr "いいえ"
 
 msgid "Input _Methods"
 msgstr "インプットメソッド"
@@ -2212,17 +2262,17 @@ msgstr "上"
 msgid "Down"
 msgstr "下"
 
-#. 'Find Next' button
 msgid "Find Next"
 msgstr "次を検索"
 
-#. 'Replace' button
 msgid "Replace"
 msgstr "置換"
 
-#. 'Replace All' button
 msgid "Replace All"
 msgstr "全て置換"
+
+msgid "_Close"
+msgstr "閉じる(_C)"
 
 msgid "Vim: Received \"die\" request from session manager\n"
 msgstr "Vim: セッションマネージャから \"die\" 要求を受け取りました\n"
@@ -2275,17 +2325,6 @@ msgstr "全て置換(&A)"
 msgid "&Undo"
 msgstr "アンドゥ(&U)"
 
-#, c-format
-msgid "E671: Cannot find window title \"%s\""
-msgstr "E671: タイトルが \"%s\" のウィンドウは見つかりません"
-
-#, c-format
-msgid "E243: Argument not supported: \"-%s\"; Use the OLE version."
-msgstr "E243: 引数はサポートされません: \"-%s\"; OLE版を使用してください."
-
-msgid "E672: Unable to open window inside MDI application"
-msgstr "E672: MDIアプリの中ではウィンドウを開けません"
-
 msgid "Open tab..."
 msgstr "タブページを開く"
 
@@ -2302,6 +2341,17 @@ msgstr "使われません"
 
 msgid "Directory\t*.nothing\n"
 msgstr "ディレクトリ\t*.nothing\n"
+
+#, c-format
+msgid "E671: Cannot find window title \"%s\""
+msgstr "E671: タイトルが \"%s\" のウィンドウは見つかりません"
+
+#, c-format
+msgid "E243: Argument not supported: \"-%s\"; Use the OLE version."
+msgstr "E243: 引数はサポートされません: \"-%s\"; OLE版を使用してください."
+
+msgid "E672: Unable to open window inside MDI application"
+msgstr "E672: MDIアプリの中ではウィンドウを開けません"
 
 msgid "Vim E458: Cannot allocate colormap entry, some colors may be incorrect"
 msgstr "Vim E458: 色指定が正しくないのでエントリを割り当てられません"
@@ -2769,95 +2819,6 @@ msgstr "E272: 取り扱われなかった例外があります"
 msgid "E273: unknown longjmp status %d"
 msgstr "E273: 未知のlongjmp状態: %d"
 
-msgid "Toggle implementation/definition"
-msgstr "実装と定義を切り替える"
-
-msgid "Show base class of"
-msgstr "次のクラスの基底を表示"
-
-msgid "Show overridden member function"
-msgstr "オーバーライドされたメンバ関数を表示"
-
-msgid "Retrieve from file"
-msgstr "ファイルから回復する"
-
-msgid "Retrieve from project"
-msgstr "プロジェクトから回復する"
-
-msgid "Retrieve from all projects"
-msgstr "全てのプロジェクトから回復する"
-
-msgid "Retrieve"
-msgstr "回復"
-
-msgid "Show source of"
-msgstr "次のソースを表示する"
-
-msgid "Find symbol"
-msgstr "見つけたシンボル"
-
-msgid "Browse class"
-msgstr "クラスを参照"
-
-msgid "Show class in hierarchy"
-msgstr "階層でクラスを表示"
-
-msgid "Show class in restricted hierarchy"
-msgstr "限定された階層でクラスを表示"
-
-msgid "Xref refers to"
-msgstr "Xref の参照先"
-
-msgid "Xref referred by"
-msgstr "Xref が参照される"
-
-msgid "Xref has a"
-msgstr "Xref が次のものをもっています"
-
-msgid "Xref used by"
-msgstr "Xref が使用される"
-
-msgid "Show docu of"
-msgstr "次の文章を表示"
-
-msgid "Generate docu for"
-msgstr "次の文章を生成"
-
-msgid ""
-"Cannot connect to SNiFF+. Check environment (sniffemacs must be found in "
-"$PATH).\n"
-msgstr ""
-"SNiFF+に接続できません. 環境をチェックしてください(sniffemacs が $PATH になけ"
-"ればなりません).\n"
-
-msgid "E274: Sniff: Error during read. Disconnected"
-msgstr "E274: Sniff: 読込中にエラーが発生しました. 切断しました"
-
-msgid "SNiFF+ is currently "
-msgstr "現在SNiFF+ の状態は「"
-
-msgid "not "
-msgstr "未"
-
-msgid "connected"
-msgstr "接続」です"
-
-#, c-format
-msgid "E275: Unknown SNiFF+ request: %s"
-msgstr "E275: 未知の SNiFF+ リクエストです: %s"
-
-msgid "E276: Error connecting to SNiFF+"
-msgstr "E276: SNiFF+ への接続中のエラーです"
-
-msgid "E278: SNiFF+ not connected"
-msgstr "E278: SNiFF+ に接続されていません"
-
-msgid "E279: Not a SNiFF+ buffer"
-msgstr "E279: SNiFF+ バッファがありません"
-
-msgid "Sniff: Error during write. Disconnected"
-msgstr "Sniff: 書込み中にエラーが発生したので切断しました"
-
 msgid "invalid buffer number"
 msgstr "無効なバッファ番号です"
 
@@ -3150,6 +3111,9 @@ msgstr "-F\t\t\tペルシア語モードで起動する"
 
 msgid "-T <terminal>\tSet terminal type to <terminal>"
 msgstr "-T <terminal>\t端末を <terminal> に設定する"
+
+msgid "--not-a-term\t\tSkip warning for input/output not being a terminal"
+msgstr "--not-a-term\t\t入出力が端末でないとの警告をスキップする"
 
 msgid "-u <vimrc>\t\tUse <vimrc> instead of any .vimrc"
 msgstr "-u <vimrc>\t\t.vimrcの代わりに <vimrc> を使う"
@@ -4670,10 +4634,6 @@ msgid "Could not fix up function pointers to the DLL!"
 msgstr "DLLから関数ポインタを取得できませんでした"
 
 #, c-format
-msgid "shell returned %d"
-msgstr "シェルがコード %d で終了しました"
-
-#, c-format
 msgid "Vim: Caught %s event\n"
 msgstr "Vim: イベント %s を検知\n"
 
@@ -4700,6 +4660,10 @@ msgstr ""
 
 msgid "Vim Warning"
 msgstr "Vimの警告"
+
+#, c-format
+msgid "shell returned %d"
+msgstr "シェルがコード %d で終了しました"
 
 #, c-format
 msgid "E372: Too many %%%c in format string"
@@ -5978,27 +5942,6 @@ msgstr ""
 
 msgid ""
 "\n"
-"MS-Windows 16-bit version"
-msgstr ""
-"\n"
-"MS-Windows 16 ビット 版"
-
-msgid ""
-"\n"
-"32-bit MS-DOS version"
-msgstr ""
-"\n"
-"32 ビット MS-DOS 版"
-
-msgid ""
-"\n"
-"16-bit MS-DOS version"
-msgstr ""
-"\n"
-"16 ビット MS-DOS 版"
-
-msgid ""
-"\n"
 "MacOS X (unix) version"
 msgstr ""
 "\n"
@@ -6089,6 +6032,9 @@ msgstr ""
 
 msgid "without GUI."
 msgstr "without GUI."
+
+msgid "with GTK3 GUI."
+msgstr "with GTK3 GUI."
 
 msgid "with GTK2-GNOME GUI."
 msgstr "with GTK2-GNOME GUI."
@@ -6657,6 +6603,10 @@ msgstr "E764: オプション '%s' は設定されていません"
 
 msgid "E850: Invalid register name"
 msgstr "E850: 無効なレジスタ名です"
+
+#, c-format
+msgid "E919: Directory not found in '%s': \"%s\""
+msgstr "E919: ディレクトリが '%s' の中にありません: \"%s\""
 
 msgid "search hit TOP, continuing at BOTTOM"
 msgstr "上まで検索したので下に戻ります"
