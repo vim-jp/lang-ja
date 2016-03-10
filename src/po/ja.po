@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-10 23:16+0900\n"
-"PO-Revision-Date: 2016-03-10-23:35+0900\n"
+"PO-Revision-Date: 2016-03-11-00:10+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: vim-jp (https://github.com/vim-jp/lang-ja)\n"
 "Language: Japanese\n"
@@ -776,7 +776,7 @@ msgid "E731: using Dictionary as a String"
 msgstr "E731: 辞書型を文字列として扱っています"
 
 msgid "E908: using an invalid value as a String"
-msgstr "E908: 向こうな値を文字列として扱っています"
+msgstr "E908: 無効な値を文字列として扱っています"
 
 #, c-format
 msgid "E706: Variable type mismatch for: %s"
@@ -2206,10 +2206,10 @@ msgid "_Cancel"
 msgstr "キャンセル(_C)"
 
 msgid "_Save"
-msgstr "別名で保存(_S)"
+msgstr "保存(_S)"
 
 msgid "_Open"
-msgstr "開く (_O)"
+msgstr "開く(_O)"
 
 msgid "_OK"
 msgstr "_OK"
