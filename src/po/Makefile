@@ -29,7 +29,10 @@ force: touch
 touch: $(MASTER_PO)
 	touch $<
 
-merge: ja.po
+merge:
+	rm -f ja.po.old
+	mv ja.po ja.po.old
+	msgmerge ja.po.old vim.pot -o ja.po
 
 merge-force:
 	touch vim.pot
@@ -40,10 +43,10 @@ clean:
 	rm -f ja.sjis.po ja.euc-jp.po
 	rm -f *.mo
 
-ja.po: vim.pot
-	rm -f $@.old
-	mv $@ $@.old
-	msgmerge $@.old $< -o $@
+#ja.po: vim.pot
+#	rm -f $@.old
+#	mv $@ $@.old
+#	msgmerge $@.old $< -o $@
 
 .po.mo:
 	$(MSGFMT) -v -o $@ $<
