@@ -21,6 +21,7 @@ release-today:
 test:
 	$(MAKE) -C src/po test
 	$(MAKE) -C runtime/lang test
+	$(MAKE) -C runtime/tutor test
 
 install: test
 	mkdir -p $(INSTALL_DIR)/lang/ja/LC_MESSAGES

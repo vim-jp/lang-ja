@@ -1,5 +1,7 @@
 MASTER_TUTOR = tutor.ja.utf-8
 
+test: update
+
 update: tutor.ja.sjis tutor.ja.euc
 
 tutor.ja.sjis: $(MASTER_TUTOR)
