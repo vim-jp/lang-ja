@@ -3,7 +3,7 @@ ARCHIVE_EXT = xz
 ARCHIVE_DIR = $(ARCHIVE)
 ARCHIVE_FILE = $(ARCHIVE).tar.$(ARCHIVE_EXT)
 
-INSTALL_DIR = $(ARCHIVE)-root
+INSTALL_DIR = $(ARCHIVE)-runtime
 
 archive: $(ARCHIVE_FILE)
 
@@ -23,17 +23,17 @@ test:
 	$(MAKE) -C runtime/lang test
 
 install: test
-	mkdir -p $(INSTALL_DIR)/runtime/lang/ja/LC_MESSAGES
-	mkdir -p $(INSTALL_DIR)/runtime/lang/ja.euc-jp/LC_MESSAGES
-	mkdir -p $(INSTALL_DIR)/runtime/lang/ja.sjis/LC_MESSAGES
-	mkdir -p $(INSTALL_DIR)/runtime/doc
-	mkdir -p $(INSTALL_DIR)/runtime/tutor
-	cp src/po/ja.mo $(INSTALL_DIR)/runtime/lang/ja/LC_MESSAGES/vim.mo
-	cp src/po/ja.euc-jp.mo $(INSTALL_DIR)/runtime/lang/ja.euc-jp/LC_MESSAGES/vim.mo
-	cp src/po/ja.sjis.mo $(INSTALL_DIR)/runtime/lang/ja.sjis/LC_MESSAGES/vim.mo
-	cp runtime/lang/menu_ja*.vim $(INSTALL_DIR)/runtime/lang
-	cp runtime/doc/*.UTF-8.1 $(INSTALL_DIR)/runtime/doc
-	cp runtime/tutor/tutor.ja.* $(INSTALL_DIR)/runtime/tutor
+	mkdir -p $(INSTALL_DIR)/lang/ja/LC_MESSAGES
+	mkdir -p $(INSTALL_DIR)/lang/ja.euc-jp/LC_MESSAGES
+	mkdir -p $(INSTALL_DIR)/lang/ja.sjis/LC_MESSAGES
+	mkdir -p $(INSTALL_DIR)/doc
+	mkdir -p $(INSTALL_DIR)/tutor
+	cp src/po/ja.mo $(INSTALL_DIR)/lang/ja/LC_MESSAGES/vim.mo
+	cp src/po/ja.euc-jp.mo $(INSTALL_DIR)/lang/ja.euc-jp/LC_MESSAGES/vim.mo
+	cp src/po/ja.sjis.mo $(INSTALL_DIR)/lang/ja.sjis/LC_MESSAGES/vim.mo
+	cp runtime/lang/menu_ja*.vim $(INSTALL_DIR)/lang
+	cp runtime/doc/*.UTF-8.1 $(INSTALL_DIR)/doc
+	cp runtime/tutor/tutor.ja.* $(INSTALL_DIR)/tutor
 
 clean:
 	rm -rf $(ARCHIVE_DIR) $(ARCHIVE_FILE)
