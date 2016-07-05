@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-10 23:16+0900\n"
-"PO-Revision-Date: 2016-03-11-00:10+0900\n"
+"POT-Creation-Date: 2016-07-05 21:46+0900\n"
+"PO-Revision-Date: 2016-07-05-23:35+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: vim-jp (https://github.com/vim-jp/lang-ja)\n"
 "Language: Japanese\n"
@@ -204,6 +204,26 @@ msgstr "    行=%ld  識別子=%d  名前=%s"
 
 msgid "E902: Cannot connect to port"
 msgstr "E902: ポートに接続できません"
+
+#, c-format
+msgid "E917: Cannot use a callback with %s()"
+msgstr "E917: %s() にコールバックは使えません"
+
+msgid "E912: cannot use ch_evalexpr()/ch_sendexpr() with a raw or nl channel"
+msgstr "E912: 生や nl チャンネルに ch_evalexpr()/ch_sendexpr は使えません"
+
+msgid "E906: not an open channel"
+msgstr "E906: 開いていないチャンネルです"
+
+msgid "E920: _io file requires _name to be set"
+msgstr "E920: _io ファイルは _name の設定が必要です"
+
+msgid "E915: in_io buffer requires in_buf or in_name to be set"
+msgstr "E915: in_io バッファは in_buf か in_name の設定が必要です"
+
+#, c-format
+msgid "E918: buffer must be loaded: %s"
+msgstr "E918: バッファがロードされてなければなりません: %s"
 
 msgid "E821: File is encrypted with unknown method"
 msgstr "E821: ファイルが未知の方法で暗号化されています"
@@ -408,6 +428,9 @@ msgstr "E714: リスト型が必要です"
 msgid "E715: Dictionary required"
 msgstr "E715: 辞書型が必要です"
 
+msgid "E928: String required"
+msgstr "E928: 文字列が必要です"
+
 #, c-format
 msgid "E118: Too many arguments for function: %s"
 msgstr "E118: 関数の引数が多過ぎます: %s"
@@ -501,9 +524,6 @@ msgstr "E735: 辞書型は辞書型としか比較できません"
 
 msgid "E736: Invalid operation for Dictionary"
 msgstr "E736: 辞書型には無効な操作です"
-
-msgid "E693: Can only compare Funcref with Funcref"
-msgstr "E693: 関数参照型は関数参照型としか比較できません"
 
 msgid "E694: Invalid operation for Funcrefs"
 msgstr "E694: 関数参照型には無効な操作です"
@@ -600,19 +620,6 @@ msgstr "add() の引数"
 msgid "E699: Too many arguments"
 msgstr "E699: 引数が多過ぎます"
 
-msgid "E999: Invalid callback argument"
-msgstr "E999: 無効なコールバック引数です"
-
-msgid "E906: not an open channel"
-msgstr "E906: 開いていないチャンネルです"
-
-#, c-format
-msgid "E917: Cannot use a callback with %s()"
-msgstr "E917: %s() にコールバックは使えません"
-
-msgid "E912: cannot use ch_evalexpr()/ch_sendexpr() with a raw or nl channel"
-msgstr "E912: 生や nl チャンネルに ch_evalexpr()/ch_sendexpr は使えません"
-
 msgid "E785: complete() can only be used in Insert mode"
 msgstr "E785: complete() は挿入モードでしか利用できません"
 
@@ -645,6 +652,12 @@ msgstr "+-%s%3ld 行: "
 msgid "E700: Unknown function: %s"
 msgstr "E700: 未知の関数です: %s"
 
+msgid "E922: expected a dict"
+msgstr "E922: 辞書が期待されています"
+
+msgid "E923: Second argument of function() must be a list or a dict"
+msgstr "E923: function() の第 2 引数はリスト型または辞書型でなければなりません"
+
 msgid ""
 "&OK\n"
 "&Cancel"
@@ -663,16 +676,6 @@ msgstr "E786: 範囲指定は許可されていません"
 
 msgid "E916: not a valid job"
 msgstr "E916: 有効なジョブではありません"
-
-msgid "E920: -io file requires -name to be set"
-msgstr "E920: -io ファイルは -name の設定が必要です"
-
-msgid "E915: in-io buffer requires in-buf or in-name to be set"
-msgstr "E915: in-io バッファは in-buf か in-name の設定が必要です"
-
-#, c-format
-msgid "E918: buffer must be loaded: %s"
-msgstr "E918: バッファがロードされてなければなりません: %s"
 
 msgid "E701: Invalid type for len()"
 msgstr "E701: len() には無効な型です"
@@ -709,6 +712,10 @@ msgstr "reverse() の引数"
 msgid "E258: Unable to send to client"
 msgstr "E258: クライアントへ送ることができません"
 
+#, c-format
+msgid "E927: Invalid action: '%s'"
+msgstr "E927: 無効な操作です: %s"
+
 msgid "sort() argument"
 msgstr "sort() の引数"
 
@@ -726,6 +733,9 @@ msgstr "(無効)"
 
 msgid "E677: Error writing temp file"
 msgstr "E677: 一時ファイル書込中にエラーが発生しました"
+
+msgid "E921: Invalid callback argument"
+msgstr "E921: 無効なコールバック引数です"
 
 msgid "E805: Using a Float as a Number"
 msgstr "E805: 浮動小数点数を数値として扱っています"
@@ -777,10 +787,6 @@ msgstr "E731: 辞書型を文字列として扱っています"
 
 msgid "E908: using an invalid value as a String"
 msgstr "E908: 無効な値を文字列として扱っています"
-
-#, c-format
-msgid "E706: Variable type mismatch for: %s"
-msgstr "E706: 変数の型が一致しません: %s"
 
 #, c-format
 msgid "E795: Cannot delete variable %s"
@@ -961,6 +967,10 @@ msgid "E137: Viminfo file is not writable: %s"
 msgstr "E137: viminfoファイルが書込みできません: %s"
 
 #, c-format
+msgid "E929: Too many viminfo temp files, like %s!"
+msgstr "E929: 一時viminfoファイルが多過ぎます! 例: %s"
+
+#, c-format
 msgid "E138: Can't write viminfo file %s!"
 msgstr "E138: viminfoファイル %s を保存できません!"
 
@@ -1130,10 +1140,6 @@ msgid "Sorry, help file \"%s\" not found"
 msgstr "残念ですがヘルプファイル \"%s\" が見つかりません"
 
 #, c-format
-msgid "E150: Not a directory: %s"
-msgstr "E150: ディレクトリではありません: %s"
-
-#, c-format
 msgid "E152: Cannot open %s for writing"
 msgstr "E152: 書込み用に %s を開けません"
 
@@ -1149,6 +1155,10 @@ msgstr "E670: 1つの言語のヘルプファイルに複数のエンコード�
 #, c-format
 msgid "E154: Duplicate tag \"%s\" in file %s/%s"
 msgstr "E154: タグ \"%s\" がファイル %s/%s に重複しています"
+
+#, c-format
+msgid "E150: Not a directory: %s"
+msgstr "E150: ディレクトリではありません: %s"
 
 #, c-format
 msgid "E160: Unknown sign command: %s"
@@ -1706,6 +1716,9 @@ msgstr "式"
 msgid "Input Line"
 msgstr "入力行"
 
+msgid "Debug Line"
+msgstr "デバッグ行"
+
 msgid "E198: cmd_pchar beyond the command length"
 msgstr "E198: cmd_pchar がコマンド長を超えました"
 
@@ -1950,11 +1963,6 @@ msgstr "1 文字"
 #, c-format
 msgid "%lld characters"
 msgstr "%lld 文字"
-
-#. Explicit typecast avoids warning on Mac OS X 10.6
-#, c-format
-msgid "%ld characters"
-msgstr "%ld 文字"
 
 msgid "[noeol]"
 msgstr "[noeol]"
@@ -2622,6 +2630,7 @@ msgid ""
 "       i: Find files #including this file\n"
 "       s: Find this C symbol\n"
 "       t: Find this text string\n"
+"       a: Find assignments to this symbol\n"
 msgstr ""
 "\n"
 "       c: この関数を呼んでいる関数を探す\n"
@@ -2632,6 +2641,7 @@ msgstr ""
 "       i: このファイルを#includeしているファイルを探す\n"
 "       s: このCシンボルを探す\n"
 "       t: このテキスト文字列を探す\n"
+"       a: このシンボルに対する代入を探す\n"
 
 #, c-format
 msgid "E625: cannot open cscope database: %s"
@@ -2750,19 +2760,6 @@ msgstr "範囲外の行番号です"
 
 msgid "not allowed in the Vim sandbox"
 msgstr "サンドボックスでは許されません"
-
-#, c-format
-msgid "E370: Could not load library %s"
-msgstr "E370: ライブラリ %s をロードできませんでした"
-
-msgid "Sorry, this command is disabled: the Perl library could not be loaded."
-msgstr ""
-"このコマンドは無効です, ごめんなさい: Perlライブラリをロードできませんでした."
-
-msgid "E299: Perl evaluation forbidden in sandbox without the Safe module"
-msgstr ""
-"E299: サンドボックスでは Safe モジュールを使用しないPerlスクリプトは禁じられ"
-"ています"
 
 msgid "E836: This Vim cannot execute :python after using :py3"
 msgstr "E836: このVimでは :py3 を使った後に :python を使えません"
@@ -2947,6 +2944,9 @@ msgstr "スクリプト出力用を開けません"
 
 msgid "Vim: Error: Failure to start gvim from NetBeans\n"
 msgstr "Vim: エラー: NetBeansからgvimをスタートできません\n"
+
+msgid "Vim: Error: This version of Vim does not run in a Cygwin terminal\n"
+msgstr "Vim: エラー: このバージョンのVimはCygwin端末では動作しません\n"
 
 msgid "Vim: Warning: Output is not to a terminal\n"
 msgstr "Vim: 警告: 端末への出力ではありません\n"
@@ -4237,25 +4237,27 @@ msgid "%ld Cols; "
 msgstr "%ld 列; "
 
 #, c-format
-msgid "Selected %s%ld of %ld Lines; %ld of %ld Words; %ld of %ld Bytes"
-msgstr "選択 %s%ld / %ld 行; %ld / %ld 単語; %ld / %ld バイト"
+msgid "Selected %s%ld of %ld Lines; %lld of %lld Words; %lld of %lld Bytes"
+msgstr "選択 %s%ld / %ld 行; %lld / %lld 単語; %lld / %lld バイト"
 
 #, c-format
 msgid ""
-"Selected %s%ld of %ld Lines; %ld of %ld Words; %ld of %ld Chars; %ld of %ld "
-"Bytes"
-msgstr "選択 %s%ld / %ld 行; %ld / %ld 単語; %ld / %ld 文字; %ld / %ld バイト"
-
-#, c-format
-msgid "Col %s of %s; Line %ld of %ld; Word %ld of %ld; Byte %ld of %ld"
-msgstr "列 %s / %s; 行 %ld of %ld; 単語 %ld / %ld; バイト %ld / %ld"
-
-#, c-format
-msgid ""
-"Col %s of %s; Line %ld of %ld; Word %ld of %ld; Char %ld of %ld; Byte %ld of "
-"%ld"
+"Selected %s%ld of %ld Lines; %lld of %lld Words; %lld of %lld Chars; %lld of "
+"%lld Bytes"
 msgstr ""
-"列 %s / %s; 行 %ld / %ld; 単語 %ld / %ld; 文字 %ld / %ld; バイト %ld of %ld"
+"選択 %s%ld / %ld 行; %lld / %lld 単語; %lld / %lld 文字; %lld / %lld バイト"
+
+#, c-format
+msgid "Col %s of %s; Line %ld of %ld; Word %lld of %lld; Byte %lld of %lld"
+msgstr "列 %s / %s; 行 %ld of %ld; 単語 %lld / %lld; バイト %lld / %lld"
+
+#, c-format
+msgid ""
+"Col %s of %s; Line %ld of %ld; Word %lld of %lld; Char %lld of %lld; Byte "
+"%lld of %lld"
+msgstr ""
+"列 %s / %s; 行 %ld / %ld; 単語 %lld / %lld; 文字 %lld / %lld; バイト %lld of "
+"%lld"
 
 #, c-format
 msgid "(+%ld for BOM)"
@@ -4487,9 +4489,6 @@ msgstr "入出力エラー"
 msgid "Message"
 msgstr "メッセージ"
 
-msgid "'columns' is not 80, cannot execute external commands"
-msgstr "'columns' が80ではないため, 外部コマンドを実行できません"
-
 msgid "E237: Printer selection failed"
 msgstr "E237: プリンタの選択に失敗しました"
 
@@ -4512,6 +4511,10 @@ msgstr "印刷しています: '%s'"
 #, c-format
 msgid "E244: Illegal charset name \"%s\" in font name \"%s\""
 msgstr "E244: 文字セット名 \"%s\" は不正です (フォント名 \"%s\")"
+
+#, c-format
+msgid "E244: Illegal quality name \"%s\" in font name \"%s\""
+msgstr "E244: 品質名 \"%s\" は不正です (フォント名 \"%s\")"
 
 #, c-format
 msgid "E245: Illegal char '%c' in font name \"%s\""
@@ -4688,6 +4691,7 @@ msgstr "E376: フォーマット文字列の前置に無効な %%%c がありま
 msgid "E377: Invalid %%%c in format string"
 msgstr "E377: フォーマット文字列に無効な %%%c があります"
 
+#. nothing found
 msgid "E378: 'errorformat' contains no pattern"
 msgstr "E378: 'errorformat' にパターンが指定されていません"
 
@@ -4696,6 +4700,15 @@ msgstr "E379: ディレクトリ名が無いか空です"
 
 msgid "E553: No more items"
 msgstr "E553: 要素がもうありません"
+
+msgid "E924: Current window was closed"
+msgstr "E924: 現在のウィンドウが閉じられました"
+
+msgid "E925: Current quickfix was changed"
+msgstr "E925: 現在の quickfix が変更されました"
+
+msgid "E926: Current location list was changed"
+msgstr "E926: 現在のロケーションリストが変更されました"
 
 #, c-format
 msgid "(%d of %d)%s%s: "
@@ -5751,6 +5764,9 @@ msgstr ""
 "\n"
 "--- 端末キー ---"
 
+msgid "Cannot open $VIMRUNTIME/rgb.txt"
+msgstr "$VIMRUNTIME/rgb.txtを開けません"
+
 msgid "new shell started\n"
 msgstr "新しいシェルを起動します\n"
 
@@ -5898,14 +5914,6 @@ msgstr "E439: アンドゥリストが壊れています"
 msgid "E440: undo line missing"
 msgstr "E440: アンドゥ行がありません"
 
-#. Only MS VC 4.1 and earlier can do Win32s
-msgid ""
-"\n"
-"MS-Windows 16/32-bit GUI version"
-msgstr ""
-"\n"
-"MS-Windows 16/32 ビット GUI 版"
-
 msgid ""
 "\n"
 "MS-Windows 64-bit GUI version"
@@ -5919,9 +5927,6 @@ msgid ""
 msgstr ""
 "\n"
 "MS-Windows 32 ビット GUI 版"
-
-msgid " in Win32s mode"
-msgstr " in Win32s モード"
 
 msgid " with OLE support"
 msgstr " with OLE サポート"
@@ -6189,12 +6194,6 @@ msgstr "詳細な情報は           :help register<Enter>  "
 msgid "menu  Help->Sponsor/Register  for information    "
 msgstr "詳細はメニューの ヘルプ->スポンサー/登録 を参照して下さい"
 
-msgid "WARNING: Windows 95/98/ME detected"
-msgstr "   警告: Windows 95/98/Me を検出  "
-
-msgid "type  :help windows95<Enter>  for info on this"
-msgstr " 詳細な情報は          :help windows95<Enter> "
-
 msgid "Already only one window"
 msgstr "既にウィンドウは1つしかありません"
 
@@ -6228,6 +6227,19 @@ msgstr "E447: pathには \"%s\" というファイルがありません"
 
 msgid "List or number required"
 msgstr "リストか数値が必要です"
+
+#, c-format
+msgid "E370: Could not load library %s"
+msgstr "E370: ライブラリ %s をロードできませんでした"
+
+msgid "Sorry, this command is disabled: the Perl library could not be loaded."
+msgstr ""
+"このコマンドは無効です, ごめんなさい: Perlライブラリをロードできませんでした."
+
+msgid "E299: Perl evaluation forbidden in sandbox without the Safe module"
+msgstr ""
+"E299: サンドボックスでは Safe モジュールを使用しないPerlスクリプトは禁じられ"
+"ています"
 
 msgid "Edit with &multiple Vims"
 msgstr "複数のVimで編集する (&M)"
@@ -6679,11 +6691,11 @@ msgstr "辞書の変更に失敗しました"
 
 #, c-format
 msgid "expected 3-tuple as imp.find_module() result, but got %s"
-msgstr "imp.find_module() が %s を返しました (期待値: 2 要素のタプル)"
+msgstr "imp.find_module() が %s を返しました (期待値: 3 要素のタプル)"
 
 #, c-format
 msgid "expected 3-tuple as imp.find_module() result, but got tuple of size %d"
-msgstr "impl.find_module() が %d 要素のタプルを返しました (期待値: 2)"
+msgstr "imp.find_module() が %d 要素のタプルを返しました (期待値: 3)"
 
 msgid "internal error: imp.find_module returned tuple with NULL"
 msgstr "内部エラー: imp.find_module が NULL を含むタプルを返しました"
@@ -6753,9 +6765,6 @@ msgstr "無名関数 %s は存在しません"
 #, c-format
 msgid "function %s does not exist"
 msgstr "関数 %s がありません"
-
-msgid "function constructor does not accept keyword arguments"
-msgstr "関数のコンストラクタはキーワード引数を受け付けません"
 
 #, c-format
 msgid "failed to run function %s"
@@ -6842,6 +6851,10 @@ msgstr "E859: 返されたpythonオブジェクトをvimの値に変換できま
 #, c-format
 msgid "unable to convert %s to vim dictionary"
 msgstr "%s vimの辞書型に変換できません"
+
+#, c-format
+msgid "unable to convert %s to vim list"
+msgstr "%s をvimのリストに変換できません"
 
 #, c-format
 msgid "unable to convert %s to vim structure"
