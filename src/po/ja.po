@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-05 21:46+0900\n"
-"PO-Revision-Date: 2016-03-11-00:10+0900\n"
+"PO-Revision-Date: 2016-07-05-23:35+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: vim-jp (https://github.com/vim-jp/lang-ja)\n"
 "Language: Japanese\n"
@@ -6883,34 +6883,3 @@ msgid ""
 msgstr ""
 "パスの設定に失敗しました: sys.path がリストではありません\n"
 "すぐに vim.VIM_SPECIAL_PATH を sys.path に追加してください"
-
-#~ msgid "%ld characters"
-#~ msgstr "%ld 文字"
-
-#~ msgid "'columns' is not 80, cannot execute external commands"
-#~ msgstr "'columns' が80ではないため, 外部コマンドを実行できません"
-
-#~ msgid ""
-#~ "\n"
-#~ "MS-Windows 16/32-bit GUI version"
-#~ msgstr ""
-#~ "\n"
-#~ "MS-Windows 16/32 ビット GUI 版"
-
-#~ msgid " in Win32s mode"
-#~ msgstr " in Win32s モード"
-
-#~ msgid "WARNING: Windows 95/98/ME detected"
-#~ msgstr "   警告: Windows 95/98/Me を検出  "
-
-#~ msgid "type  :help windows95<Enter>  for info on this"
-#~ msgstr " 詳細な情報は          :help windows95<Enter> "
-
-#~ msgid "function constructor does not accept keyword arguments"
-#~ msgstr "関数のコンストラクタはキーワード引数を受け付けません"
-
-#~ msgid "E693: Can only compare Funcref with Funcref"
-#~ msgstr "E693: 関数参照型は関数参照型としか比較できません"
-
-#~ msgid "E706: Variable type mismatch for: %s"
-#~ msgstr "E706: 変数の型が一致しません: %s"
