@@ -7,15 +7,15 @@ Vimに付属する日本語翻訳ファイルを管理するリポジトリ
 
 ## ディレクトリ/ファイル 解説
 
-パス |説明
------|-----
-src/po/, runtime/lang |Vimに付属の日本語翻訳ファイルが置いてあります。
-src/po/ja.po |Vimのメッセージ翻訳ファイルのマスター(UTF-8)
-runtime/lang/menu\_ja\_jp.utf-8.vim |Vimの日本語メニューファイルのマスター(UTF-8)
-runtime/doc/\*-ja.UTF-8.1 |日本語manファイル(UTF-8)
-runtime/doc/\*.1 |原文manファイル
-runtime/tutor/tutor.ja.utf-8 |日本語チュートリアルファイル(UTF-8)
-runtime/tutor/tutor |原文チュートリアルファイル
+パス                               |説明
+-----------------------------------|-----
+src/po/, runtime/lang              |Vimに付属の日本語翻訳ファイルが置いてあります。
+src/po/ja.po                       |Vimのメッセージ翻訳ファイルのマスター(UTF-8)
+runtime/lang/menu\_ja\_jp.utf-8.vim|Vimの日本語メニューファイルのマスター(UTF-8)
+runtime/doc/\*-ja.UTF-8.1          |日本語manファイル(UTF-8)
+runtime/doc/\*.1                   |原文manファイル
+runtime/tutor/tutor.ja.utf-8       |日本語チュートリアルファイル(UTF-8)
+runtime/tutor/tutor                |原文チュートリアルファイル
 
 ## ja.po 更新手順
 
