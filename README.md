@@ -1,5 +1,7 @@
 # vim-jp/lang-ja
 
+[![Join the chat at https://gitter.im/vim-jp/lang-ja](https://badges.gitter.im/vim-jp/lang-ja.svg)](https://gitter.im/vim-jp/lang-ja?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Vimに付属する日本語翻訳ファイルを管理するリポジトリ
 
 ## ディレクトリ/ファイル 解説
