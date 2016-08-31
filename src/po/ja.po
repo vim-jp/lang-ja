@@ -221,7 +221,7 @@ msgid "E904: last argument for expr/call must be a number"
 msgstr "E904: expr/call の最後の引数は数字でなければなりません"
 
 msgid "E904: third argument for call must be a list"
-msgstr "E686: call の3番めの引数はリスト型でなければなりません"
+msgstr "E904: call の3番目の引数はリスト型でなければなりません"
 
 #, c-format
 msgid "E905: received unknown command: %s"
