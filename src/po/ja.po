@@ -659,7 +659,7 @@ msgid ""
 "\tLast set from "
 msgstr ""
 "\n"
-"\tLast set from "
+"\t最後にセットしたスクリプト: "
 
 msgid "map() argument"
 msgstr "map() の引数"
