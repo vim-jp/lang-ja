@@ -49,4 +49,4 @@ clean:
 #	msgmerge $@.old $< -o $@
 
 .po.mo:
-	$(MSGFMT) -v -o $@ $<
+	$(MSGFMT) --check -v -o $@ $<
