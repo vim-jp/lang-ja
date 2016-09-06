@@ -1,13 +1,16 @@
 MASTER_PO = ja.po
-TEST_TARGETS = ja.mo \
-	       ja.euc-jp.mo \
-	       ja.sjis.mo
+MOFILES = ja.mo \
+	  ja.euc-jp.mo \
+	  ja.sjis.mo
+CHECKFILES = ja.ck \
+	     ja.euc-jp.ck \
+	     ja.sjis.ck
 
 MSGFMT = OLD_PO_FILE_INPUT=yes msgfmt
 
-.SUFFIXES: .po .mo
+.SUFFIXES: .po .mo .ck
 
-test: $(TEST_TARGETS)
+test: $(MOFILES) $(CHECKFILES)
 
 update: ja.sjis.po ja.euc-jp.po
 
@@ -41,7 +44,7 @@ merge-force:
 clean:
 	rm -f sjiscorr sjiscorr.exe
 	rm -f ja.sjis.po ja.euc-jp.po
-	rm -f *.mo
+	rm -f *.mo *.ck
 
 #ja.po: vim.pot
 #	rm -f $@.old
@@ -50,3 +53,7 @@ clean:
 
 .po.mo:
 	$(MSGFMT) -v -o $@ $<
+
+.po.ck:
+	vim -u NONE -e -X -S check.vim -c "if error == 0 | q | endif" -c cq $<
+	touch $@
