@@ -54,7 +54,7 @@ clean: checkclean
 #	msgmerge $@.old $< -o $@
 
 .po.mo:
-	$(MSGFMT) -v -o $@ $<
+	$(MSGFMT) --check -v -o $@ $<
 
 .po.ck:
 	vim -u NONE --noplugins -e -s -X --cmd "set enc=utf-8" -S check.vim \

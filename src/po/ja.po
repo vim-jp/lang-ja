@@ -22,6 +22,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "E831: bf_key_init() called with empty password"
 msgstr "E831: bf_key_init() が空パスワードで呼び出されました"
@@ -695,7 +696,6 @@ msgstr "&Ok"
 msgid "+-%s%3ld line: "
 msgid_plural "+-%s%3ld lines: "
 msgstr[0] "+-%s%3ld 行: "
-msgstr[1] "+-%s%3ld 行: "
 
 #, c-format
 msgid "E700: Unknown function: %s"
@@ -2027,7 +2027,6 @@ msgstr "E351: 現在の 'foldmethod' では折畳みを削除できません"
 msgid "+--%3ld line folded "
 msgid_plural "+--%3ld lines folded "
 msgstr[0] "+--%3ld 行が折畳まれました "
-msgstr[1] "+--%3ld 行が折畳まれました "
 
 msgid "E222: Add to read buffer"
 msgstr "E222: 読込バッファへ追加"
