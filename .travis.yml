@@ -1,0 +1,4 @@
+sudo: false
+
+script:
+  - make test
