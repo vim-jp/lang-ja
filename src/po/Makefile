@@ -10,6 +10,8 @@ CHECKFILES = ja.ck \
 
 MSGFMT = OLD_PO_FILE_INPUT=yes msgfmt
 
+VIM = vim
+
 .SUFFIXES: .po .mo .ck
 
 test: check $(MOFILES)
@@ -57,7 +59,7 @@ clean: checkclean
 	$(MSGFMT) --check -v -o $@ $<
 
 .po.ck:
-	vim -u NONE --noplugins -e -s -X --cmd "set enc=utf-8" -S check.vim \
+	$(VIM) -u NONE --noplugins -e -s -X --cmd "set enc=utf-8" -S check.vim \
 	  -c "if error == 0 | q | else | num 2 | cq | endif" $<
 	touch $@
 

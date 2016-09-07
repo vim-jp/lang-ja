@@ -1,4 +1,10 @@
-sudo: false
+language:  c
+sudo:     false
+
+install:
+  - git clone --depth 1 https://github.com/vim/vim.git $HOME/vim
+  - (cd $HOME/vim/src && ./configure --enable-gui=no && make -j 4 vim)
+  - $HOME/vim/src/vim --version
 
 script:
-  - make test
+  - make test VIM=$HOME/vim/src/vim
