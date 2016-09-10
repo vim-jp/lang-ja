@@ -26,7 +26,11 @@ runtime/tutor/tutor |原文チュートリアルファイル
         $ cd src/po
         $ make vim.pot
 
-2.  ja.po に vim.pot をマージ (古いのは ja.po.old へ退避します)
+    註: `make vim.pot` を実行するには `src/` で `./configure` を実行しておく必
+    要があるが、`src/po/Makefile` の4行目の `include ../auto/config.mk` をコメ
+    ントアウトして回避することも可能。
+
+2.  ja.po に vim.pot をマージ (古いものは ja.po.old へ退避される)
 
         $ make merge
 
@@ -63,7 +67,8 @@ runtime/tutor/tutor |原文チュートリアルファイル
 
 1.  原文manファイルの更新
 
-    Vimのソースファイルの runtime/doc/ ディレクトリから、原文manファイルを本リポジトリにコピー。
+    Vimのソースファイルの runtime/doc/ ディレクトリから、原文manファイルを本リ
+    ポジトリにコピー。
 
         $ cd /path/to/vim/runtime/doc
         $ cp evim.1 vim.1 vimdiff.1 vimtutor.1 xxd.1 /path/to/lang-ja/runtime/doc
@@ -88,7 +93,8 @@ runtime/tutor/tutor |原文チュートリアルファイル
 
 1.  原文チュートリアルファイルの更新
 
-    Vimのソースファイルの runtime/tutor/ ディレクトリから、原文チュートリアルファイルを本リポジトリにコピー。
+    Vimのソースファイルの runtime/tutor/ ディレクトリから、原文チュートリアル
+    ファイルを本リポジトリにコピー。
 
         $ cd /path/to/vim/runtime/tutor
         $ cp tutor /path/to/lang-ja/runtime/tutor
@@ -109,6 +115,6 @@ runtime/tutor/tutor |原文チュートリアルファイル
 
     $ make release-today
 
-`vim-lang-ja-20160131.tar.xz` のようなアーカイブファイルができます。
-`20160131` の部分は実行した日付に置き換わります。
-あとはこのアーカイブファイルを vim-dev へ更新依頼とともに送信します。
+`vim-lang-ja-20160131.tar.xz` のようなアーカイブファイルができます。 `20160131`
+の部分は実行した日付に置き換わります。あとはこのアーカイブファイルを vim-dev へ
+更新依頼とともに送信します。
