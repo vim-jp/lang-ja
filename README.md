@@ -44,7 +44,14 @@ runtime/tutor/tutor |原文チュートリアルファイル
 
         /fuzzy\|^msgstr ""\(\n"\)\@!
 
-5.  不要な情報の削除
+5.  使われなくなった翻訳の削除
+
+    使われなくなった翻訳が ja.po の末尾に `#~` を付けて記録されている。それを削
+    除する。以下のコマンドが使える。
+
+        :%s/^#\~/d
+
+6.  不要な情報の削除
 
     Vim で以下のようにする。
 
@@ -52,11 +59,13 @@ runtime/tutor/tutor |原文チュートリアルファイル
 
     cleanup.vim は Vim 本体からのコピー
 
-6.  チェック
+7.  チェック
 
         $ vim -S check.vim ja.po
 
-7.  もう1回マージして、整形と消しすぎたコメントの復活
+    `make check` でも代替可能。
+
+8.  もう1回マージして、整形と消しすぎたコメントの復活
 
         $ make merge-force
         $ vim ja.po
@@ -111,10 +120,40 @@ runtime/tutor/tutor |原文チュートリアルファイル
 
 ## リリース手順
 
-以下を実行してください。
+1.  各リソースが最新に近いことを確認する
 
-    $ make release-today
+    TODO: 将来、より具体的で自動化された手段を提供したい
 
-`vim-lang-ja-20160131.tar.xz` のようなアーカイブファイルができます。 `20160131`
-の部分は実行した日付に置き換わります。あとはこのアーカイブファイルを vim-dev へ
-更新依頼とともに送信します。
+2.  `PO-Revision-Date` を更新する
+
+    ja.po のヘッダにある `PO-Revision-Date` を、リリース用に更新する。
+
+3.  テストをパスする
+
+        $ make test
+
+    [CI][#ci] で実行しているのでローカルでやる意味は無いが、テストをパスするこ
+    とを確認する。
+
+4.  リリース用アーカイブを作成する
+
+        $ make release-today
+
+    `vim-lang-ja-20160131.tar.xz` といったアーカイブファイルができる。
+    `20160131` の部分は実行した日付に置き換わりる。
+    
+5.  アーカイブを Bram と vim-dev へ送る
+
+    あとはこのアーカイブファイルを Bram と vim-dev へ更新依頼とともに送信する。
+    以下、文面の一例:
+
+        Hi Bram and the list.
+
+        I want to update Japanese translations.
+        Could you merge contents of attached file to Vim?
+
+        Best regard.
+
+    やや、重すぎ感はある。
+
+[#ci]:https://travis-ci.org/vim-jp/lang-ja
