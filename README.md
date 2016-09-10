@@ -152,7 +152,7 @@ runtime/tutor/tutor |原文チュートリアルファイル
         I want to update Japanese translations.
         Could you merge contents of attached file to Vim?
 
-        Best regard.
+        Best regards.
 
     やや、重すぎ感はある。
 
