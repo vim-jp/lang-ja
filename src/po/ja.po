@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-31 18:10+0900\n"
-"PO-Revision-Date: 2016-08-31 21:20+0900\n"
+"POT-Creation-Date: 2016-09-10 21:10+0900\n"
+"PO-Revision-Date: 2016-09-10 21:20+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: vim-jp (https://github.com/vim-jp/lang-ja)\n"
 "Language: Japanese\n"
@@ -56,6 +56,9 @@ msgstr "E83: バッファを作成できないので, 他のを使用します..
 
 msgid "E931: Buffer cannot be registered"
 msgstr "E931: バッファを登録できません"
+
+msgid "E937: Attempt to delete a buffer that is in use"
+msgstr "E937: 使用中のバッファを削除しようと試みました"
 
 msgid "E515: No buffers were unloaded"
 msgstr "E515: 解放されたバッファはありません"
@@ -1948,6 +1951,9 @@ msgstr "E462: \"%s\" をリロードする準備ができませんでした"
 msgid "E321: Could not reload \"%s\""
 msgstr "E321: \"%s\" はリロードできませんでした"
 
+msgid "--Deleted--"
+msgstr "--削除済--"
+
 #, c-format
 msgid "auto-removing autocommand: %s <buffer=%d>"
 msgstr "autocommand: %s <バッファ=%d> が自動的に削除されます"
@@ -1957,11 +1963,11 @@ msgstr "autocommand: %s <バッファ=%d> が自動的に削除されます"
 msgid "E367: No such group: \"%s\""
 msgstr "E367: そのグループはありません: \"%s\""
 
+msgid "E936: Cannot delete the current group"
+msgstr "E936: 現在のグループは削除できません"
+
 msgid "W19: Deleting augroup that is still in use"
 msgstr "W19: 使用中の augroup を消そうとしています"
-
-msgid "--Deleted--"
-msgstr "--削除済--"
 
 #, c-format
 msgid "E215: Illegal character after *: %s"
