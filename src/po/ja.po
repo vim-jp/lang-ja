@@ -2857,7 +2857,7 @@ msgid "This Vim was not compiled with the diff feature."
 msgstr "このVimにはdiff機能がありません(コンパイル時設定)."
 
 msgid "Attempt to open script file again: \""
-msgstr "スクリプトファイルを再び開いてみます: \""
+msgstr "スクリプトファイルを再び開こうとしました: \""
 
 msgid "Cannot open for reading: \""
 msgstr "読込用として開けません"
