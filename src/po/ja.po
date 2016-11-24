@@ -244,7 +244,7 @@ msgid "E917: Cannot use a callback with %s()"
 msgstr "E917: %s() にコールバックは使えません"
 
 msgid "E912: cannot use ch_evalexpr()/ch_sendexpr() with a raw or nl channel"
-msgstr "E912: 生や nl チャンネルに ch_evalexpr()/ch_sendexpr は使えません"
+msgstr "E912: raw や nl モードのチャンネルに ch_evalexpr()/ch_sendexpr() は使えません"
 
 msgid "E906: not an open channel"
 msgstr "E906: 開いていないチャンネルです"
