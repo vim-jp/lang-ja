@@ -5578,7 +5578,7 @@ msgid "E556: at top of tag stack"
 msgstr "E556: タグスタックの先頭です"
 
 msgid "E425: Cannot go before first matching tag"
-msgstr "E425: 最初の該当タグを超えて戻ることはできません"
+msgstr "E425: 最初の該当タグを越えて戻ることはできません"
 
 #, c-format
 msgid "E426: tag not found: %s"
@@ -5594,7 +5594,7 @@ msgid "E427: There is only one matching tag"
 msgstr "E427: 該当タグが1つだけしかありません"
 
 msgid "E428: Cannot go beyond last matching tag"
-msgstr "E428: 最後に該当するタグを超えて進むことはできません"
+msgstr "E428: 最後の該当タグを越えて進むことはできません"
 
 #, c-format
 msgid "File \"%s\" does not exist"
