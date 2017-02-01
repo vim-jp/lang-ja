@@ -3905,7 +3905,7 @@ msgid "E766: Insufficient arguments for printf()"
 msgstr "E766: printf() の引数が不十分です"
 
 msgid "E807: Expected Float argument for printf()"
-msgstr "E807: printf() の引数には浮動少数点数が期待されています"
+msgstr "E807: printf() の引数には浮動小数点数が期待されています"
 
 msgid "E767: Too many arguments to printf()"
 msgstr "E767: printf() の引数が多過ぎます"
