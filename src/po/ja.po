@@ -5395,29 +5395,29 @@ msgid "No Syntax items defined for this buffer"
 msgstr "このバッファに定義された構文要素はありません"
 
 msgid "syntax conceal on"
-msgstr "構文 conceal オン"
+msgstr "構文の conceal は現在 on です"
 
 msgid "syntax conceal off"
-msgstr "構文 conceal オフ"
+msgstr "構文の conceal は現在 off です"
 
 #, c-format
 msgid "E390: Illegal argument: %s"
 msgstr "E390: 不正な引数です: %s"
 
 msgid "syntax case ignore"
-msgstr "構文 大文字小文字 無視"
+msgstr "構文の大文字小文字は現在 ignore です"
 
 msgid "syntax case match"
-msgstr "構文 大文字小文字 一致"
+msgstr "構文の大文字小文字は現在 match です"
 
 msgid "syntax spell toplevel"
-msgstr "構文 spell トップレベル"
+msgstr "構文の spell は現在 toplevel です"
 
 msgid "syntax spell notoplevel"
-msgstr "構文 spell 非トップレベル"
+msgstr "構文の spell は現在 notoplevel です"
 
 msgid "syntax spell default"
-msgstr "構文 spell 既定"
+msgstr "構文の spell は現在 default です"
 
 msgid "syntax iskeyword "
 msgstr "構文用 iskeyword "
