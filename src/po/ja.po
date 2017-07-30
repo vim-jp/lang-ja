@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-03 23:05+0900\n"
+"POT-Creation-Date: 2017-07-18 20:29+0900\n"
 "PO-Revision-Date: 2017-07-12 20:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: vim-jp (https://github.com/vim-jp/lang-ja)\n"
@@ -3155,6 +3155,9 @@ msgstr "--startuptime <file>\t起動にかかった時間の詳細を <file> へ
 msgid "-i <viminfo>\t\tUse <viminfo> instead of .viminfo"
 msgstr "-i <viminfo>\t\t.viminfoの代わりに <viminfo> を使う"
 
+msgid "--clean\t\t'nocompatible', Vim defaults, no plugins, no viminfo"
+msgstr "--clean\t\t'nocompatible'、Vimの既定、プラグインなし、viminfoなし"
+
 msgid "-h  or  --help\tPrint Help (this message) and exit"
 msgstr "-h or  --help\tヘルプ(このメッセージ)を表示し終了する"
 
@@ -4139,19 +4142,25 @@ msgstr "%ld 行が変更されました"
 msgid "freeing %ld lines"
 msgstr "%ld 行を解放中"
 
-msgid "block of 1 line yanked"
-msgstr "1 行のブロックがヤンクされました"
-
-msgid "1 line yanked"
-msgstr "1 行がヤンクされました"
+#, c-format
+msgid " into \"%c"
+msgstr " \"%c に"
 
 #, c-format
-msgid "block of %ld lines yanked"
-msgstr "%ld 行のブロックがヤンクされました"
+msgid "block of 1 line yanked%s"
+msgstr "1 行のブロックが%sヤンクされました"
 
 #, c-format
-msgid "%ld lines yanked"
-msgstr "%ld 行がヤンクされました"
+msgid "1 line yanked%s"
+msgstr "1 行が%sヤンクされました"
+
+#, c-format
+msgid "block of %ld lines yanked%s"
+msgstr "%ld 行のブロックが%sヤンクされました"
+
+#, c-format
+msgid "%ld lines yanked%s"
+msgstr "%ld 行が%sヤンクされました"
 
 #, c-format
 msgid "E353: Nothing in register %s"
