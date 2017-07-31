@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-18 20:29+0900\n"
+"POT-Creation-Date: 2017-07-31 21:25+0900\n"
 "PO-Revision-Date: 2017-07-12 20:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: vim-jp (https://github.com/vim-jp/lang-ja)\n"
@@ -4280,6 +4280,9 @@ msgstr "E541: 要素が多過ぎます"
 msgid "E542: unbalanced groups"
 msgstr "E542: グループが釣合いません"
 
+msgid "E946: Cannot make a terminal with running job modifiable"
+msgstr "E946: 実行中のジョブがある端末は変更可能にできません"
+
 msgid "E590: A preview window already exists"
 msgstr "E590: プレビューウィンドウが既に存在します"
 
@@ -5676,6 +5679,18 @@ msgstr ""
 
 msgid "Cannot open $VIMRUNTIME/rgb.txt"
 msgstr "$VIMRUNTIME/rgb.txtを開けません"
+
+msgid "Terminal"
+msgstr "端末"
+
+msgid "Terminal-finished"
+msgstr "端末 (終了)"
+
+msgid "running"
+msgstr "実行中"
+
+msgid "finished"
+msgstr "終了"
 
 msgid "new shell started\n"
 msgstr "新しいシェルを起動します\n"
