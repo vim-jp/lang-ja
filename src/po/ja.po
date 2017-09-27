@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-31 21:25+0900\n"
+"POT-Creation-Date: 2017-09-27 20:22+0900\n"
 "PO-Revision-Date: 2017-07-12 20:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: vim-jp (https://github.com/vim-jp/lang-ja)\n"
@@ -108,6 +108,18 @@ msgstr "E88: 最初のバッファより前へは移動できません"
 #, c-format
 msgid "E89: No write since last change for buffer %ld (add ! to override)"
 msgstr "E89: バッファ %ld の変更は保存されていません (! で変更を破棄)"
+
+msgid "E948: Job still running (add ! to end the job)"
+msgstr "E948: ジョブはまだ実行中です (! を追加でジョブを終了)"
+
+msgid "E37: No write since last change (add ! to override)"
+msgstr "E37: 最後の変更が保存されていません (! を追加で変更を破棄)"
+
+msgid "E948: Job still running"
+msgstr "E948: ジョブはまだ実行中です"
+
+msgid "E37: No write since last change"
+msgstr "E37: 最後の変更が保存されていません"
 
 msgid "W14: Warning: List of file names overflow"
 msgstr "W14: 警告: ファイル名のリストが長過ぎます"
@@ -1141,8 +1153,9 @@ msgstr "E750: 初めに \":profile start {fname}\" を実行してください"
 msgid "Save changes to \"%s\"?"
 msgstr "変更を \"%s\" に保存しますか?"
 
-msgid "Untitled"
-msgstr "無題"
+#, c-format
+msgid "E947: Job still running in buffer \"%s\""
+msgstr "E947: ジョブはバッファ \"%s\" でまだ実行中です"
 
 #, c-format
 msgid "E162: No write since last change for buffer \"%s\""
@@ -1487,6 +1500,9 @@ msgstr "E500: 空文字列として評価されました"
 
 msgid "E195: Cannot open viminfo file for reading"
 msgstr "E195: viminfoファイルを読込用として開けません"
+
+msgid "Untitled"
+msgstr "無題"
 
 msgid "E196: No digraphs in this version"
 msgstr "E196: このバージョンに合字はありません"
@@ -3796,16 +3812,16 @@ msgstr ""
 msgid "Tear off this menu"
 msgstr "このメニューを切り取る"
 
+#, c-format
+msgid "E335: Menu not defined for %s mode"
+msgstr "E335: %s にはメニューが定義されていません"
+
 msgid "E333: Menu path must lead to a menu item"
 msgstr "E333: メニューパスはメニューアイテムを生じなければいけません"
 
 #, c-format
 msgid "E334: Menu not found: %s"
 msgstr "E334: メニューが見つかりません: %s"
-
-#, c-format
-msgid "E335: Menu not defined for %s mode"
-msgstr "E335: %s にはメニューが定義されていません"
 
 msgid "E336: Menu path must lead to a sub-menu"
 msgstr "E336: メニューパスはサブメニューを生じなければいけません"
@@ -4169,9 +4185,6 @@ msgstr ""
 #, c-format
 msgid "(+%ld for BOM)"
 msgstr "(+%ld for BOM)"
-
-msgid "%<%f%h%m%=Page %N"
-msgstr "%<%f%h%m%=%N ページ"
 
 msgid "Thanks for flying Vim"
 msgstr "Vim を使ってくれてありがとう"
@@ -5686,6 +5699,9 @@ msgstr "端末"
 msgid "Terminal-finished"
 msgstr "端末 (終了)"
 
+msgid "active"
+msgstr "アクティブ"
+
 msgid "running"
 msgstr "実行中"
 
@@ -6523,12 +6539,6 @@ msgstr "E484: ファイル \"%s\" を開けません"
 #, c-format
 msgid "E485: Can't read file %s"
 msgstr "E485: ファイル %s を読込めません"
-
-msgid "E37: No write since last change (add ! to override)"
-msgstr "E37: 最後の変更が保存されていません (! を追加で変更を破棄)"
-
-msgid "E37: No write since last change"
-msgstr "E37: 最後の変更が保存されていません"
 
 msgid "E38: Null argument"
 msgstr "E38: 引数が空です"
