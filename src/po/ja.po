@@ -202,7 +202,7 @@ msgstr ""
 "# バッファリスト:\n"
 
 msgid "E382: Cannot write, 'buftype' option is set"
-msgstr "E382: 'buftype' オプションが設定されているので書込みません"
+msgstr "E382: 'buftype' オプションが設定されているので書込めません"
 
 msgid "[Scratch]"
 msgstr "[下書き]"
