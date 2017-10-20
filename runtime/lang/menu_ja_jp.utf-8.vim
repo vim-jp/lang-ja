@@ -289,7 +289,7 @@ endif
 
 " Syntax menu
 menutrans &Syntax		シンタックス(&S)
-menutrans &Show\ filetypes\ in\ menu	対応形式をメニューに表示(&S)
+menutrans &Show\ File\ Types\ in\ Menu	対応形式をメニューに表示(&S)
 menutrans Set\ '&syntax'\ only	'syntax'だけ設定(&S)
 menutrans Set\ '&filetype'\ too	'filetype'も設定(&F)
 menutrans &Off			無効化(&O)
