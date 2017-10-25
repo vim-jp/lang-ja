@@ -73,9 +73,9 @@ menutrans Startup\ &Settings		起動時の設定(&S)
 menutrans &Global\ Settings		全体設定(&G)
 menutrans Toggle\ Pattern\ &Highlight<Tab>:set\ hls!
 	\	パターン強調切替(&H)<Tab>:set\ hls!
-menutrans Toggle\ &Ignore-case<Tab>:set\ ic!
+menutrans Toggle\ &Ignoring\ Case<Tab>:set\ ic!
 	\	大小文字区別切替(&I)<Tab>:set\ ic!
-menutrans Toggle\ &Showmatch<Tab>:set\ sm!
+menutrans Toggle\ &Showing\ Matched\ Pairs<Tab>:set\ sm!
 	\	マッチ表示切替(&S)<Tab>:set\ sm!
 menutrans &Context\ lines		カーソル周辺行数(&C)
 menutrans &Virtual\ Edit		仮想編集(&V)
@@ -86,7 +86,7 @@ menutrans Block\ and\ Insert		ブロック/挿入モード時
 menutrans Always			常時
 menutrans Toggle\ Insert\ &Mode<Tab>:set\ im!
 	\	挿入(初心者)モード切替(&M)<Tab>:set\ im!
-menutrans Toggle\ Vi\ C&ompatible<Tab>:set\ cp!
+menutrans Toggle\ Vi\ C&ompatibility<Tab>:set\ cp!
 	\	Vi互換モード切替(&O)<Tab>:set\ cp!
 menutrans Search\ &Path\.\.\.		検索パス(&P)\.\.\.
 menutrans Ta&g\ Files\.\.\.		タグファイル(&G)\.\.\.
@@ -106,19 +106,19 @@ let g:menutrans_tags_dialog = "タグファイルの名前を入力してくだ�
 menutrans F&ile\ Settings		ファイル設定(&I)
 menutrans Toggle\ Line\ &Numbering<Tab>:set\ nu!
 	\	行番号表示切替(&N)<Tab>:set\ nu!
-menutrans Toggle\ relati&ve\ Line\ Numbering<Tab>:set\ rnu!
+menutrans Toggle\ Relati&ve\ Line\ Numbering<Tab>:set\ rnu!
 	\	相対行番号表示切替(&V)<Tab>:set\ rnu!
 menutrans Toggle\ &List\ Mode<Tab>:set\ list!
 	\ リストモード切替(&L)<Tab>:set\ list!
-menutrans Toggle\ Line\ &Wrap<Tab>:set\ wrap!
+menutrans Toggle\ Line\ &Wrapping<Tab>:set\ wrap!
 	\	行折返し切替(&W)<Tab>:set\ wrap!
-menutrans Toggle\ W&rap\ at\ word<Tab>:set\ lbr!
+menutrans Toggle\ W&rapping\ at\ word<Tab>:set\ lbr!
 	\	単語折返し切替(&R)<Tab>:set\ lbr!
-menutrans Toggle\ &expand-tab<Tab>:set\ et!
+menutrans Toggle\ Tab\ &Expanding<Tab>:set\ et!
 	\	タブ展開切替(&E)<Tab>:set\ et!
-menutrans Toggle\ &auto-indent<Tab>:set\ ai!
+menutrans Toggle\ &Auto\ Indenting<Tab>:set\ ai!
 	\	自動字下げ切替(&A)<Tab>:set\ ai!
-menutrans Toggle\ &C-indenting<Tab>:set\ cin!
+menutrans Toggle\ &C-Style\ Indenting<Tab>:set\ cin!
 	\	C言語字下げ切替(&C)<Tab>:set\ cin!
 
 " other options
