@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-23 22:05+0900\n"
+"POT-Creation-Date: 2017-10-31 21:03+0900\n"
 "PO-Revision-Date: 2017-07-12 20:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: vim-jp (https://github.com/vim-jp/lang-ja)\n"
@@ -1775,9 +1775,6 @@ msgstr "E509: バックアップファイルを作れません (! を追加で�
 
 msgid "E510: Can't make backup file (add ! to override)"
 msgstr "E510: バックアップファイルを作れません (! を追加で強制作成)"
-
-msgid "E460: The resource fork would be lost (add ! to override)"
-msgstr "E460: リソースフォークが失われるかもしれません (! を追加で強制)"
 
 msgid "E214: Can't find temp file for writing"
 msgstr "E214: 保存用一時ファイルが見つかりません"
@@ -6010,24 +6007,17 @@ msgstr ""
 
 msgid ""
 "\n"
-"MacOS X (unix) version"
+"macOS version"
 msgstr ""
 "\n"
-"MacOS X (unix) 版"
+"macOS 版"
 
 msgid ""
 "\n"
-"MacOS X version"
+"macOS version w/o darwin feat."
 msgstr ""
 "\n"
-"MacOS X 版"
-
-msgid ""
-"\n"
-"MacOS version"
-msgstr ""
-"\n"
-"MacOS 版"
+"macOS 版 (darwin 無し)"
 
 msgid ""
 "\n"
@@ -6130,9 +6120,6 @@ msgstr "with Carbon GUI."
 
 msgid "with Cocoa GUI."
 msgstr "with Cocoa GUI."
-
-msgid "with (classic) GUI."
-msgstr "with (クラシック) GUI."
 
 msgid "  Features included (+) or not (-):\n"
 msgstr "  機能の一覧 有効(+)/無効(-)\n"
@@ -6975,3 +6962,5 @@ msgid ""
 msgstr ""
 "パスの設定に失敗しました: sys.path がリストではありません\n"
 "すぐに vim.VIM_SPECIAL_PATH を sys.path に追加してください"
+
+
