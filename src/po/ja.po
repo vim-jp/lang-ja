@@ -6962,5 +6962,3 @@ msgid ""
 msgstr ""
 "パスの設定に失敗しました: sys.path がリストではありません\n"
 "すぐに vim.VIM_SPECIAL_PATH を sys.path に追加してください"
-
-
