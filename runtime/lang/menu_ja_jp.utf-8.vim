@@ -131,7 +131,9 @@ let g:menutrans_textwidth_dialog = "テキストの幅('textwidth')を設定し�
 let g:menutrans_fileformat_dialog = "ファイル出力の際の改行記号の形式を選んでください."
 let g:menutrans_fileformat_choices = "&Unix\n&Dos\n&Mac\nキャンセル(&C)"
 
+menutrans Show\ C&olor\ Schemes\ in\ Menu	色テーマをメニューに表示(&O)
 menutrans C&olor\ Scheme		色テーマ選択(&O)
+menutrans Show\ &Keymaps\ in\ Menu	キーマップをメニューに表示(&K)
 menutrans &Keymap			キーマップ(&K)
 menutrans None				なし
 
@@ -153,7 +155,8 @@ menutrans &Open<Tab>:copen		開く(&O)<Tab>:copen
 menutrans &Close<Tab>:cclose		閉じる(&C)<Tab>:cclose
 menutrans &Convert\ to\ HEX<Tab>:%!xxd	HEXへ変換(&C)<Tab>:%!xxd
 menutrans Conve&rt\ back<Tab>:%!xxd\ -r	HEXから逆変換(&R)<Tab>%!xxd\ -r
-menutrans Se&T\ Compiler		コンパイラ設定(&T)
+menutrans Show\ Compiler\ Se&ttings\ in\ Menu	コンパイラ設定をメニューに表示(&T)
+menutrans Se&t\ Compiler		コンパイラ設定(&T)
 
 " Tools.Spelling Menu
 menutrans &Spelling			スペリング(&S)
