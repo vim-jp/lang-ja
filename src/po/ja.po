@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-31 21:03+0900\n"
+"POT-Creation-Date: 2018-01-19 20:26+0900\n"
 "PO-Revision-Date: 2017-07-12 20:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: vim-jp (https://github.com/vim-jp/lang-ja)\n"
@@ -1788,8 +1788,8 @@ msgstr "E166: リンクされたファイルに書込めません"
 msgid "E212: Can't open file for writing"
 msgstr "E212: 書込み用にファイルを開けません"
 
-msgid "E667: Fsync failed"
-msgstr "E667: fsync に失敗しました"
+msgid "E949: File changed while writing"
+msgstr "E949: 書込み中にファイルが変更されました"
 
 msgid "E512: Close failed"
 msgstr "E512: 閉じることに失敗"
@@ -4230,6 +4230,10 @@ msgstr "E835: 'fillchars'の値に矛盾があります"
 msgid "E617: Cannot be changed in the GTK+ 2 GUI"
 msgstr "E617: GTK+2 GUIでは変更できません"
 
+#, c-format
+msgid "E950: Cannot convert between %s and %s"
+msgstr "E950: %s と %s の間で変換できません"
+
 msgid "E524: Missing colon"
 msgstr "E524: コロンがありません"
 
@@ -4581,6 +4585,9 @@ msgstr "Vimの警告"
 msgid "shell returned %d"
 msgstr "シェルがコード %d で終了しました"
 
+msgid "E926: Current location list was changed"
+msgstr "E926: 現在のロケーションリストが変更されました"
+
 #, c-format
 msgid "E372: Too many %%%c in format string"
 msgstr "E372: フォーマット文字列に %%%c が多過ぎます"
@@ -4618,9 +4625,6 @@ msgstr "E924: 現在のウィンドウが閉じられました"
 
 msgid "E925: Current quickfix was changed"
 msgstr "E925: 現在の quickfix が変更されました"
-
-msgid "E926: Current location list was changed"
-msgstr "E926: 現在のロケーションリストが変更されました"
 
 #, c-format
 msgid "(%d of %d)%s%s: "
@@ -6429,6 +6433,9 @@ msgstr "E17: \"%s\" はディレクトリです"
 #, c-format
 msgid "E364: Library call failed for \"%s()\""
 msgstr "E364: \"%s\"() のライブラリ呼出に失敗しました"
+
+msgid "E667: Fsync failed"
+msgstr "E667: fsync に失敗しました"
 
 #, c-format
 msgid "E448: Could not load library function %s"
