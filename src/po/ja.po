@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-19 20:26+0900\n"
+"POT-Creation-Date: 2018-02-28 19:52+0900\n"
 "PO-Revision-Date: 2017-07-12 20:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: vim-jp (https://github.com/vim-jp/lang-ja)\n"
@@ -539,21 +539,6 @@ msgstr "E743: (アン)ロックするには変数の入れ子が深過ぎます"
 msgid "E109: Missing ':' after '?'"
 msgstr "E109: '?' の後に ':' がありません"
 
-msgid "E691: Can only compare List with List"
-msgstr "E691: リスト型はリスト型としか比較できません"
-
-msgid "E692: Invalid operation for List"
-msgstr "E692: リスト型には無効な操作です"
-
-msgid "E735: Can only compare Dictionary with Dictionary"
-msgstr "E735: 辞書型は辞書型としか比較できません"
-
-msgid "E736: Invalid operation for Dictionary"
-msgstr "E736: 辞書型には無効な操作です"
-
-msgid "E694: Invalid operation for Funcrefs"
-msgstr "E694: 関数参照型には無効な操作です"
-
 msgid "E804: Cannot use '%' with Float"
 msgstr "E804: '%' を浮動小数点数と組み合わせては使えません"
 
@@ -679,6 +664,21 @@ msgid ""
 msgstr ""
 "\n"
 "\t最後にセットしたスクリプト: "
+
+msgid "E691: Can only compare List with List"
+msgstr "E691: リスト型はリスト型としか比較できません"
+
+msgid "E692: Invalid operation for List"
+msgstr "E692: リスト型には無効な操作です"
+
+msgid "E735: Can only compare Dictionary with Dictionary"
+msgstr "E735: 辞書型は辞書型としか比較できません"
+
+msgid "E736: Invalid operation for Dictionary"
+msgstr "E736: 辞書型には無効な操作です"
+
+msgid "E694: Invalid operation for Funcrefs"
+msgstr "E694: 関数参照型には無効な操作です"
 
 msgid "map() argument"
 msgstr "map() の引数"
@@ -809,8 +809,20 @@ msgid "E921: Invalid callback argument"
 msgstr "E921: 無効なコールバック引数です"
 
 #, c-format
+msgid "<%s>%s%s  %d,  Hex %02x,  Oct %03o, Digr %s"
+msgstr "<%s>%s%s  %d,  16進数 %02x,  8進数 %03o, ダイグラフ %s"
+
+#, c-format
 msgid "<%s>%s%s  %d,  Hex %02x,  Octal %03o"
 msgstr "<%s>%s%s  %d,  16進数 %02x,  8進数 %03o"
+
+#, c-format
+msgid "> %d, Hex %04x, Oct %o, Digr %s"
+msgstr "> %d, 16進数 %04x, 8進数 %o, ダイグラフ %s"
+
+#, c-format
+msgid "> %d, Hex %08x, Oct %o, Digr %s"
+msgstr "> %d, 16進数 %08x, 8進数 %o, ダイグラフ %s"
 
 #, c-format
 msgid "> %d, Hex %04x, Octal %o"
@@ -1117,6 +1129,14 @@ msgid "Entering Debug mode.  Type \"cont\" to continue."
 msgstr "デバッグモードに入ります. 続けるには \"cont\" と入力してください."
 
 #, c-format
+msgid "Oldval = \"%s\""
+msgstr "古い値 = \"%s\""
+
+#, c-format
+msgid "Newval = \"%s\""
+msgstr "新しい値 = \"%s\""
+
+#, c-format
 msgid "line %ld: %s"
 msgstr "行 %ld: %s"
 
@@ -1145,6 +1165,10 @@ msgstr "ブレークポイントが定義されていません"
 #, c-format
 msgid "%3d  %s %s  line %ld"
 msgstr "%3d  %s %s  行 %ld"
+
+#, c-format
+msgid "%3d  expr %s"
+msgstr "%3d  expr %s"
 
 msgid "E750: First use \":profile start {fname}\""
 msgstr "E750: 初めに \":profile start {fname}\" を実行してください"
@@ -4301,6 +4325,9 @@ msgid "W17: Arabic requires UTF-8, do ':set encoding=utf-8'"
 msgstr ""
 "W17: アラビア文字にはUTF-8が必要なので, ':set encoding=utf-8' してください"
 
+msgid "E954: 24-bit colors are not supported on this environment"
+msgstr "E954: 24bit色はこの環境ではサポートされていません"
+
 #, c-format
 msgid "E593: Need at least %d lines"
 msgstr "E593: 最低 %d の行数が必要です"
@@ -4797,6 +4824,9 @@ msgstr "E877: (NFA 正規表現) 無効な文字クラス: %ld"
 #, c-format
 msgid "E867: (NFA) Unknown operator '\\z%c'"
 msgstr "E867: (NFA) 未知のオペレータです: '\\z%c'"
+
+msgid "E951: \\% value too large"
+msgstr "E951: \\% 値が長過ぎます"
 
 #, c-format
 msgid "E867: (NFA) Unknown operator '\\%%%c'"
@@ -5305,8 +5335,9 @@ msgstr "推定メモリ使用量: %d バイト"
 msgid "E751: Output file name must not have region name"
 msgstr "E751: 出力ファイル名には範囲名を含められません"
 
-msgid "E754: Only up to 8 regions supported"
-msgstr "E754: 範囲は 8 個までしかサポートされていません"
+#, c-format
+msgid "E754: Only up to %ld regions supported"
+msgstr "E754: 範囲は %ld 個までしかサポートされていません"
 
 #, c-format
 msgid "E755: Invalid region in %s"
@@ -5705,6 +5736,10 @@ msgstr "実行中"
 
 msgid "finished"
 msgstr "終了"
+
+#, c-format
+msgid "E953: File exists: %s"
+msgstr "E953: ファイルは既に存在します: %s"
 
 msgid "new shell started\n"
 msgstr "新しいシェルを起動します\n"
@@ -6417,6 +6452,14 @@ msgid "E475: Invalid argument: %s"
 msgstr "E475: 無効な引数です: %s"
 
 #, c-format
+msgid "E475: Invalid value for argument %s"
+msgstr "E475: 引数 %s に対して無効な値です"
+
+#, c-format
+msgid "E475: Invalid value for argument %s: %s"
+msgstr "E475: 引数 %s に対して無効な値です: %s"
+
+#, c-format
 msgid "E15: Invalid expression: %s"
 msgstr "E15: 無効な式です: %s"
 
@@ -6706,6 +6749,9 @@ msgstr "E850: 無効なレジスタ名です"
 #, c-format
 msgid "E919: Directory not found in '%s': \"%s\""
 msgstr "E919: ディレクトリが '%s' の中にありません: \"%s\""
+
+msgid "E952: Autocommand caused recursive behavior"
+msgstr "E952: Autocommandが再帰を引き起こしました"
 
 msgid "search hit TOP, continuing at BOTTOM"
 msgstr "上まで検索したので下に戻ります"
