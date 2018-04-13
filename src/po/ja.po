@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-28 19:52+0900\n"
+"POT-Creation-Date: 2018-04-12 19:36+0900\n"
 "PO-Revision-Date: 2017-07-12 20:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: vim-jp (https://github.com/vim-jp/lang-ja)\n"
@@ -704,6 +704,11 @@ msgstr "E785: complete() は挿入モードでしか利用できません"
 
 msgid "&Ok"
 msgstr "&Ok"
+
+#, c-format
+msgid "+-%s%3ld line: "
+msgid_plural "+-%s%3ld lines: "
+msgstr[0] "+-%s%3ld 行: "
 
 #, c-format
 msgid "E700: Unknown function: %s"
@@ -2059,6 +2064,11 @@ msgstr "E350: 現在の 'foldmethod' では折畳みを作成できません"
 
 msgid "E351: Cannot delete fold with current 'foldmethod'"
 msgstr "E351: 現在の 'foldmethod' では折畳みを削除できません"
+
+#, c-format
+msgid "+--%3ld line folded "
+msgid_plural "+--%3ld lines folded "
+msgstr[0] "+--%3ld 行が折畳まれました"
 
 msgid "E222: Add to read buffer"
 msgstr "E222: 読込バッファへ追加"
@@ -4201,8 +4211,8 @@ msgstr ""
 "%lld"
 
 #, c-format
-msgid "(+%ld for BOM)"
-msgstr "(+%ld for BOM)"
+msgid "(+%lld for BOM)"
+msgstr "(+%lld for BOM)"
 
 msgid "Thanks for flying Vim"
 msgstr "Vim を使ってくれてありがとう"
@@ -5248,8 +5258,8 @@ msgid "E760: No word count in %s"
 msgstr "E760: %s には単語数がありません"
 
 #, c-format
-msgid "line %6d, word %6d - %s"
-msgstr "行 %6d, 単語 %6d - %s"
+msgid "line %6d, word %6ld - %s"
+msgstr "行 %6d, 単語 %6ld - %s"
 
 #, c-format
 msgid "Duplicate word in %s line %d: %s"
@@ -5721,6 +5731,10 @@ msgstr ""
 
 msgid "Cannot open $VIMRUNTIME/rgb.txt"
 msgstr "$VIMRUNTIME/rgb.txtを開けません"
+
+#, c-format
+msgid "Kill job in \"%s\"?"
+msgstr "\"%s\" 内のジョブを終了しますか?"
 
 msgid "Terminal"
 msgstr "端末"
