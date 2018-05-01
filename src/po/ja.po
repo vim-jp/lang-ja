@@ -49,10 +49,10 @@ msgid "E855: Autocommands caused command to abort"
 msgstr "E855: autocommandがコマンドの停止を引き起こしました"
 
 msgid "E82: Cannot allocate any buffer, exiting..."
-msgstr "E82: バッファを1つも作成できないので, 終了します..."
+msgstr "E82: バッファを1つも作成できないので、終了します..."
 
 msgid "E83: Cannot allocate buffer, using other one..."
-msgstr "E83: バッファを作成できないので, 他のを使用します..."
+msgstr "E83: バッファを作成できないので、他のを使用します..."
 
 msgid "E931: Buffer cannot be registered"
 msgstr "E931: バッファを登録できません"
@@ -862,7 +862,7 @@ msgid "%sviminfo: %s in line: "
 msgstr "%sviminfo: %s 行目: "
 
 msgid "E136: viminfo: Too many errors, skipping rest of file"
-msgstr "E136: viminfo: エラーが多過ぎるので, 以降はスキップします"
+msgstr "E136: viminfo: エラーが多過ぎるので、以降はスキップします"
 
 #, c-format
 msgid "Reading viminfo file \"%s\"%s%s%s"
@@ -1330,14 +1330,14 @@ msgstr ""
 "さい"
 
 msgid "E319: Sorry, the command is not available in this version"
-msgstr "E319: このバージョンではこのコマンドは利用できません, ごめんなさい"
+msgstr "E319: このバージョンではこのコマンドは利用できません、ごめんなさい"
 
 msgid "1 more file to edit.  Quit anyway?"
-msgstr "編集すべきファイルが 1 個ありますが, 終了しますか?"
+msgstr "編集すべきファイルが 1 個ありますが、終了しますか?"
 
 #, c-format
 msgid "%d more files to edit.  Quit anyway?"
-msgstr "編集すべきファイルがあと %d 個ありますが, 終了しますか?"
+msgstr "編集すべきファイルがあと %d 個ありますが、終了しますか?"
 
 msgid "E173: 1 more file to edit"
 msgstr "E173: 編集すべきファイルが 1 個あります"
@@ -1388,7 +1388,7 @@ msgid "E183: User defined commands must start with an uppercase letter"
 msgstr "E183: ユーザー定義コマンドは英大文字で始まらなければなりません"
 
 msgid "E841: Reserved name, cannot be used for user defined command"
-msgstr "E841: 予約名なので, ユーザー定義コマンドに利用できません"
+msgstr "E841: 予約名なので、ユーザー定義コマンドに利用できません"
 
 #, c-format
 msgid "E184: No such user-defined command: %s"
@@ -1439,7 +1439,7 @@ msgstr "追加ファイル"
 
 msgid "E747: Cannot change directory, buffer is modified (add ! to override)"
 msgstr ""
-"E747: バッファが修正されているので, ディレクトリを変更できません (! を追加で"
+"E747: バッファが修正されているので、ディレクトリを変更できません (! を追加で"
 "上書)"
 
 msgid "E186: No previous directory"
@@ -1824,18 +1824,18 @@ msgid "E512: Close failed"
 msgstr "E512: 閉じることに失敗"
 
 msgid "E513: write error, conversion failed (make 'fenc' empty to override)"
-msgstr "E513: 書込みエラー, 変換失敗 (上書するには 'fenc' を空にしてください)"
+msgstr "E513: 書込みエラー、変換失敗 (上書するには 'fenc' を空にしてください)"
 
 #, c-format
 msgid ""
 "E513: write error, conversion failed in line %ld (make 'fenc' empty to "
 "override)"
 msgstr ""
-"E513: 書込みエラー, 変換失敗, 行数 %ld (上書するには 'fenc' を空にしてくださ"
+"E513: 書込みエラー、変換失敗、行数 %ld (上書するには 'fenc' を空にしてくださ"
 "い)"
 
 msgid "E514: write error (file system full?)"
-msgstr "E514: 書込みエラー, (ファイルシステムが満杯?)"
+msgstr "E514: 書込みエラー (ファイルシステムが満杯?)"
 
 msgid " CONVERSION ERROR"
 msgstr " 変換エラー"
@@ -2115,7 +2115,7 @@ msgid "E230: Cannot read from \"%s\""
 msgstr "E230: \"%s\"から読込むことができません"
 
 msgid "E665: Cannot start GUI, no valid font found"
-msgstr "E665: 有効なフォントが見つからないので, GUIを開始できません"
+msgstr "E665: 有効なフォントが見つからないので、GUIを開始できません"
 
 msgid "E231: 'guifontwide' invalid"
 msgstr "E231: 'guifontwide' が無効です"
@@ -2128,7 +2128,7 @@ msgid "E254: Cannot allocate color %s"
 msgstr "E254: %s の色を割り当てられません"
 
 msgid "No match at cursor, finding next"
-msgstr "カーソルの位置にマッチはありません, 次を検索しています"
+msgstr "カーソルの位置にマッチはありません、次を検索しています"
 
 msgid "<cannot open> "
 msgstr "<開けません> "
@@ -3003,7 +3003,7 @@ msgid "-d\t\t\tDiff mode (like \"vimdiff\")"
 msgstr "-d\t\t\t差分モード (\"vidiff\" と同じ)"
 
 msgid "-y\t\t\tEasy mode (like \"evim\", modeless)"
-msgstr "-y\t\t\tイージーモード (\"evim\" と同じ, モード無)"
+msgstr "-y\t\t\tイージーモード (\"evim\" と同じ、モード無)"
 
 msgid "-R\t\t\tReadonly mode (like \"view\")"
 msgstr "-R\t\t\t読込専用モード (\"view\" と同じ)"
@@ -3126,7 +3126,7 @@ msgid "--remote <files>\tEdit <files> in a Vim server if possible"
 msgstr "--remote <files>\t可能ならばVimサーバーで <files> を編集する"
 
 msgid "--remote-silent <files>  Same, don't complain if there is no server"
-msgstr "--remote-silent <files>  同上, サーバーが無くても警告文を出力しない"
+msgstr "--remote-silent <files>  同上、サーバーが無くても警告文を出力しない"
 
 msgid ""
 "--remote-wait <files>  As --remote but wait for files to have been edited"
@@ -3135,7 +3135,7 @@ msgstr "--remote-wait <files>\t--remote後 ファイルの編集が終わるの�
 msgid ""
 "--remote-wait-silent <files>  Same, don't complain if there is no server"
 msgstr ""
-"--remote-wait-silent <files>  同上, サーバーが無くても警告文を出力しない"
+"--remote-wait-silent <files>  同上、サーバーが無くても警告文を出力しない"
 
 msgid ""
 "--remote-tab[-wait][-silent] <files>  As --remote but use tab page per file"
@@ -3382,7 +3382,7 @@ msgid "E843: Error while updating swap file crypt"
 msgstr "E843: スワップファイルの暗号を更新中にエラーが発生しました"
 
 msgid "E301: Oops, lost the swap file!!!"
-msgstr "E301: おっと, スワップファイルが失われました!!!"
+msgstr "E301: おっと、スワップファイルが失われました!!!"
 
 msgid "E302: Could not rename swap file"
 msgstr "E302: スワップファイルの名前を変えられません"
@@ -3481,7 +3481,7 @@ msgid ""
 "If you wrote the text file after changing the crypt key press enter"
 msgstr ""
 "\n"
-"暗号キーを変えたあとにテキストファイルを保存した場合は, テキストファイルと"
+"暗号キーを変えたあとにテキストファイルを保存した場合は、テキストファイルと"
 
 msgid ""
 "\n"
@@ -3541,7 +3541,7 @@ msgid ""
 "(You might want to write out this file under another name\n"
 msgstr ""
 "\n"
-"(変更をチェックするために, このファイルを別の名前で保存した上で\n"
+"(変更をチェックするために、このファイルを別の名前で保存した上で\n"
 
 msgid "and run diff with the original file to check for changes)"
 msgstr "原本ファイルとの diff を実行すると良いでしょう)"
@@ -3738,9 +3738,9 @@ msgid ""
 msgstr ""
 "\n"
 "(1) 別のプログラムが同じファイルを編集しているかもしれません.\n"
-"    この場合には, 変更をしてしまうと1つのファイルに対して異なる2つの\n"
-"    インスタンスができてしまうので, そうしないように気をつけてください.\n"
-"    終了するか, 注意しながら続けてください.\n"
+"    この場合には、変更をしてしまうと1つのファイルに対して異なる2つの\n"
+"    インスタンスができてしまうので、そうしないように気をつけてください.\n"
+"    終了するか、注意しながら続けてください.\n"
 
 msgid "(2) An edit session for this file crashed.\n"
 msgstr "(2) このファイルの編集セッションがクラッシュした.\n"
@@ -3756,7 +3756,7 @@ msgstr ""
 "    を使用して変更をリカバーします(\":help recovery\" を参照).\n"
 
 msgid "    If you did this already, delete the swap file \""
-msgstr "    既にこれを行なったのならば, スワップファイル \""
+msgstr "    既にこれを行なったのならば、スワップファイル \""
 
 msgid ""
 "\"\n"
@@ -3921,7 +3921,7 @@ msgid "Open File dialog"
 msgstr "ファイル読込ダイアログ"
 
 msgid "E338: Sorry, no file browser in console mode"
-msgstr "E338: コンソールモードではファイルブラウザを使えません, ごめんなさい"
+msgstr "E338: コンソールモードではファイルブラウザを使えません、ごめんなさい"
 
 msgid "E766: Insufficient arguments for printf()"
 msgstr "E766: printf() の引数が不十分です"
@@ -4333,7 +4333,7 @@ msgstr "E590: プレビューウィンドウが既に存在します"
 
 msgid "W17: Arabic requires UTF-8, do ':set encoding=utf-8'"
 msgstr ""
-"W17: アラビア文字にはUTF-8が必要なので, ':set encoding=utf-8' してください"
+"W17: アラビア文字にはUTF-8が必要なので、':set encoding=utf-8' してください"
 
 msgid "E954: 24-bit colors are not supported on this environment"
 msgstr "E954: 24bit色はこの環境ではサポートされていません"
@@ -5034,11 +5034,11 @@ msgid "Warning: region %s not supported"
 msgstr "警告9: %s という範囲はサポートされていません"
 
 msgid "Sorry, no suggestions"
-msgstr "残念ですが, 修正候補はありません"
+msgstr "残念ですが、修正候補はありません"
 
 #, c-format
 msgid "Sorry, only %ld suggestions"
-msgstr "残念ですが, 修正候補は %ld 個しかありません"
+msgstr "残念ですが、修正候補は %ld 個しかありません"
 
 #, c-format
 msgid "Change \"%.*s\" to:"
@@ -5084,7 +5084,7 @@ msgid "E757: This does not look like a spell file"
 msgstr "E757: スペルファイルではないようです"
 
 msgid "E771: Old spell file, needs to be updated"
-msgstr "E771: 古いスペルファイルなので, アップデートしてください"
+msgstr "E771: 古いスペルファイルなので、アップデートしてください"
 
 msgid "E772: Spell file is for newer version of Vim"
 msgstr "E772: より新しいバージョンの Vim 用のスペルファイルです"
@@ -5098,7 +5098,7 @@ msgstr "E778: .sug ファイルではないようです: %s"
 
 #, c-format
 msgid "E779: Old .sug file, needs to be updated: %s"
-msgstr "E779: 古い .sug ファイルなので, アップデートしてください: %s"
+msgstr "E779: 古い .sug ファイルなので、アップデートしてください: %s"
 
 #, c-format
 msgid "E780: .sug file is for newer version of Vim: %s"
@@ -5295,7 +5295,7 @@ msgstr "%s の %d 行目の 重複した /regions= 行を無視しました: %s"
 
 #, c-format
 msgid "Too many regions in %s line %d: %s"
-msgstr "%s の %d 行目, 範囲指定が多過ぎます: %s"
+msgstr "%s の %d 行目、範囲指定が多過ぎます: %s"
 
 #, c-format
 msgid "/ line ignored in %s line %d: %s"
@@ -5901,7 +5901,7 @@ msgstr "E440: アンドゥ行がありません"
 
 #, c-format
 msgid "E122: Function %s already exists, add ! to replace it"
-msgstr "E122: 関数 %s は定義済です, 再定義するには ! を追加してください"
+msgstr "E122: 関数 %s は定義済です、再定義するには ! を追加してください"
 
 msgid "E717: Dictionary entry already exists"
 msgstr "E717: 辞書型内にエントリが既に存在します"
@@ -6271,7 +6271,7 @@ msgid "menu  Help->Orphans           for information    "
 msgstr "詳細はメニューの ヘルプ->孤児 を参照して下さい   "
 
 msgid "Running modeless, typed text is inserted"
-msgstr "モード無で実行中, タイプした文字が挿入されます"
+msgstr "モード無で実行中。タイプした文字が挿入されます"
 
 msgid "menu  Edit->Global Settings->Toggle Insert Mode  "
 msgstr "メニューの 編集->全体設定->挿入(初心者)モード切替 "
@@ -6356,7 +6356,7 @@ msgstr "E370: ライブラリ %s をロードできませんでした"
 
 msgid "Sorry, this command is disabled: the Perl library could not be loaded."
 msgstr ""
-"このコマンドは無効です, ごめんなさい: Perlライブラリをロードできませんでした."
+"このコマンドは無効です、ごめんなさい: Perlライブラリをロードできませんでした."
 
 msgid "E299: Perl evaluation forbidden in sandbox without the Safe module"
 msgstr ""
@@ -6505,7 +6505,7 @@ msgid "E20: Mark not set"
 msgstr "E20: マークは設定されていません"
 
 msgid "E21: Cannot make changes, 'modifiable' is off"
-msgstr "E21: 'modifiable' がオフなので, 変更できません"
+msgstr "E21: 'modifiable' がオフなので、変更できません"
 
 msgid "E22: Scripts nested too deep"
 msgstr "E22: スクリプトの入れ子が深過ぎます"
@@ -6732,7 +6732,7 @@ msgid "E449: Invalid expression received"
 msgstr "E449: 無効な式を受け取りました"
 
 msgid "E463: Region is guarded, cannot modify"
-msgstr "E463: 領域が保護されているので, 変更できません"
+msgstr "E463: 領域が保護されているので、変更できません"
 
 msgid "E744: NetBeans does not allow changes in read-only files"
 msgstr "E744: NetBeans は読込専用ファイルを変更することを許しません"
