@@ -3165,7 +3165,7 @@ msgid "--clean\t\t'nocompatible', Vim defaults, no plugins, no viminfo"
 msgstr "--clean\t\t'nocompatible'、Vimの既定、プラグインなし、viminfoなし"
 
 msgid "-h  or  --help\tPrint Help (this message) and exit"
-msgstr "-h or  --help\tヘルプ(このメッセージ)を表示し終了する"
+msgstr "-h  or  --help\tヘルプ(このメッセージ)を表示し終了する"
 
 msgid "--version\t\tPrint version information and exit"
 msgstr "--version\t\tバージョン情報を表示し終了する"
