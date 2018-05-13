@@ -140,13 +140,13 @@ runtime/tutor/tutor |原文チュートリアルファイル
     あとはこのアーカイブファイルを Bram と vim-dev へ更新依頼とともに送信する。
     以下、文面の一例:
 
-        Hi Bram and the list.
+        Hi Bram and the list,
 
-        I want to update Japanese translations.
-        Could you merge contents of attached file to Vim?
+        I'd like to update Japanese translations.
+        Could you merge the contents from the attached file into Vim?
 
-        Best regards.
+        Thanks,
+        (ここにあなたの名前。`Takata`とか)
 
-    やや、重すぎ感はある。
 
 [#ci]:https://travis-ci.org/vim-jp/lang-ja
