@@ -3,7 +3,7 @@
 # Do ":help uganda"  in Vim to read copying and usage conditions.
 # Do ":help credits" in Vim to see a list of people who contributed.
 #
-# Copyright (C) 2001-2016 MURAOKA Taro <koron.kaoriya@gmail.com>,
+# Copyright (C) 2001-2018 MURAOKA Taro <koron.kaoriya@gmail.com>,
 # 			  vim-jp (http://vim-jp.org/)
 #
 # THIS FILE IS DISTRIBUTED UNDER THE VIM LICENSE.
@@ -12,10 +12,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Vim 8.0\n"
+"Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-01 10:46+0900\n"
-"PO-Revision-Date: 2017-07-12 20:45+0900\n"
+"PO-Revision-Date: 2017-05-18 00:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: vim-jp (https://github.com/vim-jp/lang-ja)\n"
 "Language: Japanese\n"
