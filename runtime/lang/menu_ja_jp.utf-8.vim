@@ -174,6 +174,10 @@ menutrans Set\ language\ to\ "en_nz"	言語を\ "en_nz"\ に設定する
 menutrans Set\ language\ to\ "en_us"	言語を\ "en_us"\ に設定する
 menutrans &Find\ More\ Languages	他の言語を検索する(&F)
 
+let g:menutrans_spell_change_ARG_to = '"%s"\ を変更'
+let g:menutrans_spell_add_ARG_to_word_list = '"%s"\ を単語リストに追加'
+let g:menutrans_spell_ignore_ARG = '"%s"\ を無視'
+
 " Tools.Fold Menu
 menutrans &Folding			折畳み(&F)
 " open close folds
