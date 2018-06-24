@@ -25,7 +25,7 @@ ja.sjis.po: $(MASTER_PO)
 
 ja.euc-jp.po: $(MASTER_PO)
 	iconv -f utf-8 -t euc-jp $< | \
-	  sed -e 's/charset=utf-8/charset=euc-jp/' -e 's/# Original translations/# Generated from ja.po, DO NOT EDIT/' > $@
+	  sed -e 's/charset=[uU][tT][fF]-8/charset=euc-jp/' -e 's/# Original translations/# Generated from ja.po, DO NOT EDIT/' > $@
 
 sjiscorr: sjiscorr.c
 	$(CC) -o $@ $<
