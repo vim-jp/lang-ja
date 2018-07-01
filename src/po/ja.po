@@ -258,10 +258,10 @@ msgstr "E917: %s() にコールバックは使えません"
 
 msgid "E912: cannot use ch_evalexpr()/ch_sendexpr() with a raw or nl channel"
 msgstr ""
-"E912: raw や nl モードのチャンネルに ch_evalexpr()/ch_sendexpr() は使えません"
+"E912: raw や nl モードのチャネルに ch_evalexpr()/ch_sendexpr() は使えません"
 
 msgid "E906: not an open channel"
-msgstr "E906: 開いていないチャンネルです"
+msgstr "E906: 開いていないチャネルです"
 
 msgid "E920: _io file requires _name to be set"
 msgstr "E920: _io ファイルは _name の設定が必要です"
@@ -590,7 +590,7 @@ msgid "E910: Using a Job as a Number"
 msgstr "E910: ジョブを数値として扱っています"
 
 msgid "E913: Using a Channel as a Number"
-msgstr "E913: チャンネルを数値として扱っています"
+msgstr "E913: チャネルを数値として扱っています"
 
 msgid "E891: Using a Funcref as a Float"
 msgstr "E891: 関数参照型を浮動小数点数として扱っています"
@@ -611,7 +611,7 @@ msgid "E911: Using a Job as a Float"
 msgstr "E911: ジョブを浮動小数点数として扱っています"
 
 msgid "E914: Using a Channel as a Float"
-msgstr "E914: チャンネルを浮動小数点数として扱っています"
+msgstr "E914: チャネルを浮動小数点数として扱っています"
 
 msgid "E729: using Funcref as a String"
 msgstr "E729: 関数参照型を文字列として扱っています"
