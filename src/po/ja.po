@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-01 10:46+0900\n"
+"POT-Creation-Date: 2018-06-25 08:21+0900\n"
 "PO-Revision-Date: 2017-05-18 00:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -203,6 +203,9 @@ msgstr ""
 
 msgid "E382: Cannot write, 'buftype' option is set"
 msgstr "E382: 'buftype' オプションが設定されているので書込めません"
+
+msgid "[Prompt]"
+msgstr "[プロンプト]"
 
 msgid "[Scratch]"
 msgstr "[下書き]"
@@ -1424,6 +1427,9 @@ msgstr "E784: 最後のタブページを閉じることはできません"
 msgid "Already only one tab page"
 msgstr "既にタブページは1つしかありません"
 
+msgid "Edit File in new tab page"
+msgstr "新しいタブページでファイルを編集します"
+
 msgid "Edit File in new window"
 msgstr "新しいウィンドウでファイルを編集します"
 
@@ -2020,10 +2026,10 @@ msgstr "E216: そのようなグループもしくはイベントはありませ
 
 msgid ""
 "\n"
-"--- Auto-Commands ---"
+"--- Autocommands ---"
 msgstr ""
 "\n"
-"--- Auto-Commands ---"
+"--- Autocommands ---"
 
 #, c-format
 msgid "E680: <buffer=%d>: invalid buffer number "
@@ -2039,8 +2045,8 @@ msgid "E218: autocommand nesting too deep"
 msgstr "E218: autocommandの入れ子が深過ぎます"
 
 #, c-format
-msgid "%s Auto commands for \"%s\""
-msgstr "%s Auto commands for \"%s\""
+msgid "%s Autocommands for \"%s\""
+msgstr "%s Autocommands for \"%s\""
 
 #, c-format
 msgid "Executing %s"
@@ -2284,10 +2290,10 @@ msgstr "アンドゥ(&U)"
 msgid "Open tab..."
 msgstr "タブページを開く"
 
-msgid "Find string (use '\\\\' to find  a '\\')"
+msgid "Find string (use '\\\\' to find a '\\')"
 msgstr "検索文字列 ('\\' を検索するには '\\\\')"
 
-msgid "Find & Replace (use '\\\\' to find  a '\\')"
+msgid "Find & Replace (use '\\\\' to find a '\\')"
 msgstr "検索・置換 ('\\' を検索するには '\\\\')"
 
 msgid "Not Used"
@@ -2937,7 +2943,7 @@ msgstr "-q [errorfile]  最初のエラーで編集する"
 msgid ""
 "\n"
 "\n"
-"usage:"
+"Usage:"
 msgstr ""
 "\n"
 "\n"
@@ -3053,7 +3059,7 @@ msgstr "-f\t\t\tウィンドウを開くのに newcli を使用しない"
 msgid "-dev <device>\t\tUse <device> for I/O"
 msgstr "-dev <device>\t\tI/Oに <device> を使用する"
 
-msgid "-A\t\t\tstart in Arabic mode"
+msgid "-A\t\t\tStart in Arabic mode"
 msgstr "-A\t\t\tアラビア語モードで起動する"
 
 msgid "-H\t\t\tStart in Hebrew mode"
@@ -4731,8 +4737,8 @@ msgid "E66: \\z( not allowed here"
 msgstr "E66: \\z( はココでは許可されていません"
 
 #
-msgid "E67: \\z1 et al. not allowed here"
-msgstr "E67: \\z1 その他はココでは許可されていません"
+msgid "E67: \\z1 - \\z9 not allowed here"
+msgstr "E67: \\z1 - \\z9 はココでは許可されていません"
 
 #
 #, c-format
@@ -4852,8 +4858,8 @@ msgstr "E869: (NFA) 未知のオペレータです: '\\@%c'"
 msgid "E870: (NFA regexp) Error reading repetition limits"
 msgstr "E870: (NFA 正規表現) 繰り返しの制限回数を読込中にエラー"
 
-msgid "E871: (NFA regexp) Can't have a multi follow a multi !"
-msgstr "E871: (NFA 正規表現) 繰り返し の後に 繰り返し はできません!"
+msgid "E871: (NFA regexp) Can't have a multi follow a multi"
+msgstr "E871: (NFA 正規表現) 繰り返し の後に 繰り返し はできません"
 
 msgid "E872: (NFA regexp) Too many '('"
 msgstr "E872: (NFA 正規表現) '(' が多過ぎます"
@@ -4864,7 +4870,12 @@ msgstr "E879: (NFA 正規表現) \\z( が多過ぎます"
 msgid "E873: (NFA regexp) proper termination error"
 msgstr "E873: (NFA 正規表現) 終端記号がありません"
 
-msgid "E874: (NFA) Could not pop the stack !"
+msgid "Could not open temporary log file for writing, displaying on stderr... "
+msgstr ""
+"NFA正規表現エンジン用のログファイルを書込用として開けません。ログは標準エラー"
+"出力に出力します。"
+
+msgid "E874: (NFA) Could not pop the stack!"
 msgstr "E874: (NFA) スタックをポップできません!"
 
 msgid ""
@@ -4879,19 +4890,6 @@ msgstr "E876: (NFA 正規表現) NFA全体を保存するには空きスペー�
 
 msgid "E878: (NFA) Could not allocate memory for branch traversal!"
 msgstr "E878: (NFA) 現在横断中のブランチに十分なメモリを割り当てられません!"
-
-msgid ""
-"Could not open temporary log file for writing, displaying on stderr ... "
-msgstr ""
-"NFA正規表現エンジン用のログファイルを書込用として開けません。ログは標準出力に"
-"出力します。"
-
-#, c-format
-msgid "(NFA) COULD NOT OPEN %s !"
-msgstr "(NFA) ログファイル %s を開けません!"
-
-msgid "Could not open temporary log file for writing "
-msgstr "NFA正規表現エンジン用のログファイルを書込用として開けません。"
 
 msgid " VREPLACE"
 msgstr " 仮想置換"
@@ -4983,7 +4981,7 @@ msgstr "インクルードされたファイルをスキャン中: %s"
 
 #, c-format
 msgid "Searching included file %s"
-msgstr "インクルードされたファイルをスキャン中 %s"
+msgstr "インクルードされたファイルを検索中 %s"
 
 msgid "E387: Match is on current line"
 msgstr "E387: 現在行に該当があります"
@@ -5113,7 +5111,7 @@ msgid "E782: error while reading .sug file: %s"
 msgstr "E782: .sug ファイルの読込中にエラーが発生しました: %s"
 
 #, c-format
-msgid "Reading affix file %s ..."
+msgid "Reading affix file %s..."
 msgstr "affix ファイル %s を読込中..."
 
 #, c-format
@@ -5250,8 +5248,8 @@ msgid "%s value differs from what is used in another .aff file"
 msgstr "値 %s は他の .aff ファイルで使用されたのと異なります"
 
 #, c-format
-msgid "Reading dictionary file %s ..."
-msgstr "辞書ファイル %s をスキャン中..."
+msgid "Reading dictionary file %s..."
+msgstr "辞書ファイル %s を読込み中..."
 
 #, c-format
 msgid "E760: No word count in %s"
@@ -5278,8 +5276,8 @@ msgid "Ignored %d word(s) with non-ASCII characters in %s"
 msgstr "非ASCII文字を含む %d 個の単語を無視しました (%s 内)"
 
 #, c-format
-msgid "Reading word file %s ..."
-msgstr "標準入力から読込み中 %s ..."
+msgid "Reading word file %s..."
+msgstr "単語ファイル %s を読込み中..."
 
 #, c-format
 msgid "Duplicate /encoding= line ignored in %s line %d: %s"
@@ -5335,7 +5333,7 @@ msgid "Total number of words: %d"
 msgstr "総単語数: %d"
 
 #, c-format
-msgid "Writing suggestion file %s ..."
+msgid "Writing suggestion file %s..."
 msgstr "修正候補ファイル \"%s\" を書込み中..."
 
 #, c-format
@@ -5357,7 +5355,7 @@ msgid "Warning: both compounding and NOBREAK specified"
 msgstr "警告: 複合フラグと NOBREAK が両方とも指定されました"
 
 #, c-format
-msgid "Writing spell file %s ..."
+msgid "Writing spell file %s..."
 msgstr "スペルファイル %s を書込み中..."
 
 msgid "Done!"
@@ -6029,6 +6027,10 @@ msgstr "E133: 関数外に :return がありました"
 #, c-format
 msgid "E107: Missing parentheses: %s"
 msgstr "E107: カッコ '(' がありません: %s"
+
+#, c-format
+msgid "%s (%s, compiled %s)"
+msgstr "%s (%s, compiled %s)"
 
 msgid ""
 "\n"
