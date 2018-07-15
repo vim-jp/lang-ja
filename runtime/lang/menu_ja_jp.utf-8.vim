@@ -214,8 +214,7 @@ menutrans &Delete		削除(&D)
 menutrans &Alternate		裏へ切替(&A)
 menutrans &Next			次のバッファ(&N)
 menutrans &Previous		前のバッファ(&P)
-menutrans [No\ File]		[無題]
-let g:menutrans_no_file = "[無題]"
+let g:menutrans_no_file = "[無名]"
 
 " Window menu
 menutrans &Window			ウィンドウ(&W)
