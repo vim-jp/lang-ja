@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-25 08:21+0900\n"
+"POT-Creation-Date: 2018-07-18 00:43+0900\n"
 "PO-Revision-Date: 2017-05-18 00:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -524,7 +524,6 @@ msgstr "E710: リスト型変数にターゲットよりも多い要素があり
 msgid "E711: List value has not enough items"
 msgstr "E711: リスト型変数に十分な数の要素がありません"
 
-#
 msgid "E690: Missing \"in\" after :for"
 msgstr "E690: :for の後に \"in\" がありません"
 
@@ -2711,6 +2710,19 @@ msgstr "範囲外の行番号です"
 msgid "not allowed in the Vim sandbox"
 msgstr "サンドボックスでは許されません"
 
+#, c-format
+msgid "E370: Could not load library %s"
+msgstr "E370: ライブラリ %s をロードできませんでした"
+
+msgid "Sorry, this command is disabled: the Perl library could not be loaded."
+msgstr ""
+"このコマンドは無効です、ごめんなさい: Perlライブラリをロードできませんでした."
+
+msgid "E299: Perl evaluation forbidden in sandbox without the Safe module"
+msgstr ""
+"E299: サンドボックスでは Safe モジュールを使用しないPerlスクリプトは禁じられ"
+"ています"
+
 msgid "E836: This Vim cannot execute :python after using :py3"
 msgstr "E836: このVimでは :py3 を使った後に :python を使えません"
 
@@ -4709,7 +4721,6 @@ msgstr "E777: 文字列かリストが必要です"
 msgid "E369: invalid item in %s%%[]"
 msgstr "E369: 無効な項目です: %s%%[]"
 
-#
 #, c-format
 msgid "E769: Missing ] after %s["
 msgstr "E769: %s[ の後に ] がありません"
@@ -4732,15 +4743,12 @@ msgstr "E54: %s( が釣り合っていません"
 msgid "E55: Unmatched %s)"
 msgstr "E55: %s) が釣り合っていません"
 
-#
 msgid "E66: \\z( not allowed here"
 msgstr "E66: \\z( はココでは許可されていません"
 
-#
 msgid "E67: \\z1 - \\z9 not allowed here"
 msgstr "E67: \\z1 - \\z9 はココでは許可されていません"
 
-#
 #, c-format
 msgid "E69: Missing ] after %s%%["
 msgstr "E69: %s%%[ の後に ] がありません"
@@ -4749,7 +4757,9 @@ msgstr "E69: %s%%[ の後に ] がありません"
 msgid "E70: Empty %s%%[]"
 msgstr "E70: %s%%[] が空です"
 
-#
+msgid "E956: Cannot use pattern recursively"
+msgstr "E956: パターンを再帰的に使うことはできません"
+
 msgid "E65: Illegal back reference"
 msgstr "E65: 不正な後方参照です"
 
@@ -4782,7 +4792,6 @@ msgstr "E61:%s* が入れ子になっています"
 msgid "E62: Nested %s%c"
 msgstr "E62:%s%c が入れ子になっています"
 
-#
 msgid "E63: invalid use of \\_"
 msgstr "E63: \\_ の無効な使用方法です"
 
@@ -4790,16 +4799,13 @@ msgstr "E63: \\_ の無効な使用方法です"
 msgid "E64: %s%c follows nothing"
 msgstr "E64:%s%c の後になにもありません"
 
-#
 msgid "E68: Invalid character after \\z"
 msgstr "E68: \\z の後に不正な文字がありました"
 
-#
 #, c-format
 msgid "E678: Invalid character after %s%%[dxouU]"
 msgstr "E678: %s%%[dxouU] の後に不正な文字がありました"
 
-#
 #, c-format
 msgid "E71: Invalid character after %s%%"
 msgstr "E71: %s%% の後に不正な文字がありました"
@@ -4832,7 +4838,6 @@ msgstr "E865: (NFA) 期待より早く正規表現の終端に到達しました
 msgid "E866: (NFA regexp) Misplaced %c"
 msgstr "E866: (NFA 正規表現) 位置が誤っています: %c"
 
-#
 #, c-format
 msgid "E877: (NFA regexp) Invalid character class: %ld"
 msgstr "E877: (NFA 正規表現) 無効な文字クラス: %ld"
@@ -6354,19 +6359,6 @@ msgstr "E802: 無効な ID: %ld (1 以上でなければなりません)"
 #, c-format
 msgid "E803: ID not found: %ld"
 msgstr "E803: ID はありません: %ld"
-
-#, c-format
-msgid "E370: Could not load library %s"
-msgstr "E370: ライブラリ %s をロードできませんでした"
-
-msgid "Sorry, this command is disabled: the Perl library could not be loaded."
-msgstr ""
-"このコマンドは無効です、ごめんなさい: Perlライブラリをロードできませんでした."
-
-msgid "E299: Perl evaluation forbidden in sandbox without the Safe module"
-msgstr ""
-"E299: サンドボックスでは Safe モジュールを使用しないPerlスクリプトは禁じられ"
-"ています"
 
 msgid "Edit with &multiple Vims"
 msgstr "複数のVimで編集する (&M)"
