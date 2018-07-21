@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 00:43+0900\n"
+"POT-Creation-Date: 2018-07-21 11:00+0900\n"
 "PO-Revision-Date: 2017-05-18 00:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -2289,11 +2289,11 @@ msgstr "アンドゥ(&U)"
 msgid "Open tab..."
 msgstr "タブページを開く"
 
-msgid "Find string (use '\\\\' to find a '\\')"
-msgstr "検索文字列 ('\\' を検索するには '\\\\')"
+msgid "Find string"
+msgstr "検索文字列"
 
-msgid "Find & Replace (use '\\\\' to find a '\\')"
-msgstr "検索・置換 ('\\' を検索するには '\\\\')"
+msgid "Find & Replace"
+msgstr "検索・置換"
 
 msgid "Not Used"
 msgstr "使われません"
@@ -2709,19 +2709,6 @@ msgstr "範囲外の行番号です"
 
 msgid "not allowed in the Vim sandbox"
 msgstr "サンドボックスでは許されません"
-
-#, c-format
-msgid "E370: Could not load library %s"
-msgstr "E370: ライブラリ %s をロードできませんでした"
-
-msgid "Sorry, this command is disabled: the Perl library could not be loaded."
-msgstr ""
-"このコマンドは無効です、ごめんなさい: Perlライブラリをロードできませんでした."
-
-msgid "E299: Perl evaluation forbidden in sandbox without the Safe module"
-msgstr ""
-"E299: サンドボックスでは Safe モジュールを使用しないPerlスクリプトは禁じられ"
-"ています"
 
 msgid "E836: This Vim cannot execute :python after using :py3"
 msgstr "E836: このVimでは :py3 を使った後に :python を使えません"
@@ -5387,6 +5374,9 @@ msgstr "E783: MAP エントリに重複文字が存在します"
 msgid "No Syntax items defined for this buffer"
 msgstr "このバッファに定義された構文要素はありません"
 
+msgid "'redrawtime' exceeded, syntax highlighting disabled"
+msgstr "'redrawtime' を超過したため、構文ハイライトは無効化されます"
+
 msgid "syntax conceal on"
 msgstr "構文の conceal は現在 on です"
 
@@ -5414,6 +5404,9 @@ msgstr "構文の spell は現在 default です"
 
 msgid "syntax iskeyword "
 msgstr "構文用 iskeyword "
+
+msgid "syntax iskeyword not set"
+msgstr "構文用 iskeyword はセットされていません"
 
 #, c-format
 msgid "E391: No such syntax cluster: %s"
@@ -6359,6 +6352,19 @@ msgstr "E802: 無効な ID: %ld (1 以上でなければなりません)"
 #, c-format
 msgid "E803: ID not found: %ld"
 msgstr "E803: ID はありません: %ld"
+
+#, c-format
+msgid "E370: Could not load library %s"
+msgstr "E370: ライブラリ %s をロードできませんでした"
+
+msgid "Sorry, this command is disabled: the Perl library could not be loaded."
+msgstr ""
+"このコマンドは無効です、ごめんなさい: Perlライブラリをロードできませんでした."
+
+msgid "E299: Perl evaluation forbidden in sandbox without the Safe module"
+msgstr ""
+"E299: サンドボックスでは Safe モジュールを使用しないPerlスクリプトは禁じられ"
+"ています"
 
 msgid "Edit with &multiple Vims"
 msgstr "複数のVimで編集する (&M)"
