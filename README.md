@@ -28,7 +28,10 @@ runtime/tutor/tutor                |原文チュートリアルファイル
 
     註: `make vim.pot` を実行するには `src/` で `./configure` を実行しておく必
     要があるが、`src/po/Makefile` の4行目の `include ../auto/config.mk` をコメ
-    ントアウトして回避することも可能。
+    ントアウトして回避することも可能。(あるいは、空の `src/auto/config.mk` を用意してもよい。)
+
+    Windows 上で vim.pot を生成するには、Cygwin や MSYS2 等の Linux 的な環境を使うこと。(MSVC 用の Makefile も用意されているが、ソースファイルの読み込み順序が異なるために余計な差分が出てしまう。)
+    また、Win32 向けにビルドしたために `src/if_perl.c` が生成されているならば、vim.pot 生成前に削除しておくこと。(余計な差分が出るのを防ぐため。)
 
 2.  ja.po に vim.pot をマージ (古いものは ja.po.old へ退避される)
 
