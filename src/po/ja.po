@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-21 11:00+0900\n"
+"POT-Creation-Date: 2018-08-08 20:28+0900\n"
 "PO-Revision-Date: 2017-05-18 00:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -743,6 +743,9 @@ msgstr "E916: 有効なジョブではありません"
 
 msgid "E701: Invalid type for len()"
 msgstr "E701: len() には無効な型です"
+
+msgid "E957: Invalid window number"
+msgstr "E957: 無効なウィンドウ番号です"
 
 #, c-format
 msgid "E798: ID is reserved for \":match\": %ld"
