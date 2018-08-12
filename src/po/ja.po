@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-08 20:28+0900\n"
+"POT-Creation-Date: 2018-08-12 14:07+0900\n"
 "PO-Revision-Date: 2017-05-18 00:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -1727,9 +1727,6 @@ msgstr "標準入力から読込み中..."
 
 msgid "E202: Conversion made file unreadable!"
 msgstr "E202: 変換がファイルを読込不可にしました"
-
-msgid "[fifo/socket]"
-msgstr "[FIFO/ソケット]"
 
 msgid "[fifo]"
 msgstr "[FIFO]"
