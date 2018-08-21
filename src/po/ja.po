@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-12 14:07+0900\n"
+"POT-Creation-Date: 2018-08-21 22:37+0900\n"
 "PO-Revision-Date: 2017-05-18 00:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -69,26 +69,20 @@ msgstr "E516: 削除されたバッファはありません"
 msgid "E517: No buffers were wiped out"
 msgstr "E517: 破棄されたバッファはありません"
 
-msgid "1 buffer unloaded"
-msgstr "1 個のバッファが解放されました"
+#, c-format
+msgid "%d buffer unloaded"
+msgid_plural "%d buffers unloaded"
+msgstr[0] "%d 個のバッファが解放されました"
 
 #, c-format
-msgid "%d buffers unloaded"
-msgstr "%d 個のバッファが解放されました"
-
-msgid "1 buffer deleted"
-msgstr "1 個のバッファが削除されました"
+msgid "%d buffer deleted"
+msgid_plural "%d buffers deleted"
+msgstr[0] "%d 個のバッファが削除されました"
 
 #, c-format
-msgid "%d buffers deleted"
-msgstr "%d 個のバッファが削除されました"
-
-msgid "1 buffer wiped out"
-msgstr "1 個のバッファが破棄されました"
-
-#, c-format
-msgid "%d buffers wiped out"
-msgstr "%d 個のバッファが破棄されました"
+msgid "%d buffer wiped out"
+msgid_plural "%d buffers wiped out"
+msgstr[0] "%d 個のバッファが破棄されました"
 
 msgid "E90: Cannot unload last buffer"
 msgstr "E90: 最後のバッファは解放できません"
@@ -162,12 +156,9 @@ msgid "[readonly]"
 msgstr "[読込専用]"
 
 #, c-format
-msgid "1 line --%d%%--"
-msgstr "1 行 --%d%%--"
-
-#, c-format
-msgid "%ld lines --%d%%--"
-msgstr "%ld 行 --%d%%--"
+msgid "%ld line --%d%%--"
+msgid_plural "%ld lines --%d%%--"
+msgstr[0] "%ld 行 --%d%%--"
 
 #, c-format
 msgid "line %ld of %ld --%d%%-- col "
@@ -845,12 +836,10 @@ msgstr "> %d, 16進数 %08x, 8進数 %o"
 msgid "E134: Move lines into themselves"
 msgstr "E134: 行をそれ自身には移動できません"
 
-msgid "1 line moved"
-msgstr "1 行が移動されました"
-
 #, c-format
-msgid "%ld lines moved"
-msgstr "%ld 行が移動されました"
+msgid "%ld line moved"
+msgid_plural "%ld lines moved"
+msgstr[0] "%ld 行が移動されました"
 
 #, c-format
 msgid "%ld lines filtered"
@@ -1002,26 +991,25 @@ msgstr "%s に置換しますか? (y/n/a/q/l/^E/^Y)"
 msgid "(Interrupted) "
 msgstr "(割込まれました) "
 
-msgid "1 match"
-msgstr "1 箇所該当しました"
-
-msgid "1 substitution"
-msgstr "1 箇所置換しました"
+#, c-format
+msgid "%ld match on %ld line"
+msgid_plural "%ld matches on %ld line"
+msgstr[0] "%ld 箇所該当しました (計 %ld 行内)"
 
 #, c-format
-msgid "%ld matches"
-msgstr "%ld 箇所該当しました"
+msgid "%ld substitution on %ld line"
+msgid_plural "%ld substitutions on %ld line"
+msgstr[0] "%ld 箇所置換しました (計 %ld 行内)"
 
 #, c-format
-msgid "%ld substitutions"
-msgstr "%ld 箇所置換しました"
-
-msgid " on 1 line"
-msgstr " (計 1 行内)"
+msgid "%ld match on %ld lines"
+msgid_plural "%ld matches on %ld lines"
+msgstr[0] "%ld 箇所該当しました (計 %ld 行内)"
 
 #, c-format
-msgid " on %ld lines"
-msgstr " (計 %ld 行内)"
+msgid "%ld substitution on %ld lines"
+msgid_plural "%ld substitutions on %ld lines"
+msgstr[0] "%ld 箇所置換しました (計 %ld 行内)"
 
 msgid "E147: Cannot do :global recursive with a range"
 msgstr "E147: :global を範囲付きで再帰的には使えません"
@@ -1337,19 +1325,15 @@ msgstr ""
 msgid "E319: Sorry, the command is not available in this version"
 msgstr "E319: このバージョンではこのコマンドは利用できません、ごめんなさい"
 
-msgid "1 more file to edit.  Quit anyway?"
-msgstr "編集すべきファイルが 1 個ありますが、終了しますか?"
+#, c-format
+msgid "%d more file to edit.  Quit anyway?"
+msgid_plural "%d more files to edit.  Quit anyway?"
+msgstr[0] "編集すべきファイルがあと %d 個ありますが、終了しますか?"
 
 #, c-format
-msgid "%d more files to edit.  Quit anyway?"
-msgstr "編集すべきファイルがあと %d 個ありますが、終了しますか?"
-
-msgid "E173: 1 more file to edit"
-msgstr "E173: 編集すべきファイルが 1 個あります"
-
-#, c-format
-msgid "E173: %ld more files to edit"
-msgstr "E173: 編集すべきファイルがあと %ld 個あります"
+msgid "E173: %ld more file to edit"
+msgid_plural "E173: %ld more files to edit"
+msgstr[0] "E173: 編集すべきファイルがあと %ld 個あります"
 
 msgid "E174: Command already exists: add ! to replace it"
 msgstr "E174: コマンドが既にあります: 再定義するには ! を追加してください"
@@ -1904,19 +1888,15 @@ msgstr "[unix]"
 msgid "[unix format]"
 msgstr "[unixフォーマット]"
 
-msgid "1 line, "
-msgstr "1 行, "
+#, c-format
+msgid "%ld line, "
+msgid_plural "%ld lines, "
+msgstr[0] "%ld 行, "
 
 #, c-format
-msgid "%ld lines, "
-msgstr "%ld 行, "
-
-msgid "1 character"
-msgstr "1 文字"
-
-#, c-format
-msgid "%lld characters"
-msgstr "%lld 文字"
+msgid "%lld character"
+msgid_plural "%lld characters"
+msgstr[0] "%lld 文字"
 
 msgid "[noeol]"
 msgstr "[noeol]"
@@ -3947,19 +3927,15 @@ msgstr ""
 msgid "Type number and <Enter> (empty cancels): "
 msgstr "番号と<Enter>を入力してください (空でキャンセル): "
 
-msgid "1 more line"
-msgstr "1 行 追加しました"
-
-msgid "1 line less"
-msgstr "1 行 削除しました"
+#, c-format
+msgid "%ld more line"
+msgid_plural "%ld more lines"
+msgstr[0] "%ld 行 追加しました"
 
 #, c-format
-msgid "%ld more lines"
-msgstr "%ld 行 追加しました"
-
-#, c-format
-msgid "%ld fewer lines"
-msgstr "%ld 行 削除しました"
+msgid "%ld line less"
+msgid_plural "%ld fewer lines"
+msgstr[0] "%ld 行 削除しました"
 
 msgid " (Interrupted)"
 msgstr " (割込まれました)"
@@ -4095,31 +4071,23 @@ msgstr ""
 "さい"
 
 #, c-format
-msgid "1 line %sed 1 time"
-msgstr "1 行が %s で 1 回処理されました"
+msgid "%ld line %sed %d time"
+msgid_plural "%ld line %sed %d times"
+msgstr[0] "%ld 行が %s で %d 回処理されました"
 
 #, c-format
-msgid "1 line %sed %d times"
-msgstr "1 行が %s で %d 回処理されました"
-
-#, c-format
-msgid "%ld lines %sed 1 time"
-msgstr "%ld 行が %s で 1 回処理されました"
-
-#, c-format
-msgid "%ld lines %sed %d times"
-msgstr "%ld 行が %s で %d 回処理されました"
+msgid "%ld lines %sed %d time"
+msgid_plural "%ld lines %sed %d times"
+msgstr[0] "%ld 行が %s で %d 回処理されました"
 
 #, c-format
 msgid "%ld lines to indent... "
 msgstr "%ld 行がインデントされます... "
 
-msgid "1 line indented "
-msgstr "1 行をインデントしました "
-
 #, c-format
-msgid "%ld lines indented "
-msgstr "%ld 行をインデントしました "
+msgid "%ld line indented "
+msgid_plural "%ld lines indented "
+msgstr[0] "%ld 行をインデントしました "
 
 msgid "E748: No previously used register"
 msgstr "E748: まだレジスタを使用していません"
@@ -4127,12 +4095,10 @@ msgstr "E748: まだレジスタを使用していません"
 msgid "cannot yank; delete anyway"
 msgstr "ヤンクできません; とにかく消去"
 
-msgid "1 line changed"
-msgstr "1 行が変更されました"
-
 #, c-format
-msgid "%ld lines changed"
-msgstr "%ld 行が変更されました"
+msgid "%ld line changed"
+msgid_plural "%ld lines changed"
+msgstr[0] "%ld 行が変更されました"
 
 #, c-format
 msgid "freeing %ld lines"
@@ -4143,20 +4109,14 @@ msgid " into \"%c"
 msgstr " \"%c に"
 
 #, c-format
-msgid "block of 1 line yanked%s"
-msgstr "1 行のブロックが%sヤンクされました"
+msgid "block of %ld line yanked%s"
+msgid_plural "block of %ld lines yanked%s"
+msgstr[0] "%ld 行のブロックが%sヤンクされました"
 
 #, c-format
-msgid "1 line yanked%s"
-msgstr "1 行が%sヤンクされました"
-
-#, c-format
-msgid "block of %ld lines yanked%s"
-msgstr "%ld 行のブロックが%sヤンクされました"
-
-#, c-format
-msgid "%ld lines yanked%s"
-msgstr "%ld 行が%sヤンクされました"
+msgid "%ld line yanked%s"
+msgid_plural "%ld lines yanked%s"
+msgstr[0] "%ld 行が%sヤンクされました"
 
 #, c-format
 msgid "E353: Nothing in register %s"
