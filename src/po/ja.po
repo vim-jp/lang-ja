@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-22 00:19+0900\n"
+"POT-Creation-Date: 2018-09-10 20:12+0900\n"
 "PO-Revision-Date: 2017-05-18 00:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -5706,6 +5706,9 @@ msgstr "実行中"
 
 msgid "finished"
 msgstr "終了"
+
+msgid "E958: Job already finished"
+msgstr "E958: ジョブはすでに終了しています"
 
 #, c-format
 msgid "E953: File exists: %s"
