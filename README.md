@@ -7,15 +7,15 @@ Vimに付属する日本語翻訳ファイルを管理するリポジトリ
 
 ## ディレクトリ/ファイル 解説
 
-パス |説明
------|-----
-src/po/, runtime/lang |Vimに付属の日本語翻訳ファイルが置いてあります。
-src/po/ja.po |Vimのメッセージ翻訳ファイルのマスター(UTF-8)
-runtime/lang/menu\_ja\_jp.utf-8.vim |Vimの日本語メニューファイルのマスター(UTF-8)
-runtime/doc/\*-ja.UTF-8.1 |日本語manファイル(UTF-8)
-runtime/doc/\*.1 |原文manファイル
-runtime/tutor/tutor.ja.utf-8 |日本語チュートリアルファイル(UTF-8)
-runtime/tutor/tutor |原文チュートリアルファイル
+パス                               |説明
+-----------------------------------|-----
+src/po/, runtime/lang              |Vimに付属の日本語翻訳ファイルが置いてあります。
+src/po/ja.po                       |Vimのメッセージ翻訳ファイルのマスター(UTF-8)
+runtime/lang/menu\_ja\_jp.utf-8.vim|Vimの日本語メニューファイルのマスター(UTF-8)
+runtime/doc/\*-ja.UTF-8.1          |日本語manファイル(UTF-8)
+runtime/doc/\*.1                   |原文manファイル
+runtime/tutor/tutor.ja.utf-8       |日本語チュートリアルファイル(UTF-8)
+runtime/tutor/tutor                |原文チュートリアルファイル
 
 ## ja.po 更新手順
 
@@ -28,7 +28,10 @@ runtime/tutor/tutor |原文チュートリアルファイル
 
     註: `make vim.pot` を実行するには `src/` で `./configure` を実行しておく必
     要があるが、`src/po/Makefile` の4行目の `include ../auto/config.mk` をコメ
-    ントアウトして回避することも可能。
+    ントアウトして回避することも可能。(あるいは、空の `src/auto/config.mk` を用意してもよい。)
+
+    Windows 上で vim.pot を生成するには、Cygwin や MSYS2 等の Linux 的な環境を使うこと。(MSVC 用の Makefile も用意されているが、ソースファイルの読み込み順序が異なるために余計な差分が出てしまう。)
+    また、Win32 向けにビルドしたために `src/if_perl.c` が生成されているならば、vim.pot 生成前に削除しておくこと。(余計な差分が出るのを防ぐため。)
 
 2.  ja.po に vim.pot をマージ (古いものは ja.po.old へ退避される)
 
