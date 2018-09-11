@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-10 20:12+0900\n"
+"POT-Creation-Date: 2018-09-11 21:59+0900\n"
 "PO-Revision-Date: 2017-05-18 00:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -312,11 +312,18 @@ msgstr "E737: キーは既に存在します: %s"
 msgid "E96: Cannot diff more than %ld buffers"
 msgstr "E96: %ld 以上のバッファはdiffできません"
 
+#, c-format
+msgid "Not enough memory to use internal diff for buffer \"%s\""
+msgstr "バッファ \"%s\" 用に内部diffを使うためのメモリが不足しています"
+
 msgid "E810: Cannot read or write temp files"
 msgstr "E810: 一時ファイルの読込もしくは書込ができません"
 
 msgid "E97: Cannot create diffs"
 msgstr "E97: 差分を作成できません"
+
+msgid "E960: Problem creating the internal diff"
+msgstr "E960: 内部diff作成時に問題が発生しました"
 
 msgid "Patch file"
 msgstr "パッチファイル"
@@ -326,6 +333,9 @@ msgstr "E816: patchの出力を読込めません"
 
 msgid "E98: Cannot read diff output"
 msgstr "E98: diffの出力を読込めません"
+
+msgid "E959: Invalid diff format."
+msgstr "E959: 無効なdiff形式です"
 
 msgid "E99: Current buffer is not in diff mode"
 msgstr "E99: 現在のバッファは差分モードではありません"
@@ -657,6 +667,9 @@ msgid ""
 msgstr ""
 "\n"
 "\t最後にセットしたスクリプト: "
+
+msgid " line "
+msgstr " 行 "
 
 msgid "E691: Can only compare List with List"
 msgstr "E691: リスト型はリスト型としか比較できません"
@@ -1507,6 +1520,9 @@ msgstr "E498: \"<sfile>\"を置き換える :source 対象ファイル名があ�
 
 msgid "E842: no line number to use for \"<slnum>\""
 msgstr "E842: \"<slnum>\"を置き換える行番号がありません"
+
+msgid "E961: no line number to use for \"<sflnum>\""
+msgstr "E961: \"<sflnum>\"を置き換える行番号がありません"
 
 #, no-c-format
 msgid "E499: Empty file name for '%' or '#', only works with \":p:h\""
