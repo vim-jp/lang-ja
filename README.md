@@ -53,7 +53,7 @@ runtime/tutor/tutor                |原文チュートリアルファイル
 
         :source cleanup.vim
 
-    cleanup.vim は Vim 本体からのコピー
+    cleanup.vim は Vim 本体からのコピー (実行には Vim 8.0.0794 以降が必要)
 
 6.  チェック
 
