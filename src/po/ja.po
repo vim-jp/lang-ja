@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-11 21:59+0900\n"
+"POT-Creation-Date: 2018-10-14 21:27+0900\n"
 "PO-Revision-Date: 2018-07-18 00:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -3632,7 +3632,7 @@ msgstr ""
 "\n"
 "        プロセスID: "
 
-msgid " (still running)"
+msgid " (STILL RUNNING)"
 msgstr " (まだ実行中)"
 
 msgid ""
@@ -3727,6 +3727,9 @@ msgstr ""
 
 msgid "While opening file \""
 msgstr "次のファイルを開いている最中 \""
+
+msgid "      CANNOT BE FOUND"
+msgstr "      見つかりません"
 
 msgid "      NEWER than swap file!\n"
 msgstr "      スワップファイルよりも新しいです!\n"
