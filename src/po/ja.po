@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-14 21:27+0900\n"
+"POT-Creation-Date: 2018-10-25 18:44+0900\n"
 "PO-Revision-Date: 2018-07-18 00:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -6360,6 +6360,9 @@ msgstr "Vimで差分を表示する"
 
 msgid "Edit with &Vim"
 msgstr "Vimで編集する (&V)"
+
+msgid "Edit with existing Vim"
+msgstr "起動済のVimで編集する"
 
 msgid "Edit with existing Vim - "
 msgstr "起動済のVimで編集する - "
