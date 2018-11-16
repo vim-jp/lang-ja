@@ -138,7 +138,17 @@ runtime/tutor/tutor                |原文チュートリアルファイル
     `vim-lang-ja-20160131.tar.xz` といったアーカイブファイルができる。
     `20160131` の部分は実行した日付に置き換わる。
     
-5.  アーカイブを Bram と vim-dev へ送る
+5.  タグを打ち、GitHub Releases を更新する
+
+    タグの形式は YYYYMMDD とする。例:
+
+        $ git tag 20181116 -m 'Catch up with 8.1.0519'
+        $ git push origin master --tags
+
+    タグが push できたら、GitHub Releases に新しいリリースを作り、アーカイブ
+    をアップロードする。
+
+6.  アーカイブを Bram と vim-dev へ送る
 
     あとはこのアーカイブファイルを Bram と vim-dev へ更新依頼とともに送信する。
     以下、文面の一例:
@@ -147,6 +157,9 @@ runtime/tutor/tutor                |原文チュートリアルファイル
 
         I'd like to update Japanese translations.
         Could you merge the contents from the attached file into Vim?
+
+        The same file is also available at the vim-jp/lang-ja repository:
+        https://github.com/vim-jp/lang-ja/releases/tag/20181116
 
         Thanks,
         (ここにあなたの名前。`Takata`とか)
