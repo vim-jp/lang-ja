@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-11 21:59+0900\n"
+"POT-Creation-Date: 2018-11-13 19:44+0900\n"
 "PO-Revision-Date: 2018-07-18 00:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -797,6 +797,10 @@ msgstr "E258: クライアントへ送ることができません"
 msgid "E927: Invalid action: '%s'"
 msgstr "E927: 無効な操作です: %s"
 
+#, c-format
+msgid "E962: Invalid action: '%s'"
+msgstr "E962: 無効な操作です: %s"
+
 msgid "sort() argument"
 msgstr "sort() の引数"
 
@@ -846,8 +850,8 @@ msgstr "> %d, 16進数 %04x, 8進数 %o"
 msgid "> %d, Hex %08x, Octal %o"
 msgstr "> %d, 16進数 %08x, 8進数 %o"
 
-msgid "E134: Move lines into themselves"
-msgstr "E134: 行をそれ自身には移動できません"
+msgid "E134: Cannot move a range of lines into itself"
+msgstr "E134: 行の範囲をそれ自身には移動できません"
 
 #, c-format
 msgid "%ld line moved"
@@ -3632,7 +3636,7 @@ msgstr ""
 "\n"
 "        プロセスID: "
 
-msgid " (still running)"
+msgid " (STILL RUNNING)"
 msgstr " (まだ実行中)"
 
 msgid ""
@@ -3727,6 +3731,9 @@ msgstr ""
 
 msgid "While opening file \""
 msgstr "次のファイルを開いている最中 \""
+
+msgid "      CANNOT BE FOUND"
+msgstr "      見つかりません"
 
 msgid "      NEWER than swap file!\n"
 msgstr "      スワップファイルよりも新しいです!\n"
@@ -6357,6 +6364,9 @@ msgstr "Vimで差分を表示する"
 
 msgid "Edit with &Vim"
 msgstr "Vimで編集する (&V)"
+
+msgid "Edit with existing Vim"
+msgstr "起動済のVimで編集する"
 
 msgid "Edit with existing Vim - "
 msgstr "起動済のVimで編集する - "
