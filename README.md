@@ -137,7 +137,7 @@ runtime/tutor/tutor                |原文チュートリアルファイル
 
     `vim-lang-ja-20160131.tar.xz` といったアーカイブファイルができる。
     `20160131` の部分は実行した日付に置き換わる。
-    
+
 5.  タグを打ち、GitHub Releases を更新する
 
     タグの形式は YYYYMMDD とする。例:
