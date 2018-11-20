@@ -359,7 +359,7 @@ msgid "E103: Buffer \"%s\" is not in diff mode"
 msgstr "E103: バッファ \"%s\" は差分モードではありません"
 
 msgid "E787: Buffer changed unexpectedly"
-msgstr "E787: 予期せずバッファが変更変更されました"
+msgstr "E787: 予期せずバッファが変更されました"
 
 msgid "E104: Escape not allowed in digraph"
 msgstr "E104: 合字にEscapeは使用できません"
@@ -4942,7 +4942,7 @@ msgid "not found "
 msgstr "見つかりません "
 
 msgid "in path ---\n"
-msgstr "パスに ----\n"
+msgstr "パスに ---\n"
 
 msgid "  (Already listed)"
 msgstr "  (既に列挙)"
