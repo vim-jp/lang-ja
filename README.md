@@ -90,7 +90,17 @@ runtime/tutor/tutor                |原文チュートリアルファイル
 
         $ groff -Tutf8 -Dutf8 -mandoc -mja vim-ja.UTF-8.1 | less -R
 
-4.  コミット
+4.  エラーチェック
+
+    以下のコマンドでmanの文法に違反していないかチェックできる。
+
+        $ LC_ALL=en_US.UTF-8 MANROFFSEQ='' MANWIDTH=80 man --warnings -E UTF-8 -l -Tutf8 -Z vim-ja.UTF-8.1 >/dev/null
+
+    `cannot adjust line` と `can't break line` が大量に表示されるが、日本語の場合は無視して良い。それ以外のエラーが無いことを確認する。
+
+    参照: <https://lintian.debian.org/tags/manpage-has-errors-from-man.html>
+
+5.  コミット
 
     原文と日本語訳は常に同じバージョンがコミットされているように注意すること。
 
