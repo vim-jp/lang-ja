@@ -874,11 +874,11 @@ msgstr "E258: クライアントへ送ることができません"
 
 #, c-format
 msgid "E927: Invalid action: '%s'"
-msgstr "E927: 無効な操作です: %s"
+msgstr "E927: 無効な操作です: '%s'"
 
 #, c-format
 msgid "E962: Invalid action: '%s'"
-msgstr "E962: 無効な操作です: %s"
+msgstr "E962: 無効な操作です: '%s'"
 
 msgid "sort() argument"
 msgstr "sort() の引数"
@@ -897,7 +897,7 @@ msgstr "(無効)"
 
 #, c-format
 msgid "E935: invalid submatch number: %d"
-msgstr "E935: 無効なサブマッチ番号: %d"
+msgstr "E935: 無効なサブマッチ番号です: %d"
 
 msgid "E677: Error writing temp file"
 msgstr "E677: 一時ファイル書込中にエラーが発生しました"
@@ -4890,7 +4890,7 @@ msgstr "E866: (NFA 正規表現) 位置が誤っています: %c"
 
 #, c-format
 msgid "E877: (NFA regexp) Invalid character class: %ld"
-msgstr "E877: (NFA 正規表現) 無効な文字クラス: %ld"
+msgstr "E877: (NFA 正規表現) 無効な文字クラスです: %ld"
 
 #, c-format
 msgid "E867: (NFA) Unknown operator '\\z%c'"
@@ -5602,7 +5602,7 @@ msgstr "E409: 未知のグループ名: %s"
 
 #, c-format
 msgid "E410: Invalid :syntax subcommand: %s"
-msgstr "E410: 無効な :syntax のサブコマンド: %s"
+msgstr "E410: 無効な :syntax のサブコマンドです: %s"
 
 msgid ""
 "  TOTAL      COUNT  MATCH   SLOWEST     AVERAGE   NAME               PATTERN"
