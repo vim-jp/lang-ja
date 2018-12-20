@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-05 16:07+0900\n"
+"POT-Creation-Date: 2018-12-17 19:23+0900\n"
 "PO-Revision-Date: 2018-11-16 09:41+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -363,6 +363,81 @@ msgstr "E787: 予期せずバッファが変更されました"
 
 msgid "E104: Escape not allowed in digraph"
 msgstr "E104: 合字にEscapeは使用できません"
+
+msgid "Custom"
+msgstr "カスタム"
+
+msgid "Latin supplement"
+msgstr "ラテン補助"
+
+msgid "Greek and Coptic"
+msgstr "ギリシャとコプト"
+
+msgid "Cyrillic"
+msgstr "キリル"
+
+msgid "Hebrew"
+msgstr "ヘブライ"
+
+msgid "Arabic"
+msgstr "アラビア"
+
+msgid "Latin extended"
+msgstr "ラテン拡張"
+
+msgid "Greek extended"
+msgstr "ギリシャ拡張"
+
+msgid "Punctuation"
+msgstr "句読点"
+
+msgid "Super- and subscripts"
+msgstr "上付き・下付き"
+
+msgid "Currency"
+msgstr "通貨記号"
+
+msgid "Other"
+msgstr "その他"
+
+msgid "Roman numbers"
+msgstr "ローマ数字"
+
+msgid "Arrows"
+msgstr "矢印"
+
+msgid "Mathematical operators"
+msgstr "数学記号"
+
+msgid "Technical"
+msgstr "技術用記号"
+
+msgid "Box drawing"
+msgstr "罫線素片"
+
+msgid "Block elements"
+msgstr "ブロック要素"
+
+msgid "Geometric shapes"
+msgstr "幾何学模様"
+
+msgid "Symbols"
+msgstr "記号"
+
+msgid "Dingbats"
+msgstr "装飾記号"
+
+msgid "CJK symbols and punctuation"
+msgstr "CJK記号及び句読点"
+
+msgid "Hiragana"
+msgstr "平仮名"
+
+msgid "Katakana"
+msgstr "片仮名"
+
+msgid "Bopomofo"
+msgstr "注音字母"
 
 msgid "E544: Keymap file not found"
 msgstr "E544: キーマップファイルが見つかりません"
@@ -1356,8 +1431,9 @@ msgid "E173: %ld more file to edit"
 msgid_plural "E173: %ld more files to edit"
 msgstr[0] "E173: 編集すべきファイルがあと %ld 個あります"
 
-msgid "E174: Command already exists: add ! to replace it"
-msgstr "E174: コマンドが既にあります: 再定義するには ! を追加してください"
+#, c-format
+msgid "E174: Command already exists: add ! to replace it: %s"
+msgstr "E174: コマンドが既にあります: 再定義するには ! を追加してください: %s"
 
 msgid ""
 "\n"
@@ -5743,6 +5819,35 @@ msgstr "E953: ファイルは既に存在します: %s"
 
 msgid "E955: Not a terminal buffer"
 msgstr "E955: 端末バッファではありません"
+
+#, c-format
+msgid "E971: Property type %s does not exist"
+msgstr "E971: プロパティタイプ %s がありません"
+
+#, c-format
+msgid "E964: Invalid column number: %ld"
+msgstr "E964: 無効な列番号です: %ld"
+
+msgid "E965: missing property type name"
+msgstr "E965: プロパティタイプ名がありません"
+
+#, c-format
+msgid "E966: Invalid line number: %ld"
+msgstr "E966: 無効な行番号です: %ld"
+
+msgid "E967: text property info corrupted"
+msgstr "E967: テキストプロパティ情報が壊れています"
+
+msgid "E968: Need at least one of 'id' or 'type'"
+msgstr "E968: 最低 1 個の 'id' または 'type' が必要です"
+
+#, c-format
+msgid "E969: Property type %s already defined"
+msgstr "E969: プロパティタイプ %s は既に定義されています"
+
+#, c-format
+msgid "E970: Unknown highlight group name: '%s'"
+msgstr "E970: 未知のハイライトグループ名: '%s'"
 
 msgid "new shell started\n"
 msgstr "新しいシェルを起動します\n"
