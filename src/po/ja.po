@@ -5029,7 +5029,7 @@ msgid "    line=%ld  id=%d%s  name=%s  priority=%d"
 msgstr "    行=%ld  識別子=%d%s  名前=%s  優先度=%d"
 
 msgid "E612: Too many signs defined"
-msgstr "E612: signの定義が多数見つかりました"
+msgstr "E612: signの定義が多過ぎます"
 
 #, c-format
 msgid "E239: Invalid sign text: %s"
