@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-17 19:23+0900\n"
+"POT-Creation-Date: 2019-01-08 18:32+0900\n"
 "PO-Revision-Date: 2018-11-16 09:41+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -200,21 +200,6 @@ msgstr "[プロンプト]"
 
 msgid "[Scratch]"
 msgstr "[下書き]"
-
-msgid ""
-"\n"
-"--- Signs ---"
-msgstr ""
-"\n"
-"--- サイン ---"
-
-#, c-format
-msgid "Signs for %s:"
-msgstr "%s のサイン:"
-
-#, c-format
-msgid "    line=%ld  id=%d  name=%s"
-msgstr "    行=%ld  識別子=%d  名前=%s"
 
 msgid "E902: Cannot connect to port"
 msgstr "E902: ポートに接続できません"
@@ -880,6 +865,10 @@ msgstr "E927: 無効な操作です: '%s'"
 msgid "E962: Invalid action: '%s'"
 msgstr "E962: 無効な操作です: '%s'"
 
+#, c-format
+msgid "E158: Invalid buffer name: %s"
+msgstr "E158: 無効なバッファ名です: %s"
+
 msgid "sort() argument"
 msgstr "sort() の引数"
 
@@ -1169,52 +1158,6 @@ msgstr "E154: タグ \"%s\" がファイル %s/%s に重複しています"
 #, c-format
 msgid "E150: Not a directory: %s"
 msgstr "E150: ディレクトリではありません: %s"
-
-#, c-format
-msgid "E160: Unknown sign command: %s"
-msgstr "E160: 未知のsignコマンドです: %s"
-
-msgid "E156: Missing sign name"
-msgstr "E156: sign名がありません"
-
-msgid "E612: Too many signs defined"
-msgstr "E612: signの定義が多数見つかりました"
-
-#, c-format
-msgid "E239: Invalid sign text: %s"
-msgstr "E239: 無効なsignのテキストです: %s"
-
-#, c-format
-msgid "E155: Unknown sign: %s"
-msgstr "E155: 未知のsignです: %s"
-
-msgid "E159: Missing sign number"
-msgstr "E159: signの番号がありません"
-
-#, c-format
-msgid "E158: Invalid buffer name: %s"
-msgstr "E158: 無効なバッファ名です: %s"
-
-msgid "E934: Cannot jump to a buffer that does not have a name"
-msgstr "E934: 名前の無いバッファへはジャンプできません"
-
-#, c-format
-msgid "E157: Invalid sign ID: %ld"
-msgstr "E157: 無効なsign識別子です: %ld"
-
-#, c-format
-msgid "E885: Not possible to change sign %s"
-msgstr "E885: 変更できない sign です: %s"
-
-# Added at 27-Jan-2004.
-msgid " (NOT FOUND)"
-msgstr " (見つかりません)"
-
-msgid " (not supported)"
-msgstr " (非サポート)"
-
-msgid "[Deleted]"
-msgstr "[削除済]"
 
 msgid "No old files"
 msgstr "古いファイルはありません"
@@ -3899,9 +3842,6 @@ msgstr "E326: スワップファイルが多数見つかりました"
 msgid "E327: Part of menu-item path is not sub-menu"
 msgstr "E327: メニューアイテムのパスの部分がサブメニューではありません"
 
-msgid "E328: Menu only exists in another mode"
-msgstr "E328: メニューは他のモードにだけあります"
-
 #, c-format
 msgid "E329: No menu \"%s\""
 msgstr "E329: \"%s\" というメニューはありません"
@@ -5066,6 +5006,67 @@ msgstr ""
 "# 最後の %s検索パターン:\n"
 "~"
 
+msgid "[Deleted]"
+msgstr "[削除済]"
+
+msgid ""
+"\n"
+"--- Signs ---"
+msgstr ""
+"\n"
+"--- サイン ---"
+
+#, c-format
+msgid "Signs for %s:"
+msgstr "%s のサイン:"
+
+#, c-format
+msgid "  group=%s"
+msgstr "  グループ=%s"
+
+#, c-format
+msgid "    line=%ld  id=%d%s  name=%s  priority=%d"
+msgstr "    行=%ld  識別子=%d%s  名前=%s  優先度=%d"
+
+msgid "E612: Too many signs defined"
+msgstr "E612: signの定義が多数見つかりました"
+
+#, c-format
+msgid "E239: Invalid sign text: %s"
+msgstr "E239: 無効なsignのテキストです: %s"
+
+#, c-format
+msgid "E155: Unknown sign: %s"
+msgstr "E155: 未知のsignです: %s"
+
+#, c-format
+msgid "E885: Not possible to change sign %s"
+msgstr "E885: 変更できない sign です: %s"
+
+msgid "E159: Missing sign number"
+msgstr "E159: signの番号がありません"
+
+#, c-format
+msgid "E157: Invalid sign ID: %ld"
+msgstr "E157: 無効なsign識別子です: %ld"
+
+msgid "E934: Cannot jump to a buffer that does not have a name"
+msgstr "E934: 名前の無いバッファへはジャンプできません"
+
+#, c-format
+msgid "E160: Unknown sign command: %s"
+msgstr "E160: 未知のsignコマンドです: %s"
+
+msgid "E156: Missing sign name"
+msgstr "E156: sign名がありません"
+
+# Added at 27-Jan-2004.
+msgid " (NOT FOUND)"
+msgstr " (見つかりません)"
+
+msgid " (not supported)"
+msgstr " (非サポート)"
+
 msgid "E756: Spell checking is not enabled"
 msgstr "E756: スペルチェックは無効化されています"
 
@@ -5828,12 +5829,12 @@ msgstr "E971: プロパティタイプ %s がありません"
 msgid "E964: Invalid column number: %ld"
 msgstr "E964: 無効な列番号です: %ld"
 
-msgid "E965: missing property type name"
-msgstr "E965: プロパティタイプ名がありません"
-
 #, c-format
 msgid "E966: Invalid line number: %ld"
 msgstr "E966: 無効な行番号です: %ld"
+
+msgid "E965: missing property type name"
+msgstr "E965: プロパティタイプ名がありません"
 
 msgid "E967: text property info corrupted"
 msgstr "E967: テキストプロパティ情報が壊れています"
@@ -6868,6 +6869,9 @@ msgstr "E919: ディレクトリが '%s' の中にありません: \"%s\""
 
 msgid "E952: Autocommand caused recursive behavior"
 msgstr "E952: Autocommandが再帰を引き起こしました"
+
+msgid "E328: Menu only exists in another mode"
+msgstr "E328: メニューは他のモードにだけあります"
 
 msgid "search hit TOP, continuing at BOTTOM"
 msgstr "上まで検索したので下に戻ります"
