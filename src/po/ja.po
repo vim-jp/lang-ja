@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-08 18:32+0900\n"
+"POT-Creation-Date: 2019-01-15 19:06+0900\n"
 "PO-Revision-Date: 2018-11-16 09:41+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -570,14 +570,17 @@ msgstr "リスト型の値に2つ以上の ; が検出されました"
 msgid "E738: Can't list variables for %s"
 msgstr "E738: %s の値を一覧表示できません"
 
-msgid "E689: Can only index a List or Dictionary"
-msgstr "E689: リスト型と辞書型以外はインデックス指定できません"
+msgid "E689: Can only index a List, Dictionary or Blob"
+msgstr "E689: リスト型、辞書型、Blob型以外はインデックス指定できません"
 
 msgid "E708: [:] must come last"
 msgstr "E708: [:] は最後でなければいけません"
 
-msgid "E709: [:] requires a List value"
-msgstr "E709: [:] にはリスト型の値が必要です"
+msgid "E709: [:] requires a List or Blob value"
+msgstr "E709: [:] にはリスト型かBlob型の値が必要です"
+
+msgid "E972: Blob value does not have the right number of bytes"
+msgstr "E972: Blob型の値のバイト数が正しくありません"
 
 msgid "E710: List value has more items than target"
 msgstr "E710: リスト型変数にターゲットよりも多い要素があります"
@@ -604,6 +607,9 @@ msgstr "E109: '?' の後に ':' がありません"
 
 msgid "E804: Cannot use '%' with Float"
 msgstr "E804: '%' を浮動小数点数と組み合わせては使えません"
+
+msgid "E973: Blob literal should have an even number of hex characters"
+msgstr "E973: Blobリテラルは偶数個の16進数文字でなければなりません"
 
 msgid "E110: Missing ')'"
 msgstr "E110: ')' が見つかりません"
@@ -655,6 +661,9 @@ msgstr "E910: ジョブを数値として扱っています"
 msgid "E913: Using a Channel as a Number"
 msgstr "E913: チャネルを数値として扱っています"
 
+msgid "E974: Using a Blob as a Number"
+msgstr "E974: Blob型を数値として扱っています"
+
 msgid "E891: Using a Funcref as a Float"
 msgstr "E891: 関数参照型を浮動小数点数として扱っています"
 
@@ -676,6 +685,9 @@ msgstr "E911: ジョブを浮動小数点数として扱っています"
 msgid "E914: Using a Channel as a Float"
 msgstr "E914: チャネルを浮動小数点数として扱っています"
 
+msgid "E975: Using a Blob as a Float"
+msgstr "E975: Blob型を浮動小数点数として扱っています"
+
 msgid "E729: using Funcref as a String"
 msgstr "E729: 関数参照型を文字列として扱っています"
 
@@ -684,6 +696,9 @@ msgstr "E730: リスト型を文字列として扱っています"
 
 msgid "E731: using Dictionary as a String"
 msgstr "E731: 辞書型を文字列として扱っています"
+
+msgid "E976: using Blob as a String"
+msgstr "E976: Blob型を文字列として扱っています"
 
 msgid "E908: using an invalid value as a String"
 msgstr "E908: 無効な値を文字列として扱っています"
@@ -735,6 +750,9 @@ msgstr ""
 msgid " line "
 msgstr " 行 "
 
+msgid "E977: Can only compare Blob with Blob"
+msgstr "E977: Blob型はBlob型としか比較できません"
+
 msgid "E691: Can only compare List with List"
 msgstr "E691: リスト型はリスト型としか比較できません"
 
@@ -768,6 +786,10 @@ msgstr "E808: 数値か浮動小数点数が必要です"
 
 msgid "add() argument"
 msgstr "add() の引数"
+
+#, c-format
+msgid "E158: Invalid buffer name: %s"
+msgstr "E158: 無効なバッファ名です: %s"
 
 msgid "E785: complete() can only be used in Insert mode"
 msgstr "E785: complete() は挿入モードでしか利用できません"
@@ -864,10 +886,6 @@ msgstr "E927: 無効な操作です: '%s'"
 #, c-format
 msgid "E962: Invalid action: '%s'"
 msgstr "E962: 無効な操作です: '%s'"
-
-#, c-format
-msgid "E158: Invalid buffer name: %s"
-msgstr "E158: 無効なバッファ名です: %s"
 
 msgid "sort() argument"
 msgstr "sort() の引数"
@@ -6752,6 +6770,13 @@ msgstr "E715: 辞書型が必要です"
 #, c-format
 msgid "E684: list index out of range: %ld"
 msgstr "E684: リストのインデックスが範囲外です: %ld"
+
+#, c-format
+msgid "E979: Blob index out of range: %ld"
+msgstr "E979: Blobのインデックスが範囲外です: %ld"
+
+msgid "E978: Invalid operation for Blob"
+msgstr "E978: Blob型には無効な操作です"
 
 #, c-format
 msgid "E118: Too many arguments for function: %s"
