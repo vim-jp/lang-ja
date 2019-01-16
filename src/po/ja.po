@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-15 19:06+0900\n"
+"POT-Creation-Date: 2019-01-16 19:29+0900\n"
 "PO-Revision-Date: 2018-11-16 09:41+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -100,8 +100,8 @@ msgid "E88: Cannot go before first buffer"
 msgstr "E88: 最初のバッファより前へは移動できません"
 
 #, c-format
-msgid "E89: No write since last change for buffer %ld (add ! to override)"
-msgstr "E89: バッファ %ld の変更は保存されていません (! で変更を破棄)"
+msgid "E89: No write since last change for buffer %d (add ! to override)"
+msgstr "E89: バッファ %d の変更は保存されていません (! で変更を破棄)"
 
 msgid "E948: Job still running (add ! to end the job)"
 msgstr "E948: ジョブはまだ実行中です (! を追加でジョブを終了)"
@@ -119,8 +119,8 @@ msgid "W14: Warning: List of file names overflow"
 msgstr "W14: 警告: ファイル名のリストが長過ぎます"
 
 #, c-format
-msgid "E92: Buffer %ld not found"
-msgstr "E92: バッファ %ld が見つかりません"
+msgid "E92: Buffer %d not found"
+msgstr "E92: バッファ %d が見つかりません"
 
 #, c-format
 msgid "E93: More than one match for %s"
@@ -294,8 +294,8 @@ msgid "E737: Key already exists: %s"
 msgstr "E737: キーは既に存在します: %s"
 
 #, c-format
-msgid "E96: Cannot diff more than %ld buffers"
-msgstr "E96: %ld 以上のバッファはdiffできません"
+msgid "E96: Cannot diff more than %d buffers"
+msgstr "E96: %d 以上のバッファはdiffできません"
 
 #, c-format
 msgid "Not enough memory to use internal diff for buffer \"%s\""
@@ -838,8 +838,8 @@ msgid "E957: Invalid window number"
 msgstr "E957: 無効なウィンドウ番号です"
 
 #, c-format
-msgid "E798: ID is reserved for \":match\": %ld"
-msgstr "E798: ID は \":match\" のために予約されています: %ld"
+msgid "E798: ID is reserved for \":match\": %d"
+msgstr "E798: ID は \":match\" のために予約されています: %d"
 
 msgid "E726: Stride is zero"
 msgstr "E726: ストライド(前進量)が 0 です"
@@ -1388,9 +1388,9 @@ msgid_plural "%d more files to edit.  Quit anyway?"
 msgstr[0] "編集すべきファイルがあと %d 個ありますが、終了しますか?"
 
 #, c-format
-msgid "E173: %ld more file to edit"
-msgid_plural "E173: %ld more files to edit"
-msgstr[0] "E173: 編集すべきファイルがあと %ld 個あります"
+msgid "E173: %d more file to edit"
+msgid_plural "E173: %d more files to edit"
+msgstr[0] "E173: 編集すべきファイルがあと %d 個あります"
 
 #, c-format
 msgid "E174: Command already exists: add ! to replace it: %s"
@@ -2381,16 +2381,16 @@ msgid "Font1: %s"
 msgstr "フォント1: %s"
 
 #, c-format
-msgid "Font%ld width is not twice that of font0"
-msgstr "フォント%ld の幅がフォント0の2倍ではありません"
+msgid "Font%d width is not twice that of font0"
+msgstr "フォント%d の幅がフォント0の2倍ではありません"
 
 #, c-format
-msgid "Font0 width: %ld"
-msgstr "フォント0の幅: %ld"
+msgid "Font0 width: %d"
+msgstr "フォント0の幅: %d"
 
 #, c-format
-msgid "Font1 width: %ld"
-msgstr "フォント1の幅: %ld"
+msgid "Font%d width: %d"
+msgstr "フォント%dの幅: %d"
 
 msgid "Invalid font specification"
 msgstr "無効なフォント指定です"
@@ -2566,8 +2566,8 @@ msgid "Added cscope database %s"
 msgstr "cscopeデータベース %s を追加"
 
 #, c-format
-msgid "E262: error reading cscope connection %ld"
-msgstr "E262: cscopeの接続 %ld を読込み中のエラーです"
+msgid "E262: error reading cscope connection %d"
+msgstr "E262: cscopeの接続 %d を読込み中のエラーです"
 
 msgid "E561: unknown cscope search type"
 msgstr "E561: 未知のcscope検索型です"
@@ -4086,8 +4086,8 @@ msgstr ""
 "E668: NetBeansの接続情報ファイルのアクセスモードに問題があります: \"%s\""
 
 #, c-format
-msgid "E658: NetBeans connection lost for buffer %ld"
-msgstr "E658: バッファ %ld の NetBeans 接続が失われました"
+msgid "E658: NetBeans connection lost for buffer %d"
+msgstr "E658: バッファ %d の NetBeans 接続が失われました"
 
 msgid "E838: netbeans is not supported with this GUI"
 msgstr "E838: NetBeansはこのGUIには対応していません"
@@ -5065,8 +5065,8 @@ msgid "E159: Missing sign number"
 msgstr "E159: signの番号がありません"
 
 #, c-format
-msgid "E157: Invalid sign ID: %ld"
-msgstr "E157: 無効なsign識別子です: %ld"
+msgid "E157: Invalid sign ID: %d"
+msgstr "E157: 無効なsign識別子です: %d"
 
 msgid "E934: Cannot jump to a buffer that does not have a name"
 msgstr "E934: 名前の無いバッファへはジャンプできません"
@@ -5418,8 +5418,8 @@ msgid "E751: Output file name must not have region name"
 msgstr "E751: 出力ファイル名には範囲名を含められません"
 
 #, c-format
-msgid "E754: Only up to %ld regions supported"
-msgstr "E754: 範囲は %ld 個までしかサポートされていません"
+msgid "E754: Only up to %d regions supported"
+msgstr "E754: 範囲は %d 個までしかサポートされていません"
 
 #, c-format
 msgid "E755: Invalid region in %s"
@@ -5436,8 +5436,8 @@ msgid "Done!"
 msgstr "実行しました!"
 
 #, c-format
-msgid "E765: 'spellfile' does not have %ld entries"
-msgstr "E765: 'spellfile' には %ld 個のエントリはありません"
+msgid "E765: 'spellfile' does not have %d entries"
+msgstr "E765: 'spellfile' には %d 個のエントリはありません"
 
 #, c-format
 msgid "Word '%.*s' removed from %s"
@@ -6421,6 +6421,10 @@ msgstr "詳細はメニューの ヘルプ->スポンサー/登録 を参照し�
 msgid "Already only one window"
 msgstr "既にウィンドウは1つしかありません"
 
+#, c-format
+msgid "E92: Buffer %ld not found"
+msgstr "E92: バッファ %ld が見つかりません"
+
 msgid "E441: There is no preview window"
 msgstr "E441: プレビューウィンドウがありません"
 
@@ -6450,23 +6454,23 @@ msgid "E447: Can't find file \"%s\" in path"
 msgstr "E447: pathには \"%s\" というファイルがありません"
 
 #, c-format
-msgid "E799: Invalid ID: %ld (must be greater than or equal to 1)"
-msgstr "E799: 無効な ID: %ld (1 以上でなければなりません)"
+msgid "E799: Invalid ID: %d (must be greater than or equal to 1)"
+msgstr "E799: 無効な ID: %d (1 以上でなければなりません)"
 
 #, c-format
-msgid "E801: ID already taken: %ld"
-msgstr "E801: ID はすでに利用中です: %ld"
+msgid "E801: ID already taken: %d"
+msgstr "E801: ID はすでに利用中です: %d"
 
 msgid "List or number required"
 msgstr "リストか数値が必要です"
 
 #, c-format
-msgid "E802: Invalid ID: %ld (must be greater than or equal to 1)"
-msgstr "E802: 無効な ID: %ld (1 以上でなければなりません)"
+msgid "E802: Invalid ID: %d (must be greater than or equal to 1)"
+msgstr "E802: 無効な ID: %d (1 以上でなければなりません)"
 
 #, c-format
-msgid "E803: ID not found: %ld"
-msgstr "E803: ID はありません: %ld"
+msgid "E803: ID not found: %d"
+msgstr "E803: ID はありません: %d"
 
 #, c-format
 msgid "E370: Could not load library %s"
