@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-24 07:58+0900\n"
+"POT-Creation-Date: 2019-01-28 19:10+0900\n"
 "PO-Revision-Date: 2018-11-16 09:41+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -23,6 +23,67 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "--Deleted--"
+msgstr "--削除済--"
+
+#, c-format
+msgid "auto-removing autocommand: %s <buffer=%d>"
+msgstr "autocommand: %s <バッファ=%d> が自動的に削除されます"
+
+#, c-format
+msgid "E367: No such group: \"%s\""
+msgstr "E367: そのグループはありません: \"%s\""
+
+msgid "E936: Cannot delete the current group"
+msgstr "E936: 現在のグループは削除できません"
+
+msgid "W19: Deleting augroup that is still in use"
+msgstr "W19: 使用中の augroup を消そうとしています"
+
+#, c-format
+msgid "E215: Illegal character after *: %s"
+msgstr "E215: * の後に不正な文字がありました: %s"
+
+#, c-format
+msgid "E216: No such event: %s"
+msgstr "E216: そのようなイベントはありません: %s"
+
+#, c-format
+msgid "E216: No such group or event: %s"
+msgstr "E216: そのようなグループもしくはイベントはありません: %s"
+
+msgid ""
+"\n"
+"--- Autocommands ---"
+msgstr ""
+"\n"
+"--- Autocommands ---"
+
+#, c-format
+msgid "E680: <buffer=%d>: invalid buffer number "
+msgstr "E680: <バッファ=%d>: 無効なバッファ番号です "
+
+msgid "E217: Can't execute autocommands for ALL events"
+msgstr "E217: 全てのイベントに対してのautocommandは実行できません"
+
+msgid "No matching autocommands"
+msgstr "該当するautocommandは存在しません"
+
+msgid "E218: autocommand nesting too deep"
+msgstr "E218: autocommandの入れ子が深過ぎます"
+
+#, c-format
+msgid "%s Autocommands for \"%s\""
+msgstr "%s Autocommands for \"%s\""
+
+#, c-format
+msgid "Executing %s"
+msgstr "%s を実行しています"
+
+#, c-format
+msgid "autocommand %s"
+msgstr "autocommand %s"
 
 msgid "E831: bf_key_init() called with empty password"
 msgstr "E831: bf_key_init() が空パスワードで呼び出されました"
@@ -800,6 +861,9 @@ msgstr "E785: complete() は挿入モードでしか利用できません"
 
 msgid "&Ok"
 msgstr "&Ok"
+
+msgid "E980: lowlevel input not supported"
+msgstr "E980: 低レベル入力はサポートされていません"
 
 #, c-format
 msgid "+-%s%3ld line: "
@@ -2038,67 +2102,6 @@ msgstr "E462: \"%s\" をリロードする準備ができませんでした"
 #, c-format
 msgid "E321: Could not reload \"%s\""
 msgstr "E321: \"%s\" はリロードできませんでした"
-
-msgid "--Deleted--"
-msgstr "--削除済--"
-
-#, c-format
-msgid "auto-removing autocommand: %s <buffer=%d>"
-msgstr "autocommand: %s <バッファ=%d> が自動的に削除されます"
-
-#, c-format
-msgid "E367: No such group: \"%s\""
-msgstr "E367: そのグループはありません: \"%s\""
-
-msgid "E936: Cannot delete the current group"
-msgstr "E936: 現在のグループは削除できません"
-
-msgid "W19: Deleting augroup that is still in use"
-msgstr "W19: 使用中の augroup を消そうとしています"
-
-#, c-format
-msgid "E215: Illegal character after *: %s"
-msgstr "E215: * の後に不正な文字がありました: %s"
-
-#, c-format
-msgid "E216: No such event: %s"
-msgstr "E216: そのようなイベントはありません: %s"
-
-#, c-format
-msgid "E216: No such group or event: %s"
-msgstr "E216: そのようなグループもしくはイベントはありません: %s"
-
-msgid ""
-"\n"
-"--- Autocommands ---"
-msgstr ""
-"\n"
-"--- Autocommands ---"
-
-#, c-format
-msgid "E680: <buffer=%d>: invalid buffer number "
-msgstr "E680: <バッファ=%d>: 無効なバッファ番号です "
-
-msgid "E217: Can't execute autocommands for ALL events"
-msgstr "E217: 全てのイベントに対してのautocommandは実行できません"
-
-msgid "No matching autocommands"
-msgstr "該当するautocommandは存在しません"
-
-msgid "E218: autocommand nesting too deep"
-msgstr "E218: autocommandの入れ子が深過ぎます"
-
-#, c-format
-msgid "%s Autocommands for \"%s\""
-msgstr "%s Autocommands for \"%s\""
-
-#, c-format
-msgid "Executing %s"
-msgstr "%s を実行しています"
-
-#, c-format
-msgid "autocommand %s"
-msgstr "autocommand %s"
 
 msgid "E219: Missing {."
 msgstr "E219: { がありません."
@@ -5199,10 +5202,6 @@ msgstr "%s (%d 行目) の単語を変換できませんでした: %s"
 #, c-format
 msgid "Conversion in %s not supported: from %s to %s"
 msgstr "%s 内の次の変換はサポートされていません: %s から %s へ"
-
-#, c-format
-msgid "Conversion in %s not supported"
-msgstr "%s 内の変換はサポートされていません"
 
 #, c-format
 msgid "Invalid value for FLAG in %s line %d: %s"
