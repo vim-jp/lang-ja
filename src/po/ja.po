@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-28 19:10+0900\n"
+"POT-Creation-Date: 2019-02-09 16:52+0900\n"
 "PO-Revision-Date: 2018-11-16 09:41+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -1149,8 +1149,8 @@ msgstr "E143: autocommandが予期せず新しいバッファ %s を削除しま
 msgid "E144: non-numeric argument to :z"
 msgstr "E144: 数ではない引数が :z に渡されました"
 
-msgid "E145: Shell commands not allowed in rvim"
-msgstr "E145: rvimではシェルコマンドを使えません"
+msgid "E145: Shell commands and some functionality not allowed in rvim"
+msgstr "E145: rvimではシェルコマンドと一部の機能を使えません"
 
 msgid "E146: Regular expressions can't be delimited by letters"
 msgstr "E146: 正規表現は文字で区切ることができません"
@@ -1432,6 +1432,9 @@ msgstr "E464: ユーザー定義コマンドのあいまいな使用です"
 
 msgid "E492: Not an editor command"
 msgstr "E492: エディタのコマンドではありません"
+
+msgid "E981: Command not allowed in rvim"
+msgstr "E981: rvimではこのコマンドを使えません"
 
 msgid "E493: Backwards range given"
 msgstr "E493: 逆さまの範囲が指定されました"
