@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-17 13:18+0900\n"
+"POT-Creation-Date: 2019-02-18 19:15+0900\n"
 "PO-Revision-Date: 2018-11-16 09:41+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -4858,8 +4858,8 @@ msgid "E866: (NFA regexp) Misplaced %c"
 msgstr "E866: (NFA 正規表現) 位置が誤っています: %c"
 
 #, c-format
-msgid "E877: (NFA regexp) Invalid character class: %ld"
-msgstr "E877: (NFA 正規表現) 無効な文字クラスです: %ld"
+msgid "E877: (NFA regexp) Invalid character class: %d"
+msgstr "E877: (NFA 正規表現) 無効な文字クラスです: %d"
 
 #, c-format
 msgid "E867: (NFA) Unknown operator '\\z%c'"
