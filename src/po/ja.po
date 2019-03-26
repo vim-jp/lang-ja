@@ -1908,20 +1908,21 @@ msgid "is read-only (add ! to override)"
 msgstr "は読込専用です (強制書込には ! を追加)"
 
 msgid "E506: Can't write to backup file (add ! to override)"
-msgstr "E506: バックアップファイルを保存できません (! を追加で強制保存)"
+msgstr "E506: バックアップファイルを保存できません (! を追加で強制書込)"
 
 msgid "E507: Close error for backup file (add ! to override)"
 msgstr ""
-"E507: バックアップファイルを閉じる際にエラーが発生しました (! を追加で強制)"
+"E507: バックアップファイルを閉じる際にエラーが発生しました (! を追加で強制書"
+"込)"
 
 msgid "E508: Can't read file for backup (add ! to override)"
-msgstr "E508: バックアップ用ファイルを読込めません (! を追加で強制読込)"
+msgstr "E508: バックアップ用ファイルを読込めません (! を追加で強制書込)"
 
 msgid "E509: Cannot create backup file (add ! to override)"
-msgstr "E509: バックアップファイルを作れません (! を追加で強制作成)"
+msgstr "E509: バックアップファイルを作れません (! を追加で強制書込)"
 
 msgid "E510: Can't make backup file (add ! to override)"
-msgstr "E510: バックアップファイルを作れません (! を追加で強制作成)"
+msgstr "E510: バックアップファイルを作れません (! を追加で強制書込)"
 
 msgid "E214: Can't find temp file for writing"
 msgstr "E214: 保存用一時ファイルが見つかりません"
