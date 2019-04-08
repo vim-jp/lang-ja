@@ -2887,7 +2887,7 @@ msgid "Hit end of paragraph"
 msgstr "段落の最後にヒット"
 
 msgid "E839: Completion function changed window"
-msgstr "E839: 補間関数がウィンドウを変更しました"
+msgstr "E839: 補完関数がウィンドウを変更しました"
 
 msgid "E840: Completion function deleted text"
 msgstr "E840: 補完関数がテキストを削除しました"
