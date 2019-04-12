@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-08 20:27+0900\n"
+"POT-Creation-Date: 2019-04-13 05:26+0900\n"
 "PO-Revision-Date: 2019-03-12 08:23+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -7226,3 +7226,21 @@ msgstr ""
 "Cソース (*.c, *.h)\t*.c;*.h\n"
 "C++ソース (*.cpp, *.hpp)\t*.cpp;*.hpp\n"
 "Vimファイル (*.vim, _vimrc, _gvimrc)\t*.vim;_vimrc;_gvimrc\n"
+
+#~ msgid "GVim"
+#~ msgstr ""
+
+msgid "Text Editor"
+msgstr "テキストエディタ"
+
+msgid "Edit text files"
+msgstr "テキストファイルを編集します"
+
+#~ msgid "Text;editor;"
+#~ msgstr ""
+
+#~ msgid "gvim"
+#~ msgstr ""
+
+#~ msgid "Vim"
+#~ msgstr ""
