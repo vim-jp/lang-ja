@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-13 05:26+0900\n"
+"POT-Creation-Date: 2019-04-26 18:55+0900\n"
 "PO-Revision-Date: 2019-03-12 08:23+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -330,6 +330,51 @@ msgstr "キーが一致しません"
 
 msgid "[crypted]"
 msgstr "[暗号化]"
+
+msgid "Entering Debug mode.  Type \"cont\" to continue."
+msgstr "デバッグモードに入ります. 続けるには \"cont\" と入力してください."
+
+#, c-format
+msgid "Oldval = \"%s\""
+msgstr "古い値 = \"%s\""
+
+#, c-format
+msgid "Newval = \"%s\""
+msgstr "新しい値 = \"%s\""
+
+#, c-format
+msgid "line %ld: %s"
+msgstr "行 %ld: %s"
+
+#, c-format
+msgid "cmd: %s"
+msgstr "コマンド: %s"
+
+msgid "frame is zero"
+msgstr "フレームが 0 です"
+
+#, c-format
+msgid "frame at highest level: %d"
+msgstr "最高レベルのフレーム: %d"
+
+#, c-format
+msgid "Breakpoint in \"%s%s\" line %ld"
+msgstr "ブレークポイント \"%s%s\" 行 %ld"
+
+#, c-format
+msgid "E161: Breakpoint not found: %s"
+msgstr "E161: ブレークポイントが見つかりません: %s"
+
+msgid "No breakpoints defined"
+msgstr "ブレークポイントが定義されていません"
+
+#, c-format
+msgid "%3d  %s %s  line %ld"
+msgstr "%3d  %s %s  行 %ld"
+
+#, c-format
+msgid "%3d  expr %s"
+msgstr "%3d  expr %s"
 
 #, c-format
 msgid "E720: Missing colon in Dictionary: %s"
@@ -1151,51 +1196,6 @@ msgstr "E150: ディレクトリではありません: %s"
 msgid "No old files"
 msgstr "古いファイルはありません"
 
-msgid "Entering Debug mode.  Type \"cont\" to continue."
-msgstr "デバッグモードに入ります. 続けるには \"cont\" と入力してください."
-
-#, c-format
-msgid "Oldval = \"%s\""
-msgstr "古い値 = \"%s\""
-
-#, c-format
-msgid "Newval = \"%s\""
-msgstr "新しい値 = \"%s\""
-
-#, c-format
-msgid "line %ld: %s"
-msgstr "行 %ld: %s"
-
-#, c-format
-msgid "cmd: %s"
-msgstr "コマンド: %s"
-
-msgid "frame is zero"
-msgstr "フレームが 0 です"
-
-#, c-format
-msgid "frame at highest level: %d"
-msgstr "最高レベルのフレーム: %d"
-
-#, c-format
-msgid "Breakpoint in \"%s%s\" line %ld"
-msgstr "ブレークポイント \"%s%s\" 行 %ld"
-
-#, c-format
-msgid "E161: Breakpoint not found: %s"
-msgstr "E161: ブレークポイントが見つかりません: %s"
-
-msgid "No breakpoints defined"
-msgstr "ブレークポイントが定義されていません"
-
-#, c-format
-msgid "%3d  %s %s  line %ld"
-msgstr "%3d  %s %s  行 %ld"
-
-#, c-format
-msgid "%3d  expr %s"
-msgstr "%3d  expr %s"
-
 msgid "E750: First use \":profile start {fname}\""
 msgstr "E750: 初めに \":profile start {fname}\" を実行してください"
 
@@ -1379,10 +1379,10 @@ msgstr "E174: コマンドが既にあります: 再定義するには ! を追�
 
 msgid ""
 "\n"
-"    Name        Args       Address   Complete  Definition"
+"    Name              Args Address Complete    Definition"
 msgstr ""
 "\n"
-"    名前        引数       アドレス  補完      定義"
+"    名前              引数 アドレス 補完       定義"
 
 msgid "No user-defined commands found"
 msgstr "ユーザー定義コマンドが見つかりませんでした"
@@ -7236,8 +7236,8 @@ msgstr "テキストエディタ"
 msgid "Edit text files"
 msgstr "テキストファイルを編集します"
 
-#~ msgid "Text;editor;"
-#~ msgstr ""
+msgid "Text;editor;"
+msgstr "テキスト;エディタ;"
 
 #~ msgid "gvim"
 #~ msgstr ""
