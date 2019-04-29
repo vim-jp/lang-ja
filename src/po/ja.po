@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-26 18:55+0900\n"
+"POT-Creation-Date: 2019-04-29 19:39+0900\n"
 "PO-Revision-Date: 2019-03-12 08:23+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -1373,69 +1373,6 @@ msgid "E173: %d more file to edit"
 msgid_plural "E173: %d more files to edit"
 msgstr[0] "E173: 編集すべきファイルがあと %d 個あります"
 
-#, c-format
-msgid "E174: Command already exists: add ! to replace it: %s"
-msgstr "E174: コマンドが既にあります: 再定義するには ! を追加してください: %s"
-
-msgid ""
-"\n"
-"    Name              Args Address Complete    Definition"
-msgstr ""
-"\n"
-"    名前              引数 アドレス 補完       定義"
-
-msgid "No user-defined commands found"
-msgstr "ユーザー定義コマンドが見つかりませんでした"
-
-msgid "E175: No attribute specified"
-msgstr "E175: 属性は定義されていません"
-
-msgid "E176: Invalid number of arguments"
-msgstr "E176: 引数の数が無効です"
-
-msgid "E177: Count cannot be specified twice"
-msgstr "E177: カウントを2重指定することはできません"
-
-msgid "E178: Invalid default value for count"
-msgstr "E178: カウントの省略値が無効です"
-
-msgid "E179: argument required for -complete"
-msgstr "E179: -complete には引数が必要です"
-
-msgid "E179: argument required for -addr"
-msgstr "E179: -addr には引数が必要です"
-
-#, c-format
-msgid "E181: Invalid attribute: %s"
-msgstr "E181: 無効な属性です: %s"
-
-msgid "E182: Invalid command name"
-msgstr "E182: 無効なコマンド名です"
-
-msgid "E183: User defined commands must start with an uppercase letter"
-msgstr "E183: ユーザー定義コマンドは英大文字で始まらなければなりません"
-
-msgid "E841: Reserved name, cannot be used for user defined command"
-msgstr "E841: 予約名なので、ユーザー定義コマンドに利用できません"
-
-#, c-format
-msgid "E184: No such user-defined command: %s"
-msgstr "E184: そのユーザー定義コマンドはありません: %s"
-
-#, c-format
-msgid "E180: Invalid address type value: %s"
-msgstr "E180: 無効なアドレスタイプ値です: %s"
-
-#, c-format
-msgid "E180: Invalid complete value: %s"
-msgstr "E180: 無効な補完指定です: %s"
-
-msgid "E468: Completion argument only allowed for custom completion"
-msgstr "E468: 補完引数はカスタム補完でしか使用できません"
-
-msgid "E467: Custom completion requires a function argument"
-msgstr "E467: カスタム補完には引数として関数が必要です"
-
 msgid "unknown"
 msgstr "不明"
 
@@ -2300,6 +2237,9 @@ msgstr "E671: タイトルが \"%s\" のウィンドウは見つかりません"
 #, c-format
 msgid "E243: Argument not supported: \"-%s\"; Use the OLE version."
 msgstr "E243: 引数はサポートされません: \"-%s\"; OLE版を使用してください."
+
+msgid "E988: GUI cannot be used. Cannot execute gvim.exe."
+msgstr "E988: GUIは使用不可能です。gvim.exeを起動できません。"
 
 msgid "E672: Unable to open window inside MDI application"
 msgstr "E672: MDIアプリの中ではウィンドウを開けません"
@@ -3861,6 +3801,9 @@ msgid ""
 msgstr ""
 "\"\n"
 "    を消せばこのメッセージを回避できます.\n"
+
+msgid "Found a swap file that is not useful, deleting it"
+msgstr "不要なスワップファイルが見つかりました。削除します"
 
 msgid "Swap file \""
 msgstr "スワップファイル \""
@@ -5709,6 +5652,12 @@ msgstr "E555: タグスタックの末尾です"
 msgid "E556: at top of tag stack"
 msgstr "E556: タグスタックの先頭です"
 
+msgid "E986: cannot modify the tag stack within tagfunc"
+msgstr "E986: tagfunc内のタグスタックを変更できません"
+
+msgid "E987: invalid return value from tagfunc"
+msgstr "E987: tagfuncからの戻り値が無効です"
+
 msgid "E425: Cannot go before first matching tag"
 msgstr "E425: 最初の該当タグを越えて戻ることはできません"
 
@@ -5820,6 +5769,10 @@ msgstr ""
 
 msgid "Cannot open $VIMRUNTIME/rgb.txt"
 msgstr "$VIMRUNTIME/rgb.txtを開けません"
+
+#, c-format
+msgid "E181: Invalid attribute: %s"
+msgstr "E181: 無効な属性です: %s"
 
 #, c-format
 msgid "Kill job in \"%s\"?"
@@ -6027,6 +5980,65 @@ msgstr "E439: アンドゥリストが壊れています"
 msgid "E440: undo line missing"
 msgstr "E440: アンドゥ行がありません"
 
+msgid ""
+"\n"
+"    Name              Args Address Complete    Definition"
+msgstr ""
+"\n"
+"    名前              引数 アドレス 補完       定義"
+
+msgid "No user-defined commands found"
+msgstr "ユーザー定義コマンドが見つかりませんでした"
+
+#, c-format
+msgid "E180: Invalid address type value: %s"
+msgstr "E180: 無効なアドレスタイプ値です: %s"
+
+#, c-format
+msgid "E180: Invalid complete value: %s"
+msgstr "E180: 無効な補完指定です: %s"
+
+msgid "E468: Completion argument only allowed for custom completion"
+msgstr "E468: 補完引数はカスタム補完でしか使用できません"
+
+msgid "E467: Custom completion requires a function argument"
+msgstr "E467: カスタム補完には引数として関数が必要です"
+
+msgid "E175: No attribute specified"
+msgstr "E175: 属性は定義されていません"
+
+msgid "E176: Invalid number of arguments"
+msgstr "E176: 引数の数が無効です"
+
+msgid "E177: Count cannot be specified twice"
+msgstr "E177: カウントを2重指定することはできません"
+
+msgid "E178: Invalid default value for count"
+msgstr "E178: カウントの省略値が無効です"
+
+msgid "E179: argument required for -complete"
+msgstr "E179: -complete には引数が必要です"
+
+msgid "E179: argument required for -addr"
+msgstr "E179: -addr には引数が必要です"
+
+#, c-format
+msgid "E174: Command already exists: add ! to replace it: %s"
+msgstr "E174: コマンドが既にあります: 再定義するには ! を追加してください: %s"
+
+msgid "E182: Invalid command name"
+msgstr "E182: 無効なコマンド名です"
+
+msgid "E183: User defined commands must start with an uppercase letter"
+msgstr "E183: ユーザー定義コマンドは英大文字で始まらなければなりません"
+
+msgid "E841: Reserved name, cannot be used for user defined command"
+msgstr "E841: 予約名なので、ユーザー定義コマンドに利用できません"
+
+#, c-format
+msgid "E184: No such user-defined command: %s"
+msgstr "E184: そのユーザー定義コマンドはありません: %s"
+
 #, c-format
 msgid "E122: Function %s already exists, add ! to replace it"
 msgstr "E122: 関数 %s は定義済です、再定義するには ! を追加してください"
@@ -6158,6 +6170,20 @@ msgstr "E107: カッコ '(' がありません: %s"
 #, c-format
 msgid "%s (%s, compiled %s)"
 msgstr "%s (%s, compiled %s)"
+
+msgid ""
+"\n"
+"MS-Windows 64-bit GUI/console version"
+msgstr ""
+"\n"
+"MS-Windows 64 ビット GUI/コンソール 版"
+
+msgid ""
+"\n"
+"MS-Windows 32-bit GUI/console version"
+msgstr ""
+"\n"
+"MS-Windows 32 ビット GUI/コンソール 版"
 
 msgid ""
 "\n"
