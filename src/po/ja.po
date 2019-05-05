@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-29 19:39+0900\n"
+"POT-Creation-Date: 2019-05-05 11:27+0900\n"
 "PO-Revision-Date: 2019-03-12 08:23+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -1354,6 +1354,12 @@ msgstr "逆さまの範囲が指定されました、入替えますか?"
 
 msgid "E494: Use w or w>>"
 msgstr "E494: w もしくは w>> を使用してください"
+
+msgid ""
+"INTERNAL: Cannot use DFLALL with ADDR_NONE, ADDR_UNSIGNED or ADDR_QUICKFIX"
+msgstr ""
+"内部エラー: DFLALL を ADDR_NONE, ADDR_UNSIGNED や ADDR_QUICKFIX とともに使う"
+"ことはできません"
 
 msgid "E943: Command table needs to be updated, run 'make cmdidxs'"
 msgstr ""
@@ -4606,6 +4612,9 @@ msgstr "Vimの警告"
 msgid "shell returned %d"
 msgstr "シェルがコード %d で終了しました"
 
+msgid "E553: No more items"
+msgstr "E553: 要素がもうありません"
+
 msgid "E926: Current location list was changed"
 msgstr "E926: 現在のロケーションリストが変更されました"
 
@@ -4637,9 +4646,6 @@ msgstr "E378: 'errorformat' にパターンが指定されていません"
 
 msgid "E379: Missing or empty directory name"
 msgstr "E379: ディレクトリ名が無いか空です"
-
-msgid "E553: No more items"
-msgstr "E553: 要素がもうありません"
 
 msgid "E924: Current window was closed"
 msgstr "E924: 現在のウィンドウが閉じられました"
