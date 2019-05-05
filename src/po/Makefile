@@ -1,4 +1,13 @@
+ARCHIVE = vim-lang-ja-po
+ARCHIVE_EXT = xz
+ARCHIVE_DIR = $(ARCHIVE)
+ARCHIVE_FILE = $(ARCHIVE).tar.$(ARCHIVE_EXT)
+
 MASTER_PO = ja.po
+
+POFILES = ja.po \
+	  ja.euc-jp.po \
+	  ja.sjis.po
 
 MOFILES = ja.mo \
 	  ja.euc-jp.mo \
@@ -15,6 +24,15 @@ VIM = vim
 .SUFFIXES: .po .mo .ck
 
 test: check $(MOFILES)
+
+release:
+	@rm -rf $(ARCHIVE_DIR) $(ARCHIVE_FILE)
+	$(MAKE) test
+	$(MAKE) $(ARCHIVE_FILE)
+	rm -rf $(ARCHIVE_DIR)
+
+release-today:
+	$(MAKE) release ARCHIVE=vim-lang-ja-po-`date +%Y%m%d`
 
 update: ja.sjis.po ja.euc-jp.po
 
@@ -50,6 +68,9 @@ clean: checkclean
 	rm -f ja.sjis.po ja.euc-jp.po
 	rm -f *.mo
 
+distclean: clean
+	rm -f *.tar.bz2 *.tar.gz *.tar.xz
+
 #ja.po: vim.pot
 #	rm -f $@.old
 #	mv $@ $@.old
@@ -67,3 +88,16 @@ check: $(CHECKFILES)
 
 checkclean:
 	rm -f *.ck
+
+$(ARCHIVE_DIR): $(POFILES)
+	mkdir -p $@/src/po
+	cp $(POFILES) $@/src/po
+
+$(ARCHIVE).tar.gz: $(ARCHIVE_DIR)
+	tar -czf $@ $<
+
+$(ARCHIVE).tar.bz2: $(ARCHIVE_DIR)
+	tar -cjf $@ $<
+
+$(ARCHIVE).tar.xz: $(ARCHIVE_DIR)
+	tar -cJf $@ $<
