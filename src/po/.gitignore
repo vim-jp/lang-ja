@@ -8,3 +8,6 @@
 /sjiscorr
 /sjiscorr.exe
 /vim.pot
+/vim-lang-ja-po*.tar.gz
+/vim-lang-ja-po*.tar.bz2
+/vim-lang-ja-po*.tar.xz
