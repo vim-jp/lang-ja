@@ -148,6 +148,15 @@ runtime/tutor/tutor                |原文チュートリアルファイル
     `vim-lang-ja-20160131.tar.xz` といったアーカイブファイルができる。
     `20160131` の部分は実行した日付に置き換わる。
 
+    前回のリリースから、`*.po` 以外のファイルが更新されていない場合は、po
+    のみのリリース用アーカイブを作成する。(Bram の要請。)
+
+        $ cd src/po/
+        $ make release-today
+
+    `vim-lang-ja-po-YYYYMMDD.tar.xz` といったアーカイブファイルができる。
+    `YYYYMMDD` の部分は実行した日付に置き換わる。
+
 5.  タグを打ち、GitHub Releases を更新する
 
     タグの形式は YYYYMMDD とする。例:
