@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-05 11:27+0900\n"
+"POT-Creation-Date: 2019-05-20 19:41+0900\n"
 "PO-Revision-Date: 2019-05-05 13:00+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -261,6 +261,9 @@ msgstr "[プロンプト]"
 
 msgid "[Scratch]"
 msgstr "[下書き]"
+
+msgid "W10: Warning: Changing a readonly file"
+msgstr "W10: 警告: 読込専用ファイルを変更します"
 
 msgid "E902: Cannot connect to port"
 msgstr "E902: ポートに接続できません"
@@ -562,6 +565,13 @@ msgstr "E461: 不正な変数名です: %s"
 
 msgid "E806: using Float as a String"
 msgstr "E806: 浮動小数点数を文字列として扱っています"
+
+msgid "E991: cannot use =<< here"
+msgstr "E991: ここでは =<< は使えません"
+
+#, c-format
+msgid "E990: Missing end marker '%s'"
+msgstr "E990: 終端マーカーがありません '%s'"
 
 msgid "E985: .= is not supported with script version 2"
 msgstr "E985: .= はスクリプトバージョン 2 では対応していません"
@@ -3976,9 +3986,6 @@ msgstr "E807: printf() の引数には浮動小数点数が期待されていま
 msgid "E767: Too many arguments to printf()"
 msgstr "E767: printf() の引数が多過ぎます"
 
-msgid "W10: Warning: Changing a readonly file"
-msgstr "W10: 警告: 読込専用ファイルを変更します"
-
 msgid "Type number and <Enter> or click with mouse (empty cancels): "
 msgstr ""
 "番号と<Enter>を入力するかマウスでクリックしてください (空でキャンセル): "
@@ -4484,6 +4491,10 @@ msgid ""
 msgstr ""
 "\n"
 "Vim: X のエラーを検出しましたr\n"
+
+#, c-format
+msgid "restoring display %s"
+msgstr "ディスプレイ %s を復元しています"
 
 msgid "Testing the X display failed"
 msgstr "X display のチェックに失敗しました"
@@ -6067,6 +6078,9 @@ msgstr "E125: 不正な引数です: %s"
 #, c-format
 msgid "E853: Duplicate argument name: %s"
 msgstr "E853: 引数名が重複しています: %s"
+
+msgid "E989: Non-default argument follows default argument"
+msgstr "E989: 非デフォルト引数がデフォルト引数の後にあります"
 
 #, c-format
 msgid "E740: Too many arguments for function %s"
