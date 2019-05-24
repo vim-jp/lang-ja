@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-20 19:41+0900\n"
+"POT-Creation-Date: 2019-05-24 19:08+0900\n"
 "PO-Revision-Date: 2019-05-05 13:00+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -4232,6 +4232,9 @@ msgstr "E519: オプションはサポートされていません"
 
 msgid "E520: Not allowed in a modeline"
 msgstr "E520: modeline では許可されません"
+
+msgid "E992: Not allowed in a modeline when 'modelineexpr' is off"
+msgstr "E992: 'modelineexpr' がオフの時 modeline では許可されません"
 
 msgid "E846: Key code not set"
 msgstr "E846: キーコードが設定されていません"
