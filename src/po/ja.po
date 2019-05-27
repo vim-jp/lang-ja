@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-24 19:08+0900\n"
+"POT-Creation-Date: 2019-05-27 19:22+0900\n"
 "PO-Revision-Date: 2019-05-05 13:00+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -4028,12 +4028,8 @@ msgstr ""
 "[呼出] 総 re/malloc() 回数 %lu, 総 free() 回数 %lu\n"
 "\n"
 
-msgid "E340: Line is becoming too long"
-msgstr "E340: 行が長くなり過ぎました"
-
-#, c-format
-msgid "E341: Internal error: lalloc(%ld, )"
-msgstr "E341: 内部エラー: lalloc(%ld,)"
+msgid "E341: Internal error: lalloc(0, )"
+msgstr "E341: 内部エラー: lalloc(0, )"
 
 #, c-format
 msgid "E342: Out of memory!  (allocating %lu bytes)"
@@ -4626,6 +4622,10 @@ msgstr "Vimの警告"
 #, c-format
 msgid "shell returned %d"
 msgstr "シェルがコード %d で終了しました"
+
+#, c-format
+msgid "E993: window %d is not a popup window"
+msgstr "E993: ウィンドウ %d はポップアップウィンドウではありません"
 
 msgid "E553: No more items"
 msgstr "E553: 要素がもうありません"
@@ -6501,8 +6501,8 @@ msgstr "E443: 他のウィンドウが分割されている時には順回でき
 msgid "E444: Cannot close last window"
 msgstr "E444: 最後のウィンドウを閉じることはできません"
 
-msgid "E813: Cannot close autocmd window"
-msgstr "E813: autocmdウィンドウは閉じられません"
+msgid "E813: Cannot close autocmd or popup window"
+msgstr "E813: autocmdウィンドウまたはポップアップウィンドウは閉じられません"
 
 msgid "E814: Cannot close window, only autocmd window would remain"
 msgstr "E814: autocmdウィンドウしか残らないため、ウィンドウは閉じられません"
