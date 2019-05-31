@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-27 19:22+0900\n"
+"POT-Creation-Date: 2019-05-31 19:47+0900\n"
 "PO-Revision-Date: 2019-05-05 13:00+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -258,6 +258,9 @@ msgstr "E382: 'buftype' オプションが設定されているので書込め�
 
 msgid "[Prompt]"
 msgstr "[プロンプト]"
+
+msgid "[Popup]"
+msgstr "[ポップアップ]"
 
 msgid "[Scratch]"
 msgstr "[下書き]"
