@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-31 19:47+0900\n"
+"POT-Creation-Date: 2019-06-17 20:54+0900\n"
 "PO-Revision-Date: 2019-05-05 13:00+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -566,6 +566,9 @@ msgstr "E734: 異なった型の変数です %s="
 msgid "E461: Illegal variable name: %s"
 msgstr "E461: 不正な変数名です: %s"
 
+msgid "E995: Cannot modify existing variable"
+msgstr "E995: 既存の変数を変更できません"
+
 msgid "E806: using Float as a String"
 msgstr "E806: 浮動小数点数を文字列として扱っています"
 
@@ -592,6 +595,15 @@ msgstr "リスト型の値に2つ以上の ; が検出されました"
 msgid "E738: Can't list variables for %s"
 msgstr "E738: %s の値を一覧表示できません"
 
+msgid "E996: Cannot lock an environment variable"
+msgstr "E996: 環境変数はロックできません"
+
+msgid "E996: Cannot lock an option"
+msgstr "E996: オプションはロックできません"
+
+msgid "E996: Cannot lock a register"
+msgstr "E996: レジスタはロックできません"
+
 msgid "E689: Can only index a List, Dictionary or Blob"
 msgstr "E689: リスト型、辞書型、Blob型以外はインデックス指定できません"
 
@@ -604,11 +616,17 @@ msgstr "E709: [:] にはリスト型かBlob型の値が必要です"
 msgid "E972: Blob value does not have the right number of bytes"
 msgstr "E972: Blob型の値のバイト数が正しくありません"
 
+msgid "E996: Cannot lock a range"
+msgstr "E996: 範囲はロックできません"
+
 msgid "E710: List value has more items than target"
 msgstr "E710: リスト型変数にターゲットよりも多い要素があります"
 
 msgid "E711: List value has not enough items"
 msgstr "E711: リスト型変数に十分な数の要素がありません"
+
+msgid "E996: Cannot lock a list or dict"
+msgstr "E996: リストあるいは辞書はロックできません"
 
 msgid "E690: Missing \"in\" after :for"
 msgstr "E690: :for の後に \"in\" がありません"
@@ -4629,6 +4647,9 @@ msgstr "シェルがコード %d で終了しました"
 #, c-format
 msgid "E993: window %d is not a popup window"
 msgstr "E993: ウィンドウ %d はポップアップウィンドウではありません"
+
+msgid "E994: Not allowed in a popup window"
+msgstr "E994: ポップアップウィンドウでは許されません"
 
 msgid "E553: No more items"
 msgstr "E553: 要素がもうありません"
