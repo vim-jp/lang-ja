@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-17 20:54+0900\n"
+"POT-Creation-Date: 2019-06-25 19:59+0900\n"
 "PO-Revision-Date: 2019-05-05 13:00+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -290,6 +290,9 @@ msgstr "E904: call の3番目の引数はリスト型でなければなりませ
 msgid "E905: received unknown command: %s"
 msgstr "E905: 未知のコマンドを受信しました: %s"
 
+msgid "E906: not an open channel"
+msgstr "E906: 開いていないチャネルです"
+
 #, c-format
 msgid "E630: %s(): write while not connected"
 msgstr "E630: %s(): 非接続状態で書き込みました"
@@ -306,9 +309,6 @@ msgid "E912: cannot use ch_evalexpr()/ch_sendexpr() with a raw or nl channel"
 msgstr ""
 "E912: raw や nl モードのチャネルに ch_evalexpr()/ch_sendexpr() は使えません"
 
-msgid "E906: not an open channel"
-msgstr "E906: 開いていないチャネルです"
-
 msgid "E920: _io file requires _name to be set"
 msgstr "E920: _io ファイルは _name の設定が必要です"
 
@@ -318,6 +318,9 @@ msgstr "E915: in_io バッファは in_buf か in_name の設定が必要です"
 #, c-format
 msgid "E918: buffer must be loaded: %s"
 msgstr "E918: バッファがロードされてなければなりません: %s"
+
+msgid "E916: not a valid job"
+msgstr "E916: 有効なジョブではありません"
 
 msgid "E821: File is encrypted with unknown method"
 msgstr "E821: ファイルが未知の方法で暗号化されています"
@@ -877,9 +880,6 @@ msgstr "insert() の引数"
 
 msgid "E786: Range not allowed"
 msgstr "E786: 範囲指定は許可されていません"
-
-msgid "E916: not a valid job"
-msgstr "E916: 有効なジョブではありません"
 
 msgid "E701: Invalid type for len()"
 msgstr "E701: len() には無効な型です"
@@ -4643,6 +4643,10 @@ msgstr "Vimの警告"
 #, c-format
 msgid "shell returned %d"
 msgstr "シェルがコード %d で終了しました"
+
+#, c-format
+msgid "E997: Tabpage not found: %d"
+msgstr "E997: タブページが見つかりません: %d"
 
 #, c-format
 msgid "E993: window %d is not a popup window"
