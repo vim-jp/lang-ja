@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-22 20:37+0900\n"
+"POT-Creation-Date: 2019-08-06 20:02+0900\n"
 "PO-Revision-Date: 2019-05-05 13:00+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -246,6 +246,9 @@ msgstr "末尾"
 
 msgid "Top"
 msgstr "先頭"
+
+msgid "E249: window layout changed unexpectedly"
+msgstr "E249: 予期せずウィンドウの配置が変わりました"
 
 msgid "E382: Cannot write, 'buftype' option is set"
 msgstr "E382: 'buftype' オプションが設定されているので書込めません"
@@ -657,6 +660,9 @@ msgstr "E973: Blobリテラルは偶数個の16進数文字でなければなり
 msgid "E110: Missing ')'"
 msgstr "E110: ')' が見つかりません"
 
+msgid "E260: Missing name after ->"
+msgstr "E260: -> の後に名前がありません"
+
 msgid "E695: Cannot index a Funcref"
 msgstr "E695: 関数参照型はインデックスできません"
 
@@ -811,18 +817,11 @@ msgid "filter() argument"
 msgstr "filter() の引数"
 
 #, c-format
-msgid "E686: Argument of %s must be a List"
-msgstr "E686: %s の引数はリスト型でなければなりません"
-
-#, c-format
 msgid "E899: Argument of %s must be a List or Blob"
 msgstr "E899: %s の引数はリスト型またはBlob型でなければなりません"
 
 msgid "E928: String required"
 msgstr "E928: 文字列が必要です"
-
-msgid "E957: Invalid window number"
-msgstr "E957: 無効なウィンドウ番号です"
 
 msgid "E808: Number or Float required"
 msgstr "E808: 数値か浮動小数点数が必要です"
@@ -877,10 +876,6 @@ msgstr "E786: 範囲指定は許可されていません"
 msgid "E701: Invalid type for len()"
 msgstr "E701: len() には無効な型です"
 
-#, c-format
-msgid "E798: ID is reserved for \":match\": %d"
-msgstr "E798: ID は \":match\" のために予約されています: %d"
-
 msgid "E726: Stride is zero"
 msgstr "E726: ストライド(前進量)が 0 です"
 
@@ -926,18 +921,6 @@ msgstr "E927: 無効な操作です: '%s'"
 #, c-format
 msgid "E962: Invalid action: '%s'"
 msgstr "E962: 無効な操作です: '%s'"
-
-msgid "sort() argument"
-msgstr "sort() の引数"
-
-msgid "uniq() argument"
-msgstr "uniq() の引数"
-
-msgid "E702: Sort compare function failed"
-msgstr "E702: ソートの比較関数が失敗しました"
-
-msgid "E882: Uniq compare function failed"
-msgstr "E882: Uniq の比較関数が失敗しました"
 
 msgid "(Invalid)"
 msgstr "(無効)"
@@ -1100,15 +1083,6 @@ msgstr "パターンが全ての行で見つかりました: %s"
 #, c-format
 msgid "Pattern not found: %s"
 msgstr "パターンは見つかりませんでした: %s"
-
-msgid ""
-"\n"
-"# Last Substitute String:\n"
-"$"
-msgstr ""
-"\n"
-"# 最後に置換された文字列:\n"
-"$"
 
 msgid "E478: Don't panic!"
 msgstr "E478: 慌てないでください"
@@ -1395,15 +1369,6 @@ msgstr "E930: execute() の中では :redir は使えません"
 
 msgid "Save Redirection"
 msgstr "リダイレクトを保存します"
-
-msgid "Save View"
-msgstr "ビューを保存します"
-
-msgid "Save Session"
-msgstr "セッション情報を保存します"
-
-msgid "Save Setup"
-msgstr "設定を保存します"
 
 #, c-format
 msgid "E739: Cannot create directory: %s"
@@ -1945,31 +1910,6 @@ msgstr "E222: 読込バッファへ追加"
 msgid "E223: recursive mapping"
 msgstr "E223: 再帰的マッピング"
 
-#, c-format
-msgid "E224: global abbreviation already exists for %s"
-msgstr "E224: %s というグローバル短縮入力は既に存在します"
-
-#, c-format
-msgid "E225: global mapping already exists for %s"
-msgstr "E225: %s というグローバルマッピングは既に存在します"
-
-#, c-format
-msgid "E226: abbreviation already exists for %s"
-msgstr "E226: %s という短縮入力は既に存在します"
-
-#, c-format
-msgid "E227: mapping already exists for %s"
-msgstr "E227: %s というマッピングは既に存在します"
-
-msgid "No abbreviation found"
-msgstr "短縮入力は見つかりませんでした"
-
-msgid "No mapping found"
-msgstr "マッピングは見つかりませんでした"
-
-msgid "E228: makemap: Illegal mode"
-msgstr "E228: makemap: 不正なモード"
-
 msgid "E851: Failed to create a new process for the GUI"
 msgstr "E851: GUI用のプロセスの起動に失敗しました"
 
@@ -2408,6 +2348,29 @@ msgstr "W18: グループ名に不正な文字があります"
 
 msgid "E849: Too many highlight and syntax groups"
 msgstr "E849: ハイライトと構文グループが多過ぎます"
+
+#, c-format
+msgid "E799: Invalid ID: %d (must be greater than or equal to 1)"
+msgstr "E799: 無効な ID: %d (1 以上でなければなりません)"
+
+#, c-format
+msgid "E801: ID already taken: %d"
+msgstr "E801: ID はすでに利用中です: %d"
+
+msgid "List or number required"
+msgstr "リストか数値が必要です"
+
+#, c-format
+msgid "E802: Invalid ID: %d (must be greater than or equal to 1)"
+msgstr "E802: 無効な ID: %d (1 以上でなければなりません)"
+
+#, c-format
+msgid "E803: ID not found: %d"
+msgstr "E803: ID はありません: %d"
+
+#, c-format
+msgid "E798: ID is reserved for \":match\": %d"
+msgstr "E798: ID は \":match\" のために予約されています: %d"
 
 msgid "Add a new database"
 msgstr "新データベースを追加"
@@ -2892,6 +2855,18 @@ msgstr "E696: リスト型にカンマがありません: %s"
 msgid "E697: Missing end of List ']': %s"
 msgstr "E697: リスト型の最後に ']' がありません: %s"
 
+msgid "sort() argument"
+msgstr "sort() の引数"
+
+msgid "uniq() argument"
+msgstr "uniq() の引数"
+
+msgid "E702: Sort compare function failed"
+msgstr "E702: ソートの比較関数が失敗しました"
+
+msgid "E882: Uniq compare function failed"
+msgstr "E882: Uniq の比較関数が失敗しました"
+
 msgid "Unknown option argument"
 msgstr "未知のオプション引数です"
 
@@ -3311,6 +3286,31 @@ msgstr "ディスプレイがありません: 式の送信に失敗しました.
 msgid ": Send expression failed.\n"
 msgstr ": 式の送信に失敗しました.\n"
 
+#, c-format
+msgid "E224: global abbreviation already exists for %s"
+msgstr "E224: %s というグローバル短縮入力は既に存在します"
+
+#, c-format
+msgid "E225: global mapping already exists for %s"
+msgstr "E225: %s というグローバルマッピングは既に存在します"
+
+#, c-format
+msgid "E226: abbreviation already exists for %s"
+msgstr "E226: %s という短縮入力は既に存在します"
+
+#, c-format
+msgid "E227: mapping already exists for %s"
+msgstr "E227: %s というマッピングは既に存在します"
+
+msgid "No abbreviation found"
+msgstr "短縮入力は見つかりませんでした"
+
+msgid "No mapping found"
+msgstr "マッピングは見つかりませんでした"
+
+msgid "E228: makemap: Illegal mode"
+msgstr "E228: makemap: 不正なモード"
+
 msgid "No marks set"
 msgstr "マークが設定されていません"
 
@@ -3338,30 +3338,6 @@ msgid ""
 msgstr ""
 "\n"
 "変更     行   列 テキスト"
-
-msgid ""
-"\n"
-"# File marks:\n"
-msgstr ""
-"\n"
-"# ファイルマーク:\n"
-
-msgid ""
-"\n"
-"# Jumplist (newest first):\n"
-msgstr ""
-"\n"
-"# ジャンプリスト (新しいものが先):\n"
-
-msgid ""
-"\n"
-"# History of marks within files (newest to oldest):\n"
-msgstr ""
-"\n"
-"# ファイル内マークの履歴 (新しいものから古いもの):\n"
-
-msgid "Missing '>'"
-msgstr "'>' が見つかりません"
 
 msgid "E543: Not a valid codepage"
 msgstr "E543: 無効なコードページです"
@@ -4151,20 +4127,6 @@ msgid ""
 msgstr ""
 "\n"
 "--- レジスタ ---"
-
-msgid "Illegal register name"
-msgstr "不正なレジスタ名"
-
-msgid ""
-"\n"
-"# Registers:\n"
-msgstr ""
-"\n"
-"# レジスタ:\n"
-
-#, c-format
-msgid "E574: Unknown register type %d"
-msgstr "E574: 未知のレジスタ型 %d です"
 
 msgid ""
 "E883: search pattern and expression register may not contain two or more "
@@ -4985,18 +4947,14 @@ msgstr "E388: 定義を見つけられません"
 msgid "E389: Couldn't find pattern"
 msgstr "E389: パターンを見つけられません"
 
-msgid "Substitute "
-msgstr "Substitute "
+msgid "Save View"
+msgstr "ビューを保存します"
 
-#, c-format
-msgid ""
-"\n"
-"# Last %sSearch Pattern:\n"
-"~"
-msgstr ""
-"\n"
-"# 最後の %s検索パターン:\n"
-"~"
+msgid "Save Session"
+msgstr "セッション情報を保存します"
+
+msgid "Save Setup"
+msgstr "設定を保存します"
 
 msgid "[Deleted]"
 msgstr "[削除済]"
@@ -6119,10 +6077,6 @@ msgid "E133: :return not inside a function"
 msgstr "E133: 関数外に :return がありました"
 
 #, c-format
-msgid "E107: Missing parentheses: %s"
-msgstr "E107: カッコ '(' がありません: %s"
-
-#, c-format
 msgid "%s (%s, compiled %s)"
 msgstr "%s (%s, compiled %s)"
 
@@ -6464,6 +6418,66 @@ msgstr ""
 "\n"
 "# グローバル変数:\n"
 
+msgid ""
+"\n"
+"# Last Substitute String:\n"
+"$"
+msgstr ""
+"\n"
+"# 最後に置換された文字列:\n"
+"$"
+
+#, c-format
+msgid ""
+"\n"
+"# Last %sSearch Pattern:\n"
+"~"
+msgstr ""
+"\n"
+"# 最後の %s検索パターン:\n"
+"~"
+
+msgid "Substitute "
+msgstr "Substitute "
+
+msgid "Illegal register name"
+msgstr "不正なレジスタ名"
+
+msgid ""
+"\n"
+"# Registers:\n"
+msgstr ""
+"\n"
+"# レジスタ:\n"
+
+#, c-format
+msgid "E574: Unknown register type %d"
+msgstr "E574: 未知のレジスタ型 %d です"
+
+msgid ""
+"\n"
+"# History of marks within files (newest to oldest):\n"
+msgstr ""
+"\n"
+"# ファイル内マークの履歴 (新しいものから古いもの):\n"
+
+msgid ""
+"\n"
+"# File marks:\n"
+msgstr ""
+"\n"
+"# ファイルマーク:\n"
+
+msgid ""
+"\n"
+"# Jumplist (newest first):\n"
+msgstr ""
+"\n"
+"# ジャンプリスト (新しいものが先):\n"
+
+msgid "Missing '>'"
+msgstr "'>' が見つかりません"
+
 msgid "Illegal starting char"
 msgstr "不正な先頭文字です"
 
@@ -6530,6 +6544,9 @@ msgstr "E92: バッファ %ld が見つかりません"
 msgid "E441: There is no preview window"
 msgstr "E441: プレビューウィンドウがありません"
 
+msgid "E242: Can't split a window while closing another"
+msgstr "E242: 別のウィンドウを閉じている間に分割することはできません"
+
 msgid "E442: Can't split topleft and botright at the same time"
 msgstr "E442: 左上と右下を同時に分割することはできません"
 
@@ -6547,25 +6564,6 @@ msgstr "E814: autocmdウィンドウしか残らないため、ウィンドウ�
 
 msgid "E445: Other window contains changes"
 msgstr "E445: 他のウィンドウには変更があります"
-
-#, c-format
-msgid "E799: Invalid ID: %d (must be greater than or equal to 1)"
-msgstr "E799: 無効な ID: %d (1 以上でなければなりません)"
-
-#, c-format
-msgid "E801: ID already taken: %d"
-msgstr "E801: ID はすでに利用中です: %d"
-
-msgid "List or number required"
-msgstr "リストか数値が必要です"
-
-#, c-format
-msgid "E802: Invalid ID: %d (must be greater than or equal to 1)"
-msgstr "E802: 無効な ID: %d (1 以上でなければなりません)"
-
-#, c-format
-msgid "E803: ID not found: %d"
-msgstr "E803: ID はありません: %d"
 
 #, c-format
 msgid "E370: Could not load library %s"
@@ -6966,6 +6964,10 @@ msgstr "E939: 正のカウントが必要です"
 msgid "E81: Using <SID> not in a script context"
 msgstr "E81: スクリプト以外で<SID>が使われました"
 
+#, c-format
+msgid "E107: Missing parentheses: %s"
+msgstr "E107: カッコ '(' がありません: %s"
+
 msgid "E449: Invalid expression received"
 msgstr "E449: 無効な式を受け取りました"
 
@@ -7007,6 +7009,13 @@ msgstr "E952: Autocommandが再帰を引き起こしました"
 
 msgid "E328: Menu only exists in another mode"
 msgstr "E328: メニューは他のモードにだけあります"
+
+msgid "E957: Invalid window number"
+msgstr "E957: 無効なウィンドウ番号です"
+
+#, c-format
+msgid "E686: Argument of %s must be a List"
+msgstr "E686: %s の引数はリスト型でなければなりません"
 
 msgid "search hit TOP, continuing at BOTTOM"
 msgstr "上まで検索したので下に戻ります"
