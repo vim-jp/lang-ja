@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-06 20:02+0900\n"
+"POT-Creation-Date: 2019-08-08 18:57+0900\n"
 "PO-Revision-Date: 2019-05-05 13:00+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -318,6 +318,9 @@ msgstr "E918: バッファがロードされてなければなりません: %s"
 
 msgid "E916: not a valid job"
 msgstr "E916: 有効なジョブではありません"
+
+msgid "'history' option is zero"
+msgstr "オプション 'history' がゼロです"
 
 msgid "E821: File is encrypted with unknown method"
 msgstr "E821: ファイルが未知の方法で暗号化されています"
@@ -1538,9 +1541,6 @@ msgstr "タグ名"
 
 msgid " kind file\n"
 msgstr " ファイル種類\n"
-
-msgid "'history' option is zero"
-msgstr "オプション 'history' がゼロです"
 
 msgid "E199: Active window or buffer deleted"
 msgstr "E199: アクティブなウィンドウかバッファが削除されました"
@@ -6672,9 +6672,6 @@ msgstr "E685: 内部エラーです: %s"
 
 msgid "Interrupted"
 msgstr "割込まれました"
-
-msgid "E14: Invalid address"
-msgstr "E14: 無効なアドレスです"
 
 msgid "E474: Invalid argument"
 msgstr "E474: 無効な引数です"
