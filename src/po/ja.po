@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-08 18:57+0900\n"
+"POT-Creation-Date: 2019-08-21 18:40+0900\n"
 "PO-Revision-Date: 2019-05-05 13:00+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -23,6 +23,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "E163: There is only one file to edit"
+msgstr "E163: 編集するファイルは1つしかありません"
+
+msgid "E164: Cannot go before first file"
+msgstr "E164: 最初のファイルより前には行けません"
+
+msgid "E165: Cannot go beyond last file"
+msgstr "E165: 最後のファイルを越えて後には行けません"
+
+msgid "E249: window layout changed unexpectedly"
+msgstr "E249: 予期せずウィンドウの配置が変わりました"
 
 msgid "--Deleted--"
 msgstr "--削除済--"
@@ -247,9 +259,6 @@ msgstr "末尾"
 msgid "Top"
 msgstr "先頭"
 
-msgid "E249: window layout changed unexpectedly"
-msgstr "E249: 予期せずウィンドウの配置が変わりました"
-
 msgid "E382: Cannot write, 'buftype' option is set"
 msgstr "E382: 'buftype' オプションが設定されているので書込めません"
 
@@ -318,6 +327,12 @@ msgstr "E918: バッファがロードされてなければなりません: %s"
 
 msgid "E916: not a valid job"
 msgstr "E916: 有効なジョブではありません"
+
+msgid "tagname"
+msgstr "タグ名"
+
+msgid " kind file\n"
+msgstr " ファイル種類\n"
 
 msgid "'history' option is zero"
 msgstr "オプション 'history' がゼロです"
@@ -574,6 +589,9 @@ msgstr "E995: 既存の変数を変更できません"
 
 msgid "E806: using Float as a String"
 msgstr "E806: 浮動小数点数を文字列として扱っています"
+
+msgid "E274: No white space allowed before parenthesis"
+msgstr "E274: 丸括弧の前にスペースは許されません"
 
 msgid "E991: cannot use =<< here"
 msgstr "E991: ここでは =<< は使えません"
@@ -835,9 +853,6 @@ msgstr "add() の引数"
 #, c-format
 msgid "E158: Invalid buffer name: %s"
 msgstr "E158: 無効なバッファ名です: %s"
-
-msgid "E785: complete() can only be used in Insert mode"
-msgstr "E785: complete() は挿入モードでしか利用できません"
 
 msgid "&Ok"
 msgstr "&Ok"
@@ -1144,15 +1159,6 @@ msgstr "E162: バッファ \"%s\" の変更は保存されていません"
 
 msgid "Warning: Entered other buffer unexpectedly (check autocommands)"
 msgstr "警告: 予期せず他バッファへ移動しました (autocommands を調べてください)"
-
-msgid "E163: There is only one file to edit"
-msgstr "E163: 編集するファイルは1つしかありません"
-
-msgid "E164: Cannot go before first file"
-msgstr "E164: 最初のファイルより前には行けません"
-
-msgid "E165: Cannot go beyond last file"
-msgstr "E165: 最後のファイルを越えて後には行けません"
 
 #, c-format
 msgid "E666: compiler not supported: %s"
@@ -1535,12 +1541,6 @@ msgstr "E788: 現在は他のバッファを編集することは許されませ
 
 msgid "E811: Not allowed to change buffer information now"
 msgstr "E811: 現在はバッファ情報を変更することは許されません"
-
-msgid "tagname"
-msgstr "タグ名"
-
-msgid " kind file\n"
-msgstr " ファイル種類\n"
 
 msgid "E199: Active window or buffer deleted"
 msgstr "E199: アクティブなウィンドウかバッファが削除されました"
@@ -2809,6 +2809,9 @@ msgstr " (挿入) スクロール(^E/^Y)"
 
 msgid " (replace) Scroll (^E/^Y)"
 msgstr " (置換) スクロール (^E/^Y)"
+
+msgid "E785: complete() can only be used in Insert mode"
+msgstr "E785: complete() は挿入モードでしか利用できません"
 
 #, c-format
 msgid "Scanning: %s"
@@ -5731,6 +5734,9 @@ msgstr "E966: 無効な行番号です: %ld"
 msgid "E965: missing property type name"
 msgstr "E965: プロパティタイプ名がありません"
 
+msgid "E275: Cannot add text property to unloaded buffer"
+msgstr "E275: 解放されたバッファにはテキストプロパティを追加できません"
+
 msgid "E967: text property info corrupted"
 msgstr "E967: テキストプロパティ情報が壊れています"
 
@@ -6007,6 +6013,10 @@ msgstr "E699: 引数が多過ぎます"
 #, c-format
 msgid "E117: Unknown function: %s"
 msgstr "E117: 未知の関数です: %s"
+
+#, c-format
+msgid "E276: Cannot use function as a method: %s"
+msgstr "E276: 関数をメソッドとして使用できません: %s"
 
 #, c-format
 msgid "E933: Function was deleted: %s"
