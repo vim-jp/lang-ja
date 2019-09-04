@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-21 18:40+0900\n"
+"POT-Creation-Date: 2019-09-03 20:58+0900\n"
 "PO-Revision-Date: 2019-05-05 13:00+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -563,73 +563,17 @@ msgstr "E105: :source で取込むファイル以外では :loadkeymap を使え
 msgid "E791: Empty keymap entry"
 msgstr "E791: 空のキーマップエントリ"
 
-msgid "E18: Unexpected characters in :let"
-msgstr "E18: 予期せぬ文字が :let にありました"
-
-#, c-format
-msgid "E121: Undefined variable: %s"
-msgstr "E121: 未定義の変数です: %s"
-
 msgid "E111: Missing ']'"
 msgstr "E111: ']' が見つかりません"
 
 msgid "E719: Cannot use [:] with a Dictionary"
 msgstr "E719: [:] を辞書型と組み合わせては使えません"
 
-#, c-format
-msgid "E734: Wrong variable type for %s="
-msgstr "E734: 異なった型の変数です %s="
-
-#, c-format
-msgid "E461: Illegal variable name: %s"
-msgstr "E461: 不正な変数名です: %s"
-
-msgid "E995: Cannot modify existing variable"
-msgstr "E995: 既存の変数を変更できません"
-
 msgid "E806: using Float as a String"
 msgstr "E806: 浮動小数点数を文字列として扱っています"
 
 msgid "E274: No white space allowed before parenthesis"
 msgstr "E274: 丸括弧の前にスペースは許されません"
-
-msgid "E991: cannot use =<< here"
-msgstr "E991: ここでは =<< は使えません"
-
-msgid "E221: Marker cannot start with lower case letter"
-msgstr "E221: マーカーは英小文字で始まってはいけません"
-
-msgid "E172: Missing marker"
-msgstr "E172: マーカーがありません"
-
-#, c-format
-msgid "E990: Missing end marker '%s'"
-msgstr "E990: 終端マーカーがありません '%s'"
-
-msgid "E985: .= is not supported with script version 2"
-msgstr "E985: .= はスクリプトバージョン 2 では対応していません"
-
-msgid "E687: Less targets than List items"
-msgstr "E687: ターゲットがリスト型内の要素よりも少ないです"
-
-msgid "E688: More targets than List items"
-msgstr "E688: ターゲットがリスト型内の要素よりも多いです"
-
-msgid "Double ; in list of variables"
-msgstr "リスト型の値に2つ以上の ; が検出されました"
-
-#, c-format
-msgid "E738: Can't list variables for %s"
-msgstr "E738: %s の値を一覧表示できません"
-
-msgid "E996: Cannot lock an environment variable"
-msgstr "E996: 環境変数はロックできません"
-
-msgid "E996: Cannot lock an option"
-msgstr "E996: オプションはロックできません"
-
-msgid "E996: Cannot lock a register"
-msgstr "E996: レジスタはロックできません"
 
 msgid "E689: Can only index a List, Dictionary or Blob"
 msgstr "E689: リスト型、辞書型、Blob型以外はインデックス指定できません"
@@ -657,17 +601,6 @@ msgstr "E996: リストあるいは辞書はロックできません"
 
 msgid "E690: Missing \"in\" after :for"
 msgstr "E690: :for の後に \"in\" がありません"
-
-#, c-format
-msgid "E108: No such variable: \"%s\""
-msgstr "E108: その変数はありません: \"%s\""
-
-#, c-format
-msgid "E940: Cannot lock or unlock variable %s"
-msgstr "E940: 変数 %s はロックまたはアンロックできません"
-
-msgid "E743: variable nested too deep for (un)lock"
-msgstr "E743: (アン)ロックするには変数の入れ子が深過ぎます"
 
 msgid "E109: Missing ':' after '?'"
 msgstr "E109: '?' の後に ':' がありません"
@@ -773,33 +706,6 @@ msgstr "E976: Blob型を文字列として扱っています"
 msgid "E908: using an invalid value as a String"
 msgstr "E908: 無効な値を文字列として扱っています"
 
-#, c-format
-msgid "E963: setting %s to value with wrong type"
-msgstr "E963: %s を間違った型の値で設定しています"
-
-#, c-format
-msgid "E795: Cannot delete variable %s"
-msgstr "E795: 変数 %s を削除できません"
-
-#, c-format
-msgid "E704: Funcref variable name must start with a capital: %s"
-msgstr "E704: 関数参照型変数名は大文字で始まらなければなりません: %s"
-
-#, c-format
-msgid "E705: Variable name conflicts with existing function: %s"
-msgstr "E705: 変数名が既存の関数名と衝突します: %s"
-
-#, c-format
-msgid "E741: Value is locked: %s"
-msgstr "E741: 値がロックされています: %s"
-
-msgid "Unknown"
-msgstr "不明"
-
-#, c-format
-msgid "E742: Cannot change value of %s"
-msgstr "E742: %s の値を変更できません"
-
 msgid "E698: variable nested too deep for making a copy"
 msgstr "E698: コピーを取るには変数の入れ子が深過ぎます"
 
@@ -841,9 +747,6 @@ msgstr "filter() の引数"
 msgid "E899: Argument of %s must be a List or Blob"
 msgstr "E899: %s の引数はリスト型またはBlob型でなければなりません"
 
-msgid "E928: String required"
-msgstr "E928: 文字列が必要です"
-
 msgid "E808: Number or Float required"
 msgstr "E808: 数値か浮動小数点数が必要です"
 
@@ -859,11 +762,6 @@ msgstr "&Ok"
 
 msgid "E980: lowlevel input not supported"
 msgstr "E980: 低レベル入力はサポートされていません"
-
-#, c-format
-msgid "+-%s%3ld line: "
-msgid_plural "+-%s%3ld lines: "
-msgstr[0] "+-%s%3ld 行: "
 
 #, c-format
 msgid "E700: Unknown function: %s"
@@ -933,10 +831,6 @@ msgid "E258: Unable to send to client"
 msgstr "E258: クライアントへ送ることができません"
 
 #, c-format
-msgid "E927: Invalid action: '%s'"
-msgstr "E927: 無効な操作です: '%s'"
-
-#, c-format
 msgid "E962: Invalid action: '%s'"
 msgstr "E962: 無効な操作です: '%s'"
 
@@ -952,6 +846,85 @@ msgstr "E677: 一時ファイル書込中にエラーが発生しました"
 
 msgid "E921: Invalid callback argument"
 msgstr "E921: 無効なコールバック引数です"
+
+msgid "E18: Unexpected characters in :let"
+msgstr "E18: 予期せぬ文字が :let にありました"
+
+msgid "E991: cannot use =<< here"
+msgstr "E991: ここでは =<< は使えません"
+
+msgid "E221: Marker cannot start with lower case letter"
+msgstr "E221: マーカーは英小文字で始まってはいけません"
+
+msgid "E172: Missing marker"
+msgstr "E172: マーカーがありません"
+
+#, c-format
+msgid "E990: Missing end marker '%s'"
+msgstr "E990: 終端マーカーがありません '%s'"
+
+msgid "E985: .= is not supported with script version 2"
+msgstr "E985: .= はスクリプトバージョン 2 では対応していません"
+
+msgid "E687: Less targets than List items"
+msgstr "E687: ターゲットがリスト型内の要素よりも少ないです"
+
+msgid "E688: More targets than List items"
+msgstr "E688: ターゲットがリスト型内の要素よりも多いです"
+
+msgid "Double ; in list of variables"
+msgstr "リスト型の値に2つ以上の ; が検出されました"
+
+#, c-format
+msgid "E738: Can't list variables for %s"
+msgstr "E738: %s の値を一覧表示できません"
+
+msgid "E996: Cannot lock an environment variable"
+msgstr "E996: 環境変数はロックできません"
+
+msgid "E996: Cannot lock an option"
+msgstr "E996: オプションはロックできません"
+
+msgid "E996: Cannot lock a register"
+msgstr "E996: レジスタはロックできません"
+
+#, c-format
+msgid "E108: No such variable: \"%s\""
+msgstr "E108: その変数はありません: \"%s\""
+
+#, c-format
+msgid "E940: Cannot lock or unlock variable %s"
+msgstr "E940: 変数 %s はロックまたはアンロックできません"
+
+msgid "E743: variable nested too deep for (un)lock"
+msgstr "E743: (アン)ロックするには変数の入れ子が深過ぎます"
+
+#, c-format
+msgid "E963: setting %s to value with wrong type"
+msgstr "E963: %s を間違った型の値で設定しています"
+
+#, c-format
+msgid "E795: Cannot delete variable %s"
+msgstr "E795: 変数 %s を削除できません"
+
+#, c-format
+msgid "E704: Funcref variable name must start with a capital: %s"
+msgstr "E704: 関数参照型変数名は大文字で始まらなければなりません: %s"
+
+#, c-format
+msgid "E705: Variable name conflicts with existing function: %s"
+msgstr "E705: 変数名が既存の関数名と衝突します: %s"
+
+#, c-format
+msgid "E741: Value is locked: %s"
+msgstr "E741: 値がロックされています: %s"
+
+msgid "Unknown"
+msgstr "不明"
+
+#, c-format
+msgid "E742: Cannot change value of %s"
+msgstr "E742: %s の値を変更できません"
 
 #, c-format
 msgid "<%s>%s%s  %d,  Hex %02x,  Oct %03o, Digr %s"
@@ -1165,86 +1138,12 @@ msgid "E666: compiler not supported: %s"
 msgstr "E666: そのコンパイラには対応していません: %s"
 
 #, c-format
-msgid "Searching for \"%s\" in \"%s\""
-msgstr "\"%s\" を \"%s\" から検索中"
-
-#, c-format
-msgid "Searching for \"%s\""
-msgstr "\"%s\" を検索中"
-
-#, c-format
-msgid "not found in '%s': \"%s\""
-msgstr "'%s' の中にはありません: \"%s\""
-
-#, c-format
 msgid "W20: Required python version 2.x not supported, ignoring file: %s"
 msgstr "W20: 要求されたpython 2.xは対応していません、ファイルを無視します: %s"
 
 #, c-format
 msgid "W21: Required python version 3.x not supported, ignoring file: %s"
 msgstr "W21: 要求されたpython 3.xは対応していません、ファイルを無視します: %s"
-
-msgid "Source Vim script"
-msgstr "Vimスクリプトの取込み"
-
-#, c-format
-msgid "Cannot source a directory: \"%s\""
-msgstr "ディレクトリは取込めません: \"%s\""
-
-#, c-format
-msgid "could not source \"%s\""
-msgstr "\"%s\" を取込めません"
-
-#, c-format
-msgid "line %ld: could not source \"%s\""
-msgstr "行 %ld: \"%s\" を取込めません"
-
-#, c-format
-msgid "sourcing \"%s\""
-msgstr "\"%s\" を取込中"
-
-#, c-format
-msgid "line %ld: sourcing \"%s\""
-msgstr "行 %ld: %s を取込中"
-
-#, c-format
-msgid "finished sourcing %s"
-msgstr "%s の取込を完了"
-
-#, c-format
-msgid "continuing in %s"
-msgstr "%s の実行を継続中です"
-
-msgid "modeline"
-msgstr "モード行"
-
-msgid "--cmd argument"
-msgstr "--cmd 引数"
-
-msgid "-c argument"
-msgstr "-c 引数"
-
-msgid "environment variable"
-msgstr "環境変数"
-
-msgid "error handler"
-msgstr "エラーハンドラ"
-
-msgid "W15: Warning: Wrong line separator, ^M may be missing"
-msgstr "W15: 警告: 行区切が不正です. ^M がないのでしょう"
-
-msgid "E167: :scriptencoding used outside of a sourced file"
-msgstr "E167: :scriptencoding が取込スクリプト以外で使用されました"
-
-msgid "E984: :scriptversion used outside of a sourced file"
-msgstr "E984: :scriptversion が取込スクリプト以外で使用されました"
-
-#, c-format
-msgid "E999: scriptversion not supported: %d"
-msgstr "E999: scriptversion はサポートされていません: %d"
-
-msgid "E168: :finish used outside of a sourced file"
-msgstr "E168: :finish が取込スクリプト以外で使用されました"
 
 #, c-format
 msgid "Current %slanguage: \"%s\""
@@ -1903,6 +1802,11 @@ msgstr "E351: 現在の 'foldmethod' では折畳みを削除できません"
 msgid "+--%3ld line folded "
 msgid_plural "+--%3ld lines folded "
 msgstr[0] "+--%3ld 行が折畳まれました"
+
+#, c-format
+msgid "+-%s%3ld line: "
+msgid_plural "+-%s%3ld lines: "
+msgstr[0] "+-%s%3ld 行: "
 
 msgid "E222: Add to read buffer"
 msgstr "E222: 読込バッファへ追加"
@@ -3314,6 +3218,14 @@ msgstr "マッピングは見つかりませんでした"
 msgid "E228: makemap: Illegal mode"
 msgstr "E228: makemap: 不正なモード"
 
+#, c-format
+msgid "E357: 'langmap': Matching character missing for %s"
+msgstr "E357: 'langmap': %s に対応する文字がありません"
+
+#, c-format
+msgid "E358: 'langmap': Extra characters after semicolon: %s"
+msgstr "E358: 'langmap': セミコロンの後に余分な文字があります: %s"
+
 msgid "No marks set"
 msgstr "マークが設定されていません"
 
@@ -4341,14 +4253,6 @@ msgstr ""
 msgid "E356: get_varp ERROR"
 msgstr "E356: get_varp エラー"
 
-#, c-format
-msgid "E357: 'langmap': Matching character missing for %s"
-msgstr "E357: 'langmap': %s に対応する文字がありません"
-
-#, c-format
-msgid "E358: 'langmap': Extra characters after semicolon: %s"
-msgstr "E358: 'langmap': セミコロンの後に余分な文字があります: %s"
-
 msgid "cannot open "
 msgstr "開けません "
 
@@ -4665,6 +4569,10 @@ msgid "E777: String or List expected"
 msgstr "E777: 文字列かリストが必要です"
 
 #, c-format
+msgid "E927: Invalid action: '%s'"
+msgstr "E927: 無効な操作です: '%s'"
+
+#, c-format
 msgid "E369: invalid item in %s%%[]"
 msgstr "E369: 無効な項目です: %s%%[]"
 
@@ -4893,6 +4801,80 @@ msgstr " 矩形選択"
 
 msgid "recording"
 msgstr "記録中"
+
+#, c-format
+msgid "Searching for \"%s\" in \"%s\""
+msgstr "\"%s\" を \"%s\" から検索中"
+
+#, c-format
+msgid "Searching for \"%s\""
+msgstr "\"%s\" を検索中"
+
+#, c-format
+msgid "not found in '%s': \"%s\""
+msgstr "'%s' の中にはありません: \"%s\""
+
+msgid "Source Vim script"
+msgstr "Vimスクリプトの取込み"
+
+#, c-format
+msgid "Cannot source a directory: \"%s\""
+msgstr "ディレクトリは取込めません: \"%s\""
+
+#, c-format
+msgid "could not source \"%s\""
+msgstr "\"%s\" を取込めません"
+
+#, c-format
+msgid "line %ld: could not source \"%s\""
+msgstr "行 %ld: \"%s\" を取込めません"
+
+#, c-format
+msgid "sourcing \"%s\""
+msgstr "\"%s\" を取込中"
+
+#, c-format
+msgid "line %ld: sourcing \"%s\""
+msgstr "行 %ld: %s を取込中"
+
+#, c-format
+msgid "finished sourcing %s"
+msgstr "%s の取込を完了"
+
+#, c-format
+msgid "continuing in %s"
+msgstr "%s の実行を継続中です"
+
+msgid "modeline"
+msgstr "モード行"
+
+msgid "--cmd argument"
+msgstr "--cmd 引数"
+
+msgid "-c argument"
+msgstr "-c 引数"
+
+msgid "environment variable"
+msgstr "環境変数"
+
+msgid "error handler"
+msgstr "エラーハンドラ"
+
+msgid "W15: Warning: Wrong line separator, ^M may be missing"
+msgstr "W15: 警告: 行区切が不正です. ^M がないのでしょう"
+
+msgid "E167: :scriptencoding used outside of a sourced file"
+msgstr "E167: :scriptencoding が取込スクリプト以外で使用されました"
+
+msgid "E984: :scriptversion used outside of a sourced file"
+msgstr "E984: :scriptversion が取込スクリプト以外で使用されました"
+
+#, c-format
+msgid "E999: scriptversion not supported: %d"
+msgstr "E999: scriptversion はサポートされていません: %d"
+
+msgid "E168: :finish used outside of a sourced file"
+msgstr "E168: :finish が取込スクリプト以外で使用されました"
 
 #, c-format
 msgid "E383: Invalid search string: %s"
@@ -6862,12 +6844,30 @@ msgid "E45: 'readonly' option is set (add ! to override)"
 msgstr "E45: 'readonly' オプションが設定されています (! を追加で上書き)"
 
 #, c-format
+msgid "E121: Undefined variable: %s"
+msgstr "E121: 未定義の変数です: %s"
+
+#, c-format
+msgid "E734: Wrong variable type for %s="
+msgstr "E734: 異なった型の変数です %s="
+
+#, c-format
+msgid "E461: Illegal variable name: %s"
+msgstr "E461: 不正な変数名です: %s"
+
+msgid "E995: Cannot modify existing variable"
+msgstr "E995: 既存の変数を変更できません"
+
+#, c-format
 msgid "E46: Cannot change read-only variable \"%s\""
 msgstr "E46: 読取専用変数 \"%s\" には値を設定できません"
 
 #, c-format
 msgid "E794: Cannot set variable in the sandbox: \"%s\""
 msgstr "E794: サンドボックスでは変数 \"%s\" に値を設定できません"
+
+msgid "E928: String required"
+msgstr "E928: 文字列が必要です"
 
 msgid "E713: Cannot use empty key for Dictionary"
 msgstr "E713: 辞書型に空のキーを使うことはできません"
