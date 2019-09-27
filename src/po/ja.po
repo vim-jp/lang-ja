@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-03 20:58+0900\n"
+"POT-Creation-Date: 2019-09-26 19:56+0900\n"
 "PO-Revision-Date: 2019-05-05 13:00+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -737,21 +737,8 @@ msgstr "E736: 辞書型には無効な操作です"
 msgid "E694: Invalid operation for Funcrefs"
 msgstr "E694: 関数参照型には無効な操作です"
 
-msgid "map() argument"
-msgstr "map() の引数"
-
-msgid "filter() argument"
-msgstr "filter() の引数"
-
-#, c-format
-msgid "E899: Argument of %s must be a List or Blob"
-msgstr "E899: %s の引数はリスト型またはBlob型でなければなりません"
-
 msgid "E808: Number or Float required"
 msgstr "E808: 数値か浮動小数点数が必要です"
-
-msgid "add() argument"
-msgstr "add() の引数"
 
 #, c-format
 msgid "E158: Invalid buffer name: %s"
@@ -783,9 +770,6 @@ msgstr ""
 msgid "called inputrestore() more often than inputsave()"
 msgstr "inputrestore() が inputsave() よりも多く呼ばれました"
 
-msgid "insert() argument"
-msgstr "insert() の引数"
-
 msgid "E786: Range not allowed"
 msgstr "E786: 範囲指定は許可されていません"
 
@@ -797,9 +781,6 @@ msgstr "E726: ストライド(前進量)が 0 です"
 
 msgid "E727: Start past end"
 msgstr "E727: 開始位置が終了位置を越えました"
-
-msgid "<empty>"
-msgstr "<空>"
 
 msgid "E240: No connection to the X server"
 msgstr "E240: X サーバーへの接続がありません"
@@ -817,16 +798,6 @@ msgstr "E941: サーバーはすでに開始しています"
 msgid "E942: +clientserver feature not available"
 msgstr "E942: +clientserver 機能が無効になっています"
 
-msgid "remove() argument"
-msgstr "remove() の引数"
-
-# Added at 10-Mar-2004.
-msgid "E655: Too many symbolic links (cycle?)"
-msgstr "E655: シンボリックリンクが多過ぎます (循環している可能性があります)"
-
-msgid "reverse() argument"
-msgstr "reverse() の引数"
-
 msgid "E258: Unable to send to client"
 msgstr "E258: クライアントへ送ることができません"
 
@@ -840,12 +811,6 @@ msgstr "(無効)"
 #, c-format
 msgid "E935: invalid submatch number: %d"
 msgstr "E935: 無効なサブマッチ番号です: %d"
-
-msgid "E677: Error writing temp file"
-msgstr "E677: 一時ファイル書込中にエラーが発生しました"
-
-msgid "E921: Invalid callback argument"
-msgstr "E921: 無効なコールバック引数です"
 
 msgid "E18: Unexpected characters in :let"
 msgstr "E18: 予期せぬ文字が :let にありました"
@@ -925,6 +890,9 @@ msgstr "不明"
 #, c-format
 msgid "E742: Cannot change value of %s"
 msgstr "E742: %s の値を変更できません"
+
+msgid "E921: Invalid callback argument"
+msgstr "E921: 無効なコールバック引数です"
 
 #, c-format
 msgid "<%s>%s%s  %d,  Hex %02x,  Oct %03o, Digr %s"
@@ -1754,6 +1722,25 @@ msgstr "E219: { がありません."
 
 msgid "E220: Missing }."
 msgstr "E220: } がありません."
+
+msgid "<empty>"
+msgstr "<空>"
+
+# Added at 10-Mar-2004.
+msgid "E655: Too many symbolic links (cycle?)"
+msgstr "E655: シンボリックリンクが多過ぎます (循環している可能性があります)"
+
+msgid "Select Directory dialog"
+msgstr "ディレクトリ選択ダイアログ"
+
+msgid "Save File dialog"
+msgstr "ファイル保存ダイアログ"
+
+msgid "Open File dialog"
+msgstr "ファイル読込ダイアログ"
+
+msgid "E338: Sorry, no file browser in console mode"
+msgstr "E338: コンソールモードではファイルブラウザを使えません、ごめんなさい"
 
 msgid "E854: path too long for completion"
 msgstr "E854: パスが長過ぎて補完できません"
@@ -2755,6 +2742,10 @@ msgid "E938: Duplicate key in JSON: \"%s\""
 msgstr "E938: JSONに重複キーがあります: \"%s\""
 
 #, c-format
+msgid "E899: Argument of %s must be a List or Blob"
+msgstr "E899: %s の引数はリスト型またはBlob型でなければなりません"
+
+#, c-format
 msgid "E696: Missing comma in List: %s"
 msgstr "E696: リスト型にカンマがありません: %s"
 
@@ -2773,6 +2764,24 @@ msgstr "E702: ソートの比較関数が失敗しました"
 
 msgid "E882: Uniq compare function failed"
 msgstr "E882: Uniq の比較関数が失敗しました"
+
+msgid "map() argument"
+msgstr "map() の引数"
+
+msgid "filter() argument"
+msgstr "filter() の引数"
+
+msgid "add() argument"
+msgstr "add() の引数"
+
+msgid "insert() argument"
+msgstr "insert() の引数"
+
+msgid "remove() argument"
+msgstr "remove() の引数"
+
+msgid "reverse() argument"
+msgstr "reverse() の引数"
 
 msgid "Unknown option argument"
 msgstr "未知のオプション引数です"
@@ -3841,18 +3850,6 @@ msgstr ""
 "全て放棄(&D)\n"
 "キャンセル(&C)"
 
-msgid "Select Directory dialog"
-msgstr "ディレクトリ選択ダイアログ"
-
-msgid "Save File dialog"
-msgstr "ファイル保存ダイアログ"
-
-msgid "Open File dialog"
-msgstr "ファイル読込ダイアログ"
-
-msgid "E338: Sorry, no file browser in console mode"
-msgstr "E338: コンソールモードではファイルブラウザを使えません、ごめんなさい"
-
 msgid "E766: Insufficient arguments for printf()"
 msgstr "E766: printf() の引数が不十分です"
 
@@ -3884,6 +3881,9 @@ msgstr " (割込まれました)"
 
 msgid "Beep!"
 msgstr "ビーッ!"
+
+msgid "E677: Error writing temp file"
+msgstr "E677: 一時ファイル書込中にエラーが発生しました"
 
 msgid "ERROR: "
 msgstr "エラー: "
@@ -4003,9 +4003,6 @@ msgid "%ld line indented "
 msgid_plural "%ld lines indented "
 msgstr[0] "%ld 行をインデントしました "
 
-msgid "E748: No previously used register"
-msgstr "E748: まだレジスタを使用していません"
-
 msgid "cannot yank; delete anyway"
 msgstr "ヤンクできません; とにかく消去"
 
@@ -4013,40 +4010,6 @@ msgstr "ヤンクできません; とにかく消去"
 msgid "%ld line changed"
 msgid_plural "%ld lines changed"
 msgstr[0] "%ld 行が変更されました"
-
-#, c-format
-msgid "freeing %ld lines"
-msgstr "%ld 行を解放中"
-
-#, c-format
-msgid " into \"%c"
-msgstr " \"%c に"
-
-#, c-format
-msgid "block of %ld line yanked%s"
-msgid_plural "block of %ld lines yanked%s"
-msgstr[0] "%ld 行のブロックが%sヤンクされました"
-
-#, c-format
-msgid "%ld line yanked%s"
-msgid_plural "%ld lines yanked%s"
-msgstr[0] "%ld 行が%sヤンクされました"
-
-#, c-format
-msgid "E353: Nothing in register %s"
-msgstr "E353: レジスタ %s には何もありません"
-
-msgid ""
-"\n"
-"--- Registers ---"
-msgstr ""
-"\n"
-"--- レジスタ ---"
-
-msgid ""
-"E883: search pattern and expression register may not contain two or more "
-"lines"
-msgstr "E883: 検索パターンと式レジスタには2行以上を含められません"
 
 #, c-format
 msgid "%ld Cols; "
@@ -4079,9 +4042,6 @@ msgstr ""
 msgid "(+%lld for BOM)"
 msgstr "(+%lld for BOM)"
 
-msgid "Thanks for flying Vim"
-msgstr "Vim を使ってくれてありがとう"
-
 msgid "E518: Unknown option"
 msgstr "E518: 未知のオプションです"
 
@@ -4103,6 +4063,66 @@ msgstr "E521: = の後には数字が必要です"
 msgid "E522: Not found in termcap"
 msgstr "E522: termcap 内に見つかりません"
 
+msgid "E946: Cannot make a terminal with running job modifiable"
+msgstr "E946: 実行中のジョブがある端末は変更可能にできません"
+
+msgid "E590: A preview window already exists"
+msgstr "E590: プレビューウィンドウが既に存在します"
+
+msgid "W17: Arabic requires UTF-8, do ':set encoding=utf-8'"
+msgstr ""
+"W17: アラビア文字にはUTF-8が必要なので、':set encoding=utf-8' してください"
+
+msgid "E954: 24-bit colors are not supported on this environment"
+msgstr "E954: 24bit色はこの環境ではサポートされていません"
+
+#, c-format
+msgid "E593: Need at least %d lines"
+msgstr "E593: 最低 %d の行数が必要です"
+
+#, c-format
+msgid "E594: Need at least %d columns"
+msgstr "E594: 最低 %d のカラム幅が必要です"
+
+#, c-format
+msgid "E355: Unknown option: %s"
+msgstr "E355: 未知のオプションです: %s"
+
+#, c-format
+msgid "E521: Number required: &%s = '%s'"
+msgstr "E521: 数字が必要です: &%s = '%s'"
+
+msgid ""
+"\n"
+"--- Terminal codes ---"
+msgstr ""
+"\n"
+"--- 端末コード ---"
+
+msgid ""
+"\n"
+"--- Global option values ---"
+msgstr ""
+"\n"
+"--- グローバルオプション値 ---"
+
+msgid ""
+"\n"
+"--- Local option values ---"
+msgstr ""
+"\n"
+"--- ローカルオプション値 ---"
+
+msgid ""
+"\n"
+"--- Options ---"
+msgstr ""
+"\n"
+"--- オプション ---"
+
+msgid "E356: get_varp ERROR"
+msgstr "E356: get_varp エラー"
+
 #, c-format
 msgid "E539: Illegal character <%s>"
 msgstr "E539: 不正な文字です <%s>"
@@ -4110,6 +4130,15 @@ msgstr "E539: 不正な文字です <%s>"
 #, c-format
 msgid "For option %s"
 msgstr "オプション: %s"
+
+msgid "E540: Unclosed expression sequence"
+msgstr "E540: 式が終了していません"
+
+msgid "E541: too many items"
+msgstr "E541: 要素が多過ぎます"
+
+msgid "E542: unbalanced groups"
+msgstr "E542: グループが釣合いません"
 
 msgid "E529: Cannot set 'term' to empty string"
 msgstr "E529: 'term' には空文字列を設定できません"
@@ -4183,75 +4212,6 @@ msgstr "E537: 'commentstring' は空であるか %s を含む必要がありま�
 
 msgid "E538: No mouse support"
 msgstr "E538: マウスはサポートされません"
-
-msgid "E540: Unclosed expression sequence"
-msgstr "E540: 式が終了していません"
-
-msgid "E541: too many items"
-msgstr "E541: 要素が多過ぎます"
-
-msgid "E542: unbalanced groups"
-msgstr "E542: グループが釣合いません"
-
-msgid "E946: Cannot make a terminal with running job modifiable"
-msgstr "E946: 実行中のジョブがある端末は変更可能にできません"
-
-msgid "E590: A preview window already exists"
-msgstr "E590: プレビューウィンドウが既に存在します"
-
-msgid "W17: Arabic requires UTF-8, do ':set encoding=utf-8'"
-msgstr ""
-"W17: アラビア文字にはUTF-8が必要なので、':set encoding=utf-8' してください"
-
-msgid "E954: 24-bit colors are not supported on this environment"
-msgstr "E954: 24bit色はこの環境ではサポートされていません"
-
-#, c-format
-msgid "E593: Need at least %d lines"
-msgstr "E593: 最低 %d の行数が必要です"
-
-#, c-format
-msgid "E594: Need at least %d columns"
-msgstr "E594: 最低 %d のカラム幅が必要です"
-
-#, c-format
-msgid "E355: Unknown option: %s"
-msgstr "E355: 未知のオプションです: %s"
-
-#, c-format
-msgid "E521: Number required: &%s = '%s'"
-msgstr "E521: 数字が必要です: &%s = '%s'"
-
-msgid ""
-"\n"
-"--- Terminal codes ---"
-msgstr ""
-"\n"
-"--- 端末コード ---"
-
-msgid ""
-"\n"
-"--- Global option values ---"
-msgstr ""
-"\n"
-"--- グローバルオプション値 ---"
-
-msgid ""
-"\n"
-"--- Local option values ---"
-msgstr ""
-"\n"
-"--- ローカルオプション値 ---"
-
-msgid ""
-"\n"
-"--- Options ---"
-msgstr ""
-"\n"
-"--- オプション ---"
-
-msgid "E356: get_varp ERROR"
-msgstr "E356: get_varp エラー"
 
 msgid "cannot open "
 msgstr "開けません "
@@ -4477,6 +4437,9 @@ msgstr "Vimの警告"
 msgid "shell returned %d"
 msgstr "シェルがコード %d で終了しました"
 
+msgid "E278: Cannot put a terminal buffer in a popup window"
+msgstr "E278: 端末バッファをポップアップウィンドウ内に置くことはできません"
+
 #, c-format
 msgid "E997: Tabpage not found: %d"
 msgstr "E997: タブページが見つかりません: %d"
@@ -4615,37 +4578,26 @@ msgstr "E70: %s%%[] が空です"
 msgid "E956: Cannot use pattern recursively"
 msgstr "E956: パターンを再帰的に使うことはできません"
 
+#, c-format
+msgid "E554: Syntax error in %s{...}"
+msgstr "E554: %s{...} 内に文法エラーがあります"
+
+#, c-format
+msgid "E888: (NFA regexp) cannot repeat %s"
+msgstr "E888: (NFA 正規表現) 繰り返せません %s"
+
+msgid ""
+"E864: \\%#= can only be followed by 0, 1, or 2. The automatic engine will be "
+"used "
+msgstr ""
+"E864: \\%#= には 0, 1 もしくは 2 のみが続けられます。正規表現エンジンは自動選"
+"択されます。"
+
+msgid "Switching to backtracking RE engine for pattern: "
+msgstr "次のパターンにバックトラッキング RE エンジンを適用します: "
+
 msgid "E65: Illegal back reference"
 msgstr "E65: 不正な後方参照です"
-
-msgid "E339: Pattern too long"
-msgstr "E339: パターンが長過ぎます"
-
-msgid "E50: Too many \\z("
-msgstr "E50: \\z( が多過ぎます"
-
-#, c-format
-msgid "E51: Too many %s("
-msgstr "E51: %s( が多過ぎます"
-
-msgid "E52: Unmatched \\z("
-msgstr "E52: \\z( が釣り合っていません"
-
-#, c-format
-msgid "E59: invalid character after %s@"
-msgstr "E59: %s@ の後に不正な文字がありました"
-
-#, c-format
-msgid "E60: Too many complex %s{...}s"
-msgstr "E60: 複雑な %s{...} が多過ぎます"
-
-#, c-format
-msgid "E61: Nested %s*"
-msgstr "E61:%s* が入れ子になっています"
-
-#, c-format
-msgid "E62: Nested %s%c"
-msgstr "E62:%s%c が入れ子になっています"
 
 msgid "E63: invalid use of \\_"
 msgstr "E63: \\_ の無効な使用方法です"
@@ -4666,25 +4618,36 @@ msgid "E71: Invalid character after %s%%"
 msgstr "E71: %s%% の後に不正な文字がありました"
 
 #, c-format
-msgid "E554: Syntax error in %s{...}"
-msgstr "E554: %s{...} 内に文法エラーがあります"
+msgid "E59: invalid character after %s@"
+msgstr "E59: %s@ の後に不正な文字がありました"
+
+#, c-format
+msgid "E60: Too many complex %s{...}s"
+msgstr "E60: 複雑な %s{...} が多過ぎます"
+
+#, c-format
+msgid "E61: Nested %s*"
+msgstr "E61:%s* が入れ子になっています"
+
+#, c-format
+msgid "E62: Nested %s%c"
+msgstr "E62:%s%c が入れ子になっています"
+
+msgid "E50: Too many \\z("
+msgstr "E50: \\z( が多過ぎます"
+
+#, c-format
+msgid "E51: Too many %s("
+msgstr "E51: %s( が多過ぎます"
+
+msgid "E52: Unmatched \\z("
+msgstr "E52: \\z( が釣り合っていません"
+
+msgid "E339: Pattern too long"
+msgstr "E339: パターンが長過ぎます"
 
 msgid "External submatches:\n"
 msgstr "外部の部分該当:\n"
-
-#, c-format
-msgid "E888: (NFA regexp) cannot repeat %s"
-msgstr "E888: (NFA 正規表現) 繰り返せません %s"
-
-msgid ""
-"E864: \\%#= can only be followed by 0, 1, or 2. The automatic engine will be "
-"used "
-msgstr ""
-"E864: \\%#= には 0, 1 もしくは 2 のみが続けられます。正規表現エンジンは自動選"
-"択されます。"
-
-msgid "Switching to backtracking RE engine for pattern: "
-msgstr "次のパターンにバックトラッキング RE エンジンを適用します: "
 
 msgid "E865: (NFA) Regexp end encountered prematurely"
 msgstr "E865: (NFA) 期待より早く正規表現の終端に到達しました"
@@ -4750,6 +4713,43 @@ msgstr "E876: (NFA 正規表現) NFA全体を保存するには空きスペー�
 
 msgid "E878: (NFA) Could not allocate memory for branch traversal!"
 msgstr "E878: (NFA) 現在横断中のブランチに十分なメモリを割り当てられません!"
+
+msgid "E748: No previously used register"
+msgstr "E748: まだレジスタを使用していません"
+
+#, c-format
+msgid "freeing %ld lines"
+msgstr "%ld 行を解放中"
+
+#, c-format
+msgid " into \"%c"
+msgstr " \"%c に"
+
+#, c-format
+msgid "block of %ld line yanked%s"
+msgid_plural "block of %ld lines yanked%s"
+msgstr[0] "%ld 行のブロックが%sヤンクされました"
+
+#, c-format
+msgid "%ld line yanked%s"
+msgid_plural "%ld lines yanked%s"
+msgstr[0] "%ld 行が%sヤンクされました"
+
+#, c-format
+msgid "E353: Nothing in register %s"
+msgstr "E353: レジスタ %s には何もありません"
+
+msgid ""
+"\n"
+"--- Registers ---"
+msgstr ""
+"\n"
+"--- レジスタ ---"
+
+msgid ""
+"E883: search pattern and expression register may not contain two or more "
+"lines"
+msgstr "E883: 検索パターンと式レジスタには2行以上を含められません"
 
 msgid " VREPLACE"
 msgstr " 仮想置換"
