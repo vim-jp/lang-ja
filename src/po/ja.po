@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-26 19:56+0900\n"
+"POT-Creation-Date: 2019-10-28 20:36+0900\n"
 "PO-Revision-Date: 2019-05-05 13:00+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -270,6 +270,142 @@ msgstr "[ポップアップ]"
 
 msgid "[Scratch]"
 msgstr "[下書き]"
+
+msgid "WARNING: The file has been changed since reading it!!!"
+msgstr "警告: 読込んだ後にファイルに変更がありました!!!"
+
+msgid "Do you really want to write to it"
+msgstr "本当に上書きしますか"
+
+msgid "E676: No matching autocommands for acwrite buffer"
+msgstr "E676: acwriteバッファの該当するautocommandは存在しません"
+
+msgid "E203: Autocommands deleted or unloaded buffer to be written"
+msgstr "E203: 保存するバッファをautocommandが削除か解放しました"
+
+msgid "E204: Autocommand changed number of lines in unexpected way"
+msgstr "E204: autocommandが予期せぬ方法で行数を変更しました"
+
+# Added at 19-Jan-2004.
+msgid "NetBeans disallows writes of unmodified buffers"
+msgstr "NetBeansは未変更のバッファを上書することは許可していません"
+
+msgid "Partial writes disallowed for NetBeans buffers"
+msgstr "NetBeansバッファの一部を書き出すことはできません"
+
+msgid "is a directory"
+msgstr "はディレクトリです"
+
+msgid "is not a file or writable device"
+msgstr "はファイルでも書込み可能デバイスでもありません"
+
+msgid "writing to device disabled with 'opendevice' option"
+msgstr "'opendevice' オプションによりデバイスへの書き込みはできません"
+
+msgid "is read-only (add ! to override)"
+msgstr "は読込専用です (強制書込には ! を追加)"
+
+msgid "E506: Can't write to backup file (add ! to override)"
+msgstr "E506: バックアップファイルを保存できません (! を追加で強制書込)"
+
+msgid "E507: Close error for backup file (add ! to override)"
+msgstr ""
+"E507: バックアップファイルを閉じる際にエラーが発生しました (! を追加で強制書"
+"込)"
+
+msgid "E508: Can't read file for backup (add ! to override)"
+msgstr "E508: バックアップ用ファイルを読込めません (! を追加で強制書込)"
+
+msgid "E509: Cannot create backup file (add ! to override)"
+msgstr "E509: バックアップファイルを作れません (! を追加で強制書込)"
+
+msgid "E510: Can't make backup file (add ! to override)"
+msgstr "E510: バックアップファイルを作れません (! を追加で強制書込)"
+
+msgid "E214: Can't find temp file for writing"
+msgstr "E214: 保存用一時ファイルが見つかりません"
+
+msgid "E213: Cannot convert (add ! to write without conversion)"
+msgstr "E213: 変換できません (! を追加で変換せずに保存)"
+
+msgid "E166: Can't open linked file for writing"
+msgstr "E166: リンクされたファイルに書込めません"
+
+msgid "E212: Can't open file for writing"
+msgstr "E212: 書込み用にファイルを開けません"
+
+msgid "E949: File changed while writing"
+msgstr "E949: 書込み中にファイルが変更されました"
+
+msgid "E512: Close failed"
+msgstr "E512: 閉じることに失敗"
+
+msgid "E513: write error, conversion failed (make 'fenc' empty to override)"
+msgstr "E513: 書込みエラー、変換失敗 (上書するには 'fenc' を空にしてください)"
+
+#, c-format
+msgid ""
+"E513: write error, conversion failed in line %ld (make 'fenc' empty to "
+"override)"
+msgstr ""
+"E513: 書込みエラー、変換失敗、行数 %ld (上書するには 'fenc' を空にしてくださ"
+"い)"
+
+msgid "E514: write error (file system full?)"
+msgstr "E514: 書込みエラー (ファイルシステムが満杯?)"
+
+msgid " CONVERSION ERROR"
+msgstr " 変換エラー"
+
+#, c-format
+msgid " in line %ld;"
+msgstr " 行 %ld;"
+
+msgid "[NOT converted]"
+msgstr "[未変換]"
+
+msgid "[converted]"
+msgstr "[変換済]"
+
+msgid "[Device]"
+msgstr "[デバイス]"
+
+msgid "[New]"
+msgstr "[新]"
+
+msgid "[New File]"
+msgstr "[新ファイル]"
+
+msgid " [a]"
+msgstr " [a]"
+
+msgid " appended"
+msgstr " 追加"
+
+msgid " [w]"
+msgstr " [w]"
+
+msgid " written"
+msgstr " 書込み"
+
+msgid "E205: Patchmode: can't save original file"
+msgstr "E205: patchmode: 原本ファイルを保存できません"
+
+msgid "E206: patchmode: can't touch empty original file"
+msgstr "E206: patchmode: 空の原本ファイルをtouchできません"
+
+msgid "E207: Can't delete backup file"
+msgstr "E207: バックアップファイルを消せません"
+
+msgid ""
+"\n"
+"WARNING: Original file may be lost or damaged\n"
+msgstr ""
+"\n"
+"警告: 原本ファイルが失われたか変更されました\n"
+
+msgid "don't quit the editor until the file is successfully written!"
+msgstr "ファイルの保存に成功するまでエディタを終了しないでください!"
 
 msgid "W10: Warning: Changing a readonly file"
 msgstr "W10: 警告: 読込専用ファイルを変更します"
@@ -1128,6 +1264,10 @@ msgstr ""
 msgid "E501: At end-of-file"
 msgstr "E501: ファイルの終了位置"
 
+#, c-format
+msgid "Executing: %s"
+msgstr "実行中: %s"
+
 msgid "E169: Command too recursive"
 msgstr "E169: コマンドが再帰的過ぎます"
 
@@ -1418,17 +1558,11 @@ msgstr "E812: autocommandがバッファかバッファ名を変更しました"
 msgid "Illegal file name"
 msgstr "不正なファイル名"
 
-msgid "is a directory"
-msgstr "はディレクトリです"
-
 msgid "is not a file"
 msgstr "はファイルではありません"
 
 msgid "is a device (disabled with 'opendevice' option)"
 msgstr "はデバイスです ('opendevice' オプションで回避できます)"
-
-msgid "[New File]"
-msgstr "[新ファイル]"
 
 msgid "[New DIRECTORY]"
 msgstr "[新規ディレクトリ]"
@@ -1469,12 +1603,6 @@ msgstr "[CR無]"
 msgid "[long lines split]"
 msgstr "[長行分割]"
 
-msgid "[NOT converted]"
-msgstr "[未変換]"
-
-msgid "[converted]"
-msgstr "[変換済]"
-
 #, c-format
 msgid "[CONVERSION ERROR in line %ld]"
 msgstr "[%ld 行目で変換エラー]"
@@ -1494,124 +1622,6 @@ msgstr "'charconvert' による変換が失敗しました"
 
 msgid "can't read output of 'charconvert'"
 msgstr "'charconvert' の出力を読込めませんでした"
-
-msgid "E676: No matching autocommands for acwrite buffer"
-msgstr "E676: acwriteバッファの該当するautocommandは存在しません"
-
-msgid "E203: Autocommands deleted or unloaded buffer to be written"
-msgstr "E203: 保存するバッファをautocommandが削除か解放しました"
-
-msgid "E204: Autocommand changed number of lines in unexpected way"
-msgstr "E204: autocommandが予期せぬ方法で行数を変更しました"
-
-# Added at 19-Jan-2004.
-msgid "NetBeans disallows writes of unmodified buffers"
-msgstr "NetBeansは未変更のバッファを上書することは許可していません"
-
-msgid "Partial writes disallowed for NetBeans buffers"
-msgstr "NetBeansバッファの一部を書き出すことはできません"
-
-msgid "is not a file or writable device"
-msgstr "はファイルでも書込み可能デバイスでもありません"
-
-msgid "writing to device disabled with 'opendevice' option"
-msgstr "'opendevice' オプションによりデバイスへの書き込みはできません"
-
-msgid "is read-only (add ! to override)"
-msgstr "は読込専用です (強制書込には ! を追加)"
-
-msgid "E506: Can't write to backup file (add ! to override)"
-msgstr "E506: バックアップファイルを保存できません (! を追加で強制書込)"
-
-msgid "E507: Close error for backup file (add ! to override)"
-msgstr ""
-"E507: バックアップファイルを閉じる際にエラーが発生しました (! を追加で強制書"
-"込)"
-
-msgid "E508: Can't read file for backup (add ! to override)"
-msgstr "E508: バックアップ用ファイルを読込めません (! を追加で強制書込)"
-
-msgid "E509: Cannot create backup file (add ! to override)"
-msgstr "E509: バックアップファイルを作れません (! を追加で強制書込)"
-
-msgid "E510: Can't make backup file (add ! to override)"
-msgstr "E510: バックアップファイルを作れません (! を追加で強制書込)"
-
-msgid "E214: Can't find temp file for writing"
-msgstr "E214: 保存用一時ファイルが見つかりません"
-
-msgid "E213: Cannot convert (add ! to write without conversion)"
-msgstr "E213: 変換できません (! を追加で変換せずに保存)"
-
-msgid "E166: Can't open linked file for writing"
-msgstr "E166: リンクされたファイルに書込めません"
-
-msgid "E212: Can't open file for writing"
-msgstr "E212: 書込み用にファイルを開けません"
-
-msgid "E949: File changed while writing"
-msgstr "E949: 書込み中にファイルが変更されました"
-
-msgid "E512: Close failed"
-msgstr "E512: 閉じることに失敗"
-
-msgid "E513: write error, conversion failed (make 'fenc' empty to override)"
-msgstr "E513: 書込みエラー、変換失敗 (上書するには 'fenc' を空にしてください)"
-
-#, c-format
-msgid ""
-"E513: write error, conversion failed in line %ld (make 'fenc' empty to "
-"override)"
-msgstr ""
-"E513: 書込みエラー、変換失敗、行数 %ld (上書するには 'fenc' を空にしてくださ"
-"い)"
-
-msgid "E514: write error (file system full?)"
-msgstr "E514: 書込みエラー (ファイルシステムが満杯?)"
-
-msgid " CONVERSION ERROR"
-msgstr " 変換エラー"
-
-#, c-format
-msgid " in line %ld;"
-msgstr " 行 %ld;"
-
-msgid "[Device]"
-msgstr "[デバイス]"
-
-msgid "[New]"
-msgstr "[新]"
-
-msgid " [a]"
-msgstr " [a]"
-
-msgid " appended"
-msgstr " 追加"
-
-msgid " [w]"
-msgstr " [w]"
-
-msgid " written"
-msgstr " 書込み"
-
-msgid "E205: Patchmode: can't save original file"
-msgstr "E205: patchmode: 原本ファイルを保存できません"
-
-msgid "E206: patchmode: can't touch empty original file"
-msgstr "E206: patchmode: 空の原本ファイルをtouchできません"
-
-msgid "E207: Can't delete backup file"
-msgstr "E207: バックアップファイルを消せません"
-
-msgid ""
-"\n"
-"WARNING: Original file may be lost or damaged\n"
-msgstr ""
-"\n"
-"警告: 原本ファイルが失われたか変更されました\n"
-
-msgid "don't quit the editor until the file is successfully written!"
-msgstr "ファイルの保存に成功するまでエディタを終了しないでください!"
 
 msgid "[dos]"
 msgstr "[dos]"
@@ -1646,12 +1656,6 @@ msgstr "[noeol]"
 
 msgid "[Incomplete last line]"
 msgstr "[最終行が不完全]"
-
-msgid "WARNING: The file has been changed since reading it!!!"
-msgstr "警告: 読込んだ後にファイルに変更がありました!!!"
-
-msgid "Do you really want to write to it"
-msgstr "本当に上書きしますか"
 
 #, c-format
 msgid "E208: Error writing to \"%s\""
@@ -2634,6 +2638,15 @@ msgstr "E573: 無効なサーバーIDが使われました: %s"
 msgid "E251: VIM instance registry property is badly formed.  Deleted!"
 msgstr "E251: VIM 実体の登録プロパティが不正です. 消去しました!"
 
+#, c-format
+msgid "%ld lines to indent... "
+msgstr "%ld 行がインデントされます... "
+
+#, c-format
+msgid "%ld line indented "
+msgid_plural "%ld lines indented "
+msgstr[0] "%ld 行をインデントしました "
+
 msgid " Keyword completion (^N^P)"
 msgstr " キーワード補完 (^N^P)"
 
@@ -3604,8 +3617,8 @@ msgid "E315: ml_get: invalid lnum: %ld"
 msgstr "E315: ml_get: 無効なlnumです: %ld"
 
 #, c-format
-msgid "E316: ml_get: cannot find line %ld"
-msgstr "E316: ml_get: 行 %ld を見つけられません"
+msgid "E316: ml_get: cannot find line %ld in buffer %d %s"
+msgstr "E316: ml_get: 行 %ld をバッファ %d %s 内に見つけられません"
 
 msgid "E317: pointer block id wrong 3"
 msgstr "E317: ポインタブロックのIDが間違っています 3"
@@ -3885,6 +3898,11 @@ msgstr "ビーッ!"
 msgid "E677: Error writing temp file"
 msgstr "E677: 一時ファイル書込中にエラーが発生しました"
 
+#, c-format
+msgid "%ld second ago"
+msgid_plural "%ld seconds ago"
+msgstr[0] "%ld 秒経過しています"
+
 msgid "ERROR: "
 msgstr "エラー: "
 
@@ -3952,12 +3970,6 @@ msgstr "E505: %s は読込専用です (強制書込には ! を追加)"
 msgid "E349: No identifier under cursor"
 msgstr "E349: カーソルの位置には識別子がありません"
 
-msgid "E774: 'operatorfunc' is empty"
-msgstr "E774: 'operatorfunc' オプションが空です"
-
-msgid "E775: Eval feature not available"
-msgstr "E775: 式評価機能が無効になっています"
-
 msgid "Warning: terminal cannot highlight"
 msgstr "警告: 使用している端末はハイライトできません"
 
@@ -3993,15 +4005,6 @@ msgstr[0] "%ld 行が %s で %d 回処理されました"
 msgid "%ld lines %sed %d time"
 msgid_plural "%ld lines %sed %d times"
 msgstr[0] "%ld 行が %s で %d 回処理されました"
-
-#, c-format
-msgid "%ld lines to indent... "
-msgstr "%ld 行がインデントされます... "
-
-#, c-format
-msgid "%ld line indented "
-msgid_plural "%ld lines indented "
-msgstr[0] "%ld 行をインデントしました "
 
 msgid "cannot yank; delete anyway"
 msgstr "ヤンクできません; とにかく消去"
@@ -4041,6 +4044,12 @@ msgstr ""
 #, c-format
 msgid "(+%lld for BOM)"
 msgstr "(+%lld for BOM)"
+
+msgid "E774: 'operatorfunc' is empty"
+msgstr "E774: 'operatorfunc' オプションが空です"
+
+msgid "E775: Eval feature not available"
+msgstr "E775: 式評価機能が無効になっています"
 
 msgid "E518: Unknown option"
 msgstr "E518: 未知のオプションです"
@@ -4209,9 +4218,6 @@ msgstr "E536: カンマが必要です"
 #, c-format
 msgid "E537: 'commentstring' must be empty or contain %s"
 msgstr "E537: 'commentstring' は空であるか %s を含む必要があります"
-
-msgid "E538: No mouse support"
-msgstr "E538: マウスはサポートされません"
 
 msgid "cannot open "
 msgstr "開けません "
@@ -4741,10 +4747,10 @@ msgstr "E353: レジスタ %s には何もありません"
 
 msgid ""
 "\n"
-"--- Registers ---"
+"Type Name Content"
 msgstr ""
 "\n"
-"--- レジスタ ---"
+"型式 名前 内容"
 
 msgid ""
 "E883: search pattern and expression register may not contain two or more "
@@ -5021,21 +5027,6 @@ msgstr "E797: autocommand の SpellFileMissing がバッファを削除しまし
 #, c-format
 msgid "Warning: region %s not supported"
 msgstr "警告9: %s という範囲はサポートされていません"
-
-msgid "Sorry, no suggestions"
-msgstr "残念ですが、修正候補はありません"
-
-#, c-format
-msgid "Sorry, only %ld suggestions"
-msgstr "残念ですが、修正候補は %ld 個しかありません"
-
-#, c-format
-msgid "Change \"%.*s\" to:"
-msgstr "\"%.*s\" を次へ変換:"
-
-#, c-format
-msgid " < \"%.*s\""
-msgstr " < \"%.*s\""
 
 msgid "E752: No previous spell replacement"
 msgstr "E752: スペル置換がまだ実行されていません"
@@ -5365,6 +5356,21 @@ msgstr "E763: 単語の文字がスペルファイルと異なります"
 
 msgid "E783: duplicate char in MAP entry"
 msgstr "E783: MAP エントリに重複文字が存在します"
+
+msgid "Sorry, no suggestions"
+msgstr "残念ですが、修正候補はありません"
+
+#, c-format
+msgid "Sorry, only %ld suggestions"
+msgstr "残念ですが、修正候補は %ld 個しかありません"
+
+#, c-format
+msgid "Change \"%.*s\" to:"
+msgstr "\"%.*s\" を次へ変換:"
+
+#, c-format
+msgid " < \"%.*s\""
+msgstr " < \"%.*s\""
 
 msgid "No Syntax items defined for this buffer"
 msgstr "このバッファに定義された構文要素はありません"
@@ -5863,11 +5869,6 @@ msgstr "アンドゥ対象がありません"
 
 msgid "number changes  when               saved"
 msgstr "通番   変更数   変更時期           保存済"
-
-#, c-format
-msgid "%ld second ago"
-msgid_plural "%ld seconds ago"
-msgstr[0] "%ld 秒経過しています"
 
 msgid "E790: undojoin is not allowed after undo"
 msgstr "E790: undo の直後に undojoin はできません"
