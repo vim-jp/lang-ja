@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-28 20:36+0900\n"
+"POT-Creation-Date: 2019-11-04 21:51+0900\n"
 "PO-Revision-Date: 2019-05-05 13:00+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -492,7 +492,7 @@ msgid "[crypted]"
 msgstr "[暗号化]"
 
 msgid "Entering Debug mode.  Type \"cont\" to continue."
-msgstr "デバッグモードに入ります. 続けるには \"cont\" と入力してください."
+msgstr "デバッグモードに入ります。続けるには \"cont\" と入力してください。"
 
 #, c-format
 msgid "Oldval = \"%s\""
@@ -1087,7 +1087,7 @@ msgstr "既存のファイル \"%s\" を上書きしますか?"
 
 #, c-format
 msgid "Swap file \"%s\" exists, overwrite anyway?"
-msgstr "スワップファイル \"%s\" が存在します. 上書きを強制しますか?"
+msgstr "スワップファイル \"%s\" が存在します。上書きを強制しますか?"
 
 #, c-format
 msgid "E768: Swap file exists: %s (:silent! overrides)"
@@ -1259,7 +1259,7 @@ msgstr "E197: 言語を \"%s\" に設定できません"
 
 msgid "Entering Ex mode.  Type \"visual\" to go to Normal mode."
 msgstr ""
-"Exモードに入ります. ノーマルモードに戻るには\"visual\"と入力してください."
+"Exモードに入ります。ノーマルモードに戻るには\"visual\"と入力してください。"
 
 msgid "E501: At end-of-file"
 msgstr "E501: ファイルの終了位置"
@@ -1722,10 +1722,10 @@ msgid "E321: Could not reload \"%s\""
 msgstr "E321: \"%s\" はリロードできませんでした"
 
 msgid "E219: Missing {."
-msgstr "E219: { がありません."
+msgstr "E219: { がありません。"
 
 msgid "E220: Missing }."
-msgstr "E220: } がありません."
+msgstr "E220: } がありません。"
 
 msgid "<empty>"
 msgstr "<空>"
@@ -1755,7 +1755,7 @@ msgid ""
 "followed by '%s'."
 msgstr ""
 "E343: 無効なパスです: '**[数値]' はpathの最後か '%s' が続いてないといけませ"
-"ん."
+"ん。"
 
 #, c-format
 msgid "E344: Can't find directory \"%s\" in cdpath"
@@ -1857,7 +1857,7 @@ msgid "Cancel"
 msgstr "キャンセル"
 
 msgid "Scrollbar Widget: Could not get geometry of thumb pixmap."
-msgstr "スクロールバー: 画像を取得できませんでした."
+msgstr "スクロールバー: 画像を取得できませんでした。"
 
 msgid "Vim dialog"
 msgstr "Vim ダイアログ"
@@ -2006,7 +2006,7 @@ msgstr "E671: タイトルが \"%s\" のウィンドウは見つかりません"
 
 #, c-format
 msgid "E243: Argument not supported: \"-%s\"; Use the OLE version."
-msgstr "E243: 引数はサポートされません: \"-%s\"; OLE版を使用してください."
+msgstr "E243: 引数はサポートされません: \"-%s\"; OLE版を使用してください。"
 
 msgid "E988: GUI cannot be used. Cannot execute gvim.exe."
 msgstr "E988: GUIは使用不可能です。gvim.exeを起動できません。"
@@ -2141,14 +2141,16 @@ msgid "E621: \"%s\" resource file has wrong version"
 msgstr "E621: リソースファイル \"%s\" はバージョンが異なります"
 
 msgid "E673: Incompatible multi-byte encoding and character set."
-msgstr "E673: 互換性の無いマルチバイトエンコーディングと文字セットです"
+msgstr "E673: 互換性の無いマルチバイトエンコーディングと文字セットです。"
 
 msgid "E674: printmbcharset cannot be empty with multi-byte encoding."
-msgstr "E674: マルチバイトエンコーディングでは printmbcharset を空にできません"
+msgstr ""
+"E674: マルチバイトエンコーディングでは printmbcharset を空にできません。"
 
 msgid "E675: No default font specified for multi-byte printing."
 msgstr ""
-"E675: マルチバイト文字を印刷するためのデフォルトフォントが指定されていません"
+"E675: マルチバイト文字を印刷するためのデフォルトフォントが指定されていませ"
+"ん。"
 
 msgid "E324: Can't open PostScript output file"
 msgstr "E324: PostScript出力用のファイルを開けません"
@@ -2178,7 +2180,7 @@ msgid "E365: Failed to print PostScript file"
 msgstr "E365: PostScriptファイルの印刷に失敗しました"
 
 msgid "Print job sent."
-msgstr "印刷ジョブを送信しました."
+msgstr "印刷ジョブを送信しました。"
 
 msgid "E679: recursive loop loading syncolor.vim"
 msgstr "E679: syncolor.vim の再帰呼び出しを検出しました"
@@ -2431,7 +2433,7 @@ msgid " # pid    database name                       prepend path\n"
 msgstr " # pid    データベース名                      prepend パス\n"
 
 msgid "Lua library cannot be loaded."
-msgstr "Luaライブラリをロードできません."
+msgstr "Luaライブラリをロードできません。"
 
 msgid "cannot save undo information"
 msgstr "アンドゥ情報が保存できません"
@@ -2439,14 +2441,14 @@ msgstr "アンドゥ情報が保存できません"
 msgid ""
 "E815: Sorry, this command is disabled, the MzScheme libraries could not be "
 "loaded."
-msgstr "E815: このコマンドは無効です. MzScheme ライブラリをロードできません."
+msgstr "E815: このコマンドは無効です。MzScheme ライブラリをロードできません。"
 
 msgid ""
 "E895: Sorry, this command is disabled, the MzScheme's racket/base module "
 "could not be loaded."
 msgstr ""
-"E895: このコマンドは無効です、ごめんなさい. MzScheme の racket/base モジュー"
-"ルがロードできませんでした."
+"E895: このコマンドは無効です、ごめんなさい。MzScheme の racket/base モジュー"
+"ルがロードできませんでした。"
 
 msgid "invalid expression"
 msgstr "無効な式です"
@@ -2507,14 +2509,14 @@ msgid ""
 "loaded."
 msgstr ""
 "E263: このコマンドは無効です、ごめんなさい: Pythonライブラリをロードできませ"
-"んでした."
+"んでした。"
 
 msgid ""
 "E887: Sorry, this command is disabled, the Python's site module could not be "
 "loaded."
 msgstr ""
-"E887: このコマンドは無効です、ごめんなさい. Python の site モジュールをロード"
-"できませんでした."
+"E887: このコマンドは無効です、ごめんなさい。Python の site モジュールをロード"
+"できませんでした。"
 
 # Added at 07-Feb-2004.
 msgid "E659: Cannot invoke Python recursively"
@@ -2530,7 +2532,7 @@ msgid ""
 "E266: Sorry, this command is disabled, the Ruby library could not be loaded."
 msgstr ""
 "E266: このコマンドは無効です、ごめんなさい: Rubyライブラリをロードできません"
-"でした."
+"でした。"
 
 msgid "E267: unexpected return"
 msgstr "E267: 予期せぬ return です"
@@ -2616,7 +2618,7 @@ msgid ""
 "E571: Sorry, this command is disabled: the Tcl library could not be loaded."
 msgstr ""
 "E571: このコマンドは無効です、ごめんなさい: Tclライブラリをロードできませんで"
-"した."
+"した。"
 
 #, c-format
 msgid "E572: exit code %d"
@@ -2636,7 +2638,7 @@ msgid "E573: Invalid server id used: %s"
 msgstr "E573: 無効なサーバーIDが使われました: %s"
 
 msgid "E251: VIM instance registry property is badly formed.  Deleted!"
-msgstr "E251: VIM 実体の登録プロパティが不正です. 消去しました!"
+msgstr "E251: VIM 実体の登録プロパティが不正です。消去しました!"
 
 #, c-format
 msgid "%ld lines to indent... "
@@ -2722,7 +2724,7 @@ msgid "Scanning: %s"
 msgstr "スキャン中: %s"
 
 msgid "Scanning tags."
-msgstr "タグをスキャン中."
+msgstr "タグをスキャン中。"
 
 msgid "match in file"
 msgstr "ファイル内のマッチ"
@@ -2825,7 +2827,7 @@ msgid "'-nb' cannot be used: not enabled at compile time\n"
 msgstr "'-nb' 使用不可能です: コンパイル時に無効にされています\n"
 
 msgid "This Vim was not compiled with the diff feature."
-msgstr "このVimにはdiff機能がありません(コンパイル時設定)."
+msgstr "このVimにはdiff機能がありません(コンパイル時設定)。"
 
 msgid "Attempt to open script file again: \""
 msgstr "スクリプトファイルを再び開こうとしました: \""
@@ -3203,7 +3205,7 @@ msgid ": Send failed.\n"
 msgstr ": 送信に失敗しました.\n"
 
 msgid ": Send failed. Trying to execute locally\n"
-msgstr ": 送信に失敗しました. ローカルでの実行を試みています\n"
+msgstr ": 送信に失敗しました。ローカルでの実行を試みています\n"
 
 #, c-format
 msgid "%d of %d edited"
@@ -3359,7 +3361,7 @@ msgid ""
 "Maybe no changes were made or Vim did not update the swap file."
 msgstr ""
 "\n"
-"恐らく変更がされていないかVimがスワップファイルを更新していません."
+"恐らく変更がされていないかVimがスワップファイルを更新していません。"
 
 msgid " cannot be used with this version of Vim.\n"
 msgstr " Vimのこのバージョンでは使用できません.\n"
@@ -3382,7 +3384,7 @@ msgid ""
 "or the file has been damaged."
 msgstr ""
 ",\n"
-"もしくはファイルが損傷しています."
+"もしくはファイルが損傷しています。"
 
 #, c-format
 msgid ""
@@ -3420,7 +3422,7 @@ msgid ""
 "enter the new crypt key."
 msgstr ""
 "\n"
-"新しい暗号キーを入力してください."
+"新しい暗号キーを入力してください。"
 
 msgid ""
 "\n"
@@ -3434,7 +3436,7 @@ msgid ""
 "to use the same key for text file and swap file"
 msgstr ""
 "\n"
-"スワップファイルに同じ暗号キーを使うためにenterだけを押してください."
+"スワップファイルに同じ暗号キーを使うためにenterだけを押してください。"
 
 #, c-format
 msgid "E309: Unable to read block 1 from %s"
@@ -3480,7 +3482,7 @@ msgid "See \":help E312\" for more information."
 msgstr "詳細は \":help E312\" を参照してください"
 
 msgid "Recovery completed. You should check if everything is OK."
-msgstr "リカバリが終了しました. 全てが正しいかチェックしてください."
+msgstr "リカバリが終了しました。全てが正しいかチェックしてください。"
 
 msgid ""
 "\n"
@@ -3493,7 +3495,7 @@ msgid "and run diff with the original file to check for changes)"
 msgstr "原本ファイルとの diff を実行すると良いでしょう)"
 
 msgid "Recovery completed. Buffer contents equals file contents."
-msgstr "復元完了. バッファの内容はファイルと同じになりました."
+msgstr "復元完了。バッファの内容はファイルと同じになりました。"
 
 msgid ""
 "\n"
@@ -3689,10 +3691,10 @@ msgid ""
 "    file when making changes.  Quit, or continue with caution.\n"
 msgstr ""
 "\n"
-"(1) 別のプログラムが同じファイルを編集しているかもしれません.\n"
+"(1) 別のプログラムが同じファイルを編集しているかもしれません。\n"
 "    この場合には、変更をしてしまうと1つのファイルに対して異なる2つの\n"
-"    インスタンスができてしまうので、そうしないように気をつけてください.\n"
-"    終了するか、注意しながら続けてください.\n"
+"    インスタンスができてしまうので、そうしないように気をつけてください。\n"
+"    終了するか、注意しながら続けてください。\n"
 
 msgid "(2) An edit session for this file crashed.\n"
 msgstr "(2) このファイルの編集セッションがクラッシュした.\n"
@@ -4261,7 +4263,7 @@ msgid " returned\n"
 msgstr " 戻りました\n"
 
 msgid "ANCHOR_BUF_SIZE too small."
-msgstr "ANCHOR_BUF_SIZE が小さ過ぎます."
+msgstr "ANCHOR_BUF_SIZE が小さ過ぎます。"
 
 msgid "I/O ERROR"
 msgstr "入出力エラー"
@@ -4341,7 +4343,7 @@ msgstr "セキュリティコンテキスト %s を %s に設定できません"
 
 #, c-format
 msgid "Could not get security context %s for %s. Removing it!"
-msgstr "セキュリティコンテキスト %s を %s から取得できません. 削除します!"
+msgstr "セキュリティコンテキスト %s を %s から取得できません。削除します!"
 
 msgid ""
 "\n"
@@ -4434,7 +4436,7 @@ msgid ""
 msgstr ""
 "VIMRUN.EXEが $PATH の中に見つかりません.\n"
 "外部コマンドの終了後に一時停止をしません.\n"
-"詳細は  :help win32-vimrun  を参照してください."
+"詳細は  :help win32-vimrun  を参照してください。"
 
 msgid "Vim Warning"
 msgstr "Vimの警告"
@@ -4867,7 +4869,7 @@ msgid "error handler"
 msgstr "エラーハンドラ"
 
 msgid "W15: Warning: Wrong line separator, ^M may be missing"
-msgstr "W15: 警告: 行区切が不正です. ^M がないのでしょう"
+msgstr "W15: 警告: 行区切が不正です。^M がないのでしょう"
 
 msgid "E167: :scriptencoding used outside of a sourced file"
 msgstr "E167: :scriptencoding が取込スクリプト以外で使用されました"
@@ -5130,7 +5132,7 @@ msgstr ""
 
 #, c-format
 msgid "Wrong COMPOUNDRULES value in %s line %d: %s"
-msgstr "COMPOUNDRULES の値に誤りがあります. ファイル %s の %d 行目: %s"
+msgstr "COMPOUNDRULES の値に誤りがあります。ファイル %s の %d 行目: %s"
 
 #, c-format
 msgid "Wrong COMPOUNDWORDMAX value in %s line %d: %s"
@@ -5640,7 +5642,7 @@ msgid "Duplicate field name: %s"
 msgstr "重複したフィールド名: %s"
 
 msgid "' not known. Available builtin terminals are:"
-msgstr "' は未知です. 現行の組み込み端末は次のとおりです:"
+msgstr "' は未知です。現行の組み込み端末は次のとおりです:"
 
 msgid "defaulting to '"
 msgstr "省略値を次のように設定します '"
@@ -5674,6 +5676,9 @@ msgstr "$VIMRUNTIME/rgb.txtを開けません"
 #, c-format
 msgid "E181: Invalid attribute: %s"
 msgstr "E181: 無効な属性です: %s"
+
+msgid "E279: Sorry, ++shell is not supported on this system"
+msgstr "E279: ごめんなさい、++shell はこのシステムではサポートされていません"
 
 #, c-format
 msgid "Kill job in \"%s\"?"
@@ -6564,7 +6569,8 @@ msgstr "E370: ライブラリ %s をロードできませんでした"
 
 msgid "Sorry, this command is disabled: the Perl library could not be loaded."
 msgstr ""
-"このコマンドは無効です、ごめんなさい: Perlライブラリをロードできませんでした."
+"このコマンドは無効です、ごめんなさい: Perlライブラリをロードできませんでし"
+"た。"
 
 msgid "E299: Perl evaluation forbidden in sandbox without the Safe module"
 msgstr ""
