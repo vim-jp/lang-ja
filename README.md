@@ -16,6 +16,7 @@ runtime/doc/\*-ja.UTF-8.1          |日本語manファイル(UTF-8)
 runtime/doc/\*.1                   |原文manファイル
 runtime/tutor/tutor.ja.utf-8       |日本語チュートリアルファイル(UTF-8)
 runtime/tutor/tutor                |原文チュートリアルファイル
+nsis/lang                          |Windows用インストーラーの翻訳ファイル
 
 ## ja.po 更新手順
 
