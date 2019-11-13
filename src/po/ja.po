@@ -3524,6 +3524,7 @@ msgstr "   ディレクトリ "
 msgid "      -- none --\n"
 msgstr "      -- なし --\n"
 
+#, no-c-format
 msgid "%a %b %d %H:%M:%S %Y"
 msgstr "%Y/%m/%d (%a) %H:%M:%S"
 
