@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-04 21:51+0900\n"
+"POT-Creation-Date: 2019-12-03 01:45+0900\n"
 "PO-Revision-Date: 2019-11-11 23:00+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -2083,9 +2083,6 @@ msgstr "スタイル:"
 msgid "Size:"
 msgstr "サイズ:"
 
-msgid "E256: Hangul automata ERROR"
-msgstr "E256: ハングルオートマトンエラー"
-
 msgid "E550: Missing colon"
 msgstr "E550: コロンがありません"
 
@@ -3524,7 +3521,7 @@ msgstr "   ディレクトリ "
 msgid "      -- none --\n"
 msgstr "      -- なし --\n"
 
-#, no-c-format
+#  no-c-format
 msgid "%a %b %d %H:%M:%S %Y"
 msgstr "%Y/%m/%d (%a) %H:%M:%S"
 
@@ -4193,8 +4190,8 @@ msgstr "E527: カンマがありません"
 msgid "E528: Must specify a ' value"
 msgstr "E528: ' の値を指定しなければなりません"
 
-msgid "E595: contains unprintable or wide character"
-msgstr "E595: 表示できない文字かワイド文字を含んでいます"
+msgid "E595: 'showbreak' contains unprintable or wide character"
+msgstr "E595: 'showbreak' は表示できない文字かワイド文字を含んでいます"
 
 msgid "E596: Invalid font(s)"
 msgstr "E596: 無効なフォントです"
@@ -5614,9 +5611,6 @@ msgstr "タグファイル %s を検索中"
 msgid "E430: Tag file path truncated for %s\n"
 msgstr "E430: タグファイルのパスが %s に切り捨てられました\n"
 
-msgid "Ignoring long line in tags file"
-msgstr "タグファイル内の長い行を無視します"
-
 #, c-format
 msgid "E431: Format error in tags file \"%s\""
 msgstr "E431: タグファイル \"%s\" のフォーマットにエラーがあります"
@@ -5631,6 +5625,9 @@ msgstr "E432: タグファイルがソートされていません: %s"
 
 msgid "E433: No tags file"
 msgstr "E433: タグファイルがありません"
+
+msgid "Ignoring long line in tags file"
+msgstr "タグファイル内の長い行を無視します"
 
 msgid "E434: Can't find tag pattern"
 msgstr "E434: タグパターンを見つけられません"
