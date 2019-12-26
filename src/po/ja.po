@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 01:45+0900\n"
+"POT-Creation-Date: 2019-12-27 08:19+0900\n"
 "PO-Revision-Date: 2019-12-15 03:28+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -851,9 +851,6 @@ msgid ""
 msgstr ""
 "\n"
 "\t最後にセットしたスクリプト: "
-
-msgid " line "
-msgstr " 行 "
 
 msgid "E977: Can only compare Blob with Blob"
 msgstr "E977: Blob型はBlob型としか比較できません"
@@ -2251,8 +2248,8 @@ msgstr "E799: 無効な ID: %d (1 以上でなければなりません)"
 msgid "E801: ID already taken: %d"
 msgstr "E801: ID はすでに利用中です: %d"
 
-msgid "List or number required"
-msgstr "リストか数値が必要です"
+msgid "E290: List or number required"
+msgstr "E290: リストか数値が必要です"
 
 #, c-format
 msgid "E802: Invalid ID: %d (must be greater than or equal to 1)"
@@ -7034,6 +7031,9 @@ msgstr "上まで検索したので下に戻ります"
 
 msgid "search hit BOTTOM, continuing at TOP"
 msgstr "下まで検索したので上に戻ります"
+
+msgid " line "
+msgstr " 行 "
 
 #, c-format
 msgid "Need encryption key for \"%s\""
