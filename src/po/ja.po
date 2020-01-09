@@ -2835,8 +2835,9 @@ msgstr "スクリプト出力用を開けません"
 msgid "Vim: Error: Failure to start gvim from NetBeans\n"
 msgstr "Vim: エラー: NetBeansからgvimをスタートできません\n"
 
+#  This message should be English to avoid mojibake.
 msgid "Vim: Error: This version of Vim does not run in a Cygwin terminal\n"
-msgstr "Vim: エラー: このバージョンのVimはCygwin端末では動作しません\n"
+msgstr "Vim: Error: This version of Vim does not run in a Cygwin terminal\n"
 
 msgid "Vim: Warning: Output is not to a terminal\n"
 msgstr "Vim: 警告: 端末への出力ではありません\n"
