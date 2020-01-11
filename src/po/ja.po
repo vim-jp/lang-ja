@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-27 08:19+0900\n"
+"POT-Creation-Date: 2020-01-12 00:11+0900\n"
 "PO-Revision-Date: 2019-12-15 03:28+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -815,6 +815,9 @@ msgstr "E893: リスト型を浮動小数点数として扱っています"
 msgid "E894: Using a Dictionary as a Float"
 msgstr "E894: 辞書型を浮動小数点数として扱っています"
 
+msgid "E362: Using a boolean value as a Float"
+msgstr "E362: ブール値を浮動小数点数として扱っています"
+
 msgid "E907: Using a special value as a Float"
 msgstr "E907: 特殊値を浮動小数点数として扱っています"
 
@@ -838,9 +841,6 @@ msgstr "E731: 辞書型を文字列として扱っています"
 
 msgid "E976: using Blob as a String"
 msgstr "E976: Blob型を文字列として扱っています"
-
-msgid "E908: using an invalid value as a String"
-msgstr "E908: 無効な値を文字列として扱っています"
 
 msgid "E698: variable nested too deep for making a copy"
 msgstr "E698: コピーを取るには変数の入れ子が深過ぎます"
@@ -6910,6 +6910,9 @@ msgstr "E712: %s の引数はリスト型または辞書型でなければなり
 #, c-format
 msgid "E896: Argument of %s must be a List, Dictionary or Blob"
 msgstr "E896: %s の引数はリスト型、辞書型またはBlob型でなければなりません"
+
+msgid "E908: using an invalid value as a String"
+msgstr "E908: 無効な値を文字列として扱っています"
 
 msgid "E47: Error while reading errorfile"
 msgstr "E47: エラーファイルの読込中にエラーが発生しました"
