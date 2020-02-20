@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-13 20:10+0900\n"
+"POT-Creation-Date: 2020-02-20 19:59+0900\n"
 "PO-Revision-Date: 2019-12-15 03:28+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -899,9 +899,6 @@ msgstr "E258: クライアントへ送ることができません"
 #, c-format
 msgid "E962: Invalid action: '%s'"
 msgstr "E962: 無効な操作です: '%s'"
-
-msgid "(Invalid)"
-msgstr "(無効)"
 
 #, c-format
 msgid "E935: invalid submatch number: %d"
@@ -3455,10 +3452,6 @@ msgstr "   ディレクトリ "
 msgid "      -- none --\n"
 msgstr "      -- なし --\n"
 
-#  no-c-format
-msgid "%a %b %d %H:%M:%S %Y"
-msgstr "%Y/%m/%d (%a) %H:%M:%S"
-
 msgid "          owned by: "
 msgstr "            所有者: "
 
@@ -3831,11 +3824,6 @@ msgstr "ビーッ!"
 
 msgid "E677: Error writing temp file"
 msgstr "E677: 一時ファイル書込中にエラーが発生しました"
-
-#, c-format
-msgid "%ld second ago"
-msgid_plural "%ld seconds ago"
-msgstr[0] "%ld 秒経過しています"
 
 msgid "ERROR: "
 msgstr "エラー: "
@@ -5682,6 +5670,18 @@ msgstr "E969: プロパティタイプ %s は既に定義されています"
 msgid "E970: Unknown highlight group name: '%s'"
 msgstr "E970: 未知のハイライトグループ名: '%s'"
 
+msgid "(Invalid)"
+msgstr "(無効)"
+
+#  no-c-format
+msgid "%a %b %d %H:%M:%S %Y"
+msgstr "%Y/%m/%d (%a) %H:%M:%S"
+
+#, c-format
+msgid "%ld second ago"
+msgid_plural "%ld seconds ago"
+msgstr[0] "%ld 秒経過しています"
+
 msgid "new shell started\n"
 msgstr "新しいシェルを起動します\n"
 
@@ -6375,6 +6375,14 @@ msgstr "詳細はメニューの ヘルプ->スポンサー/登録 を参照し�
 #~ msgid "E1050: Item not found: %s"
 #~ msgstr "E803: ID はありません: %d"
 
+#, fuzzy
+#~ msgid "E1068: No white space allowed before ,"
+#~ msgstr "E274: 丸括弧の前にスペースは許されません"
+
+#, fuzzy
+#~ msgid "E1069: white space required after ,"
+#~ msgstr "E274: 丸括弧の前にスペースは許されません"
+
 #, fuzzy, c-format
 #~ msgid "E1011: name too long: %s"
 #~ msgstr "E75: 名前が長過ぎます"
@@ -6431,6 +6439,10 @@ msgstr "詳細はメニューの ヘルプ->スポンサー/登録 を参照し�
 #~ msgid "E1054: Variable already declared in the script: %s"
 #~ msgstr ""
 
+#, fuzzy
+#~ msgid "E1019: Can only concatenate to string"
+#~ msgstr "E691: リスト型はリスト型としか比較できません"
+
 #, fuzzy, c-format
 #~ msgid "E1020: cannot use an operator on a new variable: %s"
 #~ msgstr "E795: 変数 %s を削除できません"
@@ -6470,6 +6482,10 @@ msgstr "詳細はメニューの ヘルプ->スポンサー/登録 を参照し�
 #~ msgstr "E488: 余分な文字が後ろにあります"
 
 #, fuzzy
+#~ msgid "E1025: using } outside of a block scope"
+#~ msgstr "E168: :finish が取込スクリプト以外で使用されました"
+
+#, fuzzy
 #~ msgid "E1026: Missing }"
 #~ msgstr "E220: } がありません。"
 
@@ -6477,13 +6493,13 @@ msgstr "詳細はメニューの ヘルプ->スポンサー/登録 を参照し�
 #~ msgid "E1027: Missing return statement"
 #~ msgstr "E107: カッコ '(' がありません: %s"
 
+#, fuzzy
+#~ msgid "E1028: compile_def_function failed"
+#~ msgstr "E702: ソートの比較関数が失敗しました"
+
 #, fuzzy, c-format
 #~ msgid "E121: Undefined variable: g:%s"
 #~ msgstr "E121: 未定義の変数です: %s"
-
-#, fuzzy, c-format
-#~ msgid "E1060: Invalid environment variable name: %s"
-#~ msgstr "E180: 無効な補完指定です: %s"
 
 #~ msgid "E1051: Expected string or number"
 #~ msgstr ""
@@ -6491,6 +6507,14 @@ msgstr "詳細はメニューの ヘルプ->スポンサー/登録 を参照し�
 #, fuzzy, c-format
 #~ msgid "E1029: Expected %s but got %s"
 #~ msgstr "E415: 予期せぬ等号です: %s"
+
+#, fuzzy, c-format
+#~ msgid "E1061: Cannot find function %s"
+#~ msgstr "E130: 未知の関数です: %s"
+
+#, fuzzy, c-format
+#~ msgid "E1062: Function %s is not compiled"
+#~ msgstr "E764: オプション '%s' は設定されていません"
 
 #, fuzzy
 #~ msgid "E1030: Using a String as a Number"
@@ -6745,9 +6769,8 @@ msgstr "E814: autocmdウィンドウしか残らないため、ウィンドウ�
 msgid "E445: Other window contains changes"
 msgstr "E445: 他のウィンドウには変更があります"
 
-#, fuzzy
-#~ msgid "E366: Not allowed to enter a popup window"
-#~ msgstr "E994: ポップアップウィンドウでは許されません"
+msgid "E366: Not allowed to enter a popup window"
+msgstr "E366: ポップアップウィンドウに入ることは許されません"
 
 #, c-format
 msgid "E370: Could not load library %s"
