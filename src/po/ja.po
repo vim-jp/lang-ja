@@ -4508,7 +4508,7 @@ msgstr " (行が削除されました)"
 
 #, c-format
 msgid "%serror list %d of %d; %d errors "
-msgstr "%s エラー一覧 %d of %d; %d 個エラー"
+msgstr "%s エラー一覧 %d of %d; %d 個エラー "
 
 msgid "E380: At bottom of quickfix stack"
 msgstr "E380: quickfix スタックの末尾です"
