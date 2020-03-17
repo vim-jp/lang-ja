@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-20 19:59+0900\n"
+"POT-Creation-Date: 2020-03-17 10:03+0900\n"
 "PO-Revision-Date: 2019-12-15 03:28+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -5662,6 +5662,9 @@ msgstr "E967: テキストプロパティ情報が壊れています"
 msgid "E968: Need at least one of 'id' or 'type'"
 msgstr "E968: 最低 1 個の 'id' または 'type' が必要です"
 
+msgid "E860: Need 'id' and 'type' with 'both'"
+msgstr "E860: 'both' には 'id' と 'type' の両方が必要です"
+
 #, c-format
 msgid "E969: Property type %s already defined"
 msgstr "E969: プロパティタイプ %s は既に定義されています"
@@ -6177,6 +6180,9 @@ msgstr "with X11-neXtaw GUI."
 msgid "with X11-Athena GUI."
 msgstr "with X11-Athena GUI."
 
+msgid "with Haiku GUI."
+msgstr "with Haiku GUI."
+
 msgid "with Photon GUI."
 msgstr "with Photon GUI."
 
@@ -6340,7 +6346,7 @@ msgstr "詳細はメニューの ヘルプ->スポンサー/登録 を参照し�
 #~ msgstr "E804: '%' を浮動小数点数と組み合わせては使えません"
 
 #, fuzzy, c-format
-#~ msgid "E1037: Cannot compare %s with %s"
+#~ msgid "E1072: Cannot compare %s with %s"
 #~ msgstr "E691: リスト型はリスト型としか比較できません"
 
 #, fuzzy, c-format
@@ -6370,6 +6376,10 @@ msgstr "詳細はメニューの ヘルプ->スポンサー/登録 を参照し�
 #, fuzzy, c-format
 #~ msgid "E1010: Type not recognized: %s"
 #~ msgstr "E421: カラー名や番号を認識できません: %s"
+
+#, fuzzy, c-format
+#~ msgid "E1060: expected dot after name: %s"
+#~ msgstr "E415: 予期せぬ等号です: %s"
 
 #, fuzzy, c-format
 #~ msgid "E1050: Item not found: %s"
@@ -6477,9 +6487,9 @@ msgstr "詳細はメニューの ヘルプ->スポンサー/登録 を参照し�
 #~ msgid "E1032: missing :catch or :finally"
 #~ msgstr "E604: :finally の後に :catch があります"
 
-#, fuzzy, c-format
-#~ msgid "E488: Trailing characters: %s"
-#~ msgstr "E488: 余分な文字が後ろにあります"
+#, c-format
+msgid "E488: Trailing characters: %s"
+msgstr "E488: 余分な文字が後ろにあります: %s"
 
 #, fuzzy
 #~ msgid "E1025: using } outside of a block scope"
@@ -6539,22 +6549,6 @@ msgstr "詳細はメニューの ヘルプ->スポンサー/登録 を参照し�
 #~ msgid "E1043: Invalid command after :export"
 #~ msgstr "E182: 無効なコマンド名です"
 
-#, fuzzy
-#~ msgid "E1045: Missing \"as\" after *"
-#~ msgstr "E690: :for の後に \"in\" がありません"
-
-#, fuzzy
-#~ msgid "E1045: Missing \"from\""
-#~ msgstr "E170: :endfor がありません"
-
-#, fuzzy
-#~ msgid "E1045: Invalid string after \"from\""
-#~ msgstr "E71: %s%% の後に不正な文字がありました"
-
-#, fuzzy, c-format
-#~ msgid "E1053: Could not import \"%s\""
-#~ msgstr "E321: \"%s\" はリロードできませんでした"
-
 #, fuzzy, c-format
 #~ msgid "E1049: Item not exported in script: %s"
 #~ msgstr "E985: .= はスクリプトバージョン 2 では対応していません"
@@ -6562,6 +6556,22 @@ msgstr "詳細はメニューの ヘルプ->スポンサー/登録 を参照し�
 #, fuzzy, c-format
 #~ msgid "E1048: Item not found in script: %s"
 #~ msgstr "E486: パターンは見つかりませんでした: %s"
+
+#, fuzzy
+#~ msgid "E1045: Missing \"as\" after *"
+#~ msgstr "E690: :for の後に \"in\" がありません"
+
+#, fuzzy
+#~ msgid "E1070: Missing \"from\""
+#~ msgstr "E170: :endfor がありません"
+
+#, fuzzy
+#~ msgid "E1071: Invalid string after \"from\""
+#~ msgstr "E71: %s%% の後に不正な文字がありました"
+
+#, fuzzy, c-format
+#~ msgid "E1053: Could not import \"%s\""
+#~ msgstr "E321: \"%s\" はリロードできませんでした"
 
 #, fuzzy
 #~ msgid "E1046: Missing comma in import"
