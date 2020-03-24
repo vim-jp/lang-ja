@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-17 10:03+0900\n"
+"POT-Creation-Date: 2020-03-24 10:36+0900\n"
 "PO-Revision-Date: 2019-12-15 03:28+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -1663,6 +1663,9 @@ msgstr "<空>"
 # Added at 10-Mar-2004.
 msgid "E655: Too many symbolic links (cycle?)"
 msgstr "E655: シンボリックリンクが多過ぎます (循環している可能性があります)"
+
+msgid "writefile() first argument must be a List or a Blob"
+msgstr "writefile() の第1引数はリスト型またはBlob型でなければなりません"
 
 msgid "Select Directory dialog"
 msgstr "ディレクトリ選択ダイアログ"
@@ -3937,6 +3940,11 @@ msgid_plural "%ld lines changed"
 msgstr[0] "%ld 行が変更されました"
 
 #, c-format
+msgid "%d line changed"
+msgid_plural "%d lines changed"
+msgstr[0] "%d 行が変更されました"
+
+#, c-format
 msgid "%ld Cols; "
 msgstr "%ld 列; "
 
@@ -5186,32 +5194,36 @@ msgid "Reading word file %s..."
 msgstr "単語ファイル %s を読込み中..."
 
 #, c-format
-msgid "Duplicate /encoding= line ignored in %s line %d: %s"
-msgstr "%s の %d 行目の 重複した /encoding= 行を無視しました: %s"
+msgid "Conversion failure for word in %s line %ld: %s"
+msgstr "%s (%ld 行目) の単語を変換できませんでした: %s"
 
 #, c-format
-msgid "/encoding= line after word ignored in %s line %d: %s"
-msgstr "%s の %d 行目の 単語の後の /encoding= 行を無視しました: %s"
+msgid "Duplicate /encoding= line ignored in %s line %ld: %s"
+msgstr "%s の %ld 行目の 重複した /encoding= 行を無視しました: %s"
 
 #, c-format
-msgid "Duplicate /regions= line ignored in %s line %d: %s"
-msgstr "%s の %d 行目の 重複した /regions= 行を無視しました: %s"
+msgid "/encoding= line after word ignored in %s line %ld: %s"
+msgstr "%s の %ld 行目の 単語の後の /encoding= 行を無視しました: %s"
 
 #, c-format
-msgid "Too many regions in %s line %d: %s"
-msgstr "%s の %d 行目、範囲指定が多過ぎます: %s"
+msgid "Duplicate /regions= line ignored in %s line %ld: %s"
+msgstr "%s の %ld 行目の 重複した /regions= 行を無視しました: %s"
 
 #, c-format
-msgid "/ line ignored in %s line %d: %s"
-msgstr "%s の %d 行目の 重複した / 行を無視しました: %s"
+msgid "Too many regions in %s line %ld: %s"
+msgstr "%s の %ld 行目、範囲指定が多過ぎます: %s"
 
 #, c-format
-msgid "Invalid region nr in %s line %d: %s"
-msgstr "%s の %d 行目 無効な nr 領域です: %s"
+msgid "/ line ignored in %s line %ld: %s"
+msgstr "%s の %ld 行目の 重複した / 行を無視しました: %s"
 
 #, c-format
-msgid "Unrecognized flags in %s line %d: %s"
-msgstr "%s の %d 行目 認識不能なフラグです: %s"
+msgid "Invalid region nr in %s line %ld: %s"
+msgstr "%s の %ld 行目 無効な nr 領域です: %s"
+
+#, c-format
+msgid "Unrecognized flags in %s line %ld: %s"
+msgstr "%s の %ld 行目 認識不能なフラグです: %s"
 
 #, c-format
 msgid "Ignored %d words with non-ASCII characters"
@@ -6710,8 +6722,8 @@ msgid "# Value of 'encoding' when this file was written\n"
 msgstr "# このファイルが書かれた時の 'encoding' の値\n"
 
 #, c-format
-msgid "Reading viminfo file \"%s\"%s%s%s"
-msgstr "viminfoファイル \"%s\"%s%s%s を読込み中"
+msgid "Reading viminfo file \"%s\"%s%s%s%s"
+msgstr "viminfoファイル \"%s\"%s%s%s%s を読込み中"
 
 msgid " info"
 msgstr " 情報"
