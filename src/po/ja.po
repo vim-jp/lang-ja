@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-24 10:36+0900\n"
+"POT-Creation-Date: 2020-04-09 14:48+0900\n"
 "PO-Revision-Date: 2019-12-15 03:28+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -464,6 +464,47 @@ msgstr "E918: バッファがロードされてなければなりません: %s"
 msgid "E916: not a valid job"
 msgstr "E916: 有効なジョブではありません"
 
+msgid "No display"
+msgstr "ディスプレイが見つかりません"
+
+msgid ": Send failed.\n"
+msgstr ": 送信に失敗しました.\n"
+
+msgid ": Send failed. Trying to execute locally\n"
+msgstr ": 送信に失敗しました。ローカルでの実行を試みています\n"
+
+#, c-format
+msgid "%d of %d edited"
+msgstr "%d 個 (%d 個中) のファイルを編集しました"
+
+msgid "No display: Send expression failed.\n"
+msgstr "ディスプレイがありません: 式の送信に失敗しました.\n"
+
+msgid ": Send expression failed.\n"
+msgstr ": 式の送信に失敗しました.\n"
+
+msgid "E240: No connection to the X server"
+msgstr "E240: X サーバーへの接続がありません"
+
+#, c-format
+msgid "E241: Unable to send to %s"
+msgstr "E241: %s へ送ることができません"
+
+msgid "E277: Unable to read a server reply"
+msgstr "E277: サーバーの応答がありません"
+
+msgid "E941: already started a server"
+msgstr "E941: サーバーはすでに開始しています"
+
+msgid "E942: +clientserver feature not available"
+msgstr "E942: +clientserver 機能が無効になっています"
+
+msgid "E258: Unable to send to client"
+msgstr "E258: クライアントへ送ることができません"
+
+msgid "Used CUT_BUFFER0 instead of empty selection"
+msgstr "空の選択領域のかわりにCUT_BUFFER0が使用されました"
+
 msgid "tagname"
 msgstr "タグ名"
 
@@ -877,25 +918,6 @@ msgstr "E726: ストライド(前進量)が 0 です"
 msgid "E727: Start past end"
 msgstr "E727: 開始位置が終了位置を越えました"
 
-msgid "E240: No connection to the X server"
-msgstr "E240: X サーバーへの接続がありません"
-
-#, c-format
-msgid "E241: Unable to send to %s"
-msgstr "E241: %s へ送ることができません"
-
-msgid "E277: Unable to read a server reply"
-msgstr "E277: サーバーの応答がありません"
-
-msgid "E941: already started a server"
-msgstr "E941: サーバーはすでに開始しています"
-
-msgid "E942: +clientserver feature not available"
-msgstr "E942: +clientserver 機能が無効になっています"
-
-msgid "E258: Unable to send to client"
-msgstr "E258: クライアントへ送ることができません"
-
 #, c-format
 msgid "E962: Invalid action: '%s'"
 msgstr "E962: 無効な操作です: '%s'"
@@ -926,8 +948,8 @@ msgstr "E687: ターゲットがリスト型内の要素よりも少ないです
 msgid "E688: More targets than List items"
 msgstr "E688: ターゲットがリスト型内の要素よりも多いです"
 
-msgid "Double ; in list of variables"
-msgstr "リスト型の値に2つ以上の ; が検出されました"
+msgid "E452: Double ; in list of variables"
+msgstr "E452: リスト型の値に2つ以上の ; が検出されました"
 
 #, c-format
 msgid "E738: Can't list variables for %s"
@@ -2694,10 +2716,6 @@ msgstr "E899: %s の引数はリスト型またはBlob型でなければなり�
 msgid "E696: Missing comma in List: %s"
 msgstr "E696: リスト型にカンマがありません: %s"
 
-#, c-format
-msgid "E697: Missing end of List ']': %s"
-msgstr "E697: リスト型の最後に ']' がありません: %s"
-
 msgid "sort() argument"
 msgstr "sort() の引数"
 
@@ -3128,25 +3146,6 @@ msgstr "-P <親のタイトル>\tVimを親アプリケーションの中で起�
 
 msgid "--windowid <HWND>\tOpen Vim inside another win32 widget"
 msgstr "--windowid <HWND>\t異なるWin32 widgetの内部にVimを開く"
-
-msgid "No display"
-msgstr "ディスプレイが見つかりません"
-
-msgid ": Send failed.\n"
-msgstr ": 送信に失敗しました.\n"
-
-msgid ": Send failed. Trying to execute locally\n"
-msgstr ": 送信に失敗しました。ローカルでの実行を試みています\n"
-
-#, c-format
-msgid "%d of %d edited"
-msgstr "%d 個 (%d 個中) のファイルを編集しました"
-
-msgid "No display: Send expression failed.\n"
-msgstr "ディスプレイがありません: 式の送信に失敗しました.\n"
-
-msgid ": Send expression failed.\n"
-msgstr ": 式の送信に失敗しました.\n"
 
 #, c-format
 msgid "E224: global abbreviation already exists for %s"
@@ -5703,9 +5702,6 @@ msgstr "新しいシェルを起動します\n"
 msgid "Vim: Error reading input, exiting...\n"
 msgstr "Vim: 入力を読込み中のエラーにより終了します...\n"
 
-msgid "Used CUT_BUFFER0 instead of empty selection"
-msgstr "空の選択領域のかわりにCUT_BUFFER0が使用されました"
-
 msgid "E881: Line count changed unexpectedly"
 msgstr "E881: 予期せず行カウントが変わりました"
 
@@ -5928,6 +5924,10 @@ msgstr "E853: 引数名が重複しています: %s"
 
 msgid "E989: Non-default argument follows default argument"
 msgstr "E989: 非デフォルト引数がデフォルト引数の後にあります"
+
+#, c-format
+msgid "E451: Expected }: %s"
+msgstr "E451: } が必要です: %s"
 
 #, c-format
 msgid "E740: Too many arguments for function %s"
@@ -6365,13 +6365,17 @@ msgstr "詳細はメニューの ヘルプ->スポンサー/登録 を参照し�
 #~ msgid "E1004: white space required before and after '%s'"
 #~ msgstr "E274: 丸括弧の前にスペースは許されません"
 
+#, fuzzy, c-format
+#~ msgid "E1069: white space required after '%s'"
+#~ msgstr "E274: 丸括弧の前にスペースは許されません"
+
+#, fuzzy, c-format
+#~ msgid "E1068: No white space allowed before '%s'"
+#~ msgstr "E274: 丸括弧の前にスペースは許されません"
+
 #, c-format
 #~ msgid "E1006: %s is used as an argument"
 #~ msgstr ""
-
-#, fuzzy
-#~ msgid "E1007: No white space allowed before <"
-#~ msgstr "E274: 丸括弧の前にスペースは許されません"
 
 #, fuzzy
 #~ msgid "E1008: Missing <type>"
@@ -6382,8 +6386,16 @@ msgstr "詳細はメニューの ヘルプ->スポンサー/登録 を参照し�
 #~ msgstr "E109: '?' の後に ':' がありません"
 
 #, fuzzy
-#~ msgid "E1055: This Vim is not compiled with float support"
+#~ msgid "E1076: This Vim is not compiled with float support"
 #~ msgstr "このVimにはdiff機能がありません(コンパイル時設定)。"
+
+#, fuzzy
+#~ msgid "E1007: mandatory argument after optional argument"
+#~ msgstr "オプション引数の後にゴミがあります"
+
+#, fuzzy
+#~ msgid "E740: Too many argument types"
+#~ msgstr "E699: 引数が多過ぎます"
 
 #, fuzzy, c-format
 #~ msgid "E1010: Type not recognized: %s"
@@ -6393,17 +6405,13 @@ msgstr "詳細はメニューの ヘルプ->スポンサー/登録 を参照し�
 #~ msgid "E1060: expected dot after name: %s"
 #~ msgstr "E415: 予期せぬ等号です: %s"
 
+#, fuzzy
+#~ msgid "E1074: no white space allowed after dot"
+#~ msgstr "E274: 丸括弧の前にスペースは許されません"
+
 #, fuzzy, c-format
 #~ msgid "E1050: Item not found: %s"
 #~ msgstr "E803: ID はありません: %d"
-
-#, fuzzy
-#~ msgid "E1068: No white space allowed before ,"
-#~ msgstr "E274: 丸括弧の前にスペースは許されません"
-
-#, fuzzy
-#~ msgid "E1069: white space required after ,"
-#~ msgstr "E274: 丸括弧の前にスペースは許されません"
 
 #, fuzzy, c-format
 #~ msgid "E1011: name too long: %s"
@@ -6412,6 +6420,10 @@ msgstr "詳細はメニューの ヘルプ->スポンサー/登録 を参照し�
 #, c-format
 #~ msgid "E1013: type mismatch, expected %s but got %s"
 #~ msgstr ""
+
+#, fuzzy, c-format
+#~ msgid "E1013: argument %d: type mismatch, expected %s but got %s"
+#~ msgstr "E415: 予期せぬ等号です: %s"
 
 #, fuzzy, c-format
 #~ msgid "E1014: Invalid key: %s"
@@ -7157,6 +7169,10 @@ msgstr "E714: リスト型が必要です"
 
 msgid "E897: List or Blob required"
 msgstr "E897: リスト型またはBlob型が必要です"
+
+#, c-format
+msgid "E697: Missing end of List ']': %s"
+msgstr "E697: リスト型の最後に ']' がありません: %s"
 
 #, c-format
 msgid "E712: Argument of %s must be a List or Dictionary"
