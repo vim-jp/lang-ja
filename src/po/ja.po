@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-12 00:11+0900\n"
+"POT-Creation-Date: 2020-05-14 11:03+0900\n"
 "PO-Revision-Date: 2019-12-15 03:28+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -413,11 +413,15 @@ msgstr "W10: 警告: 読込専用ファイルを変更します"
 msgid "E902: Cannot connect to port"
 msgstr "E902: ポートに接続できません"
 
+msgid "E898: socket() in channel_connect()"
+msgstr "E898: channel_connect() 内の socket() が失敗しました"
+
+#, c-format
+msgid "E901: getaddrinfo() in channel_open(): %s"
+msgstr "E901: channel_open() 内の getaddrinfo(): %s"
+
 msgid "E901: gethostbyname() in channel_open()"
 msgstr "E901: channel_open() 内の gethostbyname() が失敗しました"
-
-msgid "E898: socket() in channel_open()"
-msgstr "E898: channel_open() 内の socket() が失敗しました"
 
 msgid "E903: received command with non-string argument"
 msgstr "E903: 非文字列の引数のコマンドを受信しました"
@@ -463,6 +467,47 @@ msgstr "E918: バッファがロードされてなければなりません: %s"
 
 msgid "E916: not a valid job"
 msgstr "E916: 有効なジョブではありません"
+
+msgid "No display"
+msgstr "ディスプレイが見つかりません"
+
+msgid ": Send failed.\n"
+msgstr ": 送信に失敗しました.\n"
+
+msgid ": Send failed. Trying to execute locally\n"
+msgstr ": 送信に失敗しました。ローカルでの実行を試みています\n"
+
+#, c-format
+msgid "%d of %d edited"
+msgstr "%d 個 (%d 個中) のファイルを編集しました"
+
+msgid "No display: Send expression failed.\n"
+msgstr "ディスプレイがありません: 式の送信に失敗しました.\n"
+
+msgid ": Send expression failed.\n"
+msgstr ": 式の送信に失敗しました.\n"
+
+msgid "E240: No connection to the X server"
+msgstr "E240: X サーバーへの接続がありません"
+
+#, c-format
+msgid "E241: Unable to send to %s"
+msgstr "E241: %s へ送ることができません"
+
+msgid "E277: Unable to read a server reply"
+msgstr "E277: サーバーの応答がありません"
+
+msgid "E941: already started a server"
+msgstr "E941: サーバーはすでに開始しています"
+
+msgid "E942: +clientserver feature not available"
+msgstr "E942: +clientserver 機能が無効になっています"
+
+msgid "E258: Unable to send to client"
+msgstr "E258: クライアントへ送ることができません"
+
+msgid "Used CUT_BUFFER0 instead of empty selection"
+msgstr "空の選択領域のかわりにCUT_BUFFER0が使用されました"
 
 msgid "tagname"
 msgstr "タグ名"
@@ -535,22 +580,6 @@ msgstr "%3d  %s %s  行 %ld"
 #, c-format
 msgid "%3d  expr %s"
 msgstr "%3d  expr %s"
-
-#, c-format
-msgid "E720: Missing colon in Dictionary: %s"
-msgstr "E720: 辞書型にコロンがありません: %s"
-
-#, c-format
-msgid "E721: Duplicate key in Dictionary: \"%s\""
-msgstr "E721: 辞書型に重複キーがあります: \"%s\""
-
-#, c-format
-msgid "E722: Missing comma in Dictionary: %s"
-msgstr "E722: 辞書型にカンマがありません: %s"
-
-#, c-format
-msgid "E723: Missing end of Dictionary '}': %s"
-msgstr "E723: 辞書型の最後に '}' がありません: %s"
 
 msgid "extend() argument"
 msgstr "extend() の引数"
@@ -699,17 +728,11 @@ msgstr "E105: :source で取込むファイル以外では :loadkeymap を使え
 msgid "E791: Empty keymap entry"
 msgstr "E791: 空のキーマップエントリ"
 
-msgid "E111: Missing ']'"
-msgstr "E111: ']' が見つかりません"
-
 msgid "E719: Cannot use [:] with a Dictionary"
 msgstr "E719: [:] を辞書型と組み合わせては使えません"
 
 msgid "E806: using Float as a String"
 msgstr "E806: 浮動小数点数を文字列として扱っています"
-
-msgid "E274: No white space allowed before parenthesis"
-msgstr "E274: 丸括弧の前にスペースは許されません"
 
 msgid "E689: Can only index a List, Dictionary or Blob"
 msgstr "E689: リスト型、辞書型、Blob型以外はインデックス指定できません"
@@ -735,21 +758,6 @@ msgstr "E711: リスト型変数に十分な数の要素がありません"
 msgid "E996: Cannot lock a list or dict"
 msgstr "E996: リストあるいは辞書はロックできません"
 
-msgid "E690: Missing \"in\" after :for"
-msgstr "E690: :for の後に \"in\" がありません"
-
-msgid "E109: Missing ':' after '?'"
-msgstr "E109: '?' の後に ':' がありません"
-
-msgid "E804: Cannot use '%' with Float"
-msgstr "E804: '%' を浮動小数点数と組み合わせては使えません"
-
-msgid "E973: Blob literal should have an even number of hex characters"
-msgstr "E973: Blobリテラルは偶数個の16進数文字でなければなりません"
-
-msgid "E110: Missing ')'"
-msgstr "E110: ')' が見つかりません"
-
 msgid "E260: Missing name after ->"
 msgstr "E260: -> の後に名前がありません"
 
@@ -763,9 +771,8 @@ msgstr "E909: 特殊変数はインデックスできません"
 msgid "E112: Option name missing: %s"
 msgstr "E112: オプション名がありません: %s"
 
-#, c-format
-msgid "E113: Unknown option: %s"
-msgstr "E113: 未知のオプションです: %s"
+msgid "E973: Blob literal should have an even number of hex characters"
+msgstr "E973: Blobリテラルは偶数個の16進数文字でなければなりません"
 
 #, c-format
 msgid "E114: Missing quote: %s"
@@ -915,38 +922,13 @@ msgstr "E726: ストライド(前進量)が 0 です"
 msgid "E727: Start past end"
 msgstr "E727: 開始位置が終了位置を越えました"
 
-msgid "E240: No connection to the X server"
-msgstr "E240: X サーバーへの接続がありません"
-
-#, c-format
-msgid "E241: Unable to send to %s"
-msgstr "E241: %s へ送ることができません"
-
-msgid "E277: Unable to read a server reply"
-msgstr "E277: サーバーの応答がありません"
-
-msgid "E941: already started a server"
-msgstr "E941: サーバーはすでに開始しています"
-
-msgid "E942: +clientserver feature not available"
-msgstr "E942: +clientserver 機能が無効になっています"
-
-msgid "E258: Unable to send to client"
-msgstr "E258: クライアントへ送ることができません"
-
 #, c-format
 msgid "E962: Invalid action: '%s'"
 msgstr "E962: 無効な操作です: '%s'"
 
-msgid "(Invalid)"
-msgstr "(無効)"
-
 #, c-format
 msgid "E935: invalid submatch number: %d"
 msgstr "E935: 無効なサブマッチ番号です: %d"
-
-msgid "E18: Unexpected characters in :let"
-msgstr "E18: 予期せぬ文字が :let にありました"
 
 msgid "E991: cannot use =<< here"
 msgstr "E991: ここでは =<< は使えません"
@@ -970,8 +952,8 @@ msgstr "E687: ターゲットがリスト型内の要素よりも少ないです
 msgid "E688: More targets than List items"
 msgstr "E688: ターゲットがリスト型内の要素よりも多いです"
 
-msgid "Double ; in list of variables"
-msgstr "リスト型の値に2つ以上の ; が検出されました"
+msgid "E452: Double ; in list of variables"
+msgstr "E452: リスト型の値に2つ以上の ; が検出されました"
 
 #, c-format
 msgid "E738: Can't list variables for %s"
@@ -980,9 +962,6 @@ msgstr "E738: %s の値を一覧表示できません"
 msgid "E996: Cannot lock an environment variable"
 msgstr "E996: 環境変数はロックできません"
 
-msgid "E996: Cannot lock an option"
-msgstr "E996: オプションはロックできません"
-
 msgid "E996: Cannot lock a register"
 msgstr "E996: レジスタはロックできません"
 
@@ -990,12 +969,15 @@ msgstr "E996: レジスタはロックできません"
 msgid "E108: No such variable: \"%s\""
 msgstr "E108: その変数はありません: \"%s\""
 
-#, c-format
-msgid "E940: Cannot lock or unlock variable %s"
-msgstr "E940: 変数 %s はロックまたはアンロックできません"
-
 msgid "E743: variable nested too deep for (un)lock"
 msgstr "E743: (アン)ロックするには変数の入れ子が深過ぎます"
+
+#~ msgid "E1063: type mismatch for v: variable"
+#~ msgstr ""
+
+#, c-format
+#~ msgid "E1041: Redefining script item %s"
+#~ msgstr ""
 
 #, c-format
 msgid "E963: setting %s to value with wrong type"
@@ -1489,15 +1471,6 @@ msgstr "割込み"
 msgid "E579: :if nesting too deep"
 msgstr "E579: :if の入れ子が深過ぎます"
 
-msgid "E580: :endif without :if"
-msgstr "E580: :if のない :endif があります"
-
-msgid "E581: :else without :if"
-msgstr "E581: :if のない :else があります"
-
-msgid "E582: :elseif without :if"
-msgstr "E582: :if のない :elseif があります"
-
 msgid "E583: multiple :else"
 msgstr "E583: 複数の :else があります"
 
@@ -1506,12 +1479,6 @@ msgstr "E584: :else の後に :elseif があります"
 
 msgid "E585: :while/:for nesting too deep"
 msgstr "E585: :while や :for の入れ子が深過ぎます"
-
-msgid "E586: :continue without :while or :for"
-msgstr "E586: :while や :for のない :continue があります"
-
-msgid "E587: :break without :while or :for"
-msgstr "E587: :while や :for のない :break があります"
 
 msgid "E732: Using :endfor with :while"
 msgstr "E732: :endfor を :while と組み合わせています"
@@ -1522,20 +1489,11 @@ msgstr "E733: :endwhile を :for と組み合わせています"
 msgid "E601: :try nesting too deep"
 msgstr "E601: :try の入れ子が深過ぎます"
 
-msgid "E603: :catch without :try"
-msgstr "E603: :try のない :catch があります"
-
 msgid "E604: :catch after :finally"
 msgstr "E604: :finally の後に :catch があります"
 
-msgid "E606: :finally without :try"
-msgstr "E606: :try のない :finally があります"
-
-msgid "E607: multiple :finally"
-msgstr "E607: 複数の :finally があります"
-
-msgid "E602: :endtry without :try"
-msgstr "E602: :try のない :endtry です"
+msgid "E193: :enddef not inside a function"
+msgstr "E193: 関数の外に :enddef がありました"
 
 msgid "E193: :endfunction not inside a function"
 msgstr "E193: 関数の外に :endfunction がありました"
@@ -1730,6 +1688,9 @@ msgstr "<空>"
 # Added at 10-Mar-2004.
 msgid "E655: Too many symbolic links (cycle?)"
 msgstr "E655: シンボリックリンクが多過ぎます (循環している可能性があります)"
+
+msgid "writefile() first argument must be a List or a Blob"
+msgstr "writefile() の第1引数はリスト型またはBlob型でなければなりません"
 
 msgid "Select Directory dialog"
 msgstr "ディレクトリ選択ダイアログ"
@@ -2584,9 +2545,6 @@ msgstr "未知の vimOption です"
 msgid "keyboard interrupt"
 msgstr "キーボード割込み"
 
-msgid "vim error"
-msgstr "vim エラー"
-
 msgid "cannot create buffer/window command: object is being deleted"
 msgstr ""
 "バッファ/ウィンドウ作成コマンドを作成できません: オブジェクトが消去されていま"
@@ -2757,10 +2715,6 @@ msgstr "E899: %s の引数はリスト型またはBlob型でなければなり�
 #, c-format
 msgid "E696: Missing comma in List: %s"
 msgstr "E696: リスト型にカンマがありません: %s"
-
-#, c-format
-msgid "E697: Missing end of List ']': %s"
-msgstr "E697: リスト型の最後に ']' がありません: %s"
 
 msgid "sort() argument"
 msgstr "sort() の引数"
@@ -3050,8 +3004,8 @@ msgstr "-W <scriptout>\t入力した全コマンドをファイル <scriptout> �
 msgid "-x\t\t\tEdit encrypted files"
 msgstr "-x\t\t\t暗号化されたファイルを編集する"
 
-msgid "-display <display>\tConnect vim to this particular X-server"
-msgstr "-display <display>\tvimを指定した X サーバーに接続する"
+msgid "-display <display>\tConnect Vim to this particular X-server"
+msgstr "-display <display>\tVimを指定した X サーバーに接続する"
 
 msgid "-X\t\t\tDo not connect to X server"
 msgstr "-X\t\t\tXサーバーに接続しない"
@@ -3125,11 +3079,11 @@ msgstr ""
 "\n"
 "gvimによって解釈される引数(Athenaバージョン):\n"
 
-msgid "-display <display>\tRun vim on <display>"
-msgstr "-display <display>\t<display> でvimを実行する"
+msgid "-display <display>\tRun Vim on <display>"
+msgstr "-display <display>\t<display> でVimを実行する"
 
-msgid "-iconic\t\tStart vim iconified"
-msgstr "-iconic\t\t最小化した状態でvimを起動する"
+msgid "-iconic\t\tStart Vim iconified"
+msgstr "-iconic\t\t最小化した状態でVimを起動する"
 
 msgid "-background <color>\tUse <color> for the background (also: -bg)"
 msgstr "-background <color>\t背景色に <color> を使う(同義: -bg)"
@@ -3175,8 +3129,8 @@ msgstr ""
 "\n"
 "gvimによって解釈される引数(GTK+バージョン):\n"
 
-msgid "-display <display>\tRun vim on <display> (also: --display)"
-msgstr "-display <display>\t<display> でvimを実行する(同義: --display)"
+msgid "-display <display>\tRun Vim on <display> (also: --display)"
+msgstr "-display <display>\t<display> でVimを実行する(同義: --display)"
 
 msgid "--role <role>\tSet a unique role to identify the main window"
 msgstr "--role <role>\tメインウィンドウを識別する一意な役割(role)を設定する"
@@ -3192,25 +3146,6 @@ msgstr "-P <親のタイトル>\tVimを親アプリケーションの中で起�
 
 msgid "--windowid <HWND>\tOpen Vim inside another win32 widget"
 msgstr "--windowid <HWND>\t異なるWin32 widgetの内部にVimを開く"
-
-msgid "No display"
-msgstr "ディスプレイが見つかりません"
-
-msgid ": Send failed.\n"
-msgstr ": 送信に失敗しました.\n"
-
-msgid ": Send failed. Trying to execute locally\n"
-msgstr ": 送信に失敗しました。ローカルでの実行を試みています\n"
-
-#, c-format
-msgid "%d of %d edited"
-msgstr "%d 個 (%d 個中) のファイルを編集しました"
-
-msgid "No display: Send expression failed.\n"
-msgstr "ディスプレイがありません: 式の送信に失敗しました.\n"
-
-msgid ": Send expression failed.\n"
-msgstr ": 式の送信に失敗しました.\n"
 
 #, c-format
 msgid "E224: global abbreviation already exists for %s"
@@ -3518,10 +3453,6 @@ msgstr "   ディレクトリ "
 
 msgid "      -- none --\n"
 msgstr "      -- なし --\n"
-
-#  no-c-format
-msgid "%a %b %d %H:%M:%S %Y"
-msgstr "%Y/%m/%d (%a) %H:%M:%S"
 
 msgid "          owned by: "
 msgstr "            所有者: "
@@ -3896,11 +3827,6 @@ msgstr "ビーッ!"
 msgid "E677: Error writing temp file"
 msgstr "E677: 一時ファイル書込中にエラーが発生しました"
 
-#, c-format
-msgid "%ld second ago"
-msgid_plural "%ld seconds ago"
-msgstr[0] "%ld 秒経過しています"
-
 msgid "ERROR: "
 msgstr "エラー: "
 
@@ -4011,6 +3937,11 @@ msgstr "ヤンクできません; とにかく消去"
 msgid "%ld line changed"
 msgid_plural "%ld lines changed"
 msgstr[0] "%ld 行が変更されました"
+
+#, c-format
+msgid "%d line changed"
+msgid_plural "%d lines changed"
+msgstr[0] "%d 行が変更されました"
 
 #, c-format
 msgid "%ld Cols; "
@@ -4441,8 +4372,8 @@ msgstr "Vimの警告"
 msgid "shell returned %d"
 msgstr "シェルがコード %d で終了しました"
 
-msgid "E278: Cannot put a terminal buffer in a popup window"
-msgstr "E278: 端末バッファをポップアップウィンドウ内に置くことはできません"
+msgid "E450: buffer number, text or a list required"
+msgstr "E450: バッファ番号、テキストまたはリストが必要です"
 
 #, c-format
 msgid "E997: Tabpage not found: %d"
@@ -4454,6 +4385,9 @@ msgstr "E993: ウィンドウ %d はポップアップウィンドウではあ�
 
 msgid "E994: Not allowed in a popup window"
 msgstr "E994: ポップアップウィンドウでは許されません"
+
+msgid "E863: Not allowed for a terminal in a popup window"
+msgstr "E863: 端末はポップアップウィンドウでは許されません"
 
 msgid "E750: First use \":profile start {fname}\""
 msgstr "E750: 初めに \":profile start {fname}\" を実行してください"
@@ -4581,6 +4515,10 @@ msgstr "E70: %s%%[] が空です"
 
 msgid "E956: Cannot use pattern recursively"
 msgstr "E956: パターンを再帰的に使うことはできません"
+
+#, c-format
+msgid "E654: missing delimiter after search pattern: %s"
+msgstr "E654: 検索パターンのあとに区切りがありません: %s"
 
 #, c-format
 msgid "E554: Syntax error in %s{...}"
@@ -4872,6 +4810,9 @@ msgstr "E167: :scriptencoding が取込スクリプト以外で使用されま�
 
 msgid "E984: :scriptversion used outside of a sourced file"
 msgstr "E984: :scriptversion が取込スクリプト以外で使用されました"
+
+#~ msgid "E1040: Cannot use :scriptversion after :vim9script"
+#~ msgstr ""
 
 #, c-format
 msgid "E999: scriptversion not supported: %d"
@@ -5256,32 +5197,36 @@ msgid "Reading word file %s..."
 msgstr "単語ファイル %s を読込み中..."
 
 #, c-format
-msgid "Duplicate /encoding= line ignored in %s line %d: %s"
-msgstr "%s の %d 行目の 重複した /encoding= 行を無視しました: %s"
+msgid "Conversion failure for word in %s line %ld: %s"
+msgstr "%s (%ld 行目) の単語を変換できませんでした: %s"
 
 #, c-format
-msgid "/encoding= line after word ignored in %s line %d: %s"
-msgstr "%s の %d 行目の 単語の後の /encoding= 行を無視しました: %s"
+msgid "Duplicate /encoding= line ignored in %s line %ld: %s"
+msgstr "%s の %ld 行目の 重複した /encoding= 行を無視しました: %s"
 
 #, c-format
-msgid "Duplicate /regions= line ignored in %s line %d: %s"
-msgstr "%s の %d 行目の 重複した /regions= 行を無視しました: %s"
+msgid "/encoding= line after word ignored in %s line %ld: %s"
+msgstr "%s の %ld 行目の 単語の後の /encoding= 行を無視しました: %s"
 
 #, c-format
-msgid "Too many regions in %s line %d: %s"
-msgstr "%s の %d 行目、範囲指定が多過ぎます: %s"
+msgid "Duplicate /regions= line ignored in %s line %ld: %s"
+msgstr "%s の %ld 行目の 重複した /regions= 行を無視しました: %s"
 
 #, c-format
-msgid "/ line ignored in %s line %d: %s"
-msgstr "%s の %d 行目の 重複した / 行を無視しました: %s"
+msgid "Too many regions in %s line %ld: %s"
+msgstr "%s の %ld 行目、範囲指定が多過ぎます: %s"
 
 #, c-format
-msgid "Invalid region nr in %s line %d: %s"
-msgstr "%s の %d 行目 無効な nr 領域です: %s"
+msgid "/ line ignored in %s line %ld: %s"
+msgstr "%s の %ld 行目の 重複した / 行を無視しました: %s"
 
 #, c-format
-msgid "Unrecognized flags in %s line %d: %s"
-msgstr "%s の %d 行目 認識不能なフラグです: %s"
+msgid "Invalid region nr in %s line %ld: %s"
+msgstr "%s の %ld 行目 無効な nr 領域です: %s"
+
+#, c-format
+msgid "Unrecognized flags in %s line %ld: %s"
+msgstr "%s の %ld 行目 認識不能なフラグです: %s"
 
 #, c-format
 msgid "Ignored %d words with non-ASCII characters"
@@ -5732,6 +5677,9 @@ msgstr "E967: テキストプロパティ情報が壊れています"
 msgid "E968: Need at least one of 'id' or 'type'"
 msgstr "E968: 最低 1 個の 'id' または 'type' が必要です"
 
+msgid "E860: Need 'id' and 'type' with 'both'"
+msgstr "E860: 'both' には 'id' と 'type' の両方が必要です"
+
 #, c-format
 msgid "E969: Property type %s already defined"
 msgstr "E969: プロパティタイプ %s は既に定義されています"
@@ -5740,14 +5688,23 @@ msgstr "E969: プロパティタイプ %s は既に定義されています"
 msgid "E970: Unknown highlight group name: '%s'"
 msgstr "E970: 未知のハイライトグループ名: '%s'"
 
+msgid "(Invalid)"
+msgstr "(無効)"
+
+#  no-c-format
+msgid "%a %b %d %H:%M:%S %Y"
+msgstr "%Y/%m/%d (%a) %H:%M:%S"
+
+#, c-format
+msgid "%ld second ago"
+msgid_plural "%ld seconds ago"
+msgstr[0] "%ld 秒経過しています"
+
 msgid "new shell started\n"
 msgstr "新しいシェルを起動します\n"
 
 msgid "Vim: Error reading input, exiting...\n"
 msgstr "Vim: 入力を読込み中のエラーにより終了します...\n"
-
-msgid "Used CUT_BUFFER0 instead of empty selection"
-msgstr "空の選択領域のかわりにCUT_BUFFER0が使用されました"
 
 msgid "E881: Line count changed unexpectedly"
 msgstr "E881: 予期せず行カウントが変わりました"
@@ -5961,8 +5918,24 @@ msgstr "E125: 不正な引数です: %s"
 msgid "E853: Duplicate argument name: %s"
 msgstr "E853: 引数名が重複しています: %s"
 
+#, fuzzy, c-format
+#~ msgid "E1059: No white space allowed before colon: %s"
+#~ msgstr "E274: 丸括弧の前にスペースは許されません"
+
+#, fuzzy, c-format
+#~ msgid "E1077: Missing argument type for %s"
+#~ msgstr "E734: 異なった型の変数です %s="
+
+#, fuzzy
+#~ msgid "E1055: Missing name after ..."
+#~ msgstr "E260: -> の後に名前がありません"
+
 msgid "E989: Non-default argument follows default argument"
 msgstr "E989: 非デフォルト引数がデフォルト引数の後にあります"
+
+#, c-format
+msgid "E451: Expected }: %s"
+msgstr "E451: } が必要です: %s"
 
 #, c-format
 msgid "E740: Too many arguments for function %s"
@@ -5995,20 +5968,8 @@ msgid "E699: Too many arguments"
 msgstr "E699: 引数が多過ぎます"
 
 #, c-format
-msgid "E117: Unknown function: %s"
-msgstr "E117: 未知の関数です: %s"
-
-#, c-format
 msgid "E276: Cannot use function as a method: %s"
 msgstr "E276: 関数をメソッドとして使用できません: %s"
-
-#, c-format
-msgid "E933: Function was deleted: %s"
-msgstr "E933: 関数は削除されました: %s"
-
-#, c-format
-msgid "E119: Not enough arguments for function: %s"
-msgstr "E119: 関数の引数が足りません: %s"
 
 #, c-format
 msgid "E120: Using <SID> not in a script context: %s"
@@ -6040,16 +6001,32 @@ msgstr "E124: '(' がありません: %s"
 msgid "E862: Cannot use g: here"
 msgstr "E862: ここでは g: は使えません"
 
+#, fuzzy, c-format
+#~ msgid "E1056: expected a type: %s"
+#~ msgstr "E415: 予期せぬ等号です: %s"
+
 #, c-format
 msgid "E932: Closure function should not be at top level: %s"
 msgstr "E932: クロージャー関数はトップレベルに記述できません: %s"
 
+#, fuzzy
+#~ msgid "E1057: Missing :enddef"
+#~ msgstr "E171: :endif がありません"
+
 msgid "E126: Missing :endfunction"
 msgstr "E126: :endfunction がありません"
+
+#, fuzzy, c-format
+#~ msgid "W1001: Text found after :enddef: %s"
+#~ msgstr "W22: :endfunction の後に文字があります: %s"
 
 #, c-format
 msgid "W22: Text found after :endfunction: %s"
 msgstr "W22: :endfunction の後に文字があります: %s"
+
+#, fuzzy
+#~ msgid "E1058: function nesting too deep"
+#~ msgstr "E218: autocommandの入れ子が深過ぎます"
 
 #, c-format
 msgid "E707: Function name conflicts with variable: %s"
@@ -6066,6 +6043,10 @@ msgstr "E746: 関数名がスクリプトのファイル名と一致しません
 #, c-format
 msgid "E131: Cannot delete function %s: It is in use"
 msgstr "E131: 関数 %s を削除できません: 使用中です"
+
+#, fuzzy, c-format
+#~ msgid "E1084: Cannot delete Vim9 script function %s"
+#~ msgstr "E130: 未知の関数です: %s"
 
 msgid "E133: :return not inside a function"
 msgstr "E133: 関数外に :return がありました"
@@ -6223,6 +6204,9 @@ msgstr "with X11-neXtaw GUI."
 msgid "with X11-Athena GUI."
 msgstr "with X11-Athena GUI."
 
+msgid "with Haiku GUI."
+msgstr "with Haiku GUI."
+
 msgid "with Photon GUI."
 msgstr "with Photon GUI."
 
@@ -6361,6 +6345,317 @@ msgstr "詳細な情報は           :help register<Enter>  "
 msgid "menu  Help->Sponsor/Register  for information    "
 msgstr "詳細はメニューの ヘルプ->スポンサー/登録 を参照して下さい"
 
+#, fuzzy, c-format
+#~ msgid "E1001: variable not found: %s"
+#~ msgstr "E161: ブレークポイントが見つかりません: %s"
+
+#, fuzzy, c-format
+#~ msgid "E1002: Syntax error at %s"
+#~ msgstr "E554: %s{...} 内に文法エラーがあります"
+
+#, c-format
+#~ msgid "E1006: %s is used as an argument"
+#~ msgstr ""
+
+#, c-format
+#~ msgid "E1013: type mismatch, expected %s but got %s"
+#~ msgstr ""
+
+#, fuzzy, c-format
+#~ msgid "E1013: argument %d: type mismatch, expected %s but got %s"
+#~ msgstr "E415: 予期せぬ等号です: %s"
+
+#, fuzzy
+#~ msgid "E1035: wrong argument type for +"
+#~ msgstr "E734: 異なった型の変数です %s="
+
+#, fuzzy, c-format
+#~ msgid "E1036: %c requires number or float arguments"
+#~ msgstr "E466: :winpos には2つの数値の引数が必要です"
+
+#, fuzzy
+#~ msgid "E1035: % requires number arguments"
+#~ msgstr "E465: :winsize には2つの数値の引数が必要です"
+
+#, fuzzy, c-format
+#~ msgid "E1037: Cannot use \"%s\" with %s"
+#~ msgstr "E804: '%' を浮動小数点数と組み合わせては使えません"
+
+#, fuzzy, c-format
+#~ msgid "E1072: Cannot compare %s with %s"
+#~ msgstr "E691: リスト型はリスト型としか比較できません"
+
+#, fuzzy, c-format
+#~ msgid "E1085: Not a callable type: %s"
+#~ msgstr "E108: その変数はありません: \"%s\""
+
+#, fuzzy
+#~ msgid "E1008: Missing <type>"
+#~ msgstr "E600: :endtry がありません"
+
+#, fuzzy
+#~ msgid "E1009: Missing > after type"
+#~ msgstr "E109: '?' の後に ':' がありません"
+
+#, fuzzy
+#~ msgid "E1076: This Vim is not compiled with float support"
+#~ msgstr "このVimにはdiff機能がありません(コンパイル時設定)。"
+
+#, fuzzy
+#~ msgid "E1007: mandatory argument after optional argument"
+#~ msgstr "オプション引数の後にゴミがあります"
+
+#, fuzzy
+#~ msgid "E740: Too many argument types"
+#~ msgstr "E699: 引数が多過ぎます"
+
+#, fuzzy, c-format
+#~ msgid "E1010: Type not recognized: %s"
+#~ msgstr "E421: カラー名や番号を認識できません: %s"
+
+#, fuzzy, c-format
+#~ msgid "E1060: expected dot after name: %s"
+#~ msgstr "E415: 予期せぬ等号です: %s"
+
+#, fuzzy
+#~ msgid "E1074: no white space allowed after dot"
+#~ msgstr "E274: 丸括弧の前にスペースは許されません"
+
+#, fuzzy, c-format
+#~ msgid "E1050: Item not found: %s"
+#~ msgstr "E803: ID はありません: %d"
+
+#, fuzzy, c-format
+#~ msgid "E1011: name too long: %s"
+#~ msgstr "E75: 名前が長過ぎます"
+
+#, fuzzy, c-format
+#~ msgid "E1014: Invalid key: %s"
+#~ msgstr "E181: 無効な属性です: %s"
+
+#~ msgid "[end of lines]"
+#~ msgstr ""
+
+#, fuzzy, c-format
+#~ msgid "E1015: Name expected: %s"
+#~ msgstr "E39: 数値が要求されています"
+
+#, fuzzy
+#~ msgid "E1003: Missing return value"
+#~ msgstr "E170: :endwhile がありません"
+
+#, fuzzy, c-format
+#~ msgid "E1052: Cannot declare an option: %s"
+#~ msgstr "E996: オプションはロックできません"
+
+#, fuzzy, c-format
+#~ msgid "E1065: Cannot declare an environment variable: %s"
+#~ msgstr "E996: 環境変数はロックできません"
+
+#, fuzzy, c-format
+#~ msgid "E1066: Cannot declare a register: %s"
+#~ msgstr "E996: レジスタはロックできません"
+
+#, fuzzy, c-format
+#~ msgid "E1016: Cannot declare a global variable: %s"
+#~ msgstr "E46: 読取専用変数 \"%s\" には値を設定できません"
+
+#, fuzzy, c-format
+#~ msgid "E1078: Cannot declare a buffer variable: %s"
+#~ msgstr "E795: 変数 %s を削除できません"
+
+#, fuzzy, c-format
+#~ msgid "E1079: Cannot declare a window variable: %s"
+#~ msgstr "E795: 変数 %s を削除できません"
+
+#, fuzzy, c-format
+#~ msgid "E1080: Cannot declare a tab variable: %s"
+#~ msgstr "E795: 変数 %s を削除できません"
+
+#, fuzzy, c-format
+#~ msgid "E1064: Cannot declare a v: variable: %s"
+#~ msgstr "E795: 変数 %s を削除できません"
+
+#, fuzzy, c-format
+#~ msgid "E1034: Cannot use reserved name %s"
+#~ msgstr "E247: %s という名前の登録されたサーバーはありません"
+
+#, fuzzy, c-format
+#~ msgid "E1017: Variable already declared: %s"
+#~ msgstr "E801: ID はすでに利用中です: %d"
+
+#, fuzzy, c-format
+#~ msgid "E1018: Cannot assign to a constant: %s"
+#~ msgstr "E160: 未知のsignコマンドです: %s"
+
+#, c-format
+#~ msgid "E1054: Variable already declared in the script: %s"
+#~ msgstr ""
+
+#, fuzzy, c-format
+#~ msgid "E1082: Cannot use a namespaced variable: %s"
+#~ msgstr "E795: 変数 %s を削除できません"
+
+#, fuzzy, c-format
+#~ msgid "E1089: unknown variable: %s"
+#~ msgstr "E108: その変数はありません: \"%s\""
+
+#, fuzzy
+#~ msgid "E1019: Can only concatenate to string"
+#~ msgstr "E691: リスト型はリスト型としか比較できません"
+
+#, fuzzy, c-format
+#~ msgid "E1020: cannot use an operator on a new variable: %s"
+#~ msgstr "E795: 変数 %s を削除できません"
+
+#, fuzzy
+#~ msgid "E1087: cannot use an index when declaring a variable"
+#~ msgstr "E909: 特殊変数はインデックスできません"
+
+#, fuzzy, c-format
+#~ msgid "E1088: cannot use an index on %s"
+#~ msgstr "E996: オプションはロックできません"
+
+#, fuzzy, c-format
+#~ msgid "E1090: Cannot assign to argument %s"
+#~ msgstr "E160: 未知のsignコマンドです: %s"
+
+#, fuzzy
+#~ msgid "E1031: Cannot use void value"
+#~ msgstr "E284: ICの値を設定できません"
+
+#, fuzzy
+#~ msgid "E1021: const requires a value"
+#~ msgstr "E709: [:] にはリスト型かBlob型の値が必要です"
+
+#, fuzzy
+#~ msgid "E1022: type or initialization required"
+#~ msgstr "E808: 数値か浮動小数点数が必要です"
+
+#, fuzzy, c-format
+#~ msgid "E1081: Cannot unlet %s"
+#~ msgstr "E130: 未知の関数です: %s"
+
+#, fuzzy, c-format
+#~ msgid "E1023: variable already defined: %s"
+#~ msgstr "E737: キーは既に存在します: %s"
+
+#~ msgid "E1024: need a List to iterate over"
+#~ msgstr ""
+
+#~ msgid "E1033: catch unreachable after catch-all"
+#~ msgstr ""
+
+#, fuzzy, c-format
+#~ msgid "E1067: Separator mismatch: %s"
+#~ msgstr "E151: マッチはありません: %s"
+
+#, fuzzy
+#~ msgid "E1032: missing :catch or :finally"
+#~ msgstr "E604: :finally の後に :catch があります"
+
+#, fuzzy
+#~ msgid "E1083: missing backtick"
+#~ msgstr "E600: :endtry がありません"
+
+#, c-format
+msgid "E488: Trailing characters: %s"
+msgstr "E488: 余分な文字が後ろにあります: %s"
+
+#, fuzzy
+#~ msgid "E1025: using } outside of a block scope"
+#~ msgstr "E168: :finish が取込スクリプト以外で使用されました"
+
+#, fuzzy
+#~ msgid "E1086: Cannot use :function inside :def"
+#~ msgstr "E130: 未知の関数です: %s"
+
+#, fuzzy
+#~ msgid "E1026: Missing }"
+#~ msgstr "E220: } がありません。"
+
+#, fuzzy
+#~ msgid "E1027: Missing return statement"
+#~ msgstr "E107: カッコ '(' がありません: %s"
+
+#, fuzzy
+#~ msgid "E1028: compile_def_function failed"
+#~ msgstr "E702: ソートの比較関数が失敗しました"
+
+#, fuzzy, c-format
+#~ msgid "E121: Undefined variable: %c:%s"
+#~ msgstr "E121: 未定義の変数です: %s"
+
+#~ msgid "E1051: Expected string or number"
+#~ msgstr ""
+
+#, fuzzy, c-format
+#~ msgid "E1029: Expected %s but got %s"
+#~ msgstr "E415: 予期せぬ等号です: %s"
+
+#, fuzzy, c-format
+#~ msgid "E1061: Cannot find function %s"
+#~ msgstr "E130: 未知の関数です: %s"
+
+#, fuzzy, c-format
+#~ msgid "E1062: Function %s is not compiled"
+#~ msgstr "E764: オプション '%s' は設定されていません"
+
+#, fuzzy
+#~ msgid "E1030: Using a String as a Number"
+#~ msgstr "E910: ジョブを数値として扱っています"
+
+#, fuzzy
+#~ msgid "E1042: import/export can only be used in vim9script"
+#~ msgstr "E785: complete() は挿入モードでしか利用できません"
+
+#, fuzzy
+#~ msgid "E1038: vim9script can only be used in a script"
+#~ msgstr "E785: complete() は挿入モードでしか利用できません"
+
+#~ msgid "E1039: vim9script must be the first command in a script"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "E1044: export with invalid argument"
+#~ msgstr "E474: 無効な引数です"
+
+#, fuzzy
+#~ msgid "E1043: Invalid command after :export"
+#~ msgstr "E182: 無効なコマンド名です"
+
+#, fuzzy, c-format
+#~ msgid "E1049: Item not exported in script: %s"
+#~ msgstr "E985: .= はスクリプトバージョン 2 では対応していません"
+
+#, fuzzy, c-format
+#~ msgid "E1048: Item not found in script: %s"
+#~ msgstr "E486: パターンは見つかりませんでした: %s"
+
+#, fuzzy
+#~ msgid "E1045: Missing \"as\" after *"
+#~ msgstr "E690: :for の後に \"in\" がありません"
+
+#, fuzzy
+#~ msgid "E1070: Missing \"from\""
+#~ msgstr "E170: :endfor がありません"
+
+#, fuzzy
+#~ msgid "E1071: Invalid string after \"from\""
+#~ msgstr "E71: %s%% の後に不正な文字がありました"
+
+#, fuzzy, c-format
+#~ msgid "E1053: Could not import \"%s\""
+#~ msgstr "E321: \"%s\" はリロードできませんでした"
+
+#, fuzzy
+#~ msgid "E1046: Missing comma in import"
+#~ msgstr "E696: リスト型にカンマがありません: %s"
+
+#, fuzzy
+#~ msgid "E1047: syntax error in import"
+#~ msgstr "E554: %s{...} 内に文法エラーがあります"
+
 msgid ""
 "\n"
 "# Buffer list:\n"
@@ -6490,8 +6785,8 @@ msgid "# Value of 'encoding' when this file was written\n"
 msgstr "# このファイルが書かれた時の 'encoding' の値\n"
 
 #, c-format
-msgid "Reading viminfo file \"%s\"%s%s%s"
-msgstr "viminfoファイル \"%s\"%s%s%s を読込み中"
+msgid "Reading viminfo file \"%s\"%s%s%s%s"
+msgstr "viminfoファイル \"%s\"%s%s%s%s を読込み中"
 
 msgid " info"
 msgstr " 情報"
@@ -6559,6 +6854,9 @@ msgstr "E814: autocmdウィンドウしか残らないため、ウィンドウ�
 msgid "E445: Other window contains changes"
 msgstr "E445: 他のウィンドウには変更があります"
 
+msgid "E366: Not allowed to enter a popup window"
+msgstr "E366: ポップアップウィンドウに入ることは許されません"
+
 #, c-format
 msgid "E370: Could not load library %s"
 msgstr "E370: ライブラリ %s をロードできませんでした"
@@ -6625,8 +6923,20 @@ msgstr ""
 msgid "E171: Missing :endif"
 msgstr "E171: :endif がありません"
 
+msgid "E603: :catch without :try"
+msgstr "E603: :try のない :catch があります"
+
+msgid "E606: :finally without :try"
+msgstr "E606: :try のない :finally があります"
+
+msgid "E607: multiple :finally"
+msgstr "E607: 複数の :finally があります"
+
 msgid "E600: Missing :endtry"
 msgstr "E600: :endtry がありません"
+
+msgid "E602: :endtry without :try"
+msgstr "E602: :try のない :endtry です"
 
 msgid "E170: Missing :endwhile"
 msgstr "E170: :endwhile がありません"
@@ -6894,14 +7204,29 @@ msgid "E118: Too many arguments for function: %s"
 msgstr "E118: 関数の引数が多過ぎます: %s"
 
 #, c-format
+msgid "E119: Not enough arguments for function: %s"
+msgstr "E119: 関数の引数が足りません: %s"
+
+#, c-format
+msgid "E933: Function was deleted: %s"
+msgstr "E933: 関数は削除されました: %s"
+
+#, c-format
 msgid "E716: Key not present in Dictionary: %s"
 msgstr "E716: 辞書型にキーが存在しません: %s"
 
 msgid "E714: List required"
 msgstr "E714: リスト型が必要です"
 
+msgid "E1090: List, Dict or Blob required"
+msgstr "E1090: リスト型、辞書型またはBlob型が必要です"
+
 msgid "E897: List or Blob required"
 msgstr "E897: リスト型またはBlob型が必要です"
+
+#, c-format
+msgid "E697: Missing end of List ']': %s"
+msgstr "E697: リスト型の最後に ']' がありません: %s"
 
 #, c-format
 msgid "E712: Argument of %s must be a List or Dictionary"
@@ -6911,8 +7236,21 @@ msgstr "E712: %s の引数はリスト型または辞書型でなければなり
 msgid "E896: Argument of %s must be a List, Dictionary or Blob"
 msgstr "E896: %s の引数はリスト型、辞書型またはBlob型でなければなりません"
 
+msgid "E804: Cannot use '%' with Float"
+msgstr "E804: '%' を浮動小数点数と組み合わせては使えません"
+
 msgid "E908: using an invalid value as a String"
 msgstr "E908: 無効な値を文字列として扱っています"
+
+msgid "E996: Cannot lock an option"
+msgstr "E996: オプションはロックできません"
+
+#, c-format
+msgid "E113: Unknown option: %s"
+msgstr "E113: 未知のオプションです: %s"
+
+msgid "E18: Unexpected characters in :let"
+msgstr "E18: 予期せぬ文字が :let にありました"
 
 msgid "E47: Error while reading errorfile"
 msgstr "E47: エラーファイルの読込中にエラーが発生しました"
@@ -6922,6 +7260,12 @@ msgstr "E48: サンドボックスでは許されません"
 
 msgid "E523: Not allowed here"
 msgstr "E523: ここでは許可されません"
+
+msgid "E578: Not allowed to change text here"
+msgstr "E578: ここでテキストを変更することは許可されません"
+
+msgid "E565: Not allowed to change text or change window"
+msgstr "E565: テキストを変更したりウィンドウを変更することは許可されません"
 
 msgid "E359: Screen mode setting not supported"
 msgstr "E359: スクリーンモードの設定には対応していません"
@@ -6981,6 +7325,25 @@ msgstr "E81: スクリプト以外で<SID>が使われました"
 msgid "E107: Missing parentheses: %s"
 msgstr "E107: カッコ '(' がありません: %s"
 
+msgid "E110: Missing ')'"
+msgstr "E110: ')' が見つかりません"
+
+#, c-format
+msgid "E720: Missing colon in Dictionary: %s"
+msgstr "E720: 辞書型にコロンがありません: %s"
+
+#, c-format
+msgid "E721: Duplicate key in Dictionary: \"%s\""
+msgstr "E721: 辞書型に重複キーがあります: \"%s\""
+
+#, c-format
+msgid "E722: Missing comma in Dictionary: %s"
+msgstr "E722: 辞書型にカンマがありません: %s"
+
+#, c-format
+msgid "E723: Missing end of Dictionary '}': %s"
+msgstr "E723: 辞書型の最後に '}' がありません: %s"
+
 msgid "E449: Invalid expression received"
 msgstr "E449: 無効な式を受け取りました"
 
@@ -7029,6 +7392,53 @@ msgstr "E957: 無効なウィンドウ番号です"
 #, c-format
 msgid "E686: Argument of %s must be a List"
 msgstr "E686: %s の引数はリスト型でなければなりません"
+
+msgid "E109: Missing ':' after '?'"
+msgstr "E109: '?' の後に ':' がありません"
+
+msgid "E690: Missing \"in\" after :for"
+msgstr "E690: :for の後に \"in\" がありません"
+
+#, c-format
+msgid "E117: Unknown function: %s"
+msgstr "E117: 未知の関数です: %s"
+
+msgid "E111: Missing ']'"
+msgstr "E111: ']' が見つかりません"
+
+msgid "E581: :else without :if"
+msgstr "E581: :if のない :else があります"
+
+msgid "E582: :elseif without :if"
+msgstr "E582: :if のない :elseif があります"
+
+msgid "E580: :endif without :if"
+msgstr "E580: :if のない :endif があります"
+
+msgid "E586: :continue without :while or :for"
+msgstr "E586: :while や :for のない :continue があります"
+
+msgid "E587: :break without :while or :for"
+msgstr "E587: :while や :for のない :break があります"
+
+msgid "E274: No white space allowed before parenthesis"
+msgstr "E274: 丸括弧の前にスペースは許されません"
+
+#, fuzzy, c-format
+#~ msgid "E1004: white space required before and after '%s'"
+#~ msgstr "E274: 丸括弧の前にスペースは許されません"
+
+#, fuzzy, c-format
+#~ msgid "E1069: white space required after '%s'"
+#~ msgstr "E274: 丸括弧の前にスペースは許されません"
+
+#, fuzzy, c-format
+#~ msgid "E1068: No white space allowed before '%s'"
+#~ msgstr "E274: 丸括弧の前にスペースは許されません"
+
+#, c-format
+msgid "E940: Cannot lock or unlock variable %s"
+msgstr "E940: 変数 %s はロックまたはアンロックできません"
 
 msgid "search hit TOP, continuing at BOTTOM"
 msgstr "上まで検索したので下に戻ります"
@@ -7137,8 +7547,8 @@ msgid "list index out of range"
 msgstr "リスト範囲外のインデックスです"
 
 #, c-format
-msgid "internal error: failed to get vim list item %d"
-msgstr "内部エラー: vimのリスト要素 %d の取得に失敗しました"
+msgid "internal error: failed to get Vim list item %d"
+msgstr "内部エラー: Vimのリスト要素 %d の取得に失敗しました"
 
 msgid "slice step cannot be zero"
 msgstr "スライスのステップに 0 は指定できません"
@@ -7148,8 +7558,8 @@ msgid "attempt to assign sequence of size greater than %d to extended slice"
 msgstr "長さ %d の拡張スライスに、より長いスライスを割り当てようとしました"
 
 #, c-format
-msgid "internal error: no vim list item %d"
-msgstr "内部エラー: vimのリスト要素 %d はありません"
+msgid "internal error: no Vim list item %d"
+msgstr "内部エラー: Vimのリスト要素 %d はありません"
 
 msgid "internal error: not enough list items"
 msgstr "内部エラー: リストに十分な要素がありません"
@@ -7257,20 +7667,20 @@ msgstr "コードの実行に失敗しました"
 msgid "E858: Eval did not return a valid python object"
 msgstr "E858: 式評価は有効なpythonオブジェクトを返しませんでした"
 
-msgid "E859: Failed to convert returned python object to vim value"
-msgstr "E859: 返されたpythonオブジェクトをvimの値に変換できませんでした"
+msgid "E859: Failed to convert returned python object to a Vim value"
+msgstr "E859: 返されたpythonオブジェクトをVimの値に変換できませんでした"
 
 #, c-format
-msgid "unable to convert %s to vim dictionary"
-msgstr "%s vimの辞書型に変換できません"
+msgid "unable to convert %s to a Vim dictionary"
+msgstr "%s をVimの辞書に変換できません"
 
 #, c-format
-msgid "unable to convert %s to vim list"
-msgstr "%s をvimのリストに変換できません"
+msgid "unable to convert %s to a Vim list"
+msgstr "%s をVimのリストに変換できません"
 
 #, c-format
-msgid "unable to convert %s to vim structure"
-msgstr "%s をvimの構造体に変換できません"
+msgid "unable to convert %s to a Vim structure"
+msgstr "%s をVimの構造体に変換できません"
 
 msgid "internal error: NULL reference passed"
 msgstr "内部エラー: NULL参照が渡されました"
