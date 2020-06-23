@@ -6409,7 +6409,7 @@ msgid "E1009: Missing > after type"
 msgstr "E1009: 型の後に > がありません"
 
 msgid "E1076: This Vim is not compiled with float support"
-msgstr "E1076: このVimは浮動小数点サポート付きでコンパイルされていません"
+msgstr "E1076: このVimは浮動小数点数サポート付きでコンパイルされていません"
 
 msgid "E1007: mandatory argument after optional argument"
 msgstr "E1007: オプション引数の後に必須引数があります"
@@ -6483,7 +6483,7 @@ msgstr "E1017: 変数はすでに宣言されています: %s"
 
 #, c-format
 msgid "E1018: Cannot assign to a constant: %s"
-msgstr "E1018: 定数には代入手来ません: %s"
+msgstr "E1018: 定数には代入できません: %s"
 
 #, c-format
 msgid "E1054: Variable already declared in the script: %s"
