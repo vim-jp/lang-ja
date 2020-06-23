@@ -4519,7 +4519,7 @@ msgid "E877: (NFA regexp) Invalid character class: %d"
 msgstr "E877: (NFA 正規表現) 無効な文字クラスです: %d"
 
 msgid "E951: \\% value too large"
-msgstr "E951: \\% 値が長過ぎます"
+msgstr "E951: \\% 値が大きすぎます"
 
 #, c-format
 msgid "E867: (NFA) Unknown operator '\\z%c'"
@@ -6378,7 +6378,7 @@ msgstr "E1013: 型が不一致です。%s が必要ですが %s でした"
 
 #, c-format
 msgid "E1013: argument %d: type mismatch, expected %s but got %s"
-msgstr "E1013: argument %d: 型が不一致です。%s が必要ですが %s でした"
+msgstr "E1013: 引数 %d: 型が不一致です。%s が必要ですが %s でした"
 
 msgid "E1051: wrong argument type for +"
 msgstr "E1051: + の引数の型が違います"
