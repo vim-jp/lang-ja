@@ -4519,7 +4519,7 @@ msgid "E877: (NFA regexp) Invalid character class: %d"
 msgstr "E877: (NFA 正規表現) 無効な文字クラスです: %d"
 
 msgid "E951: \\% value too large"
-msgstr "E951: \\% 値が大きすぎます"
+msgstr "E951: \\% 値が大き過ぎます"
 
 #, c-format
 msgid "E867: (NFA) Unknown operator '\\z%c'"
@@ -6537,7 +6537,7 @@ msgid "E1032: missing :catch or :finally"
 msgstr "E1032: :catch または :finally がありません"
 
 msgid "E1083: missing backtick"
-msgstr "E1083: バックティックがありません"
+msgstr "E1083: バッククォートがありません"
 
 #, c-format
 msgid "E488: Trailing characters: %s"
