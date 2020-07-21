@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-23 10:05+0900\n"
+"POT-Creation-Date: 2020-07-21 09:44+0900\n"
 "PO-Revision-Date: 2019-12-15 03:28+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -1503,9 +1503,9 @@ msgid_plural "%ld lines, "
 msgstr[0] "%ld 行, "
 
 #, c-format
-msgid "%lld character"
-msgid_plural "%lld characters"
-msgstr[0] "%lld 文字"
+msgid "%lld byte"
+msgid_plural "%lld bytes"
+msgstr[0] "%lld バイト"
 
 msgid "[noeol]"
 msgstr "[noeol]"
@@ -1604,6 +1604,9 @@ msgstr "ファイル読込ダイアログ"
 
 msgid "E338: Sorry, no file browser in console mode"
 msgstr "E338: コンソールモードではファイルブラウザを使えません、ごめんなさい"
+
+msgid "no matches"
+msgstr "該当なし"
 
 msgid "E854: path too long for completion"
 msgstr "E854: パスが長過ぎて補完できません"
@@ -2118,29 +2121,6 @@ msgstr "W18: グループ名に不正な文字があります"
 
 msgid "E849: Too many highlight and syntax groups"
 msgstr "E849: ハイライトと構文グループが多過ぎます"
-
-#, c-format
-msgid "E799: Invalid ID: %d (must be greater than or equal to 1)"
-msgstr "E799: 無効な ID: %d (1 以上でなければなりません)"
-
-#, c-format
-msgid "E801: ID already taken: %d"
-msgstr "E801: ID はすでに利用中です: %d"
-
-msgid "E290: List or number required"
-msgstr "E290: リストか数値が必要です"
-
-#, c-format
-msgid "E802: Invalid ID: %d (must be greater than or equal to 1)"
-msgstr "E802: 無効な ID: %d (1 以上でなければなりません)"
-
-#, c-format
-msgid "E803: ID not found: %d"
-msgstr "E803: ID はありません: %d"
-
-#, c-format
-msgid "E798: ID is reserved for \":match\": %d"
-msgstr "E798: ID は \":match\" のために予約されています: %d"
 
 msgid "Add a new database"
 msgstr "新データベースを追加"
@@ -3138,6 +3118,29 @@ msgid ""
 msgstr ""
 "\n"
 "変更     行   列 テキスト"
+
+#, c-format
+msgid "E799: Invalid ID: %d (must be greater than or equal to 1)"
+msgstr "E799: 無効な ID: %d (1 以上でなければなりません)"
+
+#, c-format
+msgid "E801: ID already taken: %d"
+msgstr "E801: ID はすでに利用中です: %d"
+
+msgid "E290: List or number required"
+msgstr "E290: リストか数値が必要です"
+
+#, c-format
+msgid "E802: Invalid ID: %d (must be greater than or equal to 1)"
+msgstr "E802: 無効な ID: %d (1 以上でなければなりません)"
+
+#, c-format
+msgid "E803: ID not found: %d"
+msgstr "E803: ID はありません: %d"
+
+#, c-format
+msgid "E798: ID is reserved for \":match\": %d"
+msgstr "E798: ID は \":match\" のために予約されています: %d"
 
 msgid "E543: Not a valid codepage"
 msgstr "E543: 無効なコードページです"
@@ -4379,6 +4382,9 @@ msgstr "E683: ファイル名が無いか無効なパターンです"
 msgid "Cannot open file \"%s\""
 msgstr "ファイル \"%s\" を開けません"
 
+msgid "cannot have both a list and a \"what\" argument"
+msgstr "リストと \"what\" 引数の両方を指定することはできません"
+
 msgid "E681: Buffer is not loaded"
 msgstr "E681: バッファは読み込まれませんでした"
 
@@ -5572,6 +5578,13 @@ msgstr "E955: 端末バッファではありません"
 msgid "E982: ConPTY is not available"
 msgstr "E982: ConPTY が無効です"
 
+msgid ""
+"E856: assert_fails() second argument must be a string or a list with one or "
+"two strings"
+msgstr ""
+"E856: assert_fails() の第2引数は文字列または1個か2個の文字列のリストでなけれ"
+"ばなりません"
+
 #, c-format
 msgid "E971: Property type %s does not exist"
 msgstr "E971: プロパティタイプ %s がありません"
@@ -6373,6 +6386,10 @@ msgid "E1031: Cannot use void value"
 msgstr "E1031: void 値は使用できません"
 
 #, c-format
+msgid "E1075: Namespace not supported: %s"
+msgstr "E1075: ネームスペースには対応していません: %s"
+
+#, c-format
 msgid "E1013: type mismatch, expected %s but got %s"
 msgstr "E1013: 型が不一致です。%s が必要ですが %s でした"
 
@@ -6421,6 +6438,9 @@ msgstr "E740: 引数の型が多過ぎます"
 msgid "E1010: Type not recognized: %s"
 msgstr "E1010: 型を認識できません: %s"
 
+msgid "E1097: line incomplete"
+msgstr "E1097: 行が不完全です"
+
 #, c-format
 msgid "E1060: expected dot after name: %s"
 msgstr "E1060: 名前の後にドットが必要です: %s"
@@ -6446,6 +6466,9 @@ msgstr "E1014: 無効なキーです: %s"
 #, c-format
 msgid "E1015: Name expected: %s"
 msgstr "E1015: 名前が要求されています: %s"
+
+msgid "E1096: Returning a value in a function without a return type"
+msgstr "E1096: 戻り値の型がない関数で値を返しています"
 
 msgid "E1003: Missing return value"
 msgstr "E1003: 戻り値がありません"
@@ -6523,9 +6546,6 @@ msgstr "E1081: %s を unlet できません"
 msgid "E1023: variable already defined: %s"
 msgstr "E1023: 変数は既に定義されています: %s"
 
-msgid "E1024: need a List to iterate over"
-msgstr "E1024: 繰り返しにはリストが必要です"
-
 msgid "E1033: catch unreachable after catch-all"
 msgstr "E1033: 全てをcatchした後のcatchには到達しません"
 
@@ -6552,6 +6572,10 @@ msgstr "E1095: :return の後に到達不能なコードがあります"
 msgid "E1086: Cannot use :function inside :def"
 msgstr "E1086: :def の中で :function は使用できません"
 
+#, c-format
+msgid "E476: Invalid command: %s"
+msgstr "E476: 無効なコマンドです: %s"
+
 msgid "E1026: Missing }"
 msgstr "E1026: } がありません"
 
@@ -6576,6 +6600,10 @@ msgstr "E1029: %s が期待されていますが %s でした"
 #, c-format
 msgid "E1093: Expected %d items but got %d"
 msgstr "E1093: %d 個の要素が期待されていますが %d 個でした"
+
+#, c-format
+msgid "E1099: Unknown error while executing %s"
+msgstr "E1099: %s を実行中に未知のエラーです"
 
 #, c-format
 msgid "E1061: Cannot find function %s"
@@ -6614,6 +6642,12 @@ msgstr "E1049: 要素がスクリプト内でエクスポートされていま�
 msgid "E1048: Item not found in script: %s"
 msgstr "E1048: 要素がスクリプト内で見つかりません: %s"
 
+msgid "E1047: syntax error in import"
+msgstr "E1047: import 内に文法エラーがあります"
+
+msgid "E1046: Missing comma in import"
+msgstr "E1046: import にカンマがありません"
+
 msgid "E1045: Missing \"as\" after *"
 msgstr "E1045: * の後に \"as\" がありません"
 
@@ -6626,12 +6660,6 @@ msgstr "E1071: \"from\" の後に不正な文字があります"
 #, c-format
 msgid "E1053: Could not import \"%s\""
 msgstr "E1053: \"%s\" をインポートできませんでした"
-
-msgid "E1046: Missing comma in import"
-msgstr "E1046: import にカンマがありません"
-
-msgid "E1047: syntax error in import"
-msgstr "E1047: import 内に文法エラーがあります"
 
 msgid ""
 "\n"
@@ -6821,9 +6849,6 @@ msgstr "E443: 他のウィンドウが分割されている時には順回でき
 
 msgid "E444: Cannot close last window"
 msgstr "E444: 最後のウィンドウを閉じることはできません"
-
-msgid "E813: Cannot close autocmd or popup window"
-msgstr "E813: autocmdウィンドウまたはポップアップウィンドウは閉じられません"
 
 msgid "E814: Cannot close window, only autocmd window would remain"
 msgstr "E814: autocmdウィンドウしか残らないため、ウィンドウは閉じられません"
@@ -7373,6 +7398,9 @@ msgstr "E919: ディレクトリが '%s' の中にありません: \"%s\""
 
 msgid "E952: Autocommand caused recursive behavior"
 msgstr "E952: Autocommandが再帰を引き起こしました"
+
+msgid "E813: Cannot close autocmd or popup window"
+msgstr "E813: autocmdウィンドウまたはポップアップウィンドウは閉じられません"
 
 msgid "E328: Menu only exists in another mode"
 msgstr "E328: メニューは他のモードにだけあります"
