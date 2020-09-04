@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-21 09:44+0900\n"
+"POT-Creation-Date: 2020-09-04 11:09+0900\n"
 "PO-Revision-Date: 2019-12-15 03:28+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -32,6 +32,9 @@ msgstr "E164: 最初のファイルより前には行けません"
 
 msgid "E165: Cannot go beyond last file"
 msgstr "E165: 最後のファイルを越えて後には行けません"
+
+msgid "E610: No argument to delete"
+msgstr "E610: 削除する引数がありません"
 
 msgid "E249: window layout changed unexpectedly"
 msgstr "E249: 予期せずウィンドウの配置が変わりました"
@@ -725,9 +728,6 @@ msgstr "E105: :source で取込むファイル以外では :loadkeymap を使え
 msgid "E791: Empty keymap entry"
 msgstr "E791: 空のキーマップエントリ"
 
-msgid "E719: Cannot use [:] with a Dictionary"
-msgstr "E719: [:] を辞書型と組み合わせては使えません"
-
 msgid "E689: Can only index a List, Dictionary or Blob"
 msgstr "E689: リスト型、辞書型、Blob型以外はインデックス指定できません"
 
@@ -757,9 +757,6 @@ msgstr "E260: -> の後に名前がありません"
 
 msgid "E695: Cannot index a Funcref"
 msgstr "E695: 関数参照型はインデックスできません"
-
-msgid "E909: Cannot index a special variable"
-msgstr "E909: 特殊変数はインデックスできません"
 
 msgid "Not enough memory to set references, garbage collection aborted!"
 msgstr ""
@@ -844,8 +841,8 @@ msgstr "E172: マーカーがありません"
 msgid "E990: Missing end marker '%s'"
 msgstr "E990: 終端マーカーがありません '%s'"
 
-msgid "E985: .= is not supported with script version 2"
-msgstr "E985: .= はスクリプトバージョン 2 では対応していません"
+msgid "E985: .= is not supported with script version >= 2"
+msgstr "E985: .= はスクリプトバージョン 2 以上では対応していません"
 
 msgid "E687: Less targets than List items"
 msgstr "E687: ターゲットがリスト型内の要素よりも少ないです"
@@ -872,13 +869,6 @@ msgstr "E108: その変数はありません: \"%s\""
 
 msgid "E743: variable nested too deep for (un)lock"
 msgstr "E743: (アン)ロックするには変数の入れ子が深過ぎます"
-
-msgid "E1063: type mismatch for v: variable"
-msgstr "E1063: v: 変数の型が一致しません"
-
-#, c-format
-msgid "E1041: Redefining script item %s"
-msgstr "E1041: スクリプト要素 %s を再定義しています"
 
 #, c-format
 msgid "E963: setting %s to value with wrong type"
@@ -1059,46 +1049,6 @@ msgstr "パターンが全ての行で見つかりました: %s"
 msgid "Pattern not found: %s"
 msgstr "パターンは見つかりませんでした: %s"
 
-msgid "E478: Don't panic!"
-msgstr "E478: 慌てないでください"
-
-#, c-format
-msgid "E661: Sorry, no '%s' help for %s"
-msgstr "E661: 残念ですが '%s' のヘルプが %s にはありません"
-
-#, c-format
-msgid "E149: Sorry, no help for %s"
-msgstr "E149: 残念ですが %s にはヘルプがありません"
-
-#, c-format
-msgid "Sorry, help file \"%s\" not found"
-msgstr "残念ですがヘルプファイル \"%s\" が見つかりません"
-
-#, c-format
-msgid "E151: No match: %s"
-msgstr "E151: マッチはありません: %s"
-
-#, c-format
-msgid "E152: Cannot open %s for writing"
-msgstr "E152: 書込み用に %s を開けません"
-
-#, c-format
-msgid "E153: Unable to open %s for reading"
-msgstr "E153: 読込用に %s を開けません"
-
-# Added at 29-Apr-2004.
-#, c-format
-msgid "E670: Mix of help file encodings within a language: %s"
-msgstr "E670: 1つの言語のヘルプファイルに複数のエンコードが混在しています: %s"
-
-#, c-format
-msgid "E154: Duplicate tag \"%s\" in file %s/%s"
-msgstr "E154: タグ \"%s\" がファイル %s/%s に重複しています"
-
-#, c-format
-msgid "E150: Not a directory: %s"
-msgstr "E150: ディレクトリではありません: %s"
-
 msgid "No old files"
 msgstr "古いファイルはありません"
 
@@ -1128,14 +1078,6 @@ msgstr "W20: 要求されたpython 2.xは対応していません、ファイル
 #, c-format
 msgid "W21: Required python version 3.x not supported, ignoring file: %s"
 msgstr "W21: 要求されたpython 3.xは対応していません、ファイルを無視します: %s"
-
-#, c-format
-msgid "Current %slanguage: \"%s\""
-msgstr "現在の %s言語: \"%s\""
-
-#, c-format
-msgid "E197: Cannot set language to \"%s\""
-msgstr "E197: 言語を \"%s\" に設定できません"
 
 msgid "Entering Ex mode.  Type \"visual\" to go to Normal mode."
 msgstr ""
@@ -1179,16 +1121,16 @@ msgstr "逆さまの範囲が指定されました、入替えますか?"
 msgid "E494: Use w or w>>"
 msgstr "E494: w もしくは w>> を使用してください"
 
+msgid "E943: Command table needs to be updated, run 'make cmdidxs'"
+msgstr ""
+"E943: コマンドテーブルを更新する必要があります、'make cmdidxs' を実行してくだ"
+"さい"
+
 msgid ""
 "INTERNAL: Cannot use EX_DFLALL with ADDR_NONE, ADDR_UNSIGNED or ADDR_QUICKFIX"
 msgstr ""
 "内部エラー: EX_DFLALL を ADDR_NONE, ADDR_UNSIGNED や ADDR_QUICKFIX とともに使"
 "うことはできません"
-
-msgid "E943: Command table needs to be updated, run 'make cmdidxs'"
-msgstr ""
-"E943: コマンドテーブルを更新する必要があります、'make cmdidxs' を実行してくだ"
-"さい"
 
 msgid "E319: Sorry, the command is not available in this version"
 msgstr "E319: このバージョンではこのコマンドは利用できません、ごめんなさい"
@@ -1301,6 +1243,9 @@ msgstr "E497: \"<amatch>\"を置き換えるautocommandの該当名がありま�
 
 msgid "E498: no :source file name to substitute for \"<sfile>\""
 msgstr "E498: \"<sfile>\"を置き換える :source 対象ファイル名がありません"
+
+msgid "E489: no call stack to substitute for \"<stack>\""
+msgstr "E489: \"<stack>\"を置き換えるコールスタックがありません"
 
 msgid "E842: no line number to use for \"<slnum>\""
 msgstr "E842: \"<slnum>\"を置き換える行番号がありません"
@@ -2055,6 +2000,46 @@ msgstr "E365: PostScriptファイルの印刷に失敗しました"
 msgid "Print job sent."
 msgstr "印刷ジョブを送信しました。"
 
+msgid "E478: Don't panic!"
+msgstr "E478: 慌てないでください"
+
+#, c-format
+msgid "E661: Sorry, no '%s' help for %s"
+msgstr "E661: 残念ですが '%s' のヘルプが %s にはありません"
+
+#, c-format
+msgid "E149: Sorry, no help for %s"
+msgstr "E149: 残念ですが %s にはヘルプがありません"
+
+#, c-format
+msgid "Sorry, help file \"%s\" not found"
+msgstr "残念ですがヘルプファイル \"%s\" が見つかりません"
+
+#, c-format
+msgid "E151: No match: %s"
+msgstr "E151: マッチはありません: %s"
+
+#, c-format
+msgid "E152: Cannot open %s for writing"
+msgstr "E152: 書込み用に %s を開けません"
+
+#, c-format
+msgid "E153: Unable to open %s for reading"
+msgstr "E153: 読込用に %s を開けません"
+
+# Added at 29-Apr-2004.
+#, c-format
+msgid "E670: Mix of help file encodings within a language: %s"
+msgstr "E670: 1つの言語のヘルプファイルに複数のエンコードが混在しています: %s"
+
+#, c-format
+msgid "E154: Duplicate tag \"%s\" in file %s/%s"
+msgstr "E154: タグ \"%s\" がファイル %s/%s に重複しています"
+
+#, c-format
+msgid "E150: Not a directory: %s"
+msgstr "E150: ディレクトリではありません: %s"
+
 msgid "E679: recursive loop loading syncolor.vim"
 msgstr "E679: syncolor.vim の再帰呼び出しを検出しました"
 
@@ -2653,6 +2638,14 @@ msgstr "remove() の引数"
 
 msgid "reverse() argument"
 msgstr "reverse() の引数"
+
+#, c-format
+msgid "Current %slanguage: \"%s\""
+msgstr "現在の %s言語: \"%s\""
+
+#, c-format
+msgid "E197: Cannot set language to \"%s\""
+msgstr "E197: 言語を \"%s\" に設定できません"
 
 msgid "Unknown option argument"
 msgstr "未知のオプション引数です"
@@ -4733,9 +4726,6 @@ msgstr "E167: :scriptencoding が取込スクリプト以外で使用されま�
 msgid "E984: :scriptversion used outside of a sourced file"
 msgstr "E984: :scriptversion が取込スクリプト以外で使用されました"
 
-msgid "E1040: Cannot use :scriptversion after :vim9script"
-msgstr "E1040: :vim9script の後に :scriptversion は使用できません"
-
 #, c-format
 msgid "E999: scriptversion not supported: %d"
 msgstr "E999: scriptversion はサポートされていません: %d"
@@ -5644,6 +5634,9 @@ msgstr "E745: リスト型を数値として扱っています"
 msgid "E728: Using a Dictionary as a Number"
 msgstr "E728: 辞書型を数値として扱っています"
 
+msgid "E611: Using a Special as a Number"
+msgstr "E611: 特殊値型を数値として扱っています"
+
 msgid "E910: Using a Job as a Number"
 msgstr "E910: ジョブを数値として扱っています"
 
@@ -5943,17 +5936,6 @@ msgstr "E125: 不正な引数です: %s"
 msgid "E853: Duplicate argument name: %s"
 msgstr "E853: 引数名が重複しています: %s"
 
-#, c-format
-msgid "E1059: No white space allowed before colon: %s"
-msgstr "E1059: コロンの前にスペースは許されません: %s"
-
-#, c-format
-msgid "E1077: Missing argument type for %s"
-msgstr "E1077: %s の引数の型がありません"
-
-msgid "E1055: Missing name after ..."
-msgstr "E1055: ... の後に名前がありません"
-
 msgid "E989: Non-default argument follows default argument"
 msgstr "E989: 非デフォルト引数がデフォルト引数の後にあります"
 
@@ -6029,15 +6011,8 @@ msgid "E862: Cannot use g: here"
 msgstr "E862: ここでは g: は使えません"
 
 #, c-format
-msgid "E1056: expected a type: %s"
-msgstr "E1056: 以下の型が必要です: %s"
-
-#, c-format
 msgid "E932: Closure function should not be at top level: %s"
 msgstr "E932: クロージャー関数はトップレベルに記述できません: %s"
-
-msgid "E1057: Missing :enddef"
-msgstr "E1057: :enddef がありません"
 
 msgid "E126: Missing :endfunction"
 msgstr "E126: :endfunction がありません"
@@ -6049,9 +6024,6 @@ msgstr "W1001: :enddef の後に文字があります: %s"
 #, c-format
 msgid "W22: Text found after :endfunction: %s"
 msgstr "W22: :endfunction の後に文字があります: %s"
-
-msgid "E1058: function nesting too deep"
-msgstr "E1058: 関数の入れ子が深過ぎます"
 
 #, c-format
 msgid "E707: Function name conflicts with variable: %s"
@@ -6068,10 +6040,6 @@ msgstr "E746: 関数名がスクリプトのファイル名と一致しません
 #, c-format
 msgid "E131: Cannot delete function %s: It is in use"
 msgstr "E131: 関数 %s を削除できません: 使用中です"
-
-#, c-format
-msgid "E1084: Cannot delete Vim9 script function %s"
-msgstr "E1084: Vim9 スクリプト関数は削除できません: %s"
 
 msgid "E133: :return not inside a function"
 msgstr "E133: 関数外に :return がありました"
@@ -6238,12 +6206,6 @@ msgstr "with Photon GUI."
 msgid "with GUI."
 msgstr "with GUI."
 
-msgid "with Carbon GUI."
-msgstr "with Carbon GUI."
-
-msgid "with Cocoa GUI."
-msgstr "with Cocoa GUI."
-
 msgid "  Features included (+) or not (-):\n"
 msgstr "  機能の一覧 有効(+)/無効(-)\n"
 
@@ -6370,108 +6332,8 @@ msgstr "詳細な情報は           :help register<Enter>  "
 msgid "menu  Help->Sponsor/Register  for information    "
 msgstr "詳細はメニューの ヘルプ->スポンサー/登録 を参照して下さい"
 
-#, c-format
-msgid "E1001: variable not found: %s"
-msgstr "E1001: 変数が見つかりません: %s"
-
-#, c-format
-msgid "E1002: Syntax error at %s"
-msgstr "E1002: %s に文法エラーがあります"
-
-#, c-format
-msgid "E1006: %s is used as an argument"
-msgstr "E1006: %s が引数として使われています"
-
-msgid "E1031: Cannot use void value"
-msgstr "E1031: void 値は使用できません"
-
-#, c-format
-msgid "E1075: Namespace not supported: %s"
-msgstr "E1075: ネームスペースには対応していません: %s"
-
-#, c-format
-msgid "E1013: type mismatch, expected %s but got %s"
-msgstr "E1013: 型が不一致です。%s が必要ですが %s でした"
-
-#, c-format
-msgid "E1013: argument %d: type mismatch, expected %s but got %s"
-msgstr "E1013: 引数 %d: 型が不一致です。%s が必要ですが %s でした"
-
-msgid "E1051: wrong argument type for +"
-msgstr "E1051: + の引数の型が違います"
-
-#, c-format
-msgid "E1036: %c requires number or float arguments"
-msgstr "E1036: %c には数値または浮動小数点数の引数が必要です"
-
-msgid "E1035: % requires number arguments"
-msgstr "E1035: % には数値の引数が必要です"
-
-#, c-format
-msgid "E1037: Cannot use \"%s\" with %s"
-msgstr "E1037: \"%s\" を %s と組み合わせては使えません"
-
-#, c-format
-msgid "E1072: Cannot compare %s with %s"
-msgstr "E1072: %s と %s を比較できません"
-
-#, c-format
-msgid "E1085: Not a callable type: %s"
-msgstr "E1085: 呼び出し可能な型ではありません: %s"
-
-msgid "E1008: Missing <type>"
-msgstr "E1008: <type> がありません"
-
-msgid "E1009: Missing > after type"
-msgstr "E1009: 型の後に > がありません"
-
-msgid "E1076: This Vim is not compiled with float support"
-msgstr "E1076: このVimは浮動小数点数サポート付きでコンパイルされていません"
-
-msgid "E1007: mandatory argument after optional argument"
-msgstr "E1007: オプション引数の後に必須引数があります"
-
-msgid "E740: Too many argument types"
-msgstr "E740: 引数の型が多過ぎます"
-
-#, c-format
-msgid "E1010: Type not recognized: %s"
-msgstr "E1010: 型を認識できません: %s"
-
-msgid "E1097: line incomplete"
-msgstr "E1097: 行が不完全です"
-
-#, c-format
-msgid "E1060: expected dot after name: %s"
-msgstr "E1060: 名前の後にドットが必要です: %s"
-
-msgid "E1074: no white space allowed after dot"
-msgstr "E1074: ドットの後にスペースは許されません"
-
-#, c-format
-msgid "E1050: Item not found: %s"
-msgstr "E1050: 要素が見つかりません: %s"
-
-#, c-format
-msgid "E1011: name too long: %s"
-msgstr "E1011: 名前が長過ぎます: %s"
-
-#, c-format
-msgid "E1014: Invalid key: %s"
-msgstr "E1014: 無効なキーです: %s"
-
 #~ msgid "[end of lines]"
 #~ msgstr ""
-
-#, c-format
-msgid "E1015: Name expected: %s"
-msgstr "E1015: 名前が要求されています: %s"
-
-msgid "E1096: Returning a value in a function without a return type"
-msgstr "E1096: 戻り値の型がない関数で値を返しています"
-
-msgid "E1003: Missing return value"
-msgstr "E1003: 戻り値がありません"
 
 msgid "global"
 msgstr "グローバル"
@@ -6484,182 +6346,6 @@ msgstr "ウィンドウ"
 
 msgid "tab"
 msgstr "タブ"
-
-msgid "E1092: Cannot use a list for a declaration"
-msgstr "E1092: リストは宣言に使用できません"
-
-#, c-format
-msgid "E1052: Cannot declare an option: %s"
-msgstr "E1052: オプションは宣言できません: %s"
-
-#, c-format
-msgid "E1066: Cannot declare a register: %s"
-msgstr "E1066: レジスタは宣言できません: %s"
-
-#, c-format
-msgid "E1034: Cannot use reserved name %s"
-msgstr "E1034: 予約名 %s は使用できません"
-
-#, c-format
-msgid "E1017: Variable already declared: %s"
-msgstr "E1017: 変数はすでに宣言されています: %s"
-
-#, c-format
-msgid "E1018: Cannot assign to a constant: %s"
-msgstr "E1018: 定数には代入できません: %s"
-
-#, c-format
-msgid "E1054: Variable already declared in the script: %s"
-msgstr "E1054: 変数はすでにスクリプト内で宣言されています: %s"
-
-#, c-format
-msgid "E1082: Cannot use a namespaced variable: %s"
-msgstr "E1082: 名前空間付き変数を使用できません: %s"
-
-#, c-format
-msgid "E1089: unknown variable: %s"
-msgstr "E1089: 不明な変数: %s"
-
-msgid "E1019: Can only concatenate to string"
-msgstr "E1019: 文字列としか結合できません"
-
-#, c-format
-msgid "E1020: cannot use an operator on a new variable: %s"
-msgstr "E1020: 新規の変数に対して演算子を使用できません: %s"
-
-msgid "E1087: cannot use an index when declaring a variable"
-msgstr "E1087: 変数を宣言する際にインデックスは使用できません"
-
-#, c-format
-msgid "E1088: cannot use an index on %s"
-msgstr "E1088: %s に対してインデックスを使用できません"
-
-#, c-format
-msgid "E1090: Cannot assign to argument %s"
-msgstr "E1090: 引数 %s に対して代入できません"
-
-#, c-format
-msgid "E1081: Cannot unlet %s"
-msgstr "E1081: %s を unlet できません"
-
-#, c-format
-msgid "E1023: variable already defined: %s"
-msgstr "E1023: 変数は既に定義されています: %s"
-
-msgid "E1033: catch unreachable after catch-all"
-msgstr "E1033: 全てをcatchした後のcatchには到達しません"
-
-#, c-format
-msgid "E1067: Separator mismatch: %s"
-msgstr "E1067: 区切りが一致しません: %s"
-
-msgid "E1032: missing :catch or :finally"
-msgstr "E1032: :catch または :finally がありません"
-
-msgid "E1083: missing backtick"
-msgstr "E1083: バッククォートがありません"
-
-#, c-format
-msgid "E488: Trailing characters: %s"
-msgstr "E488: 余分な文字が後ろにあります: %s"
-
-msgid "E1025: using } outside of a block scope"
-msgstr "E1025: ブロックスコープの外側で } が使用されました"
-
-msgid "E1095: Unreachable code after :return"
-msgstr "E1095: :return の後に到達不能なコードがあります"
-
-msgid "E1086: Cannot use :function inside :def"
-msgstr "E1086: :def の中で :function は使用できません"
-
-#, c-format
-msgid "E476: Invalid command: %s"
-msgstr "E476: 無効なコマンドです: %s"
-
-msgid "E1026: Missing }"
-msgstr "E1026: } がありません"
-
-msgid "E1027: Missing return statement"
-msgstr "E1027: retrun 文がありません"
-
-msgid "E1028: compile_def_function failed"
-msgstr "E1028: compile_def_function が失敗しました"
-
-#, c-format
-msgid "E1091: Function is not compiled: %s"
-msgstr "E1091: 関数はコンパイルされていません: %s"
-
-#, c-format
-msgid "E121: Undefined variable: %c:%s"
-msgstr "E121: 未定義の変数です: %c:%s"
-
-#, c-format
-msgid "E1029: Expected %s but got %s"
-msgstr "E1029: %s が期待されていますが %s でした"
-
-#, c-format
-msgid "E1093: Expected %d items but got %d"
-msgstr "E1093: %d 個の要素が期待されていますが %d 個でした"
-
-#, c-format
-msgid "E1099: Unknown error while executing %s"
-msgstr "E1099: %s を実行中に未知のエラーです"
-
-#, c-format
-msgid "E1061: Cannot find function %s"
-msgstr "E1061: 関数 %s が見つかりません"
-
-#, c-format
-msgid "E1062: Function %s is not compiled"
-msgstr "E1062: 関数 %s はコンパイルされていません"
-
-msgid "E1030: Using a String as a Number"
-msgstr "E1030: 文字列を数値として扱っています"
-
-msgid "E1042: export can only be used in vim9script"
-msgstr "E1042: export は vim9script の中でのみ使用できます"
-
-msgid "E1038: vim9script can only be used in a script"
-msgstr "E1038: vim9script はスクリプトの中でのみ使用できます"
-
-msgid "E1039: vim9script must be the first command in a script"
-msgstr "E1039: vim9script はスクリプトの中の最初のコマンドでなければなりません"
-
-msgid "E1044: export with invalid argument"
-msgstr "E1044: export に無効な引数が渡されました"
-
-msgid "E1043: Invalid command after :export"
-msgstr "E1043: :export の後に無効なコマンドがあります"
-
-msgid "E1094: import can only be used in a script"
-msgstr "E1094: import はスクリプトの中でのみ使用できます"
-
-#, c-format
-msgid "E1049: Item not exported in script: %s"
-msgstr "E1049: 要素がスクリプト内でエクスポートされていません: %s"
-
-#, c-format
-msgid "E1048: Item not found in script: %s"
-msgstr "E1048: 要素がスクリプト内で見つかりません: %s"
-
-msgid "E1047: syntax error in import"
-msgstr "E1047: import 内に文法エラーがあります"
-
-msgid "E1046: Missing comma in import"
-msgstr "E1046: import にカンマがありません"
-
-msgid "E1045: Missing \"as\" after *"
-msgstr "E1045: * の後に \"as\" がありません"
-
-msgid "E1070: Missing \"from\""
-msgstr "E1070: \"from\" がありません"
-
-msgid "E1071: Invalid string after \"from\""
-msgstr "E1071: \"from\" の後に不正な文字があります"
-
-#, c-format
-msgid "E1053: Could not import \"%s\""
-msgstr "E1053: \"%s\" をインポートできませんでした"
 
 msgid ""
 "\n"
@@ -6903,6 +6589,412 @@ msgstr "gvimext.dll エラー"
 msgid "Path length too long!"
 msgstr "パスが長過ぎます!"
 
+#, c-format
+msgid "E121: Undefined variable: %s"
+msgstr "E121: 未定義の変数です: %s"
+
+#, c-format
+msgid "E121: Undefined variable: %c:%s"
+msgstr "E121: 未定義の変数です: %c:%s"
+
+msgid "E476: Invalid command"
+msgstr "E476: 無効なコマンドです"
+
+#, c-format
+msgid "E476: Invalid command: %s"
+msgstr "E476: 無効なコマンドです: %s"
+
+msgid "E719: cannot slice a Dictionary"
+msgstr "E719: 辞書型はスライスできません"
+
+msgid "E909: Cannot index a special variable"
+msgstr "E909: 特殊変数はインデックスできません"
+
+#, c-format
+msgid "E1100: Missing :let: %s"
+msgstr "E1100: :let: %s がありません"
+
+#, c-format
+msgid "E1001: variable not found: %s"
+msgstr "E1001: 変数が見つかりません: %s"
+
+#, c-format
+msgid "E1002: Syntax error at %s"
+msgstr "E1002: %s に文法エラーがあります"
+
+msgid "E1003: Missing return value"
+msgstr "E1003: 戻り値がありません"
+
+#, c-format
+msgid "E1004: white space required before and after '%s'"
+msgstr "E1004: '%s' の前後にスペースが必要です"
+
+msgid "E1005: Too many argument types"
+msgstr "E1005: 引数の型が多過ぎます"
+
+#, c-format
+msgid "E1006: %s is used as an argument"
+msgstr "E1006: %s が引数として使われています"
+
+msgid "E1007: mandatory argument after optional argument"
+msgstr "E1007: オプション引数の後に必須引数があります"
+
+msgid "E1008: Missing <type>"
+msgstr "E1008: <type> がありません"
+
+msgid "E1009: Missing > after type"
+msgstr "E1009: 型の後に > がありません"
+
+#, c-format
+msgid "E1010: Type not recognized: %s"
+msgstr "E1010: 型を認識できません: %s"
+
+#, c-format
+msgid "E1011: name too long: %s"
+msgstr "E1011: 名前が長過ぎます: %s"
+
+#, c-format
+msgid "E1012: type mismatch, expected %s but got %s"
+msgstr "E1012: 型が不一致です。%s が必要ですが %s でした"
+
+#, c-format
+msgid "E1013: argument %d: type mismatch, expected %s but got %s"
+msgstr "E1013: 引数 %d: 型が不一致です。%s が必要ですが %s でした"
+
+#, c-format
+msgid "E1014: Invalid key: %s"
+msgstr "E1014: 無効なキーです: %s"
+
+#, c-format
+msgid "E1015: Name expected: %s"
+msgstr "E1015: 名前が要求されています: %s"
+
+#, c-format
+msgid "E1016: Cannot declare a %s variable: %s"
+msgstr "E1016: %s変数は宣言できません: %s"
+
+#, c-format
+msgid "E1016: Cannot declare an environment variable: %s"
+msgstr "E1016: 環境変数は宣言できません: %s"
+
+#, c-format
+msgid "E1017: Variable already declared: %s"
+msgstr "E1017: 変数はすでに宣言されています: %s"
+
+#, c-format
+msgid "E1018: Cannot assign to a constant: %s"
+msgstr "E1018: 定数には代入できません: %s"
+
+msgid "E1019: Can only concatenate to string"
+msgstr "E1019: 文字列としか結合できません"
+
+#, c-format
+msgid "E1020: cannot use an operator on a new variable: %s"
+msgstr "E1020: 新規の変数に対して演算子を使用できません: %s"
+
+msgid "E1021: const requires a value"
+msgstr "E1021: const には値が必要です"
+
+msgid "E1022: type or initialization required"
+msgstr "E1022: 型か初期化が必要です"
+
+#, c-format
+msgid "E1023: Using a Number as a Bool: %d"
+msgstr "E1023: 数値をBoolとして扱っています: %d"
+
+msgid "E1024: Using a Number as a String"
+msgstr "E1024: 数値を文字列として扱っています"
+
+msgid "E1025: using } outside of a block scope"
+msgstr "E1025: ブロックスコープの外側で } が使用されました"
+
+msgid "E1026: Missing }"
+msgstr "E1026: } がありません"
+
+msgid "E1027: Missing return statement"
+msgstr "E1027: retrun 文がありません"
+
+msgid "E1028: compile_def_function failed"
+msgstr "E1028: compile_def_function が失敗しました"
+
+#, c-format
+msgid "E1029: Expected %s but got %s"
+msgstr "E1029: %s が期待されていますが %s でした"
+
+msgid "E1030: Using a String as a Number"
+msgstr "E1030: 文字列を数値として扱っています"
+
+msgid "E1031: Cannot use void value"
+msgstr "E1031: void 値は使用できません"
+
+msgid "E1032: missing :catch or :finally"
+msgstr "E1032: :catch または :finally がありません"
+
+msgid "E1033: catch unreachable after catch-all"
+msgstr "E1033: 全てをcatchした後のcatchには到達しません"
+
+#, c-format
+msgid "E1034: Cannot use reserved name %s"
+msgstr "E1034: 予約名 %s は使用できません"
+
+msgid "E1035: % requires number arguments"
+msgstr "E1035: % には数値の引数が必要です"
+
+#, c-format
+msgid "E1036: %c requires number or float arguments"
+msgstr "E1036: %c には数値または浮動小数点数の引数が必要です"
+
+#, c-format
+msgid "E1037: Cannot use \"%s\" with %s"
+msgstr "E1037: \"%s\" を %s と組み合わせては使えません"
+
+msgid "E1038: vim9script can only be used in a script"
+msgstr "E1038: vim9script はスクリプトの中でのみ使用できます"
+
+msgid "E1039: vim9script must be the first command in a script"
+msgstr "E1039: vim9script はスクリプトの中の最初のコマンドでなければなりません"
+
+msgid "E1040: Cannot use :scriptversion after :vim9script"
+msgstr "E1040: :vim9script の後に :scriptversion は使用できません"
+
+#, c-format
+msgid "E1041: Redefining script item %s"
+msgstr "E1041: スクリプト要素 %s を再定義しています"
+
+msgid "E1042: export can only be used in vim9script"
+msgstr "E1042: export は vim9script の中でのみ使用できます"
+
+msgid "E1043: Invalid command after :export"
+msgstr "E1043: :export の後に無効なコマンドがあります"
+
+msgid "E1044: export with invalid argument"
+msgstr "E1044: export に無効な引数が渡されました"
+
+msgid "E1045: Missing \"as\" after *"
+msgstr "E1045: * の後に \"as\" がありません"
+
+msgid "E1046: Missing comma in import"
+msgstr "E1046: import にカンマがありません"
+
+msgid "E1047: syntax error in import"
+msgstr "E1047: import 内に文法エラーがあります"
+
+#, c-format
+msgid "E1048: Item not found in script: %s"
+msgstr "E1048: 要素がスクリプト内で見つかりません: %s"
+
+#, c-format
+msgid "E1049: Item not exported in script: %s"
+msgstr "E1049: 要素がスクリプト内でエクスポートされていません: %s"
+
+msgid "E1050: Colon required before a range"
+msgstr "E1050: 範囲の前にはコロンが必要です"
+
+msgid "E1051: wrong argument type for +"
+msgstr "E1051: + の引数の型が違います"
+
+#, c-format
+msgid "E1052: Cannot declare an option: %s"
+msgstr "E1052: オプションは宣言できません: %s"
+
+#, c-format
+msgid "E1053: Could not import \"%s\""
+msgstr "E1053: \"%s\" をインポートできませんでした"
+
+#, c-format
+msgid "E1054: Variable already declared in the script: %s"
+msgstr "E1054: 変数はすでにスクリプト内で宣言されています: %s"
+
+msgid "E1055: Missing name after ..."
+msgstr "E1055: ... の後に名前がありません"
+
+#, c-format
+msgid "E1056: expected a type: %s"
+msgstr "E1056: 以下の型が必要です: %s"
+
+msgid "E1057: Missing :enddef"
+msgstr "E1057: :enddef がありません"
+
+msgid "E1058: function nesting too deep"
+msgstr "E1058: 関数の入れ子が深過ぎます"
+
+#, c-format
+msgid "E1059: No white space allowed before colon: %s"
+msgstr "E1059: コロンの前にスペースは許されません: %s"
+
+#, c-format
+msgid "E1060: expected dot after name: %s"
+msgstr "E1060: 名前の後にドットが必要です: %s"
+
+#, c-format
+msgid "E1061: Cannot find function %s"
+msgstr "E1061: 関数 %s が見つかりません"
+
+msgid "E1062: Cannot index a Number"
+msgstr "E1062: 数値はインデックスできません"
+
+msgid "E1063: type mismatch for v: variable"
+msgstr "E1063: v: 変数の型が一致しません"
+
+#, c-format
+msgid "E1066: Cannot declare a register: %s"
+msgstr "E1066: レジスタは宣言できません: %s"
+
+#, c-format
+msgid "E1067: Separator mismatch: %s"
+msgstr "E1067: 区切りが一致しません: %s"
+
+#, c-format
+msgid "E1068: No white space allowed before '%s'"
+msgstr "E1068: '%s' の前にスペースは許されません"
+
+#, c-format
+msgid "E1069: white space required after '%s'"
+msgstr "E1069: '%s' の後にスペースが必要です"
+
+msgid "E1070: Missing \"from\""
+msgstr "E1070: \"from\" がありません"
+
+msgid "E1071: Invalid string after \"from\""
+msgstr "E1071: \"from\" の後に不正な文字があります"
+
+#, c-format
+msgid "E1072: Cannot compare %s with %s"
+msgstr "E1072: %s と %s を比較できません"
+
+#, c-format
+msgid "E1073: name already defined: %s"
+msgstr "E1073: 名前は既に定義されています: %s"
+
+msgid "E1074: no white space allowed after dot"
+msgstr "E1074: ドットの後にスペースは許されません"
+
+#, c-format
+msgid "E1075: Namespace not supported: %s"
+msgstr "E1075: ネームスペースには対応していません: %s"
+
+msgid "E1076: This Vim is not compiled with float support"
+msgstr "E1076: このVimは浮動小数点数サポート付きでコンパイルされていません"
+
+#, c-format
+msgid "E1077: Missing argument type for %s"
+msgstr "E1077: %s の引数の型がありません"
+
+#, c-format
+msgid "E1081: Cannot unlet %s"
+msgstr "E1081: %s を unlet できません"
+
+#, c-format
+msgid "E1082: Cannot use a namespaced variable: %s"
+msgstr "E1082: 名前空間付き変数を使用できません: %s"
+
+msgid "E1083: missing backtick"
+msgstr "E1083: バッククォートがありません"
+
+#, c-format
+msgid "E1084: Cannot delete Vim9 script function %s"
+msgstr "E1084: Vim9 スクリプト関数は削除できません: %s"
+
+#, c-format
+msgid "E1085: Not a callable type: %s"
+msgstr "E1085: 呼び出し可能な型ではありません: %s"
+
+msgid "E1086: Cannot use :function inside :def"
+msgstr "E1086: :def の中で :function は使用できません"
+
+msgid "E1087: cannot use an index when declaring a variable"
+msgstr "E1087: 変数を宣言する際にインデックスは使用できません"
+
+#, c-format
+msgid "E1089: unknown variable: %s"
+msgstr "E1089: 不明な変数: %s"
+
+#, c-format
+msgid "E1090: Cannot assign to argument %s"
+msgstr "E1090: 引数 %s に対して代入できません"
+
+#, c-format
+msgid "E1091: Function is not compiled: %s"
+msgstr "E1091: 関数はコンパイルされていません: %s"
+
+msgid "E1092: Cannot use a list for a declaration"
+msgstr "E1092: リストは宣言に使用できません"
+
+#, c-format
+msgid "E1093: Expected %d items but got %d"
+msgstr "E1093: %d 個の要素が期待されていますが %d 個でした"
+
+msgid "E1094: import can only be used in a script"
+msgstr "E1094: import はスクリプトの中でのみ使用できます"
+
+msgid "E1095: Unreachable code after :return"
+msgstr "E1095: :return の後に到達不能なコードがあります"
+
+msgid "E1096: Returning a value in a function without a return type"
+msgstr "E1096: 戻り値の型がない関数で値を返しています"
+
+msgid "E1097: line incomplete"
+msgstr "E1097: 行が不完全です"
+
+#, c-format
+msgid "E1099: Unknown error while executing %s"
+msgstr "E1099: %s を実行中に未知のエラーです"
+
+#, c-format
+msgid "E1101: Cannot declare a script variable in a function: %s"
+msgstr "E1101: 関数内でスクリプト変数は宣言できません: %s"
+
+#, c-format
+msgid "E1102: lambda function not found: %s"
+msgstr "E1102: ラムダ関数が見つかりません: %s"
+
+msgid "E1103: Dictionary not set"
+msgstr "E1103: 辞書は設定されていません"
+
+msgid "E1104: Missing >"
+msgstr "E1104: > が見つかりません"
+
+#, c-format
+msgid "E1105: Cannot convert %s to string"
+msgstr "E1105: %s を文字列に変換できません"
+
+msgid "E1106: one argument too many"
+msgstr "E1106: 引数が 1 個多いです。"
+
+#, c-format
+msgid "E1106: %d arguments too many"
+msgstr "E1106: 引数が %d 個多いです。"
+
+msgid "E1107: String, List, Dict or Blob required"
+msgstr "E1107: 文字列型、リスト型、辞書型またはBlob型が必要です"
+
+#, c-format
+msgid "E1108: Item not found: %s"
+msgstr "E1108: 要素が見つかりません: %s"
+
+#, c-format
+msgid "E1109: List item %d is not a List"
+msgstr "E1109: リストの要素 %d はリストではありません"
+
+#, c-format
+msgid "E1110: List item %d does not contain 3 numbers"
+msgstr "E1110: リストの要素 %d は数値を 3 個含んでいません"
+
+#, c-format
+msgid "E1111: List item %d range invalid"
+msgstr "E1111: リストの要素 %d の範囲が不正です"
+
+#, c-format
+msgid "E1112: List item %d cell width invalid"
+msgstr "E1112: リストの要素 %d のセル幅が不正です"
+
+#, c-format
+msgid "E1113: Overlapping ranges for 0x%lx"
+msgstr "E1113: 0x%lx の範囲が重複しています"
+
+msgid "E1114: Only values of 0x100 and higher supported"
+msgstr "E1114: 0x100 以上の値しかサポートされていません"
+
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
 
@@ -7005,9 +7097,6 @@ msgstr "E15: 無効な式です: %s"
 
 msgid "E16: Invalid range"
 msgstr "E16: 無効な範囲です"
-
-msgid "E476: Invalid command"
-msgstr "E476: 無効なコマンドです"
 
 #, c-format
 msgid "E17: \"%s\" is a directory"
@@ -7162,10 +7251,6 @@ msgid "E45: 'readonly' option is set (add ! to override)"
 msgstr "E45: 'readonly' オプションが設定されています (! を追加で上書き)"
 
 #, c-format
-msgid "E121: Undefined variable: %s"
-msgstr "E121: 未定義の変数です: %s"
-
-#, c-format
 msgid "E734: Wrong variable type for %s="
 msgstr "E734: 異なった型の変数です %s="
 
@@ -7222,9 +7307,6 @@ msgstr "E716: 辞書型にキーが存在しません: %s"
 
 msgid "E714: List required"
 msgstr "E714: リスト型が必要です"
-
-msgid "E1090: List, Dict or Blob required"
-msgstr "E1090: リスト型、辞書型またはBlob型が必要です"
 
 msgid "E897: List or Blob required"
 msgstr "E897: リスト型またはBlob型が必要です"
@@ -7312,6 +7394,10 @@ msgstr "E77: ファイル名が多過ぎます"
 
 msgid "E488: Trailing characters"
 msgstr "E488: 余分な文字が後ろにあります"
+
+#, c-format
+msgid "E488: Trailing characters: %s"
+msgstr "E488: 余分な文字が後ろにあります: %s"
 
 msgid "E78: Unknown mark"
 msgstr "E78: 未知のマーク"
@@ -7444,37 +7530,8 @@ msgid "E274: No white space allowed before parenthesis"
 msgstr "E274: 丸括弧の前にスペースは許されません"
 
 #, c-format
-msgid "E1004: white space required before and after '%s'"
-msgstr "E1004: '%s' の前後にスペースが必要です"
-
-#, c-format
-msgid "E1069: white space required after '%s'"
-msgstr "E1069: '%s' の後にスペースが必要です"
-
-#, c-format
-msgid "E1068: No white space allowed before '%s'"
-msgstr "E1068: '%s' の前にスペースは許されません"
-
-#, c-format
 msgid "E940: Cannot lock or unlock variable %s"
 msgstr "E940: 変数 %s はロックまたはアンロックできません"
-
-msgid "E1021: const requires a value"
-msgstr "E1021: const には値が必要です"
-
-msgid "E1022: type or initialization required"
-msgstr "E1022: 型か初期化が必要です"
-
-#, c-format
-msgid "E1016: Cannot declare a %s variable: %s"
-msgstr "E1016: %s変数は宣言できません: %s"
-
-#, c-format
-msgid "E1016: Cannot declare an environment variable: %s"
-msgstr "E1016: 環境変数は宣言できません: %s"
-
-msgid "E1050: Colon required before a range"
-msgstr "E1050: 範囲の前にはコロンが必要です"
 
 #, c-format
 msgid "E254: Cannot allocate color %s"
@@ -7806,4 +7863,28 @@ msgstr "テキスト;エディタ;"
 #~ msgstr ""
 
 #~ msgid "Vim"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\" Each \"set\" line shows the current value of an option (on the left)."
+#~ msgstr ""
+
+#~ msgid "\" Hit <Enter> on a \"set\" line to execute it."
+#~ msgstr ""
+
+#~ msgid "\"            A boolean option will be toggled."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\"            For other options you can edit the value before hitting "
+#~ "<Enter>."
+#~ msgstr ""
+
+#~ msgid "\" Hit <Enter> on a help line to open a help window on this option."
+#~ msgstr ""
+
+#~ msgid "\" Hit <Enter> on an index line to jump there."
+#~ msgstr ""
+
+#~ msgid "\" Hit <Space> on a \"set\" line to refresh it."
 #~ msgstr ""
