@@ -292,7 +292,6 @@ msgstr "E203: 保存するバッファをautocommandが削除か解放しまし�
 msgid "E204: Autocommand changed number of lines in unexpected way"
 msgstr "E204: autocommandが予期せぬ方法で行数を変更しました"
 
-# Added at 19-Jan-2004.
 msgid "NetBeans disallows writes of unmodified buffers"
 msgstr "NetBeansは未変更のバッファを上書することは許可していません"
 
@@ -1518,7 +1517,6 @@ msgstr "E220: } がありません。"
 msgid "<empty>"
 msgstr "<空>"
 
-# Added at 10-Mar-2004.
 msgid "E655: Too many symbolic links (cycle?)"
 msgstr "E655: シンボリックリンクが多過ぎます (循環している可能性があります)"
 
@@ -2014,7 +2012,6 @@ msgstr "E152: 書込み用に %s を開けません"
 msgid "E153: Unable to open %s for reading"
 msgstr "E153: 読込用に %s を開けません"
 
-# Added at 29-Apr-2004.
 #, c-format
 msgid "E670: Mix of help file encodings within a language: %s"
 msgstr "E670: 1つの言語のヘルプファイルに複数のエンコードが混在しています: %s"
@@ -2343,7 +2340,6 @@ msgstr ""
 "E887: このコマンドは無効です、ごめんなさい。Python の site モジュールをロード"
 "できませんでした。"
 
-# Added at 07-Feb-2004.
 msgid "E659: Cannot invoke Python recursively"
 msgstr "E659: Python を再帰的に実行することはできません"
 
@@ -2690,7 +2686,7 @@ msgstr "スクリプト出力用を開けません"
 msgid "Vim: Error: Failure to start gvim from NetBeans\n"
 msgstr "Vim: エラー: NetBeansからgvimをスタートできません\n"
 
-#  This message should be English to avoid mojibake.
+# This message should be English to avoid mojibake.
 msgid "Vim: Error: This version of Vim does not run in a Cygwin terminal\n"
 msgstr "Vim: Error: This version of Vim does not run in a Cygwin terminal\n"
 
@@ -4852,7 +4848,6 @@ msgstr "E160: 未知のsignコマンドです: %s"
 msgid "E156: Missing sign name"
 msgstr "E156: sign名がありません"
 
-# Added at 27-Jan-2004.
 msgid " (NOT FOUND)"
 msgstr " (見つかりません)"
 
@@ -5606,7 +5601,7 @@ msgstr "E970: 未知のハイライトグループ名: '%s'"
 msgid "(Invalid)"
 msgstr "(無効)"
 
-#  no-c-format
+# no-c-format
 msgid "%a %b %d %H:%M:%S %Y"
 msgstr "%Y/%m/%d (%a) %H:%M:%S"
 
@@ -6325,8 +6320,8 @@ msgstr "詳細な情報は           :help register<Enter>  "
 msgid "menu  Help->Sponsor/Register  for information    "
 msgstr "詳細はメニューの ヘルプ->スポンサー/登録 を参照して下さい"
 
-#~ msgid "[end of lines]"
-#~ msgstr ""
+msgid "[end of lines]"
+msgstr "[最終行]"
 
 msgid "global"
 msgstr "グローバル"
@@ -7853,6 +7848,7 @@ msgstr ""
 "C++ソース (*.cpp, *.hpp)\t*.cpp;*.hpp\n"
 "Vimファイル (*.vim, _vimrc, _gvimrc)\t*.vim;_vimrc;_gvimrc\n"
 
+# No need to translate this.
 #~ msgid "GVim"
 #~ msgstr ""
 
@@ -7865,9 +7861,11 @@ msgstr "テキストファイルを編集します"
 msgid "Text;editor;"
 msgstr "テキスト;エディタ;"
 
+# No need to translate this.
 #~ msgid "gvim"
 #~ msgstr ""
 
+# No need to translate this.
 #~ msgid "Vim"
 #~ msgstr ""
 
