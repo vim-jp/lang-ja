@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-04 11:09+0900\n"
+"POT-Creation-Date: 2020-09-07 10:04+0900\n"
 "PO-Revision-Date: 2019-12-15 03:28+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -454,19 +454,6 @@ msgstr "E917: %s() にコールバックは使えません"
 msgid "E912: cannot use ch_evalexpr()/ch_sendexpr() with a raw or nl channel"
 msgstr ""
 "E912: raw や nl モードのチャネルに ch_evalexpr()/ch_sendexpr() は使えません"
-
-msgid "E920: _io file requires _name to be set"
-msgstr "E920: _io ファイルは _name の設定が必要です"
-
-msgid "E915: in_io buffer requires in_buf or in_name to be set"
-msgstr "E915: in_io バッファは in_buf か in_name の設定が必要です"
-
-#, c-format
-msgid "E918: buffer must be loaded: %s"
-msgstr "E918: バッファがロードされてなければなりません: %s"
-
-msgid "E916: not a valid job"
-msgstr "E916: 有効なジョブではありません"
 
 msgid "No display"
 msgstr "ディスプレイが見つかりません"
@@ -2586,6 +2573,19 @@ msgstr "%d 番目の該当 (全該当 %d 個中)"
 #, c-format
 msgid "match %d"
 msgstr "%d 番目の該当"
+
+msgid "E920: _io file requires _name to be set"
+msgstr "E920: _io ファイルは _name の設定が必要です"
+
+msgid "E915: in_io buffer requires in_buf or in_name to be set"
+msgstr "E915: in_io バッファは in_buf か in_name の設定が必要です"
+
+#, c-format
+msgid "E918: buffer must be loaded: %s"
+msgstr "E918: バッファがロードされてなければなりません: %s"
+
+msgid "E916: not a valid job"
+msgstr "E916: 有効なジョブではありません"
 
 #, c-format
 msgid "E491: json decode error at '%s'"
@@ -5568,13 +5568,6 @@ msgstr "E955: 端末バッファではありません"
 msgid "E982: ConPTY is not available"
 msgstr "E982: ConPTY が無効です"
 
-msgid ""
-"E856: assert_fails() second argument must be a string or a list with one or "
-"two strings"
-msgstr ""
-"E856: assert_fails() の第2引数は文字列または1個か2個の文字列のリストでなけれ"
-"ばなりません"
-
 #, c-format
 msgid "E971: Property type %s does not exist"
 msgstr "E971: プロパティタイプ %s がありません"
@@ -6607,6 +6600,13 @@ msgstr "E476: 無効なコマンドです: %s"
 msgid "E719: cannot slice a Dictionary"
 msgstr "E719: 辞書型はスライスできません"
 
+msgid ""
+"E856: assert_fails() second argument must be a string or a list with one or "
+"two strings"
+msgstr ""
+"E856: assert_fails() の第2引数は文字列または1個か2個の文字列のリストでなけれ"
+"ばなりません"
+
 msgid "E909: Cannot index a special variable"
 msgstr "E909: 特殊変数はインデックスできません"
 
@@ -6994,6 +6994,12 @@ msgstr "E1113: 0x%lx の範囲が重複しています"
 
 msgid "E1114: Only values of 0x100 and higher supported"
 msgstr "E1114: 0x100 以上の値しかサポートされていません"
+
+msgid "E1115: assert_fails() fourth argument must be a number"
+msgstr "E1115: assert_fails() の第4引数は数字でなければなりません"
+
+msgid "E1116: assert_fails() fifth argument must be a string"
+msgstr "E1116: assert_fails() の第5引数は文字列でなければなりません"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
