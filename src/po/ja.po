@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-07 10:04+0900\n"
+"POT-Creation-Date: 2020-09-21 13:08+0900\n"
 "PO-Revision-Date: 2019-12-15 03:28+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -1653,14 +1653,14 @@ msgstr "Vim ダイアログ"
 msgid "E232: Cannot create BalloonEval with both message and callback"
 msgstr "E232: メッセージとコールバックのある BalloonEval を作成できません"
 
-msgid "_Cancel"
-msgstr "キャンセル(_C)"
-
 msgid "_Save"
 msgstr "保存(_S)"
 
 msgid "_Open"
 msgstr "開く(_O)"
+
+msgid "_Cancel"
+msgstr "キャンセル(_C)"
 
 msgid "_OK"
 msgstr "_OK"
@@ -4303,6 +4303,9 @@ msgstr "E750: 初めに \":profile start {fname}\" を実行してください"
 msgid "E553: No more items"
 msgstr "E553: 要素がもうありません"
 
+msgid "E925: Current quickfix list was changed"
+msgstr "E925: 現在の quickfix リストが変更されました"
+
 msgid "E926: Current location list was changed"
 msgstr "E926: 現在のロケーションリストが変更されました"
 
@@ -4337,9 +4340,6 @@ msgstr "E379: ディレクトリ名が無いか空です"
 
 msgid "E924: Current window was closed"
 msgstr "E924: 現在のウィンドウが閉じられました"
-
-msgid "E925: Current quickfix was changed"
-msgstr "E925: 現在の quickfix が変更されました"
 
 #, c-format
 msgid "(%d of %d)%s%s: "
@@ -6592,15 +6592,15 @@ msgstr "E476: 無効なコマンドです"
 msgid "E476: Invalid command: %s"
 msgstr "E476: 無効なコマンドです: %s"
 
-msgid "E719: cannot slice a Dictionary"
+msgid "E719: Cannot slice a Dictionary"
 msgstr "E719: 辞書型はスライスできません"
 
 msgid ""
-"E856: assert_fails() second argument must be a string or a list with one or "
-"two strings"
+"E856: \"assert_fails()\" second argument must be a string or a list with one "
+"or two strings"
 msgstr ""
-"E856: assert_fails() の第2引数は文字列または1個か2個の文字列のリストでなけれ"
-"ばなりません"
+"E856: \"assert_fails()\" の第2引数は文字列または1個か2個の文字列のリストでな"
+"ければなりません"
 
 msgid "E909: Cannot index a special variable"
 msgstr "E909: 特殊変数はインデックスできません"
@@ -6610,7 +6610,7 @@ msgid "E1100: Missing :let: %s"
 msgstr "E1100: :let: %s がありません"
 
 #, c-format
-msgid "E1001: variable not found: %s"
+msgid "E1001: Variable not found: %s"
 msgstr "E1001: 変数が見つかりません: %s"
 
 #, c-format
@@ -6621,7 +6621,7 @@ msgid "E1003: Missing return value"
 msgstr "E1003: 戻り値がありません"
 
 #, c-format
-msgid "E1004: white space required before and after '%s'"
+msgid "E1004: White space required before and after '%s'"
 msgstr "E1004: '%s' の前後にスペースが必要です"
 
 msgid "E1005: Too many argument types"
@@ -6631,7 +6631,7 @@ msgstr "E1005: 引数の型が多過ぎます"
 msgid "E1006: %s is used as an argument"
 msgstr "E1006: %s が引数として使われています"
 
-msgid "E1007: mandatory argument after optional argument"
+msgid "E1007: Mandatory argument after optional argument"
 msgstr "E1007: オプション引数の後に必須引数があります"
 
 msgid "E1008: Missing <type>"
@@ -6645,15 +6645,15 @@ msgid "E1010: Type not recognized: %s"
 msgstr "E1010: 型を認識できません: %s"
 
 #, c-format
-msgid "E1011: name too long: %s"
+msgid "E1011: Name too long: %s"
 msgstr "E1011: 名前が長過ぎます: %s"
 
 #, c-format
-msgid "E1012: type mismatch, expected %s but got %s"
+msgid "E1012: Type mismatch; expected %s but got %s"
 msgstr "E1012: 型が不一致です。%s が必要ですが %s でした"
 
 #, c-format
-msgid "E1013: argument %d: type mismatch, expected %s but got %s"
+msgid "E1013: Argument %d: type mismatch, expected %s but got %s"
 msgstr "E1013: 引数 %d: 型が不一致です。%s が必要ですが %s でした"
 
 #, c-format
@@ -6684,13 +6684,13 @@ msgid "E1019: Can only concatenate to string"
 msgstr "E1019: 文字列としか結合できません"
 
 #, c-format
-msgid "E1020: cannot use an operator on a new variable: %s"
+msgid "E1020: Cannot use an operator on a new variable: %s"
 msgstr "E1020: 新規の変数に対して演算子を使用できません: %s"
 
-msgid "E1021: const requires a value"
+msgid "E1021: Const requires a value"
 msgstr "E1021: const には値が必要です"
 
-msgid "E1022: type or initialization required"
+msgid "E1022: Type or initialization required"
 msgstr "E1022: 型か初期化が必要です"
 
 #, c-format
@@ -6700,7 +6700,7 @@ msgstr "E1023: 数値をBoolとして扱っています: %d"
 msgid "E1024: Using a Number as a String"
 msgstr "E1024: 数値を文字列として扱っています"
 
-msgid "E1025: using } outside of a block scope"
+msgid "E1025: Using } outside of a block scope"
 msgstr "E1025: ブロックスコープの外側で } が使用されました"
 
 msgid "E1026: Missing }"
@@ -6709,8 +6709,8 @@ msgstr "E1026: } がありません"
 msgid "E1027: Missing return statement"
 msgstr "E1027: retrun 文がありません"
 
-msgid "E1028: compile_def_function failed"
-msgstr "E1028: compile_def_function が失敗しました"
+msgid "E1028: Compiling :def function failed"
+msgstr "E1028: :def 関数のコンパイルに失敗しました"
 
 #, c-format
 msgid "E1029: Expected %s but got %s"
@@ -6722,10 +6722,10 @@ msgstr "E1030: 文字列を数値として扱っています"
 msgid "E1031: Cannot use void value"
 msgstr "E1031: void 値は使用できません"
 
-msgid "E1032: missing :catch or :finally"
+msgid "E1032: Missing :catch or :finally"
 msgstr "E1032: :catch または :finally がありません"
 
-msgid "E1033: catch unreachable after catch-all"
+msgid "E1033: Catch unreachable after catch-all"
 msgstr "E1033: 全てをcatchした後のcatchには到達しません"
 
 #, c-format
@@ -6743,11 +6743,12 @@ msgstr "E1036: %c には数値または浮動小数点数の引数が必要で�
 msgid "E1037: Cannot use \"%s\" with %s"
 msgstr "E1037: \"%s\" を %s と組み合わせては使えません"
 
-msgid "E1038: vim9script can only be used in a script"
-msgstr "E1038: vim9script はスクリプトの中でのみ使用できます"
+msgid "E1038: \"vim9script\" can only be used in a script"
+msgstr "E1038: \"vim9script\" はスクリプトの中でのみ使用できます"
 
-msgid "E1039: vim9script must be the first command in a script"
-msgstr "E1039: vim9script はスクリプトの中の最初のコマンドでなければなりません"
+msgid "E1039: \"vim9script\" must be the first command in a script"
+msgstr ""
+"E1039: \"vim9script\" はスクリプトの中の最初のコマンドでなければなりません"
 
 msgid "E1040: Cannot use :scriptversion after :vim9script"
 msgstr "E1040: :vim9script の後に :scriptversion は使用できません"
@@ -6756,13 +6757,13 @@ msgstr "E1040: :vim9script の後に :scriptversion は使用できません"
 msgid "E1041: Redefining script item %s"
 msgstr "E1041: スクリプト要素 %s を再定義しています"
 
-msgid "E1042: export can only be used in vim9script"
+msgid "E1042: Export can only be used in vim9script"
 msgstr "E1042: export は vim9script の中でのみ使用できます"
 
 msgid "E1043: Invalid command after :export"
 msgstr "E1043: :export の後に無効なコマンドがあります"
 
-msgid "E1044: export with invalid argument"
+msgid "E1044: Export with invalid argument"
 msgstr "E1044: export に無効な引数が渡されました"
 
 msgid "E1045: Missing \"as\" after *"
@@ -6771,7 +6772,7 @@ msgstr "E1045: * の後に \"as\" がありません"
 msgid "E1046: Missing comma in import"
 msgstr "E1046: import にカンマがありません"
 
-msgid "E1047: syntax error in import"
+msgid "E1047: Syntax error in import"
 msgstr "E1047: import 内に文法エラーがあります"
 
 #, c-format
@@ -6785,7 +6786,7 @@ msgstr "E1049: 要素がスクリプト内でエクスポートされていま�
 msgid "E1050: Colon required before a range"
 msgstr "E1050: 範囲の前にはコロンが必要です"
 
-msgid "E1051: wrong argument type for +"
+msgid "E1051: Wrong argument type for +"
 msgstr "E1051: + の引数の型が違います"
 
 #, c-format
@@ -6804,13 +6805,13 @@ msgid "E1055: Missing name after ..."
 msgstr "E1055: ... の後に名前がありません"
 
 #, c-format
-msgid "E1056: expected a type: %s"
+msgid "E1056: Expected a type: %s"
 msgstr "E1056: 以下の型が必要です: %s"
 
 msgid "E1057: Missing :enddef"
 msgstr "E1057: :enddef がありません"
 
-msgid "E1058: function nesting too deep"
+msgid "E1058: Function nesting too deep"
 msgstr "E1058: 関数の入れ子が深過ぎます"
 
 #, c-format
@@ -6818,7 +6819,7 @@ msgid "E1059: No white space allowed before colon: %s"
 msgstr "E1059: コロンの前にスペースは許されません: %s"
 
 #, c-format
-msgid "E1060: expected dot after name: %s"
+msgid "E1060: Expected dot after name: %s"
 msgstr "E1060: 名前の後にドットが必要です: %s"
 
 #, c-format
@@ -6828,7 +6829,7 @@ msgstr "E1061: 関数 %s が見つかりません"
 msgid "E1062: Cannot index a Number"
 msgstr "E1062: 数値はインデックスできません"
 
-msgid "E1063: type mismatch for v: variable"
+msgid "E1063: Type mismatch for v: variable"
 msgstr "E1063: v: 変数の型が一致しません"
 
 #, c-format
@@ -6844,7 +6845,7 @@ msgid "E1068: No white space allowed before '%s'"
 msgstr "E1068: '%s' の前にスペースは許されません"
 
 #, c-format
-msgid "E1069: white space required after '%s'"
+msgid "E1069: White space required after '%s'"
 msgstr "E1069: '%s' の後にスペースが必要です"
 
 msgid "E1070: Missing \"from\""
@@ -6858,10 +6859,10 @@ msgid "E1072: Cannot compare %s with %s"
 msgstr "E1072: %s と %s を比較できません"
 
 #, c-format
-msgid "E1073: name already defined: %s"
+msgid "E1073: Name already defined: %s"
 msgstr "E1073: 名前は既に定義されています: %s"
 
-msgid "E1074: no white space allowed after dot"
+msgid "E1074: No white space allowed after dot"
 msgstr "E1074: ドットの後にスペースは許されません"
 
 #, c-format
@@ -6883,7 +6884,7 @@ msgstr "E1081: %s を unlet できません"
 msgid "E1082: Cannot use a namespaced variable: %s"
 msgstr "E1082: 名前空間付き変数を使用できません: %s"
 
-msgid "E1083: missing backtick"
+msgid "E1083: Missing backtick"
 msgstr "E1083: バッククォートがありません"
 
 #, c-format
@@ -6897,11 +6898,11 @@ msgstr "E1085: 呼び出し可能な型ではありません: %s"
 msgid "E1086: Cannot use :function inside :def"
 msgstr "E1086: :def の中で :function は使用できません"
 
-msgid "E1087: cannot use an index when declaring a variable"
+msgid "E1087: Cannot use an index when declaring a variable"
 msgstr "E1087: 変数を宣言する際にインデックスは使用できません"
 
 #, c-format
-msgid "E1089: unknown variable: %s"
+msgid "E1089: Unknown variable: %s"
 msgstr "E1089: 不明な変数: %s"
 
 #, c-format
@@ -6919,7 +6920,7 @@ msgstr "E1092: リストは宣言に使用できません"
 msgid "E1093: Expected %d items but got %d"
 msgstr "E1093: %d 個の要素が期待されていますが %d 個でした"
 
-msgid "E1094: import can only be used in a script"
+msgid "E1094: Import can only be used in a script"
 msgstr "E1094: import はスクリプトの中でのみ使用できます"
 
 msgid "E1095: Unreachable code after :return"
@@ -6928,7 +6929,7 @@ msgstr "E1095: :return の後に到達不能なコードがあります"
 msgid "E1096: Returning a value in a function without a return type"
 msgstr "E1096: 戻り値の型がない関数で値を返しています"
 
-msgid "E1097: line incomplete"
+msgid "E1097: Line incomplete"
 msgstr "E1097: 行が不完全です"
 
 #, c-format
@@ -6940,7 +6941,7 @@ msgid "E1101: Cannot declare a script variable in a function: %s"
 msgstr "E1101: 関数内でスクリプト変数は宣言できません: %s"
 
 #, c-format
-msgid "E1102: lambda function not found: %s"
+msgid "E1102: Lambda function not found: %s"
 msgstr "E1102: ラムダ関数が見つかりません: %s"
 
 msgid "E1103: Dictionary not set"
@@ -6953,7 +6954,7 @@ msgstr "E1104: > が見つかりません"
 msgid "E1105: Cannot convert %s to string"
 msgstr "E1105: %s を文字列に変換できません"
 
-msgid "E1106: one argument too many"
+msgid "E1106: One argument too many"
 msgstr "E1106: 引数が 1 個多いです。"
 
 #, c-format
@@ -6990,11 +6991,34 @@ msgstr "E1113: 0x%lx の範囲が重複しています"
 msgid "E1114: Only values of 0x100 and higher supported"
 msgstr "E1114: 0x100 以上の値しかサポートされていません"
 
-msgid "E1115: assert_fails() fourth argument must be a number"
-msgstr "E1115: assert_fails() の第4引数は数字でなければなりません"
+msgid "E1115: \"assert_fails()\" fourth argument must be a number"
+msgstr "E1115: \"assert_fails()\" の第4引数は数字でなければなりません"
 
-msgid "E1116: assert_fails() fifth argument must be a string"
-msgstr "E1116: assert_fails() の第5引数は文字列でなければなりません"
+msgid "E1116: \"assert_fails()\" fifth argument must be a string"
+msgstr "E1116: \"assert_fails()\" の第5引数は文字列でなければなりません"
+
+msgid "E1117: Cannot use ! with nested :def"
+msgstr "E1117: ! を入れ子になった :def と組み合わせては使えません"
+
+msgid "E1118: Cannot change list"
+msgstr "E1118: リストを変更できません"
+
+msgid "E1119: Cannot change list item"
+msgstr "E1119: リストの要素を変更できません"
+
+msgid "E1120: Cannot change dict"
+msgstr "E1120: 辞書を変更できません"
+
+msgid "E1121: Cannot change dict item"
+msgstr "E1121: 辞書の要素を変更できません"
+
+#, c-format
+msgid "E1122: Variable is locked: %s"
+msgstr "E1122: 変数がロックされています: %s"
+
+#, c-format
+msgid "E1123: Missing comma before argument: %s"
+msgstr "E1123: 引数の前にコンマがありません: %s"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
@@ -7869,6 +7893,15 @@ msgstr "テキスト;エディタ;"
 #~ msgid "Vim"
 #~ msgstr ""
 
+msgid "(local to window)"
+msgstr "(ウィンドウについてローカル)"
+
+msgid "(local to buffer)"
+msgstr "(バッファについてローカル)"
+
+msgid "(global or local to buffer)"
+msgstr "(グローバル／バッファについてローカル)"
+
 msgid ""
 "\" Each \"set\" line shows the current value of an option (on the left)."
 msgstr "\" それぞれの \"set\" 行はオプションの現在の値を(左側に)示しています。"
@@ -7895,3 +7928,1351 @@ msgstr "\" インデックス行で <Enter> を打つと、そこにジャンプ
 
 msgid "\" Hit <Space> on a \"set\" line to refresh it."
 msgstr "\" \"set\" 行で <Spece> を打つと、最新の値が読み込まれます。"
+
+msgid "important"
+msgstr "重要"
+
+#~ msgid "behave very Vi compatible (not advisable)"
+#~ msgstr ""
+
+#~ msgid "list of flags to specify Vi compatibility"
+#~ msgstr ""
+
+#~ msgid "use Insert mode as the default mode"
+#~ msgstr ""
+
+#~ msgid "paste mode, insert typed text literally"
+#~ msgstr ""
+
+#~ msgid "key sequence to toggle paste mode"
+#~ msgstr ""
+
+#~ msgid "list of directories used for runtime files and plugins"
+#~ msgstr ""
+
+#~ msgid "list of directories used for plugin packages"
+#~ msgstr ""
+
+#~ msgid "name of the main help file"
+#~ msgstr ""
+
+#~ msgid "moving around, searching and patterns"
+#~ msgstr ""
+
+#~ msgid "list of flags specifying which commands wrap to another line"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "many jump commands move the cursor to the first non-blank\n"
+#~ "character of a line"
+#~ msgstr ""
+
+#~ msgid "nroff macro names that separate paragraphs"
+#~ msgstr ""
+
+#~ msgid "nroff macro names that separate sections"
+#~ msgstr ""
+
+#~ msgid "list of directory names used for file searching"
+#~ msgstr ""
+
+#~ msgid "list of directory names used for :cd"
+#~ msgstr ""
+
+#~ msgid "change to directory of file in buffer"
+#~ msgstr ""
+
+#~ msgid "search commands wrap around the end of the buffer"
+#~ msgstr ""
+
+#~ msgid "show match for partly typed search command"
+#~ msgstr ""
+
+#~ msgid "change the way backslashes are used in search patterns"
+#~ msgstr ""
+
+#~ msgid "select the default regexp engine used"
+#~ msgstr ""
+
+#~ msgid "ignore case when using a search pattern"
+#~ msgstr ""
+
+#~ msgid "override 'ignorecase' when pattern has upper case characters"
+#~ msgstr ""
+
+#~ msgid "what method to use for changing case of letters"
+#~ msgstr ""
+
+#~ msgid "maximum amount of memory in Kbyte used for pattern matching"
+#~ msgstr ""
+
+#~ msgid "pattern for a macro definition line"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "pattern for an include-file line"
+#~ msgstr "パターンが全ての行で見つかりました: %s"
+
+#~ msgid "expression used to transform an include line to a file name"
+#~ msgstr ""
+
+#~ msgid "tags"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "use binary searching in tags files"
+#~ msgstr "タグファイル %s を検索中"
+
+#~ msgid "number of significant characters in a tag name or zero"
+#~ msgstr ""
+
+#~ msgid "list of file names to search for tags"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "how to handle case when searching in tags files:\n"
+#~ "\"followic\" to follow 'ignorecase', \"ignore\" or \"match\""
+#~ msgstr ""
+
+#~ msgid "file names in a tags file are relative to the tags file"
+#~ msgstr ""
+
+#~ msgid "a :tag command will use the tagstack"
+#~ msgstr ""
+
+#~ msgid "when completing tags in Insert mode show more info"
+#~ msgstr ""
+
+#~ msgid "a function to be used to perform tag searches"
+#~ msgstr ""
+
+#~ msgid "command for executing cscope"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "use cscope for tag commands"
+#~ msgstr "cscopeコマンド:\n"
+
+#~ msgid "0 or 1; the order in which \":cstag\" performs a search"
+#~ msgstr ""
+
+#~ msgid "give messages when adding a cscope database"
+#~ msgstr ""
+
+#~ msgid "how many components of the path to show"
+#~ msgstr ""
+
+#~ msgid "when to open a quickfix window for cscope"
+#~ msgstr ""
+
+#~ msgid "file names in a cscope file are relative to that file"
+#~ msgstr ""
+
+#~ msgid "displaying text"
+#~ msgstr ""
+
+#~ msgid "number of lines to scroll for CTRL-U and CTRL-D"
+#~ msgstr ""
+
+#~ msgid "number of screen lines to show around the cursor"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "long lines wrap"
+#~ msgstr "[長行分割]"
+
+#~ msgid "wrap long lines at a character in 'breakat'"
+#~ msgstr ""
+
+#~ msgid "preserve indentation in wrapped text"
+#~ msgstr ""
+
+#~ msgid "adjust breakindent behaviour"
+#~ msgstr ""
+
+#~ msgid "which characters might cause a line break"
+#~ msgstr ""
+
+#~ msgid "string to put before wrapped screen lines"
+#~ msgstr ""
+
+#~ msgid "minimal number of columns to scroll horizontally"
+#~ msgstr ""
+
+#~ msgid "minimal number of columns to keep left and right of the cursor"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "include \"lastline\" to show the last line even if it doesn't fit\n"
+#~ "include \"uhex\" to show unprintable characters as a hex number"
+#~ msgstr ""
+
+#~ msgid "characters to use for the status line, folds and filler lines"
+#~ msgstr ""
+
+#~ msgid "number of lines used for the command-line"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "width of the display"
+#~ msgstr "ディスプレイが見つかりません"
+
+#~ msgid "number of lines in the display"
+#~ msgstr ""
+
+#~ msgid "number of lines to scroll for CTRL-F and CTRL-B"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "don't redraw while executing macros"
+#~ msgstr "E1099: %s を実行中に未知のエラーです"
+
+#~ msgid "timeout for 'hlsearch' and :match highlighting in msec"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "delay in msec for each char written to the display\n"
+#~ "(for debugging)"
+#~ msgstr ""
+
+#~ msgid "show <Tab> as ^I and end-of-line as $"
+#~ msgstr ""
+
+#~ msgid "list of strings used for list mode"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "show the line number for each line"
+#~ msgstr " 行前(トップ行よりも)"
+
+#~ msgid "show the relative line number for each line"
+#~ msgstr ""
+
+#~ msgid "number of columns to use for the line number"
+#~ msgstr ""
+
+#~ msgid "controls whether concealable text is hidden"
+#~ msgstr ""
+
+#~ msgid "modes in which text in the cursor line can be concealed"
+#~ msgstr ""
+
+#~ msgid "syntax, highlighting and spelling"
+#~ msgstr ""
+
+#~ msgid "\"dark\" or \"light\"; the background color brightness"
+#~ msgstr ""
+
+#~ msgid "type of file; triggers the FileType event when set"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "name of syntax highlighting used"
+#~ msgstr "'redrawtime' を超過したため、構文ハイライトは無効化されます"
+
+#~ msgid "maximum column to look for syntax items"
+#~ msgstr ""
+
+#~ msgid "which highlighting to use for various occasions"
+#~ msgstr ""
+
+#~ msgid "highlight all matches for the last used search pattern"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "highlight group to use for the window"
+#~ msgstr "E411: ハイライトグループが見つかりません: %s"
+
+#~ msgid "use GUI colors for the terminal"
+#~ msgstr ""
+
+#~ msgid "highlight the screen column of the cursor"
+#~ msgstr ""
+
+#~ msgid "highlight the screen line of the cursor"
+#~ msgstr ""
+
+#~ msgid "specifies which area 'cursorline' highlights"
+#~ msgstr ""
+
+#~ msgid "columns to highlight"
+#~ msgstr ""
+
+#~ msgid "highlight spelling mistakes"
+#~ msgstr ""
+
+#~ msgid "list of accepted languages"
+#~ msgstr ""
+
+#~ msgid "file that \"zg\" adds good words to"
+#~ msgstr ""
+
+#~ msgid "pattern to locate the end of a sentence"
+#~ msgstr ""
+
+#~ msgid "flags to change how spell checking works"
+#~ msgstr ""
+
+#~ msgid "methods used to suggest corrections"
+#~ msgstr ""
+
+#~ msgid "amount of memory used by :mkspell before compressing"
+#~ msgstr ""
+
+#~ msgid "multiple windows"
+#~ msgstr ""
+
+#~ msgid "0, 1 or 2; when to use a status line for the last window"
+#~ msgstr ""
+
+#~ msgid "alternate format to be used for a status line"
+#~ msgstr ""
+
+#~ msgid "make all windows the same size when adding/removing windows"
+#~ msgstr ""
+
+#~ msgid "in which direction 'equalalways' works: \"ver\", \"hor\" or \"both\""
+#~ msgstr ""
+
+#~ msgid "minimal number of lines used for the current window"
+#~ msgstr ""
+
+#~ msgid "minimal number of lines used for any window"
+#~ msgstr ""
+
+#~ msgid "keep the height of the window"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "keep the width of the window"
+#~ msgstr "指定されたウィンドウに切り替えませんでした"
+
+#~ msgid "minimal number of columns used for the current window"
+#~ msgstr ""
+
+#~ msgid "minimal number of columns used for any window"
+#~ msgstr ""
+
+#~ msgid "initial height of the help window"
+#~ msgstr ""
+
+#~ msgid "use a popup window for preview"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "default height for the preview window"
+#~ msgstr "指定されたウィンドウに切り替えませんでした"
+
+#, fuzzy
+#~ msgid "identifies the preview window"
+#~ msgstr "指定されたウィンドウに切り替えませんでした"
+
+#~ msgid "don't unload a buffer when no longer shown in a window"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\"useopen\" and/or \"split\"; which window to use when jumping\n"
+#~ "to a buffer"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "a new window is put below the current one"
+#~ msgstr "現在のタブには指定されたウィンドウがありませんでした"
+
+#~ msgid "a new window is put right of the current one"
+#~ msgstr ""
+
+#~ msgid "this window scrolls together with other bound windows"
+#~ msgstr ""
+
+#~ msgid "\"ver\", \"hor\" and/or \"jump\"; list of options for 'scrollbind'"
+#~ msgstr ""
+
+#~ msgid "this window's cursor moves together with other bound windows"
+#~ msgstr ""
+
+#~ msgid "size of a terminal window"
+#~ msgstr ""
+
+#~ msgid "key that precedes Vim commands in a terminal window"
+#~ msgstr ""
+
+#~ msgid "max number of lines to keep for scrollback in a terminal window"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "type of pty to use for a terminal window"
+#~ msgstr "E863: 端末はポップアップウィンドウでは許されません"
+
+#~ msgid "name of the winpty dynamic library"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "multiple tab pages"
+#~ msgstr "新しいタブページでファイルを編集します"
+
+#~ msgid "0, 1 or 2; when to use a tab pages line"
+#~ msgstr ""
+
+#~ msgid "maximum number of tab pages to open for -p and \"tab all\""
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "custom tab pages line"
+#~ msgstr "行を取得できません"
+
+#~ msgid "custom tab page label for the GUI"
+#~ msgstr ""
+
+#~ msgid "custom tab page tooltip for the GUI"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "terminal"
+#~ msgstr "端末"
+
+#~ msgid "name of the used terminal"
+#~ msgstr ""
+
+#~ msgid "alias for 'term'"
+#~ msgstr ""
+
+#~ msgid "check built-in termcaps first"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "terminal connection is fast"
+#~ msgstr "全ての接続を再初期化する"
+
+#~ msgid "terminal that requires extra redrawing"
+#~ msgstr ""
+
+#~ msgid "recognize keys that start with <Esc> in Insert mode"
+#~ msgstr ""
+
+#~ msgid "minimal number of lines to scroll at a time"
+#~ msgstr ""
+
+#~ msgid "maximum number of lines to use scrolling instead of redrawing"
+#~ msgstr ""
+
+#~ msgid "specifies what the cursor looks like in different modes"
+#~ msgstr ""
+
+#~ msgid "show info in the window title"
+#~ msgstr ""
+
+#~ msgid "percentage of 'columns' used for the window title"
+#~ msgstr ""
+
+#~ msgid "when not empty, string to be used for the window title"
+#~ msgstr ""
+
+#~ msgid "string to restore the title to when exiting Vim"
+#~ msgstr ""
+
+#~ msgid "set the text of the icon for this window"
+#~ msgstr ""
+
+#~ msgid "when not empty, text for the icon of this window"
+#~ msgstr ""
+
+#~ msgid "restore the screen contents when exiting Vim"
+#~ msgstr ""
+
+#~ msgid "using the mouse"
+#~ msgstr ""
+
+#~ msgid "list of flags for using the mouse"
+#~ msgstr ""
+
+#~ msgid "the window with the mouse pointer becomes the current one"
+#~ msgstr ""
+
+#~ msgid "the window with the mouse pointer scrolls with the mouse wheel"
+#~ msgstr ""
+
+#~ msgid "hide the mouse pointer while typing"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\"extend\", \"popup\" or \"popup_setpos\"; what the right\n"
+#~ "mouse button is used for"
+#~ msgstr ""
+
+#~ msgid "maximum time in msec to recognize a double-click"
+#~ msgstr ""
+
+#~ msgid "\"xterm\", \"xterm2\", \"dec\" or \"netterm\"; type of mouse"
+#~ msgstr ""
+
+#~ msgid "what the mouse pointer looks like in different modes"
+#~ msgstr ""
+
+#~ msgid "GUI"
+#~ msgstr ""
+
+#~ msgid "list of font names to be used in the GUI"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "pair of fonts to be used, for multibyte editing"
+#~ msgstr ""
+#~ "E675: マルチバイト文字を印刷するためのデフォルトフォントが指定されていませ"
+#~ "ん。"
+
+#~ msgid "list of font names to be used for double-wide characters"
+#~ msgstr ""
+
+#~ msgid "use smooth, antialiased fonts"
+#~ msgstr ""
+
+#~ msgid "list of flags that specify how the GUI works"
+#~ msgstr ""
+
+#~ msgid "\"icons\", \"text\" and/or \"tooltips\"; how to show the toolbar"
+#~ msgstr ""
+
+#~ msgid "size of toolbar icons"
+#~ msgstr ""
+
+#~ msgid "room (in pixels) left above/below the window"
+#~ msgstr ""
+
+#~ msgid "options for text rendering"
+#~ msgstr ""
+
+#~ msgid "use a pseudo-tty for I/O to external commands"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\"last\", \"buffer\" or \"current\": which directory used for the file "
+#~ "browser"
+#~ msgstr ""
+
+#~ msgid "language to be used for the menus"
+#~ msgstr ""
+
+#~ msgid "maximum number of items in one menu"
+#~ msgstr ""
+
+#~ msgid "\"no\", \"yes\" or \"menu\"; how to use the ALT key"
+#~ msgstr ""
+
+#~ msgid "number of pixel lines to use between characters"
+#~ msgstr ""
+
+#~ msgid "delay in milliseconds before a balloon may pop up"
+#~ msgstr ""
+
+#~ msgid "use balloon evaluation in the GUI"
+#~ msgstr ""
+
+#~ msgid "use balloon evaluation in the terminal"
+#~ msgstr ""
+
+#~ msgid "expression to show in balloon eval"
+#~ msgstr ""
+
+#~ msgid "use ATSUI text drawing; disable to avoid display problems"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "printing"
+#~ msgstr "印刷しています: '%s'"
+
+#~ msgid "list of items that control the format of :hardcopy output"
+#~ msgstr ""
+
+#~ msgid "name of the printer to be used for :hardcopy"
+#~ msgstr ""
+
+#~ msgid "expression used to print the PostScript file for :hardcopy"
+#~ msgstr ""
+
+#~ msgid "name of the font to be used for :hardcopy"
+#~ msgstr ""
+
+#~ msgid "format of the header used for :hardcopy"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "encoding used to print the PostScript file for :hardcopy"
+#~ msgstr "E365: PostScriptファイルの印刷に失敗しました"
+
+#~ msgid "the CJK character set to be used for CJK output from :hardcopy"
+#~ msgstr ""
+
+#~ msgid "list of font names to be used for CJK output from :hardcopy"
+#~ msgstr ""
+
+#~ msgid "messages and info"
+#~ msgstr ""
+
+#~ msgid "add 's' flag in 'shortmess' (don't show search message)"
+#~ msgstr ""
+
+#~ msgid "list of flags to make messages shorter"
+#~ msgstr ""
+
+#~ msgid "show (partial) command keys in the status line"
+#~ msgstr ""
+
+#~ msgid "display the current mode in the status line"
+#~ msgstr ""
+
+#~ msgid "show cursor position below each window"
+#~ msgstr ""
+
+#~ msgid "alternate format to be used for the ruler"
+#~ msgstr ""
+
+#~ msgid "threshold for reporting number of changed lines"
+#~ msgstr ""
+
+#~ msgid "the higher the more messages are given"
+#~ msgstr ""
+
+#~ msgid "file to write messages in"
+#~ msgstr ""
+
+#~ msgid "pause listings when the screen is full"
+#~ msgstr ""
+
+#~ msgid "start a dialog when a command fails"
+#~ msgstr ""
+
+#~ msgid "ring the bell for error messages"
+#~ msgstr ""
+
+#~ msgid "use a visual bell instead of beeping"
+#~ msgstr ""
+
+#~ msgid "do not ring the bell for these reasons"
+#~ msgstr ""
+
+#~ msgid "list of preferred languages for finding help"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "selecting text"
+#~ msgstr "選択"
+
+#~ msgid "\"old\", \"inclusive\" or \"exclusive\"; how selecting text behaves"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\"mouse\", \"key\" and/or \"cmd\"; when to start Select mode\n"
+#~ "instead of Visual mode"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\"unnamed\" to use the * register like unnamed register\n"
+#~ "\"autoselect\" to always put selected text on the clipboard"
+#~ msgstr ""
+
+#~ msgid "\"startsel\" and/or \"stopsel\"; what special keys can do"
+#~ msgstr ""
+
+#~ msgid "editing text"
+#~ msgstr ""
+
+#~ msgid "maximum number of changes that can be undone"
+#~ msgstr ""
+
+#~ msgid "automatically save and restore undo history"
+#~ msgstr ""
+
+#~ msgid "list of directories for undo files"
+#~ msgstr ""
+
+#~ msgid "maximum number lines to save for undo on a buffer reload"
+#~ msgstr ""
+
+#~ msgid "changes have been made and not written to a file"
+#~ msgstr ""
+
+#~ msgid "buffer is not to be written"
+#~ msgstr ""
+
+#~ msgid "changes to the text are not possible"
+#~ msgstr ""
+
+#~ msgid "line length above which to break a line"
+#~ msgstr ""
+
+#~ msgid "margin from the right in which to break a line"
+#~ msgstr ""
+
+#~ msgid "specifies what <BS>, CTRL-W, etc. can do in Insert mode"
+#~ msgstr ""
+
+#~ msgid "definition of what comment lines look like"
+#~ msgstr ""
+
+#~ msgid "list of flags that tell how automatic formatting works"
+#~ msgstr ""
+
+#~ msgid "pattern to recognize a numbered list"
+#~ msgstr ""
+
+#~ msgid "expression used for \"gq\" to format lines"
+#~ msgstr ""
+
+#~ msgid "specifies how Insert mode completion works for CTRL-N and CTRL-P"
+#~ msgstr ""
+
+#~ msgid "whether to use a popup menu for Insert mode completion"
+#~ msgstr ""
+
+#~ msgid "options for the Insert mode completion info popup"
+#~ msgstr ""
+
+#~ msgid "maximum height of the popup menu"
+#~ msgstr ""
+
+#~ msgid "minimum width of the popup menu"
+#~ msgstr ""
+
+#~ msgid "user defined function for Insert mode completion"
+#~ msgstr ""
+
+#~ msgid "function for filetype-specific Insert mode completion"
+#~ msgstr ""
+
+#~ msgid "list of dictionary files for keyword completion"
+#~ msgstr ""
+
+#~ msgid "list of thesaurus files for keyword completion"
+#~ msgstr ""
+
+#~ msgid "adjust case of a keyword completion match"
+#~ msgstr ""
+
+#~ msgid "enable entering digraphs with c1 <BS> c2"
+#~ msgstr ""
+
+#~ msgid "the \"~\" command behaves like an operator"
+#~ msgstr ""
+
+#~ msgid "function called for the\"g@\"  operator"
+#~ msgstr ""
+
+#~ msgid "when inserting a bracket, briefly jump to its match"
+#~ msgstr ""
+
+#~ msgid "tenth of a second to show a match for 'showmatch'"
+#~ msgstr ""
+
+#~ msgid "list of pairs that match for the \"%\" command"
+#~ msgstr ""
+
+#~ msgid "use two spaces after '.' when joining a line"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\"alpha\", \"octal\" and/or \"hex\"; number formats recognized for\n"
+#~ "CTRL-A and CTRL-X commands"
+#~ msgstr ""
+
+#~ msgid "tabs and indenting"
+#~ msgstr ""
+
+#~ msgid "number of spaces a <Tab> in the text stands for"
+#~ msgstr ""
+
+#~ msgid "number of spaces used for each step of (auto)indent"
+#~ msgstr ""
+
+#~ msgid "list of number of spaces a tab counts for"
+#~ msgstr ""
+
+#~ msgid "list of number of spaces a soft tabsstop counts for"
+#~ msgstr ""
+
+#~ msgid "a <Tab> in an indent inserts 'shiftwidth' spaces"
+#~ msgstr ""
+
+#~ msgid "if non-zero, number of spaces to insert for a <Tab>"
+#~ msgstr ""
+
+#~ msgid "round to 'shiftwidth' for \"<<\" and \">>\""
+#~ msgstr ""
+
+#~ msgid "expand <Tab> to spaces in Insert mode"
+#~ msgstr ""
+
+#~ msgid "automatically set the indent of a new line"
+#~ msgstr ""
+
+#~ msgid "do clever autoindenting"
+#~ msgstr ""
+
+#~ msgid "enable specific indenting for C code"
+#~ msgstr ""
+
+#~ msgid "options for C-indenting"
+#~ msgstr ""
+
+#~ msgid "keys that trigger C-indenting in Insert mode"
+#~ msgstr ""
+
+#~ msgid "list of words that cause more C-indent"
+#~ msgstr ""
+
+#~ msgid "expression used to obtain the indent of a line"
+#~ msgstr ""
+
+#~ msgid "keys that trigger indenting with 'indentexpr' in Insert mode"
+#~ msgstr ""
+
+#~ msgid "copy whitespace for indenting from previous line"
+#~ msgstr ""
+
+#~ msgid "preserve kind of whitespace when changing indent"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "enable lisp mode"
+#~ msgstr "-l\t\t\tLispモード"
+
+#~ msgid "words that change how lisp indenting works"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "folding"
+#~ msgstr "エンコード:"
+
+#~ msgid "set to display all folds open"
+#~ msgstr ""
+
+#~ msgid "folds with a level higher than this number will be closed"
+#~ msgstr ""
+
+#~ msgid "value for 'foldlevel' when starting to edit a file"
+#~ msgstr ""
+
+#~ msgid "width of the column used to indicate folds"
+#~ msgstr ""
+
+#~ msgid "expression used to display the text of a closed fold"
+#~ msgstr ""
+
+#~ msgid "set to \"all\" to close a fold when the cursor leaves it"
+#~ msgstr ""
+
+#~ msgid "specifies for which commands a fold will be opened"
+#~ msgstr ""
+
+#~ msgid "minimum number of screen lines for a fold to be closed"
+#~ msgstr ""
+
+#~ msgid "template for comments; used to put the marker in"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "folding type: \"manual\", \"indent\", \"expr\", \"marker\" or \"syntax\""
+#~ msgstr ""
+
+#~ msgid "expression used when 'foldmethod' is \"expr\""
+#~ msgstr ""
+
+#~ msgid "used to ignore lines when 'foldmethod' is \"indent\""
+#~ msgstr ""
+
+#~ msgid "markers used when 'foldmethod' is \"marker\""
+#~ msgstr ""
+
+#~ msgid "maximum fold depth for when 'foldmethod' is \"indent\" or \"syntax\""
+#~ msgstr ""
+
+#~ msgid "diff mode"
+#~ msgstr ""
+
+#~ msgid "use diff mode for the current window"
+#~ msgstr ""
+
+#~ msgid "options for using diff mode"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "expression used to obtain a diff file"
+#~ msgstr "式はコンパイル時に無効にされています"
+
+#, fuzzy
+#~ msgid "expression used to patch a file"
+#~ msgstr "式はコンパイル時に無効にされています"
+
+#, fuzzy
+#~ msgid "mapping"
+#~ msgstr "マッピングは見つかりませんでした"
+
+#~ msgid "maximum depth of mapping"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "recognize mappings in mapped keys"
+#~ msgstr "%s の %ld 行目 認識不能なフラグです: %s"
+
+#~ msgid "allow timing out halfway into a mapping"
+#~ msgstr ""
+
+#~ msgid "allow timing out halfway into a key code"
+#~ msgstr ""
+
+#~ msgid "time in msec for 'timeout'"
+#~ msgstr ""
+
+#~ msgid "time in msec for 'ttimeout'"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "reading and writing files"
+#~ msgstr "辞書ファイル %s を読込み中..."
+
+#~ msgid "enable using settings from modelines when reading a file"
+#~ msgstr ""
+
+#~ msgid "allow setting expression options from a modeline"
+#~ msgstr ""
+
+#~ msgid "number of lines to check for modelines"
+#~ msgstr ""
+
+#~ msgid "binary file editing"
+#~ msgstr ""
+
+#~ msgid "last line in the file has an end-of-line"
+#~ msgstr ""
+
+#~ msgid "fixes missing end-of-line at end of text file"
+#~ msgstr ""
+
+#~ msgid "prepend a Byte Order Mark to the file"
+#~ msgstr ""
+
+#~ msgid "end-of-line format: \"dos\", \"unix\" or \"mac\""
+#~ msgstr ""
+
+#~ msgid "list of file formats to look for when editing a file"
+#~ msgstr ""
+
+#~ msgid "obsolete, use 'fileformat'"
+#~ msgstr ""
+
+#~ msgid "obsolete, use 'fileformats'"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "writing files is allowed"
+#~ msgstr "-m\t\t\t変更 (ファイル保存時) をできないようにする"
+
+#~ msgid "write a backup file before overwriting a file"
+#~ msgstr ""
+
+#~ msgid "keep a backup after overwriting a file"
+#~ msgstr ""
+
+#~ msgid "patterns that specify for which files a backup is not made"
+#~ msgstr ""
+
+#~ msgid "whether to make the backup as a copy or rename the existing file"
+#~ msgstr ""
+
+#~ msgid "list of directories to put backup files in"
+#~ msgstr ""
+
+#~ msgid "file name extension for the backup file"
+#~ msgstr ""
+
+#~ msgid "automatically write a file when leaving a modified buffer"
+#~ msgstr ""
+
+#~ msgid "as 'autowrite', but works with more commands"
+#~ msgstr ""
+
+#~ msgid "always write without asking for confirmation"
+#~ msgstr ""
+
+#~ msgid "automatically read a file when it was modified outside of Vim"
+#~ msgstr ""
+
+#~ msgid "keep oldest version of a file; specifies file name extension"
+#~ msgstr ""
+
+#~ msgid "forcibly sync the file to disk after writing it"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "use 8.3 file names"
+#~ msgstr "不正なファイル名"
+
+#~ msgid "encryption method for file writing: zip or blowfish"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "the swap file"
+#~ msgstr "スワップファイルがありません"
+
+#~ msgid "list of directories for the swap file"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "use a swap file for this buffer"
+#~ msgstr "このバッファに定義された構文要素はありません"
+
+#~ msgid "\"sync\", \"fsync\" or empty; how to flush a swap file to disk"
+#~ msgstr ""
+
+#~ msgid "number of characters typed to cause a swap file update"
+#~ msgstr ""
+
+#~ msgid "time in msec after which the swap file will be updated"
+#~ msgstr ""
+
+#~ msgid "maximum amount of memory in Kbyte used for one buffer"
+#~ msgstr ""
+
+#~ msgid "maximum amount of memory in Kbyte used for all buffers"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "command line editing"
+#~ msgstr "コマンドライン"
+
+#~ msgid "how many command lines are remembered "
+#~ msgstr ""
+
+#~ msgid "key that triggers command-line expansion"
+#~ msgstr ""
+
+#~ msgid "like 'wildchar' but can also be used in a mapping"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "specifies how command line completion works"
+#~ msgstr " コマンドライン補完 (^V^N^P)"
+
+#~ msgid "empty or \"tagfile\" to list file name of matching tags"
+#~ msgstr ""
+
+#~ msgid "list of file name extensions that have a lower priority"
+#~ msgstr ""
+
+#~ msgid "list of file name extensions added when searching for a file"
+#~ msgstr ""
+
+#~ msgid "list of patterns to ignore files for file name completion"
+#~ msgstr ""
+
+#~ msgid "ignore case when using file names"
+#~ msgstr ""
+
+#~ msgid "ignore case when completing file names"
+#~ msgstr ""
+
+#~ msgid "command-line completion shows a list of matches"
+#~ msgstr ""
+
+#~ msgid "key used to open the command-line window"
+#~ msgstr ""
+
+#~ msgid "height of the command-line window"
+#~ msgstr ""
+
+#~ msgid "executing external commands"
+#~ msgstr ""
+
+#~ msgid "name of the shell program used for external commands"
+#~ msgstr ""
+
+#~ msgid "when to use the shell or directly execute a command"
+#~ msgstr ""
+
+#~ msgid "character(s) to enclose a shell command in"
+#~ msgstr ""
+
+#~ msgid "like 'shellquote' but include the redirection"
+#~ msgstr ""
+
+#~ msgid "characters to escape when 'shellxquote' is ("
+#~ msgstr ""
+
+#~ msgid "argument for 'shell' to execute a command"
+#~ msgstr ""
+
+#~ msgid "used to redirect command output to a file"
+#~ msgstr ""
+
+#~ msgid "use a temp file for shell commands instead of using a pipe"
+#~ msgstr ""
+
+#~ msgid "program used for \"=\" command"
+#~ msgstr ""
+
+#~ msgid "program used to format lines with \"gq\" command"
+#~ msgstr ""
+
+#~ msgid "program used for the \"K\" command"
+#~ msgstr ""
+
+#~ msgid "warn when using a shell command and a buffer has changes"
+#~ msgstr ""
+
+#~ msgid "running make and jumping to errors (quickfix)"
+#~ msgstr ""
+
+#~ msgid "name of the file that contains error messages"
+#~ msgstr ""
+
+#~ msgid "list of formats for error messages"
+#~ msgstr ""
+
+#~ msgid "program used for the \":make\" command"
+#~ msgstr ""
+
+#~ msgid "string used to put the output of \":make\" in the error file"
+#~ msgstr ""
+
+#~ msgid "name of the errorfile for the 'makeprg' command"
+#~ msgstr ""
+
+#~ msgid "program used for the \":grep\" command"
+#~ msgstr ""
+
+#~ msgid "list of formats for output of 'grepprg'"
+#~ msgstr ""
+
+#~ msgid "encoding of the \":make\" and \":grep\" output"
+#~ msgstr ""
+
+#~ msgid "function to display text in the quickfix window"
+#~ msgstr ""
+
+#~ msgid "system specific"
+#~ msgstr ""
+
+#~ msgid "OS-specific information about the type of file"
+#~ msgstr ""
+
+#~ msgid "use forward slashes in file names; for Unix-like shells"
+#~ msgstr ""
+
+#~ msgid "specifies slash/backslash used for completion"
+#~ msgstr ""
+
+#~ msgid "language specific"
+#~ msgstr ""
+
+#, fuzzy
+#~ msgid "specifies the characters in a file name"
+#~ msgstr "E18: 予期せぬ文字が :let にありました"
+
+#~ msgid "specifies the characters in an identifier"
+#~ msgstr ""
+
+#~ msgid "specifies the characters in a keyword"
+#~ msgstr ""
+
+#~ msgid "specifies printable characters"
+#~ msgstr ""
+
+#~ msgid "specifies escape characters in a string"
+#~ msgstr ""
+
+#~ msgid "display the buffer right-to-left"
+#~ msgstr ""
+
+#~ msgid "when to edit the command-line right-to-left"
+#~ msgstr ""
+
+#~ msgid "insert characters backwards"
+#~ msgstr ""
+
+#~ msgid "allow CTRL-_ in Insert and Command-line mode to toggle 'revins'"
+#~ msgstr ""
+
+#~ msgid "the ASCII code for the first letter of the Hebrew alphabet"
+#~ msgstr ""
+
+#~ msgid "use Hebrew keyboard mapping"
+#~ msgstr ""
+
+#~ msgid "use phonetic Hebrew keyboard mapping"
+#~ msgstr ""
+
+#~ msgid "use Farsi as the second language when 'revins' is set"
+#~ msgstr ""
+
+#~ msgid "use Farsi keyboard mapping"
+#~ msgstr ""
+
+#~ msgid "prepare for editing Arabic text"
+#~ msgstr ""
+
+#~ msgid "perform shaping of Arabic characters"
+#~ msgstr ""
+
+#~ msgid "terminal will perform bidi handling"
+#~ msgstr ""
+
+#~ msgid "name of a keyboard mapping"
+#~ msgstr ""
+
+#~ msgid "list of characters that are translated in Normal mode"
+#~ msgstr ""
+
+#~ msgid "apply 'langmap' to mapped characters"
+#~ msgstr ""
+
+#~ msgid "when set never use IM; overrules following IM options"
+#~ msgstr ""
+
+#~ msgid "in Insert mode: 1: use :lmap; 2: use IM; 0: neither"
+#~ msgstr ""
+
+#~ msgid "input method style, 0: on-the-spot, 1: over-the-spot"
+#~ msgstr ""
+
+#~ msgid "entering a search pattern: 1: use :lmap; 2: use IM; 0: neither"
+#~ msgstr ""
+
+#~ msgid "when set always use IM when starting to edit a command line"
+#~ msgstr ""
+
+#~ msgid "function to obtain IME status"
+#~ msgstr ""
+
+#~ msgid "function to enable/disable IME"
+#~ msgstr ""
+
+#~ msgid "multi-byte characters"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "character encoding used in Vim: \"latin1\", \"utf-8\"\n"
+#~ "\"euc-jp\", \"big5\", etc."
+#~ msgstr ""
+
+#~ msgid "character encoding for the current file"
+#~ msgstr ""
+
+#~ msgid "automatically detected character encodings"
+#~ msgstr ""
+
+#~ msgid "character encoding used by the terminal"
+#~ msgstr ""
+
+#~ msgid "expression used for character encoding conversion"
+#~ msgstr ""
+
+#~ msgid "delete combining (composing) characters on their own"
+#~ msgstr ""
+
+#~ msgid "maximum number of combining (composing) characters displayed"
+#~ msgstr ""
+
+#~ msgid "key that activates the X input method"
+#~ msgstr ""
+
+#~ msgid "width of ambiguous width characters"
+#~ msgstr ""
+
+#~ msgid "emoji characters are full width"
+#~ msgstr ""
+
+#~ msgid "various"
+#~ msgstr ""
+
+#~ msgid "when to use virtual editing: \"block\", \"insert\" and/or \"all\""
+#~ msgstr ""
+
+#~ msgid "list of autocommand events which are to be ignored"
+#~ msgstr ""
+
+#~ msgid "load plugin scripts when starting up"
+#~ msgstr ""
+
+#~ msgid "enable reading .vimrc/.exrc/.gvimrc in the current directory"
+#~ msgstr ""
+
+#~ msgid "safer working with script files in the current directory"
+#~ msgstr ""
+
+#~ msgid "use the 'g' flag for \":substitute\""
+#~ msgstr ""
+
+#~ msgid "'g' and 'c' flags of \":substitute\" toggle"
+#~ msgstr ""
+
+#~ msgid "allow reading/writing devices"
+#~ msgstr ""
+
+#~ msgid "maximum depth of function calls"
+#~ msgstr ""
+
+#~ msgid "list of words that specifies what to put in a session file"
+#~ msgstr ""
+
+#~ msgid "list of words that specifies what to save for :mkview"
+#~ msgstr ""
+
+#~ msgid "directory where to store files with :mkview"
+#~ msgstr ""
+
+#~ msgid "list that specifies what to write in the viminfo file"
+#~ msgstr ""
+
+#~ msgid "file name used for the viminfo file"
+#~ msgstr ""
+
+#~ msgid "what happens with a buffer when it's no longer in a window"
+#~ msgstr ""
+
+#~ msgid "\"\", \"nofile\", \"nowrite\" or \"quickfix\": type of buffer"
+#~ msgstr ""
+
+#~ msgid "whether the buffer shows up in the buffer list"
+#~ msgstr ""
+
+#~ msgid "set to \"msg\" to see all error messages"
+#~ msgstr ""
+
+#~ msgid "whether to show the signcolumn"
+#~ msgstr ""
+
+#~ msgid "interval in milliseconds between polls for MzScheme threads"
+#~ msgstr ""
+
+#~ msgid "name of the Lua dynamic library"
+#~ msgstr ""
+
+#~ msgid "name of the Perl dynamic library"
+#~ msgstr ""
+
+#~ msgid "whether to use Python 2 or 3"
+#~ msgstr ""
+
+#~ msgid "name of the Python 2 dynamic library"
+#~ msgstr ""
+
+#~ msgid "name of the Python 2 home directory"
+#~ msgstr ""
+
+#~ msgid "name of the Python 3 dynamic library"
+#~ msgstr ""
+
+#~ msgid "name of the Python 3 home directory"
+#~ msgstr ""
+
+#~ msgid "name of the Ruby dynamic library"
+#~ msgstr ""
+
+#~ msgid "name of the Tcl dynamic library"
+#~ msgstr ""
+
+#~ msgid "name of the MzScheme dynamic library"
+#~ msgstr ""
+
+#~ msgid "name of the MzScheme GC dynamic library"
+#~ msgstr ""
