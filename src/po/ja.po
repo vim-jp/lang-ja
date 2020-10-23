@@ -305,7 +305,7 @@ msgid "is not a file or writable device"
 msgstr "はファイルでも書込み可能デバイスでもありません"
 
 msgid "writing to device disabled with 'opendevice' option"
-msgstr "'opendevice' オプションによりデバイスへの書き込みはできません"
+msgstr "'opendevice' オプションによりデバイスへの書込みはできません"
 
 msgid "is read-only (add ! to override)"
 msgstr "は読込専用です (強制書込には ! を追加)"
@@ -440,11 +440,11 @@ msgstr "E906: 開いていないチャネルです"
 
 #, c-format
 msgid "E630: %s(): write while not connected"
-msgstr "E630: %s(): 非接続状態で書き込みました"
+msgstr "E630: %s(): 非接続状態で書込みました"
 
 #, c-format
 msgid "E631: %s(): write failed"
-msgstr "E631: %s(): 書き込みに失敗しました"
+msgstr "E631: %s(): 書込みに失敗しました"
 
 #, c-format
 msgid "E917: Cannot use a callback with %s()"
@@ -971,7 +971,7 @@ msgid ""
 "Do you wish to try?"
 msgstr ""
 "ファイル \"%s\" のパーミッションが読込専用です.\n"
-"それでも恐らく書き込むことは可能です.\n"
+"それでも恐らく書込むことは可能です.\n"
 "継続しますか?"
 
 #, c-format
@@ -2013,7 +2013,7 @@ msgstr "E152: 書込み用に %s を開けません"
 
 #, c-format
 msgid "E153: Unable to open %s for reading"
-msgstr "E153: 読込用に %s を開けません"
+msgstr "E153: 読込み用に %s を開けません"
 
 #, c-format
 msgid "E670: Mix of help file encodings within a language: %s"
@@ -2681,7 +2681,7 @@ msgid "Attempt to open script file again: \""
 msgstr "スクリプトファイルを再び開こうとしました: \""
 
 msgid "Cannot open for reading: \""
-msgstr "読込用として開けません"
+msgstr "読込用として開けません: \""
 
 msgid "Cannot open for script output: \""
 msgstr "スクリプト出力用を開けません"
@@ -4382,7 +4382,7 @@ msgid "cannot have both a list and a \"what\" argument"
 msgstr "リストと \"what\" 引数の両方を指定することはできません"
 
 msgid "E681: Buffer is not loaded"
-msgstr "E681: バッファは読み込まれませんでした"
+msgstr "E681: バッファは読込まれませんでした"
 
 msgid "E777: String or List expected"
 msgstr "E777: 文字列かリストが必要です"
@@ -5339,7 +5339,7 @@ msgid "E397: Filename required"
 msgstr "E397: ファイル名が必要です"
 
 msgid "E847: Too many syntax includes"
-msgstr "E847: 構文の取り込み(include)が多過ぎます"
+msgstr "E847: 構文の取込み(include)が多過ぎます"
 
 #, c-format
 msgid "E789: Missing ']': %s"
@@ -5500,7 +5500,7 @@ msgid "Duplicate field name: %s"
 msgstr "重複したフィールド名: %s"
 
 msgid "' not known. Available builtin terminals are:"
-msgstr "' は未知です。現行の組み込み端末は次のとおりです:"
+msgstr "' は未知です。現行の組込み端末は次のとおりです:"
 
 msgid "defaulting to '"
 msgstr "省略値を次のように設定します '"
@@ -5734,30 +5734,30 @@ msgid "E825: Corrupted undo file (%s): %s"
 msgstr "E825: アンドゥファイルが壊れています (%s): %s"
 
 msgid "Cannot write undo file in any directory in 'undodir'"
-msgstr "'undodir'のディレクトリにアンドゥファイルを書き込めません"
+msgstr "'undodir'のディレクトリにアンドゥファイルを書込めません"
 
 #, c-format
 msgid "Will not overwrite with undo file, cannot read: %s"
-msgstr "アンドゥファイルとして読み込めないので上書きしません: %s"
+msgstr "アンドゥファイルとして読込めないので上書きしません: %s"
 
 #, c-format
 msgid "Will not overwrite, this is not an undo file: %s"
 msgstr "アンドゥファイルではないので上書きしません: %s"
 
 msgid "Skipping undo file write, nothing to undo"
-msgstr "対象がないのでアンドゥファイルの書き込みをスキップします"
+msgstr "対象がないのでアンドゥファイルの書込みをスキップします"
 
 #, c-format
 msgid "Writing undo file: %s"
-msgstr "アンドゥファイル書き込み中: %s"
+msgstr "アンドゥファイル書込み中: %s"
 
 #, c-format
 msgid "E829: write error in undo file: %s"
-msgstr "E829: アンドゥファイルの書き込みエラーです: %s"
+msgstr "E829: アンドゥファイルの書込みエラーです: %s"
 
 #, c-format
 msgid "Not reading undo file, owner differs: %s"
-msgstr "オーナーが異なるのでアンドゥファイルを読み込みません: %s"
+msgstr "オーナーが異なるのでアンドゥファイルを読込みません: %s"
 
 #, c-format
 msgid "Reading undo file: %s"
@@ -7959,7 +7959,7 @@ msgid "\" Hit <Enter> on an index line to jump there."
 msgstr "\" インデックス行で <Enter> を打つと、そこにジャンプします。"
 
 msgid "\" Hit <Space> on a \"set\" line to refresh it."
-msgstr "\" \"set\" 行で <Spece> を打つと、最新の値が読み込まれます。"
+msgstr "\" \"set\" 行で <Spece> を打つと、最新の値が読込まれます。"
 
 msgid "important"
 msgstr "重要"
@@ -8559,7 +8559,7 @@ msgid "the higher the more messages are given"
 msgstr "値が大きいほど詳細なメッセージが表示される"
 
 msgid "file to write messages in"
-msgstr "メッセージを書き込むファイル"
+msgstr "メッセージを書込むファイル"
 
 msgid "pause listings when the screen is full"
 msgstr "画面が一杯になったとき一覧表示を一時停止"
@@ -8620,10 +8620,10 @@ msgid "maximum number lines to save for undo on a buffer reload"
 msgstr "バッファのリロード時にアンドゥのために保存する最大行数"
 
 msgid "changes have been made and not written to a file"
-msgstr "変更が行われたがファイルに書き込まれていない"
+msgstr "変更が行われたがファイルに書込まれていない"
 
 msgid "buffer is not to be written"
-msgstr "バッファは書き込まれない"
+msgstr "バッファは書込まれない"
 
 msgid "changes to the text are not possible"
 msgstr "テキストの変更が不可能"
@@ -8860,7 +8860,7 @@ msgid "reading and writing files"
 msgstr "ファイルの読み書き"
 
 msgid "enable using settings from modelines when reading a file"
-msgstr "ファイル読み込み時にモードラインからの設定の使用を有効にする"
+msgstr "ファイル読込み時にモードラインからの設定の使用を有効にする"
 
 msgid "allow setting expression options from a modeline"
 msgstr "モードラインから式であるオプションを設定することを許可する"
@@ -8893,10 +8893,10 @@ msgid "obsolete, use 'fileformats'"
 msgstr "廃止、'fileformats' を使うこと"
 
 msgid "writing files is allowed"
-msgstr "ファイルの書き込みが許可されている"
+msgstr "ファイルの書込みが許可されている"
 
 msgid "write a backup file before overwriting a file"
-msgstr "ファイルを上書きする前にバックアップに書き込む"
+msgstr "ファイルを上書きする前にバックアップに書込む"
 
 msgid "keep a backup after overwriting a file"
 msgstr "ファイルの上書き後にバックアップを保持"
@@ -8914,28 +8914,28 @@ msgid "file name extension for the backup file"
 msgstr "バックアップファイルの拡張子"
 
 msgid "automatically write a file when leaving a modified buffer"
-msgstr "変更されたバッファを離れる際に自動的にファイルに書き込む"
+msgstr "変更されたバッファを離れる際に自動的にファイルに書込む"
 
 msgid "as 'autowrite', but works with more commands"
 msgstr "'autowrite' と同様だが、より多くのコマンドで動作する"
 
 msgid "always write without asking for confirmation"
-msgstr "常に確認無しに書き込む"
+msgstr "常に確認無しに書込む"
 
 msgid "automatically read a file when it was modified outside of Vim"
-msgstr "Vim の外でファイルが変更された際に自動的に読み込む"
+msgstr "Vim の外でファイルが変更された際に自動的に読込む"
 
 msgid "keep oldest version of a file; specifies file name extension"
 msgstr "ファイルの最古のバージョンを保持; ファイルの拡張子を指定"
 
 msgid "forcibly sync the file to disk after writing it"
-msgstr "ファイルを書き込んだ後に強制的にディスクに同期させる"
+msgstr "ファイルを書込んだ後に強制的にディスクに同期させる"
 
 msgid "use 8.3 file names"
 msgstr "8.3 形式のファイル名を使う"
 
 msgid "encryption method for file writing: zip or blowfish"
-msgstr "ファイル書き込みのための暗号化方式: zip または blowfish"
+msgstr "ファイル書込みのための暗号化方式: zip または blowfish"
 
 msgid "the swap file"
 msgstr "スワップファイル"
@@ -9057,7 +9057,7 @@ msgid "program used for the \":make\" command"
 msgstr "\":make\" コマンドに使われるプログラム"
 
 msgid "string used to put the output of \":make\" in the error file"
-msgstr "\":make\" の出力をエラーファイルに書き込むために使われる文字列"
+msgstr "\":make\" の出力をエラーファイルに書込むために使われる文字列"
 
 msgid "name of the errorfile for the 'makeprg' command"
 msgstr "'makeprg' コマンド用のエラーファイルの名前"
@@ -9219,11 +9219,11 @@ msgid "list of autocommand events which are to be ignored"
 msgstr "自動コマンドイベントで無視するもののリスト"
 
 msgid "load plugin scripts when starting up"
-msgstr "起動時にプラグインスクリプトを読み込む"
+msgstr "起動時にプラグインスクリプトを読込む"
 
 msgid "enable reading .vimrc/.exrc/.gvimrc in the current directory"
 msgstr ""
-"カレントディレクトリにある .vimrc/.exrc/.gvimrc の読み込みを\n"
+"カレントディレクトリにある .vimrc/.exrc/.gvimrc の読込みを\n"
 "有効化"
 
 msgid "safer working with script files in the current directory"
