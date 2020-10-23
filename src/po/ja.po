@@ -2684,7 +2684,7 @@ msgid "Cannot open for reading: \""
 msgstr "読込用として開けません: \""
 
 msgid "Cannot open for script output: \""
-msgstr "スクリプト出力用を開けません"
+msgstr "スクリプト出力用として開けません: \""
 
 msgid "Vim: Error: Failure to start gvim from NetBeans\n"
 msgstr "Vim: エラー: NetBeansからgvimをスタートできません\n"
@@ -2714,7 +2714,7 @@ msgstr ""
 "より詳細な情報は: \"vim -h\"\n"
 
 msgid "[file ..]       edit specified file(s)"
-msgstr "[ファイル..]    あるファイルを編集する"
+msgstr "[ファイル..]    指定されたファイルを編集する"
 
 msgid "-               read text from stdin"
 msgstr "-               標準入力からテキストを読込む"
@@ -6714,7 +6714,7 @@ msgid "E1026: Missing }"
 msgstr "E1026: } がありません"
 
 msgid "E1027: Missing return statement"
-msgstr "E1027: retrun 文がありません"
+msgstr "E1027: return 文がありません"
 
 msgid "E1028: Compiling :def function failed"
 msgstr "E1028: :def 関数のコンパイルに失敗しました"
@@ -6859,7 +6859,7 @@ msgid "E1070: Missing \"from\""
 msgstr "E1070: \"from\" がありません"
 
 msgid "E1071: Invalid string after \"from\""
-msgstr "E1071: \"from\" の後に不正な文字があります"
+msgstr "E1071: \"from\" の後に不正な文字列があります"
 
 #, c-format
 msgid "E1072: Cannot compare %s with %s"
@@ -6962,11 +6962,11 @@ msgid "E1105: Cannot convert %s to string"
 msgstr "E1105: %s を文字列に変換できません"
 
 msgid "E1106: One argument too many"
-msgstr "E1106: 引数が 1 個多いです。"
+msgstr "E1106: 引数が 1 個多いです"
 
 #, c-format
 msgid "E1106: %d arguments too many"
-msgstr "E1106: 引数が %d 個多いです。"
+msgstr "E1106: 引数が %d 個多いです"
 
 msgid "E1107: String, List, Dict or Blob required"
 msgstr "E1107: 文字列型、リスト型、辞書型またはBlob型が必要です"
@@ -7065,7 +7065,7 @@ msgid "E10: \\ should be followed by /, ? or &"
 msgstr "E10: \\ の後は / か ? か & でなければなりません"
 
 msgid "E11: Invalid in command-line window; <CR> executes, CTRL-C quits"
-msgstr "E11: コマンドラインでは無効です; <CR>で実行, CTRL-Cでやめる"
+msgstr "E11: コマンドラインウィンドウでは無効です; <CR>で実行, CTRL-Cでやめる"
 
 msgid "E12: Command not allowed from exrc/vimrc in current dir or tag search"
 msgstr ""
@@ -7164,7 +7164,7 @@ msgstr "E756: スペルチェックは使用できません"
 
 #, c-format
 msgid "E364: Library call failed for \"%s()\""
-msgstr "E364: \"%s\"() のライブラリ呼出に失敗しました"
+msgstr "E364: \"%s()\" のライブラリ呼出に失敗しました"
 
 msgid "E667: Fsync failed"
 msgstr "E667: fsync に失敗しました"
@@ -7429,7 +7429,7 @@ msgid "E91: 'shell' option is empty"
 msgstr "E91: 'shell' オプションが空です"
 
 msgid "E255: Couldn't read in sign data!"
-msgstr "E255: sign のデータを読込めませんでした"
+msgstr "E255: sign のデータを読込めませんでした!"
 
 msgid "E72: Close error on swap file"
 msgstr "E72: スワップファイルのクローズ時エラーです"
@@ -7635,7 +7635,7 @@ msgstr "bytes() もしくは str() のインスタンスが期待されている
 #, c-format
 msgid ""
 "expected int(), long() or something supporting coercing to long(), but got %s"
-msgstr "long() かそれへ変換可能なものが期待されているのに %s でした"
+msgstr "int(), long() かそれへ変換可能なものが期待されているのに %s でした"
 
 #, c-format
 msgid "expected int() or something supporting coercing to int(), but got %s"
@@ -7773,7 +7773,7 @@ msgid "attempt to refer to deleted window"
 msgstr "削除されたウィンドウを参照しようとしました"
 
 msgid "readonly attribute: buffer"
-msgstr "読込専用属性: バッファー"
+msgstr "読込専用属性: バッファ"
 
 msgid "cursor position outside buffer"
 msgstr "カーソル位置がバッファの外側です"
@@ -8030,13 +8030,13 @@ msgid "ignore case when using a search pattern"
 msgstr "検索パターンにおいて大文字と小文字を区別しない"
 
 msgid "override 'ignorecase' when pattern has upper case characters"
-msgstr "検索パターンが大文字を含んでいたら'ignorecase' を上書きする"
+msgstr "検索パターンが大文字を含んでいたら 'ignorecase' を上書きする"
 
 msgid "what method to use for changing case of letters"
 msgstr "大文字・小文字を変更する際にどの方法を使うか"
 
 msgid "maximum amount of memory in Kbyte used for pattern matching"
-msgstr "パターンマッチングに使う最大メモリ量(キロバイト単位)"
+msgstr "パターンマッチングに使う最大メモリ量 (Kbyte)"
 
 msgid "pattern for a macro definition line"
 msgstr "マクロ定義行のためのパターン"
@@ -8168,7 +8168,7 @@ msgstr ""
 "(デバッグ用)"
 
 msgid "show <Tab> as ^I and end-of-line as $"
-msgstr "<Tab> を ^I として表示し、行末を $ として表示する"
+msgstr "<Tab> を ^I として表示し、改行を $ として表示する"
 
 msgid "list of strings used for list mode"
 msgstr "リストモードで使われる文字列のリスト"
@@ -8499,7 +8499,7 @@ msgid "use balloon evaluation in the terminal"
 msgstr "端末でバルーン評価を使う"
 
 msgid "expression to show in balloon eval"
-msgstr "バルーンに表示する式"
+msgstr "バルーン評価に表示する式"
 
 msgid "use ATSUI text drawing; disable to avoid display problems"
 msgstr "ATSUI テキスト描画を使う; 表示の問題を避けるには無効化すること"
@@ -8650,7 +8650,7 @@ msgid "expression used for \"gq\" to format lines"
 msgstr "\"gq\" で行を整形するときに使われる式"
 
 msgid "specifies how Insert mode completion works for CTRL-N and CTRL-P"
-msgstr "挿入モード補完が CTRL-N と CTRL-P で動作するかを指定"
+msgstr "挿入モード補完が CTRL-N と CTRL-P でどう動作するかを指定"
 
 msgid "whether to use a popup menu for Insert mode completion"
 msgstr "挿入モード補完でポップアップメニューを使うかどうか"
@@ -8720,7 +8720,7 @@ msgid "list of number of spaces a tab counts for"
 msgstr "1 つのタブが相当する空白の数のリスト"
 
 msgid "list of number of spaces a soft tabsstop counts for"
-msgstr "1 つのソフトタブストップが相当する空白の数のリスト"
+msgstr "1 つのソフトタブストップに相当する空白の数のリスト"
 
 msgid "a <Tab> in an indent inserts 'shiftwidth' spaces"
 msgstr "インデント内での <Tab> は 'shiftwidth' 個の空白を挿入"
@@ -8872,10 +8872,10 @@ msgid "binary file editing"
 msgstr "バイナリファイルの編集"
 
 msgid "last line in the file has an end-of-line"
-msgstr "ファイルの末尾の行に end-of-line がある"
+msgstr "ファイルの末尾の行に改行がある"
 
 msgid "fixes missing end-of-line at end of text file"
-msgstr "テキストファイルの末尾の欠如した end-of-line を修正"
+msgstr "テキストファイルの末尾に改行がない場合に修正する"
 
 msgid "prepend a Byte Order Mark to the file"
 msgstr "バイト順マーク (BOM) をファイル先頭につける"
@@ -8991,7 +8991,7 @@ msgid "list of patterns to ignore files for file name completion"
 msgstr "ファイル名補完の際に無視するファイルパターンのリスト"
 
 msgid "ignore case when using file names"
-msgstr "ファイル名の大文字小文字の違いを無視"
+msgstr "ファイル名を使う際に大文字小文字の違いを無視"
 
 msgid "ignore case when completing file names"
 msgstr "ファイル名補完の際に大文字小文字の違いを無視"
@@ -9126,10 +9126,10 @@ msgid "use phonetic Hebrew keyboard mapping"
 msgstr "音声ヘブライキーボードのマッピングを使用"
 
 msgid "use Farsi as the second language when 'revins' is set"
-msgstr "'revins' がオンならばペルシャ語を第 2 言語として使う"
+msgstr "'revins' がオンならばペルシア語を第 2 言語として使う"
 
 msgid "use Farsi keyboard mapping"
-msgstr "ペルシャキーボードのマッピングを使用"
+msgstr "ペルシアキーボードのマッピングを使用"
 
 msgid "prepare for editing Arabic text"
 msgstr "アラビア語のテキストを編集する準備"
@@ -9186,7 +9186,7 @@ msgid "character encoding for the current file"
 msgstr "現在のファイルの文字エンコーディング"
 
 msgid "automatically detected character encodings"
-msgstr "自動的に文字エンコーディングを検出"
+msgstr "文字エンコーディングを自動検出"
 
 msgid "character encoding used by the terminal"
 msgstr "端末で使われる文字エンコーディング"
@@ -9269,7 +9269,7 @@ msgid "set to \"msg\" to see all error messages"
 msgstr "全てのエラーメッセージを見るには \"msg\" に設定"
 
 msgid "whether to show the signcolumn"
-msgstr "目印行を表示するかどうか"
+msgstr "目印桁を表示するかどうか"
 
 msgid "interval in milliseconds between polls for MzScheme threads"
 msgstr "MzScheme のスレッドを切り替える間隔 (ミリ秒)"
