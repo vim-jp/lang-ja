@@ -44,7 +44,7 @@ msgstr "--削除済--"
 
 #, c-format
 msgid "auto-removing autocommand: %s <buffer=%d>"
-msgstr "autocommand: %s <バッファ=%d> が自動的に削除されます"
+msgstr "自動コマンド: %s <バッファ=%d> が自動的に削除されます"
 
 #, c-format
 msgid "E367: No such group: \"%s\""
@@ -73,20 +73,20 @@ msgid ""
 "--- Autocommands ---"
 msgstr ""
 "\n"
-"--- Autocommands ---"
+"--- 自動コマンド ---"
 
 #, c-format
 msgid "E680: <buffer=%d>: invalid buffer number "
 msgstr "E680: <バッファ=%d>: 無効なバッファ番号です "
 
 msgid "E217: Can't execute autocommands for ALL events"
-msgstr "E217: 全てのイベントに対してのautocommandは実行できません"
+msgstr "E217: 全てのイベントに対しての自動コマンドは実行できません"
 
 msgid "No matching autocommands"
-msgstr "該当するautocommandは存在しません"
+msgstr "該当する自動コマンドは存在しません"
 
 msgid "E218: autocommand nesting too deep"
-msgstr "E218: autocommandの入れ子が深過ぎます"
+msgstr "E218: 自動コマンドの入れ子が深過ぎます"
 
 #, c-format
 msgid "%s Autocommands for \"%s\""
@@ -122,7 +122,7 @@ msgid "[Quickfix List]"
 msgstr "[Quickfixリスト]"
 
 msgid "E855: Autocommands caused command to abort"
-msgstr "E855: autocommandがコマンドの停止を引き起こしました"
+msgstr "E855: 自動コマンドがコマンドの停止を引き起こしました"
 
 msgid "E82: Cannot allocate any buffer, exiting..."
 msgstr "E82: バッファを1つも作成できないので、終了します..."
@@ -284,13 +284,13 @@ msgid "[New File]"
 msgstr "[新ファイル]"
 
 msgid "E676: No matching autocommands for acwrite buffer"
-msgstr "E676: acwriteバッファの該当するautocommandは存在しません"
+msgstr "E676: acwriteバッファの該当する自動コマンドは存在しません"
 
 msgid "E203: Autocommands deleted or unloaded buffer to be written"
-msgstr "E203: 保存するバッファをautocommandが削除か解放しました"
+msgstr "E203: 保存するバッファを自動コマンドが削除か解放しました"
 
 msgid "E204: Autocommand changed number of lines in unexpected way"
-msgstr "E204: autocommandが予期せぬ方法で行数を変更しました"
+msgstr "E204: 自動コマンドが予期せぬ方法で行数を変更しました"
 
 msgid "NetBeans disallows writes of unmodified buffers"
 msgstr "NetBeansは未変更のバッファを上書することは許可していません"
@@ -923,7 +923,7 @@ msgid "%ld lines filtered"
 msgstr "%ld 行がフィルタ処理されました"
 
 msgid "E135: *Filter* Autocommands must not change current buffer"
-msgstr "E135: *フィルタ* autocommandは現在のバッファを変更してはいけません"
+msgstr "E135: *Filter* 自動コマンドは現在のバッファを変更してはいけません"
 
 msgid "[No write since last change]\n"
 msgstr "[最後の変更が保存されていません]\n"
@@ -983,7 +983,7 @@ msgstr "ファイルを編集"
 
 #, c-format
 msgid "E143: Autocommands unexpectedly deleted new buffer %s"
-msgstr "E143: autocommandが予期せず新しいバッファ %s を削除しました"
+msgstr "E143: 自動コマンドが予期せず新しいバッファ %s を削除しました"
 
 msgid "E144: non-numeric argument to :z"
 msgstr "E144: 数ではない引数が :z に渡されました"
@@ -1051,7 +1051,7 @@ msgid "E162: No write since last change for buffer \"%s\""
 msgstr "E162: バッファ \"%s\" の変更は保存されていません"
 
 msgid "Warning: Entered other buffer unexpectedly (check autocommands)"
-msgstr "警告: 予期せず他バッファへ移動しました (autocommands を調べてください)"
+msgstr "警告: 予期せず他バッファへ移動しました (自動コマンドを調べてください)"
 
 #, c-format
 msgid "E666: compiler not supported: %s"
@@ -1219,13 +1219,13 @@ msgid "E194: No alternate file name to substitute for '#'"
 msgstr "E194: '#'を置き換える副ファイルの名前がありません"
 
 msgid "E495: no autocommand file name to substitute for \"<afile>\""
-msgstr "E495: \"<afile>\"を置き換えるautocommandのファイル名がありません"
+msgstr "E495: \"<afile>\"を置き換える自動コマンドのファイル名がありません"
 
 msgid "E496: no autocommand buffer number to substitute for \"<abuf>\""
-msgstr "E496: \"<abuf>\"を置き換えるautocommandバッファ番号がありません"
+msgstr "E496: \"<abuf>\"を置き換える自動コマンドバッファ番号がありません"
 
 msgid "E497: no autocommand match name to substitute for \"<amatch>\""
-msgstr "E497: \"<amatch>\"を置き換えるautocommandの該当名がありません"
+msgstr "E497: \"<amatch>\"を置き換える自動コマンドの該当名がありません"
 
 msgid "E498: no :source file name to substitute for \"<sfile>\""
 msgstr "E498: \"<sfile>\"を置き換える :source 対象ファイル名がありません"
@@ -1343,7 +1343,7 @@ msgid "E199: Active window or buffer deleted"
 msgstr "E199: アクティブなウィンドウかバッファが削除されました"
 
 msgid "E812: Autocommands changed buffer or buffer name"
-msgstr "E812: autocommandがバッファかバッファ名を変更しました"
+msgstr "E812: 自動コマンドがバッファかバッファ名を変更しました"
 
 msgid "Illegal file name"
 msgstr "不正なファイル名"
@@ -1364,10 +1364,10 @@ msgid "[Permission Denied]"
 msgstr "[権限がありません]"
 
 msgid "E200: *ReadPre autocommands made the file unreadable"
-msgstr "E200: *ReadPre autocommand がファイルを読込不可にしました"
+msgstr "E200: *ReadPre 自動コマンド がファイルを読込不可にしました"
 
 msgid "E201: *ReadPre autocommands must not change current buffer"
-msgstr "E201: *ReadPre autocommand は現在のバッファを変えられません"
+msgstr "E201: *ReadPre 自動コマンド は現在のバッファを変えられません"
 
 msgid "Vim: Reading from stdin...\n"
 msgstr "Vim: 標準入力から読込中...\n"
@@ -1460,7 +1460,7 @@ msgid "E210: Error reading \"%s\""
 msgstr "E210: \"%s\" を読込中のエラーです"
 
 msgid "E246: FileChangedShell autocommand deleted buffer"
-msgstr "E246: autocommand の FileChangedShell がバッファを削除しました"
+msgstr "E246: FileChangedShell 自動コマンドがバッファを削除しました"
 
 #, c-format
 msgid "E211: File \"%s\" no longer available"
@@ -2606,7 +2606,7 @@ msgstr "flatten() の引数"
 
 #, c-format
 msgid "E696: Missing comma in List: %s"
-msgstr "E696: リスト型にカンマがありません: %s"
+msgstr "E696: リスト型にコンマがありません: %s"
 
 msgid "sort() argument"
 msgstr "sort() の引数"
@@ -4026,7 +4026,7 @@ msgid "E526: Missing number after <%s>"
 msgstr "E526: <%s> の後に数字がありません"
 
 msgid "E527: Missing comma"
-msgstr "E527: カンマがありません"
+msgstr "E527: コンマがありません"
 
 msgid "E528: Must specify a ' value"
 msgstr "E528: ' の値を指定しなければなりません"
@@ -4054,7 +4054,7 @@ msgid "E535: Illegal character after <%c>"
 msgstr "E535: <%c> の後に不正な文字があります"
 
 msgid "E536: comma required"
-msgstr "E536: カンマが必要です"
+msgstr "E536: コンマが必要です"
 
 #, c-format
 msgid "E537: 'commentstring' must be empty or contain %s"
@@ -4872,7 +4872,7 @@ msgstr ""
 "警告: 単語リスト \"%s.%s.spl\" および \"%s.ascii.spl\" は見つかりません"
 
 msgid "E797: SpellFileMissing autocommand deleted buffer"
-msgstr "E797: autocommand の SpellFileMissing がバッファを削除しました"
+msgstr "E797: SpellFileMissing 自動コマンドがバッファを削除しました"
 
 #, c-format
 msgid "Warning: region %s not supported"
@@ -6777,7 +6777,7 @@ msgid "E1045: Missing \"as\" after *"
 msgstr "E1045: * の後に \"as\" がありません"
 
 msgid "E1046: Missing comma in import"
-msgstr "E1046: import にカンマがありません"
+msgstr "E1046: import にコンマがありません"
 
 msgid "E1047: Syntax error in import"
 msgstr "E1047: import 内に文法エラーがあります"
@@ -7494,7 +7494,7 @@ msgstr "E721: 辞書型に重複キーがあります: \"%s\""
 
 #, c-format
 msgid "E722: Missing comma in Dictionary: %s"
-msgstr "E722: 辞書型にカンマがありません: %s"
+msgstr "E722: 辞書型にコンマがありません: %s"
 
 #, c-format
 msgid "E723: Missing end of Dictionary '}': %s"
@@ -7540,7 +7540,7 @@ msgid "E919: Directory not found in '%s': \"%s\""
 msgstr "E919: ディレクトリが '%s' の中にありません: \"%s\""
 
 msgid "E952: Autocommand caused recursive behavior"
-msgstr "E952: Autocommandが再帰を引き起こしました"
+msgstr "E952: 自動コマンドが再帰を引き起こしました"
 
 msgid "E813: Cannot close autocmd or popup window"
 msgstr "E813: autocmdウィンドウまたはポップアップウィンドウは閉じられません"
