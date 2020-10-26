@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-22 12:59+0900\n"
+"POT-Creation-Date: 2020-10-27 08:32+0900\n"
 "PO-Revision-Date: 2019-12-15 03:28+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -3983,9 +3983,6 @@ msgstr "オプション: %s"
 
 msgid "E540: Unclosed expression sequence"
 msgstr "E540: 式が終了していません"
-
-msgid "E541: too many items"
-msgstr "E541: 要素が多過ぎます"
 
 msgid "E542: unbalanced groups"
 msgstr "E542: グループが釣合いません"
@@ -8429,8 +8426,8 @@ msgstr ""
 msgid "maximum time in msec to recognize a double-click"
 msgstr "ダブルクリックとして認識する最大時間 (ミリ秒)"
 
-msgid "\"xterm\", \"xterm2\", \"dec\" or \"netterm\"; type of mouse"
-msgstr "\"xterm\", \"xterm2\", \"dec\" あるいは \"netterm\"; マウスの種類"
+msgid "\"xterm\", \"xterm2\", \"sgr\", etc.; type of mouse"
+msgstr "\"xterm\", \"xterm2\", \"sgr\" など; マウスの種類"
 
 msgid "what the mouse pointer looks like in different modes"
 msgstr "それぞれのモード内でのマウスポインタの外観を指定"
@@ -8500,9 +8497,6 @@ msgstr "端末でバルーン評価を使う"
 
 msgid "expression to show in balloon eval"
 msgstr "バルーン評価に表示する式"
-
-msgid "use ATSUI text drawing; disable to avoid display problems"
-msgstr "ATSUI テキスト描画を使う; 表示の問題を避けるには無効化すること"
 
 msgid "printing"
 msgstr "印刷"
@@ -8625,8 +8619,8 @@ msgstr "変更が行われたがファイルに書込まれていない"
 msgid "buffer is not to be written"
 msgstr "バッファは書込まれない"
 
-msgid "changes to the text are not possible"
-msgstr "テキストの変更が不可能"
+msgid "changes to the text are possible"
+msgstr "テキストの変更が可能"
 
 msgid "line length above which to break a line"
 msgstr "これより長い行は改行される"
@@ -8685,7 +8679,7 @@ msgstr "c1 <BS> c2 でダイグラフを入力可能にする"
 msgid "the \"~\" command behaves like an operator"
 msgstr "\"~\" コマンドがオペレータのようにふるまう"
 
-msgid "function called for the\"g@\"  operator"
+msgid "function called for the \"g@\" operator"
 msgstr "\"g@\" オペレータで呼ばれる関数"
 
 msgid "when inserting a bracket, briefly jump to its match"
@@ -8701,11 +8695,11 @@ msgid "use two spaces after '.' when joining a line"
 msgstr "行を連結するときに '.' の後に空白を 2 個入れる"
 
 msgid ""
-"\"alpha\", \"octal\" and/or \"hex\"; number formats recognized for\n"
-"CTRL-A and CTRL-X commands"
+"\"alpha\", \"octal\", \"hex\", \"bin\" and/or \"unsigned\"; number formats\n"
+"recognized for CTRL-A and CTRL-X commands"
 msgstr ""
-"\"alpha\", \"octal\" かつ/または \"hex\"; CTRL-A と CTRL-X コマンドで\n"
-"認識する数字の書式"
+"\"alpha\", \"octal\", \"hex\", \"bin\" かつ/または \"unsigned\";\n"
+"CTRL-A と CTRL-X コマンドで認識する数字の書式"
 
 msgid "tabs and indenting"
 msgstr "タブとインデント"
@@ -8773,8 +8767,8 @@ msgstr "lisp インデント処理の動作を変更する単語のリスト"
 msgid "folding"
 msgstr "折畳み"
 
-msgid "set to display all folds open"
-msgstr "全ての折畳みを開いて表示するにはオンにする"
+msgid "unset to display all folds open"
+msgstr "全ての折畳みを開いて表示するにはオフにする"
 
 msgid "folds with a level higher than this number will be closed"
 msgstr "この数値よりもレベルの高い折畳みは閉じられる"
@@ -8801,10 +8795,11 @@ msgid "template for comments; used to put the marker in"
 msgstr "コメント用のテンプレート; マーカーを中に置くために使われる"
 
 msgid ""
-"folding type: \"manual\", \"indent\", \"expr\", \"marker\" or \"syntax\""
+"folding type: \"manual\", \"indent\", \"expr\", \"marker\",\n"
+"\"syntax\" or \"diff\""
 msgstr ""
-"折畳みの種類: \"manual\", \"indent\", \"expr\", \"marker\" または\n"
-"\"syntax\""
+"折畳みの種類: \"manual\", \"indent\", \"expr\", \"marker\",\n"
+"\"syntax\" または \"diff\""
 
 msgid "expression used when 'foldmethod' is \"expr\""
 msgstr "'foldmethod' が \"expr\" の際に使われる式"
@@ -8934,8 +8929,8 @@ msgstr "ファイルを書込んだ後に強制的にディスクに同期させ
 msgid "use 8.3 file names"
 msgstr "8.3 形式のファイル名を使う"
 
-msgid "encryption method for file writing: zip or blowfish"
-msgstr "ファイル書込みのための暗号化方式: zip または blowfish"
+msgid "encryption method for file writing: zip, blowfish or blowfish2"
+msgstr "ファイル書込みのための暗号化方式: zip, blowfish または blowfish2"
 
 msgid "the swap file"
 msgstr "スワップファイル"
@@ -8966,7 +8961,7 @@ msgstr "全てのバッファで使われる最大メモリ量 (Kbyte)"
 msgid "command line editing"
 msgstr "コマンドライン編集"
 
-msgid "how many command lines are remembered "
+msgid "how many command lines are remembered"
 msgstr "コマンドラインを何個まで記憶するか"
 
 msgid "key that triggers command-line expansion"
@@ -9077,9 +9072,6 @@ msgstr "quickfix ウィンドウにテキストを表示するための関数"
 msgid "system specific"
 msgstr "システム固有"
 
-msgid "OS-specific information about the type of file"
-msgstr "ファイル種別に関する OS 固有の情報"
-
 msgid "use forward slashes in file names; for Unix-like shells"
 msgstr "ファイル名でスラッシュを使う; Unix ライクなシェル用"
 
@@ -9124,12 +9116,6 @@ msgstr "ヘブライキーボードのマッピングを使用"
 
 msgid "use phonetic Hebrew keyboard mapping"
 msgstr "音声ヘブライキーボードのマッピングを使用"
-
-msgid "use Farsi as the second language when 'revins' is set"
-msgstr "'revins' がオンならばペルシア語を第 2 言語として使う"
-
-msgid "use Farsi keyboard mapping"
-msgstr "ペルシアキーボードのマッピングを使用"
 
 msgid "prepare for editing Arabic text"
 msgstr "アラビア語のテキストを編集する準備"
@@ -9212,8 +9198,11 @@ msgstr "絵文字の幅は全角"
 msgid "various"
 msgstr "その他"
 
-msgid "when to use virtual editing: \"block\", \"insert\" and/or \"all\""
-msgstr "いつ仮想編集を使うか: \"block\", \"insert\" かつ/または \"all\""
+msgid ""
+"when to use virtual editing: \"block\", \"insert\", \"all\"\n"
+"and/or \"onemore\""
+msgstr "いつ仮想編集を使うか: \"block\", \"insert\", \"all\"\n"
+"かつ/または \"onemore\""
 
 msgid "list of autocommand events which are to be ignored"
 msgstr "自動コマンドイベントで無視するもののリスト"
@@ -9259,8 +9248,8 @@ msgstr "viminfo ファイルに使われるファイル名"
 msgid "what happens with a buffer when it's no longer in a window"
 msgstr "バッファがウィンドウに表示されなくなった時の挙動"
 
-msgid "\"\", \"nofile\", \"nowrite\" or \"quickfix\": type of buffer"
-msgstr "\"\", \"nofile\", \"nowrite\" または \"quickfix\": バッファの種別"
+msgid "empty, \"nofile\", \"nowrite\", \"quickfix\", etc.: type of buffer"
+msgstr "空, \"nofile\", \"nowrite\", \"quickfix\" など: バッファの種別"
 
 msgid "whether the buffer shows up in the buffer list"
 msgstr "バッファをバッファ一覧に表示するかどうか"
