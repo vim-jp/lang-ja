@@ -9162,10 +9162,10 @@ msgid "multi-byte characters"
 msgstr "マルチバイト文字"
 
 msgid ""
-"character encoding used in Vim: \"latin1\", \"utf-8\"\n"
+"character encoding used in Vim: \"latin1\", \"utf-8\",\n"
 "\"euc-jp\", \"big5\", etc."
 msgstr ""
-"Vim で使用する文字エンコーディング: \"latin1\", \"utf-8\"\n"
+"Vim で使用する文字エンコーディング: \"latin1\", \"utf-8\",\n"
 "\"euc-jp\", \"big5\" など"
 
 msgid "character encoding for the current file"
