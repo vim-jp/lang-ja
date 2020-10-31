@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-27 08:32+0900\n"
+"POT-Creation-Date: 2020-10-31 10:43+0900\n"
 "PO-Revision-Date: 2019-12-15 03:28+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -6610,8 +6610,8 @@ msgid "E909: Cannot index a special variable"
 msgstr "E909: 特殊変数はインデックスできません"
 
 #, c-format
-msgid "E1100: Missing :let: %s"
-msgstr "E1100: :let: %s がありません"
+msgid "E1100: Missing :var: %s"
+msgstr "E1100: :var: %s がありません"
 
 #, c-format
 msgid "E1001: Variable not found: %s"
@@ -7356,8 +7356,8 @@ msgid "E933: Function was deleted: %s"
 msgstr "E933: 関数は削除されました: %s"
 
 #, c-format
-msgid "E716: Key not present in Dictionary: %s"
-msgstr "E716: 辞書型にキーが存在しません: %s"
+msgid "E716: Key not present in Dictionary: \"%s\""
+msgstr "E716: 辞書型にキーが存在しません: \"%s\""
 
 msgid "E714: List required"
 msgstr "E714: リスト型が必要です"
