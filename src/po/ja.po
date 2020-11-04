@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-04 14:50+0900\n"
+"POT-Creation-Date: 2020-11-04 20:04+0900\n"
 "PO-Revision-Date: 2019-12-15 03:28+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -7051,6 +7051,12 @@ msgstr "E1131: null blob には追加できません"
 
 msgid "E1132: Missing function argument"
 msgstr "E1132: 引数に関数がありません"
+
+msgid "E1133: Cannot extend a null dict"
+msgstr "E1133: null 辞書は拡張できません"
+
+msgid "E1134: Cannot extend a null list"
+msgstr "E1134: null リストは拡張できません"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
