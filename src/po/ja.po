@@ -101,7 +101,7 @@ msgid "autocommand %s"
 msgstr "autocommand %s"
 
 msgid "E831: bf_key_init() called with empty password"
-msgstr "E831: bf_key_init() が空パスワードで呼び出されました"
+msgstr "E831: bf_key_init() が空パスワードで呼出されました"
 
 msgid "E820: sizeof(uint32_t) != 4"
 msgstr "E820: sizeof(uint32_t) != 4"
@@ -484,7 +484,7 @@ msgid "E277: Unable to read a server reply"
 msgstr "E277: サーバーの応答がありません"
 
 msgid "E941: already started a server"
-msgstr "E941: サーバーはすでに開始しています"
+msgstr "E941: サーバーは既に開始しています"
 
 msgid "E942: +clientserver feature not available"
 msgstr "E942: +clientserver 機能が無効になっています"
@@ -583,7 +583,7 @@ msgid "Not enough memory to use internal diff for buffer \"%s\""
 msgstr "バッファ \"%s\" 用に内部diffを使うためのメモリが不足しています"
 
 msgid "E810: Cannot read or write temp files"
-msgstr "E810: 一時ファイルの読込もしくは書込ができません"
+msgstr "E810: 一時ファイルの読込みもしくは書込みができません"
 
 msgid "E97: Cannot create diffs"
 msgstr "E97: 差分を作成できません"
@@ -1084,7 +1084,7 @@ msgid "E605: Exception not caught: %s"
 msgstr "E605: 例外が捕捉されませんでした: %s"
 
 msgid "End of sourced file"
-msgstr "取込ファイルの最後です"
+msgstr "取込みファイルの最後です"
 
 msgid "End of function"
 msgstr "関数の最後です"
@@ -1370,7 +1370,7 @@ msgid "E201: *ReadPre autocommands must not change current buffer"
 msgstr "E201: *ReadPre 自動コマンド は現在のバッファを変えられません"
 
 msgid "Vim: Reading from stdin...\n"
-msgstr "Vim: 標準入力から読込中...\n"
+msgstr "Vim: 標準入力から読込み中...\n"
 
 msgid "Reading from stdin..."
 msgstr "標準入力から読込み中..."
@@ -1457,7 +1457,7 @@ msgstr "E209: \"%s\" を閉じる時にエラーです"
 
 #, c-format
 msgid "E210: Error reading \"%s\""
-msgstr "E210: \"%s\" を読込中のエラーです"
+msgstr "E210: \"%s\" を読込み中のエラーです"
 
 msgid "E246: FileChangedShell autocommand deleted buffer"
 msgstr "E246: FileChangedShell 自動コマンドがバッファを削除しました"
@@ -2028,7 +2028,7 @@ msgid "E150: Not a directory: %s"
 msgstr "E150: ディレクトリではありません: %s"
 
 msgid "E679: recursive loop loading syncolor.vim"
-msgstr "E679: syncolor.vim の再帰呼び出しを検出しました"
+msgstr "E679: syncolor.vim の再帰呼出しを検出しました"
 
 #, c-format
 msgid "E411: highlight group not found: %s"
@@ -2681,7 +2681,7 @@ msgid "Attempt to open script file again: \""
 msgstr "スクリプトファイルを再び開こうとしました: \""
 
 msgid "Cannot open for reading: \""
-msgstr "読込用として開けません: \""
+msgstr "読込み用として開けません: \""
 
 msgid "Cannot open for script output: \""
 msgstr "スクリプト出力用として開けません: \""
@@ -3117,7 +3117,7 @@ msgstr "E799: 無効な ID: %d (1 以上でなければなりません)"
 
 #, c-format
 msgid "E801: ID already taken: %d"
-msgstr "E801: ID はすでに利用中です: %d"
+msgstr "E801: ID は既に利用中です: %d"
 
 msgid "E290: List or number required"
 msgstr "E290: リストか数値が必要です"
@@ -3141,7 +3141,7 @@ msgid "E293: block was not locked"
 msgstr "E293: ブロックがロックされていません"
 
 msgid "E294: Seek error in swap file read"
-msgstr "E294: スワップファイル読込時にシークエラーです"
+msgstr "E294: スワップファイル読込み時にシークエラーです"
 
 msgid "E295: Read error in swap file"
 msgstr "E295: スワップファイルの読込みエラーです"
@@ -3737,7 +3737,7 @@ msgid "Beep!"
 msgstr "ビーッ!"
 
 msgid "E677: Error writing temp file"
-msgstr "E677: 一時ファイル書込中にエラーが発生しました"
+msgstr "E677: 一時ファイル書込み中にエラーが発生しました"
 
 msgid "ERROR: "
 msgstr "エラー: "
@@ -4536,7 +4536,7 @@ msgid "E869: (NFA) Unknown operator '\\@%c'"
 msgstr "E869: (NFA) 未知のオペレータです: '\\@%c'"
 
 msgid "E870: (NFA regexp) Error reading repetition limits"
-msgstr "E870: (NFA 正規表現) 繰り返しの制限回数を読込中にエラー"
+msgstr "E870: (NFA 正規表現) 繰り返しの制限回数を読込み中にエラー"
 
 msgid "E871: (NFA regexp) Can't have a multi follow a multi"
 msgstr "E871: (NFA 正規表現) 繰り返し の後に 繰り返し はできません"
@@ -4552,8 +4552,8 @@ msgstr "E873: (NFA 正規表現) 終端記号がありません"
 
 msgid "Could not open temporary log file for writing, displaying on stderr... "
 msgstr ""
-"NFA正規表現エンジン用のログファイルを書込用として開けません。ログは標準エラー"
-"出力に出力します。"
+"NFA正規表現エンジン用のログファイルを書込み用として開けません。ログは標準エラ"
+"ー出力に出力します。"
 
 msgid "E874: (NFA) Could not pop the stack!"
 msgstr "E874: (NFA) スタックをポップできません!"
@@ -4688,15 +4688,15 @@ msgstr "行 %ld: \"%s\" を取込めません"
 
 #, c-format
 msgid "sourcing \"%s\""
-msgstr "\"%s\" を取込中"
+msgstr "\"%s\" を取込み中"
 
 #, c-format
 msgid "line %ld: sourcing \"%s\""
-msgstr "行 %ld: %s を取込中"
+msgstr "行 %ld: %s を取込み中"
 
 #, c-format
 msgid "finished sourcing %s"
-msgstr "%s の取込を完了"
+msgstr "%s の取込みを完了"
 
 #, c-format
 msgid "continuing in %s"
@@ -4721,17 +4721,17 @@ msgid "W15: Warning: Wrong line separator, ^M may be missing"
 msgstr "W15: 警告: 行区切が不正です。^M がないのでしょう"
 
 msgid "E167: :scriptencoding used outside of a sourced file"
-msgstr "E167: :scriptencoding が取込スクリプト以外で使用されました"
+msgstr "E167: :scriptencoding が取込みスクリプト以外で使用されました"
 
 msgid "E984: :scriptversion used outside of a sourced file"
-msgstr "E984: :scriptversion が取込スクリプト以外で使用されました"
+msgstr "E984: :scriptversion が取込みスクリプト以外で使用されました"
 
 #, c-format
 msgid "E999: scriptversion not supported: %d"
 msgstr "E999: scriptversion はサポートされていません: %d"
 
 msgid "E168: :finish used outside of a sourced file"
-msgstr "E168: :finish が取込スクリプト以外で使用されました"
+msgstr "E168: :finish が取込みスクリプト以外で使用されました"
 
 #, c-format
 msgid "E383: Invalid search string: %s"
@@ -4905,7 +4905,7 @@ msgstr "単語ツリーを圧縮しています..."
 
 #, c-format
 msgid "Reading spell file \"%s\""
-msgstr "スペルファイル \"%s\" を読込中"
+msgstr "スペルファイル \"%s\" を読込み中"
 
 msgid "E757: This does not look like a spell file"
 msgstr "E757: スペルファイルではないようです"
@@ -4937,11 +4937,11 @@ msgstr "E781: .sug ファイルが .spl ファイルと一致しません: %s"
 
 #, c-format
 msgid "E782: error while reading .sug file: %s"
-msgstr "E782: .sug ファイルの読込中にエラーが発生しました: %s"
+msgstr "E782: .sug ファイルの読込み中にエラーが発生しました: %s"
 
 #, c-format
 msgid "Reading affix file %s..."
-msgstr "affix ファイル %s を読込中..."
+msgstr "affix ファイル %s を読込み中..."
 
 #, c-format
 msgid "Conversion failure for word in %s line %d: %s"
@@ -5148,7 +5148,7 @@ msgid "Compressed %s: %ld of %ld nodes; %ld (%ld%%) remaining"
 msgstr "%s を圧縮: ノード %ld 個(全 %ld 個中); 残り %ld (%ld%%)"
 
 msgid "Reading back spell file..."
-msgstr "スペルファイルを逆読込中"
+msgstr "スペルファイルを逆読込み中"
 
 msgid "Performing soundfolding..."
 msgstr "音声畳込みを実行中..."
@@ -5555,7 +5555,7 @@ msgid "finished"
 msgstr "終了"
 
 msgid "E958: Job already finished"
-msgstr "E958: ジョブはすでに終了しています"
+msgstr "E958: ジョブは既に終了しています"
 
 #, c-format
 msgid "E953: File exists: %s"
@@ -5758,11 +5758,11 @@ msgstr "オーナーが異なるのでアンドゥファイルを読込みませ
 
 #, c-format
 msgid "Reading undo file: %s"
-msgstr "アンドゥファイル読込中: %s"
+msgstr "アンドゥファイル読込み中: %s"
 
 #, c-format
 msgid "E822: Cannot open undo file for reading: %s"
-msgstr "E822: アンドゥファイルを読込用として開けません: %s"
+msgstr "E822: アンドゥファイルを読込み用として開けません: %s"
 
 #, c-format
 msgid "E823: Not an undo file: %s"
@@ -5789,7 +5789,7 @@ msgstr "ファイルの内容が変わっているため、アンドゥ情報を
 
 #, c-format
 msgid "Finished reading undo file %s"
-msgstr "アンドゥファイル %s の取込を完了"
+msgstr "アンドゥファイル %s の取込みを完了"
 
 msgid "Already at oldest change"
 msgstr "既に一番古い変更です"
@@ -5944,7 +5944,7 @@ msgid "E116: Invalid arguments for function %s"
 msgstr "E116: 関数の無効な引数です: %s"
 
 msgid "E132: Function call depth is higher than 'maxfuncdepth'"
-msgstr "E132: 関数呼出の入れ子数が 'maxfuncdepth' を超えました"
+msgstr "E132: 関数呼出しの入れ子数が 'maxfuncdepth' を超えました"
 
 #, c-format
 msgid "calling %s"
@@ -6504,7 +6504,7 @@ msgid "E886: Can't rename viminfo file to %s!"
 msgstr "E886: viminfoファイルを %s へ名前変更できません!"
 
 msgid "E195: Cannot open viminfo file for reading"
-msgstr "E195: viminfoファイルを読込用として開けません"
+msgstr "E195: viminfoファイルを読込み用として開けません"
 
 msgid "Already only one window"
 msgstr "既にウィンドウは1つしかありません"
@@ -6678,7 +6678,7 @@ msgstr "E1016: 環境変数は宣言できません: %s"
 
 #, c-format
 msgid "E1017: Variable already declared: %s"
-msgstr "E1017: 変数はすでに宣言されています: %s"
+msgstr "E1017: 変数は既に宣言されています: %s"
 
 #, c-format
 msgid "E1018: Cannot assign to a constant: %s"
@@ -6803,7 +6803,7 @@ msgstr "E1053: \"%s\" をインポートできませんでした"
 
 #, c-format
 msgid "E1054: Variable already declared in the script: %s"
-msgstr "E1054: 変数はすでにスクリプト内で宣言されています: %s"
+msgstr "E1054: 変数は既にスクリプト内で宣言されています: %s"
 
 msgid "E1055: Missing name after ..."
 msgstr "E1055: ... の後に名前がありません"
@@ -6897,7 +6897,7 @@ msgstr "E1084: Vim9 スクリプト関数は削除できません: %s"
 
 #, c-format
 msgid "E1085: Not a callable type: %s"
-msgstr "E1085: 呼び出し可能な型ではありません: %s"
+msgstr "E1085: 呼出し可能な型ではありません: %s"
 
 msgid "E1086: Cannot use :function inside :def"
 msgstr "E1086: :def の中で :function は使用できません"
@@ -7170,7 +7170,7 @@ msgstr "E756: スペルチェックは使用できません"
 
 #, c-format
 msgid "E364: Library call failed for \"%s()\""
-msgstr "E364: \"%s()\" のライブラリ呼出に失敗しました"
+msgstr "E364: \"%s()\" のライブラリ呼出しに失敗しました"
 
 msgid "E667: Fsync failed"
 msgstr "E667: fsync に失敗しました"
@@ -7411,7 +7411,7 @@ msgid "E857: Dictionary key \"%s\" required"
 msgstr "E857: 辞書のキー \"%s\" が必要です"
 
 msgid "E47: Error while reading errorfile"
-msgstr "E47: エラーファイルの読込中にエラーが発生しました"
+msgstr "E47: エラーファイルの読込み中にエラーが発生しました"
 
 msgid "E48: Not allowed in sandbox"
 msgstr "E48: サンドボックスでは許されません"
@@ -9238,7 +9238,7 @@ msgid "allow reading/writing devices"
 msgstr "デバイスからの読み書きを許可する"
 
 msgid "maximum depth of function calls"
-msgstr "関数呼び出しの最大の深さ"
+msgstr "関数呼出しの最大の深さ"
 
 msgid "list of words that specifies what to put in a session file"
 msgstr "セッションファイルに何を保存するかを指定する単語のリスト"
