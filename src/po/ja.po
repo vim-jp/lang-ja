@@ -7252,7 +7252,7 @@ msgstr "E36: ウィンドウに十分な高さもしくは幅がありません"
 
 #, c-format
 msgid "E247: no registered server named \"%s\""
-msgstr "E247: %s という名前の登録されたサーバーはありません"
+msgstr "E247: \"%s\" という名前の登録されたサーバーはありません"
 
 #, c-format
 msgid "E482: Can't create file %s"
@@ -7263,7 +7263,7 @@ msgstr "E483: 一時ファイルの名前を取得できません"
 
 #, c-format
 msgid "E484: Can't open file %s"
-msgstr "E484: ファイル \"%s\" を開けません"
+msgstr "E484: ファイル %s を開けません"
 
 #, c-format
 msgid "E485: Can't read file %s"
