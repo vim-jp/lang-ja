@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-10 11:27+0900\n"
+"POT-Creation-Date: 2020-11-13 15:02+0900\n"
 "PO-Revision-Date: 2019-12-15 03:28+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -6728,8 +6728,9 @@ msgstr "E1028: :def 関数のコンパイルに失敗しました"
 msgid "E1029: Expected %s but got %s"
 msgstr "E1029: %s が期待されていますが %s でした"
 
-msgid "E1030: Using a String as a Number"
-msgstr "E1030: 文字列を数値として扱っています"
+#, c-format
+msgid "E1030: Using a String as a Number: \"%s\""
+msgstr "E1030: 文字列を数値として扱っています: \"%s\""
 
 msgid "E1031: Cannot use void value"
 msgstr "E1031: void 値は使用できません"
@@ -7065,6 +7066,21 @@ msgstr "E1133: null 辞書は拡張できません"
 
 msgid "E1134: Cannot extend a null list"
 msgstr "E1134: null リストは拡張できません"
+
+#, c-format
+msgid "E1135: Using a String as a Bool: \"%s\""
+msgstr "E1135: 文字列をBoolとして扱っています: \"%s\""
+
+msgid "E1135: <Cmd> mapping must end with <CR>"
+msgstr "E1135: <Cmd> マッピングは <CR> で終わらなければなりません"
+
+msgid "E1136: <Cmd> mapping must end with <CR> before second <Cmd>"
+msgstr ""
+"E1136: <Cmd> マッピングは次の <Cmd> の前に <CR> で終わらなければなりません"
+
+#, c-format
+msgid "E1137: <Cmd> mapping must not include %s key"
+msgstr "E1137: <Cmd> マッピングは %s キーを含んではいけません"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
