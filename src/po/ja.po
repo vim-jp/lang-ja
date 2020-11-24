@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-13 15:02+0900\n"
+"POT-Creation-Date: 2020-11-24 11:17+0900\n"
 "PO-Revision-Date: 2019-12-15 03:28+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -728,12 +728,6 @@ msgstr "E972: Blob型の値のバイト数が正しくありません"
 
 msgid "E996: Cannot lock a range"
 msgstr "E996: 範囲はロックできません"
-
-msgid "E710: List value has more items than target"
-msgstr "E710: リスト型変数にターゲットよりも多い要素があります"
-
-msgid "E711: List value has not enough items"
-msgstr "E711: リスト型変数に十分な数の要素がありません"
 
 msgid "E996: Cannot lock a list or dict"
 msgstr "E996: リストあるいは辞書はロックできません"
@@ -5284,6 +5278,9 @@ msgstr "C言語風コメントから同期中"
 msgid "no syncing"
 msgstr "非同期"
 
+msgid "syncing starts at the first line"
+msgstr "最初の行で同期開始"
+
 msgid "syncing starts "
 msgstr "同期開始 "
 
@@ -5315,11 +5312,14 @@ msgstr ""
 msgid "E392: No such syntax cluster: %s"
 msgstr "E392: そのような構文クラスタはありません: %s"
 
+msgid "from the first line"
+msgstr "最初の行から"
+
 msgid "minimal "
-msgstr "minimal "
+msgstr "最小 "
 
 msgid "maximal "
-msgstr "maximal "
+msgstr "最大 "
 
 msgid "; match "
 msgstr "; 該当 "
@@ -6604,6 +6604,12 @@ msgstr "E476: 無効なコマンドです"
 msgid "E476: Invalid command: %s"
 msgstr "E476: 無効なコマンドです: %s"
 
+msgid "E710: List value has more items than targets"
+msgstr "E710: リスト型変数にターゲットよりも多い要素があります"
+
+msgid "E711: List value does not have enough items"
+msgstr "E711: リスト型変数に十分な数の要素がありません"
+
 msgid "E719: Cannot slice a Dictionary"
 msgstr "E719: 辞書型はスライスできません"
 
@@ -7081,6 +7087,15 @@ msgstr ""
 #, c-format
 msgid "E1137: <Cmd> mapping must not include %s key"
 msgstr "E1137: <Cmd> マッピングは %s キーを含んではいけません"
+
+msgid "E1138: Using a Bool as a Number"
+msgstr "E1138: Boolを数値として扱っています"
+
+msgid "E1139: Missing matching bracket after dict key"
+msgstr "E1139: 辞書のキーの後にマッチする角括弧がありません"
+
+msgid "E1140: For argument must be a sequence of lists"
+msgstr "E1140: for の引数はリストのシーケンスでなければなりません"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
