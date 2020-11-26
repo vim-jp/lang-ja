@@ -1,7 +1,7 @@
 # vim-jp/lang-ja
 
 [![Join the chat at https://gitter.im/vim-jp/lang-ja](https://badges.gitter.im/vim-jp/lang-ja.svg)](https://gitter.im/vim-jp/lang-ja?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Build Status](https://travis-ci.org/vim-jp/lang-ja.svg?branch=master)](https://travis-ci.org/vim-jp/lang-ja)
+[![Build Status](https://travis-ci.com/vim-jp/lang-ja.svg?branch=master)](https://travis-ci.com/github/vim-jp/lang-ja)
 
 Vimに付属する日本語翻訳ファイルを管理するリポジトリ
 
@@ -185,4 +185,4 @@ nsis/lang                          |Windows用インストーラーの翻訳フ�
         (ここにあなたの名前。`Takata`とか)
 
 
-[#ci]:https://travis-ci.org/vim-jp/lang-ja
+[#ci]:https://travis-ci.com/github/vim-jp/lang-ja
