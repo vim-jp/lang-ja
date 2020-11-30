@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-24 11:17+0900\n"
+"POT-Creation-Date: 2020-11-30 15:11+0900\n"
 "PO-Revision-Date: 2019-12-15 03:28+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -7096,6 +7096,9 @@ msgstr "E1139: 辞書のキーの後にマッチする角括弧がありませ�
 
 msgid "E1140: For argument must be a sequence of lists"
 msgstr "E1140: for の引数はリストのシーケンスでなければなりません"
+
+msgid "E1141: Indexable type required"
+msgstr "E1141: インデックス可能な型が必要です"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
