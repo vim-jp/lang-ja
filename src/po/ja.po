@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-30 15:11+0900\n"
+"POT-Creation-Date: 2021-01-07 00:46+0900\n"
 "PO-Revision-Date: 2019-12-15 03:28+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -1082,9 +1082,6 @@ msgstr "取込みファイルの最後です"
 
 msgid "End of function"
 msgstr "関数の最後です"
-
-msgid "E464: Ambiguous use of user-defined command"
-msgstr "E464: ユーザー定義コマンドのあいまいな使用です"
 
 msgid "E492: Not an editor command"
 msgstr "E492: エディタのコマンドではありません"
@@ -3347,7 +3344,7 @@ msgstr ""
 "注意: プロセスはまだ実行中です: "
 
 msgid "Using crypt key from swap file for the text file.\n"
-msgstr "スワップファイルから取得した暗号キーをテキストファイルに使います.\n"
+msgstr "スワップファイルから取得した暗号キーをテキストファイルに使います。\n"
 
 msgid "Swap files found:"
 msgstr "スワップファイルが複数見つかりました:"
@@ -4719,6 +4716,9 @@ msgstr "環境変数"
 msgid "error handler"
 msgstr "エラーハンドラ"
 
+msgid "changed window size"
+msgstr "ウィンドウサイズが変更されました"
+
 msgid "W15: Warning: Wrong line separator, ^M may be missing"
 msgstr "W15: 警告: 行区切が不正です。^M がないのでしょう"
 
@@ -5313,7 +5313,7 @@ msgid "E392: No such syntax cluster: %s"
 msgstr "E392: そのような構文クラスタはありません: %s"
 
 msgid "from the first line"
-msgstr "最初の行から"
+msgstr "(最初の行から)"
 
 msgid "minimal "
 msgstr "最小 "
@@ -6597,6 +6597,9 @@ msgstr "E121: 未定義の変数です: %s"
 msgid "E121: Undefined variable: %c:%s"
 msgstr "E121: 未定義の変数です: %c:%s"
 
+msgid "E464: Ambiguous use of user-defined command"
+msgstr "E464: ユーザー定義コマンドのあいまいな使用です"
+
 msgid "E476: Invalid command"
 msgstr "E476: 無効なコマンドです"
 
@@ -6624,8 +6627,9 @@ msgid "E909: Cannot index a special variable"
 msgstr "E909: 特殊変数はインデックスできません"
 
 #, c-format
-msgid "E1100: Missing :var: %s"
-msgstr "E1100: :var: %s がありません"
+msgid "E1100: Command not supported in Vim9 script (missing :var?): %s"
+msgstr ""
+"E1100: コマンドが Vim9 スクリプトでサポートされていません (:var がない?): %s"
 
 #, c-format
 msgid "E1001: Variable not found: %s"
@@ -6639,8 +6643,8 @@ msgid "E1003: Missing return value"
 msgstr "E1003: 戻り値がありません"
 
 #, c-format
-msgid "E1004: White space required before and after '%s'"
-msgstr "E1004: '%s' の前後にスペースが必要です"
+msgid "E1004: White space required before and after '%s' at \"%s\""
+msgstr "E1004: '%s' の前後にスペースが必要です (\"%s\")"
 
 msgid "E1005: Too many argument types"
 msgstr "E1005: 引数の型が多過ぎます"
@@ -6802,8 +6806,9 @@ msgstr "E1048: 要素がスクリプト内で見つかりません: %s"
 msgid "E1049: Item not exported in script: %s"
 msgstr "E1049: 要素がスクリプト内でエクスポートされていません: %s"
 
-msgid "E1050: Colon required before a range"
-msgstr "E1050: 範囲の前にはコロンが必要です"
+#, c-format
+msgid "E1050: Colon required before a range: %s"
+msgstr "E1050: 範囲の前にはコロンが必要です: %s"
 
 msgid "E1051: Wrong argument type for +"
 msgstr "E1051: + の引数の型が違います"
@@ -7092,13 +7097,52 @@ msgid "E1138: Using a Bool as a Number"
 msgstr "E1138: Boolを数値として扱っています"
 
 msgid "E1139: Missing matching bracket after dict key"
-msgstr "E1139: 辞書のキーの後にマッチする角括弧がありません"
+msgstr "E1139: 辞書のキーの後に一致する角括弧がありません"
 
 msgid "E1140: For argument must be a sequence of lists"
 msgstr "E1140: for の引数はリストのシーケンスでなければなりません"
 
 msgid "E1141: Indexable type required"
 msgstr "E1141: インデックス可能な型が必要です"
+
+msgid "E1142: Non-empty string required"
+msgstr "E1142: 空ではない文字列が必要です"
+
+#, c-format
+msgid "E1143: Empty expression: \"%s\""
+msgstr "E1143: 空の式です: \"%s\""
+
+#, c-format
+msgid "E1144: Command is not followed by white space: %s"
+msgstr "E1144: コマンドの後に空白がありません: %s"
+
+#, c-format
+msgid "E1145: Missing heredoc end marker: %s"
+msgstr "E1145: heredocの終端マーカーがありません '%s'"
+
+#, c-format
+msgid "E1146: Command not recognized: %s"
+msgstr "E1146: コマンドを認識できません: %s"
+
+msgid "E1147: List not set"
+msgstr "E1147: リストは設定されていません"
+
+#, c-format
+msgid "E1148: Cannot index a %s"
+msgstr "E1148: %s をインデックスできません"
+
+#, c-format
+msgid "E1149: Script variable is invalid after reload in function %s"
+msgstr "E1149: 関数 %s 内でリロード後のスクリプト変数は無効です"
+
+msgid "E1150: Script variable type changed"
+msgstr "E1150: スクリプト変数の型が変更されました"
+
+msgid "E1151: Mismatched endfunction"
+msgstr "E1151: endfunction が一致しません"
+
+msgid "E1152: Mismatched enddef"
+msgstr "E1152: enddef が一致しません"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
