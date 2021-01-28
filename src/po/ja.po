@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 00:46+0900\n"
+"POT-Creation-Date: 2021-01-28 14:14+0900\n"
 "PO-Revision-Date: 2019-12-15 03:28+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -2622,6 +2622,9 @@ msgstr "filter() の引数"
 
 msgid "add() argument"
 msgstr "add() の引数"
+
+msgid "extendnew() argument"
+msgstr "extendnew() の引数"
 
 msgid "insert() argument"
 msgstr "insert() の引数"
@@ -6716,8 +6719,8 @@ msgid "E1022: Type or initialization required"
 msgstr "E1022: 型か初期化が必要です"
 
 #, c-format
-msgid "E1023: Using a Number as a Bool: %d"
-msgstr "E1023: 数値をBoolとして扱っています: %d"
+msgid "E1023: Using a Number as a Bool: %lld"
+msgstr "E1023: 数値をBoolとして扱っています: %lld"
 
 msgid "E1024: Using a Number as a String"
 msgstr "E1024: 数値を文字列として扱っています"
@@ -7143,6 +7146,12 @@ msgstr "E1151: endfunction が一致しません"
 
 msgid "E1152: Mismatched enddef"
 msgstr "E1152: enddef が一致しません"
+
+msgid "E1153: Invalid operation for bool"
+msgstr "E1153: bool型には無効な操作です"
+
+msgid "E1154: Divide by zero"
+msgstr "E1154: ゼロ除算"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
@@ -8009,7 +8018,6 @@ msgstr "テキストファイルを編集します"
 msgid "Text;editor;"
 msgstr "テキスト;エディタ;"
 
-# No need to translate this.
 #~ msgid "gvim"
 #~ msgstr ""
 
