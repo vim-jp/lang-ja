@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-26 11:27+0900\n"
+"POT-Creation-Date: 2021-06-23 10:43+0900\n"
 "PO-Revision-Date: 2019-12-15 03:28+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -100,6 +100,9 @@ msgstr "%s を実行しています"
 msgid "autocommand %s"
 msgstr "autocommand %s"
 
+msgid "E972: Blob value does not have the right number of bytes"
+msgstr "E972: Blob値のバイト数が正しくありません"
+
 msgid "E831: bf_key_init() called with empty password"
 msgstr "E831: bf_key_init() が空パスワードで呼出されました"
 
@@ -137,6 +140,25 @@ msgstr "E931: バッファを登録できません"
 msgid "E937: Attempt to delete a buffer that is in use: %s"
 msgstr "E937: 使用中のバッファを削除しようと試みました: %s"
 
+msgid "E90: Cannot unload last buffer"
+msgstr "E90: 最後のバッファは解放できません"
+
+msgid "E84: No modified buffer found"
+msgstr "E84: 変更されたバッファはありません"
+
+msgid "E85: There is no listed buffer"
+msgstr "E85: リスト表示されるバッファはありません"
+
+msgid "E87: Cannot go beyond last buffer"
+msgstr "E87: 最後のバッファを越えて移動はできません"
+
+msgid "E88: Cannot go before first buffer"
+msgstr "E88: 最初のバッファより前へは移動できません"
+
+#, c-format
+msgid "E89: No write since last change for buffer %d (add ! to override)"
+msgstr "E89: バッファ %d の変更は保存されていません (! で変更を破棄)"
+
 msgid "E515: No buffers were unloaded"
 msgstr "E515: 解放されたバッファはありません"
 
@@ -160,25 +182,6 @@ msgstr[0] "%d 個のバッファが削除されました"
 msgid "%d buffer wiped out"
 msgid_plural "%d buffers wiped out"
 msgstr[0] "%d 個のバッファが破棄されました"
-
-msgid "E90: Cannot unload last buffer"
-msgstr "E90: 最後のバッファは解放できません"
-
-msgid "E84: No modified buffer found"
-msgstr "E84: 変更されたバッファはありません"
-
-msgid "E85: There is no listed buffer"
-msgstr "E85: リスト表示されるバッファはありません"
-
-msgid "E87: Cannot go beyond last buffer"
-msgstr "E87: 最後のバッファを越えて移動はできません"
-
-msgid "E88: Cannot go before first buffer"
-msgstr "E88: 最初のバッファより前へは移動できません"
-
-#, c-format
-msgid "E89: No write since last change for buffer %d (add ! to override)"
-msgstr "E89: バッファ %d の変更は保存されていません (! で変更を破棄)"
 
 msgid "E948: Job still running (add ! to end the job)"
 msgstr "E948: ジョブはまだ実行中です (! を追加でジョブを終了)"
@@ -510,6 +513,12 @@ msgstr "E821: ファイルが未知の方法で暗号化されています"
 msgid "Warning: Using a weak encryption method; see :help 'cm'"
 msgstr "警告: 弱い暗号方法を使っています; :help 'cm' を参照してください"
 
+msgid ""
+"Note: Encryption of swapfile not supported, disabling swap- and undofile"
+msgstr ""
+"注意: スワップファイルの暗号化はサポートされていません。スワップとアンドゥ"
+"ファイルを無効化します"
+
 msgid "Enter encryption key: "
 msgstr "暗号化用のキーを入力してください: "
 
@@ -723,9 +732,6 @@ msgstr "E708: [:] は最後でなければいけません"
 msgid "E709: [:] requires a List or Blob value"
 msgstr "E709: [:] にはリスト型かBlob型の値が必要です"
 
-msgid "E972: Blob value does not have the right number of bytes"
-msgstr "E972: Blob型の値のバイト数が正しくありません"
-
 msgid "E996: Cannot lock a range"
 msgstr "E996: 範囲はロックできません"
 
@@ -754,9 +760,6 @@ msgid ""
 msgstr ""
 "\n"
 "\t最後にセットしたスクリプト: "
-
-msgid "E808: Number or Float required"
-msgstr "E808: 数値か浮動小数点数が必要です"
 
 #, c-format
 msgid "E158: Invalid buffer name: %s"
@@ -921,6 +924,10 @@ msgstr "E135: *Filter* 自動コマンドは現在のバッファを変更して
 
 msgid "[No write since last change]\n"
 msgstr "[最後の変更が保存されていません]\n"
+
+#, c-format
+msgid "E503: \"%s\" is not a file or writable device"
+msgstr "E503: \"%s\" はファイルでも書込み可能デバイスでもありません"
 
 msgid "Save As"
 msgstr "別名で保存"
@@ -1568,6 +1575,9 @@ msgstr "E446: カーソルの下にファイル名がありません"
 #, c-format
 msgid "E447: Can't find file \"%s\" in path"
 msgstr "E447: pathには \"%s\" というファイルがありません"
+
+msgid "E808: Number or Float required"
+msgstr "E808: 数値か浮動小数点数が必要です"
 
 msgid "E490: No fold found"
 msgstr "E490: 折畳みがありません"
@@ -5945,6 +5955,13 @@ msgstr "E853: 引数名が重複しています: %s"
 msgid "E989: Non-default argument follows default argument"
 msgstr "E989: 非デフォルト引数がデフォルト引数の後にあります"
 
+msgid "E126: Missing :endfunction"
+msgstr "E126: :endfunction がありません"
+
+#, c-format
+msgid "W22: Text found after :endfunction: %s"
+msgstr "W22: :endfunction の後に文字があります: %s"
+
 #, c-format
 msgid "E451: Expected }: %s"
 msgstr "E451: } が必要です: %s"
@@ -6019,17 +6036,6 @@ msgstr "E862: ここでは g: は使えません"
 #, c-format
 msgid "E932: Closure function should not be at top level: %s"
 msgstr "E932: クロージャー関数はトップレベルに記述できません: %s"
-
-msgid "E126: Missing :endfunction"
-msgstr "E126: :endfunction がありません"
-
-#, c-format
-msgid "W1001: Text found after :enddef: %s"
-msgstr "W1001: :enddef の後に文字があります: %s"
-
-#, c-format
-msgid "W22: Text found after :endfunction: %s"
-msgstr "W22: :endfunction の後に文字があります: %s"
 
 #, c-format
 msgid "E707: Function name conflicts with variable: %s"
@@ -6629,6 +6635,10 @@ msgstr ""
 "E856: \"assert_fails()\" の第2引数は文字列または1個か2個の文字列のリストでな"
 "ければなりません"
 
+#, c-format
+msgid "E908: using an invalid value as a String: %s"
+msgstr "E908: 無効な値を文字列として扱っています: %s"
+
 msgid "E909: Cannot index a special variable"
 msgstr "E909: 特殊変数はインデックスできません"
 
@@ -7119,8 +7129,8 @@ msgid "E1143: Empty expression: \"%s\""
 msgstr "E1143: 空の式です: \"%s\""
 
 #, c-format
-msgid "E1144: Command is not followed by white space: %s"
-msgstr "E1144: コマンドの後に空白がありません: %s"
+msgid "E1144: Command \"%s\" is not followed by white space: %s"
+msgstr "E1144: コマンド \"%s\" の後に空白がありません: %s"
 
 #, c-format
 msgid "E1145: Missing heredoc end marker: %s"
@@ -7195,6 +7205,134 @@ msgstr "E1165: 代入で範囲は使用できません: %s"
 
 msgid "E1166: Cannot use a range with a dictionary"
 msgstr "E1166: 辞書で範囲は使用できません"
+
+#, c-format
+msgid "E1167: Argument name shadows existing variable: %s"
+msgstr "E1167: 引数名が既存の変数を隠しています: %s"
+
+#, c-format
+msgid "E1168: Argument already declared in the script: %s"
+msgstr "E1168: 引数は既にスクリプト内で宣言されています: %s"
+
+msgid "E1169: 'import * as {name}' not supported here"
+msgstr "E1169: 'import * as {name}' はここではサポートされていません"
+
+msgid "E1170: Cannot use #{ to start a comment"
+msgstr "E1170: コメントの開始に #{ は使用できません"
+
+msgid "E1171: Missing } after inline function"
+msgstr "E1171: インライン関数の後に } がありません"
+
+msgid "E1172: Cannot use default values in a lambda"
+msgstr "E1172: ラムダではデフォルト値を使用できません"
+
+#, c-format
+msgid "E1173: Text found after enddef: %s"
+msgstr "E1173: :enddef の後に文字があります: %s"
+
+#, c-format
+msgid "E1174: String required for argument %d"
+msgstr "E1174: 引数 %d には文字列が必要です"
+
+#, c-format
+msgid "E1175: Non-empty string required for argument %d"
+msgstr "E1175: 引数 %d には空ではない文字列が必要です"
+
+msgid "E1176: Misplaced command modifier"
+msgstr "E1176: 間違ったコマンド修飾子です"
+
+#, c-format
+msgid "E1177: For loop on %s not supported"
+msgstr "E1177: %s に対する for ループはサポートされていません"
+
+msgid "E1178: Cannot lock or unlock a local variable"
+msgstr "E1178: ローカル変数はロックまたはアンロックできません"
+
+#, c-format
+msgid ""
+"E1179: Failed to extract PWD from %s, check your shell's config related to "
+"OSC 7"
+msgstr ""
+"E1179: %s から PWD を抽出するのに失敗しました。OSC 7 関連のシェルの設定を"
+"確認してください"
+
+#, c-format
+msgid "E1180: Variable arguments type must be a list: %s"
+msgstr "E1180: 可変引数の型はリストでなければなりません: %s"
+
+msgid "E1181: Cannot use an underscore here"
+msgstr "E1181: ここではアンダースコアは使えません"
+
+msgid "E1182: Blob required"
+msgstr "E1182: Blob型が必要です"
+
+#, c-format
+msgid "E1183: Cannot use a range with an assignment operator: %s"
+msgstr "E1183: 代入演算子で範囲は使用できません: %s"
+
+msgid "E1184: Blob not set"
+msgstr "E1184: Blob は設定されていません"
+
+msgid "E1185: Cannot nest :redir"
+msgstr "E1185: :redir は入れ子にできません"
+
+msgid "E1185: Missing :redir END"
+msgstr "E1185: :redir END がありません"
+
+#, c-format
+msgid "E1186: Expression does not result in a value: %s"
+msgstr "E1186: 式が値を返しませんでした: %s"
+
+msgid "E1187: Failed to source defaults.vim"
+msgstr "E1187: defaults.vim の読み込みに失敗しました"
+
+msgid "E1188: Cannot open a terminal from the command line window"
+msgstr "E1188: コマンドラインウィンドウから端末を開くことはできません"
+
+#, c-format
+msgid "E1189: Cannot use :legacy with this command: %s"
+msgstr "E1189: このコマンドには :legacy を使用できません: %s"
+
+msgid "E1190: One argument too few"
+msgstr "E1190: 引数が 1 個少ないです"
+
+#, c-format
+msgid "E1190: %d arguments too few"
+msgstr "E1190: 引数が %d 個少ないです"
+
+#, c-format
+msgid "E1191: Call to function that failed to compile: %s"
+msgstr "E1191: コンパイルに失敗した関数を呼び出そうとしています: %s"
+
+msgid "E1192: Empty function name"
+msgstr "E1192: 関数名が空です"
+
+msgid "E1193: cryptmethod xchacha20 not built into this Vim"
+msgstr "E1193: この Vim には暗号化メソッド xchacha20 が組み込まれていません"
+
+msgid "E1194: Cannot encrypt header, not enough space"
+msgstr "E1194: ヘッダを暗号化できません、スペースが足りません"
+
+msgid "E1195: Cannot encrypt buffer, not enough space"
+msgstr "E1195: バッファを暗号化できません、スペースが足りません"
+
+msgid "E1196: Cannot decrypt header, not enough space"
+msgstr "E1196: ヘッダを復号できません、スペースが足りません"
+
+msgid "E1197: Cannot allocate_buffer for encryption"
+msgstr "E1197: 暗号化用のバッファを確保できません"
+
+msgid "E1198: Decryption failed: Header incomplete!"
+msgstr "E1198: 復号に失敗: ヘッダが不完全です!"
+
+msgid "E1199: Cannot decrypt buffer, not enough space"
+msgstr "E1199: バッファを復号できません、スペースが足りません"
+
+msgid "E1200: Decryption failed!"
+msgstr "E1200: 復号に失敗!"
+
+msgid "E1201: Decryption failed: pre-mature end of file!"
+msgstr "E1201: 復号に失敗: 予期せぬファイルの終わりです!"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
@@ -7293,8 +7431,8 @@ msgid "E475: Invalid value for argument %s: %s"
 msgstr "E475: 引数 %s に対して無効な値です: %s"
 
 #, c-format
-msgid "E15: Invalid expression: %s"
-msgstr "E15: 無効な式です: %s"
+msgid "E15: Invalid expression: \"%s\""
+msgstr "E15: 無効な式です: \"%s\""
 
 msgid "E16: Invalid range"
 msgstr "E16: 無効な範囲です"
@@ -7526,9 +7664,6 @@ msgstr "E896: %s の引数はリスト型、辞書型またはBlob型でなけ�
 
 msgid "E804: Cannot use '%' with Float"
 msgstr "E804: '%' を浮動小数点数と組み合わせては使えません"
-
-msgid "E908: using an invalid value as a String"
-msgstr "E908: 無効な値を文字列として扱っています"
 
 msgid "E996: Cannot lock an option"
 msgstr "E996: オプションはロックできません"
@@ -8156,6 +8291,9 @@ msgstr ":cd に用いられるディレクトリ名のリスト"
 
 msgid "change to directory of file in buffer"
 msgstr "バッファ内のファイルのディレクトリに変更する"
+
+msgid "change to pwd of shell in terminal buffer"
+msgstr "端末バッファ内のシェルの pwd に変更する"
 
 msgid "search commands wrap around the end of the buffer"
 msgstr "検索コマンドがバッファの末尾/先頭をまたぐ"
