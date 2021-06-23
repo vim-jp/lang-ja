@@ -7284,7 +7284,7 @@ msgid "E1186: Expression does not result in a value: %s"
 msgstr "E1186: 式が値を返しませんでした: %s"
 
 msgid "E1187: Failed to source defaults.vim"
-msgstr "E1187: defaults.vim の読み込みに失敗しました"
+msgstr "E1187: defaults.vim の読込みに失敗しました"
 
 msgid "E1188: Cannot open a terminal from the command line window"
 msgstr "E1188: コマンドラインウィンドウから端末を開くことはできません"
@@ -7302,13 +7302,13 @@ msgstr "E1190: 引数が %d 個少ないです"
 
 #, c-format
 msgid "E1191: Call to function that failed to compile: %s"
-msgstr "E1191: コンパイルに失敗した関数を呼び出そうとしています: %s"
+msgstr "E1191: コンパイルに失敗した関数を呼出そうとしています: %s"
 
 msgid "E1192: Empty function name"
 msgstr "E1192: 関数名が空です"
 
 msgid "E1193: cryptmethod xchacha20 not built into this Vim"
-msgstr "E1193: この Vim には暗号化メソッド xchacha20 が組み込まれていません"
+msgstr "E1193: この Vim には暗号化メソッド xchacha20 が組込まれていません"
 
 msgid "E1194: Cannot encrypt header, not enough space"
 msgstr "E1194: ヘッダを暗号化できません、スペースが足りません"
