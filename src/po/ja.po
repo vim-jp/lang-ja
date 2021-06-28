@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-23 10:43+0900\n"
+"POT-Creation-Date: 2021-06-28 11:36+0900\n"
 "PO-Revision-Date: 2019-12-15 03:28+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -6601,6 +6601,54 @@ msgstr "gvimext.dll エラー"
 msgid "Path length too long!"
 msgstr "パスが長過ぎます!"
 
+msgid "E10: \\ should be followed by /, ? or &"
+msgstr "E10: \\ の後は / か ? か & でなければなりません"
+
+msgid "E11: Invalid in command-line window; <CR> executes, CTRL-C quits"
+msgstr "E11: コマンドラインウィンドウでは無効です; <CR>で実行, CTRL-Cでやめる"
+
+msgid "E12: Command not allowed from exrc/vimrc in current dir or tag search"
+msgstr ""
+"E12: 現在のディレクトリやタグ検索ではexrc/vimrcのコマンドは許可されません"
+
+msgid "E13: File exists (add ! to override)"
+msgstr "E13: ファイルが存在します (! を追加で上書)"
+
+#, c-format
+msgid "E15: Invalid expression: \"%s\""
+msgstr "E15: 無効な式です: \"%s\""
+
+msgid "E16: Invalid range"
+msgstr "E16: 無効な範囲です"
+
+#, c-format
+msgid "E17: \"%s\" is a directory"
+msgstr "E17: \"%s\" はディレクトリです"
+
+msgid "E18: Unexpected characters in :let"
+msgstr "E18: 予期せぬ文字が :let にありました"
+
+msgid "E18: Unexpected characters in assignment"
+msgstr "E18: 予期せぬ文字が代入にありました"
+
+msgid "E19: Mark has invalid line number"
+msgstr "E19: マークに無効な行番号が指定されていました"
+
+msgid "E20: Mark not set"
+msgstr "E20: マークは設定されていません"
+
+msgid "E21: Cannot make changes, 'modifiable' is off"
+msgstr "E21: 'modifiable' がオフなので、変更できません"
+
+msgid "E22: Scripts nested too deep"
+msgstr "E22: スクリプトの入れ子が深過ぎます"
+
+msgid "E23: No alternate file"
+msgstr "E23: 副ファイルはありません"
+
+msgid "E24: No such abbreviation"
+msgstr "E24: そのような短縮入力はありません"
+
 #, c-format
 msgid "E121: Undefined variable: %s"
 msgstr "E121: 未定義の変数です: %s"
@@ -7115,8 +7163,8 @@ msgstr "E1138: Boolを数値として扱っています"
 msgid "E1139: Missing matching bracket after dict key"
 msgstr "E1139: 辞書のキーの後に一致する角括弧がありません"
 
-msgid "E1140: For argument must be a sequence of lists"
-msgstr "E1140: for の引数はリストのシーケンスでなければなりません"
+msgid "E1140: :for argument must be a sequence of lists"
+msgstr "E1140: :for の引数はリストのシーケンスでなければなりません"
 
 msgid "E1141: Indexable type required"
 msgstr "E1141: インデックス可能な型が必要です"
@@ -7253,8 +7301,8 @@ msgid ""
 "E1179: Failed to extract PWD from %s, check your shell's config related to "
 "OSC 7"
 msgstr ""
-"E1179: %s から PWD を抽出するのに失敗しました。OSC 7 関連のシェルの設定を"
-"確認してください"
+"E1179: %s から PWD を抽出するのに失敗しました。OSC 7 関連のシェルの設定を確認"
+"してください"
 
 #, c-format
 msgid "E1180: Variable arguments type must be a list: %s"
@@ -7334,6 +7382,14 @@ msgstr "E1200: 復号に失敗!"
 msgid "E1201: Decryption failed: pre-mature end of file!"
 msgstr "E1201: 復号に失敗: 予期せぬファイルの終わりです!"
 
+#, c-format
+msgid "E1202: No white space allowed after '%s': %s"
+msgstr "E1202: '%s' の後にスペースは許されません: %s"
+
+#, c-format
+msgid "E1203: Dot can only be used on a dictionary: %s"
+msgstr "E1203: ドットは辞書の中でのみ使用できます: %s"
+
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
 
@@ -7342,16 +7398,6 @@ msgstr "E470: コマンドが中断されました"
 
 msgid "E471: Argument required"
 msgstr "E471: 引数が必要です"
-
-msgid "E10: \\ should be followed by /, ? or &"
-msgstr "E10: \\ の後は / か ? か & でなければなりません"
-
-msgid "E11: Invalid in command-line window; <CR> executes, CTRL-C quits"
-msgstr "E11: コマンドラインウィンドウでは無効です; <CR>で実行, CTRL-Cでやめる"
-
-msgid "E12: Command not allowed from exrc/vimrc in current dir or tag search"
-msgstr ""
-"E12: 現在のディレクトリやタグ検索ではexrc/vimrcのコマンドは許可されません"
 
 msgid "E171: Missing :endif"
 msgstr "E171: :endif がありません"
@@ -7382,9 +7428,6 @@ msgstr "E588: :while のない :endwhile があります"
 
 msgid "E588: :endfor without :for"
 msgstr "E588: :endfor のない :for があります"
-
-msgid "E13: File exists (add ! to override)"
-msgstr "E13: ファイルが存在します (! を追加で上書)"
 
 msgid "E472: Command failed"
 msgstr "E472: コマンドが失敗しました"
@@ -7430,17 +7473,6 @@ msgstr "E475: 引数 %s に対して無効な値です"
 msgid "E475: Invalid value for argument %s: %s"
 msgstr "E475: 引数 %s に対して無効な値です: %s"
 
-#, c-format
-msgid "E15: Invalid expression: \"%s\""
-msgstr "E15: 無効な式です: \"%s\""
-
-msgid "E16: Invalid range"
-msgstr "E16: 無効な範囲です"
-
-#, c-format
-msgid "E17: \"%s\" is a directory"
-msgstr "E17: \"%s\" はディレクトリです"
-
 msgid "E756: Spell checking is not possible"
 msgstr "E756: スペルチェックは使用できません"
 
@@ -7454,24 +7486,6 @@ msgstr "E667: fsync に失敗しました"
 #, c-format
 msgid "E448: Could not load library function %s"
 msgstr "E448: ライブラリの関数 %s をロードできませんでした"
-
-msgid "E19: Mark has invalid line number"
-msgstr "E19: マークに無効な行番号が指定されていました"
-
-msgid "E20: Mark not set"
-msgstr "E20: マークは設定されていません"
-
-msgid "E21: Cannot make changes, 'modifiable' is off"
-msgstr "E21: 'modifiable' がオフなので、変更できません"
-
-msgid "E22: Scripts nested too deep"
-msgstr "E22: スクリプトの入れ子が深過ぎます"
-
-msgid "E23: No alternate file"
-msgstr "E23: 副ファイルはありません"
-
-msgid "E24: No such abbreviation"
-msgstr "E24: そのような短縮入力はありません"
 
 msgid "E477: No ! allowed"
 msgstr "E477: ! は許可されていません"
@@ -7671,9 +7685,6 @@ msgstr "E996: オプションはロックできません"
 #, c-format
 msgid "E113: Unknown option: %s"
 msgstr "E113: 未知のオプションです: %s"
-
-msgid "E18: Unexpected characters in :let"
-msgstr "E18: 予期せぬ文字が :let にありました"
 
 #, c-format
 msgid "E998: Reduce of an empty %s with no initial value"
