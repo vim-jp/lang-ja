@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-08 10:22+0900\n"
+"POT-Creation-Date: 2021-07-09 11:55+0900\n"
 "PO-Revision-Date: 2019-12-15 03:28+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -7393,6 +7393,9 @@ msgstr "E1203: ドットは辞書の中でのみ使用できます: %s"
 #, c-format
 msgid "E1204: No Number allowed after .: '\\%%%c'"
 msgstr "E1204: . の後に数字は許されません: '\\%%%c'"
+
+msgid "E1205: No white space allowed between option and"
+msgstr "E1205: オプションとの間にスペースは許されません"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
