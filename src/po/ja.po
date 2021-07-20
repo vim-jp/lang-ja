@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-09 11:55+0900\n"
+"POT-Creation-Date: 2021-07-20 21:41+0900\n"
 "PO-Revision-Date: 2019-12-15 03:28+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -1247,9 +1247,6 @@ msgstr "E500: 空文字列として評価されました"
 
 msgid "Untitled"
 msgstr "無題"
-
-msgid "E196: No digraphs in this version"
-msgstr "E196: このバージョンに合字はありません"
 
 msgid "E608: Cannot :throw exceptions with 'Vim' prefix"
 msgstr "E608: 'Vim' で始まる例外は :throw できません"
@@ -5689,16 +5686,16 @@ msgstr "E914: チャネルを浮動小数点数として扱っています"
 msgid "E975: Using a Blob as a Float"
 msgstr "E975: Blob型を浮動小数点数として扱っています"
 
-msgid "E729: using Funcref as a String"
+msgid "E729: Using a Funcref as a String"
 msgstr "E729: 関数参照型を文字列として扱っています"
 
-msgid "E730: using List as a String"
+msgid "E730: Using a List as a String"
 msgstr "E730: リスト型を文字列として扱っています"
 
-msgid "E731: using Dictionary as a String"
+msgid "E731: Using a Dictionary as a String"
 msgstr "E731: 辞書型を文字列として扱っています"
 
-msgid "E976: using Blob as a String"
+msgid "E976: Using a Blob as a String"
 msgstr "E976: Blob型を文字列として扱っています"
 
 msgid "E977: Can only compare Blob with Blob"
@@ -6657,6 +6654,9 @@ msgstr "E121: 未定義の変数です: %s"
 msgid "E121: Undefined variable: %c:%s"
 msgstr "E121: 未定義の変数です: %c:%s"
 
+msgid "E196: No digraphs in this version"
+msgstr "E196: このバージョンに合字はありません"
+
 msgid "E464: Ambiguous use of user-defined command"
 msgstr "E464: ユーザー定義コマンドのあいまいな使用です"
 
@@ -7208,8 +7208,9 @@ msgstr "E1151: endfunction が一致しません"
 msgid "E1152: Mismatched enddef"
 msgstr "E1152: enddef が一致しません"
 
-msgid "E1153: Invalid operation for bool"
-msgstr "E1153: bool型には無効な操作です"
+#, c-format
+msgid "E1153: Invalid operation for %s"
+msgstr "E1153: %s には無効な操作です"
 
 msgid "E1154: Divide by zero"
 msgstr "E1154: ゼロ除算"
@@ -7396,6 +7397,49 @@ msgstr "E1204: . の後に数字は許されません: '\\%%%c'"
 
 msgid "E1205: No white space allowed between option and"
 msgstr "E1205: オプションとの間にスペースは許されません"
+
+#, c-format
+msgid "E1206: Dictionary required for argument %d"
+msgstr "E1206: 引数 %d には辞書が必要です"
+
+#, c-format
+msgid "E1207: Expression without an effect: %s"
+msgstr "E1207: 効果のない式です: %s"
+
+msgid "E1208: -complete used without -nargs"
+msgstr "E1208: -complete が -nargs なしで使われています"
+
+#, c-format
+msgid "E1209: Invalid value for a line number: \"%s\""
+msgstr "E1209: 行番号として無効な値です: \"%s\""
+
+#, c-format
+msgid "E1210: Number required for argument %d"
+msgstr "E1210: 引数 %d には数値が必要です"
+
+#, c-format
+msgid "E1211: List required for argument %d"
+msgstr "E1211: 引数 %d にはリストが必要です"
+
+#, c-format
+msgid "E1212: Bool required for argument %d"
+msgstr "E1212: 引数 %d にはBoolが必要です"
+
+#, c-format
+msgid "E1213: Redefining imported item \"%s\""
+msgstr "E1213: インポートされた要素 \"%s\" を再定義しています"
+
+#, c-format
+msgid "E1214: Digraph must be just two characters: %s"
+msgstr "E1214: ダイグラフはちょうど2文字でなければなりません: %s"
+
+#, c-format
+msgid "E1215: Digraph must be one character: %s"
+msgstr "E1215: ダイグラフは1文字でなければなりません: %s"
+
+msgid "E1216: setdigraphlist() argument must be a list of lists with two items"
+msgstr ""
+"E1216: setdigraphlist() の引数は2要素のリストのリストでなければなりません"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
@@ -7631,6 +7675,12 @@ msgstr "E794: サンドボックスでは変数 \"%s\" に値を設定できま�
 
 msgid "E928: String required"
 msgstr "E928: 文字列が必要です"
+
+msgid "E889: Number required"
+msgstr "E889: 数値が必要です"
+
+msgid "E839: Number required"
+msgstr "E839: 数値が必要です"
 
 msgid "E713: Cannot use empty key for Dictionary"
 msgstr "E713: 辞書型に空のキーを使うことはできません"
