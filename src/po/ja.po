@@ -8933,7 +8933,7 @@ msgstr "ツールバーアイコンのサイズ"
 msgid "room (in pixels) left above/below the window"
 msgstr "ウィンドウの上下の余白 (ピクセル単位)"
 
-msgid "list of ASCII characters that can be combined into complesshapes"
+msgid "list of ASCII characters that can be combined into complex shapes"
 msgstr "複合形状に結合されるASCII文字のリスト"
 
 msgid "options for text rendering"
