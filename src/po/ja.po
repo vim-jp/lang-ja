@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-09 11:48+0900\n"
+"POT-Creation-Date: 2021-10-27 11:04+0900\n"
 "PO-Revision-Date: 2019-12-15 03:28+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -536,8 +536,8 @@ msgstr "警告: 弱い暗号方法を使っています; :help 'cm' を参照し
 
 msgid "Note: Encryption of swapfile not supported, disabling swap file"
 msgstr ""
-"注意: スワップファイルの暗号化はサポートされていません。スワップファイルを"
-"無効化します"
+"注意: スワップファイルの暗号化はサポートされていません。スワップファイルを無"
+"効化します"
 
 msgid "Enter encryption key: "
 msgstr "暗号化用のキーを入力してください: "
@@ -2051,32 +2051,8 @@ msgstr "E150: ディレクトリではありません: %s"
 msgid "E679: recursive loop loading syncolor.vim"
 msgstr "E679: syncolor.vim の再帰呼出しを検出しました"
 
-#, c-format
-msgid "E411: highlight group not found: %s"
-msgstr "E411: ハイライトグループが見つかりません: %s"
-
-#, c-format
-msgid "E412: Not enough arguments: \":highlight link %s\""
-msgstr "E412: 引数が充分ではない: \":highlight link %s\""
-
-#, c-format
-msgid "E413: Too many arguments: \":highlight link %s\""
-msgstr "E413: 引数が多過ぎます: \":highlight link %s\""
-
 msgid "E414: group has settings, highlight link ignored"
 msgstr "E414: グループが設定されているのでハイライトリンクは無視されます"
-
-#, c-format
-msgid "E415: unexpected equal sign: %s"
-msgstr "E415: 予期せぬ等号です: %s"
-
-#, c-format
-msgid "E416: missing equal sign: %s"
-msgstr "E416: 等号がありません: %s"
-
-#, c-format
-msgid "E417: missing argument: %s"
-msgstr "E417: 引数がありません: %s"
 
 #, c-format
 msgid "E418: Illegal value: %s"
@@ -2098,6 +2074,30 @@ msgstr "E421: カラー名や番号を認識できません: %s"
 #, c-format
 msgid "E422: terminal code too long: %s"
 msgstr "E422: 終端コードが長過ぎます: %s"
+
+#, c-format
+msgid "E411: highlight group not found: %s"
+msgstr "E411: ハイライトグループが見つかりません: %s"
+
+#, c-format
+msgid "E412: Not enough arguments: \":highlight link %s\""
+msgstr "E412: 引数が充分ではない: \":highlight link %s\""
+
+#, c-format
+msgid "E413: Too many arguments: \":highlight link %s\""
+msgstr "E413: 引数が多過ぎます: \":highlight link %s\""
+
+#, c-format
+msgid "E415: unexpected equal sign: %s"
+msgstr "E415: 予期せぬ等号です: %s"
+
+#, c-format
+msgid "E416: missing equal sign: %s"
+msgstr "E416: 等号がありません: %s"
+
+#, c-format
+msgid "E417: missing argument: %s"
+msgstr "E417: 引数がありません: %s"
 
 #, c-format
 msgid "E423: Illegal argument: %s"
@@ -2149,9 +2149,6 @@ msgstr "E257: cstag: タグが見つかりません"
 #, c-format
 msgid "E563: stat(%s) error: %d"
 msgstr "E563: stat(%s) エラー: %d"
-
-msgid "E563: stat error"
-msgstr "E563: stat エラー"
 
 #, c-format
 msgid "E564: %s is not a directory or a valid cscope database"
@@ -3993,12 +3990,6 @@ msgstr "E531: GUIをスタートするには \":gui\" を使用してくださ�
 msgid "E589: 'backupext' and 'patchmode' are equal"
 msgstr "E589: 'backupext' と 'patchmode' が同じです"
 
-msgid "E835: Conflicts with value of 'fillchars'"
-msgstr "E835: 'fillchars'の値に矛盾があります"
-
-msgid "E834: Conflicts with value of 'listchars'"
-msgstr "E834: 'listchars'の値に矛盾があります"
-
 msgid "E617: Cannot be changed in the GTK+ 2 GUI"
 msgstr "E617: GTK+2 GUIでは変更できません"
 
@@ -5510,9 +5501,6 @@ msgstr ""
 "\n"
 "--- 端末キー ---"
 
-msgid "Cannot open $VIMRUNTIME/rgb.txt"
-msgstr "$VIMRUNTIME/rgb.txtを開けません"
-
 #, c-format
 msgid "E181: Invalid attribute: %s"
 msgstr "E181: 無効な属性です: %s"
@@ -5886,10 +5874,6 @@ msgstr "E183: ユーザー定義コマンドは英大文字で始まらなけれ
 
 msgid "E841: Reserved name, cannot be used for user defined command"
 msgstr "E841: 予約名なので、ユーザー定義コマンドに利用できません"
-
-#, c-format
-msgid "E184: No such user-defined command: %s"
-msgstr "E184: そのユーザー定義コマンドはありません: %s"
 
 #, c-format
 msgid "E122: Function %s already exists, add ! to replace it"
@@ -6726,8 +6710,16 @@ msgstr "E121: 未定義の変数です: %s"
 msgid "E121: Undefined variable: %c:%s"
 msgstr "E121: 未定義の変数です: %c:%s"
 
+#, c-format
+msgid "E184: No such user-defined command: %s"
+msgstr "E184: そのユーザー定義コマンドはありません: %s"
+
 msgid "E196: No digraphs in this version"
 msgstr "E196: このバージョンに合字はありません"
+
+#, c-format
+msgid "E254: Cannot allocate color %s"
+msgstr "E254: %s の色を割り当てられません"
 
 msgid "E464: Ambiguous use of user-defined command"
 msgstr "E464: ユーザー定義コマンドのあいまいな使用です"
@@ -6747,6 +6739,12 @@ msgstr "E711: リスト型変数に十分な数の要素がありません"
 
 msgid "E719: Cannot slice a Dictionary"
 msgstr "E719: 辞書型はスライスできません"
+
+msgid "E834: Conflicts with value of 'listchars'"
+msgstr "E834: 'listchars'の値に矛盾があります"
+
+msgid "E835: Conflicts with value of 'fillchars'"
+msgstr "E835: 'fillchars'の値に矛盾があります"
 
 msgid ""
 "E856: \"assert_fails()\" second argument must be a string or a list with one "
@@ -7605,6 +7603,36 @@ msgstr "E1235: 関数参照が設定されていません"
 msgid "E1236: Cannot use %s itself, it is imported with '*'"
 msgstr "E1236: %s 自身を使うことはできません、'*' でインポートされています"
 
+#, c-format
+msgid "E1237: No such user-defined command in current buffer: %s"
+msgstr "E1237: 現在のバッファにそのユーザー定義コマンドはありません: %s"
+
+#, c-format
+msgid "E1238: Blob required for argument %d"
+msgstr "E1238: 引数 %d にはBlobが必要です"
+
+#, c-format
+msgid "E1239: Invalid value for blob: %d"
+msgstr "E1239: blobとして無効な値です: %d"
+
+msgid "E1240: Resulting text too long"
+msgstr "E1240: テキストが長くなりすぎました"
+
+#, c-format
+msgid "E1241: Separator not supported: %s"
+msgstr "E1241: そのセパレータには対応していません: %s"
+
+#, c-format
+msgid "E1242: No white space allowed before separator: %s"
+msgstr "E1242: セパレータの前にスペースは許されません: %s"
+
+msgid "E1243: ASCII code not in 32-127 range"
+msgstr "E1243: ASCIIコードが32-127の範囲にありません"
+
+#, c-format
+msgid "E1244: Bad color string: %s"
+msgstr "E1244: 無効なカラー名文字列です: %s"
+
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
 
@@ -8030,10 +8058,6 @@ msgstr "E274: 丸括弧の前にスペースは許されません"
 msgid "E940: Cannot lock or unlock variable %s"
 msgstr "E940: 変数 %s はロックまたはアンロックできません"
 
-#, c-format
-msgid "E254: Cannot allocate color %s"
-msgstr "E254: %s の色を割り当てられません"
-
 msgid "E706: Channel or Job required"
 msgstr "E706: チャネルまたはジョブが必要です"
 
@@ -8362,9 +8386,6 @@ msgstr "テキストファイルを編集します"
 
 msgid "Text;editor;"
 msgstr "テキスト;エディタ;"
-
-#~ msgid "gvim"
-#~ msgstr ""
 
 # No need to translate this.
 #~ msgid "Vim"
@@ -8912,6 +8933,9 @@ msgstr "ツールバーアイコンのサイズ"
 msgid "room (in pixels) left above/below the window"
 msgstr "ウィンドウの上下の余白 (ピクセル単位)"
 
+msgid "list of ASCII characters that can be combined into complesshapes"
+msgstr "複合形状に結合されるASCII文字のリスト"
+
 msgid "options for text rendering"
 msgstr "テキストレンダリングのためのオプション"
 
@@ -9120,6 +9144,9 @@ msgstr "キーワード補完用の辞書ファイルのリスト"
 
 msgid "list of thesaurus files for keyword completion"
 msgstr "キーワード補完用の同義語ファイルのリスト"
+
+msgid "function used for thesaurus completion"
+msgstr "同義語補完で使われる関数"
 
 msgid "adjust case of a keyword completion match"
 msgstr "キーワード補完のマッチで大文字小文字を調整"
