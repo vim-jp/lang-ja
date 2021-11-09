@@ -1,7 +1,7 @@
 # vim-jp/lang-ja
 
 [![Join the chat at https://gitter.im/vim-jp/lang-ja](https://badges.gitter.im/vim-jp/lang-ja.svg)](https://gitter.im/vim-jp/lang-ja?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Build Status](https://travis-ci.com/vim-jp/lang-ja.svg?branch=master)](https://travis-ci.com/github/vim-jp/lang-ja)
+[![test vim lang files](https://github.com/vim-jp/lang-ja/actions/workflows/test.yml/badge.svg)](https://github.com/vim-jp/lang-ja/actions/workflows/test.yml)
 
 Vimに付属する日本語翻訳ファイルを管理するリポジトリ
 
@@ -95,9 +95,9 @@ nsis/lang                          |Windows用インストーラーの翻訳フ�
 
     以下のコマンドでmanの文法に違反していないかチェックできる。
 
-        $ LC_ALL=en_US.UTF-8 MANROFFSEQ='' MANWIDTH=80 man --warnings -E UTF-8 -l -Tutf8 -Z vim-ja.UTF-8.1 >/dev/null
+        $ LC_ALL=en_US.UTF-8 MANROFFSEQ='' MANWIDTH=80 man --warnings -E UTF-8 -l -Tutf8 -Z vim-ja.UTF-8.1 2>&1 > /dev/null | grep -v "cannot adjust line\|can't break line"
 
-    `cannot adjust line` と `can't break line` が大量に表示されるが、日本語の場合は無視して良い。それ以外のエラーが無いことを確認する。
+    (末尾の `grep -v` は、日本語の場合に大量に表示される `cannot adjust line` と `can't break line` を除外するためのもの。)
 
     参照: <https://lintian.debian.org/tags/manpage-has-errors-from-man.html>
 
@@ -184,5 +184,8 @@ nsis/lang                          |Windows用インストーラーの翻訳フ�
         Thanks,
         (ここにあなたの名前。`Takata`とか)
 
+    あるいは [GitHub][#github] に PR を出す。
 
-[#ci]:https://travis-ci.com/github/vim-jp/lang-ja
+
+[#ci]:https://github.com/vim-jp/lang-ja/actions
+[#github]:https://github.com/vim/vim
