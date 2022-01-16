@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-16 10:46+0900\n"
+"POT-Creation-Date: 2022-01-16 21:48+0900\n"
 "PO-Revision-Date: 2022-01-16 12:43+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -6498,6 +6498,7 @@ msgstr "E802: 無効な ID: %d (1 以上でなければなりません)"
 msgid "E803: ID not found: %d"
 msgstr "E803: ID はありません: %d"
 
+#, no-c-format
 msgid "E804: Cannot use '%' with Float"
 msgstr "E804: '%' を浮動小数点数と組み合わせては使えません"
 
@@ -6696,6 +6697,7 @@ msgstr "E862: ここでは g: は使えません"
 msgid "E863: Not allowed for a terminal in a popup window"
 msgstr "E863: 端末はポップアップウィンドウでは許されません"
 
+#, no-c-format
 msgid ""
 "E864: \\%#= can only be followed by 0, 1, or 2. The automatic engine will be "
 "used"
@@ -7019,6 +7021,7 @@ msgstr "E949: 書込み中にファイルが変更されました"
 msgid "E950: Cannot convert between %s and %s"
 msgstr "E950: %s と %s の間で変換できません"
 
+#, no-c-format
 msgid "E951: \\% value too large"
 msgstr "E951: \\% 値が大き過ぎます"
 
@@ -7325,6 +7328,7 @@ msgstr "E1033: 全てをcatchした後のcatchには到達しません"
 msgid "E1034: Cannot use reserved name %s"
 msgstr "E1034: 予約名 %s は使用できません"
 
+#, no-c-format
 msgid "E1035: % requires number arguments"
 msgstr "E1035: % には数値の引数が必要です"
 
