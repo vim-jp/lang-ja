@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-21 00:35+0900\n"
+"POT-Creation-Date: 2022-01-21 07:36+0900\n"
 "PO-Revision-Date: 2022-01-16 12:43+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -7771,9 +7771,6 @@ msgstr "E1167: 引数名が既存の変数を隠しています: %s"
 #, c-format
 msgid "E1168: Argument already declared in the script: %s"
 msgstr "E1168: 引数は既にスクリプト内で宣言されています: %s"
-
-msgid "E1169: 'import * as {name}' not supported here"
-msgstr "E1169: 'import * as {name}' はここではサポートされていません"
 
 msgid "E1170: Cannot use #{ to start a comment"
 msgstr "E1170: コメントの開始に #{ は使用できません"
