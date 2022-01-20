@@ -23,7 +23,7 @@ scriptencoding utf-8
 menutrans &Help			ヘルプ(&H)
 menutrans &Overview<Tab><F1>	概略(&O)<Tab><F1>
 menutrans &User\ Manual		ユーザーマニュアル(&U)
-menutrans &How-to\ links	&How-toリンク
+menutrans &How-To\ links	&How-toリンク
 menutrans &Credits		クレジット(&C)
 menutrans Co&pying		著作権情報(&P)
 menutrans &Sponsor/Register	スポンサー/登録(&S)
@@ -270,10 +270,9 @@ if has("toolbar")
     tmenu ToolBar.Cut		クリップボードへ切り取り
     tmenu ToolBar.Copy		クリップボードへコピー
     tmenu ToolBar.Paste		クリップボードから貼り付け
-    tmenu ToolBar.Find		検索...
+    tmenu ToolBar.Replace	検索 / 置換...
     tmenu ToolBar.FindNext	次を検索
     tmenu ToolBar.FindPrev	前を検索
-    tmenu ToolBar.Replace	置換...
     if 0	" disabled; These are in the Windows menu
       tmenu ToolBar.New		新規ウィンドウ作成
       tmenu ToolBar.WinSplit	ウィンドウ分割
