@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-19 08:00+0900\n"
+"POT-Creation-Date: 2022-01-20 11:44+0900\n"
 "PO-Revision-Date: 2022-01-16 12:43+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -5417,6 +5417,10 @@ msgstr "E463: 領域が保護されているので、変更できません"
 
 msgid "E464: Ambiguous use of user-defined command"
 msgstr "E464: ユーザー定義コマンドのあいまいな使用です"
+
+#, c-format
+msgid "E464: Ambiguous use of user-defined command: %s"
+msgstr "E464: ユーザー定義コマンドのあいまいな使用です: %s"
 
 msgid "E465: :winsize requires two number arguments"
 msgstr "E465: :winsize には2つの数値の引数が必要です"
