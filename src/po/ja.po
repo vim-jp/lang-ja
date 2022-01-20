@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-20 11:44+0900\n"
+"POT-Creation-Date: 2022-01-21 00:35+0900\n"
 "PO-Revision-Date: 2022-01-16 12:43+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -3248,7 +3248,7 @@ msgstr "終了"
 msgid "(Invalid)"
 msgstr "(無効)"
 
-# no-c-format
+#, no-c-format
 msgid "%a %b %d %H:%M:%S %Y"
 msgstr "%Y/%m/%d (%a) %H:%M:%S"
 
