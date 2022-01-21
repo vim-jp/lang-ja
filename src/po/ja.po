@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-21 07:36+0900\n"
+"POT-Creation-Date: 2022-01-22 08:29+0900\n"
 "PO-Revision-Date: 2022-01-16 12:43+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -8119,6 +8119,10 @@ msgstr "E1261: \"as\" を使わずに .vim をインポートすることはで�
 #, c-format
 msgid "E1262: Cannot import the same script twice: %s"
 msgstr "E1262: 同じスクリプトを2回インポートすることはできません: %s"
+
+#, c-format
+msgid "E1263: Using autoload name in a non-autoload script: %s"
+msgstr "E1263: 非autoloadスクリプトでautoload名を使用しています: %s"
 
 #, c-format
 msgid "E1264: Autoload import cannot use absolute or relative path: %s"
