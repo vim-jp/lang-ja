@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-27 07:46+0900\n"
+"POT-Creation-Date: 2022-01-29 00:56+0900\n"
 "PO-Revision-Date: 2022-01-16 12:43+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -7677,6 +7677,11 @@ msgstr "E1140: :for の引数はリストのシーケンスでなければなり
 msgid "E1141: Indexable type required"
 msgstr "E1141: インデックス可能な型が必要です"
 
+msgid "E1142: Calling test_garbagecollect_now() while v:testing is not set"
+msgstr ""
+"E1142: v:testing が設定されていない状態で test_garbagecollect_now() を呼んで"
+"います"
+
 #, c-format
 msgid "E1143: Empty expression: \"%s\""
 msgstr "E1143: 空の式です: \"%s\""
@@ -7729,8 +7734,10 @@ msgstr "E1156: 引数リストを再帰的に変更することはできませ�
 msgid "E1157: Missing return type"
 msgstr "E1157: 戻り値の型がありません"
 
-msgid "E1158: Cannot use flatten() in Vim9 script"
-msgstr "E1158: Vim9 スクリプトでは flatten() は使用できません"
+msgid "E1158: Cannot use flatten() in Vim9 script, use flattennew()"
+msgstr ""
+"E1158: Vim9 スクリプトでは flatten() は使用できません、flattennew() を使って"
+"ください"
 
 msgid "E1159: Cannot split a window when closing the buffer"
 msgstr "E1159: バッファを閉じている間にウィンドウを分割することはできません"
