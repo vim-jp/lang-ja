@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-29 00:56+0900\n"
+"POT-Creation-Date: 2022-01-31 21:31+0900\n"
 "PO-Revision-Date: 2022-01-16 12:43+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -3816,11 +3816,6 @@ msgstr ""
 "このコマンドは無効です、ごめんなさい: Perlライブラリをロードできませんでし"
 "た。"
 
-msgid "E299: Perl evaluation forbidden in sandbox without the Safe module"
-msgstr ""
-"E299: サンドボックスでは Safe モジュールを使用しないPerlスクリプトは禁じられ"
-"ています"
-
 msgid "Edit with Vim using &tabpages"
 msgstr "Vimでタブページを使って編集する (&T)"
 
@@ -4835,6 +4830,11 @@ msgstr "E298: ブロック 1 を取得できません?"
 
 msgid "E298: Didn't get block nr 2?"
 msgstr "E298: ブロック 2 を取得できません?"
+
+msgid "E299: Perl evaluation forbidden in sandbox without the Safe module"
+msgstr ""
+"E299: サンドボックスでは Safe モジュールを使用しないPerlスクリプトは禁じられ"
+"ています"
 
 msgid "E300: Swap file already exists (symlink attack?)"
 msgstr "E300: スワップファイルが既に存在します (symlinkによる攻撃?)"
@@ -8131,9 +8131,10 @@ msgstr "E1261: \"as\" を使わずに .vim をインポートすることはで�
 msgid "E1262: Cannot import the same script twice: %s"
 msgstr "E1262: 同じスクリプトを2回インポートすることはできません: %s"
 
-#, c-format
-msgid "E1263: Using autoload name in a non-autoload script: %s"
-msgstr "E1263: 非autoloadスクリプトでautoload名を使用しています: %s"
+msgid "E1263: cannot use name with # in Vim9 script, use export instead"
+msgstr ""
+"E1263: Vim9 スクリプトでは # 入りの名前は使用できません、代わりに export を使"
+"用してください"
 
 #, c-format
 msgid "E1264: Autoload import cannot use absolute or relative path: %s"
