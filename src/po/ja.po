@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-31 21:31+0900\n"
+"POT-Creation-Date: 2022-02-04 07:51+0900\n"
 "PO-Revision-Date: 2022-01-16 12:43+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -7507,6 +7507,9 @@ msgstr "E1090: 引数 %s に対して代入できません"
 msgid "E1091: Function is not compiled: %s"
 msgstr "E1091: 関数はコンパイルされていません: %s"
 
+msgid "E1092: Cannot nest :redir"
+msgstr "E1092: :redir は入れ子にできません"
+
 #, c-format
 msgid "E1093: Expected %d items but got %d"
 msgstr "E1093: %d 個の要素が期待されていますが %d 個でした"
@@ -7838,9 +7841,6 @@ msgstr "E1183: 代入演算子で範囲は使用できません: %s"
 
 msgid "E1184: Blob not set"
 msgstr "E1184: Blob は設定されていません"
-
-msgid "E1185: Cannot nest :redir"
-msgstr "E1185: :redir は入れ子にできません"
 
 msgid "E1185: Missing :redir END"
 msgstr "E1185: :redir END がありません"
