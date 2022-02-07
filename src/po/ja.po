@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-04 07:51+0900\n"
+"POT-Creation-Date: 2022-02-07 10:46+0900\n"
 "PO-Revision-Date: 2022-01-16 12:43+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -3081,36 +3081,6 @@ msgstr "このバッファに定義された構文要素はありません"
 
 msgid "'redrawtime' exceeded, syntax highlighting disabled"
 msgstr "'redrawtime' を超過したため、構文ハイライトは無効化されます"
-
-msgid "syntax conceal on"
-msgstr "構文の conceal は現在 on です"
-
-msgid "syntax conceal off"
-msgstr "構文の conceal は現在 off です"
-
-msgid "syntax case ignore"
-msgstr "構文の大文字小文字は現在 ignore です"
-
-msgid "syntax case match"
-msgstr "構文の大文字小文字は現在 match です"
-
-msgid "syntax foldlevel start"
-msgstr "構文の foldlevel は現在 start です"
-
-msgid "syntax foldlevel minimum"
-msgstr "構文の foldlevel は現在 minimum です"
-
-msgid "syntax spell toplevel"
-msgstr "構文の spell は現在 toplevel です"
-
-msgid "syntax spell notoplevel"
-msgstr "構文の spell は現在 notoplevel です"
-
-msgid "syntax spell default"
-msgstr "構文の spell は現在 default です"
-
-msgid "syntax iskeyword "
-msgstr "構文用 iskeyword "
 
 msgid "syntax iskeyword not set"
 msgstr "構文用 iskeyword はセットされていません"
