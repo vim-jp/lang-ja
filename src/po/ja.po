@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-08 14:27+0900\n"
+"POT-Creation-Date: 2022-02-09 08:59+0900\n"
 "PO-Revision-Date: 2022-01-16 12:43+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -7464,6 +7464,9 @@ msgstr "E1086: 関数参照が不正です"
 
 msgid "E1087: Cannot use an index when declaring a variable"
 msgstr "E1087: 変数を宣言する際にインデックスは使用できません"
+
+msgid "E1088: Script cannot import itself"
+msgstr "E1088: スクリプト自身をインポートできません"
 
 #, c-format
 msgid "E1089: Unknown variable: %s"
