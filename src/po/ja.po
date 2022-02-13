@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-12 12:33+0900\n"
+"POT-Creation-Date: 2022-02-13 09:33+0900\n"
 "PO-Revision-Date: 2022-01-16 12:43+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -8129,6 +8129,10 @@ msgstr ""
 #, c-format
 msgid "E1267: Function name must start with a capital: %s"
 msgstr "E1267: 関数名は大文字で始まらなければなりません: %s"
+
+#, c-format
+msgid "E1268: Cannot use s: in Vim9 script: %s"
+msgstr "E1268: Vim9 スクリプトでは :s は使用できません: %s"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
