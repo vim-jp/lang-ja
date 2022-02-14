@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-13 09:33+0900\n"
+"POT-Creation-Date: 2022-02-14 13:47+0900\n"
 "PO-Revision-Date: 2022-01-16 12:43+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -8133,6 +8133,10 @@ msgstr "E1267: 関数名は大文字で始まらなければなりません: %s"
 #, c-format
 msgid "E1268: Cannot use s: in Vim9 script: %s"
 msgstr "E1268: Vim9 スクリプトでは :s は使用できません: %s"
+
+#, c-format
+msgid "E1269: Cannot create a Vim9 script variable in a function: %s"
+msgstr "E1269: 関数内で Vim9 スクリプト変数は作成できません: %s"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
