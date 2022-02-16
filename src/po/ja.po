@@ -7454,7 +7454,7 @@ msgid "E1081: Cannot unlet %s"
 msgstr "E1081: %s を unlet できません"
 
 msgid "E1082: Command modifier without command"
-msgstr "E1082: コマンド修飾子にコマンドがありません"
+msgstr "E1082: コマンドなしのコマンド修飾子です"
 
 msgid "E1083: Missing backtick"
 msgstr "E1083: バッククォートがありません"
