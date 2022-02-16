@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-14 13:47+0900\n"
+"POT-Creation-Date: 2022-02-16 17:00+0900\n"
 "PO-Revision-Date: 2022-01-16 12:43+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -7446,9 +7446,15 @@ msgstr "E1076: このVimは浮動小数点数サポート付きでコンパイ�
 msgid "E1077: Missing argument type for %s"
 msgstr "E1077: %s の引数の型がありません"
 
+msgid "E1080: Invalid assignment"
+msgstr "E1080: 無効な代入です"
+
 #, c-format
 msgid "E1081: Cannot unlet %s"
 msgstr "E1081: %s を unlet できません"
+
+msgid "E1082: Command modifier without command"
+msgstr "E1082: コマンド修飾子にコマンドがありません"
 
 msgid "E1083: Missing backtick"
 msgstr "E1083: バッククォートがありません"
