@@ -8,6 +8,8 @@
 "			  vim-jp <http://vim-jp.org/>
 "
 " THIS FILE IS DISTRIBUTED UNDER THE VIM LICENSE.
+"
+" Original translations
 
 " Quit when menu translations have already been done.
 if exists("did_menu_trans")
