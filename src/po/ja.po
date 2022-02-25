@@ -7465,7 +7465,7 @@ msgstr "E1083: バッククォートがありません"
 
 #, c-format
 msgid "E1084: Cannot delete Vim9 script function %s"
-msgstr "E1084: Vim9 スクリプト関数は削除できません: %s"
+msgstr "E1084: Vim9 script 関数は削除できません: %s"
 
 #, c-format
 msgid "E1085: Not a callable type: %s"
@@ -7521,7 +7521,7 @@ msgstr "E1099: %s を実行中に未知のエラーです"
 #, c-format
 msgid "E1100: Command not supported in Vim9 script (missing :var?): %s"
 msgstr ""
-"E1100: コマンドが Vim9 スクリプトでサポートされていません (:var がない?): %s"
+"E1100: コマンドが Vim9 script でサポートされていません (:var がない?): %s"
 
 #, c-format
 msgid "E1101: Cannot declare a script variable in a function: %s"
@@ -7615,7 +7615,7 @@ msgid "E1125: Final requires a value"
 msgstr "E1125: final には値が必要です"
 
 msgid "E1126: Cannot use :let in Vim9 script"
-msgstr "E1126: Vim9 スクリプトでは :let は使用できません"
+msgstr "E1126: Vim9 script では :let は使用できません"
 
 msgid "E1127: Missing name after dot"
 msgstr "E1127: ドットの後に名前がありません"
@@ -7724,8 +7724,8 @@ msgstr "E1157: 戻り値の型がありません"
 
 msgid "E1158: Cannot use flatten() in Vim9 script, use flattennew()"
 msgstr ""
-"E1158: Vim9 スクリプトでは flatten() は使用できません、flattennew() を使って"
-"ください"
+"E1158: Vim9 script では flatten() は使用できません、flattennew() を使ってくだ"
+"さい"
 
 msgid "E1159: Cannot split a window when closing the buffer"
 msgstr "E1159: バッファを閉じている間にウィンドウを分割することはできません"
@@ -7819,7 +7819,7 @@ msgstr "E1181: ここではアンダースコアは使えません"
 
 #, c-format
 msgid "E1182: Cannot define a dict function in Vim9 script: %s"
-msgstr "E1182: Vim9 スクリプトでは辞書用関数は定義できません: %s"
+msgstr "E1182: Vim9 script では辞書用関数は定義できません: %s"
 
 #, c-format
 msgid "E1183: Cannot use a range with an assignment operator: %s"
@@ -8119,8 +8119,8 @@ msgstr "E1262: 同じスクリプトを2回インポートすることはでき�
 
 msgid "E1263: cannot use name with # in Vim9 script, use export instead"
 msgstr ""
-"E1263: Vim9 スクリプトでは # 入りの名前は使用できません、代わりに export を使"
-"用してください"
+"E1263: Vim9 script では # 入りの名前は使用できません、代わりに export を使用"
+"してください"
 
 #, c-format
 msgid "E1264: Autoload import cannot use absolute or relative path: %s"
@@ -8143,11 +8143,11 @@ msgstr "E1267: 関数名は大文字で始まらなければなりません: %s"
 
 #, c-format
 msgid "E1268: Cannot use s: in Vim9 script: %s"
-msgstr "E1268: Vim9 スクリプトでは :s は使用できません: %s"
+msgstr "E1268: Vim9 script では :s は使用できません: %s"
 
 #, c-format
 msgid "E1269: Cannot create a Vim9 script variable in a function: %s"
-msgstr "E1269: 関数内で Vim9 スクリプト変数は作成できません: %s"
+msgstr "E1269: 関数内で Vim9 script 変数は作成できません: %s"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
