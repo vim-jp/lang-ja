@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-18 13:52+0900\n"
+"POT-Creation-Date: 2022-02-25 11:51+0900\n"
 "PO-Revision-Date: 2022-02-20 01:53+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -2497,6 +2497,10 @@ msgstr ""
 
 msgid "XSMP lost ICE connection"
 msgstr "XSMP がICE接続を失いました"
+
+#, c-format
+msgid "Could not load gpm library: %s"
+msgstr "gpm ライブラリをロードできませんでした: %s"
 
 #, c-format
 msgid "dlerror = \"%s\""
@@ -7812,6 +7816,10 @@ msgstr "E1180: 可変引数の型はリストでなければなりません: %s"
 
 msgid "E1181: Cannot use an underscore here"
 msgstr "E1181: ここではアンダースコアは使えません"
+
+#, c-format
+msgid "E1182: Cannot define a dict function in Vim9 script: %s"
+msgstr "E1182: Vim9 スクリプトでは辞書用関数は定義できません: %s"
 
 #, c-format
 msgid "E1183: Cannot use a range with an assignment operator: %s"
