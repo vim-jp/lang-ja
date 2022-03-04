@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-04 17:59+0900\n"
+"POT-Creation-Date: 2022-03-05 07:07+0900\n"
 "PO-Revision-Date: 2022-02-20 01:53+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -5669,6 +5669,10 @@ msgid "E537: 'commentstring' must be empty or contain %s"
 msgstr "E537: 'commentstring' は空であるか %s を含む必要があります"
 
 #, c-format
+msgid "E538: Pattern found in every line: %s"
+msgstr "E538: パターンが全ての行で見つかりました: %s"
+
+#, c-format
 msgid "E539: Illegal character <%s>"
 msgstr "E539: 不正な文字です <%s>"
 
@@ -7449,6 +7453,9 @@ msgstr "E1076: このVimは浮動小数点数サポート付きでコンパイ�
 #, c-format
 msgid "E1077: Missing argument type for %s"
 msgstr "E1077: %s の引数の型がありません"
+
+msgid "E1078: Invalid command \"nested\", did you mean \"++nested\"?"
+msgstr "E1078: 不正なコマンド \"nested\"。\"++nested\" を意味していますか?"
 
 msgid "E1079: Cannot declare a variable on the command line"
 msgstr "E1079: コマンドラインで変数は宣言できません"
