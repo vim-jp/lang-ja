@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-25 11:51+0900\n"
+"POT-Creation-Date: 2022-03-04 17:59+0900\n"
 "PO-Revision-Date: 2022-02-20 01:53+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -7449,6 +7449,9 @@ msgstr "E1076: このVimは浮動小数点数サポート付きでコンパイ�
 #, c-format
 msgid "E1077: Missing argument type for %s"
 msgstr "E1077: %s の引数の型がありません"
+
+msgid "E1079: Cannot declare a variable on the command line"
+msgstr "E1079: コマンドラインで変数は宣言できません"
 
 msgid "E1080: Invalid assignment"
 msgstr "E1080: 無効な代入です"
