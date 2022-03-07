@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-05 07:07+0900\n"
+"POT-Creation-Date: 2022-03-07 09:32+0900\n"
 "PO-Revision-Date: 2022-02-20 01:53+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -3174,6 +3174,9 @@ msgstr ""
 "\n"
 "  # TO タグ        FROM 行    in file/text"
 
+msgid "Ignoring long line in tags file"
+msgstr "タグファイル内の長い行を無視します"
+
 #, c-format
 msgid "Searching tags file %s"
 msgstr "タグファイル %s を検索中"
@@ -3181,9 +3184,6 @@ msgstr "タグファイル %s を検索中"
 #, c-format
 msgid "Before byte %ld"
 msgstr "直前の %ld バイト"
-
-msgid "Ignoring long line in tags file"
-msgstr "タグファイル内の長い行を無視します"
 
 #, c-format
 msgid "Duplicate field name: %s"
@@ -7413,6 +7413,10 @@ msgid "E1064: Yank register changed while using it"
 msgstr "E1064: ヤンクレジスタが使用中に変更されました"
 
 #, c-format
+msgid "E1065: Command cannot be shortened: %s"
+msgstr "E1065: コマンドを短縮できません: %s"
+
+#, c-format
 msgid "E1066: Cannot declare a register: %s"
 msgstr "E1066: レジスタは宣言できません: %s"
 
@@ -8158,6 +8162,9 @@ msgstr "E1268: Vim9 script では :s は使用できません: %s"
 #, c-format
 msgid "E1269: Cannot create a Vim9 script variable in a function: %s"
 msgstr "E1269: 関数内で Vim9 script 変数は作成できません: %s"
+
+msgid "E1270: Cannot use :s\\/sub/ in Vim9 script"
+msgstr "E1270: Vim9 script では :s\\/sub/ は使用できません"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
