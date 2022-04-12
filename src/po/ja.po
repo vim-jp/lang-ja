@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-07 09:32+0900\n"
+"POT-Creation-Date: 2022-04-12 14:53+0900\n"
 "PO-Revision-Date: 2022-02-20 01:53+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -818,24 +818,6 @@ msgstr[0] "+-%s%3ld 行: "
 msgid "No match at cursor, finding next"
 msgstr "カーソルの位置にマッチはありません、次を検索しています"
 
-msgid "<cannot open> "
-msgstr "<開けません> "
-
-msgid "Pathname:"
-msgstr "パス名:"
-
-msgid "OK"
-msgstr "OK"
-
-msgid "Cancel"
-msgstr "キャンセル"
-
-msgid "Scrollbar Widget: Could not get geometry of thumb pixmap."
-msgstr "スクロールバー: 画像を取得できませんでした。"
-
-msgid "Vim dialog"
-msgstr "Vim ダイアログ"
-
 msgid "_Save"
 msgstr "保存(_S)"
 
@@ -857,11 +839,17 @@ msgstr ""
 "いいえ(&N)\n"
 "キャンセル(&C)"
 
+msgid "OK"
+msgstr "OK"
+
 msgid "Yes"
 msgstr "はい"
 
 msgid "No"
 msgstr "いいえ"
+
+msgid "Cancel"
+msgstr "キャンセル"
 
 msgid "Input _Methods"
 msgstr "インプットメソッド"
@@ -943,6 +931,9 @@ msgstr "&OK"
 
 msgid "Selection"
 msgstr "選択"
+
+msgid "Vim dialog"
+msgstr "Vim ダイアログ"
 
 msgid "Find &Next"
 msgstr "次を検索(&N)"
@@ -1711,20 +1702,6 @@ msgstr ""
 "\n"
 "gvimによって解釈される引数(Motifバージョン):\n"
 
-msgid ""
-"\n"
-"Arguments recognised by gvim (neXtaw version):\n"
-msgstr ""
-"\n"
-"gvimによって解釈される引数(neXtawバージョン):\n"
-
-msgid ""
-"\n"
-"Arguments recognised by gvim (Athena version):\n"
-msgstr ""
-"\n"
-"gvimによって解釈される引数(Athenaバージョン):\n"
-
 msgid "-display <display>\tRun Vim on <display>"
 msgstr "-display <display>\t<display> でVimを実行する"
 
@@ -1755,9 +1732,6 @@ msgstr "-borderwidth <width>\t境界の幅を <width> にする(同義: -bw)"
 msgid "-scrollbarwidth <width>  Use a scrollbar width of <width> (also: -sw)"
 msgstr ""
 "-scrollbarwidth <width>  スクロールバーの幅を <width> にする(同義: -sw)"
-
-msgid "-menuheight <height>\tUse a menu bar height of <height> (also: -mh)"
-msgstr "-menuheight <height>\tメニューバーの高さを <height> にする(同義: -mh)"
 
 msgid "-reverse\t\tUse reverse video (also: -rv)"
 msgstr "-reverse\t\t反転映像を使用する(同義: -rv)"
@@ -3178,12 +3152,12 @@ msgid "Ignoring long line in tags file"
 msgstr "タグファイル内の長い行を無視します"
 
 #, c-format
-msgid "Searching tags file %s"
-msgstr "タグファイル %s を検索中"
-
-#, c-format
 msgid "Before byte %ld"
 msgstr "直前の %ld バイト"
+
+#, c-format
+msgid "Searching tags file %s"
+msgstr "タグファイル %s を検索中"
 
 #, c-format
 msgid "Duplicate field name: %s"
@@ -3491,12 +3465,6 @@ msgstr "with GTK2 GUI."
 
 msgid "with X11-Motif GUI."
 msgstr "with X11-Motif GUI."
-
-msgid "with X11-neXtaw GUI."
-msgstr "with X11-neXtaw GUI."
-
-msgid "with X11-Athena GUI."
-msgstr "with X11-Athena GUI."
 
 msgid "with Haiku GUI."
 msgstr "with Haiku GUI."
@@ -5913,16 +5881,6 @@ msgstr "E612: signの定義が多過ぎます"
 msgid "E613: Unknown printer font: %s"
 msgstr "E613: 未知のプリンタオプションです: %s"
 
-msgid "E614: vim_SelFile: can't return to current directory"
-msgstr "E614: vim_SelFile: 現在のディレクトリに戻れません"
-
-msgid "E615: vim_SelFile: can't get current directory"
-msgstr "E615: vim_SelFile: 現在のディレクトリを取得できません"
-
-#, c-format
-msgid "E616: vim_SelFile: can't get font %s"
-msgstr "E616: vim_SelFile: フォント %s を取得できません"
-
 msgid "E617: Cannot be changed in the GTK GUI"
 msgstr "E617: GTK GUIでは変更できません"
 
@@ -7335,8 +7293,8 @@ msgid "E1040: Cannot use :scriptversion after :vim9script"
 msgstr "E1040: :vim9script の後に :scriptversion は使用できません"
 
 #, c-format
-msgid "E1041: Redefining script item %s"
-msgstr "E1041: スクリプト要素 %s を再定義しています"
+msgid "E1041: Redefining script item: \"%s\""
+msgstr "E1041: スクリプト要素を再定義しています: \"%s\""
 
 msgid "E1042: Export can only be used in vim9script"
 msgstr "E1042: export は vim9script の中でのみ使用できます"
@@ -7484,9 +7442,6 @@ msgstr "E1084: Vim9 script 関数は削除できません: %s"
 #, c-format
 msgid "E1085: Not a callable type: %s"
 msgstr "E1085: 呼出し可能な型ではありません: %s"
-
-msgid "E1086: Function reference invalid"
-msgstr "E1086: 関数参照が不正です"
 
 msgid "E1087: Cannot use an index when declaring a variable"
 msgstr "E1087: 変数を宣言する際にインデックスは使用できません"
@@ -8027,9 +7982,6 @@ msgstr "E1233: exists_compiled() は :def 関数の中でのみ使用できま�
 msgid "E1234: legacy must be followed by a command"
 msgstr "E1234: legacy は後ろにコマンドが必要です"
 
-msgid "E1235: Function reference is not set"
-msgstr "E1235: 関数参照が設定されていません"
-
 #, c-format
 msgid "E1236: Cannot use %s itself, it is imported"
 msgstr "E1236: %s 自身を使うことはできません、インポートされています"
@@ -8165,6 +8117,21 @@ msgstr "E1269: 関数内で Vim9 script 変数は作成できません: %s"
 
 msgid "E1270: Cannot use :s\\/sub/ in Vim9 script"
 msgstr "E1270: Vim9 script では :s\\/sub/ は使用できません"
+
+#, c-format
+msgid "E1271: compiling closure without context: %s"
+msgstr "E1271: 文脈無しのクロージャをコンパイルしようとしています: %s"
+
+#, c-format
+msgid "E1272: Using type not in a script context: %s"
+msgstr "E1272: スクリプト以外で型が使われました: %s"
+
+#, c-format
+msgid "E1273: (NFA regexp) missing value in '\\%%%c'"
+msgstr "E1273: (NFA 正規表現) '\\%%%c' に値がありません"
+
+msgid "E1274: No script file name to substitute for \"<script>\""
+msgstr "E1274: \"<script>\"を置き換えるスクリプトファイル名がありません"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
@@ -8990,6 +8957,9 @@ msgstr "マウスポインタのあるウィンドウがマウスホイールで
 msgid "hide the mouse pointer while typing"
 msgstr "文字の入力中にマウスポインタを隠す"
 
+msgid "report mouse movement events"
+msgstr "マウスの移動イベントを報告する"
+
 msgid ""
 "\"extend\", \"popup\" or \"popup_setpos\"; what the right\n"
 "mouse button is used for"
@@ -9325,6 +9295,9 @@ msgstr "挿入モードで C インデント処理を引き起こすキー"
 
 msgid "list of words that cause more C-indent"
 msgstr "さらなる C インデントを発生させる単語のリスト"
+
+msgid "list of scope declaration names used by cino-g"
+msgstr "cino-g に用いられるスコープ宣言名のリスト"
 
 msgid "expression used to obtain the indent of a line"
 msgstr "行のインデントを得るために使われる式"
