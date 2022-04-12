@@ -544,7 +544,7 @@ msgstr "W21: 要求されたpython 3.xは対応していません、ファイル
 
 msgid "Entering Ex mode.  Type \"visual\" to go to Normal mode."
 msgstr ""
-"Exモードに入ります。ノーマルモードに戻るには\"visual\"と入力してください。"
+"Exモードに入ります。ノーマルモードに戻るには \"visual\" と入力してください。"
 
 #, c-format
 msgid "Executing: %s"
@@ -4720,7 +4720,7 @@ msgstr ""
 
 #, c-format
 msgid "E282: Cannot read from \"%s\""
-msgstr "E282: \"%s\"から読込むことができません"
+msgstr "E282: \"%s\" から読込むことができません"
 
 #, c-format
 msgid "E283: No marks matching \"%s\""
@@ -5465,7 +5465,7 @@ msgid "E488: Trailing characters: %s"
 msgstr "E488: 余分な文字が後ろにあります: %s"
 
 msgid "E489: no call stack to substitute for \"<stack>\""
-msgstr "E489: \"<stack>\"を置き換えるコールスタックがありません"
+msgstr "E489: \"<stack>\" を置き換えるコールスタックがありません"
 
 msgid "E490: No fold found"
 msgstr "E490: 折畳みがありません"
@@ -5484,16 +5484,16 @@ msgid "E494: Use w or w>>"
 msgstr "E494: w もしくは w>> を使用してください"
 
 msgid "E495: no autocommand file name to substitute for \"<afile>\""
-msgstr "E495: \"<afile>\"を置き換える自動コマンドのファイル名がありません"
+msgstr "E495: \"<afile>\" を置き換える自動コマンドのファイル名がありません"
 
 msgid "E496: no autocommand buffer number to substitute for \"<abuf>\""
-msgstr "E496: \"<abuf>\"を置き換える自動コマンドバッファ番号がありません"
+msgstr "E496: \"<abuf>\" を置き換える自動コマンドバッファ番号がありません"
 
 msgid "E497: no autocommand match name to substitute for \"<amatch>\""
-msgstr "E497: \"<amatch>\"を置き換える自動コマンドの該当名がありません"
+msgstr "E497: \"<amatch>\" を置き換える自動コマンドの該当名がありません"
 
 msgid "E498: no :source file name to substitute for \"<sfile>\""
-msgstr "E498: \"<sfile>\"を置き換える :source 対象ファイル名がありません"
+msgstr "E498: \"<sfile>\" を置き換える :source 対象ファイル名がありません"
 
 #, no-c-format
 msgid "E499: Empty file name for '%' or '#', only works with \":p:h\""
@@ -6568,7 +6568,7 @@ msgid "E841: Reserved name, cannot be used for user defined command"
 msgstr "E841: 予約名なので、ユーザー定義コマンドに利用できません"
 
 msgid "E842: no line number to use for \"<slnum>\""
-msgstr "E842: \"<slnum>\"を置き換える行番号がありません"
+msgstr "E842: \"<slnum>\" を置き換える行番号がありません"
 
 msgid "E843: Error while updating swap file crypt"
 msgstr "E843: スワップファイルの暗号を更新中にエラーが発生しました"
@@ -6996,7 +6996,7 @@ msgid "E960: Problem creating the internal diff"
 msgstr "E960: 内部diff作成時に問題が発生しました"
 
 msgid "E961: no line number to use for \"<sflnum>\""
-msgstr "E961: \"<sflnum>\"を置き換える行番号がありません"
+msgstr "E961: \"<sflnum>\" を置き換える行番号がありません"
 
 #, c-format
 msgid "E962: Invalid action: '%s'"
@@ -8131,7 +8131,7 @@ msgid "E1273: (NFA regexp) missing value in '\\%%%c'"
 msgstr "E1273: (NFA 正規表現) '\\%%%c' に値がありません"
 
 msgid "E1274: No script file name to substitute for \"<script>\""
-msgstr "E1274: \"<script>\"を置き換えるスクリプトファイル名がありません"
+msgstr "E1274: \"<script>\" を置き換えるスクリプトファイル名がありません"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
