@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-13 16:48+0900\n"
+"POT-Creation-Date: 2022-05-24 15:52+0900\n"
 "PO-Revision-Date: 2022-02-20 01:53+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -3321,6 +3321,10 @@ msgstr "%s が #%ld を返しました"
 #, c-format
 msgid "%s returning %s"
 msgstr "%s が %s を返しました"
+
+#, c-format
+msgid "Function %s does not need compiling"
+msgstr "関数 %s はコンパイルの必要がありません"
 
 #, c-format
 msgid "%s (%s, compiled %s)"
@@ -8156,6 +8160,16 @@ msgstr "E1279: '}' がありません: %s"
 
 msgid "E1280: Illegal character in word"
 msgstr "E1280: 単語内に不正な文字があります"
+
+#, c-format
+msgid "E1281: Atom '\\%%#=%c' must be at the start of the pattern"
+msgstr "E1281: アトム '\\%%#=%c' はパターンの先頭になければなりません"
+
+msgid "E1282: bitshift operands must be numbers"
+msgstr "E1282: ビットシフトの引数は数値でなければなりません"
+
+msgid "E1283: bitshift amount must be a positive number"
+msgstr "E1283: ビットシフトの量は正の値でなければなりません"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
