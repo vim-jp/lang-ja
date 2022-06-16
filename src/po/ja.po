@@ -1555,7 +1555,7 @@ msgid "-C\t\t\tCompatible with Vi: 'compatible'"
 msgstr "-C\t\t\tVi互換モード: 'compatible'"
 
 msgid "-N\t\t\tNot fully Vi compatible: 'nocompatible'"
-msgstr "-N\t\t\tVi非互換モード: 'nocompatible"
+msgstr "-N\t\t\tVi非互換モード: 'nocompatible'"
 
 msgid "-V[N][fname]\t\tBe verbose [level N] [log messages to fname]"
 msgstr "-V[N][fname]\t\tログ出力設定 [レベル N] [ログファイル名 fname]"
