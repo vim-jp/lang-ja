@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-24 15:52+0900\n"
+"POT-Creation-Date: 2022-06-16 11:51+0900\n"
 "PO-Revision-Date: 2022-02-20 01:53+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -1592,6 +1592,9 @@ msgstr "-T <terminal>\t端末を <terminal> に設定する"
 
 msgid "--not-a-term\t\tSkip warning for input/output not being a terminal"
 msgstr "--not-a-term\t\t入出力が端末でないとの警告をスキップする"
+
+msgid "--gui-dialog-file {fname}  For testing: write dialog text"
+msgstr "--gui-dialog-file {fname}  テスト用: ダイアログテキストを書く"
 
 msgid "--ttyfail\t\tExit if input or output is not a terminal"
 msgstr "--ttyfail\t\t入出力が端末でなければ終了する"
@@ -5769,9 +5772,6 @@ msgstr "'>' が見つかりません"
 msgid "Illegal register name"
 msgstr "不正なレジスタ名"
 
-msgid "E578: Not allowed to change text here"
-msgstr "E578: ここでテキストを変更することは許可されません"
-
 msgid "E579: :if nesting too deep"
 msgstr "E579: :if の入れ子が深過ぎます"
 
@@ -8165,11 +8165,35 @@ msgstr "E1280: 単語内に不正な文字があります"
 msgid "E1281: Atom '\\%%#=%c' must be at the start of the pattern"
 msgstr "E1281: アトム '\\%%#=%c' はパターンの先頭になければなりません"
 
-msgid "E1282: bitshift operands must be numbers"
+msgid "E1282: Bitshift operands must be numbers"
 msgstr "E1282: ビットシフトの引数は数値でなければなりません"
 
-msgid "E1283: bitshift amount must be a positive number"
+msgid "E1283: Bitshift amount must be a positive number"
 msgstr "E1283: ビットシフトの量は正の値でなければなりません"
+
+#, c-format
+msgid "E1284: Argument 1, list item %d: Dictionary required"
+msgstr "E1284: 引数 1、リスト要素 %d: 辞書型が必要です"
+
+#, c-format
+msgid "E1285: Could not clear timeout: %s"
+msgstr "E1285: タイムアウトをクリアできません: %s"
+
+#, c-format
+msgid "E1286: Could not set timeout: %s"
+msgstr "E1286: タイムアウトをセットできません: %s"
+
+#, c-format
+msgid "E1287: Could not set handler for timeout: %s"
+msgstr "E1287: タイムアウトハンドラをセットできません: %s"
+
+#, c-format
+msgid "E1288: Could not reset handler for timeout: %s"
+msgstr "E1288: タイムアウトハンドラをリセットできません: %s"
+
+#, c-format
+msgid "E1289: Could not check for pending SIGALRM: %s"
+msgstr "E1289: 保留中の SIGALRM をチェックできません: %s"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
