@@ -12,9 +12,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Vim 8.2\n"
+"Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-16 11:51+0900\n"
+"POT-Creation-Date: 2022-07-07 14:18+0900\n"
 "PO-Revision-Date: 2022-02-20 01:53+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -3566,8 +3566,8 @@ msgstr "終了するには           :q<Enter>              "
 msgid "type  :help<Enter>  or  <F1>  for on-line help"
 msgstr "オンラインヘルプは     :help<Enter> か <F1>   "
 
-msgid "type  :help version8<Enter>   for version info"
-msgstr "バージョン情報は       :help version8<Enter>  "
+msgid "type  :help version9<Enter>   for version info"
+msgstr "バージョン情報は       :help version9<Enter>  "
 
 msgid "Running in Vi compatible mode"
 msgstr "Vi互換モードで動作中"
@@ -8194,6 +8194,9 @@ msgstr "E1288: タイムアウトハンドラをリセットできません: %s"
 #, c-format
 msgid "E1289: Could not check for pending SIGALRM: %s"
 msgstr "E1289: 保留中の SIGALRM をチェックできません: %s"
+
+msgid "E1290: substitute nesting too deep"
+msgstr "E1290: 置換の入れ子が深過ぎます"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
