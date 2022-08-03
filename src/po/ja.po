@@ -8116,7 +8116,7 @@ msgstr "E1267: 関数名は大文字で始まらなければなりません: %s"
 
 #, c-format
 msgid "E1268: Cannot use s: in Vim9 script: %s"
-msgstr "E1268: Vim9 script では :s は使用できません: %s"
+msgstr "E1268: Vim9 script では s: は使用できません: %s"
 
 #, c-format
 msgid "E1269: Cannot create a Vim9 script variable in a function: %s"
