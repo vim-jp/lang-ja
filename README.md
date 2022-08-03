@@ -182,7 +182,7 @@ nsis/lang                          |Windows用インストーラーの翻訳フ�
         https://github.com/vim-jp/lang-ja/releases/tag/20181116
 
         Thanks,
-        (ここにあなたの名前。`Takata`とか)
+        (ここにあなたの名前。`Takata`とか)
 
     あるいは [GitHub][#github] に PR を出す。
 
