@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-30 11:52+0900\n"
+"POT-Creation-Date: 2022-08-31 15:33+0900\n"
 "PO-Revision-Date: 2022-02-20 01:53+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -8224,6 +8224,10 @@ msgstr "E1295: 'type' と 'types' を両方指定することはできません"
 
 msgid "E1296: Can only use left padding when column is zero"
 msgstr "E1296: 桁がゼロのときのみ左パディングを使えます"
+
+#, c-format
+msgid "E1297: Non-NULL Dictionary required for argument %d"
+msgstr "E1297: 引数 %d には非NULLの辞書が必要です"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
