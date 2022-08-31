@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-07 14:18+0900\n"
+"POT-Creation-Date: 2022-08-30 11:52+0900\n"
 "PO-Revision-Date: 2022-02-20 01:53+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -5467,6 +5467,10 @@ msgstr "E486: パターンは見つかりませんでした: %s"
 msgid "E487: Argument must be positive"
 msgstr "E487: 引数は正の値でなければなりません"
 
+#, c-format
+msgid "E487: Argument must be positive: %s"
+msgstr "E487: 引数は正の値でなければなりません: %s"
+
 msgid "E488: Trailing characters"
 msgstr "E488: 余分な文字が後ろにあります"
 
@@ -6454,7 +6458,7 @@ msgstr "E804: '%' を浮動小数点数と組み合わせては使えません"
 msgid "E805: Using a Float as a Number"
 msgstr "E805: 浮動小数点数を数値として扱っています"
 
-msgid "E806: Using Float as a String"
+msgid "E806: Using a Float as a String"
 msgstr "E806: 浮動小数点数を文字列として扱っています"
 
 msgid "E807: Expected Float argument for printf()"
@@ -6634,8 +6638,8 @@ msgstr "E858: 式評価は有効なpythonオブジェクトを返しませんで
 msgid "E859: Failed to convert returned python object to a Vim value"
 msgstr "E859: 返されたpythonオブジェクトをVimの値に変換できませんでした"
 
-msgid "E860: Need 'id' and 'type' with 'both'"
-msgstr "E860: 'both' には 'id' と 'type' の両方が必要です"
+msgid "E860: Need 'id' and 'type' or 'types' with 'both'"
+msgstr "E860: 'both' には 'id' と 'type' または 'types' が必要です"
 
 msgid "E861: Cannot open a second popup with a terminal"
 msgstr "E861: 2つ目の端末付きポップアップを開くことはできません"
@@ -7170,11 +7174,13 @@ msgstr "E1006: %s が引数として使われています"
 msgid "E1007: Mandatory argument after optional argument"
 msgstr "E1007: オプション引数の後に必須引数があります"
 
-msgid "E1008: Missing <type>"
-msgstr "E1008: <type> がありません"
+#, c-format
+msgid "E1008: Missing <type> after %s"
+msgstr "E1008: 後に <type> がありません: %s"
 
-msgid "E1009: Missing > after type"
-msgstr "E1009: 型の後に > がありません"
+#, c-format
+msgid "E1009: Missing > after type: %s"
+msgstr "E1009: 型の後に > がありません: %s"
 
 #, c-format
 msgid "E1010: Type not recognized: %s"
@@ -8197,6 +8203,27 @@ msgstr "E1289: 保留中の SIGALRM をチェックできません: %s"
 
 msgid "E1290: substitute nesting too deep"
 msgstr "E1290: 置換の入れ子が深過ぎます"
+
+#, c-format
+msgid "E1291: Invalid argument: %ld"
+msgstr "E1291: 無効な引数です: %ld"
+
+msgid "E1292: Command-line window is already open"
+msgstr "E1292: コマンドラインウィンドウは既に開かれています"
+
+msgid "E1293: Cannot use a negative id after adding a textprop with text"
+msgstr ""
+"E1293: テキスト付きのテキストプロパティを付加したあと負の id を使うことはでき"
+"ません"
+
+msgid "E1294: Can only use text_align when column is zero"
+msgstr "E1294: 桁がゼロのときのみ text_align を使えます"
+
+msgid "E1295: Cannot specify both 'type' and 'types'"
+msgstr "E1295: 'type' と 'types' を両方指定することはできません"
+
+msgid "E1296: Can only use left padding when column is zero"
+msgstr "E1296: 桁がゼロのときのみ左パディングを使えます"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
