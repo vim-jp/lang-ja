@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-31 15:33+0900\n"
+"POT-Creation-Date: 2022-09-13 18:34+0900\n"
 "PO-Revision-Date: 2022-02-20 01:53+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -8229,6 +8229,31 @@ msgstr "E1296: 桁がゼロのときのみ左パディングを使えます"
 msgid "E1297: Non-NULL Dictionary required for argument %d"
 msgstr "E1297: 引数 %d には非NULLの辞書が必要です"
 
+#, c-format
+msgid "E1298: Non-NULL List required for argument %d"
+msgstr "E1298: 引数 %d には非NULLのリストが必要です"
+
+msgid "E1299: Window unexpectedly closed while searching for tags"
+msgstr "E1299: タグを検索中に予期せずウィンドウが閉じられました"
+
+msgid "E1300: Cannot use a partial with dictionary for :defer"
+msgstr "E1300: :defer で辞書付き部分適用は使用できません"
+
+#, c-format
+msgid "E1301: String, Number, List or Blob required for argument %d"
+msgstr "E1301: 引数 %d には文字列、数値、リストまたはBlobが必要です"
+
+msgid "E1302: Script variable was deleted"
+msgstr "E1302: スクリプト変数が削除されました"
+
+#, c-format
+msgid "E1303: Custom list completion function does not return a List but a %s"
+msgstr "E1303: カスタムリスト補完関数がリストではなく %s を返しました"
+
+#, c-format
+msgid "E1304: Cannot use type with this variable: %s"
+msgstr "E1304: この変数で型は使用できません: %s"
+
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
 
@@ -8939,6 +8964,9 @@ msgstr "新しいウィンドウは現在のものの下に置かれる"
 
 msgid "a new window is put right of the current one"
 msgstr "新しいウィンドウは現在のものの右に置かれる"
+
+msgid "determines scroll behavior when spliting windows"
+msgstr "ウィンドウ分割時のスクロール動作を決める"
 
 msgid "this window scrolls together with other bound windows"
 msgstr "このウィンドウは他の同調ウィンドウと一緒にスクロールする"
