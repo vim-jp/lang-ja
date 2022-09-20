@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-13 18:34+0900\n"
+"POT-Creation-Date: 2022-09-20 17:43+0900\n"
 "PO-Revision-Date: 2022-02-20 01:53+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -3803,8 +3803,8 @@ msgstr "割込まれました"
 msgid "E10: \\ should be followed by /, ? or &"
 msgstr "E10: \\ の後は / か ? か & でなければなりません"
 
-msgid "E11: Invalid in command-line window; <CR> executes, CTRL-C quits"
-msgstr "E11: コマンドラインウィンドウでは無効です; <CR>で実行, CTRL-Cでやめる"
+msgid "E11: Invalid in command-line window; :q<CR> closes the window"
+msgstr "E11: コマンドラインウィンドウでは無効です; :q<CR> でウィンドウを閉じる"
 
 msgid "E12: Command not allowed from exrc/vimrc in current dir or tag search"
 msgstr ""
@@ -7422,9 +7422,6 @@ msgstr "E1074: ドットの後にスペースは許されません"
 msgid "E1075: Namespace not supported: %s"
 msgstr "E1075: ネームスペースには対応していません: %s"
 
-msgid "E1076: This Vim is not compiled with float support"
-msgstr "E1076: このVimは浮動小数点数サポート付きでコンパイルされていません"
-
 #, c-format
 msgid "E1077: Missing argument type for %s"
 msgstr "E1077: %s の引数の型がありません"
@@ -8254,6 +8251,14 @@ msgstr "E1303: カスタムリスト補完関数がリストではなく %s を�
 msgid "E1304: Cannot use type with this variable: %s"
 msgstr "E1304: この変数で型は使用できません: %s"
 
+msgid ""
+"E1305: Cannot use \"length\", \"end_col\" and \"end_lnum\" with \"text\""
+msgstr ""
+"E1305: \"text\" と一緒に \"length\", \"end_col\", \"end_lnum\" は使えません"
+
+msgid "E1306: Loop nesting too deep"
+msgstr "E1306: ループの入れ子が深過ぎます"
+
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
 
@@ -8965,8 +8970,8 @@ msgstr "新しいウィンドウは現在のものの下に置かれる"
 msgid "a new window is put right of the current one"
 msgstr "新しいウィンドウは現在のものの右に置かれる"
 
-msgid "determines scroll behavior when spliting windows"
-msgstr "ウィンドウ分割時のスクロール動作を決める"
+msgid "determines scroll behavior for split windows"
+msgstr "ウィンドウ分割のスクロール動作を決める"
 
 msgid "this window scrolls together with other bound windows"
 msgstr "このウィンドウは他の同調ウィンドウと一緒にスクロールする"
