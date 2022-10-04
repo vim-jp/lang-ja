@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-22 15:19+0900\n"
+"POT-Creation-Date: 2022-10-04 11:09+0900\n"
 "PO-Revision-Date: 2022-02-20 01:53+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -8260,6 +8260,10 @@ msgstr ""
 msgid "E1306: Loop nesting too deep"
 msgstr "E1306: ループの入れ子が深過ぎます"
 
+#, c-format
+msgid "E1307: Argument %d: Trying to modify a const %s"
+msgstr "E1307: 引数 %d: const %s を変更しようとしています"
+
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
 
@@ -8767,6 +8771,9 @@ msgstr "テキストの表示"
 msgid "number of lines to scroll for CTRL-U and CTRL-D"
 msgstr "CTRL-U と CTRL-D でスクロールする行数"
 
+msgid "scroll by screen line"
+msgstr "スクリーン行でスクロールする"
+
 msgid "number of screen lines to show around the cursor"
 msgstr "カーソルの上下に表示されるスクリーン行数"
 
@@ -8968,11 +8975,11 @@ msgstr ""
 msgid "a new window is put below the current one"
 msgstr "新しいウィンドウは現在のものの下に置かれる"
 
-msgid "a new window is put right of the current one"
-msgstr "新しいウィンドウは現在のものの右に置かれる"
-
 msgid "determines scroll behavior for split windows"
 msgstr "ウィンドウ分割のスクロール動作を決める"
+
+msgid "a new window is put right of the current one"
+msgstr "新しいウィンドウは現在のものの右に置かれる"
 
 msgid "this window scrolls together with other bound windows"
 msgstr "このウィンドウは他の同調ウィンドウと一緒にスクロールする"
