@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-18 11:44+0900\n"
+"POT-Creation-Date: 2022-11-07 17:54+0900\n"
 "PO-Revision-Date: 2022-02-20 01:53+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -1772,6 +1772,9 @@ msgstr "-P <親のタイトル>\tVimを親アプリケーションの中で起�
 
 msgid "--windowid <HWND>\tOpen Vim inside another win32 widget"
 msgstr "--windowid <HWND>\t異なるWin32 widgetの内部にVimを開く"
+
+msgid "Seen modifyOtherKeys: true"
+msgstr "modifyOtherKeys が見つかりました: true"
 
 msgid "No abbreviation found"
 msgstr "短縮入力は見つかりませんでした"
@@ -8250,6 +8253,9 @@ msgstr "E1306: ループの入れ子が深過ぎます"
 msgid "E1307: Argument %d: Trying to modify a const %s"
 msgstr "E1307: 引数 %d: const %s を変更しようとしています"
 
+msgid "E1308: Cannot resize a window in another tab page"
+msgstr "E1308: 別のタブページのウィンドウをリサイズできません"
+
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
 
@@ -9547,6 +9553,9 @@ msgstr "バイナリファイルの編集"
 
 msgid "last line in the file has an end-of-line"
 msgstr "ファイルの末尾の行に改行がある"
+
+msgid "last line in the file followed by CTRL-Z"
+msgstr "ファイルの末尾の行に CTRL-Z がある"
 
 msgid "fixes missing end-of-line at end of text file"
 msgstr "テキストファイルの末尾に改行がない場合に修正する"
