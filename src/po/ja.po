@@ -9552,10 +9552,10 @@ msgid "binary file editing"
 msgstr "バイナリファイルの編集"
 
 msgid "last line in the file has an end-of-line"
-msgstr "ファイルの末尾の行に改行がある"
+msgstr "ファイルの最終行に改行がある"
 
 msgid "last line in the file followed by CTRL-Z"
-msgstr "ファイルの末尾の行に CTRL-Z がある"
+msgstr "ファイルの最終行が CTRL-Z で終わる"
 
 msgid "fixes missing end-of-line at end of text file"
 msgstr "テキストファイルの末尾に改行がない場合に修正する"
