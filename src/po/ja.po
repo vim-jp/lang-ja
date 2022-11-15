@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-10 11:31+0900\n"
+"POT-Creation-Date: 2022-11-15 11:36+0900\n"
 "PO-Revision-Date: 2022-02-20 01:53+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -8255,6 +8255,15 @@ msgstr "E1307: 引数 %d: const %s を変更しようとしています"
 
 msgid "E1308: Cannot resize a window in another tab page"
 msgstr "E1308: 別のタブページのウィンドウをリサイズできません"
+
+msgid "E1309: Cannot change mappings while listing"
+msgstr "E1309: マッピングを列挙中に変更できません"
+
+msgid "E1310: Cannot change menus while listing"
+msgstr "E1310: メニューを列挙中に変更できません"
+
+msgid "E1311: Cannot change user commands while listing"
+msgstr "E1311: ユーザーコマンドを列挙中に変更できません"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
