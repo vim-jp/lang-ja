@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-15 11:36+0900\n"
+"POT-Creation-Date: 2023-01-20 11:36+0900\n"
 "PO-Revision-Date: 2022-02-20 01:53+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -1304,9 +1304,6 @@ msgstr " 綴り修正候補 (s^N^P)"
 msgid " Keyword Local completion (^N^P)"
 msgstr " 局所キーワード補完 (^N^P)"
 
-msgid "Hit end of paragraph"
-msgstr "段落の最後にヒット"
-
 msgid "'dictionary' option is empty"
 msgstr "'dictionary' オプションが空です"
 
@@ -1338,6 +1335,12 @@ msgstr " 追加中"
 
 msgid "-- Searching..."
 msgstr "-- 検索中..."
+
+msgid "Hit end of paragraph"
+msgstr "段落の最後にヒット"
+
+msgid "Pattern not found"
+msgstr "パターンは見つかりませんでした"
 
 msgid "Back at original"
 msgstr "始めに戻る"
@@ -1773,8 +1776,31 @@ msgstr "-P <親のタイトル>\tVimを親アプリケーションの中で起�
 msgid "--windowid <HWND>\tOpen Vim inside another win32 widget"
 msgstr "--windowid <HWND>\t異なるWin32 widgetの内部にVimを開く"
 
-msgid "Seen modifyOtherKeys: true"
-msgstr "modifyOtherKeys が検出されました: true"
+msgid "Seen modifyOtherKeys: true\n"
+msgstr "modifyOtherKeys が検出されました: true\n"
+
+msgid "Unknown"
+msgstr "不明"
+
+msgid "Off"
+msgstr "オフ"
+
+msgid "On"
+msgstr "オン"
+
+msgid "Disabled"
+msgstr "無効化"
+
+msgid "Cleared"
+msgstr "クリア"
+
+#, c-format
+msgid "modifyOtherKeys detected: %s\n"
+msgstr "modifyOtherKeys が検出されました: %s\n"
+
+#, c-format
+msgid "Kitty keyboard protocol: %s\n"
+msgstr "Kitty キーボードプロトコル: %s\n"
 
 msgid "No abbreviation found"
 msgstr "短縮入力は見つかりませんでした"
@@ -2173,9 +2199,6 @@ msgstr "割込み: "
 
 msgid "Press ENTER or type command to continue"
 msgstr "続けるにはENTERを押すかコマンドを入力してください"
-
-msgid "Unknown"
-msgstr "不明"
 
 #, c-format
 msgid "%s line %ld"
@@ -8265,6 +8288,185 @@ msgstr "E1310: メニューを列挙中に変更できません"
 msgid "E1311: Cannot change user commands while listing"
 msgstr "E1311: ユーザーコマンドを列挙中に変更できません"
 
+msgid "E1312: Not allowed to change the window layout in this autocmd"
+msgstr "E1312: この自動コマンドでウィンドウ配置を変更することは許されません"
+
+#, c-format
+msgid "E1313: Not allowed to add or remove entries (%s)"
+msgstr "E1313: 要素を追加・削除することは許されません (%s)"
+
+#, c-format
+msgid "E1314: Class name must start with an uppercase letter: %s"
+msgstr "E1314: クラス名は英大文字で始まらなければなりません: %s"
+
+#, c-format
+msgid "E1315: White space required after name: %s"
+msgstr "E1315: 名前の後にスペースが必要です: %s"
+
+msgid "E1316: Class can only be defined in Vim9 script"
+msgstr "E1316: クラスは Vim9 script の中でのみ定義できます"
+
+#, c-format
+msgid "E1317: Invalid object member declaration: %s"
+msgstr "E1317: 不正なオブジェクトメンバー宣言です: %s"
+
+#, c-format
+msgid "E1318: Not a valid command in a class: %s"
+msgstr "E1318: クラス内では使えないコマンドです: %s"
+
+msgid "E1319: Using a class as a Number"
+msgstr "E1319: クラスを数値として扱っています"
+
+msgid "E1320: Using an object as a Number"
+msgstr "E1320: オブジェクトを数値として扱っています"
+
+msgid "E1321: Using a class as a Float"
+msgstr "E1321: クラスを浮動小数点数として扱っています"
+
+msgid "E1322: Using an object as a Float"
+msgstr "E1322: オブジェクトを浮動小数点数として扱っています"
+
+msgid "E1323: Using a class as a String"
+msgstr "E1323: クラスを文字列として扱っています"
+
+msgid "E1324: Using an object as a String"
+msgstr "E1324: オブジェクトを文字列として扱っています"
+
+#, c-format
+msgid "E1325: Method not found on class \"%s\": %s"
+msgstr "E1325: メソッドがクラス \"%s\" 内で見つかりません: %s"
+
+#, c-format
+msgid "E1326: Member not found on object \"%s\": %s"
+msgstr "E1326: メンバーがオブジェクト \"%s\" 内で見つかりません: %s"
+
+#, c-format
+msgid "E1327: Object required, found %s"
+msgstr "E1327: オブジェクトが必要ですが、%s が見つかりました"
+
+#, c-format
+msgid "E1328: Constructor default value must be v:none: %s"
+msgstr "E1328: コンストラクタのデフォルト値は v:none でなければなりません: %s"
+
+#, c-format
+msgid "E1329: Cannot get object member type from initializer: %s"
+msgstr "E1329: オブジェクトメンバー型を初期化子から取得できません: %s"
+
+#, c-format
+msgid "E1330: Invalid type for object member: %s"
+msgstr "E1330: オブジェクトメンバーとして無効な型です: %s"
+
+msgid "E1331: Public must be followed by \"this\" or \"static\""
+msgstr "E1331: pulic の後ろに \"this\" または \"static\" が必要です"
+
+#, c-format
+msgid "E1332: Public member name cannot start with underscore: %s"
+msgstr ""
+"E1332: パブリックメンバー名はアンダースコアで始めることはできません: %s"
+
+#, c-format
+msgid "E1333: Cannot access private member: %s"
+msgstr "E1333: プライベートメンバーにアクセスできません: %s"
+
+#, c-format
+msgid "E1334: Object member not found: %s"
+msgstr "E1334: オブジェクトメンバーが見つかりません: %s"
+
+#, c-format
+msgid "E1335: Member is not writable: %s"
+msgstr "E1335: メンバーに書込みできません: %s"
+
+msgid "E1336: Internal error: shortmess too long"
+msgstr "E1336: 内部エラー: shortmess が長すぎます"
+
+#, c-format
+msgid "E1337: Class member not found: %s"
+msgstr "E1337: クラスメンバーが見つかりません: %s"
+
+#, c-format
+msgid "E1338: Member not found on class \"%s\": %s"
+msgstr "E1338: メンバーがクラス \"%s\" 内で見つかりません: %s"
+
+msgid ""
+"E1339: Cannot add a textprop with text after using a textprop with a "
+"negative id"
+msgstr ""
+"E1339: 負の id 付きのテキストプロパティを使ったあとテキスト付きのテキストプロ"
+"パティを付加することはできません"
+
+#, c-format
+msgid "E1340: Argument already declared in the class: %s"
+msgstr "E1340: 引数は既にクラス内で宣言されています: %s"
+
+#, c-format
+msgid "E1341: Variable already declared in the class: %s"
+msgstr "E1341: 変数は既にクラス内で宣言されています: %s"
+
+msgid "E1342: Interface can only be defined in Vim9 script"
+msgstr "E1342: インターフェイスは Vim9 script の中でのみ使用できます"
+
+#, c-format
+msgid "E1343: Interface name must start with an uppercase letter: %s"
+msgstr "E1343: インターフェイス名は英大文字で始まらなければなりません: %s"
+
+msgid "E1344: Cannot initialize a member in an interface"
+msgstr "E1344: インターフェイス内のメンバーを初期化できません"
+
+#, c-format
+msgid "E1345: Not a valid command in an interface: %s"
+msgstr "E1345: インターフェイス内では使えないコマンドです: %s"
+
+#, c-format
+msgid "E1346: Interface name not found: %s"
+msgstr "E1346: インターフェイス名が見つかりませんでした: %s"
+
+#, c-format
+msgid "E1347: Not a valid interface: %s"
+msgstr "E1347: 無効なインターフェイスです: %s"
+
+#, c-format
+msgid "E1348: Member \"%s\" of interface \"%s\" not implemented"
+msgstr ""
+"E1348: メンバー \"%s\" (インターフェイス \"%s\" 内) は実装されていません"
+
+#, c-format
+msgid "E1349: Function \"%s\" of interface \"%s\" not implemented"
+msgstr "E1349: 関数 \"%s\" (インターフェイス \"%s\" 内) は実装されていません"
+
+msgid "E1350: Duplicate \"implements\""
+msgstr "E1350: \"implements\" が重複しています"
+
+#, c-format
+msgid "E1351: Duplicate interface after \"implements\": %s"
+msgstr "E1351: \"implements\" の後のインターフェイスが重複しています: %s"
+
+msgid "E1352: Duplicate \"extends\""
+msgstr "E1352: \"extends\" が重複しています"
+
+#, c-format
+msgid "E1353: Class name not found: %s"
+msgstr "E1353: クラス名が見つかりません: %s"
+
+#, c-format
+msgid "E1354: Cannot extend %s"
+msgstr "E1354: %s を継承できません"
+
+#, c-format
+msgid "E1355: Duplicate function: %s"
+msgstr "E1355: 関数が重複しています: %s"
+
+msgid "E1356: \"super\" must be followed by a dot"
+msgstr "E1356: \"super\" は後ろにドットが必要です"
+
+msgid "E1357: Using \"super\" not in a class function"
+msgstr "E1357: クラス関数の外で \"super\" が使われました"
+
+msgid "E1358: Using \"super\" not in a child class"
+msgstr "E1358: 子クラス以外で \"super\" が使われました"
+
+msgid "E1359: Cannot define a \"new\" function in an abstract class"
+msgstr "E1359: 抽象クラス内では \"new\" 関数は定義できません"
+
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
 
@@ -9047,6 +9249,9 @@ msgstr "xtermを検出したときに端末のキーコードを要求する"
 msgid "terminal that requires extra redrawing"
 msgstr "追加の再描画が必要な端末"
 
+msgid "what keyboard protocol to use for which terminal"
+msgstr "どの端末に何のキーボードプロトコルを使うか"
+
 msgid "recognize keys that start with <Esc> in Insert mode"
 msgstr "挿入モードで <Esc> で始まるキーを認識する"
 
@@ -9219,8 +9424,11 @@ msgstr "'s' フラグを 'shortmess' に追加 (検索メッセージを表示�
 msgid "list of flags to make messages shorter"
 msgstr "メッセージを短くするためのフラグのリスト"
 
-msgid "show (partial) command keys in the status line"
-msgstr "コマンド (の一部) をステータス行に表示"
+msgid "show (partial) command keys in location given by 'showcmdloc'"
+msgstr "コマンド (の一部) を 'showcmdloc' で指定された場所に表示"
+
+msgid "location where to show the (partial) command keys for 'showcmd'"
+msgstr "'showcmd' でコマンド (の一部) を表示する場所"
 
 msgid "display the current mode in the status line"
 msgstr "現在のモードをステータス行に表示"
