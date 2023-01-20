@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-30 11:52+0900\n"
+"POT-Creation-Date: 2022-11-15 11:36+0900\n"
 "PO-Revision-Date: 2022-02-20 01:53+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -1686,8 +1686,8 @@ msgstr "--servername <name>\tVimサーバー <name> に送信/名前設定する
 msgid "--startuptime <file>\tWrite startup timing messages to <file>"
 msgstr "--startuptime <file>\t起動にかかった時間の詳細を <file> へ出力する"
 
-msgid "--log <file>\tStart logging to <file> early"
-msgstr "--log <file>\t早期に <file> へのロギングを開始する"
+msgid "--log <file>\t\tStart logging to <file> early"
+msgstr "--log <file>\t\t早期に <file> へのロギングを開始する"
 
 msgid "-i <viminfo>\t\tUse <viminfo> instead of .viminfo"
 msgstr "-i <viminfo>\t\t.viminfoの代わりに <viminfo> を使う"
@@ -1772,6 +1772,9 @@ msgstr "-P <親のタイトル>\tVimを親アプリケーションの中で起�
 
 msgid "--windowid <HWND>\tOpen Vim inside another win32 widget"
 msgstr "--windowid <HWND>\t異なるWin32 widgetの内部にVimを開く"
+
+msgid "Seen modifyOtherKeys: true"
+msgstr "modifyOtherKeys が検出されました: true"
 
 msgid "No abbreviation found"
 msgstr "短縮入力は見つかりませんでした"
@@ -3435,24 +3438,10 @@ msgstr ""
 
 msgid ""
 "\n"
-"Big version "
-msgstr ""
-"\n"
-"Big 版 "
-
-msgid ""
-"\n"
 "Normal version "
 msgstr ""
 "\n"
 "通常 版 "
-
-msgid ""
-"\n"
-"Small version "
-msgstr ""
-"\n"
-"Small 版 "
 
 msgid ""
 "\n"
@@ -3803,8 +3792,8 @@ msgstr "割込まれました"
 msgid "E10: \\ should be followed by /, ? or &"
 msgstr "E10: \\ の後は / か ? か & でなければなりません"
 
-msgid "E11: Invalid in command-line window; <CR> executes, CTRL-C quits"
-msgstr "E11: コマンドラインウィンドウでは無効です; <CR>で実行, CTRL-Cでやめる"
+msgid "E11: Invalid in command-line window; :q<CR> closes the window"
+msgstr "E11: コマンドラインウィンドウでは無効です; :q<CR> でウィンドウを閉じる"
 
 msgid "E12: Command not allowed from exrc/vimrc in current dir or tag search"
 msgstr ""
@@ -6010,8 +5999,9 @@ msgstr ""
 "E675: マルチバイト文字を印刷するためのデフォルトフォントが指定されていませ"
 "ん。"
 
-msgid "E676: No matching autocommands for acwrite buffer"
-msgstr "E676: acwriteバッファの該当する自動コマンドは存在しません"
+#, c-format
+msgid "E676: No matching autocommands for buftype=%s buffer"
+msgstr "E676: buftype=%s バッファの該当する自動コマンドは存在しません"
 
 msgid "E677: Error writing temp file"
 msgstr "E677: 一時ファイル書込み中にエラーが発生しました"
@@ -7422,9 +7412,6 @@ msgstr "E1074: ドットの後にスペースは許されません"
 msgid "E1075: Namespace not supported: %s"
 msgstr "E1075: ネームスペースには対応していません: %s"
 
-msgid "E1076: This Vim is not compiled with float support"
-msgstr "E1076: このVimは浮動小数点数サポート付きでコンパイルされていません"
-
 #, c-format
 msgid "E1077: Missing argument type for %s"
 msgstr "E1077: %s の引数の型がありません"
@@ -8225,6 +8212,59 @@ msgstr "E1295: 'type' と 'types' を両方指定することはできません"
 msgid "E1296: Can only use left padding when column is zero"
 msgstr "E1296: 桁がゼロのときのみ左パディングを使えます"
 
+#, c-format
+msgid "E1297: Non-NULL Dictionary required for argument %d"
+msgstr "E1297: 引数 %d には非NULLの辞書が必要です"
+
+#, c-format
+msgid "E1298: Non-NULL List required for argument %d"
+msgstr "E1298: 引数 %d には非NULLのリストが必要です"
+
+msgid "E1299: Window unexpectedly closed while searching for tags"
+msgstr "E1299: タグを検索中に予期せずウィンドウが閉じられました"
+
+msgid "E1300: Cannot use a partial with dictionary for :defer"
+msgstr "E1300: :defer で辞書付き部分適用は使用できません"
+
+#, c-format
+msgid "E1301: String, Number, List or Blob required for argument %d"
+msgstr "E1301: 引数 %d には文字列、数値、リストまたはBlobが必要です"
+
+msgid "E1302: Script variable was deleted"
+msgstr "E1302: スクリプト変数が削除されました"
+
+#, c-format
+msgid "E1303: Custom list completion function does not return a List but a %s"
+msgstr "E1303: カスタムリスト補完関数がリストではなく %s を返しました"
+
+#, c-format
+msgid "E1304: Cannot use type with this variable: %s"
+msgstr "E1304: この変数で型は使用できません: %s"
+
+msgid ""
+"E1305: Cannot use \"length\", \"end_col\" and \"end_lnum\" with \"text\""
+msgstr ""
+"E1305: \"text\" と一緒に \"length\", \"end_col\", \"end_lnum\" は使えません"
+
+msgid "E1306: Loop nesting too deep"
+msgstr "E1306: ループの入れ子が深過ぎます"
+
+#, c-format
+msgid "E1307: Argument %d: Trying to modify a const %s"
+msgstr "E1307: 引数 %d: const %s を変更しようとしています"
+
+msgid "E1308: Cannot resize a window in another tab page"
+msgstr "E1308: 別のタブページのウィンドウをリサイズできません"
+
+msgid "E1309: Cannot change mappings while listing"
+msgstr "E1309: マッピングを列挙中に変更できません"
+
+msgid "E1310: Cannot change menus while listing"
+msgstr "E1310: メニューを列挙中に変更できません"
+
+msgid "E1311: Cannot change user commands while listing"
+msgstr "E1311: ユーザーコマンドを列挙中に変更できません"
+
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
 
@@ -8732,6 +8772,9 @@ msgstr "テキストの表示"
 msgid "number of lines to scroll for CTRL-U and CTRL-D"
 msgstr "CTRL-U と CTRL-D でスクロールする行数"
 
+msgid "scroll by screen line"
+msgstr "スクリーン行でスクロールする"
+
 msgid "number of screen lines to show around the cursor"
 msgstr "カーソルの上下に表示されるスクリーン行数"
 
@@ -8932,6 +8975,9 @@ msgstr ""
 
 msgid "a new window is put below the current one"
 msgstr "新しいウィンドウは現在のものの下に置かれる"
+
+msgid "determines scroll behavior for split windows"
+msgstr "ウィンドウ分割のスクロール動作を決める"
 
 msgid "a new window is put right of the current one"
 msgstr "新しいウィンドウは現在のものの右に置かれる"
@@ -9409,6 +9455,9 @@ msgstr "lisp モードを有効化"
 msgid "words that change how lisp indenting works"
 msgstr "lisp インデント処理の動作を変更する単語のリスト"
 
+msgid "options for Lisp indenting"
+msgstr "list インデント処理用のオプション"
+
 msgid "folding"
 msgstr "折畳み"
 
@@ -9512,7 +9561,10 @@ msgid "binary file editing"
 msgstr "バイナリファイルの編集"
 
 msgid "last line in the file has an end-of-line"
-msgstr "ファイルの末尾の行に改行がある"
+msgstr "ファイルの最終行に改行がある"
+
+msgid "last line in the file followed by CTRL-Z"
+msgstr "ファイルの最終行が CTRL-Z で終わる"
 
 msgid "fixes missing end-of-line at end of text file"
 msgstr "テキストファイルの末尾に改行がない場合に修正する"
