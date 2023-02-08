@@ -8469,7 +8469,7 @@ msgstr "E1359: 抽象クラス内では \"new\" 関数は定義できません"
 
 #, c-format
 msgid "E476: Invalid command: %s, expected %s"
-msgstr "E476: 無効なコマンドです: %s, %s が予期されています"
+msgstr "E476: 無効なコマンドです: %s, %s を期待していました"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
