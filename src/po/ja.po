@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-07 16:25+0900\n"
+"POT-Creation-Date: 2023-02-20 16:24+0900\n"
 "PO-Revision-Date: 2022-02-20 01:53+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -5438,6 +5438,10 @@ msgstr "E476: 無効なコマンドです"
 msgid "E476: Invalid command: %s"
 msgstr "E476: 無効なコマンドです: %s"
 
+#, c-format
+msgid "E476: Invalid command: %s, expected %s"
+msgstr "E476: 無効なコマンドです: %s, %s を期待していました"
+
 msgid "E477: No ! allowed"
 msgstr "E477: ! は許可されていません"
 
@@ -8467,9 +8471,11 @@ msgstr "E1358: 子クラス以外で \"super\" が使われました"
 msgid "E1359: Cannot define a \"new\" function in an abstract class"
 msgstr "E1359: 抽象クラス内では \"new\" 関数は定義できません"
 
-#, c-format
-msgid "E476: Invalid command: %s, expected %s"
-msgstr "E476: 無効なコマンドです: %s, %s を期待していました"
+msgid "E1360: Using a null object"
+msgstr "E1360: nullを数値として扱っています"
+
+msgid "E1361: Cannot use color \"none\", did you mean \"NONE\"?"
+msgstr "E1361: 色名として \"none\" は使えません, \"NONE\" を意味していますか?"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
