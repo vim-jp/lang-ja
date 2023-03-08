@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-20 16:24+0900\n"
+"POT-Creation-Date: 2023-03-08 12:06+0900\n"
 "PO-Revision-Date: 2022-02-20 01:53+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -8476,6 +8476,12 @@ msgstr "E1360: nullを数値として扱っています"
 
 msgid "E1361: Cannot use color \"none\", did you mean \"NONE\"?"
 msgstr "E1361: 色名として \"none\" は使えません, \"NONE\" を意味していますか?"
+
+msgid "E1362: Cannot use a non-null object"
+msgstr "E1362: 非nullオブジェクトは使えません"
+
+msgid "E1363: Incomplete type"
+msgstr "E1363: 不完全な型です"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
