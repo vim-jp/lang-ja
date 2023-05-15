@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-08 12:06+0900\n"
+"POT-Creation-Date: 2023-05-15 22:12+0900\n"
 "PO-Revision-Date: 2022-02-20 01:53+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -155,6 +155,10 @@ msgstr "末尾"
 msgid "Top"
 msgstr "先頭"
 
+#, c-format
+msgid "%d%%"
+msgstr "%d%%"
+
 msgid "[Prompt]"
 msgstr "[プロンプト]"
 
@@ -267,6 +271,31 @@ msgstr "キーが一致しません"
 
 msgid "[crypted]"
 msgstr "[暗号化]"
+
+#, c-format
+msgid "xchacha20v2: using custom opslimit \"%llu\" for Key derivation."
+msgstr "xchacha20v2: キーの導出にカスタムopslimit \"%llu\"を使用しています。"
+
+#, c-format
+msgid "xchacha20v2: using default opslimit \"%llu\" for Key derivation."
+msgstr "xchacha20v2: キーの導出にデフォルトopslimit \"%llu\"を使用しています。"
+
+#, c-format
+msgid "xchacha20v2: using custom memlimit \"%lu\" for Key derivation."
+msgstr "xchacha20v2: キーの導出にカスタムmemlimit \"%lu\"を使用しています。"
+
+#, c-format
+msgid "xchacha20v2: using default memlimit \"%lu\" for Key derivation."
+msgstr "xchacha20v2: キーの導出にデフォルトmemlimit \"%lu\"を使用しています。"
+
+#, c-format
+msgid "xchacha20v2: using custom algorithm \"%d\" for Key derivation."
+msgstr "xchacha20v2: キーの導出にカスタムアルゴリズム \"%d\"を使用しています。"
+
+#, c-format
+msgid "xchacha20v2: using default algorithm \"%d\" for Key derivation."
+msgstr ""
+"xchacha20v2: キーの導出にデフォルトアルゴリズム \"%d\"を使用しています。"
 
 msgid "Entering Debug mode.  Type \"cont\" to continue."
 msgstr "デバッグモードに入ります。続けるには \"cont\" と入力してください。"
@@ -1927,6 +1956,9 @@ msgstr "??? ここから ???END までの行が破壊されているようです
 
 msgid "??? from here until ???END lines may have been inserted/deleted"
 msgstr "??? ここから ???END までの行が挿入か削除されたようです"
+
+msgid "??? lines may be missing"
+msgstr "???行がないようです"
 
 msgid "???END"
 msgstr "???END"
@@ -6889,9 +6921,6 @@ msgstr "E920: _io ファイルは _name の設定が必要です"
 msgid "E921: Invalid callback argument"
 msgstr "E921: 無効なコールバック引数です"
 
-msgid "E922: Expected a dict"
-msgstr "E922: 辞書が期待されています"
-
 msgid "E923: Second argument of function() must be a list or a dict"
 msgstr "E923: function() の第 2 引数はリスト型または辞書型でなければなりません"
 
@@ -7498,8 +7527,9 @@ msgstr "E1093: %d 個の要素が期待されていますが %d 個でした"
 msgid "E1094: Import can only be used in a script"
 msgstr "E1094: import はスクリプトの中でのみ使用できます"
 
-msgid "E1095: Unreachable code after :return"
-msgstr "E1095: :return の後に到達不能なコードがあります"
+#, c-format
+msgid "E1095: Unreachable code after :%s"
+msgstr "E1095: :%s の後に到達不能なコードがあります"
 
 msgid "E1096: Returning a value in a function without a return type"
 msgstr "E1096: 戻り値の型がない関数で値を返しています"
@@ -7546,10 +7576,6 @@ msgstr "E1106: 引数が %d 個多いです"
 
 msgid "E1107: String, List, Dict or Blob required"
 msgstr "E1107: 文字列型、リスト型、辞書型またはBlob型が必要です"
-
-#, c-format
-msgid "E1108: Item not found: %s"
-msgstr "E1108: 要素が見つかりません: %s"
 
 #, c-format
 msgid "E1109: List item %d is not a List"
@@ -7644,10 +7670,6 @@ msgstr "E1135: 文字列をBoolとして扱っています: \"%s\""
 msgid "E1136: <Cmd> mapping must end with <CR> before second <Cmd>"
 msgstr ""
 "E1136: <Cmd> マッピングは次の <Cmd> の前に <CR> で終わらなければなりません"
-
-#, c-format
-msgid "E1137: <Cmd> mapping must not include %s key"
-msgstr "E1137: <Cmd> マッピングは %s キーを含んではいけません"
 
 msgid "E1138: Using a Bool as a Number"
 msgstr "E1138: Boolを数値として扱っています"
@@ -8071,10 +8093,6 @@ msgstr "E1251: 引数 %d にはリスト、辞書、Blobまたは文字列が必
 msgid "E1252: String, List or Blob required for argument %d"
 msgstr "E1252: 引数 %d には文字列、リストまたはBlobが必要です"
 
-#, c-format
-msgid "E1253: String expected for argument %d"
-msgstr "E1253: 引数 %d には文字列が必要です"
-
 msgid "E1254: Cannot use script variable in for loop"
 msgstr "E1254: forループ内でスクリプト変数は使用できません"
 
@@ -8482,6 +8500,9 @@ msgstr "E1362: 非nullオブジェクトは使えません"
 
 msgid "E1363: Incomplete type"
 msgstr "E1363: 不完全な型です"
+
+msgid "E1364: Warning: Pointer block corrupted"
+msgstr "E1364: 警告: ポインタブロックが壊れています"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
@@ -10217,3 +10238,6 @@ msgstr "MzScheme 動的ライブラリの名前"
 
 msgid "name of the MzScheme GC dynamic library"
 msgstr "MzScheme GC 動的ライブラリの名前"
+
+msgid "You discovered the command-line window! You can close it with \":q\"."
+msgstr "コマンドラインウィンドウを見つけましたね! \":q\" でクローズできます。"
