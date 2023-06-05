@@ -18,9 +18,22 @@ runtime/tutor/tutor.ja.utf-8       |日本語チュートリアルファイル(U
 runtime/tutor/tutor                |原文チュートリアルファイル
 nsis/lang                          |Windows用インストーラーの翻訳ファイル
 
+## 原文ファイル取り込み手順
+
+以下のコマンドを実行して原文ファイルを現在の作業ディレクトリに取り込む。
+(`VIM_SRC_DIR` で Vim のソースディレクトリを指定)
+
+    $ make import-en-files VIM_SRC_DIR=../vim
+
+この手順では、vim.pot ファイル、man ファイル、チュートリアルファイル、NSIS ファイルの原文ファイルをまとめて取り込む。個別に取り込む場合や注意事項は以下のそれぞれの項目を参照のこと。
+
+メニューファイルについては、原文ファイルにあたるものがないので、取り込みは行わない。`runtime/menu.vim` などの履歴を見て手動で適宜更新する必要がある。
+
 ## ja.po 更新手順
 
 1.  vim.pot を作成(要xgettext)
+
+    (前述の原文ファイル取り込み手順を実施済みであれば不要。)
 
     Vimのソースで以下を実行して、生成される vim.pot を src/po へコピー
 
@@ -31,8 +44,8 @@ nsis/lang                          |Windows用インストーラーの翻訳フ�
     要があるが、`src/po/Makefile` の4行目の `include ../auto/config.mk` をコメ
     ントアウトして回避することも可能。(あるいは、空の `src/auto/config.mk` を用意してもよい。)
 
-    Windows 上で vim.pot を生成するには、Cygwin や MSYS2 等の Linux 的な環境を使うこと。(MSVC 用の Makefile も用意されているが、ソースファイルの読み込み順序が異なるために余計な差分が出てしまう。)
-    また、Win32 向けにビルドしたために `src/if_perl.c` が生成されているならば、vim.pot 生成前に削除しておくこと。(余計な差分が出るのを防ぐため。)
+    Windows 上で vim.pot を生成するには、Cygwin や MSYS2 等の Linux 的な環境を使うこと。(MSVC 用の Makefile も用意されているが、ソースファイルの読み込み順序が異なるために余計な差分が出てしまう。)  
+    また、古いソースを使って Win32 向けにビルドしたことで `src/if_perl.c` が残っているならば、vim.pot 生成前に削除しておくこと。(余計な差分が出るのを防ぐため。)
 
 2.  ja.po に vim.pot をマージ (古いものは ja.po.old へ退避される)
 
@@ -73,6 +86,8 @@ nsis/lang                          |Windows用インストーラーの翻訳フ�
 
 1.  原文manファイルの更新
 
+    (前述の原文ファイル取り込み手順を実施済みであれば不要。)
+
     Vimのソースファイルの runtime/doc/ ディレクトリから、原文manファイルを本リ
     ポジトリにコピー。
 
@@ -109,6 +124,8 @@ nsis/lang                          |Windows用インストーラーの翻訳フ�
 
 1.  原文チュートリアルファイルの更新
 
+    (前述の原文ファイル取り込み手順を実施済みであれば不要。)
+
     Vimのソースファイルの runtime/tutor/ ディレクトリから、原文チュートリアル
     ファイルを本リポジトリにコピー。
 
@@ -124,6 +141,35 @@ nsis/lang                          |Windows用インストーラーの翻訳フ�
 3.  コミット
 
     原文と日本語訳は常に同じバージョンがコミットされているように注意すること。
+
+## NSIS ファイル更新手順
+
+1.  原文 NSIS ファイルの更新
+
+    (前述の原文ファイル取り込み手順を実施済みであれば不要。)
+
+    Vimのソースファイルの nsis/lang/ ディレクトリから、原文 NSIS ファイルを
+    本リポジトリにコピー。
+
+        $ cd /path/to/vim/nsis/lang
+        $ cp english.nsi /path/to/lang-ja/nsis/lang
+
+2.  翻訳
+
+    原文の差分を見つつ翻訳ファイルを更新する。
+
+        $ git diff | gvim -R -
+
+3.  コミット
+
+    原文と日本語訳は常に同じバージョンがコミットされているように注意すること。
+
+## メニューファイル更新手順
+
+1.  Vim のソースディレクトリに行き、`runtime/menu.vim` や `runtime/lang/` の履歴を調べる。
+
+2. 必要な変更を `runtime/lang/menu_ja*.vim` に反映する。
+
 
 ## リリース手順
 
@@ -158,7 +204,14 @@ nsis/lang                          |Windows用インストーラーの翻訳フ�
     `vim-lang-ja-po-YYYYMMDD.tar.xz` といったアーカイブファイルができる。
     `YYYYMMDD` の部分は実行した日付に置き換わる。
 
-5.  タグを打ち、GitHub Releases を更新する
+5.  Vim のソースディレクトリを更新する
+
+    GitHub に PR を出す場合は、以下のコマンドを実行して Vim のソースディレクトリを更新する。
+    (`VIM_SRC_DIR` で Vim のソースディレクトリを指定)
+
+        $ make update-src-dir VIM_SRC_DIR=../vim
+
+6.  タグを打ち、GitHub Releases を更新する
 
     タグの形式は YYYYMMDD とする。例:
 
@@ -168,9 +221,11 @@ nsis/lang                          |Windows用インストーラーの翻訳フ�
     タグが push できたら、GitHub Releases に新しいリリースを作り、アーカイブ
     をアップロードする。
 
-6.  アーカイブを Bram と vim-dev へ送る
+7.  Bram に対してリリースする
 
-    あとはこのアーカイブファイルを Bram と vim-dev へ更新依頼とともに送信する。
+    [GitHub][#github] に PR を出す。
+
+    あるいはこのアーカイブファイルを Bram と vim-dev へ更新依頼とともに送信する。
     以下、文面の一例:
 
         Hi Bram and the list,
@@ -183,8 +238,6 @@ nsis/lang                          |Windows用インストーラーの翻訳フ�
 
         Thanks,
         (ここにあなたの名前。`Takata`とか)
-
-    あるいは [GitHub][#github] に PR を出す。
 
 
 [#ci]:https://github.com/vim-jp/lang-ja/actions
