@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-15 11:36+0900\n"
+"POT-Creation-Date: 2023-06-01 15:54+0900\n"
 "PO-Revision-Date: 2022-02-20 01:53+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -155,6 +155,26 @@ msgstr "末尾"
 msgid "Top"
 msgstr "先頭"
 
+#, c-format
+msgid "%d%%"
+msgstr "%d%%"
+
+#, c-format
+msgid " (%d of %d)"
+msgstr " (%d of %d)"
+
+#, c-format
+msgid " ((%d) of %d)"
+msgstr " ((%d) of %d)"
+
+#, c-format
+msgid " (file %d of %d)"
+msgstr " (file %d of %d)"
+
+#, c-format
+msgid " (file (%d) of %d)"
+msgstr " (file (%d) of %d)"
+
 msgid "[Prompt]"
 msgstr "[プロンプト]"
 
@@ -267,6 +287,31 @@ msgstr "キーが一致しません"
 
 msgid "[crypted]"
 msgstr "[暗号化]"
+
+#, c-format
+msgid "xchacha20v2: using custom opslimit \"%llu\" for Key derivation."
+msgstr "xchacha20v2: キーの導出にカスタムopslimit \"%llu\"を使用しています。"
+
+#, c-format
+msgid "xchacha20v2: using default opslimit \"%llu\" for Key derivation."
+msgstr "xchacha20v2: キーの導出にデフォルトopslimit \"%llu\"を使用しています。"
+
+#, c-format
+msgid "xchacha20v2: using custom memlimit \"%lu\" for Key derivation."
+msgstr "xchacha20v2: キーの導出にカスタムmemlimit \"%lu\"を使用しています。"
+
+#, c-format
+msgid "xchacha20v2: using default memlimit \"%lu\" for Key derivation."
+msgstr "xchacha20v2: キーの導出にデフォルトmemlimit \"%lu\"を使用しています。"
+
+#, c-format
+msgid "xchacha20v2: using custom algorithm \"%d\" for Key derivation."
+msgstr "xchacha20v2: キーの導出にカスタムアルゴリズム \"%d\"を使用しています。"
+
+#, c-format
+msgid "xchacha20v2: using default algorithm \"%d\" for Key derivation."
+msgstr ""
+"xchacha20v2: キーの導出にデフォルトアルゴリズム \"%d\"を使用しています。"
 
 msgid "Entering Debug mode.  Type \"cont\" to continue."
 msgstr "デバッグモードに入ります。続けるには \"cont\" と入力してください。"
@@ -558,12 +603,6 @@ msgstr "関数の最後です"
 
 msgid "Backwards range given, OK to swap"
 msgstr "逆さまの範囲が指定されました、入替えますか?"
-
-msgid ""
-"INTERNAL: Cannot use EX_DFLALL with ADDR_NONE, ADDR_UNSIGNED or ADDR_QUICKFIX"
-msgstr ""
-"内部エラー: EX_DFLALL を ADDR_NONE, ADDR_UNSIGNED や ADDR_QUICKFIX とともに使"
-"うことはできません"
 
 #, c-format
 msgid "%d more file to edit.  Quit anyway?"
@@ -1304,9 +1343,6 @@ msgstr " 綴り修正候補 (s^N^P)"
 msgid " Keyword Local completion (^N^P)"
 msgstr " 局所キーワード補完 (^N^P)"
 
-msgid "Hit end of paragraph"
-msgstr "段落の最後にヒット"
-
 msgid "'dictionary' option is empty"
 msgstr "'dictionary' オプションが空です"
 
@@ -1338,6 +1374,12 @@ msgstr " 追加中"
 
 msgid "-- Searching..."
 msgstr "-- 検索中..."
+
+msgid "Hit end of paragraph"
+msgstr "段落の最後にヒット"
+
+msgid "Pattern not found"
+msgstr "パターンは見つかりませんでした"
 
 msgid "Back at original"
 msgstr "始めに戻る"
@@ -1773,8 +1815,31 @@ msgstr "-P <親のタイトル>\tVimを親アプリケーションの中で起�
 msgid "--windowid <HWND>\tOpen Vim inside another win32 widget"
 msgstr "--windowid <HWND>\t異なるWin32 widgetの内部にVimを開く"
 
-msgid "Seen modifyOtherKeys: true"
-msgstr "modifyOtherKeys が検出されました: true"
+msgid "Seen modifyOtherKeys: true\n"
+msgstr "modifyOtherKeys が検出されました: true\n"
+
+msgid "Unknown"
+msgstr "不明"
+
+msgid "Off"
+msgstr "オフ"
+
+msgid "On"
+msgstr "オン"
+
+msgid "Disabled"
+msgstr "無効化"
+
+msgid "Cleared"
+msgstr "クリア"
+
+#, c-format
+msgid "modifyOtherKeys detected: %s\n"
+msgstr "modifyOtherKeys が検出されました: %s\n"
+
+#, c-format
+msgid "Kitty keyboard protocol: %s\n"
+msgstr "Kitty キーボードプロトコル: %s\n"
 
 msgid "No abbreviation found"
 msgstr "短縮入力は見つかりませんでした"
@@ -1901,6 +1966,9 @@ msgstr "??? ここから ???END までの行が破壊されているようです
 
 msgid "??? from here until ???END lines may have been inserted/deleted"
 msgstr "??? ここから ???END までの行が挿入か削除されたようです"
+
+msgid "??? lines may be missing"
+msgstr "???行がないようです"
 
 msgid "???END"
 msgstr "???END"
@@ -2174,9 +2242,6 @@ msgstr "割込み: "
 msgid "Press ENTER or type command to continue"
 msgstr "続けるにはENTERを押すかコマンドを入力してください"
 
-msgid "Unknown"
-msgstr "不明"
-
 #, c-format
 msgid "%s line %ld"
 msgstr "%s 行 %ld"
@@ -2333,10 +2398,6 @@ msgid ""
 msgstr ""
 "\n"
 "--- オプション ---"
-
-#, c-format
-msgid "For option %s"
-msgstr "オプション: %s"
 
 msgid "cannot open "
 msgstr "開けません "
@@ -3880,9 +3941,6 @@ msgstr "E37: 最後の変更が保存されていません"
 msgid "E37: No write since last change (add ! to override)"
 msgstr "E37: 最後の変更が保存されていません (! を追加で変更を破棄)"
 
-msgid "E38: Null argument"
-msgstr "E38: 引数が空です"
-
 msgid "E39: Number expected"
 msgstr "E39: 数値が要求されています"
 
@@ -3895,12 +3953,6 @@ msgstr "E41: メモリが尽き果てました!"
 
 msgid "E42: No Errors"
 msgstr "E42: エラーはありません"
-
-msgid "E43: Damaged match string"
-msgstr "E43: 該当文字列が破損しています"
-
-msgid "E44: Corrupted regexp program"
-msgstr "E44: 不正な正規表現プログラムです"
 
 msgid "E45: 'readonly' option is set (add ! to override)"
 msgstr "E45: 'readonly' オプションが設定されています (! を追加で上書き)"
@@ -4340,11 +4392,8 @@ msgstr "E172: マーカーがありません"
 
 #, c-format
 msgid "E173: %d more file to edit"
-msgstr "E173: 編集すべきファイルがあと %d 個あります"
-
-#, c-format
-msgid "E173: %d more files to edit"
-msgstr "E173: 編集すべきファイルがあと %d 個あります"
+msgid_plural "E173: %d more files to edit"
+msgstr[0] "E173: 編集すべきファイルがあと %d 個あります"
 
 #, c-format
 msgid "E174: Command already exists: add ! to replace it: %s"
@@ -4512,9 +4561,6 @@ msgstr "E220: } がありません。"
 msgid "E221: Marker cannot start with lower case letter"
 msgstr "E221: マーカーは英小文字で始まってはいけません"
 
-msgid "E222: Add to internal buffer that was already read from"
-msgstr "E222: 既に読んだ内部バッファに追加しています"
-
 msgid "E223: Recursive mapping"
 msgstr "E223: 再帰的マッピング"
 
@@ -4534,9 +4580,6 @@ msgstr "E226: %s という短縮入力は既に存在します"
 msgid "E227: Mapping already exists for %s"
 msgstr "E227: %s というマッピングは既に存在します"
 
-msgid "E228: makemap: Illegal mode"
-msgstr "E228: makemap: 不正なモード"
-
 msgid "E229: Cannot start the GUI"
 msgstr "E229: GUIを開始できません"
 
@@ -4546,9 +4589,6 @@ msgstr "E230: \"%s\"から読込むことができません"
 
 msgid "E231: 'guifontwide' invalid"
 msgstr "E231: 'guifontwide' が無効です"
-
-msgid "E232: Cannot create BalloonEval with both message and callback"
-msgstr "E232: メッセージとコールバックのある BalloonEval を作成できません"
 
 msgid "E233: Cannot open display"
 msgstr "E233: ディスプレイを開けません"
@@ -4711,12 +4751,6 @@ msgstr "E277: サーバーの応答がありません"
 msgid "E279: Sorry, ++shell is not supported on this system"
 msgstr "E279: ごめんなさい、++shell はこのシステムではサポートされていません"
 
-msgid ""
-"E280: TCL FATAL ERROR: reflist corrupt!? Please report this to vim-dev@vim."
-"org"
-msgstr ""
-"E280: TCL 致命的エラー: reflist 汚染!? vim-dev@vim.org に報告してください"
-
 #, c-format
 msgid "E282: Cannot read from \"%s\""
 msgstr "E282: \"%s\" から読込むことができません"
@@ -4746,13 +4780,6 @@ msgstr "E289: インプットメソッドは my preedit type をサポートし�
 msgid "E290: List or number required"
 msgstr "E290: リストか数値が必要です"
 
-#, c-format
-msgid "E292: Invalid count for del_bytes(): %ld"
-msgstr "E292: del_bytes() として無効な数値です: %ld"
-
-msgid "E293: Block was not locked"
-msgstr "E293: ブロックがロックされていません"
-
 msgid "E294: Seek error in swap file read"
 msgstr "E294: スワップファイル読込み時にシークエラーです"
 
@@ -4764,15 +4791,6 @@ msgstr "E296: スワップファイル書込み時にシークエラーです"
 
 msgid "E297: Write error in swap file"
 msgstr "E297: スワップファイルの書込みエラーです"
-
-msgid "E298: Didn't get block nr 0?"
-msgstr "E298: ブロック 0 を取得できません?"
-
-msgid "E298: Didn't get block nr 1?"
-msgstr "E298: ブロック 1 を取得できません?"
-
-msgid "E298: Didn't get block nr 2?"
-msgstr "E298: ブロック 2 を取得できません?"
 
 msgid "E299: Perl evaluation forbidden in sandbox without the Safe module"
 msgstr ""
@@ -4791,9 +4809,6 @@ msgstr "E302: スワップファイルの名前を変えられません"
 #, c-format
 msgid "E303: Unable to open swap file for \"%s\", recovery impossible"
 msgstr "E303: \"%s\" のスワップファイルを開けないのでリカバリは不可能です"
-
-msgid "E304: ml_upd_block0(): Didn't get block 0??"
-msgstr "E304: ml_upd_block0(): ブロック 0 を取得できませんでした??"
 
 #, c-format
 msgid "E305: No swap file found for %s"
@@ -4832,47 +4847,12 @@ msgstr "E313: スワップファイルが無いので維持できません"
 msgid "E314: Preserve failed"
 msgstr "E314: 維持に失敗しました"
 
-#, c-format
-msgid "E315: ml_get: Invalid lnum: %ld"
-msgstr "E315: ml_get: 無効なlnumです: %ld"
-
-#, c-format
-msgid "E316: ml_get: Cannot find line %ld in buffer %d %s"
-msgstr "E316: ml_get: 行 %ld をバッファ %d %s 内に見つけられません"
-
-msgid "E317: Pointer block id wrong"
-msgstr "E317: ポインタブロックのIDが間違っています"
-
-msgid "E317: Pointer block id wrong 2"
-msgstr "E317: ポインタブロックのIDが間違っています 2"
-
-msgid "E317: Pointer block id wrong 3"
-msgstr "E317: ポインタブロックのIDが間違っています 3"
-
-msgid "E317: Pointer block id wrong 4"
-msgstr "E317: ポインタブロックのIDが間違っています 4"
-
-msgid "E318: Updated too many blocks?"
-msgstr "E318: 更新されたブロックが多過ぎるかも?"
-
 msgid "E319: Sorry, the command is not available in this version"
 msgstr "E319: このバージョンではこのコマンドは利用できません、ごめんなさい"
 
 #, c-format
-msgid "E320: Cannot find line %ld"
-msgstr "E320: 行 %ld が見つかりません"
-
-#, c-format
 msgid "E321: Could not reload \"%s\""
 msgstr "E321: \"%s\" はリロードできませんでした"
-
-#, c-format
-msgid "E322: Line number out of range: %ld past the end"
-msgstr "E322: 行番号が範囲外です: %ld 超えています"
-
-#, c-format
-msgid "E323: Line count wrong in block %ld"
-msgstr "E323: ブロック %ld の行カウントが間違っています"
 
 msgid "E324: Can't open PostScript output file"
 msgstr "E324: PostScript出力用のファイルを開けません"
@@ -4925,8 +4905,8 @@ msgstr "E338: コンソールモードではファイルブラウザを使えま
 msgid "E339: Pattern too long"
 msgstr "E339: パターンが長過ぎます"
 
-msgid "E341: Internal error: lalloc(0, )"
-msgstr "E341: 内部エラー: lalloc(0, )"
+msgid "E340: Internal error; if you can reproduce please report a bug"
+msgstr "E340: 内部エラー; 再現できる場合はバグ報告をお願いします"
 
 #, c-format
 msgid "E342: Out of memory!  (allocating %lu bytes)"
@@ -4982,9 +4962,6 @@ msgstr "E354: 無効なレジスタ名: '%s'"
 #, c-format
 msgid "E355: Unknown option: %s"
 msgstr "E355: 未知のオプションです: %s"
-
-msgid "E356: get_varp ERROR"
-msgstr "E356: get_varp エラー"
 
 #, c-format
 msgid "E357: 'langmap': Matching character missing for %s"
@@ -5269,15 +5246,6 @@ msgstr "E436: termcapに \"%s\" のエントリがありません"
 msgid "E437: Terminal capability \"cm\" required"
 msgstr "E437: 端末に \"cm\" 機能が必要です"
 
-msgid "E438: u_undo: Line numbers wrong"
-msgstr "E438: u_undo: 行番号が間違っています"
-
-msgid "E439: Undo list corrupt"
-msgstr "E439: アンドゥリストが壊れています"
-
-msgid "E440: Undo line missing"
-msgstr "E440: アンドゥ行がありません"
-
 msgid "E441: There is no preview window"
 msgstr "E441: プレビューウィンドウがありません"
 
@@ -5390,9 +5358,6 @@ msgstr "E471: 引数が必要です"
 msgid "E472: Command failed"
 msgstr "E472: コマンドが失敗しました"
 
-msgid "E473: Internal error in regexp"
-msgstr "E473: 正規表現の内部エラーです"
-
 msgid "E474: Invalid argument"
 msgstr "E474: 無効な引数です"
 
@@ -5414,6 +5379,10 @@ msgstr "E476: 無効なコマンドです"
 #, c-format
 msgid "E476: Invalid command: %s"
 msgstr "E476: 無効なコマンドです: %s"
+
+#, c-format
+msgid "E476: Invalid command: %s, expected %s"
+msgstr "E476: 無効なコマンドです: %s, %s を期待していました"
 
 msgid "E477: No ! allowed"
 msgstr "E477: ! は許可されていません"
@@ -5735,9 +5704,6 @@ msgstr "E567: cscope接続に失敗しました"
 msgid "E568: Duplicate cscope database not added"
 msgstr "E568: 重複するcscopeデータベースは追加されませんでした"
 
-msgid "E570: Fatal error in cs_manage_matches"
-msgstr "E570: cs_manage_matches で致命的なエラーです"
-
 msgid ""
 "E571: Sorry, this command is disabled: the Tcl library could not be loaded."
 msgstr ""
@@ -5918,12 +5884,84 @@ msgid "E626: Cannot get cscope database information"
 msgstr "E626: cscopeデータベースの情報を取得できません"
 
 #, c-format
+msgid "E627: Missing colon: %s"
+msgstr "E627: コロンがありません: %s"
+
+#, c-format
+msgid "E628: Missing ! or / in: %s"
+msgstr "E628: ! または / がありません: %s"
+
+#, c-format
 msgid "E630: %s(): Write while not connected"
 msgstr "E630: %s(): 非接続状態で書込みました"
 
 #, c-format
 msgid "E631: %s(): Write failed"
 msgstr "E631: %s(): 書込みに失敗しました"
+
+msgid "E632: Invalid buffer identifier in getLength"
+msgstr "E632: getLength に無効なバッファ識別子があります"
+
+msgid "E633: Invalid buffer identifier in getText"
+msgstr "E633: getText に無効なバッファ識別子があります"
+
+msgid "E634: Invalid buffer identifier in remove"
+msgstr "E634: remove に無効なバッファ識別子があります"
+
+msgid "E635: Invalid buffer identifier in insert"
+msgstr "E635: insert に無効なバッファ識別子があります"
+
+msgid "E636: Invalid buffer identifier in create"
+msgstr "E636: create に無効なバッファ識別子があります"
+
+msgid "E637: Invalid buffer identifier in startDocumentListen"
+msgstr "E637: startDocumentListen に無効なバッファ識別子があります"
+
+msgid "E638: Invalid buffer identifier in stopDocumentListen"
+msgstr "E638: stopDocumentListen に無効なバッファ識別子があります"
+
+msgid "E639: Invalid buffer identifier in setTitle"
+msgstr "E639: setTitle に無効なバッファ識別子があります"
+
+msgid "E640: Invalid buffer identifier in initDone"
+msgstr "E640: initDone に無効なバッファ識別子があります"
+
+msgid "E641: Invalid buffer identifier in setBufferNumber"
+msgstr "E641: setBufferNumber に無効なバッファ識別子があります"
+
+#, c-format
+msgid "E642: File %s not found in setBufferNumber"
+msgstr "E642: setBufferNumber のファイル %s が見つかりません"
+
+msgid "E643: Invalid buffer identifier in setFullName"
+msgstr "E643: setFullName に無効なバッファ識別子があります"
+
+msgid "E644: Invalid buffer identifier in editFile"
+msgstr "E644: editFile に無効なバッファ識別子があります"
+
+msgid "E645: Invalid buffer identifier in setVisible"
+msgstr "E645: setVisible に無効なバッファ識別子があります"
+
+msgid "E646: Invalid buffer identifier in setModified"
+msgstr "E646: setModified に無効なバッファ識別子があります"
+
+msgid "E647: Invalid buffer identifier in setDot"
+msgstr "E647: setDot に無効なバッファ識別子があります"
+
+msgid "E648: Invalid buffer identifier in close"
+msgstr "E648: close に無効なバッファ識別子があります"
+
+msgid "E649: Invalid buffer identifier in close"
+msgstr "E649: close に無効なバッファ識別子があります"
+
+msgid "E650: Invalid buffer identifier in defineAnnoType"
+msgstr "E650: defineAnnoType に無効なバッファ識別子があります"
+
+msgid "E651: Invalid buffer identifier in addAnno"
+msgstr "E651: addAnno に無効なバッファ識別子があります"
+
+msgid "E652: Invalid buffer identifier in getAnno"
+msgstr "E652: getAnno に無効なバッファ識別子があります"
 
 #, c-format
 msgid "E654: Missing delimiter after search pattern: %s"
@@ -6534,9 +6572,6 @@ msgstr "E829: アンドゥファイルの書込みエラーです: %s"
 msgid "E830: Undo number %ld not found"
 msgstr "E830: アンドゥ番号 %ld は見つかりません"
 
-msgid "E831: bf_key_init() called with empty password"
-msgstr "E831: bf_key_init() が空パスワードで呼出されました"
-
 #, c-format
 msgid "E832: Non-encrypted file has encrypted undo file: %s"
 msgstr "E832: 非暗号化ファイルが暗号化されたアンドゥファイルを使ってます: %s"
@@ -6694,10 +6729,6 @@ msgstr ""
 
 msgid "E876: (NFA regexp) Not enough space to store the whole NFA"
 msgstr "E876: (NFA 正規表現) NFA全体を保存するには空きスペースが足りません"
-
-#, c-format
-msgid "E877: (NFA regexp) Invalid character class: %d"
-msgstr "E877: (NFA 正規表現) 無効な文字クラスです: %d"
 
 msgid "E878: (NFA regexp) Could not allocate memory for branch traversal!"
 msgstr ""
@@ -6862,9 +6893,6 @@ msgstr "E920: _io ファイルは _name の設定が必要です"
 msgid "E921: Invalid callback argument"
 msgstr "E921: 無効なコールバック引数です"
 
-msgid "E922: Expected a dict"
-msgstr "E922: 辞書が期待されています"
-
 msgid "E923: Second argument of function() must be a list or a dict"
 msgstr "E923: function() の第 2 引数はリスト型または辞書型でなければなりません"
 
@@ -6932,11 +6960,6 @@ msgstr "E941: サーバーは既に開始しています"
 
 msgid "E942: +clientserver feature not available"
 msgstr "E942: +clientserver 機能が無効になっています"
-
-msgid "E943: Command table needs to be updated, run 'make cmdidxs'"
-msgstr ""
-"E943: コマンドテーブルを更新する必要があります、'make cmdidxs' を実行してくだ"
-"さい"
 
 msgid "E944: Reverse range in character class"
 msgstr "E944: 文字クラスの範囲が逆です"
@@ -7017,9 +7040,6 @@ msgstr "E965: プロパティタイプ名がありません"
 #, c-format
 msgid "E966: Invalid line number: %ld"
 msgstr "E966: 無効な行番号です: %ld"
-
-msgid "E967: Text property info corrupted"
-msgstr "E967: テキストプロパティ情報が壊れています"
 
 msgid "E968: Need at least one of 'id' or 'type'"
 msgstr "E968: 最低 1 個の 'id' または 'type' が必要です"
@@ -7471,8 +7491,9 @@ msgstr "E1093: %d 個の要素が期待されていますが %d 個でした"
 msgid "E1094: Import can only be used in a script"
 msgstr "E1094: import はスクリプトの中でのみ使用できます"
 
-msgid "E1095: Unreachable code after :return"
-msgstr "E1095: :return の後に到達不能なコードがあります"
+#, c-format
+msgid "E1095: Unreachable code after :%s"
+msgstr "E1095: :%s の後に到達不能なコードがあります"
 
 msgid "E1096: Returning a value in a function without a return type"
 msgstr "E1096: 戻り値の型がない関数で値を返しています"
@@ -7510,19 +7531,13 @@ msgstr "E1104: > が見つかりません"
 msgid "E1105: Cannot convert %s to string"
 msgstr "E1105: %s を文字列に変換できません"
 
-msgid "E1106: One argument too many"
-msgstr "E1106: 引数が 1 個多いです"
-
 #, c-format
-msgid "E1106: %d arguments too many"
-msgstr "E1106: 引数が %d 個多いです"
+msgid "E1106: One argument too many"
+msgid_plural "E1106: %d arguments too many"
+msgstr[0] "E1106: 引数が %d 個多いです"
 
 msgid "E1107: String, List, Dict or Blob required"
 msgstr "E1107: 文字列型、リスト型、辞書型またはBlob型が必要です"
-
-#, c-format
-msgid "E1108: Item not found: %s"
-msgstr "E1108: 要素が見つかりません: %s"
 
 #, c-format
 msgid "E1109: List item %d is not a List"
@@ -7544,8 +7559,8 @@ msgstr "E1112: リストの要素 %d のセル幅が不正です"
 msgid "E1113: Overlapping ranges for 0x%lx"
 msgstr "E1113: 0x%lx の範囲が重複しています"
 
-msgid "E1114: Only values of 0x100 and higher supported"
-msgstr "E1114: 0x100 以上の値しかサポートされていません"
+msgid "E1114: Only values of 0x80 and higher supported"
+msgstr "E1114: 0x80 以上の値しかサポートされていません"
 
 msgid "E1115: \"assert_fails()\" fourth argument must be a number"
 msgstr "E1115: \"assert_fails()\" の第4引数は数字でなければなりません"
@@ -7617,10 +7632,6 @@ msgstr "E1135: 文字列をBoolとして扱っています: \"%s\""
 msgid "E1136: <Cmd> mapping must end with <CR> before second <Cmd>"
 msgstr ""
 "E1136: <Cmd> マッピングは次の <Cmd> の前に <CR> で終わらなければなりません"
-
-#, c-format
-msgid "E1137: <Cmd> mapping must not include %s key"
-msgstr "E1137: <Cmd> マッピングは %s キーを含んではいけません"
 
 msgid "E1138: Using a Bool as a Number"
 msgstr "E1138: Boolを数値として扱っています"
@@ -7814,12 +7825,10 @@ msgstr "E1188: コマンドラインウィンドウから端末を開くこと�
 msgid "E1189: Cannot use :legacy with this command: %s"
 msgstr "E1189: このコマンドには :legacy を使用できません: %s"
 
-msgid "E1190: One argument too few"
-msgstr "E1190: 引数が 1 個少ないです"
-
 #, c-format
-msgid "E1190: %d arguments too few"
-msgstr "E1190: 引数が %d 個少ないです"
+msgid "E1190: One argument too few"
+msgid_plural "E1190: %d arguments too few"
+msgstr[0] "E1190: 引数が %d 個少ないです"
 
 #, c-format
 msgid "E1191: Call to function that failed to compile: %s"
@@ -8044,10 +8053,6 @@ msgstr "E1251: 引数 %d にはリスト、辞書、Blobまたは文字列が必
 msgid "E1252: String, List or Blob required for argument %d"
 msgstr "E1252: 引数 %d には文字列、リストまたはBlobが必要です"
 
-#, c-format
-msgid "E1253: String expected for argument %d"
-msgstr "E1253: 引数 %d には文字列が必要です"
-
 msgid "E1254: Cannot use script variable in for loop"
 msgstr "E1254: forループ内でスクリプト変数は使用できません"
 
@@ -8264,6 +8269,197 @@ msgstr "E1310: メニューを列挙中に変更できません"
 
 msgid "E1311: Cannot change user commands while listing"
 msgstr "E1311: ユーザーコマンドを列挙中に変更できません"
+
+msgid "E1312: Not allowed to change the window layout in this autocmd"
+msgstr "E1312: この自動コマンドでウィンドウ配置を変更することは許されません"
+
+#, c-format
+msgid "E1313: Not allowed to add or remove entries (%s)"
+msgstr "E1313: 要素を追加・削除することは許されません (%s)"
+
+#, c-format
+msgid "E1314: Class name must start with an uppercase letter: %s"
+msgstr "E1314: クラス名は英大文字で始まらなければなりません: %s"
+
+#, c-format
+msgid "E1315: White space required after name: %s"
+msgstr "E1315: 名前の後にスペースが必要です: %s"
+
+msgid "E1316: Class can only be defined in Vim9 script"
+msgstr "E1316: クラスは Vim9 script の中でのみ定義できます"
+
+#, c-format
+msgid "E1317: Invalid object member declaration: %s"
+msgstr "E1317: 不正なオブジェクトメンバー宣言です: %s"
+
+#, c-format
+msgid "E1318: Not a valid command in a class: %s"
+msgstr "E1318: クラス内では使えないコマンドです: %s"
+
+msgid "E1319: Using a class as a Number"
+msgstr "E1319: クラスを数値として扱っています"
+
+msgid "E1320: Using an object as a Number"
+msgstr "E1320: オブジェクトを数値として扱っています"
+
+msgid "E1321: Using a class as a Float"
+msgstr "E1321: クラスを浮動小数点数として扱っています"
+
+msgid "E1322: Using an object as a Float"
+msgstr "E1322: オブジェクトを浮動小数点数として扱っています"
+
+msgid "E1323: Using a class as a String"
+msgstr "E1323: クラスを文字列として扱っています"
+
+msgid "E1324: Using an object as a String"
+msgstr "E1324: オブジェクトを文字列として扱っています"
+
+#, c-format
+msgid "E1325: Method not found on class \"%s\": %s"
+msgstr "E1325: メソッドがクラス \"%s\" 内で見つかりません: %s"
+
+#, c-format
+msgid "E1326: Member not found on object \"%s\": %s"
+msgstr "E1326: メンバーがオブジェクト \"%s\" 内で見つかりません: %s"
+
+#, c-format
+msgid "E1327: Object required, found %s"
+msgstr "E1327: オブジェクトが必要ですが、%s が見つかりました"
+
+#, c-format
+msgid "E1328: Constructor default value must be v:none: %s"
+msgstr "E1328: コンストラクタのデフォルト値は v:none でなければなりません: %s"
+
+#, c-format
+msgid "E1329: Cannot get object member type from initializer: %s"
+msgstr "E1329: オブジェクトメンバー型を初期化子から取得できません: %s"
+
+#, c-format
+msgid "E1330: Invalid type for object member: %s"
+msgstr "E1330: オブジェクトメンバーとして無効な型です: %s"
+
+msgid "E1331: Public must be followed by \"this\" or \"static\""
+msgstr "E1331: pulic の後ろに \"this\" または \"static\" が必要です"
+
+#, c-format
+msgid "E1332: Public member name cannot start with underscore: %s"
+msgstr ""
+"E1332: パブリックメンバー名はアンダースコアで始めることはできません: %s"
+
+#, c-format
+msgid "E1333: Cannot access private member: %s"
+msgstr "E1333: プライベートメンバーにアクセスできません: %s"
+
+#, c-format
+msgid "E1334: Object member not found: %s"
+msgstr "E1334: オブジェクトメンバーが見つかりません: %s"
+
+#, c-format
+msgid "E1335: Member is not writable: %s"
+msgstr "E1335: メンバーに書込みできません: %s"
+
+#, c-format
+msgid "E1337: Class member not found: %s"
+msgstr "E1337: クラスメンバーが見つかりません: %s"
+
+#, c-format
+msgid "E1338: Member not found on class \"%s\": %s"
+msgstr "E1338: メンバーがクラス \"%s\" 内で見つかりません: %s"
+
+msgid ""
+"E1339: Cannot add a textprop with text after using a textprop with a "
+"negative id"
+msgstr ""
+"E1339: 負の id 付きのテキストプロパティを使ったあとテキスト付きのテキストプロ"
+"パティを付加することはできません"
+
+#, c-format
+msgid "E1340: Argument already declared in the class: %s"
+msgstr "E1340: 引数は既にクラス内で宣言されています: %s"
+
+#, c-format
+msgid "E1341: Variable already declared in the class: %s"
+msgstr "E1341: 変数は既にクラス内で宣言されています: %s"
+
+msgid "E1342: Interface can only be defined in Vim9 script"
+msgstr "E1342: インターフェイスは Vim9 script の中でのみ使用できます"
+
+#, c-format
+msgid "E1343: Interface name must start with an uppercase letter: %s"
+msgstr "E1343: インターフェイス名は英大文字で始まらなければなりません: %s"
+
+msgid "E1344: Cannot initialize a member in an interface"
+msgstr "E1344: インターフェイス内のメンバーを初期化できません"
+
+#, c-format
+msgid "E1345: Not a valid command in an interface: %s"
+msgstr "E1345: インターフェイス内では使えないコマンドです: %s"
+
+#, c-format
+msgid "E1346: Interface name not found: %s"
+msgstr "E1346: インターフェイス名が見つかりませんでした: %s"
+
+#, c-format
+msgid "E1347: Not a valid interface: %s"
+msgstr "E1347: 無効なインターフェイスです: %s"
+
+#, c-format
+msgid "E1348: Member \"%s\" of interface \"%s\" not implemented"
+msgstr ""
+"E1348: メンバー \"%s\" (インターフェイス \"%s\" 内) は実装されていません"
+
+#, c-format
+msgid "E1349: Function \"%s\" of interface \"%s\" not implemented"
+msgstr "E1349: 関数 \"%s\" (インターフェイス \"%s\" 内) は実装されていません"
+
+msgid "E1350: Duplicate \"implements\""
+msgstr "E1350: \"implements\" が重複しています"
+
+#, c-format
+msgid "E1351: Duplicate interface after \"implements\": %s"
+msgstr "E1351: \"implements\" の後のインターフェイスが重複しています: %s"
+
+msgid "E1352: Duplicate \"extends\""
+msgstr "E1352: \"extends\" が重複しています"
+
+#, c-format
+msgid "E1353: Class name not found: %s"
+msgstr "E1353: クラス名が見つかりません: %s"
+
+#, c-format
+msgid "E1354: Cannot extend %s"
+msgstr "E1354: %s を継承できません"
+
+#, c-format
+msgid "E1355: Duplicate function: %s"
+msgstr "E1355: 関数が重複しています: %s"
+
+msgid "E1356: \"super\" must be followed by a dot"
+msgstr "E1356: \"super\" は後ろにドットが必要です"
+
+msgid "E1357: Using \"super\" not in a class function"
+msgstr "E1357: クラス関数の外で \"super\" が使われました"
+
+msgid "E1358: Using \"super\" not in a child class"
+msgstr "E1358: 子クラス以外で \"super\" が使われました"
+
+msgid "E1359: Cannot define a \"new\" function in an abstract class"
+msgstr "E1359: 抽象クラス内では \"new\" 関数は定義できません"
+
+msgid "E1360: Using a null object"
+msgstr "E1360: nullを数値として扱っています"
+
+msgid "E1361: Cannot use color \"none\", did you mean \"NONE\"?"
+msgstr "E1361: 色名として \"none\" は使えません, \"NONE\" を意味していますか?"
+
+msgid "E1362: Cannot use a non-null object"
+msgstr "E1362: 非nullオブジェクトは使えません"
+
+msgid "E1363: Incomplete type"
+msgstr "E1363: 不完全な型です"
+
+msgid "E1364: Warning: Pointer block corrupted"
+msgstr "E1364: 警告: ポインタブロックが壊れています"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
@@ -9047,6 +9243,9 @@ msgstr "xtermを検出したときに端末のキーコードを要求する"
 msgid "terminal that requires extra redrawing"
 msgstr "追加の再描画が必要な端末"
 
+msgid "what keyboard protocol to use for which terminal"
+msgstr "どの端末に何のキーボードプロトコルを使うか"
+
 msgid "recognize keys that start with <Esc> in Insert mode"
 msgstr "挿入モードで <Esc> で始まるキーを認識する"
 
@@ -9219,8 +9418,11 @@ msgstr "'s' フラグを 'shortmess' に追加 (検索メッセージを表示�
 msgid "list of flags to make messages shorter"
 msgstr "メッセージを短くするためのフラグのリスト"
 
-msgid "show (partial) command keys in the status line"
-msgstr "コマンド (の一部) をステータス行に表示"
+msgid "show (partial) command keys in location given by 'showcmdloc'"
+msgstr "コマンド (の一部) を 'showcmdloc' で指定された場所に表示"
+
+msgid "location where to show the (partial) command keys for 'showcmd'"
+msgstr "'showcmd' でコマンド (の一部) を表示する場所"
 
 msgid "display the current mode in the status line"
 msgstr "現在のモードをステータス行に表示"
@@ -9993,3 +10195,6 @@ msgstr "MzScheme 動的ライブラリの名前"
 
 msgid "name of the MzScheme GC dynamic library"
 msgstr "MzScheme GC 動的ライブラリの名前"
+
+msgid "You discovered the command-line window! You can close it with \":q\"."
+msgstr "コマンドラインウィンドウを見つけましたね! \":q\" でクローズできます。"
