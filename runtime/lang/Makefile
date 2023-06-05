@@ -1,6 +1,6 @@
 MASTER_MENU = menu_ja_jp.utf-8.vim
 
-test:
+test: update
 
 update: menu_ja_jp.euc-jp.vim menu_japanese_japan.932.vim
 
