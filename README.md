@@ -25,9 +25,12 @@ nsis/lang                          |Windows用インストーラーの翻訳フ�
 
     $ make import-en-files VIM_SRC_DIR=../vim
 
-この手順では、vim.pot ファイル、man ファイル、チュートリアルファイル、NSIS ファイルの原文ファイルをまとめて取り込む。個別に取り込む場合や注意事項は以下のそれぞれの項目を参照のこと。
+この手順では、vim.pot ファイル、man ファイル、チュートリアルファイル、NSIS
+ファイルの原文ファイルをまとめて取り込む。個別に取り込む場合や注意事項は以下の
+それぞれの項目を参照のこと。
 
-メニューファイルについては、原文ファイルにあたるものがないので、取り込みは行わない。`runtime/menu.vim` などの履歴を見て手動で適宜更新する必要がある。
+メニューファイルについては、原文ファイルにあたるものがないので、取り込みは行わ
+ない。`runtime/menu.vim` などの履歴を見て手動で適宜更新する必要がある。
 
 ## ja.po 更新手順
 
@@ -42,10 +45,15 @@ nsis/lang                          |Windows用インストーラーの翻訳フ�
 
     註: `make vim.pot` を実行するには `src/` で `./configure` を実行しておく必
     要があるが、`src/po/Makefile` の4行目の `include ../auto/config.mk` をコメ
-    ントアウトして回避することも可能。(あるいは、空の `src/auto/config.mk` を用意してもよい。)
+    ントアウトして回避することも可能。(あるいは、空の `src/auto/config.mk` を
+    用意してもよい。)
 
-    Windows 上で vim.pot を生成するには、Cygwin や MSYS2 等の Linux 的な環境を使うこと。(MSVC 用の Makefile も用意されているが、ソースファイルの読み込み順序が異なるために余計な差分が出てしまう。)  
-    また、古いソースを使って Win32 向けにビルドしたことで `src/if_perl.c` が残っているならば、vim.pot 生成前に削除しておくこと。(余計な差分が出るのを防ぐため。)
+    Windows 上で vim.pot を生成するには、Cygwin や MSYS2 等の Linux 的な環境を
+    使うこと。(MSVC 用の Makefile も用意されているが、ソースファイルの読み込み
+    順序が異なるために余計な差分が出てしまう。)  
+    また、古いソースを使って Win32 向けにビルドしたことで `src/if_perl.c` が
+    残っているならば、vim.pot 生成前に削除しておくこと。(余計な差分が出るのを
+    防ぐため。)
 
 2.  ja.po に vim.pot をマージ (古いものは ja.po.old へ退避される)
 
@@ -112,7 +120,8 @@ nsis/lang                          |Windows用インストーラーの翻訳フ�
 
         $ LC_ALL=en_US.UTF-8 MANROFFSEQ='' MANWIDTH=80 man --warnings -E UTF-8 -l -Tutf8 -Z vim-ja.UTF-8.1 2>&1 > /dev/null | grep -v "cannot adjust line\|can't break line"
 
-    (末尾の `grep -v` は、日本語の場合に大量に表示される `cannot adjust line` と `can't break line` を除外するためのもの。)
+    (末尾の `grep -v` は、日本語の場合に大量に表示される `cannot adjust line`
+    と `can't break line` を除外するためのもの。)
 
     参照: <https://lintian.debian.org/tags/manpage-has-errors-from-man.html>
 
@@ -166,7 +175,8 @@ nsis/lang                          |Windows用インストーラーの翻訳フ�
 
 ## メニューファイル更新手順
 
-1.  Vim のソースディレクトリに行き、`runtime/menu.vim` や `runtime/lang/` の履歴を調べる。
+1.  Vim のソースディレクトリに行き、`runtime/menu.vim` や `runtime/lang/` の
+    履歴を調べる。
 
 2. 必要な変更を `runtime/lang/menu_ja*.vim` に反映する。
 
@@ -206,7 +216,8 @@ nsis/lang                          |Windows用インストーラーの翻訳フ�
 
 5.  Vim のソースディレクトリを更新する
 
-    GitHub に PR を出す場合は、以下のコマンドを実行して Vim のソースディレクトリを更新する。
+    GitHub に PR を出す場合は、以下のコマンドを実行して Vim のソースディレクト
+    リを更新する。
     (`VIM_SRC_DIR` で Vim のソースディレクトリを指定)
 
         $ make update-src-dir VIM_SRC_DIR=../vim
@@ -225,7 +236,8 @@ nsis/lang                          |Windows用インストーラーの翻訳フ�
 
     [GitHub][#github] に PR を出す。
 
-    あるいはこのアーカイブファイルを Bram と vim-dev へ更新依頼とともに送信する。
+    あるいはこのアーカイブファイルを Bram と vim-dev へ更新依頼とともに送信す
+    る。
     以下、文面の一例:
 
         Hi Bram and the list,
