@@ -118,6 +118,10 @@ nsis/lang                          |Windows用インストーラーの翻訳フ�
 
     以下のコマンドでmanの文法に違反していないかチェックできる。
 
+        $ make test
+
+    ファイル単体をチェックする場合は以下のコマンドを使う。
+
         $ LC_ALL=en_US.UTF-8 MANROFFSEQ='' MANWIDTH=80 man --warnings -E UTF-8 -l -Tutf8 -Z vim-ja.UTF-8.1 2>&1 > /dev/null | grep -v "cannot adjust line\|can't break line"
 
     (末尾の `grep -v` は、日本語の場合に大量に表示される `cannot adjust line`

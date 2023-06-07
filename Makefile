@@ -53,6 +53,7 @@ release-today:
 
 test:
 	$(MAKE) -C src/po test
+	$(MAKE) -C runtime/doc test
 	$(MAKE) -C runtime/lang test
 	$(MAKE) -C runtime/tutor test
 
@@ -74,6 +75,7 @@ clean:
 	rm -rf $(ARCHIVE_DIR) $(ARCHIVE_FILE)
 	rm -rf $(INSTALL_DIR)
 	$(MAKE) -C src/po clean
+	$(MAKE) -C runtime/doc clean
 	$(MAKE) -C runtime/lang clean
 	$(MAKE) -C runtime/tutor clean
 
