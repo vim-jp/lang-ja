@@ -1,5 +1,6 @@
 .*.sw?
 *~
+*.log
 /tmp/
 /vim-lang-ja*.tar.gz
 /vim-lang-ja*.tar.bz2
