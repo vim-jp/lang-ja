@@ -7,10 +7,10 @@ jobs:
     steps:
       - name: Preparation
         run: sudo apt install gettext
-      - name: checkout
-        uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Checkout vim
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: 'vim/vim'
           path: vim
@@ -26,6 +26,6 @@ jobs:
 
           cd ../..
           ${GITHUB_WORKSPACE}/vim/src/vim  --version
-      - name: Test vim
+      - name: Test translation files
         run: |
           make test VIM=${GITHUB_WORKSPACE}/vim/src/vim
