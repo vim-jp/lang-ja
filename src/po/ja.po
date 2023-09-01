@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-01 15:54+0900\n"
+"POT-Creation-Date: 2023-09-01 11:04+0900\n"
 "PO-Revision-Date: 2023-06-13 19:15+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -2233,7 +2233,7 @@ msgstr "%s の処理中にエラーが検出されました:"
 msgid "line %4ld:"
 msgstr "行 %4ld:"
 
-msgid "Messages maintainer: Bram Moolenaar <Bram@vim.org>"
+msgid "Messages maintainer: The Vim Project"
 msgstr "日本語メッセージ翻訳/監修: 村岡 太郎 <koron.kaoriya@gmail.com>"
 
 msgid "Interrupt: "
@@ -2704,6 +2704,10 @@ msgstr " 矩形選択"
 
 msgid "recording"
 msgstr "記録中"
+
+#, c-format
+msgid "Searching for \"%s\" under \"%s\" in \"%s\""
+msgstr "\"%s\" を \"%s\" 以下の \"%s\" から検索中"
 
 #, c-format
 msgid "Searching for \"%s\" in \"%s\""
@@ -5180,6 +5184,9 @@ msgstr "E417: 引数がありません: %s"
 msgid "E418: Illegal value: %s"
 msgstr "E418: 不正な値です: %s"
 
+#~ msgid "E418: I'm a teapot"
+#~ msgstr ""
+
 msgid "E419: FG color unknown"
 msgstr "E419: 未知の前景色です"
 
@@ -5484,6 +5491,9 @@ msgstr "はファイルでも書込み可能デバイスでもありません"
 #, c-format
 msgid "E503: \"%s\" is not a file or writable device"
 msgstr "E503: \"%s\" はファイルでも書込み可能デバイスでもありません"
+
+#~ msgid "E503: Coffee is currently not available"
+#~ msgstr ""
 
 msgid "is read-only (cannot override: \"W\" in 'cpoptions')"
 msgstr "は読込専用です (\"W\" が 'cpoptions' にあるため、強制書込できません)"
@@ -5847,6 +5857,16 @@ msgstr "E612: signの定義が多過ぎます"
 msgid "E613: Unknown printer font: %s"
 msgstr "E613: 未知のプリンタオプションです: %s"
 
+msgid "E614: Class required"
+msgstr "E614: クラスが必要です"
+
+msgid "E615: Object required"
+msgstr "E615: オブジェクトが必要です"
+
+#, c-format
+msgid "E616: Object required for argument %d"
+msgstr "E616: 引数 %d にはオブジェクトが必要です"
+
 msgid "E617: Cannot be changed in the GTK GUI"
 msgstr "E617: GTK GUIでは変更できません"
 
@@ -6094,6 +6114,10 @@ msgstr "E691: リスト型はリスト型としか比較できません"
 msgid "E692: Invalid operation for List"
 msgstr "E692: リスト型には無効な操作です"
 
+#, c-format
+msgid "E693: List or Class required for argument %d"
+msgstr "E693: 引数 %d にはリストまたはクラスが必要です"
+
 msgid "E694: Invalid operation for Funcrefs"
 msgstr "E694: 関数参照型には無効な操作です"
 
@@ -6134,6 +6158,10 @@ msgstr "E704: 関数参照型変数名は大文字で始まらなければなり
 #, c-format
 msgid "E705: Variable name conflicts with existing function: %s"
 msgstr "E705: 変数名が既存の関数名と衝突します: %s"
+
+#, c-format
+msgid "E706: Argument of %s must be a List, String or Dictionary"
+msgstr "E706: %s の引数はリスト型、文字列または辞書型でなければなりません"
 
 #, c-format
 msgid "E707: Function name conflicts with variable: %s"
@@ -8461,8 +8489,101 @@ msgstr "E1363: 不完全な型です"
 msgid "E1364: Warning: Pointer block corrupted"
 msgstr "E1364: 警告: ポインタブロックが壊れています"
 
+msgid "E1365: Cannot use a return type with the \"new\" function"
+msgstr "E1365: \"new\" 関数では戻り値の型は使用できません"
+
+#, c-format
+msgid "E1366: Cannot access private method: %s"
+msgstr "E1366: プライベートメソッドにアクセスできません: %s"
+
+#, c-format
+msgid "E1367: Access level of member \"%s\" of interface \"%s\" is different"
+msgstr ""
+"E1367: メンバー \"%s\" (インターフェイス \"%s\" 内) のアクセスレベルが異なっ"
+"ています"
+
+msgid "E1368: Static cannot be followed by \"this\" in a member name"
+msgstr "E1368: メンバー名で static の後に \"this\" を置くことはできません"
+
+#, c-format
+msgid "E1369: Duplicate member: %s"
+msgstr "E1369: メンバーが重複しています: %s"
+
+msgid "E1370: Cannot define a \"new\" function as static"
+msgstr "E1370: \"new\" 関数は static として定義できません"
+
+#, c-format
+msgid "E1400: Cannot mix positional and non-positional arguments: %s"
+msgstr "E1400: 位置引数と非位置引数を混ぜることはできません: %s"
+
+#, c-format
+msgid "E1401: format argument %d unused in $-style format: %s"
+msgstr ""
+"E1401: フォーマット引数 %d は $ スタイルフォーマットで使われていません: %s"
+
+#, c-format
+msgid ""
+"E1402: Positional argument %d used as field width reused as different type: "
+"%s/%s"
+msgstr ""
+"E1402: フィールド幅として使われている位置引数 %d が異なる型に再利用されていま"
+"す: %s/%s"
+
+#, c-format
+msgid "E1403: Positional argument %d out of bounds: %s"
+msgstr "E1403: 位置引数 %d が範囲外です: %s"
+
+#, c-format
+msgid "E1404: Positional argument %d type used inconsistently: %s/%s"
+msgstr "E1404: 位置引数 %d の型が一貫していません: %s/%s"
+
+#, c-format
+msgid "E1405: Invalid format specifier: %s"
+msgstr "E1405: 無効なフォーマット指示子です: %s"
+
+#, c-format
+msgid "E1406: Member \"%s\": type mismatch, expected %s but got %s"
+msgstr "E1406: メンバー \"%s\": 型が不一致です。%s が必要ですが %s でした"
+
+#, c-format
+msgid "E1407: Member \"%s\": type mismatch, expected %s but got %s"
+msgstr "E1407: メソッド \"%s\": 型が不一致です。%s が必要ですが %s でした"
+
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
+
+msgid "int"
+msgstr "int"
+
+msgid "long int"
+msgstr "long int"
+
+msgid "long long int"
+msgstr "long long int"
+
+msgid "unsigned int"
+msgstr "unsigned int"
+
+msgid "unsigned long int"
+msgstr "unsigned long int"
+
+msgid "unsigned long long int"
+msgstr "unsigned long long int"
+
+msgid "pointer"
+msgstr "pointer"
+
+msgid "percent"
+msgstr "percent"
+
+msgid "char"
+msgstr "char"
+
+msgid "string"
+msgstr "string"
+
+msgid "float"
+msgstr "float"
 
 msgid "search hit TOP, continuing at BOTTOM"
 msgstr "上まで検索したので下に戻ります"
