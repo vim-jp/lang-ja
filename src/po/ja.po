@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-01 11:04+0900\n"
+"POT-Creation-Date: 2023-09-05 11:04+0900\n"
 "PO-Revision-Date: 2023-06-13 19:15+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -8548,6 +8548,12 @@ msgstr "E1406: メンバー \"%s\": 型が不一致です。%s が必要です�
 #, c-format
 msgid "E1407: Member \"%s\": type mismatch, expected %s but got %s"
 msgstr "E1407: メソッド \"%s\": 型が不一致です。%s が必要ですが %s でした"
+
+#, c-format
+msgid "E1409: Cannot directly access interface \"%s\" static member \"%s\""
+msgstr ""
+"E1409: インターフェイス \"%s\" のスタティックメンバー \"%s\" にアクセスできま"
+"せん"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
