@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-05 11:04+0900\n"
+"POT-Creation-Date: 2023-09-11 10:58+0900\n"
 "PO-Revision-Date: 2023-06-13 19:15+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -8512,6 +8512,17 @@ msgstr "E1369: メンバーが重複しています: %s"
 msgid "E1370: Cannot define a \"new\" function as static"
 msgstr "E1370: \"new\" 関数は static として定義できません"
 
+msgid "E1371: Abstract must be followed by \"def\" or \"static\""
+msgstr "E1371: abstract の後ろに \"this\" または \"static\" が必要です"
+
+#, c-format
+msgid "E1372: Abstract method \"%s\" cannot be defined in a concrete class"
+msgstr "E1372: 抽象メソッド \"%s\" は具象クラスの中では定義できません"
+
+#, c-format
+msgid "E1373: Abstract method \"%s\" is not implemented"
+msgstr "E1373: 抽象メソッド \"%s\" は実装されていません"
+
 #, c-format
 msgid "E1400: Cannot mix positional and non-positional arguments: %s"
 msgstr "E1400: 位置引数と非位置引数を混ぜることはできません: %s"
@@ -8546,7 +8557,7 @@ msgid "E1406: Member \"%s\": type mismatch, expected %s but got %s"
 msgstr "E1406: メンバー \"%s\": 型が不一致です。%s が必要ですが %s でした"
 
 #, c-format
-msgid "E1407: Member \"%s\": type mismatch, expected %s but got %s"
+msgid "E1407: Method \"%s\": type mismatch, expected %s but got %s"
 msgstr "E1407: メソッド \"%s\": 型が不一致です。%s が必要ですが %s でした"
 
 #, c-format
