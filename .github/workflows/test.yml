@@ -8,9 +8,9 @@ jobs:
       - name: Preparation
         run: sudo apt install gettext
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Checkout vim
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: 'vim/vim'
           path: vim
