@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-27 15:15+0900\n"
+"POT-Creation-Date: 2023-09-29 13:00+0900\n"
 "PO-Revision-Date: 2023-06-13 19:15+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -8566,34 +8566,50 @@ msgstr ""
 "E1386: オブジェクトメソッド \"%s\" はクラス \"%s\" のオブジェクトを使うことの"
 "みでアクセスできます"
 
-#, c-format
-msgid "E1400: Cannot mix positional and non-positional arguments: %s"
-msgstr "E1400: 位置引数と非位置引数を混ぜることはできません: %s"
+msgid "E1387: Public variable not supported in an interface"
+msgstr "E1387: インターフェイス内でパブリック変数はサポートされていません"
 
-#, c-format
-msgid "E1401: format argument %d unused in $-style format: %s"
-msgstr ""
-"E1401: フォーマット引数 %d は $ スタイルフォーマットで使われていません: %s"
+msgid "E1388: Public keyword not supported for a method"
+msgstr "E1388: インターフェイス内で public キーワードはサポートされていません"
+
+msgid "E1389: Missing name after implements"
+msgstr "E1389: implements の後に名前がありません"
 
 #, c-format
 msgid ""
-"E1402: Positional argument %d used as field width reused as different type: "
+"E1390: Cannot use an object variable \"this.%s\" except with the \"new\" "
+"method"
+msgstr ""
+"E1390: オブジェクト変数 \"this.%s\" は \"new\" メソッド以外では使用できません"
+
+#, c-format
+msgid "E1500: Cannot mix positional and non-positional arguments: %s"
+msgstr "E1500: 位置引数と非位置引数を混ぜることはできません: %s"
+
+#, c-format
+msgid "E1501: format argument %d unused in $-style format: %s"
+msgstr ""
+"E1501: フォーマット引数 %d は $ スタイルフォーマットで使われていません: %s"
+
+#, c-format
+msgid ""
+"E1502: Positional argument %d used as field width reused as different type: "
 "%s/%s"
 msgstr ""
-"E1402: フィールド幅として使われている位置引数 %d が異なる型に再利用されていま"
+"E1502: フィールド幅として使われている位置引数 %d が異なる型に再利用されていま"
 "す: %s/%s"
 
 #, c-format
-msgid "E1403: Positional argument %d out of bounds: %s"
-msgstr "E1403: 位置引数 %d が範囲外です: %s"
+msgid "E1503: Positional argument %d out of bounds: %s"
+msgstr "E1503: 位置引数 %d が範囲外です: %s"
 
 #, c-format
-msgid "E1404: Positional argument %d type used inconsistently: %s/%s"
-msgstr "E1404: 位置引数 %d の型が一貫していません: %s/%s"
+msgid "E1504: Positional argument %d type used inconsistently: %s/%s"
+msgstr "E1504: 位置引数 %d の型が一貫していません: %s/%s"
 
 #, c-format
-msgid "E1405: Invalid format specifier: %s"
-msgstr "E1405: 無効なフォーマット指示子です: %s"
+msgid "E1505: Invalid format specifier: %s"
+msgstr "E1505: 無効なフォーマット指示子です: %s"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
