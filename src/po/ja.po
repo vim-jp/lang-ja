@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-29 13:00+0900\n"
+"POT-Creation-Date: 2023-10-03 11:38+0900\n"
 "PO-Revision-Date: 2023-06-13 19:15+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -8583,6 +8583,15 @@ msgstr ""
 "E1390: オブジェクト変数 \"this.%s\" は \"new\" メソッド以外では使用できません"
 
 #, c-format
+msgid "E1391: Cannot (un)lock variable \"%s\" in class \"%s\""
+msgstr "E1391: クラス \"%2$s\" 内の変数 \"%1$s\" を(アン)ロックできません"
+
+#, c-format
+msgid "E1392: Cannot (un)lock class variable \"%s\" in class \"%s\""
+msgstr ""
+"E1392: クラス \"%2$s\" 内のクラス変数 \"%1$s\" を(アン)ロックできません"
+
+#, c-format
 msgid "E1500: Cannot mix positional and non-positional arguments: %s"
 msgstr "E1500: 位置引数と非位置引数を混ぜることはできません: %s"
 
@@ -8610,6 +8619,17 @@ msgstr "E1504: 位置引数 %d の型が一貫していません: %s/%s"
 #, c-format
 msgid "E1505: Invalid format specifier: %s"
 msgstr "E1505: 無効なフォーマット指示子です: %s"
+
+msgid "E1506: Buffer too small to copy xattr value or key"
+msgstr "E1506: xattr値またはキーをコピーするのにバッファが小さすぎます"
+
+msgid ""
+"E1508: Size of the extended attribute value is larger than the maximum size "
+"allowed"
+msgstr "E1508: 拡張属性値のサイズが許可されている最大サイズを超えています"
+
+msgid "E1509: Error occured when reading or writing extended attribute"
+msgstr "E1509: 拡張属性の読込みまたは書込みでエラーが起きました"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
