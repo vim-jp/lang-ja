@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-03 11:38+0900\n"
+"POT-Creation-Date: 2023-10-06 17:58+0900\n"
 "PO-Revision-Date: 2023-06-13 19:15+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -8367,8 +8367,9 @@ msgid "E1332: Public variable name cannot start with underscore: %s"
 msgstr "E1332: パブリック変数名はアンダースコアで始めることはできません: %s"
 
 #, c-format
-msgid "E1333: Cannot access private variable: %s"
-msgstr "E1333: プライベート変数にアクセスできません: %s"
+msgid "E1333: Cannot access private variable \"%s\" in class \"%s\""
+msgstr ""
+"E1333: クラス \"%2$s\" 内のプライベート変数 \"%1$s\" にアクセスできません"
 
 #, c-format
 msgid "E1335: Variable \"%s\" in class \"%s\" is not writable"
