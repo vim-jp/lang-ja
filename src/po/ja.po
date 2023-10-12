@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-06 17:58+0900\n"
+"POT-Creation-Date: 2023-10-12 21:46+0900\n"
 "PO-Revision-Date: 2023-06-13 19:15+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -6099,8 +6099,9 @@ msgstr "E687: ターゲットがリスト型内の要素よりも少ないです
 msgid "E688: More targets than List items"
 msgstr "E688: ターゲットがリスト型内の要素よりも多いです"
 
-msgid "E689: Can only index a List, Dictionary or Blob"
-msgstr "E689: リスト型、辞書型、Blob型以外はインデックス指定できません"
+#, c-format
+msgid "E689: Index not allowed after a %s: %s"
+msgstr "E689: %s の後にインデックスは許されません: %s"
 
 msgid "E690: Missing \"in\" after :for"
 msgstr "E690: :for の後に \"in\" がありません"
@@ -7894,8 +7895,8 @@ msgid "E1202: No white space allowed after '%s': %s"
 msgstr "E1202: '%s' の後にスペースは許されません: %s"
 
 #, c-format
-msgid "E1203: Dot can only be used on a dictionary: %s"
-msgstr "E1203: ドットは辞書の中でのみ使用できます: %s"
+msgid "E1203: Dot not allowed after a %s: %s"
+msgstr "E1203: %s の後にドットは許されません: %s"
 
 #, c-format
 msgid "E1204: No Number allowed after .: '\\%%%c'"
