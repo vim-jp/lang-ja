@@ -21,6 +21,9 @@ MSGFMT = OLD_PO_FILE_INPUT=yes msgfmt
 
 VIM = vim
 
+# MacOS sed is locale aware, set $LANG to avoid problems
+SED = LANG=C sed
+
 .SUFFIXES: .po .mo .ck
 
 test: check $(MOFILES)
@@ -39,11 +42,13 @@ update: ja.sjis.po ja.euc-jp.po
 ja.sjis.po: $(MASTER_PO)
 	@$(MAKE) sjiscorr
 	rm -f $@
-	iconv -f utf-8 -t cp932 $< | ./sjiscorr > $@
+	iconv -f UTF-8 -t CP932 $< | ./sjiscorr > $@
 
 ja.euc-jp.po: $(MASTER_PO)
-	iconv -f utf-8 -t euc-jp $< | \
-	  sed -e 's/charset=[uU][tT][fF]-8/charset=euc-jp/' -e 's/# Original translations/# Generated from ja.po, DO NOT EDIT/' > $@
+	iconv -f UTF-8 -t EUC-JP $< | \
+		$(SED) -e 's/charset=[uU][tT][fF]-8/charset=EUC-JP/' \
+			-e 's/# Original translations/# Generated from ja.po, DO NOT EDIT/' \
+			> $@
 
 sjiscorr: sjiscorr.c
 	$(CC) -o $@ $<
