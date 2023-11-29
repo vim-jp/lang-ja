@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-24 08:38+0900\n"
+"POT-Creation-Date: 2023-11-29 10:58+0900\n"
 "PO-Revision-Date: 2023-06-13 19:15+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -5967,9 +5967,6 @@ msgstr "E647: setDot に無効なバッファ識別子があります"
 
 msgid "E648: Invalid buffer identifier in close"
 msgstr "E648: close に無効なバッファ識別子があります"
-
-msgid "E649: Invalid buffer identifier in close"
-msgstr "E649: close に無効なバッファ識別子があります"
 
 msgid "E650: Invalid buffer identifier in defineAnnoType"
 msgstr "E650: defineAnnoType に無効なバッファ識別子があります"
