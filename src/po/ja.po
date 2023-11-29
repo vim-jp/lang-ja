@@ -8313,7 +8313,7 @@ msgstr "E1316: クラスは Vim9 script の中でのみ定義できます"
 
 #, c-format
 msgid "E1317: Invalid object variable declaration: %s"
-msgstr "E1317: 不正なオブジェクト値の宣言です: %s"
+msgstr "E1317: 不正なオブジェクト変数の宣言です: %s"
 
 #, c-format
 msgid "E1318: Not a valid command in a class: %s"
@@ -8355,7 +8355,7 @@ msgstr "E1328: コンストラクタのデフォルト値は v:none でなけれ
 
 #, c-format
 msgid "E1330: Invalid type for object variable: %s"
-msgstr "E1330: オブジェクト値として無効な型です: %s"
+msgstr "E1330: オブジェクト変数として無効な型です: %s"
 
 msgid "E1331: Public must be followed by \"this\" or \"static\""
 msgstr "E1331: pulic の後ろに \"this\" または \"static\" が必要です"
@@ -8525,8 +8525,7 @@ msgstr ""
 #, c-format
 msgid "E1377: Access level of method \"%s\" is different in class \"%s\""
 msgstr ""
-"E1377: インターフェイス \"%2$s\" 内のメソッド \"%1$s\" のアクセスレベルが異"
-"なっています"
+"E1377: クラス \"%2$s\" 内のメソッド \"%1$s\" のアクセスレベルが異なっています"
 
 msgid "E1378: Static member not supported in an interface"
 msgstr ""
@@ -8594,7 +8593,7 @@ msgstr "E1393: 型は Vim9 script の中でのみ定義できます"
 
 #, c-format
 msgid "E1394: Type name must start with an uppercase letter: %s"
-msgstr "E1394: 型は英大文字で始まらなければなりません: %s"
+msgstr "E1394: 型の名前は英大文字で始まらなければなりません: %s"
 
 #, c-format
 msgid "E1395: Type alias \"%s\" cannot be modified"
