@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 10:58+0900\n"
+"POT-Creation-Date: 2023-12-15 11:33+0900\n"
 "PO-Revision-Date: 2023-06-13 19:15+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -6110,8 +6110,8 @@ msgid "E692: Invalid operation for List"
 msgstr "E692: リスト型には無効な操作です"
 
 #, c-format
-msgid "E693: List or Class required for argument %d"
-msgstr "E693: 引数 %d にはリストまたはクラスが必要です"
+msgid "E693: Class or class typealias required for argument %d"
+msgstr "E693: 引数 %d にはクラスまたはクラスの型エイリアスが必要です"
 
 msgid "E694: Invalid operation for Funcrefs"
 msgstr "E694: 関数参照型には無効な操作です"
@@ -8354,11 +8354,15 @@ msgid "E1328: Constructor default value must be v:none: %s"
 msgstr "E1328: コンストラクタのデフォルト値は v:none でなければなりません: %s"
 
 #, c-format
+msgid "E1329: Invalid class variable declaration: %s"
+msgstr "E1329: 不正なクラス変数の宣言です: %s"
+
+#, c-format
 msgid "E1330: Invalid type for object variable: %s"
 msgstr "E1330: オブジェクト変数として無効な型です: %s"
 
-msgid "E1331: Public must be followed by \"this\" or \"static\""
-msgstr "E1331: pulic の後ろに \"this\" または \"static\" が必要です"
+msgid "E1331: Public must be followed by \"var\" or \"static\""
+msgstr "E1331: pulic の後ろに \"var\" または \"static\" が必要です"
 
 #, c-format
 msgid "E1332: Public variable name cannot start with underscore: %s"
@@ -8486,8 +8490,8 @@ msgstr ""
 "E1367: インターフェイス \"%2$s\" 内の変数 \"%1$s\" のアクセスレベルが異なって"
 "います"
 
-msgid "E1368: Static cannot be followed by \"this\" in a variable name"
-msgstr "E1368: 変数名で static の後に \"this\" を置くことはできません"
+msgid "E1368: Static must be followed by \"var\" or \"def\""
+msgstr "E1368: static の後ろに \"var\" または \"def\" が必要です"
 
 #, c-format
 msgid "E1369: Duplicate variable: %s"
@@ -8630,6 +8634,16 @@ msgstr "E1403: 型エイリアス \"%s\" を値として使うことはできま
 
 msgid "E1404: Abstract cannot be used in an interface"
 msgstr "E1404: abstract をインターフェイス内で使うことはできません"
+
+#, c-format
+msgid "E1405: Class \"%s\" cannot be used as a value"
+msgstr "E1405: クラス \"%s\" を値として使うことはできません"
+
+msgid "E1406: Cannot use a Class as a variable or value"
+msgstr "E1406: クラスを変数や値として使うことはできません"
+
+msgid "E1407: Cannot use a Typealias as a variable or value"
+msgstr "E1407: 型エイリアスを変数や値として使うことはできません"
 
 #, c-format
 msgid "E1500: Cannot mix positional and non-positional arguments: %s"
