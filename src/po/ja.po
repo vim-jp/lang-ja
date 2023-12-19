@@ -8365,7 +8365,7 @@ msgid ""
 "E1331: Public must be followed by \"var\" or \"static\" or \"final\" or "
 "\"const\""
 msgstr ""
-"E1331: pulic の後ろに \"var\", \"static\", \"final\" または \"const\" が必要"
+"E1331: public の後ろに \"var\", \"static\", \"final\" または \"const\" が必要"
 "です"
 
 #, c-format
@@ -8498,7 +8498,8 @@ msgid ""
 "E1368: Static must be followed by \"var\" or \"def\" or \"final\" or "
 "\"const\""
 msgstr ""
-"E1368: static の後ろに \"var\", \"def\", \"final\", \"const\" が必要です"
+"E1368: static の後ろに \"var\", \"def\", \"final\" または \"const\" が必要で"
+"す"
 
 #, c-format
 msgid "E1369: Duplicate variable: %s"
