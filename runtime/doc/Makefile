@@ -9,7 +9,7 @@ test:
 	for i in $(JA_FILES); do \
 		echo Checking $$i; \
 		LC_ALL=en_US.UTF-8 MANROFFSEQ='' MANWIDTH=80 man --warnings -E UTF-8 -l -Tutf8 -Z $$i > $$i.log 2>&1 > /dev/null; \
-		grep -v "cannot adjust line\|can't break line" $$i.log && exit 1 || :; \
+		grep -v "cannot adjust line\|\(cannot\|can't\) break line" $$i.log && exit 1 || :; \
 	done
 
 clean:

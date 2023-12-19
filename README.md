@@ -122,10 +122,10 @@ nsis/lang                          |Windows用インストーラーの翻訳フ�
 
     ファイル単体をチェックする場合は以下のコマンドを使う。
 
-        $ LC_ALL=en_US.UTF-8 MANROFFSEQ='' MANWIDTH=80 man --warnings -E UTF-8 -l -Tutf8 -Z vim-ja.UTF-8.1 2>&1 > /dev/null | grep -v "cannot adjust line\|can't break line"
+        $ LC_ALL=en_US.UTF-8 MANROFFSEQ='' MANWIDTH=80 man --warnings -E UTF-8 -l -Tutf8 -Z vim-ja.UTF-8.1 2>&1 > /dev/null | grep -v "cannot adjust line\|\(cannot\|can't\) break line"
 
     (末尾の `grep -v` は、日本語の場合に大量に表示される `cannot adjust line`
-    と `can't break line` を除外するためのもの。)
+    と `cannot break line` (あるいは `can't break line`) を除外するためのもの。)
 
     参照: <https://lintian.debian.org/tags/manpage-has-errors-from-man.html>
 
