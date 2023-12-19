@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-01 15:54+0900\n"
+"POT-Creation-Date: 2023-12-18 16:41+0900\n"
 "PO-Revision-Date: 2023-06-13 19:15+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -2233,7 +2233,7 @@ msgstr "%s の処理中にエラーが検出されました:"
 msgid "line %4ld:"
 msgstr "行 %4ld:"
 
-msgid "Messages maintainer: Bram Moolenaar <Bram@vim.org>"
+msgid "Messages maintainer: The Vim Project"
 msgstr "日本語メッセージ翻訳/監修: 村岡 太郎 <koron.kaoriya@gmail.com>"
 
 msgid "Interrupt: "
@@ -2704,6 +2704,10 @@ msgstr " 矩形選択"
 
 msgid "recording"
 msgstr "記録中"
+
+#, c-format
+msgid "Searching for \"%s\" under \"%s\" in \"%s\""
+msgstr "\"%s\" を \"%s\" 以下の \"%s\" から検索中"
 
 #, c-format
 msgid "Searching for \"%s\" in \"%s\""
@@ -5180,6 +5184,9 @@ msgstr "E417: 引数がありません: %s"
 msgid "E418: Illegal value: %s"
 msgstr "E418: 不正な値です: %s"
 
+#~ msgid "E418: I'm a teapot"
+#~ msgstr ""
+
 msgid "E419: FG color unknown"
 msgstr "E419: 未知の前景色です"
 
@@ -5484,6 +5491,9 @@ msgstr "はファイルでも書込み可能デバイスでもありません"
 #, c-format
 msgid "E503: \"%s\" is not a file or writable device"
 msgstr "E503: \"%s\" はファイルでも書込み可能デバイスでもありません"
+
+#~ msgid "E503: Coffee is currently not available"
+#~ msgstr ""
 
 msgid "is read-only (cannot override: \"W\" in 'cpoptions')"
 msgstr "は読込専用です (\"W\" が 'cpoptions' にあるため、強制書込できません)"
@@ -5847,6 +5857,13 @@ msgstr "E612: signの定義が多過ぎます"
 msgid "E613: Unknown printer font: %s"
 msgstr "E613: 未知のプリンタオプションです: %s"
 
+msgid "E614: Class required"
+msgstr "E614: クラスが必要です"
+
+#, c-format
+msgid "E616: Object required for argument %d"
+msgstr "E616: 引数 %d にはオブジェクトが必要です"
+
 msgid "E617: Cannot be changed in the GTK GUI"
 msgstr "E617: GTK GUIでは変更できません"
 
@@ -5950,9 +5967,6 @@ msgstr "E647: setDot に無効なバッファ識別子があります"
 
 msgid "E648: Invalid buffer identifier in close"
 msgstr "E648: close に無効なバッファ識別子があります"
-
-msgid "E649: Invalid buffer identifier in close"
-msgstr "E649: close に無効なバッファ識別子があります"
 
 msgid "E650: Invalid buffer identifier in defineAnnoType"
 msgstr "E650: defineAnnoType に無効なバッファ識別子があります"
@@ -6082,8 +6096,9 @@ msgstr "E687: ターゲットがリスト型内の要素よりも少ないです
 msgid "E688: More targets than List items"
 msgstr "E688: ターゲットがリスト型内の要素よりも多いです"
 
-msgid "E689: Can only index a List, Dictionary or Blob"
-msgstr "E689: リスト型、辞書型、Blob型以外はインデックス指定できません"
+#, c-format
+msgid "E689: Index not allowed after a %s: %s"
+msgstr "E689: %s の後にインデックスは許されません: %s"
 
 msgid "E690: Missing \"in\" after :for"
 msgstr "E690: :for の後に \"in\" がありません"
@@ -6093,6 +6108,10 @@ msgstr "E691: リスト型はリスト型としか比較できません"
 
 msgid "E692: Invalid operation for List"
 msgstr "E692: リスト型には無効な操作です"
+
+#, c-format
+msgid "E693: Class or class typealias required for argument %d"
+msgstr "E693: 引数 %d にはクラスまたはクラスの型エイリアスが必要です"
 
 msgid "E694: Invalid operation for Funcrefs"
 msgstr "E694: 関数参照型には無効な操作です"
@@ -6134,6 +6153,10 @@ msgstr "E704: 関数参照型変数名は大文字で始まらなければなり
 #, c-format
 msgid "E705: Variable name conflicts with existing function: %s"
 msgstr "E705: 変数名が既存の関数名と衝突します: %s"
+
+#, c-format
+msgid "E706: Argument of %s must be a List, String or Dictionary"
+msgstr "E706: %s の引数はリスト型、文字列または辞書型でなければなりません"
 
 #, c-format
 msgid "E707: Function name conflicts with variable: %s"
@@ -7027,8 +7050,8 @@ msgid "E962: Invalid action: '%s'"
 msgstr "E962: 無効な操作です: '%s'"
 
 #, c-format
-msgid "E963: Setting %s to value with wrong type"
-msgstr "E963: %s を間違った型の値で設定しています"
+msgid "E963: Setting v:%s to value with wrong type"
+msgstr "E963: v:%s を間違った型の値で設定しています"
 
 #, c-format
 msgid "E964: Invalid column number: %ld"
@@ -7869,8 +7892,8 @@ msgid "E1202: No white space allowed after '%s': %s"
 msgstr "E1202: '%s' の後にスペースは許されません: %s"
 
 #, c-format
-msgid "E1203: Dot can only be used on a dictionary: %s"
-msgstr "E1203: ドットは辞書の中でのみ使用できます: %s"
+msgid "E1203: Dot not allowed after a %s: %s"
+msgstr "E1203: %s の後にドットは許されません: %s"
 
 #, c-format
 msgid "E1204: No Number allowed after .: '\\%%%c'"
@@ -8289,38 +8312,38 @@ msgid "E1316: Class can only be defined in Vim9 script"
 msgstr "E1316: クラスは Vim9 script の中でのみ定義できます"
 
 #, c-format
-msgid "E1317: Invalid object member declaration: %s"
-msgstr "E1317: 不正なオブジェクトメンバー宣言です: %s"
+msgid "E1317: Invalid object variable declaration: %s"
+msgstr "E1317: 不正なオブジェクト変数の宣言です: %s"
 
 #, c-format
 msgid "E1318: Not a valid command in a class: %s"
 msgstr "E1318: クラス内では使えないコマンドです: %s"
 
-msgid "E1319: Using a class as a Number"
+msgid "E1319: Using a Class as a Number"
 msgstr "E1319: クラスを数値として扱っています"
 
-msgid "E1320: Using an object as a Number"
+msgid "E1320: Using an Object as a Number"
 msgstr "E1320: オブジェクトを数値として扱っています"
 
-msgid "E1321: Using a class as a Float"
+msgid "E1321: Using a Class as a Float"
 msgstr "E1321: クラスを浮動小数点数として扱っています"
 
-msgid "E1322: Using an object as a Float"
+msgid "E1322: Using an Object as a Float"
 msgstr "E1322: オブジェクトを浮動小数点数として扱っています"
 
-msgid "E1323: Using a class as a String"
+msgid "E1323: Using a Class as a String"
 msgstr "E1323: クラスを文字列として扱っています"
 
-msgid "E1324: Using an object as a String"
+msgid "E1324: Using an Object as a String"
 msgstr "E1324: オブジェクトを文字列として扱っています"
 
 #, c-format
-msgid "E1325: Method not found on class \"%s\": %s"
-msgstr "E1325: メソッドがクラス \"%s\" 内で見つかりません: %s"
+msgid "E1325: Method \"%s\" not found in class \"%s\""
+msgstr "E1325: メソッド \"%s\" がクラス \"%s\" 内で見つかりません"
 
 #, c-format
-msgid "E1326: Member not found on object \"%s\": %s"
-msgstr "E1326: メンバーがオブジェクト \"%s\" 内で見つかりません: %s"
+msgid "E1326: Variable \"%s\" not found in object \"%s\""
+msgstr "E1326: 変数 \"%s\" がオブジェクト \"%s\" 内で見つかりません"
 
 #, c-format
 msgid "E1327: Object required, found %s"
@@ -8331,40 +8354,36 @@ msgid "E1328: Constructor default value must be v:none: %s"
 msgstr "E1328: コンストラクタのデフォルト値は v:none でなければなりません: %s"
 
 #, c-format
-msgid "E1329: Cannot get object member type from initializer: %s"
-msgstr "E1329: オブジェクトメンバー型を初期化子から取得できません: %s"
+msgid "E1329: Invalid class variable declaration: %s"
+msgstr "E1329: 不正なクラス変数の宣言です: %s"
 
 #, c-format
-msgid "E1330: Invalid type for object member: %s"
-msgstr "E1330: オブジェクトメンバーとして無効な型です: %s"
+msgid "E1330: Invalid type for object variable: %s"
+msgstr "E1330: オブジェクト変数として無効な型です: %s"
 
-msgid "E1331: Public must be followed by \"this\" or \"static\""
-msgstr "E1331: pulic の後ろに \"this\" または \"static\" が必要です"
-
-#, c-format
-msgid "E1332: Public member name cannot start with underscore: %s"
+msgid ""
+"E1331: Public must be followed by \"var\" or \"static\" or \"final\" or "
+"\"const\""
 msgstr ""
-"E1332: パブリックメンバー名はアンダースコアで始めることはできません: %s"
+"E1331: public の後ろに \"var\", \"static\", \"final\" または \"const\" が必要"
+"です"
 
 #, c-format
-msgid "E1333: Cannot access private member: %s"
-msgstr "E1333: プライベートメンバーにアクセスできません: %s"
+msgid "E1332: Public variable name cannot start with underscore: %s"
+msgstr "E1332: パブリック変数名はアンダースコアで始めることはできません: %s"
 
 #, c-format
-msgid "E1334: Object member not found: %s"
-msgstr "E1334: オブジェクトメンバーが見つかりません: %s"
+msgid "E1333: Cannot access protected variable \"%s\" in class \"%s\""
+msgstr ""
+"E1333: クラス \"%2$s\" 内のプロテクト変数 \"%1$s\" にアクセスできません"
 
 #, c-format
-msgid "E1335: Member is not writable: %s"
-msgstr "E1335: メンバーに書込みできません: %s"
+msgid "E1335: Variable \"%s\" in class \"%s\" is not writable"
+msgstr "E1335: クラス \"%2$s\" 内の変数 \"%1$s\" は書込み可能ではありません"
 
 #, c-format
-msgid "E1337: Class member not found: %s"
-msgstr "E1337: クラスメンバーが見つかりません: %s"
-
-#, c-format
-msgid "E1338: Member not found on class \"%s\": %s"
-msgstr "E1338: メンバーがクラス \"%s\" 内で見つかりません: %s"
+msgid "E1337: Class variable \"%s\" not found in class \"%s\""
+msgstr "E1337: クラス変数 \"%s\" がクラス \"%s\" 内に見つかりません"
 
 msgid ""
 "E1339: Cannot add a textprop with text after using a textprop with a "
@@ -8388,8 +8407,8 @@ msgstr "E1342: インターフェイスは Vim9 script の中でのみ使用で�
 msgid "E1343: Interface name must start with an uppercase letter: %s"
 msgstr "E1343: インターフェイス名は英大文字で始まらなければなりません: %s"
 
-msgid "E1344: Cannot initialize a member in an interface"
-msgstr "E1344: インターフェイス内のメンバーを初期化できません"
+msgid "E1344: Cannot initialize a variable in an interface"
+msgstr "E1344: インターフェイス内の変数を初期化できません"
 
 #, c-format
 msgid "E1345: Not a valid command in an interface: %s"
@@ -8404,13 +8423,14 @@ msgid "E1347: Not a valid interface: %s"
 msgstr "E1347: 無効なインターフェイスです: %s"
 
 #, c-format
-msgid "E1348: Member \"%s\" of interface \"%s\" not implemented"
+msgid "E1348: Variable \"%s\" of interface \"%s\" is not implemented"
 msgstr ""
-"E1348: メンバー \"%s\" (インターフェイス \"%s\" 内) は実装されていません"
+"E1348: インターフェイス \"%2$s\" 内の変数 \"%1$s\" は実装されていません"
 
 #, c-format
-msgid "E1349: Function \"%s\" of interface \"%s\" not implemented"
-msgstr "E1349: 関数 \"%s\" (インターフェイス \"%s\" 内) は実装されていません"
+msgid "E1349: Method \"%s\" of interface \"%s\" is not implemented"
+msgstr ""
+"E1349: インターフェイス \"%2$s\" 内のメソッド \"%1$s\" は実装されていません"
 
 msgid "E1350: Duplicate \"implements\""
 msgstr "E1350: \"implements\" が重複しています"
@@ -8437,14 +8457,14 @@ msgstr "E1355: 関数が重複しています: %s"
 msgid "E1356: \"super\" must be followed by a dot"
 msgstr "E1356: \"super\" は後ろにドットが必要です"
 
-msgid "E1357: Using \"super\" not in a class function"
-msgstr "E1357: クラス関数の外で \"super\" が使われました"
+msgid "E1357: Using \"super\" not in a class method"
+msgstr "E1357: クラスメソッドの外で \"super\" が使われました"
 
 msgid "E1358: Using \"super\" not in a child class"
 msgstr "E1358: 子クラス以外で \"super\" が使われました"
 
-msgid "E1359: Cannot define a \"new\" function in an abstract class"
-msgstr "E1359: 抽象クラス内では \"new\" 関数は定義できません"
+msgid "E1359: Cannot define a \"new\" method in an abstract class"
+msgstr "E1359: 抽象クラス内では \"new\" メソッドは定義できません"
 
 msgid "E1360: Using a null object"
 msgstr "E1360: nullを数値として扱っています"
@@ -8461,8 +8481,268 @@ msgstr "E1363: 不完全な型です"
 msgid "E1364: Warning: Pointer block corrupted"
 msgstr "E1364: 警告: ポインタブロックが壊れています"
 
+msgid "E1365: Cannot use a return type with the \"new\" method"
+msgstr "E1365: \"new\" メソッドでは戻り値の型は使用できません"
+
+#, c-format
+msgid "E1366: Cannot access protected method: %s"
+msgstr "E1366: プロテクトメソッドにアクセスできません: %s"
+
+#, c-format
+msgid "E1367: Access level of variable \"%s\" of interface \"%s\" is different"
+msgstr ""
+"E1367: インターフェイス \"%2$s\" 内の変数 \"%1$s\" のアクセスレベルが異なって"
+"います"
+
+msgid ""
+"E1368: Static must be followed by \"var\" or \"def\" or \"final\" or "
+"\"const\""
+msgstr ""
+"E1368: static の後ろに \"var\", \"def\", \"final\" または \"const\" が必要で"
+"す"
+
+#, c-format
+msgid "E1369: Duplicate variable: %s"
+msgstr "E1369: 変数が重複しています: %s"
+
+msgid "E1370: Cannot define a \"new\" method as static"
+msgstr "E1370: \"new\" メソッドは static として定義できません"
+
+msgid "E1371: Abstract must be followed by \"def\""
+msgstr "E1371: abstract の後ろに \"def\" が必要です"
+
+#, c-format
+msgid "E1372: Abstract method \"%s\" cannot be defined in a concrete class"
+msgstr "E1372: 抽象メソッド \"%s\" は具象クラスの中では定義できません"
+
+#, c-format
+msgid "E1373: Abstract method \"%s\" is not implemented"
+msgstr "E1373: 抽象メソッド \"%s\" は実装されていません"
+
+#, c-format
+msgid "E1374: Class variable \"%s\" accessible only inside class \"%s\""
+msgstr "E1374: クラス変数 \"%s\" はクラス \"%s\" 内のみでアクセスできます"
+
+#, c-format
+msgid "E1375: Class variable \"%s\" accessible only using class \"%s\""
+msgstr ""
+"E1375: クラス変数 \"%s\" はクラス \"%s\" を使うことのみでアクセスできます"
+
+#, c-format
+msgid "E1376: Object variable \"%s\" accessible only using class \"%s\" object"
+msgstr ""
+"E1376: オブジェクト変数 \"%s\" はクラス \"%s\" のオブジェクトを使うことのみで"
+"アクセスできます"
+
+#, c-format
+msgid "E1377: Access level of method \"%s\" is different in class \"%s\""
+msgstr ""
+"E1377: クラス \"%2$s\" 内のメソッド \"%1$s\" のアクセスレベルが異なっています"
+
+msgid "E1378: Static member not supported in an interface"
+msgstr ""
+"E1378: インターフェイス内でスタティックメンバーはサポートされていません"
+
+msgid "E1379: Protected variable not supported in an interface"
+msgstr "E1379: インターフェイス内でプロテクト変数はサポートされていません"
+
+msgid "E1380: Protected method not supported in an interface"
+msgstr "E1380: インターフェイス内でプロテクトメソッドはサポートされていません"
+
+msgid "E1381: Interface cannot use \"implements\""
+msgstr "E1381: インターフェイスには \"implements\" は使えません"
+
+#, c-format
+msgid "E1382: Variable \"%s\": type mismatch, expected %s but got %s"
+msgstr "E1382: 変数 \"%s\": 型が不一致です。%s が必要ですが %s でした"
+
+#, c-format
+msgid "E1383: Method \"%s\": type mismatch, expected %s but got %s"
+msgstr "E1383: メソッド \"%s\": 型が不一致です。%s が必要ですが %s でした"
+
+#, c-format
+msgid "E1384: Class method \"%s\" accessible only inside class \"%s\""
+msgstr "E1384: クラスメソッド \"%s\" はクラス \"%s\" 内のみでアクセスできます"
+
+#, c-format
+msgid "E1385: Class method \"%s\" accessible only using class \"%s\""
+msgstr ""
+"E1385: クラスメソッド \"%s\" はクラス \"%s\" を使うことのみでアクセスできます"
+
+#, c-format
+msgid "E1386: Object method \"%s\" accessible only using class \"%s\" object"
+msgstr ""
+"E1386: オブジェクトメソッド \"%s\" はクラス \"%s\" のオブジェクトを使うことの"
+"みでアクセスできます"
+
+msgid "E1387: Public variable not supported in an interface"
+msgstr "E1387: インターフェイス内でパブリック変数はサポートされていません"
+
+msgid "E1388: Public keyword not supported for a method"
+msgstr "E1388: インターフェイス内で public キーワードはサポートされていません"
+
+msgid "E1389: Missing name after implements"
+msgstr "E1389: implements の後に名前がありません"
+
+#, c-format
+msgid ""
+"E1390: Cannot use an object variable \"this.%s\" except with the \"new\" "
+"method"
+msgstr ""
+"E1390: オブジェクト変数 \"this.%s\" は \"new\" メソッド以外では使用できません"
+
+#, c-format
+msgid "E1391: Cannot (un)lock variable \"%s\" in class \"%s\""
+msgstr "E1391: クラス \"%2$s\" 内の変数 \"%1$s\" を(アン)ロックできません"
+
+#, c-format
+msgid "E1392: Cannot (un)lock class variable \"%s\" in class \"%s\""
+msgstr ""
+"E1392: クラス \"%2$s\" 内のクラス変数 \"%1$s\" を(アン)ロックできません"
+
+msgid "E1393: Type can only be defined in Vim9 script"
+msgstr "E1393: 型は Vim9 script の中でのみ定義できます"
+
+#, c-format
+msgid "E1394: Type name must start with an uppercase letter: %s"
+msgstr "E1394: 型の名前は英大文字で始まらなければなりません: %s"
+
+#, c-format
+msgid "E1395: Type alias \"%s\" cannot be modified"
+msgstr "E1395: 型エイリアス \"%s\" は変更できません"
+
+#, c-format
+msgid "E1396: Type alias \"%s\" already exists"
+msgstr "E1396: 型エイリアス \"%s\" は既に存在します"
+
+msgid "E1397: Missing type alias name"
+msgstr "E1397: 型エイリアス名がありません"
+
+msgid "E1398: Missing type alias type"
+msgstr "E1398: 型エイリアスの型がありません"
+
+msgid "E1399: Type can only be used in a script"
+msgstr "E1399: 型はスクリプトの中でのみ使用できます"
+
+#, c-format
+msgid "E1400: Using type alias \"%s\" as a Number"
+msgstr "E1400: 型エイリアス \"%s\" を数値として扱っています"
+
+#, c-format
+msgid "E1401: Using type alias \"%s\" as a Float"
+msgstr "E1401: 型エイリアス \"%s\" を浮動小数点数として扱っています"
+
+#, c-format
+msgid "E1402: Using type alias \"%s\" as a String"
+msgstr "E1402: 型エイリアス \"%s\" を文字列として扱っています"
+
+#, c-format
+msgid "E1403: Type alias \"%s\" cannot be used as a value"
+msgstr "E1403: 型エイリアス \"%s\" を値として使うことはできません"
+
+msgid "E1404: Abstract cannot be used in an interface"
+msgstr "E1404: abstract をインターフェイス内で使うことはできません"
+
+#, c-format
+msgid "E1405: Class \"%s\" cannot be used as a value"
+msgstr "E1405: クラス \"%s\" を値として使うことはできません"
+
+msgid "E1406: Cannot use a Class as a variable or value"
+msgstr "E1406: クラスを変数や値として使うことはできません"
+
+msgid "E1407: Cannot use a Typealias as a variable or value"
+msgstr "E1407: 型エイリアスを変数や値として使うことはできません"
+
+msgid "E1408: Final variable not supported in an interface"
+msgstr "E1408: インターフェイス内で final 変数はサポートされていません"
+
+#, c-format
+msgid "E1409: Cannot change read-only variable \"%s\" in class \"%s\""
+msgstr ""
+"E1409: クラス \"%2$s\" 内の読取専用変数 \"%1$s\" には値を設定できません"
+
+msgid "E1410: Const variable not supported in an interface"
+msgstr "E1410: インターフェイス内で const 変数はサポートされていません"
+
+#, c-format
+msgid "E1500: Cannot mix positional and non-positional arguments: %s"
+msgstr "E1500: 位置引数と非位置引数を混ぜることはできません: %s"
+
+#, c-format
+msgid "E1501: format argument %d unused in $-style format: %s"
+msgstr ""
+"E1501: フォーマット引数 %d は $ スタイルフォーマットで使われていません: %s"
+
+#, c-format
+msgid ""
+"E1502: Positional argument %d used as field width reused as different type: "
+"%s/%s"
+msgstr ""
+"E1502: フィールド幅として使われている位置引数 %d が異なる型に再利用されていま"
+"す: %s/%s"
+
+#, c-format
+msgid "E1503: Positional argument %d out of bounds: %s"
+msgstr "E1503: 位置引数 %d が範囲外です: %s"
+
+#, c-format
+msgid "E1504: Positional argument %d type used inconsistently: %s/%s"
+msgstr "E1504: 位置引数 %d の型が一貫していません: %s/%s"
+
+#, c-format
+msgid "E1505: Invalid format specifier: %s"
+msgstr "E1505: 無効なフォーマット指示子です: %s"
+
+msgid "E1506: Buffer too small to copy xattr value or key"
+msgstr "E1506: xattr値またはキーをコピーするのにバッファが小さすぎます"
+
+msgid ""
+"E1508: Size of the extended attribute value is larger than the maximum size "
+"allowed"
+msgstr "E1508: 拡張属性値のサイズが許可されている最大サイズを超えています"
+
+msgid "E1509: Error occurred when reading or writing extended attribute"
+msgstr "E1509: 拡張属性の読込みまたは書込みでエラーが起きました"
+
+#, c-format
+msgid "E1510: Value too large: %s"
+msgstr "E1510: 値が大き過ぎます: %s"
+
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
+
+msgid "int"
+msgstr "int"
+
+msgid "long int"
+msgstr "long int"
+
+msgid "long long int"
+msgstr "long long int"
+
+msgid "unsigned int"
+msgstr "unsigned int"
+
+msgid "unsigned long int"
+msgstr "unsigned long int"
+
+msgid "unsigned long long int"
+msgstr "unsigned long long int"
+
+msgid "pointer"
+msgstr "pointer"
+
+msgid "percent"
+msgstr "percent"
+
+msgid "char"
+msgstr "char"
+
+msgid "string"
+msgstr "string"
+
+msgid "float"
+msgstr "float"
 
 msgid "search hit TOP, continuing at BOTTOM"
 msgstr "上まで検索したので下に戻ります"
