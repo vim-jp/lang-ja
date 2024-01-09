@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-18 16:41+0900\n"
+"POT-Creation-Date: 2023-12-22 12:10+0900\n"
 "PO-Revision-Date: 2023-12-19 12:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -8663,6 +8663,10 @@ msgstr ""
 
 msgid "E1410: Const variable not supported in an interface"
 msgstr "E1410: インターフェイス内で const 変数はサポートされていません"
+
+#, c-format
+msgid "E1411: Missing dot after object \"%s\""
+msgstr "E1411: オブジェクト \"%s\" の後にドットがありません"
 
 #, c-format
 msgid "E1500: Cannot mix positional and non-positional arguments: %s"
