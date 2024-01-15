@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-22 12:10+0900\n"
+"POT-Creation-Date: 2024-01-15 11:32+0900\n"
 "PO-Revision-Date: 2023-12-19 12:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -1416,6 +1416,9 @@ msgstr "mapnew() の引数"
 msgid "filter() argument"
 msgstr "filter() の引数"
 
+msgid "foreach() argument"
+msgstr "foreach() の引数"
+
 msgid "extendnew() argument"
 msgstr "extendnew() の引数"
 
@@ -2454,6 +2457,9 @@ msgstr "%s へ (%s 上の)"
 msgid "Printing '%s'"
 msgstr "印刷しています: '%s'"
 
+#~ msgid "DefaultFontNameForWindows"
+#~ msgstr ""
+
 #, c-format
 msgid "Opening the X display took %ld msec"
 msgstr "Xサーバーへの接続に %ld ミリ秒かかりました"
@@ -3394,8 +3400,8 @@ msgid "%s returning %s"
 msgstr "%s が %s を返しました"
 
 #, c-format
-msgid "Function %s does not need compiling"
-msgstr "関数 %s はコンパイルの必要がありません"
+msgid "Function %s%s%s does not need compiling"
+msgstr "関数 %s%s%s はコンパイルの必要がありません"
 
 #, c-format
 msgid "%s (%s, compiled %s)"
