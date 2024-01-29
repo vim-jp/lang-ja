@@ -6696,7 +6696,7 @@ msgid "E862: Cannot use g: here"
 msgstr "E862: ここでは g: は使えません"
 
 msgid "E863: Not allowed for a terminal in a popup window"
-msgstr "E863: 端末はポップアップウィンドウでは許されません"
+msgstr "E863: ポップアップウィンドウ内の端末では許されません"
 
 #, no-c-format
 msgid ""
