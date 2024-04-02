@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-15 11:32+0900\n"
+"POT-Creation-Date: 2024-04-02 13:30+0900\n"
 "PO-Revision-Date: 2023-12-19 12:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -174,6 +174,9 @@ msgstr " (file %d of %d)"
 #, c-format
 msgid " (file (%d) of %d)"
 msgstr " (file (%d) of %d)"
+
+msgid "[Command Line]"
+msgstr "[コマンドライン]"
 
 msgid "[Prompt]"
 msgstr "[プロンプト]"
@@ -687,9 +690,6 @@ msgstr "エラー"
 
 msgid "Interrupt"
 msgstr "割込み"
-
-msgid "[Command Line]"
-msgstr "[コマンドライン]"
 
 msgid "is a directory"
 msgstr "はディレクトリです"
@@ -4164,6 +4164,10 @@ msgid "E105: Using :loadkeymap not in a sourced file"
 msgstr "E105: :source で取込むファイル以外では :loadkeymap を使えません"
 
 #, c-format
+msgid "E106: Unsupported diff output format: %s"
+msgstr "E106: サポートしていないdiff出力フォーマットです: %s"
+
+#, c-format
 msgid "E107: Missing parentheses: %s"
 msgstr "E107: カッコ '(' がありません: %s"
 
@@ -4492,8 +4496,8 @@ msgstr "E196: このバージョンに合字はありません"
 msgid "E197: Cannot set language to \"%s\""
 msgstr "E197: 言語を \"%s\" に設定できません"
 
-msgid "E199: Active window or buffer deleted"
-msgstr "E199: アクティブなウィンドウかバッファが削除されました"
+msgid "E199: Active window or buffer changed or deleted"
+msgstr "E199: アクティブなウィンドウかバッファが変更または削除されました"
 
 msgid "E200: *ReadPre autocommands made the file unreadable"
 msgstr "E200: *ReadPre 自動コマンド がファイルを読込不可にしました"
@@ -6759,6 +6763,10 @@ msgstr ""
 msgid "E876: (NFA regexp) Not enough space to store the whole NFA"
 msgstr "E876: (NFA 正規表現) NFA全体を保存するには空きスペースが足りません"
 
+#, c-format
+msgid "E877: (NFA regexp) Invalid character class: %d"
+msgstr "E877: (NFA 正規表現) 無効な文字クラスです: %d"
+
 msgid "E878: (NFA regexp) Could not allocate memory for branch traversal!"
 msgstr ""
 "E878: (NFA 正規表現) 現在横断中のブランチに十分なメモリを割り当てられません!"
@@ -8675,6 +8683,69 @@ msgid "E1411: Missing dot after object \"%s\""
 msgstr "E1411: オブジェクト \"%s\" の後にドットがありません"
 
 #, c-format
+msgid "E1412: Builtin object method \"%s\" not supported"
+msgstr "E1412: 組み込みオブジェクトメソッド \"%s\" はサポートされていません"
+
+msgid "E1413: Builtin class method not supported"
+msgstr "E1413: 組み込みクラスメソッドはサポートされていません"
+
+msgid "E1414: Enum can only be defined in Vim9 script"
+msgstr "E1414: 列挙型は Vim9 script の中でのみ定義できます"
+
+#, c-format
+msgid "E1415: Enum name must start with an uppercase letter: %s"
+msgstr "E1415: 列挙型の名前は英大文字で始まらなければなりません: %s"
+
+msgid "E1416: Enum cannot extend a class or enum"
+msgstr "E1416: 列挙型はクラスや列挙型を拡張できません"
+
+msgid "E1417: Abstract cannot be used in an Enum"
+msgstr "E1417: abstract を列挙型内で使うことはできません"
+
+#, c-format
+msgid "E1418: Invalid enum value declaration: %s"
+msgstr "E1418: 不正な列挙値の宣言です: %s"
+
+#, c-format
+msgid "E1419: Not a valid command in an Enum: %s"
+msgstr "E1419: 列挙型内では使えないコマンドです: %s"
+
+msgid "E1420: Missing :endenum"
+msgstr "E1420: :endenum がありません"
+
+#, c-format
+msgid "E1421: Enum \"%s\" cannot be used as a value"
+msgstr "E1421: 列挙型 \"%s\" を値として使うことはできません"
+
+#, c-format
+msgid "E1422: Enum value \"%s\" not found in enum \"%s\""
+msgstr "E1422: 列挙値 \"%s\" が列挙型 \"%s\" 内で見つかりません"
+
+#, c-format
+msgid "E1423: Enum value \"%s.%s\" cannot be modified"
+msgstr "E1423: 列挙値 \"%s\" は変更できません"
+
+#, c-format
+msgid "E1424: Using an Enum \"%s\" as a Number"
+msgstr "E1424: 列挙型 \"%s\" を数値として扱っています"
+
+#, c-format
+msgid "E1425: Using an Enum \"%s\" as a String"
+msgstr "E1425: 列挙型 \"%s\" を文字列として扱っています"
+
+#, c-format
+msgid "E1426: Enum \"%s\" ordinal value cannot be modified"
+msgstr "E1426: 列挙型 \"%s\" の順序値は変更できません"
+
+#, c-format
+msgid "E1427: Enum \"%s\" name cannot be modified"
+msgstr "E1427: 列挙型 \"%s\" の名前は変更できません"
+
+#, c-format
+msgid "E1428: Duplicate enum value: %s"
+msgstr "E1428: 列挙値が重複しています: %s"
+
+#, c-format
 msgid "E1500: Cannot mix positional and non-positional arguments: %s"
 msgstr "E1500: 位置引数と非位置引数を混ぜることはできません: %s"
 
@@ -8717,6 +8788,17 @@ msgstr "E1509: 拡張属性の読込みまたは書込みでエラーが起き�
 #, c-format
 msgid "E1510: Value too large: %s"
 msgstr "E1510: 値が大き過ぎます: %s"
+
+#, c-format
+msgid "E1511: Wrong number of characters for field \"%s\""
+msgstr "E1511: フィールド \"%s\" の文字数が間違っています"
+
+#, c-format
+msgid "E1512: Wrong character width for field \"%s\""
+msgstr "E1512: フィールド \"%s\" の文字幅が間違っています"
+
+msgid "E1513: Cannot switch buffer. 'winfixbuf' is enabled"
+msgstr "E1513: バッファを切り替えられません。'winfixbuf' が有効化されています"
 
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
@@ -9424,6 +9506,9 @@ msgstr "現在のウィンドウに使われる最小行数"
 
 msgid "minimal number of lines used for any window"
 msgstr "任意のウィンドウに使われる最小行数"
+
+msgid "keep window focused on a single buffer"
+msgstr "ウィンドウが別のバッファに切り替わらないようにする"
 
 msgid "keep the height of the window"
 msgstr "ウィンドウの高さを保つ"
