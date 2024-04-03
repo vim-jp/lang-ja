@@ -8723,7 +8723,7 @@ msgstr "E1422: 列挙値 \"%s\" が列挙型 \"%s\" 内で見つかりません"
 
 #, c-format
 msgid "E1423: Enum value \"%s.%s\" cannot be modified"
-msgstr "E1423: 列挙値 \"%s\" は変更できません"
+msgstr "E1423: 列挙値 \"%s.%s\" は変更できません"
 
 #, c-format
 msgid "E1424: Using an Enum \"%s\" as a Number"
