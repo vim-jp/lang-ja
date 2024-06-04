@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-02 13:30+0900\n"
+"POT-Creation-Date: 2024-06-04 11:11+0900\n"
 "PO-Revision-Date: 2023-12-19 12:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -442,10 +442,6 @@ msgstr "片仮名"
 msgid "Bopomofo"
 msgstr "注音字母"
 
-msgid "Not enough memory to set references, garbage collection aborted!"
-msgstr ""
-"ガーベッジコレクションを中止しました! 参照を作成するのにメモリが不足しました"
-
 msgid ""
 "\n"
 "\tLast set from "
@@ -853,6 +849,10 @@ msgstr[0] "+--%3ld 行が折畳まれました"
 msgid "+-%s%3ld line: "
 msgid_plural "+-%s%3ld lines: "
 msgstr[0] "+-%s%3ld 行: "
+
+msgid "Not enough memory to set references, garbage collection aborted!"
+msgstr ""
+"ガーベッジコレクションを中止しました! 参照を作成するのにメモリが不足しました"
 
 msgid "No match at cursor, finding next"
 msgstr "カーソルの位置にマッチはありません、次を検索しています"
@@ -3559,6 +3559,9 @@ msgstr "   第2ユーザー vimrc: \""
 
 msgid " 3rd user vimrc file: \""
 msgstr "   第3ユーザー vimrc: \""
+
+msgid " 4th user vimrc file: \""
+msgstr "   第4ユーザー vimrc: \""
 
 msgid "      user exrc file: \""
 msgstr "       ユーザー exrc: \""
@@ -8376,14 +8379,14 @@ msgid "E1330: Invalid type for object variable: %s"
 msgstr "E1330: オブジェクト変数として無効な型です: %s"
 
 msgid ""
-"E1331: Public must be followed by \"var\" or \"static\" or \"final\" or "
+"E1331: public must be followed by \"var\" or \"static\" or \"final\" or "
 "\"const\""
 msgstr ""
 "E1331: public の後ろに \"var\", \"static\", \"final\" または \"const\" が必要"
 "です"
 
 #, c-format
-msgid "E1332: Public variable name cannot start with underscore: %s"
+msgid "E1332: public variable name cannot start with underscore: %s"
 msgstr "E1332: パブリック変数名はアンダースコアで始めることはできません: %s"
 
 #, c-format
@@ -8589,10 +8592,10 @@ msgstr ""
 "E1386: オブジェクトメソッド \"%s\" はクラス \"%s\" のオブジェクトを使うことの"
 "みでアクセスできます"
 
-msgid "E1387: Public variable not supported in an interface"
+msgid "E1387: public variable not supported in an interface"
 msgstr "E1387: インターフェイス内でパブリック変数はサポートされていません"
 
-msgid "E1388: Public keyword not supported for a method"
+msgid "E1388: public keyword not supported for a method"
 msgstr "E1388: インターフェイス内で public キーワードはサポートされていません"
 
 msgid "E1389: Missing name after implements"
@@ -8744,6 +8747,9 @@ msgstr "E1427: 列挙型 \"%s\" の名前は変更できません"
 #, c-format
 msgid "E1428: Duplicate enum value: %s"
 msgstr "E1428: 列挙値が重複しています: %s"
+
+msgid "E1429: Class can only be used in a script"
+msgstr "E1429: クラスはスクリプトの中でのみ使用できます"
 
 #, c-format
 msgid "E1500: Cannot mix positional and non-positional arguments: %s"
