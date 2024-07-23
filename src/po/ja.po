@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-04 11:11+0900\n"
+"POT-Creation-Date: 2024-07-23 10:59+0900\n"
 "PO-Revision-Date: 2023-12-19 12:45+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -1337,8 +1337,8 @@ msgstr " ユーザー定義補完 (^U^N^P)"
 msgid " Omni completion (^O^N^P)"
 msgstr " オムニ補完 (^O^N^P)"
 
-msgid " Spelling suggestion (s^N^P)"
-msgstr " 綴り修正候補 (s^N^P)"
+msgid " Spelling suggestion (^S^N^P)"
+msgstr " 綴り修正候補 (^S^N^P)"
 
 msgid " Keyword Local completion (^N^P)"
 msgstr " 局所キーワード補完 (^N^P)"
@@ -5870,9 +5870,6 @@ msgstr "E612: signの定義が多過ぎます"
 msgid "E613: Unknown printer font: %s"
 msgstr "E613: 未知のプリンタオプションです: %s"
 
-msgid "E614: Class required"
-msgstr "E614: クラスが必要です"
-
 #, c-format
 msgid "E616: Object required for argument %d"
 msgstr "E616: 引数 %d にはオブジェクトが必要です"
@@ -8336,20 +8333,11 @@ msgstr "E1317: 不正なオブジェクト変数の宣言です: %s"
 msgid "E1318: Not a valid command in a class: %s"
 msgstr "E1318: クラス内では使えないコマンドです: %s"
 
-msgid "E1319: Using a Class as a Number"
-msgstr "E1319: クラスを数値として扱っています"
-
 msgid "E1320: Using an Object as a Number"
 msgstr "E1320: オブジェクトを数値として扱っています"
 
-msgid "E1321: Using a Class as a Float"
-msgstr "E1321: クラスを浮動小数点数として扱っています"
-
 msgid "E1322: Using an Object as a Float"
 msgstr "E1322: オブジェクトを浮動小数点数として扱っています"
-
-msgid "E1323: Using a Class as a String"
-msgstr "E1323: クラスを文字列として扱っています"
 
 msgid "E1324: Using an Object as a String"
 msgstr "E1324: オブジェクトを文字列として扱っています"
@@ -8625,10 +8613,6 @@ msgid "E1394: Type name must start with an uppercase letter: %s"
 msgstr "E1394: 型の名前は英大文字で始まらなければなりません: %s"
 
 #, c-format
-msgid "E1395: Type alias \"%s\" cannot be modified"
-msgstr "E1395: 型エイリアス \"%s\" は変更できません"
-
-#, c-format
 msgid "E1396: Type alias \"%s\" already exists"
 msgstr "E1396: 型エイリアス \"%s\" は既に存在します"
 
@@ -8642,18 +8626,6 @@ msgid "E1399: Type can only be used in a script"
 msgstr "E1399: 型はスクリプトの中でのみ使用できます"
 
 #, c-format
-msgid "E1400: Using type alias \"%s\" as a Number"
-msgstr "E1400: 型エイリアス \"%s\" を数値として扱っています"
-
-#, c-format
-msgid "E1401: Using type alias \"%s\" as a Float"
-msgstr "E1401: 型エイリアス \"%s\" を浮動小数点数として扱っています"
-
-#, c-format
-msgid "E1402: Using type alias \"%s\" as a String"
-msgstr "E1402: 型エイリアス \"%s\" を文字列として扱っています"
-
-#, c-format
 msgid "E1403: Type alias \"%s\" cannot be used as a value"
 msgstr "E1403: 型エイリアス \"%s\" を値として使うことはできません"
 
@@ -8663,9 +8635,6 @@ msgstr "E1404: abstract をインターフェイス内で使うことはでき�
 #, c-format
 msgid "E1405: Class \"%s\" cannot be used as a value"
 msgstr "E1405: クラス \"%s\" を値として使うことはできません"
-
-msgid "E1406: Cannot use a Class as a variable or value"
-msgstr "E1406: クラスを変数や値として使うことはできません"
 
 msgid "E1407: Cannot use a Typealias as a variable or value"
 msgstr "E1407: 型エイリアスを変数や値として使うことはできません"
@@ -9590,6 +9559,9 @@ msgstr "複数タブページ"
 
 msgid "0, 1 or 2; when to use a tab pages line"
 msgstr "0, 1 または 2; タブページ行をいつ使うか"
+
+msgid "behaviour when closing tab pages: left, uselast or empty"
+msgstr "タブページを閉じるときの挙動: left, uselast または empty"
 
 msgid "maximum number of tab pages to open for -p and \"tab all\""
 msgstr "-p と \"tab all\" で開かれるタブページの最大数"
