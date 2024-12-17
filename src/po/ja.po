@@ -266,7 +266,7 @@ msgid "tagname"
 msgstr "タグ名"
 
 msgid " kind file\n"
-msgstr " ファイル種類\n"
+msgstr " 種別 ファイル\n"
 
 msgid "'history' option is zero"
 msgstr "オプション 'history' がゼロです"
