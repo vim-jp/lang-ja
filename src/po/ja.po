@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 9.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-23 10:59+0900\n"
+"POT-Creation-Date: 2024-12-17 21:03+0900\n"
 "PO-Revision-Date: 2024-08-15 12:54+0900\n"
 "Last-Translator: MURAOKA Taro <koron.kaoriya@gmail.com>\n"
 "Language-Team: Japanese <https://github.com/vim-jp/lang-ja>\n"
@@ -2254,6 +2254,12 @@ msgstr "-- 継続 --"
 
 msgid " SPACE/d/j: screen/page/line down, b/u/k: up, q: quit "
 msgstr " SPACE/d/j: 画面/ページ/行 下, b/u/k: 上, q: 終了 "
+
+msgid "W23: Clipboard register not available, using register 0"
+msgstr "W23: クリップボードレジスタが使えません、レジスタ 0 を使用します"
+
+msgid "W24: Clipboard register not available. See :h W24"
+msgstr "W24: クリップボードレジスタが使えません、:h W24 を参照してください"
 
 msgid "Question"
 msgstr "質問"
@@ -8775,6 +8781,9 @@ msgstr "E1512: フィールド \"%s\" の文字幅が間違っています"
 msgid "E1513: Cannot switch buffer. 'winfixbuf' is enabled"
 msgstr "E1513: バッファを切り替えられません。'winfixbuf' が有効化されています"
 
+msgid "E1514: 'findfunc' did not return a List type"
+msgstr "E1514: 'findfunc' が List 型を返しませんでした"
+
 msgid "--No lines in buffer--"
 msgstr "--バッファに行がありません--"
 
@@ -9771,6 +9780,9 @@ msgstr "'s' フラグを 'shortmess' に追加 (検索メッセージを表示�
 msgid "list of flags to make messages shorter"
 msgstr "メッセージを短くするためのフラグのリスト"
 
+msgid "options for outputting messages"
+msgstr "メッセージを出力するためのオプション"
+
 msgid "show (partial) command keys in location given by 'showcmdloc'"
 msgstr "コマンド (の一部) を 'showcmdloc' で指定された場所に表示"
 
@@ -9888,6 +9900,9 @@ msgstr "挿入モード補完が CTRL-N と CTRL-P でどう動作するかを�
 
 msgid "whether to use a popup menu for Insert mode completion"
 msgstr "挿入モード補完でポップアップメニューを使うかどうか"
+
+msgid "popup menu item align order"
+msgstr "ポップアップメニューの整列順序"
 
 msgid "options for the Insert mode completion info popup"
 msgstr "挿入モード補完の情報ポップアップ用のオプション"
