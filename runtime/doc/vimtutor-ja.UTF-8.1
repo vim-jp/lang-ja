@@ -1,4 +1,4 @@
-.TH VIMTUTOR 1 "2001 April 2"
+.TH VIMTUTOR 1 "2024 August 12"
 .SH 名前
 vimtutor \- Vim チュートリアル
 .SH 書式
@@ -12,8 +12,8 @@ vimtutor \- Vim チュートリアル
 .B Vim
 を初めて学ぶ人向けのチュートリアルです。
 .PP
-引数に \-g を指定すると GUI 版の vim が利用可能であれば vim ではなく gvim
-を使って vimtutor が開始します。gvim が見つからないときは Vim が使用されます。
+引数に \-g を指定すると GUI 版の Vim が利用可能であれば vim ではなく gvim
+を使って vimtutor が開始します。gvim が見つからないときは vim が使用されます。
 .PP
 [language] 引数は "ja" や "es" などの二文字の言語名です。
 [language] 引数を省略した場合はロケールの言語が使われます。
@@ -24,11 +24,15 @@ vimtutor \- Vim チュートリアル
 は Vi 互換モードで起動されます。
 .SH ファイル
 .TP 15
-/usr/local/lib/vim/tutor/tutor[.language]
+/usr/local/share/vim/vim??/tutor/tutor[.language]
 .B Vimtutor
 の演習ファイル。
+.I vim??
+は短いバージョン番号で
+.B Vim 9.1
+では vim91 です。
 .TP 15
-/usr/local/lib/vim/tutor/tutor.vim
+/usr/local/share/vim/vim??/tutor/tutor.vim
 演習ファイルをコピーするための Vim スクリプト。
 .SH 著者
 .B Vimtutor
