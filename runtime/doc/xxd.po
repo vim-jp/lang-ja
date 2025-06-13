@@ -1,0 +1,1027 @@
+# xxdの日本語訳
+# Copyright (C) 1990-1997 Juergen Weigert.
+# This file is distributed under the same license as the Vim package.
+# K.Takata <kentkt@csc.jp>, 2016, 2018, 2022, 2023, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xxd\n"
+"POT-Creation-Date: 2025-06-13 22:25+0900\n"
+"PO-Revision-Date: 2025-06-13 23:03+0900\n"
+"Last-Translator: K.Takata <kentkt@csc.jp>\n"
+"Language-Team: vim-jp.org\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#.  21st May 1996
+#.  Man page author:
+#.     Tony Nugent <tony@sctnugen.ppp.gu.edu.au> <T.Nugent@sct.gu.edu.au>
+#.     Changes by Bram Moolenaar <Bram@vim.org>
+#. type: SH
+#: evim.1:2 vim.1:2 vimdiff.1:2 vimtutor.1:2 xxd.1:7
+#, no-wrap
+msgid "NAME"
+msgstr "名前"
+
+#. type: SH
+#: evim.1:4 vim.1:4 vimdiff.1:4 vimtutor.1:4 xxd.1:10
+#, no-wrap
+msgid "SYNOPSIS"
+msgstr "書式"
+
+#. type: SH
+#: evim.1:10 vim.1:32 vimdiff.1:10 vimtutor.1:7 xxd.1:19
+#, no-wrap
+msgid "DESCRIPTION"
+msgstr "説明"
+
+#. type: SH
+#: evim.1:33 vim.1:129 vimdiff.1:34 xxd.1:30
+#, no-wrap
+msgid "OPTIONS"
+msgstr "オプション"
+
+#. type: SH
+#: evim.1:47 vim.1:588 vimdiff.1:39 vimtutor.1:60 xxd.1:388
+#, no-wrap
+msgid "SEE ALSO"
+msgstr "関連項目"
+
+#. type: SH
+#: evim.1:49 vim.1:590 vimdiff.1:41 vimtutor.1:48 xxd.1:397
+#, no-wrap
+msgid "AUTHOR"
+msgstr "著者"
+
+#. type: TH
+#: xxd.1:1
+#, no-wrap
+msgid "XXD"
+msgstr "XXD"
+
+#. type: TH
+#: xxd.1:1
+#, no-wrap
+msgid "May 2024"
+msgstr "May 2024"
+
+#. type: TH
+#: xxd.1:1
+#, no-wrap
+msgid "Manual page for xxd"
+msgstr "Manual page for xxd"
+
+#. type: Plain text
+#: xxd.1:10
+msgid "I<xxd> - make a hex dump or do the reverse."
+msgstr "I<xxd> - 16 進ダンプを作成したり、元に戻したり。"
+
+#. type: Plain text
+#: xxd.1:13
+msgid "B<xxd> -h[elp]"
+msgstr "B<xxd> -h[elp]"
+
+#. type: Plain text
+#: xxd.1:16
+msgid "B<xxd> [options] [infile [outfile]]"
+msgstr "B<xxd> [options] [infile [outfile]]"
+
+#. type: Plain text
+#: xxd.1:19
+msgid "B<xxd> -r[evert] [options] [infile [outfile]]"
+msgstr "B<xxd> -r[evert] [options] [infile [outfile]]"
+
+#. type: Plain text
+#: xxd.1:30
+msgid ""
+"I<xxd> creates a hex dump of a given file or standard input.  It can also "
+"convert a hex dump back to its original binary form.  Like B<uuencode>(1)  "
+"and B<uudecode>(1)  it allows the transmission of binary data in a `mail-"
+"safe' ASCII representation, but has the advantage of decoding to standard "
+"output.  Moreover, it can be used to perform binary file patching."
+msgstr ""
+"ファイルや標準入力から 16 進ダンプを作成します。 16 進ダンプから元のバイナリ"
+"に戻すこともできます。 B<uuencode>(1)  や B<uudecode>(1)  のように、バイナリ"
+"データを、メールに貼り付け可能な ASCII 形式に変換できたり、標準出力に出力する"
+"こともできます。 さらに、バイナリファイルにパッチを当てるという使い方もできま"
+"す。"
+
+#. type: Plain text
+#: xxd.1:44
+msgid ""
+"If no I<infile> is given, standard input is read.  If I<infile> is specified "
+"as a \\`B<->' character, then input is taken from standard input.  If no "
+"I<outfile> is given (or a \\`B<->' character is in its place), results are "
+"sent to standard output."
+msgstr ""
+"I<infile> を指定しなかった場合は、標準入力が読み込まれます。 I<infile> に "
+"\\`B<->' を指定した場合も、標準入力から読み込まれます。 I<outfile> を指定しな"
+"かった (または \\`B<->' を指定した) 場合は、標準出力に出力されます。"
+
+#. type: Plain text
+#: xxd.1:57
+msgid ""
+"Note that a \"lazy\" parser is used which does not check for more than the "
+"first option letter, unless the option is followed by a parameter.  Spaces "
+"between a single option letter and its parameter are optional.  Parameters "
+"to options can be specified in decimal, hexadecimal or octal notation.  Thus "
+"B<-c8>, B<-c 8>, B<-c 010> and B<-cols 8> are all equivalent."
+msgstr ""
+"引数の解釈処理は適当なので注意してください。 パラメータを取らない引数は最初の"
+"一文字だけチェックされます。 引数の文字とパラメータの間のスペースは省略可能で"
+"す。 パラメータは 10 進数、16 進数、8 進数で指定できます。 B<-c8> 、 B<-c "
+"8> 、 B<-c 010> 、 B<-cols 8> はすべて同じ意味です。"
+
+#. type: TP
+#: xxd.1:58
+#, no-wrap
+msgid "I<-a> | I<-autoskip>"
+msgstr "I<-a> | I<-autoskip>"
+
+#. type: Plain text
+#: xxd.1:61
+msgid "Toggle autoskip: A single '*' replaces NUL-lines.  Default off."
+msgstr "オートスキップ: 連続した nul 行を一つの '*' で置き換える。"
+
+#. type: TP
+#: xxd.1:61
+#, no-wrap
+msgid "I<-b> | I<-bits>"
+msgstr "I<-b> | I<-bits>"
+
+#. type: Plain text
+#: xxd.1:68
+msgid ""
+"Switch to bits (binary digits) dump, rather than hex dump.  This option "
+"writes octets as eight digits \"1\"s and \"0\"s instead of a normal "
+"hexadecimal dump. Each line is preceded by a line number in hexadecimal and "
+"followed by an ASCII (or EBCDIC) representation. The command line switches -"
+"p, -i do not work with this mode."
+msgstr ""
+"ビット (2進数) ダンプ。 1 オクテットが \"1\" と \"0\" の 8 文字で出力されま"
+"す。 各行の行頭には 16 進数の行番号が表示されます。 行末には ASCII (または "
+"EBCDIC) で表した場合の文字が表示されます。 このモードでは -p、-i は機能しませ"
+"ん。"
+
+#. type: TP
+#: xxd.1:68
+#, no-wrap
+msgid "I<-c cols >|I< -cols cols>"
+msgstr "I<-e>"
+
+#. type: Plain text
+#: xxd.1:74
+msgid ""
+"Format E<lt>I<cols>E<gt> octets per line. Default 16 (-i: 12, -ps: 30, -b: "
+"6). Max 256.  No maximum for -ps. With -ps, 0 results in one long line of "
+"output."
+msgstr ""
+"リトルエンディアンの 16 進ダンプに切り替える。 このオプションは、バイトのグ"
+"ループをリトルエンディアンのバイト順のワードとして扱います。 標準のグルーピン"
+"グは 4 バイトですが、 I<-g> を使うことで変更可能です。 このオプションは 16 進"
+"ダンプのみに適用され、ASCII (あるいは EBCDIC)  表示は変更されません。 この"
+"モードでは -r、-p、-i は機能しません。"
+
+#. type: TP
+#: xxd.1:74
+#, no-wrap
+msgid "I<-C> | I<-capitalize>"
+msgstr "I<-c cols >|I< -cols cols>"
+
+#. type: Plain text
+#: xxd.1:77
+msgid "Capitalize variable names in C include file style, when using -i."
+msgstr ""
+"一行 E<lt>I<cols>E<gt> オクテットで出力する。標準設定は 16 (-i: 12, -ps: 30, "
+"-b: 6)。最大 256。 -ps には最大値がありません。 -ps 付きの場合、0 を指定する"
+"と単一の長い行で出力されます。"
+
+#. type: TP
+#: xxd.1:77
+#, no-wrap
+msgid "I<-d>"
+msgstr "I<-C> | I<-capitalize>"
+
+#. type: Plain text
+#: xxd.1:80
+msgid "show offset in decimal instead of hex."
+msgstr "-i を使用した際に、C インクルードファイル形式の変数名を大文字にする。"
+
+#. type: TP
+#: xxd.1:80
+#, no-wrap
+msgid "I<-E> | I<-EBCDIC>"
+msgstr "I<-d>"
+
+#. type: Plain text
+#: xxd.1:85
+msgid ""
+"Change the character encoding in the righthand column from ASCII to EBCDIC.  "
+"This does not change the hexadecimal representation. The option is "
+"meaningless in combinations with -r, -p or -i."
+msgstr "オフセットを 16 進の代わりに 10 進で表示する。"
+
+#. type: TP
+#: xxd.1:85
+#, no-wrap
+msgid "I<-e>"
+msgstr "I<-E> | I<-EBCDIC>"
+
+#. type: Plain text
+#: xxd.1:95
+msgid ""
+"Switch to little-endian hex dump.  This option treats byte groups as words "
+"in little-endian byte order.  The default grouping of 4 bytes may be changed "
+"using I<-g>.  This option only applies to the hex dump, leaving the ASCII "
+"(or EBCDIC)  representation unchanged.  The command line switches -r, -p, -i "
+"do not work with this mode."
+msgstr ""
+"右端に出力される文字のエンコーディングを ASCII から EBCDIC に変更する。 16 進"
+"ダンプの出力形式は変更されません。 -r、-p、-i が同時に指定された場合は何の効"
+"果もありません。"
+
+#. type: TP
+#: xxd.1:95
+#, no-wrap
+msgid "I<-g bytes >|I< -groupsize bytes>"
+msgstr "I<-g bytes >|I< -groupsize bytes>"
+
+#. type: Plain text
+#: xxd.1:106
+msgid ""
+"Separate the output of every E<lt>I<bytes>E<gt> bytes (two hex characters or "
+"eight bit digits each) by a whitespace.  Specify I<-g 0> to suppress "
+"grouping.  E<lt>I<Bytes>E<gt> defaults to I<2> in normal mode, I<4> in "
+"little-endian mode and I<1> in bits mode.  Grouping does not apply to "
+"PostScript or include style."
+msgstr ""
+"出力を E<lt>I<bytes>E<gt> バイト (2 文字の 16 進数、または 8 文字の 2 進数) "
+"ごとにスペースで区切ります。 区切らずに出力するには I<-g 0> を指定してくださ"
+"い。 E<lt>I<Bytes>E<gt> の標準設定は I<2> で、リトルエンディアンモードの場合"
+"は I<4> 、 2 進ダンプの場合は I<1> です。 ポストスクリプト形式やインクルード"
+"形式で出力するときは、このオプションは使われません。"
+
+#. type: TP
+#: xxd.1:106
+#, no-wrap
+msgid "I<-h> | I<-help>"
+msgstr "I<-h> | I<-help>"
+
+#. type: Plain text
+#: xxd.1:109
+msgid ""
+"Print a summary of available commands and exit.  No hex dumping is performed."
+msgstr "コマンドの説明を出力して終了する。変換は実行されません。"
+
+#. type: TP
+#: xxd.1:109
+#, no-wrap
+msgid "I<-i> | I<-include>"
+msgstr "I<-i> | I<-include>"
+
+#. type: Plain text
+#: xxd.1:113
+msgid ""
+"Output in C include file style. A complete static array definition is "
+"written (named after the input file), unless xxd reads from stdin."
+msgstr ""
+"C インクルードファイル形式で出力する。 入力ファイルの名前が付けられた静的配列"
+"の定義が出力されます。 標準入力の場合は定義の中身だけ出力されます。"
+
+#. type: TP
+#: xxd.1:113
+#, no-wrap
+msgid "I<-l len >|I< -len len>"
+msgstr "I<-l len >|I< -len len>"
+
+#. type: Plain text
+#: xxd.1:118
+msgid "Stop after writing E<lt>I<len>E<gt> octets."
+msgstr "E<lt>I<len>E<gt> オクテットだけ出力する。"
+
+#. type: TP
+#: xxd.1:118
+#, no-wrap
+msgid "I<-n name  |  -name name>"
+msgstr "I<-n name  |  -name name>"
+
+#. type: Plain text
+#: xxd.1:122
+msgid ""
+"Override the variable name output when -i is used. The array is named "
+"I<name> and the length is named I<name>_len."
+msgstr ""
+"-i が使われたときに変数名の出力を上書きする。 配列は I<name> と名付けられ、長"
+"さは I<name>_len と名付けられます。"
+
+#. type: TP
+#: xxd.1:122
+#, no-wrap
+msgid "I<-o offset>"
+msgstr "I<-o offset>"
+
+#. type: Plain text
+#: xxd.1:127
+msgid "Add E<lt>I<offset>E<gt> to the displayed file position."
+msgstr "表示されるファイル位置に E<lt>I<offset>E<gt> を加算する。"
+
+#. type: TP
+#: xxd.1:127
+#, no-wrap
+msgid "I<-p> | I<-ps> | I<-postscript> | I<-plain>"
+msgstr "I<-p> | I<-ps> | I<-postscript> | I<-plain>"
+
+#. type: Plain text
+#: xxd.1:131
+msgid ""
+"Output in PostScript continuous hex dump style. Also known as plain hex dump "
+"style."
+msgstr ""
+"ポストスクリプト形式の 16 進ダンプを出力する。別名 プレーン 16 進ダンプ。"
+
+#. type: TP
+#: xxd.1:131
+#, no-wrap
+msgid "I<-r> | I<-revert>"
+msgstr "I<-r> | I<-revert>"
+
+#. type: Plain text
+#: xxd.1:142
+msgid ""
+"Reverse operation: convert (or patch) hex dump into binary.  If not writing "
+"to stdout, xxd writes into its output file without truncating it. Use the "
+"combination I<-r -p> to read plain hexadecimal dumps without line number "
+"information and without a particular column layout. Additional whitespace "
+"and line breaks are allowed anywhere. Use the combination I<-r -b> to read a "
+"bits dump instead of a hex dump."
+msgstr ""
+"元に戻す: 16 進ダンプからバイナリ形式に変換 (またはパッチ) します。 ファイル"
+"へ出力する場合、出力先のファイルは切り詰めされません。 行番号や特定の書式がな"
+"いプレーン 16 進ダンプを読み込む場合は、 I<-r -p> の組み合わせを使ってくださ"
+"い。空白と改行は無視されます。 16 進ダンプの代わりにビットダンプを読み込むに"
+"は、 I<-r -b> の組み合わせを使ってください。"
+
+#. type: TP
+#: xxd.1:142
+#, no-wrap
+msgid "I<-R> I<when>"
+msgstr "I<-R> I<when>"
+
+#. type: Plain text
+#: xxd.1:153
+msgid ""
+"In the output the hex-value and the value are both colored with the same "
+"color depending on the hex-value. Mostly helping to differentiate printable "
+"and non-printable characters.  I<when> is B<never>, B<always>, or B<auto> "
+"(default: auto).  When the B<$NO_COLOR> environment variable is set, "
+"colorization will be disabled."
+msgstr ""
+"16 進の値に基づいて、16 進の値とその値の両方が同じ色でカラー表示される。 たい"
+"ていは、表示可能文字と非表示可能文字を区別するのに有用です。 I<when> は "
+"B<never>, B<always>, あるいは B<auto> (デフォルト: auto)  のいずれかです。 "
+"B<$NO_COLOR> 環境変数が設定されているときは、カラー表示は無効化されます。"
+
+#. type: TP
+#: xxd.1:153
+#, no-wrap
+msgid "I<-seek offset>"
+msgstr "I<-seek offset>"
+
+#. type: Plain text
+#: xxd.1:160
+msgid ""
+"When used after I<-r>: revert with E<lt>I<offset>E<gt> added to file "
+"positions found in hex dump."
+msgstr ""
+"I<-r> の後で使われた場合: 16 進ダンプを出力するファイルの位置に "
+"E<lt>I<offset>E<gt> を加える。"
+
+#. type: TP
+#: xxd.1:160
+#, no-wrap
+msgid "I<-s [+][-]seek>"
+msgstr "I<-s [+][-]seek>"
+
+#. type: Plain text
+#: xxd.1:170
+msgid ""
+"Start at E<lt>I<seek>E<gt> bytes abs. (or rel.) infile offset.  I<+ "
+">indicates that the seek is relative to the current stdin file position "
+"(meaningless when not reading from stdin).  I<- >indicates that the seek "
+"should be that many characters from the end of the input (or if combined "
+"with I<+>: before the current stdin file position).  Without -s option, xxd "
+"starts at the current file position."
+msgstr ""
+"infile の E<lt>I<seek>E<gt> バイト目 (絶対位置、または相対位置) から開始す"
+"る。 I<+ >は、現在の標準入力の位置から相対的な位置を示します (標準入力から読"
+"み込むときのみ意味があります)。 I<- >は、入力の終わりからの文字数を示します "
+"(I<+> と同時に指定した場合は、現在の標準入力の位置から手前の位置を示しま"
+"す)。 -s 引数を指定しなかった場合は、現在のファイル位置から開始されます。"
+
+#. type: TP
+#: xxd.1:170
+#, no-wrap
+msgid "I<-u>"
+msgstr "I<-u>"
+
+#. type: Plain text
+#: xxd.1:173
+msgid "Use upper-case hex letters. Default is lower-case."
+msgstr ""
+"16 進数の表記に大文字を使います。指定がない場合は小文字で出力されます。"
+
+#. type: TP
+#: xxd.1:173
+#, no-wrap
+msgid "I<-v> | I<-version>"
+msgstr "I<-v> | I<-version>"
+
+#. type: Plain text
+#: xxd.1:176
+msgid "Show version string."
+msgstr "バージョンを表示します。"
+
+#. type: SH
+#: xxd.1:176
+#, no-wrap
+msgid "CAVEATS"
+msgstr "警告"
+
+#. type: Plain text
+#: xxd.1:184
+msgid ""
+"I<xxd -r> has some built-in magic while evaluating line number information.  "
+"If the output file is seekable, then the line numbers at the start of each "
+"hex dump line may be out of order, lines may be missing, or overlapping. In "
+"these cases xxd will lseek(2) to the next position. If the output file is "
+"not seekable, only gaps are allowed, which will be filled by null-bytes."
+msgstr ""
+"I<xxd -r> では行番号の評価に関しての暗黙のルールがいくつかあります。 出力ファ"
+"イルがシーク可能なら、各行の行番号が順番通りに並んでなくても構いません。 位置"
+"が飛んでいても重なっていても大丈夫です。 その場合、次の位置に移動するために "
+"lseek(2) が使われます。 出力ファイルがシーク不可なら、「隙間」だけが処理可能"
+"です。 隙間は null バイトで埋められます。"
+
+#. type: Plain text
+#: xxd.1:187
+msgid "I<xxd -r> never generates parse errors. Garbage is silently skipped."
+msgstr ""
+"I<xxd -r> は不正な入力をエラーにしません。ゴミは静かに読み飛ばされます。"
+
+#. type: Plain text
+#: xxd.1:195
+msgid ""
+"When editing hex dumps, please note that I<xxd -r> skips everything on the "
+"input line after reading enough columns of hexadecimal data (see option -c). "
+"This also means that changes to the printable ASCII (or EBCDIC) columns are "
+"always ignored. Reverting a plain (or PostScript) style hex dump with xxd -r "
+"-p does not depend on the correct number of columns.  Here, anything that "
+"looks like a pair of hex digits is interpreted."
+msgstr ""
+"16 進ダンプを編集するときは注意が必要です。 I<xxd -r> は必要な桁 (-c 引数参"
+"照) だけ 16 進データを読み込んで、行の残りを無視します。 つまり、ASCII (また"
+"は EBCDIC) を示している列への変更は無視されます。 xxd -r -p でプレーン形式 "
+"(ポストスクリプト形式) の 16 進ダンプを元に戻す場合は、列の数は影響しませ"
+"ん。 2 桁の 16 進数と認識できるものはすべて変換されます。"
+
+#. type: Plain text
+#: xxd.1:197
+msgid "Note the difference between"
+msgstr "I<% xxd -i file>"
+
+#. type: Plain text
+#: xxd.1:199
+msgid "I<% xxd -i file>"
+msgstr "と"
+
+#. type: Plain text
+#: xxd.1:201
+msgid "and"
+msgstr "I<% xxd -i E<lt> file>"
+
+#. type: Plain text
+#: xxd.1:203
+msgid "I<% xxd -i E<lt> file>"
+msgstr "の結果は違います。注意してください。"
+
+#. type: Plain text
+#: xxd.1:211
+msgid ""
+"I<xxd -s +seek> may be different from I<xxd -s seek>, as lseek(2) is used to "
+"\"rewind\" input.  A '+' makes a difference if the input source is stdin, "
+"and if stdin's file position is not at the start of the file by the time xxd "
+"is started and given its input.  The following examples may help to clarify "
+"(or further confuse!):"
+msgstr ""
+"I<xxd -s +seek> と I<xxd -s seek>, の違いは、lseek(2) を使って入力を \"巻き戻"
+"す\" かどうかです。'+' が意味を持つのは、入力が標準入力で、xxd が起動されたと"
+"きに標準入力のファイル位置がファイルの先頭ではなかった場合です。 以下の例が分"
+"かりやすいかもしれません (もっと混乱するかも!):"
+
+#. type: Plain text
+#: xxd.1:214
+msgid ""
+"Rewind stdin before reading; needed because the `cat' has already read to "
+"the end of stdin."
+msgstr ""
+"`cat' が既に標準入力を終わりまで読んでいるので、読む前に標準入力を巻き戻す必"
+"要がある。"
+
+#. type: Plain text
+#: xxd.1:216
+msgid "I<% sh -c \"cat E<gt> plain_copy; xxd -s 0 E<gt> hex_copy\" E<lt> file>"
+msgstr ""
+"I<% sh -c \"cat E<gt> plain_copy; xxd -s 0 E<gt> hex_copy\" E<lt> file>"
+
+#. type: Plain text
+#: xxd.1:220
+msgid ""
+"Hex dump from file position 0x480 (=1024+128) onwards.  The `+' sign means "
+"\"relative to the current position\", thus the `128' adds to the 1k where dd "
+"left off."
+msgstr ""
+"ファイル位置 0x480 (=1024+128) 前方から 16 進ダンプする。 `+' は 「現在地から"
+"の相対位置」を意味するので、dd が 1k 処理した後から、さらに `128' 進めます。"
+
+#. type: Plain text
+#: xxd.1:222
+msgid ""
+"I<% sh -c \"dd of=plain_snippet bs=1k count=1; xxd -s +128 E<gt> "
+"hex_snippet\" E<lt> file>"
+msgstr ""
+"I<% sh -c \"dd of=plain_snippet bs=1k count=1; xxd -s +128 E<gt> "
+"hex_snippet\" E<lt> file>"
+
+#. type: Plain text
+#: xxd.1:224
+msgid "Hex dump from file position 0x100 (=1024-768) onwards."
+msgstr "ファイル位置 0x100 (=1024-768) から 16 進ダンプする。"
+
+#. type: Plain text
+#: xxd.1:226
+msgid ""
+"I<% sh -c \"dd of=plain_snippet bs=1k count=1; xxd -s +-768 E<gt> "
+"hex_snippet\" E<lt> file>"
+msgstr ""
+"I<% sh -c \"dd of=plain_snippet bs=1k count=1; xxd -s +-768 E<gt> "
+"hex_snippet\" E<lt> file>"
+
+#. type: Plain text
+#: xxd.1:230
+msgid ""
+"However, this is a rare situation and the use of `+' is rarely needed.  The "
+"author prefers to monitor the effect of xxd with strace(1) or truss(1), "
+"whenever -s is used."
+msgstr ""
+"このような使い方はあまりしませんし、`+' を使うこともほとんどないでしょう。 -"
+"s を使うときはいつでも、strace(1) や truss(1) を使って、xxd の働きをチェック"
+"することをお勧めします。"
+
+#. type: SH
+#: xxd.1:230
+#, no-wrap
+msgid "EXAMPLES"
+msgstr "例"
+
+#. type: Plain text
+#: xxd.1:235
+msgid "Print everything but the first three lines (hex 0x30 bytes) of B<file>."
+msgstr "B<ファイル> の最初の三行 (16 進数で 0x30 バイト) 以降を出力する。"
+
+#. type: Plain text
+#: xxd.1:237
+msgid "I<% xxd -s 0x30 file>"
+msgstr "I<% xxd -s 0x30 file>"
+
+#. type: Plain text
+#: xxd.1:241
+msgid "Print 3 lines (hex 0x30 bytes) from the end of B<file>."
+msgstr "B<ファイル> の最後から三行 (16 進数で 0x30 バイト) を出力する。"
+
+#. type: Plain text
+#: xxd.1:243
+msgid "I<% xxd -s -0x30 file>"
+msgstr "I<% xxd -s -0x30 file>"
+
+#. type: Plain text
+#: xxd.1:246
+msgid ""
+"Note: The results of the examples below are relevant to the xxd.1 man page "
+"as of May 2024"
+msgstr ""
+"注意: 以下の例の結果は 2024 年 5 月時点の xxd.1 マニュアルページに基づいてい"
+"ます。"
+
+#. type: Plain text
+#: xxd.1:249
+msgid "Print 120 bytes as a continuous hex dump with 20 octets per line."
+msgstr "120 バイトを、平文 16 進ダンプ形式で一行に 20 オクテットずつ出力する。"
+
+#. type: Plain text
+#: xxd.1:251
+msgid "I<% xxd -l 120 -ps -c 20 xxd.1>"
+msgstr "I<% xxd -l 120 -ps -c 20 xxd.1>"
+
+#. type: Plain text
+#: xxd.1:253
+msgid "2e544820585844203120224d6179203230323422"
+msgstr "2e544820585844203120224d6179203230323422"
+
+#. type: Plain text
+#: xxd.1:255
+msgid "20224d616e75616c207061676520666f72207878"
+msgstr "20224d616e75616c207061676520666f72207878"
+
+#. type: Plain text
+#: xxd.1:257
+msgid "64220a2e5c220a2e5c222032317374204d617920"
+msgstr "64220a2e5c220a2e5c222032317374204d617920"
+
+#. type: Plain text
+#: xxd.1:259
+msgid "313939360a2e5c22204d616e2070616765206175"
+msgstr "313939360a2e5c22204d616e2070616765206175"
+
+#. type: Plain text
+#: xxd.1:261
+msgid "74686f723a0a2e5c2220202020546f6e79204e75"
+msgstr "74686f723a0a2e5c2220202020546f6e79204e75"
+
+#. type: Plain text
+#: xxd.1:263
+msgid "67656e74203c746f6e79407363746e7567656e2e"
+msgstr "67656e74203c746f6e79407363746e7567656e2e"
+
+#. type: Plain text
+#: xxd.1:267
+msgid "Hex dump the first 120 bytes of this man page with 12 octets per line."
+msgstr ""
+"この man ページの先頭から 120 バイトを一行に 12 オクテットずつ 16 進ダンプす"
+"る。"
+
+#. type: Plain text
+#: xxd.1:269
+msgid "I<% xxd -l 120 -c 12 xxd.1>"
+msgstr "I<% xxd -l 120 -c 12 xxd.1>"
+
+#. type: Plain text
+#: xxd.1:271
+msgid "00000000: 2e54 4820 5858 4420 3120 224d .TH XXD 1 \"M"
+msgstr "00000000: 2e54 4820 5858 4420 3120 224d .TH XXD 1 \"M"
+
+#. type: Plain text
+#: xxd.1:273
+msgid "0000000c: 6179 2032 3032 3422 2022 4d61 ay 2024\" \"Ma"
+msgstr "0000000c: 6179 2032 3032 3422 2022 4d61 ay 2024\" \"Ma"
+
+#. type: Plain text
+#: xxd.1:275
+msgid "00000018: 6e75 616c 2070 6167 6520 666f nual page fo"
+msgstr "00000018: 6e75 616c 2070 6167 6520 666f nual page fo"
+
+#. type: Plain text
+#: xxd.1:277
+msgid "00000024: 7220 7878 6422 0a2e 5c22 0a2e r xxd\"..\\e\".."
+msgstr "00000024: 7220 7878 6422 0a2e 5c22 0a2e r xxd\"..\\e\".."
+
+#. type: Plain text
+#: xxd.1:279
+msgid "00000030: 5c22 2032 3173 7420 4d61 7920 \\e\" 21st May"
+msgstr "00000030: 5c22 2032 3173 7420 4d61 7920 \\e\" 21st May"
+
+#. type: Plain text
+#: xxd.1:281
+msgid "0000003c: 3139 3936 0a2e 5c22 204d 616e 1996..\\e\" Man"
+msgstr "0000003c: 3139 3936 0a2e 5c22 204d 616e 1996..\\e\" Man"
+
+#. type: Plain text
+#: xxd.1:283
+msgid "00000048: 2070 6167 6520 6175 7468 6f72 page author"
+msgstr "00000048: 2070 6167 6520 6175 7468 6f72 page author"
+
+#. type: Plain text
+#: xxd.1:285
+msgid "00000054: 3a0a 2e5c 2220 2020 2054 6f6e :..\\e\" Ton"
+msgstr "00000054: 3a0a 2e5c 2220 2020 2054 6f6e :..\\e\" Ton"
+
+#. type: Plain text
+#: xxd.1:287
+msgid "00000060: 7920 4e75 6765 6e74 203c 746f y Nugent E<lt>to"
+msgstr "00000060: 7920 4e75 6765 6e74 203c 746f y Nugent E<lt>to"
+
+#. type: Plain text
+#: xxd.1:289
+msgid "0000006c: 6e79 4073 6374 6e75 6765 6e2e ny@sctnugen."
+msgstr "0000006c: 6e79 4073 6374 6e75 6765 6e2e ny@sctnugen."
+
+#. type: Plain text
+#: xxd.1:292
+msgid "Display just the date from the file xxd.1"
+msgstr "xxd.1 の日付部分だけを出力する。"
+
+#. type: Plain text
+#: xxd.1:294 xxd.1:313
+msgid "I<% xxd -s 0x33 -l 13 -c 13 xxd.1>"
+msgstr "I<% xxd -s 0x33 -l 13 -c 13 xxd.1>"
+
+#. type: Plain text
+#: xxd.1:296
+msgid "00000033: 3231 7374 204d 6179 2031 3939 36 21st May 1996"
+msgstr "00000033: 3231 7374 204d 6179 2031 3939 36 21st May 1996"
+
+#. type: Plain text
+#: xxd.1:303
+msgid ""
+"Copy B<input_file> to B<output_file> and prepend 100 bytes of value 0x00."
+msgstr ""
+"B<input_file> を B<output_file> にコピーし、先頭に 0x00 を 100 バイト分付け加"
+"える。"
+
+#. type: Plain text
+#: xxd.1:305
+msgid "I<% xxd input_file | xxd -r -s 100 E<gt> output_file>"
+msgstr "I<% xxd input_file | xxd -r -s 100 E<gt> output_file>"
+
+#. type: Plain text
+#: xxd.1:309
+msgid "Patch the date in the file xxd.1"
+msgstr "xxd.1 の日付を修正する。"
+
+#. type: Plain text
+#: xxd.1:311
+msgid "I<% echo \"0000034: 3574 68\" | xxd -r - xxd.1>"
+msgstr "I<% echo \"0000034: 3574 68\" | xxd -r - xxd.1>"
+
+#. type: Plain text
+#: xxd.1:315
+msgid "00000033: 3235 7468 204d 6179 2031 3939 36 25th May 1996"
+msgstr "00000033: 3235 7468 204d 6179 2031 3939 36 25th May 1996"
+
+#. type: Plain text
+#: xxd.1:319
+msgid ""
+"Create a 65537 byte file with all bytes 0x00, except for the last one which "
+"is 'A' (hex 0x41)."
+msgstr ""
+"中身がすべて 0x00 の 65537 バイトのファイルを作成する。 ただし、最後のバイト"
+"だけは 'A' (hex 0x41)。"
+
+#. type: Plain text
+#: xxd.1:321
+msgid "I<% echo \"010000: 41\" | xxd -r E<gt> file>"
+msgstr "I<% echo \"010000: 41\" | xxd -r E<gt> file>"
+
+#. type: Plain text
+#: xxd.1:324
+msgid "Hex dump this file with autoskip."
+msgstr "作成したファイルをオートスキップを使って 16 進ダンプする。"
+
+#. type: Plain text
+#: xxd.1:326
+msgid "I<% xxd -a -c 12 file>"
+msgstr "I<% xxd -a -c 12 file>"
+
+#. type: Plain text
+#: xxd.1:328
+msgid "00000000: 0000 0000 0000 0000 0000 0000 ............"
+msgstr "00000000: 0000 0000 0000 0000 0000 0000 ............"
+
+#. type: Plain text
+#: xxd.1:330
+msgid "*"
+msgstr "*"
+
+#. type: Plain text
+#: xxd.1:332
+msgid "0000fffc: 0000 0000 41 ....A"
+msgstr "0000fffc: 0000 0000 41 ....A"
+
+#. type: Plain text
+#: xxd.1:336
+msgid ""
+"Create a 1 byte file containing a single 'A' character.  The number after '-"
+"r -s' adds to the line numbers found in the file; in effect, the leading "
+"bytes are suppressed."
+msgstr ""
+"一文字の 'A' からなる 1 バイトのファイルを作成する。\n"
+" '-r -s' の後に指定した数値がファイル中の行番号に加算され、結果、余計なバイト"
+"が飛ばされる。"
+
+#. type: Plain text
+#: xxd.1:338
+msgid "I<% echo \"010000: 41\" | xxd -r -s -0x10000 E<gt> file>"
+msgstr "I<% echo \"010000: 41\" | xxd -r -s -0x10000 E<gt> file>"
+
+#. type: Plain text
+#: xxd.1:342
+msgid ""
+"Use xxd as a filter within an editor such as B<vim(1)> to hex dump a region "
+"marked between `a' and `z'."
+msgstr ""
+"B<vim(1)> の中から xxd をフィルタとして実行し、 マークされた `a' から `z' ま"
+"での領域を 16 進ダンプする。"
+
+#. type: Plain text
+#: xxd.1:344
+msgid "I<:'a,'z!xxd>"
+msgstr "I<:'a,'z!xxd>"
+
+#. type: Plain text
+#: xxd.1:348
+msgid ""
+"Use xxd as a filter within an editor such as B<vim(1)> to recover a binary "
+"hex dump marked between `a' and `z'."
+msgstr ""
+"B<vim(1)> の中から xxd をフィルタとして実行し、 マークされた `a' から `z' ま"
+"での領域をバイナリに戻す。"
+
+#. type: Plain text
+#: xxd.1:350
+msgid "I<:'a,'z!xxd -r>"
+msgstr "I<:'a,'z!xxd -r>"
+
+#. type: Plain text
+#: xxd.1:354
+msgid ""
+"Use xxd as a filter within an editor such as B<vim(1)> to recover one line "
+"of a hex dump.  Move the cursor over the line and type:"
+msgstr ""
+"B<vim(1)> の中から xxd をフィルタとして実行し、16 進ダンプされた行を元に戻"
+"す。 戻したい行にカーソルを移動して:"
+
+#. type: Plain text
+#: xxd.1:356
+msgid "I<!!xxd -r>"
+msgstr "I<!!xxd -r>"
+
+#. type: Plain text
+#: xxd.1:358
+msgid "Read single characters from a serial line"
+msgstr "シリアル行から一文字読み込む"
+
+#. type: Plain text
+#: xxd.1:360
+msgid "I<% xxd -c1 E<lt> /dev/term/b &>"
+msgstr "I<% xxd -c1 E<lt> /dev/term/b &>"
+
+#. type: Plain text
+#: xxd.1:362
+msgid "I<% stty E<lt> /dev/term/b -echo -opost -isig -icanon min 1>"
+msgstr "I<% stty E<lt> /dev/term/b -echo -opost -isig -icanon min 1>"
+
+#. type: Plain text
+#: xxd.1:364
+msgid "I<% echo -n foo E<gt> /dev/term/b>"
+msgstr "I<% echo -n foo E<gt> /dev/term/b>"
+
+#. type: SH
+#: xxd.1:365
+#, no-wrap
+msgid "RETURN VALUES"
+msgstr "返り値"
+
+#. type: Plain text
+#: xxd.1:367
+msgid "The following error values are returned:"
+msgstr "以下のエラー値が返ります:"
+
+#. type: TP
+#: xxd.1:367
+#, no-wrap
+msgid "0"
+msgstr "0"
+
+#. type: Plain text
+#: xxd.1:370
+msgid "no errors encountered."
+msgstr "エラーなし。"
+
+#. type: TP
+#: xxd.1:370
+#, no-wrap
+msgid "-1"
+msgstr "-1"
+
+#. type: Plain text
+#: xxd.1:376
+msgid "operation not supported \\%(I<\\%xxd -r -i> still impossible)."
+msgstr "操作がサポートされていない \\%(I<\\%xxd -r -i> はまだ不可です)。"
+
+#. type: TP
+#: xxd.1:376
+#, no-wrap
+msgid "1"
+msgstr "1"
+
+#. type: Plain text
+#: xxd.1:379
+msgid "error while parsing options."
+msgstr "引数の解釈に関するエラー。"
+
+#. type: TP
+#: xxd.1:379
+#, no-wrap
+msgid "2"
+msgstr "2"
+
+#. type: Plain text
+#: xxd.1:382
+msgid "problems with input file."
+msgstr "入力ファイルに関する問題。"
+
+#. type: TP
+#: xxd.1:382
+#, no-wrap
+msgid "3"
+msgstr "3"
+
+#. type: Plain text
+#: xxd.1:385
+msgid "problems with output file."
+msgstr "出力ファイルに関する問題。"
+
+#. type: TP
+#: xxd.1:385
+#, no-wrap
+msgid "4,5"
+msgstr "4,5"
+
+#. type: Plain text
+#: xxd.1:388
+msgid "desired seek position is unreachable."
+msgstr "指定された位置へシークできなかった。"
+
+#. type: Plain text
+#: xxd.1:390
+msgid "uuencode(1), uudecode(1), patch(1)"
+msgstr "uuencode(1), uudecode(1), patch(1)"
+
+#. type: SH
+#: xxd.1:391
+#, no-wrap
+msgid "WARNINGS"
+msgstr "警告"
+
+#. type: Plain text
+#: xxd.1:394
+msgid ""
+"The tool's weirdness matches its creator's brain.  Use entirely at your own "
+"risk. Copy files. Trace it. Become a wizard."
+msgstr ""
+"この奇妙なツールは作者が使いやすいように作られています。 自己責任で使ってくだ"
+"さい。ファイルをコピーし、それを調べ、ウィザードたれ。"
+
+#. type: SH
+#: xxd.1:395
+#, no-wrap
+msgid "VERSION"
+msgstr "バージョン"
+
+#. type: Plain text
+#: xxd.1:397
+msgid "This manual page documents xxd version 1.7 from 2024-05."
+msgstr "このマニュアルは xxd バージョン 1.7 (2024-05) について説明しています。"
+
+#. type: Plain text
+#: xxd.1:400
+msgid "(c) 1990-1997 by Juergen Weigert"
+msgstr "(c) 1990-1997 by Juergen Weigert"
+
+#. type: Plain text
+#: xxd.1:402
+msgid "E<lt>jnweiger@informatik.uni-erlangen.deE<gt>"
+msgstr "E<lt>jnweiger@informatik.uni-erlangen.deE<gt>"
+
+#. type: Plain text
+#: xxd.1:404
+msgid "Distribute freely and credit me,"
+msgstr "私の功績として自由に配布してください。"
+
+#. type: Plain text
+#: xxd.1:406
+msgid "make money and share with me,"
+msgstr "儲かったら教えてください。"
+
+#. type: Plain text
+#: xxd.1:408
+msgid "lose money and don't ask me."
+msgstr "損しても知りません。"
+
+#. type: Plain text
+#: xxd.1:410
+msgid "Manual page started by Tony Nugent"
+msgstr "マニュアルは Tony Nugent"
+
+#. type: Plain text
+#: xxd.1:412
+msgid "E<lt>tony@sctnugen.ppp.gu.edu.auE<gt> E<lt>T.Nugent@sct.gu.edu.auE<gt>"
+msgstr "E<lt>tony@sctnugen.ppp.gu.edu.auE<gt> E<lt>T.Nugent@sct.gu.edu.auE<gt>"
+
+#. type: Plain text
+#: xxd.1:415
+msgid "Small changes by Bram Moolenaar.  Edited by Juergen Weigert."
+msgstr ""
+"によって書かれ、 Bram Moolenaar が少し変更を加え、 Juergen Weigert が編集しま"
+"した。"

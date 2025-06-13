@@ -14,3 +14,7 @@ test:
 
 clean:
 	rm -f *.log
+
+po4a:
+	po4a po4a.cfg
+.PHONY: po4a

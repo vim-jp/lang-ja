@@ -1,0 +1,174 @@
+# vimtutorの日本語
+# Copyright (C) 2024 Bram Moolenaar.
+# This file is distributed under the same license as the Vim package.
+# K.Takata <kentkt@csc.jp>, 2016, 2018, 2023, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Vim\n"
+"POT-Creation-Date: 2025-06-13 22:25+0900\n"
+"PO-Revision-Date: 2025-06-13 23:01+0900\n"
+"Last-Translator: K.Takata <kentkt@csc.jp>\n"
+"Language-Team: vim-jp.org\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: TH
+#: evim.1:1 vimtutor.1:1
+#, no-wrap
+msgid "2024 August 12"
+msgstr "2024 August 12"
+
+#.  21st May 1996
+#.  Man page author:
+#.     Tony Nugent <tony@sctnugen.ppp.gu.edu.au> <T.Nugent@sct.gu.edu.au>
+#.     Changes by Bram Moolenaar <Bram@vim.org>
+#. type: SH
+#: evim.1:2 vim.1:2 vimdiff.1:2 vimtutor.1:2 xxd.1:7
+#, no-wrap
+msgid "NAME"
+msgstr "名前"
+
+#. type: SH
+#: evim.1:4 vim.1:4 vimdiff.1:4 vimtutor.1:4 xxd.1:10
+#, no-wrap
+msgid "SYNOPSIS"
+msgstr "書式"
+
+#. type: SH
+#: evim.1:10 vim.1:32 vimdiff.1:10 vimtutor.1:7 xxd.1:19
+#, no-wrap
+msgid "DESCRIPTION"
+msgstr "説明"
+
+#. type: SH
+#: evim.1:35 vim.1:527 vimtutor.1:33
+#, no-wrap
+msgid "FILES"
+msgstr "ファイル"
+
+#. type: Plain text
+#: evim.1:43 vim.1:538 vimtutor.1:43
+msgid "I<vim??> is short version number, like vim91 for B<Vim 9.1>"
+msgstr "I<vim??> は短いバージョン番号で B<Vim 9.1> では vim91 です。"
+
+#. type: SH
+#: evim.1:47 vim.1:588 vimdiff.1:39 vimtutor.1:60 xxd.1:388
+#, no-wrap
+msgid "SEE ALSO"
+msgstr "関連項目"
+
+#. type: Plain text
+#: evim.1:49 vimdiff.1:41 vimtutor.1:61
+msgid "vim(1)"
+msgstr "vim(1)"
+
+#. type: SH
+#: evim.1:49 vim.1:590 vimdiff.1:41 vimtutor.1:48 xxd.1:397
+#, no-wrap
+msgid "AUTHOR"
+msgstr "著者"
+
+#. type: TH
+#: vimtutor.1:1
+#, no-wrap
+msgid "VIMTUTOR"
+msgstr "VIMTUTOR"
+
+#. type: Plain text
+#: vimtutor.1:4
+msgid "vimtutor - the Vim tutor"
+msgstr "vimtutor - Vim チュートリアル"
+
+#. type: Plain text
+#: vimtutor.1:7
+msgid "B<vimtutor [-g] [language]>"
+msgstr "B<vimtutor [-g] [language]>"
+
+#. type: Plain text
+#: vimtutor.1:14
+msgid ""
+"B<Vimtutor> starts the B<Vim> tutor.  It copies the tutor file first, so "
+"that it can be modified without changing the original file."
+msgstr ""
+"B<Vim> のチュートリアルを起動します。 演習ファイルのコピーを使って実施するの"
+"で、オリジナルの演習ファイルを壊してしまう心配はありません。"
+
+#. type: Plain text
+#: vimtutor.1:20
+msgid ""
+"The B<Vimtutor> is useful for people that want to learn their first B<Vim> "
+"commands."
+msgstr "B<Vim> を初めて学ぶ人向けのチュートリアルです。"
+
+#. type: Plain text
+#: vimtutor.1:23
+msgid ""
+"The optional argument -g starts vimtutor with gvim rather than vim, if the "
+"GUI version of Vim is available, or falls back to vim if gvim is not found."
+msgstr ""
+"引数に -g を指定すると GUI 版の Vim が利用可能であれば vim ではなく gvim を"
+"使って vimtutor が開始します。gvim が見つからないときは vim が使用されます。"
+
+#. type: Plain text
+#: vimtutor.1:30
+msgid ""
+"The optional [language] argument is the two-letter name of a language, like "
+"\"it\" or \"es\".  If the [language] argument is missing, the language of "
+"the current locale will be used.  If a tutor in this language is available, "
+"it will be used.  Otherwise the English version will be used."
+msgstr ""
+"[language] 引数は \"ja\" や \"es\" などの二文字の言語名です。 [language] 引数"
+"を省略した場合はロケールの言語が使われます。 翻訳された演習ファイルがある場合"
+"は、そのファイルが使われます。 ない場合は英語のファイルが使われます。"
+
+#. type: Plain text
+#: vimtutor.1:33
+msgid "B<Vim> is always started in Vi compatible mode."
+msgstr "B<Vim> は Vi 互換モードで起動されます。"
+
+#. type: TP
+#: vimtutor.1:34
+#, no-wrap
+msgid "/usr/local/share/vim/vim??/tutor/tutor[.language]"
+msgstr "/usr/local/share/vim/vim??/tutor/tutor[.language]"
+
+#. type: Plain text
+#: vimtutor.1:39
+msgid "The B<Vimtutor> text file(s)."
+msgstr "B<Vimtutor> の演習ファイル。"
+
+#. type: TP
+#: vimtutor.1:43
+#, no-wrap
+msgid "/usr/local/share/vim/vim??/tutor/tutor.vim"
+msgstr "/usr/local/share/vim/vim??/tutor/tutor.vim"
+
+#. type: Plain text
+#: vimtutor.1:48
+msgid "The Vim script used to copy the B<Vimtutor> text file."
+msgstr "演習ファイルをコピーするための Vim スクリプト。"
+
+#. type: Plain text
+#: vimtutor.1:55
+msgid ""
+"The B<Vimtutor> was originally written for Vi by Michael C. Pierce and "
+"Robert K. Ware, Colorado School of Mines using ideas supplied by Charles "
+"Smith, Colorado State University.  E-mail: bware@mines.colorado.edu (now "
+"invalid)."
+msgstr ""
+"B<Vimtutor> は、Colorado State University の Charles Smith のアイデアを基"
+"に、 Colorado School of Mines の Michael C. Pierce と Robert K. Ware の両名に"
+"よって Vi 向けに作成されたものを基にしています。 E-mail: bware@mines."
+"colorado.edu (現在は無効)."
+
+#. type: Plain text
+#: vimtutor.1:60
+msgid ""
+"It was modified for B<Vim> by Bram Moolenaar.  For the names of the "
+"translators see the tutor files."
+msgstr ""
+"B<Vim> に合わせて Bram Moolenaar が変更を加えました。 翻訳者の名前は演習ファ"
+"イルを参照してください。"

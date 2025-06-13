@@ -1,0 +1,1698 @@
+# Vimの日本語訳
+# Copyright (C) 2024 Bram Moolenaar.
+# This file is distributed under the same license as the Vim package.
+# K.Takata <kentkt@csc.jp>, 2016, 2017, 2018, 2020, 2021, 2022, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Vim\n"
+"POT-Creation-Date: 2025-06-13 22:25+0900\n"
+"PO-Revision-Date: 2025-06-13 22:58+0900\n"
+"Last-Translator: K.Takata <kentkt@csc.jp>\n"
+"Language-Team: vim-jp.org\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#.  21st May 1996
+#.  Man page author:
+#.     Tony Nugent <tony@sctnugen.ppp.gu.edu.au> <T.Nugent@sct.gu.edu.au>
+#.     Changes by Bram Moolenaar <Bram@vim.org>
+#. type: SH
+#: evim.1:2 vim.1:2 vimdiff.1:2 vimtutor.1:2 xxd.1:7
+#, no-wrap
+msgid "NAME"
+msgstr "名前"
+
+#. type: SH
+#: evim.1:4 vim.1:4 vimdiff.1:4 vimtutor.1:4 xxd.1:10
+#, no-wrap
+msgid "SYNOPSIS"
+msgstr "書式"
+
+#. type: SH
+#: evim.1:10 vim.1:32 vimdiff.1:10 vimtutor.1:7 xxd.1:19
+#, no-wrap
+msgid "DESCRIPTION"
+msgstr "説明"
+
+#. type: SH
+#: evim.1:33 vim.1:129 vimdiff.1:34 xxd.1:30
+#, no-wrap
+msgid "OPTIONS"
+msgstr "オプション"
+
+#. type: SH
+#: evim.1:35 vim.1:527 vimtutor.1:33
+#, no-wrap
+msgid "FILES"
+msgstr "ファイル"
+
+#. type: Plain text
+#: evim.1:43 vim.1:538 vimtutor.1:43
+msgid "I<vim??> is short version number, like vim91 for B<Vim 9.1>"
+msgstr "I<vim??> は短いバージョン番号で B<Vim 9.1> では vim91 です。"
+
+#. type: SH
+#: evim.1:47 vim.1:588 vimdiff.1:39 vimtutor.1:60 xxd.1:388
+#, no-wrap
+msgid "SEE ALSO"
+msgstr "関連項目"
+
+#. type: SH
+#: evim.1:49 vim.1:590 vimdiff.1:41 vimtutor.1:48 xxd.1:397
+#, no-wrap
+msgid "AUTHOR"
+msgstr "著者"
+
+#. type: TH
+#: vim.1:1
+#, no-wrap
+msgid "VIM"
+msgstr "VIM"
+
+#. type: TH
+#: vim.1:1
+#, no-wrap
+msgid "2024 Aug 12"
+msgstr "2024 Aug 12"
+
+#. type: Plain text
+#: vim.1:4
+msgid "vim - Vi IMproved, a programmer's text editor"
+msgstr "vim - Vi IMproved, プログラマのテキストエディタ"
+
+#. type: Plain text
+#: vim.1:8
+msgid "B<vim> [options] [file ..]"
+msgstr "B<vim> [options] [file ..]"
+
+#. type: Plain text
+#: vim.1:11
+msgid "B<vim> [options] -"
+msgstr "B<vim> [options] -"
+
+#. type: Plain text
+#: vim.1:14
+msgid "B<vim> [options] -t tag"
+msgstr "B<vim> [options] -t tag"
+
+#. type: Plain text
+#: vim.1:17
+msgid "B<vim> [options] -q [errorfile]"
+msgstr "B<vim> [options] -q [errorfile]"
+
+#. type: Plain text
+#: vim.1:20
+msgid "B<ex>"
+msgstr "B<ex>"
+
+#. type: Plain text
+#: vim.1:22
+msgid "B<view>"
+msgstr "B<view>"
+
+#. type: Plain text
+#: vim.1:27
+msgid "B<gvim> B<gview> B<evim> B<eview>"
+msgstr "B<gvim> B<gview> B<evim> B<eview>"
+
+#. type: Plain text
+#: vim.1:32
+msgid "B<rvim> B<rview> B<rgvim> B<rgview>"
+msgstr "B<rvim> B<rview> B<rgvim> B<rgview>"
+
+#. type: Plain text
+#: vim.1:37
+msgid ""
+"B<Vim> is a text editor that is upwards compatible to Vi.  It can be used to "
+"edit all kinds of plain text.  It is especially useful for editing programs."
+msgstr ""
+"B<Vim> は Vi 互換のテキストエディタです。 どのような種類のプレインテキストで"
+"も編集できます。 特に、プログラムの編集に力を発揮します。"
+
+#. type: Plain text
+#: vim.1:44
+msgid ""
+"There are a lot of enhancements above Vi: multi level undo, multi windows "
+"and buffers, syntax highlighting, command line editing, filename completion, "
+"on-line help, visual selection, etc..  See \":help vi_diff.txt\" for a "
+"summary of the differences between B<Vim> and Vi."
+msgstr ""
+"Vi に多くの改良が加えられています: 多段アンドゥ、マルチウィンドウ、マルチバッ"
+"ファ、構文強調表示、コマンドライン編集、ファイル名補完、ヘルプ、ビジュアル選"
+"択、などなど。 B<Vim> と Vi の違いについての要約は \":help vi_diff.txt\" を参"
+"照してください。"
+
+#. type: Plain text
+#: vim.1:50
+msgid ""
+"While running B<Vim> a lot of help can be obtained from the on-line help "
+"system, with the \":help\" command.  See the ON-LINE HELP section below."
+msgstr ""
+"B<Vim> の実行中は \":help\" コマンドでヘルプを引くことができます。 下記、オン"
+"ラインヘルプの項を参照してください。"
+
+#. type: Plain text
+#: vim.1:54
+msgid "Most often B<Vim> is started to edit a single file with the command"
+msgstr "B<Vim> は次のようなコマンドで起動できます。"
+
+#. type: Plain text
+#: vim.1:56
+msgid "  vim file"
+msgstr "  vim file"
+
+#. type: Plain text
+#: vim.1:60
+msgid "More generally B<Vim> is started with:"
+msgstr "正確な書式は次の通りです:"
+
+#. type: Plain text
+#: vim.1:62
+msgid "  vim [options] [filelist]"
+msgstr "  vim [options] [filelist]"
+
+#. type: Plain text
+#: vim.1:66
+msgid ""
+"If the filelist is missing, the editor will start with an empty buffer.  "
+"Otherwise exactly one out of the following four may be used to choose one or "
+"more files to be edited."
+msgstr ""
+"filelist を省略した場合は、空のバッファが開かれます。 指定した場合は、以下の"
+"四つのうちどれか一つの方法でファイルが開かれます。"
+
+#. type: TP
+#: vim.1:66
+#, no-wrap
+msgid "file .."
+msgstr "file .."
+
+#. type: Plain text
+#: vim.1:73
+msgid ""
+"A list of filenames.  The first one will be the current file and read into "
+"the buffer.  The cursor will be positioned on the first line of the buffer.  "
+"You can get to the other files with the \":next\" command.  To edit a file "
+"that starts with a dash, precede the filelist with \"--\"."
+msgstr ""
+"ファイルのリスト。 一番目のファイルがカレントファイルになり、バッファに読み込"
+"まれます。 カーソルは、バッファの一行目に置かれます。 他のファイルを表示する"
+"には \":next\" コマンドを使ってください。 ファイル名がダッシュで始まるファイ"
+"ルを開く場合は、 filelist の前に \"--\" を指定してください。"
+
+#. type: TP
+#: vim.1:73
+#, no-wrap
+msgid "-"
+msgstr "-"
+
+#. type: Plain text
+#: vim.1:77
+msgid ""
+"The file to edit is read from stdin.  Commands are read from stderr, which "
+"should be a tty."
+msgstr ""
+"ファイルは標準入力から読み込まれます。コマンドは標準エラー (ttyからの入力に"
+"なっているはず) から読み込まれます。"
+
+#. type: TP
+#: vim.1:77
+#, no-wrap
+msgid "-t {tag}"
+msgstr "-t {tag}"
+
+#. type: Plain text
+#: vim.1:88
+msgid ""
+"The file to edit and the initial cursor position depends on a \"tag\", a "
+"sort of goto label.  {tag} is looked up in the tags file, the associated "
+"file becomes the current file and the associated command is executed.  "
+"Mostly this is used for C programs, in which case {tag} could be a function "
+"name.  The effect is that the file containing that function becomes the "
+"current file and the cursor is positioned on the start of the function.  See "
+"\":help tag-commands\"."
+msgstr ""
+"開くファイルとカーソルの初期位置は \"tag\" に依存します。goto label の一種で"
+"す。 tags ファイルから {tag} が検索され、関連したファイルがカレントファイルに"
+"なります。 そして、関連したコマンドが実行されます。 これは主に C 言語のファイ"
+"ルを開くときに使われます。 その場合 {tag} に関数などを指定して使います。 関数"
+"を含んでいるファイルが開かれ、その関数の先頭にカーソルが移動する、という動作"
+"になります。 詳しくは \":help tag-commands\" を参照してください。"
+
+#. type: TP
+#: vim.1:88
+#, no-wrap
+msgid "-q [errorfile]"
+msgstr "-q [errorfile]"
+
+#. type: Plain text
+#: vim.1:97
+msgid ""
+"Start in quickFix mode.  The file [errorfile] is read and the first error is "
+"displayed.  If [errorfile] is omitted, the filename is obtained from the "
+"'errorfile' option (defaults to \"AztecC.Err\" for the Amiga, \"errors.err\" "
+"on other systems).  Further errors can be jumped to with the \":cn\" "
+"command.  See \":help quickfix\"."
+msgstr ""
+"クイックフィックスモードで起動します。 [errorfile] に指定したファイルが読み込"
+"まれ、最初のエラーが表示されます。 [errorfile] を省略した場合は、オプション "
+"'errorfile' が使われます (初期設定は、Amiga では \"AztecC.Err\"、その他のシス"
+"テムでは \"errors.err\" です)。 \":cn\" コマンドで次のエラーにジャンプできま"
+"す。 詳しくは \":help quickfix\" を参照してください。"
+
+#. type: Plain text
+#: vim.1:101
+msgid ""
+"B<Vim> behaves differently, depending on the name of the command (the "
+"executable may still be the same file)."
+msgstr ""
+"B<Vim> は、起動されたときの実行ファイルの名前によって動作を変えます (実行ファ"
+"イルの実体が同じであっても)。"
+
+#. type: TP
+#: vim.1:101
+#, no-wrap
+msgid "vim"
+msgstr "vim"
+
+#. type: Plain text
+#: vim.1:104
+msgid "The \"normal\" way, everything is default."
+msgstr "\"普通\" に起動します。標準の状態です。"
+
+#. type: TP
+#: vim.1:104
+#, no-wrap
+msgid "ex"
+msgstr "ex"
+
+#. type: Plain text
+#: vim.1:109
+msgid ""
+"Start in Ex mode.  Go to Normal mode with the \":vi\" command.  Can also be "
+"done with the \"-e\" argument."
+msgstr ""
+"Ex モードで起動します。 ノーマルモードに切り替えるには \":vi\" コマンドを使っ"
+"てください。 引数に \"-e\" を指定した場合と同じです。"
+
+#. type: TP
+#: vim.1:109
+#, no-wrap
+msgid "view"
+msgstr "view"
+
+#. type: Plain text
+#: vim.1:113
+msgid ""
+"Start in read-only mode.  You will be protected from writing the files.  Can "
+"also be done with the \"-R\" argument."
+msgstr ""
+"読み込み専用モードで起動します。ファイルの保存が制限されます。 引数に \"-R\" "
+"を指定した場合と同じです。"
+
+#. type: TP
+#: vim.1:113
+#, no-wrap
+msgid "gvim gview"
+msgstr "gvim gview"
+
+#. type: Plain text
+#: vim.1:118
+msgid ""
+"The GUI version.  Starts a new window.  Can also be done with the \"-g\" "
+"argument."
+msgstr ""
+"GUI バージョン。 新しいウィンドウを開いて起動します。 引数に \"-g\" を指定し"
+"た場合と同じです。"
+
+#. type: TP
+#: vim.1:118
+#, no-wrap
+msgid "evim eview"
+msgstr "evim eview"
+
+#. type: Plain text
+#: vim.1:123
+msgid ""
+"The GUI version in easy mode.  Starts a new window.  Can also be done with "
+"the \"-y\" argument."
+msgstr ""
+"簡易モードの GUI バージョン。 新しいウィンドウを開いて起動します。 引数に \"-"
+"y\" を指定した場合と同じです。"
+
+#. type: TP
+#: vim.1:123
+#, no-wrap
+msgid "rvim rview rgvim rgview"
+msgstr "rvim rview rgvim rgview"
+
+#. type: Plain text
+#: vim.1:129
+msgid ""
+"Like the above, but with restrictions.  It will not be possible to start "
+"shell commands, or suspend B<Vim.> Can also be done with the \"-Z\" argument."
+msgstr ""
+"上記と同じですが、制限モードで起動します。シェルコマンドを実行したり、 "
+"B<Vim> をサスペンドしたりできなくなります。 引数に \"-Z\" を指定した場合と同"
+"じです。"
+
+#. type: Plain text
+#: vim.1:132
+msgid ""
+"The options may be given in any order, before or after filenames.  Options "
+"without an argument can be combined after a single dash."
+msgstr ""
+"ファイル名の前でも後ろでも、好きな順番でオプションを指定できます。 パラメータ"
+"を必要としない引数は、一つのダッシュにまとめて指定できます。"
+
+#. type: TP
+#: vim.1:132
+#, no-wrap
+msgid "+[num]"
+msgstr "+[num]"
+
+#. type: Plain text
+#: vim.1:136
+msgid ""
+"For the first file the cursor will be positioned on line \"num\".  If "
+"\"num\" is missing, the cursor will be positioned on the last line."
+msgstr ""
+"一番目のファイルの \"num\" 行目にカーソルを移動します。 \"num\" を省略した場"
+"合は、一行目にカーソルが移動します。"
+
+#. type: TP
+#: vim.1:136
+#, no-wrap
+msgid "+/{pat}"
+msgstr "+/{pat}"
+
+#. type: Plain text
+#: vim.1:141
+msgid ""
+"For the first file the cursor will be positioned in the line with the first "
+"occurrence of {pat}.  See \":help search-pattern\" for the available search "
+"patterns."
+msgstr ""
+"一番目のファイルの、最初に {pat} が見つかった行にカーソルが移動します。 検索"
+"パターンについては \":help search-pattern\" を参照してください。"
+
+#. type: TP
+#: vim.1:141
+#, no-wrap
+msgid "+{command}"
+msgstr "+{command}"
+
+#. type: TP
+#: vim.1:143
+#, no-wrap
+msgid "-c {command}"
+msgstr "-c {command}"
+
+#. type: Plain text
+#: vim.1:150
+msgid ""
+"{command} will be executed after the first file has been read.  {command} is "
+"interpreted as an Ex command.  If the {command} contains spaces it must be "
+"enclosed in double quotes (this depends on the shell that is used).  "
+"Example: vim \"+set si\" main.c"
+msgstr ""
+"一番目のファイルが読み込まれた後に {command} が実行されます。 {command} は "
+"Ex コマンドとして解釈されます。 {command} に空白を含める場合は、ダブルクォー"
+"トで囲んでください (シェルに依存)。 例: vim \"+set si\" main.c"
+
+#. type: Plain text
+#: vim.1:152
+msgid "Note: You can use up to 10 \"+\" or \"-c\" commands."
+msgstr "Note: \"+\" と \"-c\" は合わせて 10 個まで指定できます。"
+
+#. type: TP
+#: vim.1:152
+#, no-wrap
+msgid "-A"
+msgstr "-A"
+
+#. type: Plain text
+#: vim.1:163
+msgid ""
+"If B<Vim> has been compiled with ARABIC support for editing right-to-left "
+"oriented files and Arabic keyboard mapping, this option starts B<Vim> in "
+"Arabic mode, i.e. 'arabic' is set.  Otherwise an error message is given and "
+"B<Vim> aborts."
+msgstr ""
+"アラビア語がサポートされていて、アラビア語キーマップがある場合は、アラビア語"
+"モードで起動します ('arabic' がオンになります)。 右横書きのファイルを編集でき"
+"ます。 サポートされていない場合はエラーメッセージを表示して終了します。"
+
+#. type: TP
+#: vim.1:163
+#, no-wrap
+msgid "-b"
+msgstr "-b"
+
+#. type: Plain text
+#: vim.1:168
+msgid ""
+"Binary mode.  A few options will be set that makes it possible to edit a "
+"binary or executable file."
+msgstr ""
+"バイナリモード。 バイナリファイルを編集するためのオプションがいくつか設定され"
+"ます。"
+
+#. type: TP
+#: vim.1:168
+#, no-wrap
+msgid "-C"
+msgstr "-C"
+
+#. type: Plain text
+#: vim.1:174
+msgid ""
+"Compatible.  Set the 'compatible' option.  This will make B<Vim> behave "
+"mostly like Vi, even though a .vimrc file exists."
+msgstr ""
+"互換モード。'compatible' オプションがオンになります。 .vimrc ファイルの有無に"
+"関わらず、 B<Vim> の動作が Vi 互換になります。"
+
+#. type: TP
+#: vim.1:174
+#, no-wrap
+msgid "-d"
+msgstr "-d"
+
+#. type: Plain text
+#: vim.1:181
+msgid ""
+"Start in diff mode.  There should between two to eight file name arguments.  "
+"B<Vim> will open all the files and show differences between them.  Works "
+"like vimdiff(1)."
+msgstr ""
+"差分モードで起動します。 2 個から 8 個のファイルを引数に指定してください。 指"
+"定されたファイルが開かれ、それらのファイルの差分が表示されます。 vimdiff(1) "
+"と同様の動作です。"
+
+#. type: TP
+#: vim.1:181
+#, no-wrap
+msgid "-d {device}, -dev {device}"
+msgstr "-d {device}, -dev {device}"
+
+#. type: Plain text
+#: vim.1:187
+msgid ""
+"Open {device} for use as a terminal.  Only on the Amiga.  Example: \"-d "
+"con:20/30/600/150\"."
+msgstr ""
+"{device} を端末として開きます。 Amiga でのみ使います。 例: \"-d "
+"con:20/30/600/150\"."
+
+#. type: TP
+#: vim.1:187
+#, no-wrap
+msgid "-D"
+msgstr "-D"
+
+#. type: Plain text
+#: vim.1:191
+msgid ""
+"Debugging.  Go to debugging mode when executing the first command from a "
+"script."
+msgstr ""
+"デバッグ。 スクリプトの最初のコマンドが実行されるところからデバッグモードを開"
+"始します。"
+
+#. type: TP
+#: vim.1:191
+#, no-wrap
+msgid "-e"
+msgstr "-e"
+
+#. type: Plain text
+#: vim.1:196
+msgid "Start B<Vim> in Ex mode, just like the executable was called \"ex\"."
+msgstr "Ex モードで起動します。 実行ファイルの名前が \"ex\" の場合と同じです。"
+
+#. type: TP
+#: vim.1:196
+#, no-wrap
+msgid "-E"
+msgstr "-E"
+
+#. type: Plain text
+#: vim.1:201
+msgid ""
+"Start B<Vim> in improved Ex mode, just like the executable was called "
+"\"exim\"."
+msgstr ""
+"改良版 Ex モードで起動します。 実行ファイルの名前が \"exim\" の場合と同じで"
+"す。"
+
+#. type: TP
+#: vim.1:201
+#, no-wrap
+msgid "-f"
+msgstr "-f"
+
+#. type: Plain text
+#: vim.1:214
+msgid ""
+"Foreground.  For the GUI version, B<Vim> will not fork and detach from the "
+"shell it was started in.  On the Amiga, B<Vim> is not restarted to open a "
+"new window.  This option should be used when B<Vim> is executed by a program "
+"that will wait for the edit session to finish (e.g. mail).  On the Amiga the "
+"\":sh\" and \":!\" commands will not work."
+msgstr ""
+"フォアグラウンド。GUI バージョンで、プロセスをフォークしなくなります。 Amiga "
+"の場合は、新しいウィンドウで再起動しなくなります。 メールソフトなどから "
+"B<Vim> を起動して、編集が終わるまで待機したいような場合に使ってください。 "
+"Amiga では、\":sh\" と \"!\" コマンドは機能しなくなります。"
+
+#. type: TP
+#: vim.1:214
+#, no-wrap
+msgid "-F"
+msgstr "-F"
+
+#. type: Plain text
+#: vim.1:225
+msgid ""
+"If B<Vim> has been compiled with FKMAP support for editing right-to-left "
+"oriented files and Farsi keyboard mapping, this option starts B<Vim> in "
+"Farsi mode, i.e. 'fkmap' and 'rightleft' are set.  Otherwise an error "
+"message is given and B<Vim> aborts."
+msgstr ""
+"ペルシア語がサポートされていて、ペルシア語キーマップがある場合は、ペルシア語"
+"モードで起動します ('fkmap' と 'rightleft' がオンになります)。 右横書きのファ"
+"イルを編集できます。 サポートされていない場合はエラーメッセージを表示して終了"
+"します。"
+
+#. type: Plain text
+#: vim.1:227
+msgid "Note: Farsi support has been removed in patch 8.1.0932."
+msgstr "注意: ペルシア語サポートはパッチ 8.1.0932 で削除されました。"
+
+#. type: TP
+#: vim.1:227
+#, no-wrap
+msgid "-g"
+msgstr "-g"
+
+#. type: Plain text
+#: vim.1:235
+msgid ""
+"If B<Vim> has been compiled with GUI support, this option enables the GUI.  "
+"If no GUI support was compiled in, an error message is given and B<Vim> "
+"aborts."
+msgstr ""
+"GUI がサポートされている場合は、GUI で起動します。 サポートされていない場合は"
+"エラーメッセージを表示して終了します。"
+
+#. type: TP
+#: vim.1:235
+#, no-wrap
+msgid "-H"
+msgstr "-H"
+
+#. type: Plain text
+#: vim.1:246
+msgid ""
+"If B<Vim> has been compiled with RIGHTLEFT support for editing right-to-left "
+"oriented files and Hebrew keyboard mapping, this option starts B<Vim> in "
+"Hebrew mode, i.e. 'hkmap' and 'rightleft' are set.  Otherwise an error "
+"message is given and B<Vim> aborts."
+msgstr ""
+"ヘブライ語がサポートされていて、ヘブライ語キーマップがある場合は、ヘブライ語"
+"モードで起動します ('hkmap' と 'rightleft' がオンになります)。 右横書きのファ"
+"イルを編集できます。 サポートされていない場合はエラーメッセージを表示して終了"
+"します。"
+
+#. type: TP
+#: vim.1:246
+#, no-wrap
+msgid "-i {viminfo}"
+msgstr "-i {viminfo}"
+
+#. type: Plain text
+#: vim.1:252
+msgid ""
+"Specifies the filename to use when reading or writing the viminfo file, "
+"instead of the default \"~/.viminfo\".  This can also be used to skip the "
+"use of the .viminfo file, by giving the name \"NONE\"."
+msgstr ""
+"初期設定の \"~/.viminfo\" の代わりに、viminfo ファイルを読み書きする際に使う"
+"ファイル名を指定します。 \"NONE\" を指定すると、.viminfo ファイルを使わないよ"
+"うに設定できます。"
+
+#. type: TP
+#: vim.1:252
+#, no-wrap
+msgid "-l"
+msgstr "-l"
+
+#. type: Plain text
+#: vim.1:256
+msgid "Lisp mode.  Sets the 'lisp' and 'showmatch' options on."
+msgstr "lisp モード。 オプションの 'lisp' と 'showmatch' がオンになります。"
+
+#. type: TP
+#: vim.1:256
+#, no-wrap
+msgid "-L"
+msgstr "-L"
+
+#. type: Plain text
+#: vim.1:259
+msgid "Same as -r."
+msgstr "-r と同じです。"
+
+#. type: TP
+#: vim.1:259
+#, no-wrap
+msgid "-m"
+msgstr "-m"
+
+#. type: Plain text
+#: vim.1:264
+msgid ""
+"Modifying files is disabled.  Resets the 'write' option.  You can still "
+"modify the buffer, but writing a file is not possible."
+msgstr ""
+"ファイルの変更を不可能にします。 オプション 'write' がオフになります。 バッ"
+"ファを変更することはできますが、ファイルを保存することはできません。"
+
+#. type: TP
+#: vim.1:264
+#, no-wrap
+msgid "-M"
+msgstr "-M"
+
+#. type: Plain text
+#: vim.1:269
+msgid ""
+"Modifications not allowed.  The 'modifiable' and 'write' options will be "
+"unset, so that changes are not allowed and files can not be written.  Note "
+"that these options can be set to enable making modifications."
+msgstr ""
+"変更を不可能にします。 オプションの 'modifiable' と 'write' がオフになり、"
+"ファイルの変更と保存ができなくなります。 Note: それらのオプションを設定すれば"
+"変更できるようになります。"
+
+#. type: TP
+#: vim.1:269
+#, no-wrap
+msgid "-n"
+msgstr "-n"
+
+#. type: Plain text
+#: vim.1:276
+msgid ""
+"No swap file will be used.  Recovery after a crash will be impossible.  "
+"Handy if you want to edit a file on a very slow medium (e.g. floppy).  Can "
+"also be done with \":set uc=0\".  Can be undone with \":set uc=200\"."
+msgstr ""
+"スワップファイルを使用しません。 クラッシュしてもリカバリできなくなります。 "
+"フロッピーディスクのような非常に低速なメディアのファイルを読み書きするときに"
+"便利です。 \":set uc=0\" と設定しても同じです。 戻すには \":set uc=200\" と設"
+"定してください。"
+
+#. type: TP
+#: vim.1:276
+#, no-wrap
+msgid "-N"
+msgstr "-nb"
+
+#. type: Plain text
+#: vim.1:283
+msgid ""
+"No-compatible mode.  Resets the 'compatible' option.  This will make B<Vim> "
+"behave a bit better, but less Vi compatible, even though a .vimrc file does "
+"not exist."
+msgstr ""
+"NetBeans と接続し、エディタサーバーになります。 詳しくはヘルプを参照してくだ"
+"さい。"
+
+#. type: TP
+#: vim.1:283
+#, no-wrap
+msgid "-nb"
+msgstr "-N"
+
+#. type: Plain text
+#: vim.1:286
+msgid "Become an editor server for NetBeans.  See the docs for details."
+msgstr ""
+"非互換モード。'compatible' オプションがオフになります。 .vimrc ファイルの有無"
+"に関わらず、 B<Vim> の改良された機能が有効になります。Vi との互換性が少し失わ"
+"れます。"
+
+#. type: TP
+#: vim.1:286
+#, no-wrap
+msgid "-o[N]"
+msgstr "-o[N]"
+
+#. type: Plain text
+#: vim.1:290
+msgid ""
+"Open N windows stacked.  When N is omitted, open one window for each file."
+msgstr ""
+"N 個のウィンドウを水平分割で開きます。 N を省略した場合は、引数のファイルを個"
+"別のウィンドウで開きます。"
+
+#. type: TP
+#: vim.1:290
+#, no-wrap
+msgid "-O[N]"
+msgstr "-O[N]"
+
+#. type: Plain text
+#: vim.1:294
+msgid ""
+"Open N windows side by side.  When N is omitted, open one window for each "
+"file."
+msgstr ""
+"N 個のウィンドウを垂直分割で開きます。 N を省略した場合は、引数のファイルを個"
+"別のウィンドウで開きます。"
+
+#. type: TP
+#: vim.1:294
+#, no-wrap
+msgid "-p[N]"
+msgstr "-p[N]"
+
+#. type: Plain text
+#: vim.1:298
+msgid "Open N tab pages.  When N is omitted, open one tab page for each file."
+msgstr ""
+"N 個のタブページを開きます。 N を省略した場合は、引数のファイルを個別のタブ"
+"ページで開きます。"
+
+#. type: TP
+#: vim.1:298
+#, no-wrap
+msgid "-P {parent-title}"
+msgstr "-P {parent-title}"
+
+#. type: Plain text
+#: vim.1:305
+msgid ""
+"Win32 GUI only: Specify the title of the parent application.  When possible, "
+"Vim will run in an MDI window inside the application. {parent-title} must "
+"appear in the window title of the parent application.  Make sure that it is "
+"specific enough. Note that the implementation is still primitive.  It won't "
+"work with all applications and the menu doesn't work."
+msgstr ""
+"Win32 のみ。親になるアプリケーションのタイトルを指定します。 可能であれば "
+"Vim はその MDI アプリケーションのウィンドウ内で起動します。 {parent-title} が"
+"親アプリケーションのウィンドウのタイトルに使われていて、明確に区別できる必要"
+"があります。 Note: まだ簡単に実装されているだけです。全てのアプリケーションで"
+"動くわけではありません。メニューは機能しません。"
+
+#. type: TP
+#: vim.1:305
+#, no-wrap
+msgid "-r"
+msgstr "-r"
+
+#. type: Plain text
+#: vim.1:308
+msgid "List swap files, with information about using them for recovery."
+msgstr ""
+"スワップファイルの一覧を表示します。リカバリに関する情報も表示されます。"
+
+#. type: TP
+#: vim.1:308
+#, no-wrap
+msgid "-r {file}"
+msgstr "-r {file}"
+
+#. type: Plain text
+#: vim.1:315
+msgid ""
+"Recovery mode.  The swap file is used to recover a crashed editing session.  "
+"The swap file is a file with the same filename as the text file with \"."
+"swp\" appended.  See \":help recovery\"."
+msgstr ""
+"リカバリモード。 スワップファイルを使って、クラッシュした編集セッションを復活"
+"させます。 スワップファイルは、ファイル名に \".swp\" を加えた名前のファイルで"
+"す。 詳しくは \":help recovery\" を参照してください。"
+
+#. type: TP
+#: vim.1:315
+#, no-wrap
+msgid "-R"
+msgstr "-R"
+
+#. type: Plain text
+#: vim.1:326
+msgid ""
+"Read-only mode.  The 'readonly' option will be set.  You can still edit the "
+"buffer, but will be prevented from accidentally overwriting a file.  If you "
+"do want to overwrite a file, add an exclamation mark to the Ex command, as "
+"in \":w!\".  The -R option also implies the -n option (see above).  The "
+"'readonly' option can be reset with \":set noro\".  See \":help 'readonly'\"."
+msgstr ""
+"読み込み専用モード。 オプション 'readonly' がオンになります。 バッファを変更"
+"することはできますが、間違ってファイルを上書きしてしまうのを防ぐことができま"
+"す。 ファイルを保存したい場合は、\":w!\" のように、Ex コマンドに感嘆符を付け"
+"てください。 -R オプションは -n オプションの効果も含んでいます (上記参照)。 "
+"オプション 'readonly' は \":set noro\" でオフにできます。 詳しくは \":help "
+"'readonly'\" を参照してください。"
+
+#. type: TP
+#: vim.1:326
+#, no-wrap
+msgid "-s"
+msgstr "-s"
+
+#. type: Plain text
+#: vim.1:330
+msgid ""
+"Silent mode.  Only when started as \"Ex\" or when the \"-e\" option was "
+"given before the \"-s\" option."
+msgstr ""
+"サイレントモード。\"ex\" という名前で起動するか、\"-e\" オプションの後で \"-"
+"s\" オプションが指定された場合のみ。"
+
+#. type: TP
+#: vim.1:330
+#, no-wrap
+msgid "-s {scriptin}"
+msgstr "-s {scriptin}"
+
+#. type: Plain text
+#: vim.1:337
+msgid ""
+"The script file {scriptin} is read.  The characters in the file are "
+"interpreted as if you had typed them.  The same can be done with the command "
+"\":source! {scriptin}\".  If the end of the file is reached before the "
+"editor exits, further characters are read from the keyboard."
+msgstr ""
+"{scriptin} をスクリプトファイルとして読み込まれます。 ファイル中の文字列は、"
+"手で入力したときと同じように処理されます。 これは \":source! {scriptin}\" と"
+"同じ動作です。 エディタが終了する前にファイルの終わりまで読み込んだ場合、それ"
+"以降はキーボードから入力を読み込みます。"
+
+#. type: TP
+#: vim.1:337
+#, no-wrap
+msgid "-S {file}"
+msgstr "-S {file}"
+
+#. type: Plain text
+#: vim.1:344
+msgid ""
+"{file} will be sourced after the first file has been read.  This is "
+"equivalent to -c \"source {file}\".  {file} cannot start with '-'.  If "
+"{file} is omitted \"Session.vim\" is used (only works when -S is the last "
+"argument)."
+msgstr ""
+"一番目のファイルが読み込まれた後に {file} が実行されます。 これは -c "
+"\"source {file}\" と同じ動作です。 {file} の先頭が '-' の場合は使えません。 "
+"{file} が省略された場合は、\"Session.vim\" が使われます (ただし -S が最後の引"
+"数だった場合のみ)。"
+
+#. type: TP
+#: vim.1:344
+#, no-wrap
+msgid "-T {terminal}"
+msgstr "-T {terminal}"
+
+#. type: Plain text
+#: vim.1:353
+msgid ""
+"Tells B<Vim> the name of the terminal you are using.  Only required when the "
+"automatic way doesn't work.  Should be a terminal known to B<Vim> (builtin) "
+"or defined in the termcap or terminfo file."
+msgstr ""
+"端末の名前を指定します。 端末が自動的に認識されない場合に使ってください。 "
+"B<Vim> が組み込みでサポートしている名前か、 termcap または terminfo ファイル"
+"で定義されている名前を指定してください。"
+
+#. type: TP
+#: vim.1:353
+#, no-wrap
+msgid "-u {vimrc}"
+msgstr "-u {vimrc}"
+
+#. type: Plain text
+#: vim.1:360
+msgid ""
+"Use the commands in the file {vimrc} for initializations.  All the other "
+"initializations are skipped.  Use this to edit a special kind of files.  It "
+"can also be used to skip all initializations by giving the name \"NONE\".  "
+"See \":help initialization\" within vim for more details."
+msgstr ""
+"{vimrc} ファイルを使って初期化します。 他の初期化処理はスキップされます。 特"
+"殊なファイルを編集する場合などに使ってください。 すべての初期化をスキップする"
+"には \"NONE\" を指定してください。 詳しくは \":help initialization\" を参照し"
+"てください。"
+
+#. type: TP
+#: vim.1:360
+#, no-wrap
+msgid "-U {gvimrc}"
+msgstr "-U {gvimrc}"
+
+#. type: Plain text
+#: vim.1:366
+msgid ""
+"Use the commands in the file {gvimrc} for GUI initializations.  All the "
+"other GUI initializations are skipped.  It can also be used to skip all GUI "
+"initializations by giving the name \"NONE\".  See \":help gui-init\" within "
+"vim for more details."
+msgstr ""
+"{gvimrc} ファイルを使って GUI を初期化します。 他の GUI の初期化はスキップさ"
+"れます。 すべての GUI の初期化をスキップするには \"NONE\" を指定してくださ"
+"い。 詳しくは \":help gui-init\" を参照してください。"
+
+#. type: TP
+#: vim.1:366
+#, no-wrap
+msgid "-v"
+msgstr "-v"
+
+#. type: Plain text
+#: vim.1:372
+msgid ""
+"Start B<Vim> in Vi mode, just like the executable was called \"vi\".  This "
+"only has effect when the executable is called \"ex\"."
+msgstr ""
+"Vi モードで起動します。 実行ファイルの名前が \"vi\" の場合と同じです。 実行"
+"ファイルの名前が \"ex\" の場合だけ効果があります。"
+
+#. type: TP
+#: vim.1:372
+#, no-wrap
+msgid "-V[N]"
+msgstr "-V[N]"
+
+#. type: Plain text
+#: vim.1:377
+msgid ""
+"Verbose.  Give messages about which files are sourced and for reading and "
+"writing a viminfo file.  The optional number N is the value for 'verbose'.  "
+"Default is 10."
+msgstr ""
+"冗長モード。 スクリプトファイルを実行したり viminfo ファイルを読み書きするた"
+"びにメッセージを表示します。 N に指定した数値が 'verbose' に設定されます。 省"
+"略した場合は 10 になります。"
+
+#. type: TP
+#: vim.1:377
+#, no-wrap
+msgid "-V[N]{filename}"
+msgstr "-V[N]{filename}"
+
+#. type: Plain text
+#: vim.1:382
+msgid ""
+"Like -V and set 'verbosefile' to {filename}.  The result is that messages "
+"are not displayed but written to the file {filename}.  {filename} must not "
+"start with a digit."
+msgstr ""
+"-V と同様で、さらに 'verbosefile' を {filename} に設定します。 その結果、メッ"
+"セージは表示されずにファイル {filename} に書き出されます。 {filename} は数字"
+"で始まってはいけません。"
+
+#. type: TP
+#: vim.1:382
+#, no-wrap
+msgid "-w{number}"
+msgstr "-w{number}"
+
+#. type: Plain text
+#: vim.1:385
+msgid "Set the 'window' option to {number}."
+msgstr "オプション 'window' を {number} に設定します。"
+
+#. type: TP
+#: vim.1:385
+#, no-wrap
+msgid "-w {scriptout}"
+msgstr "-w {scriptout}"
+
+#. type: Plain text
+#: vim.1:393
+msgid ""
+"All the characters that you type are recorded in the file {scriptout}, until "
+"you exit B<Vim.> This is useful if you want to create a script file to be "
+"used with \"vim -s\" or \":source!\".  If the {scriptout} file exists, "
+"characters are appended."
+msgstr ""
+"入力した文字を {scriptout} に記録します。 \"vim -s\" や \"source!\" で実行す"
+"るためのスクリプトファイルを作成するのに便利です。 {scriptout} ファイルがすで"
+"に存在した場合は追加保存されます。"
+
+#. type: TP
+#: vim.1:393
+#, no-wrap
+msgid "-W {scriptout}"
+msgstr "-W {scriptout}"
+
+#. type: Plain text
+#: vim.1:396
+msgid "Like -w, but an existing file is overwritten."
+msgstr "-w と同じですが、ファイルがすでに存在した場合は上書きされます。"
+
+#. type: TP
+#: vim.1:396
+#, no-wrap
+msgid "-x"
+msgstr "-x"
+
+#. type: Plain text
+#: vim.1:402
+msgid ""
+"If B<Vim> has been compiled with encryption support, use encryption when "
+"writing files.  Will prompt for a crypt key."
+msgstr ""
+"B<Vim> が暗号化機能付きでコンパイルされている場合、ファイルを暗号化して書き込"
+"みます。 暗号化キーの入力プロンプトが表示されます。"
+
+#. type: TP
+#: vim.1:402
+#, no-wrap
+msgid "-X"
+msgstr "-X"
+
+#. type: Plain text
+#: vim.1:406
+msgid ""
+"Don't connect to the X server.  Shortens startup time in a terminal, but the "
+"window title and clipboard will not be used."
+msgstr ""
+"X サーバーと通信しません。端末での起動時間を短くできます。 しかし、ウィンドウ"
+"タイトルの変更やクリップボードは使えなくなります。"
+
+#. type: TP
+#: vim.1:406
+#, no-wrap
+msgid "-y"
+msgstr "-y"
+
+#. type: Plain text
+#: vim.1:414
+msgid ""
+"Start B<Vim> in easy mode, just like the executable was called \"evim\" or "
+"\"eview\".  Makes B<Vim> behave like a click-and-type editor."
+msgstr ""
+"簡易モードで起動します。 実行ファイルの名前が \"evim\" や \"eview\" の場合と"
+"同じです。 B<Vim> の動作がモードレスエディタ (click-and-type editor) のように"
+"なります。"
+
+#. type: TP
+#: vim.1:414
+#, no-wrap
+msgid "-Z"
+msgstr "-Z"
+
+#. type: Plain text
+#: vim.1:417
+msgid "Restricted mode.  Works like the executable starts with \"r\"."
+msgstr "制限モード。 実行ファイルの名前が \"r\" で始まっている場合と同じです。"
+
+#. type: TP
+#: vim.1:417
+#, no-wrap
+msgid "--"
+msgstr "--"
+
+#. type: Plain text
+#: vim.1:422
+msgid ""
+"Denotes the end of the options.  Arguments after this will be handled as a "
+"file name.  This can be used to edit a filename that starts with a '-'."
+msgstr ""
+"オプション指定の末尾を示す記号です。 これ以降の引数はすべてファイル名として扱"
+"われます。 ファイル名が '-' で始まっているファイルを開くときに使ってくださ"
+"い。"
+
+#. type: TP
+#: vim.1:422
+#, no-wrap
+msgid "--clean"
+msgstr "--clean"
+
+#. type: Plain text
+#: vim.1:426
+msgid ""
+"Do not use any personal configuration (vimrc, plugins, etc.).  Useful to see "
+"if a problem reproduces with a clean Vim setup."
+msgstr ""
+"一切の個人設定 (vimrc、プラグイン、その他) を使用しません。 ある問題がクリー"
+"ンな Vim セットアップで再現するかを確認するのに有用です。"
+
+#. type: TP
+#: vim.1:426
+#, no-wrap
+msgid "--cmd {command}"
+msgstr "--cmd {command}"
+
+#. type: Plain text
+#: vim.1:431
+msgid ""
+"Like using \"-c\", but the command is executed just before processing any "
+"vimrc file.  You can use up to 10 of these commands, independently from \"-"
+"c\" commands."
+msgstr ""
+"\"-c\" と同じですが、vimrc を処理する前にコマンドが実行されます。 これらのコ"
+"マンドは \"-c\" コマンドとは別に、10 個まで指定できます。"
+
+#. type: TP
+#: vim.1:431
+#, no-wrap
+msgid "--echo-wid"
+msgstr "--echo-wid"
+
+#. type: Plain text
+#: vim.1:434
+msgid "GTK GUI only: Echo the Window ID on stdout."
+msgstr "GTK GUI のみ: Window ID を標準出力に出力します。"
+
+#. type: TP
+#: vim.1:434
+#, no-wrap
+msgid "--gui-dialog-file {name}"
+msgstr "--gui-dialog-file {name}"
+
+#. type: Plain text
+#: vim.1:440
+msgid ""
+"When using the GUI, instead of showing a dialog, write the title and message "
+"of the dialog to file {name}.  The file is created or appended to.  Only "
+"useful for testing, to avoid that the test gets stuck on a dialog that can't "
+"be seen.  Without the GUI the argument is ignored."
+msgstr ""
+"GUI の使用時、ダイアログを表示する代わりとして、ファイル {name} へダイアログ"
+"のタイトルとメッセージを書き込みます。 ファイルは作成されるか追記されます。 "
+"テストにみ有用で、見ることができないダイアログによってテストが中断されるのを"
+"防ぎます。 GUI 以外ではこの引数は無視されます。"
+
+#. type: TP
+#: vim.1:440
+#, no-wrap
+msgid "--help, -h, -?"
+msgstr "--help, -h, -?"
+
+#. type: Plain text
+#: vim.1:446
+msgid ""
+"Give a bit of help about the command line arguments and options.  After this "
+"B<Vim> exits."
+msgstr "コマンドライン引数やオプションのヘルプを表示して終了します。"
+
+#. type: TP
+#: vim.1:446
+#, no-wrap
+msgid "--literal"
+msgstr "--literal"
+
+#. type: Plain text
+#: vim.1:450
+msgid ""
+"Take file name arguments literally, do not expand wildcards.  This has no "
+"effect on Unix where the shell expands wildcards."
+msgstr ""
+"引数のファイル名をリテラル文字列として扱います。ワイルドカードを展開しませ"
+"ん。 Unix のように、シェルがワイルドカードを展開する場合は機能しません。"
+
+#. type: TP
+#: vim.1:450
+#, no-wrap
+msgid "--log {filename}"
+msgstr "--log {filename}"
+
+#. type: Plain text
+#: vim.1:458
+msgid ""
+"If B<Vim> has been compiled with eval and channel feature, start logging and "
+"write entries to {filename}. This works like calling "
+"I<ch_logfile({filename}, 'ao')> very early during startup."
+msgstr ""
+"もし B<Vim> がチャネル機能付きでコンパイルされている場合、ログの出力を開始"
+"し、ファイル {filename} に書き込みます。 これは、起動時の非常に早い段階で "
+"I<ch_logfile({filename}, 'ao')> を呼び出すのと同様な動作です。"
+
+#. type: TP
+#: vim.1:458
+#, no-wrap
+msgid "--nofork"
+msgstr "--nofork"
+
+#. type: Plain text
+#: vim.1:463
+msgid ""
+"Foreground.  For the GUI version, B<Vim> will not fork and detach from the "
+"shell it was started in."
+msgstr "フォアグラウンド。GUI バージョンで、プロセスをフォークしなくなります。"
+
+#. type: TP
+#: vim.1:463
+#, no-wrap
+msgid "--noplugin"
+msgstr "--noplugin"
+
+#. type: Plain text
+#: vim.1:466
+msgid "Skip loading plugins.  Implied by -u NONE."
+msgstr "プラグインをロードしません。-u NONE はこの動作を含んでいます。"
+
+#. type: TP
+#: vim.1:466
+#, no-wrap
+msgid "--not-a-term"
+msgstr "--not-a-term"
+
+#. type: Plain text
+#: vim.1:473
+msgid ""
+"Tells B<Vim> that the user knows that the input and/or output is not "
+"connected to a terminal.  This will avoid the warning and the two second "
+"delay that would happen."
+msgstr ""
+"入力と出力(もしくはどちらか一方)が端末に接続されていないことを、ユーザーが把"
+"握しているということを B<Vim> に伝えます。 これにより警告が表示され 2 秒間の"
+"遅延が発生するのを避けられます。"
+
+#. type: TP
+#: vim.1:473
+#, no-wrap
+msgid "--remote"
+msgstr "--remote"
+
+#. type: Plain text
+#: vim.1:478
+msgid ""
+"Connect to a Vim server and make it edit the files given in the rest of the "
+"arguments.  If no server is found a warning is given and the files are "
+"edited in the current Vim."
+msgstr ""
+"Vim サーバーと通信し、引数に指定されたファイルを Vim サーバーで開きます。 "
+"サーバーが存在しない場合は、エラーメッセージを表示され、起動中の Vim でファイ"
+"ルが開かれます。"
+
+#. type: TP
+#: vim.1:478
+#, no-wrap
+msgid "--remote-expr {expr}"
+msgstr "--remote-expr {expr}"
+
+#. type: Plain text
+#: vim.1:481
+msgid ""
+"Connect to a Vim server, evaluate {expr} in it and print the result on "
+"stdout."
+msgstr ""
+"Vim サーバーと通信し、{expr} に与えられた式を Vim サーバーで実行し、結果を標"
+"準出力に出力します。"
+
+#. type: TP
+#: vim.1:481
+#, no-wrap
+msgid "--remote-send {keys}"
+msgstr "--remote-send {keys}"
+
+#. type: Plain text
+#: vim.1:484
+msgid "Connect to a Vim server and send {keys} to it."
+msgstr ""
+"Vim サーバーと通信し、{keys} に与えられたキーを Vim サーバーに送信します。"
+
+#. type: TP
+#: vim.1:484
+#, no-wrap
+msgid "--remote-silent"
+msgstr "--remote-silent"
+
+#. type: Plain text
+#: vim.1:487
+msgid "As --remote, but without the warning when no server is found."
+msgstr ""
+"--remote と同じですが、サーバーが存在しなくてもエラーメッセージを表示しませ"
+"ん。"
+
+#. type: TP
+#: vim.1:487
+#, no-wrap
+msgid "--remote-wait"
+msgstr "--remote-wait"
+
+#. type: Plain text
+#: vim.1:490
+msgid "As --remote, but Vim does not exit until the files have been edited."
+msgstr ""
+"--remote と同じですが、ファイルが開かれるのを確認できるまで待機します。"
+
+#. type: TP
+#: vim.1:490
+#, no-wrap
+msgid "--remote-wait-silent"
+msgstr "--remote-wait-silent"
+
+#. type: Plain text
+#: vim.1:493
+msgid "As --remote-wait, but without the warning when no server is found."
+msgstr ""
+"--remote-wait と同じですが、サーバーが存在しなくてもエラーメッセージを表示し"
+"ません。"
+
+#. type: TP
+#: vim.1:493
+#, no-wrap
+msgid "--serverlist"
+msgstr "--serverlist"
+
+#. type: Plain text
+#: vim.1:496
+msgid "List the names of all Vim servers that can be found."
+msgstr "Vim サーバーの一覧を表示します。"
+
+#. type: TP
+#: vim.1:496
+#, no-wrap
+msgid "--servername {name}"
+msgstr "--servername {name}"
+
+#. type: Plain text
+#: vim.1:500
+msgid ""
+"Use {name} as the server name.  Used for the current Vim, unless used with a "
+"--remote argument, then it's the name of the server to connect to."
+msgstr ""
+"サーバーの名前を {name} に設定します。 --remote 引数を指定しなかった場合は、"
+"起動中の Vim の名前として使われるので、後からその名前を使ってサーバー通信でき"
+"ます。"
+
+#. type: TP
+#: vim.1:500
+#, no-wrap
+msgid "--socketid {id}"
+msgstr "--socketid {id}"
+
+#. type: Plain text
+#: vim.1:503
+msgid "GTK GUI only: Use the GtkPlug mechanism to run gVim in another window."
+msgstr ""
+"GTK GUI のみ: GtkPlug メカニズムを使って gVim を別のウィンドウの中で実行しま"
+"す。"
+
+#. type: TP
+#: vim.1:503
+#, no-wrap
+msgid "--startuptime {file}"
+msgstr "--startuptime {file}"
+
+#. type: Plain text
+#: vim.1:506
+msgid "During startup write timing messages to the file {fname}."
+msgstr "起動処理の間、経過時間のメッセージをファイル {fname} に書き出します。"
+
+#. type: TP
+#: vim.1:506
+#, no-wrap
+msgid "--ttyfail"
+msgstr "--ttyfail"
+
+#. type: Plain text
+#: vim.1:509
+msgid "When stdin or stdout is not a a terminal (tty) then exit right away."
+msgstr "標準入力か標準出力が端末 (tty) でない場合、すぐに終了します。"
+
+#. type: TP
+#: vim.1:509
+#, no-wrap
+msgid "--version"
+msgstr "--version"
+
+#. type: Plain text
+#: vim.1:512
+msgid "Print version information and exit."
+msgstr "バージョン情報を表示して終了します。"
+
+#. type: TP
+#: vim.1:512
+#, no-wrap
+msgid "--windowid {id}"
+msgstr "--windowid {id}"
+
+#. type: Plain text
+#: vim.1:516
+msgid ""
+"Win32 GUI only: Make gVim try to use the window {id} as a parent, so that it "
+"runs inside that window."
+msgstr ""
+"Win32 GUI の Vim のみ。ウィンドウ {id} を gVim の親ウィンドウにしようと試みま"
+"す。 成功するとそのウィンドウの内側で起動します。"
+
+#. type: SH
+#: vim.1:516
+#, no-wrap
+msgid "ON-LINE HELP"
+msgstr "オンラインヘルプ"
+
+#. type: Plain text
+#: vim.1:527
+msgid ""
+"Type \":help\" in B<Vim> to get started.  Type \":help subject\" to get help "
+"on a specific subject.  For example: \":help ZZ\" to get help for the \"ZZ\" "
+"command.  Use E<lt>TabE<gt> and CTRL-D to complete subjects (\":help cmdline-"
+"completion\").  Tags are present to jump from one place to another (sort of "
+"hypertext links, see \":help\").  All documentation files can be viewed in "
+"this way, for example \":help syntax.txt\"."
+msgstr ""
+"ヘルプを開くには、 B<Vim> の中で \":help\" と入力してください。 \":help 調べ"
+"たい項目\" と入力すれば、指定した項目のヘルプが表示されます。 例: \"ZZ\" コマ"
+"ンドのヘルプを表示するには \":help ZZ\" と入力します。 E<lt>TabE<gt> や CTRL-"
+"D を使って補完することもできます (\":help cmdline-completion\" 参照)。 ヘルプ"
+"には、項目から項目へジャンプできるようにタグが埋め込まれています (ハイパーリ"
+"ンクのようなものです。\":help\" 参照)。 すべてのヘルプファイルはこの方法で開"
+"くことができます。 例: \":help syntax.txt\"。"
+
+#. type: TP
+#: vim.1:528
+#, no-wrap
+msgid "/usr/local/share/vim/vim??/doc/*.txt"
+msgstr "/usr/local/share/vim/vim??/doc/*.txt"
+
+#. type: Plain text
+#: vim.1:534
+msgid ""
+"The B<Vim> documentation files.  Use \":help doc-file-list\" to get the "
+"complete list."
+msgstr ""
+"B<Vim> のヘルプファイル。 ファイルの一覧は \":help doc-file-list\" に記載され"
+"ています。"
+
+#. type: TP
+#: vim.1:538
+#, no-wrap
+msgid "/usr/local/share/vim/vim??/doc/tags"
+msgstr "/usr/local/share/vim/vim??/doc/tags"
+
+#. type: Plain text
+#: vim.1:541
+msgid "The tags file used for finding information in the documentation files."
+msgstr "ヘルプを検索するための tags ファイル。"
+
+#. type: TP
+#: vim.1:541
+#, no-wrap
+msgid "/usr/local/share/vim/vim??/syntax/syntax.vim"
+msgstr "/usr/local/share/vim/vim??/syntax/syntax.vim"
+
+#. type: Plain text
+#: vim.1:544
+msgid "System wide syntax initializations."
+msgstr "システムの構文定義初期化ファイル。"
+
+#. type: TP
+#: vim.1:544
+#, no-wrap
+msgid "/usr/local/share/vim/vim??/syntax/*.vim"
+msgstr "/usr/local/share/vim/vim??/syntax/*.vim"
+
+#. type: Plain text
+#: vim.1:547
+msgid "Syntax files for various languages."
+msgstr "いろいろな言語用の構文定義ファイル。"
+
+#. type: TP
+#: vim.1:547
+#, no-wrap
+msgid "/usr/local/share/vim/vimrc"
+msgstr "/usr/local/share/vim/vimrc"
+
+#. type: Plain text
+#: vim.1:552
+msgid "System wide B<Vim> initializations."
+msgstr "システムの B<Vim> 初期化ファイル。"
+
+#. type: TP
+#: vim.1:552
+#, no-wrap
+msgid "~/.vimrc, ~/.vim/vimrc, $XDG_CONFIG_HOME/vim/vimrc"
+msgstr "~/.vimrc, ~/.vim/vimrc, $XDG_CONFIG_HOME/vim/vimrc"
+
+#. type: Plain text
+#: vim.1:557
+msgid "Your personal B<Vim> initializations (first one found is used)."
+msgstr "ユーザーの B<Vim> 初期化ファイル。(最初のものが使われます。)"
+
+#. type: TP
+#: vim.1:557
+#, no-wrap
+msgid "/usr/local/share/vim/gvimrc"
+msgstr "/usr/local/share/vim/gvimrc"
+
+#. type: Plain text
+#: vim.1:560
+msgid "System wide gvim initializations."
+msgstr "システムの gvim 初期化ファイル。"
+
+#. type: TP
+#: vim.1:560
+#, no-wrap
+msgid "~/.gvimrc, ~/.vim/gvimrc, $XDG_CONFIG_HOME/vim/gvimrc"
+msgstr "~/.gvimrc, ~/.vim/gvimrc, $XDG_CONFIG_HOME/vim/gvimrc"
+
+#. type: Plain text
+#: vim.1:565
+msgid "Your personal B<gVim> initializations (first one found is used)."
+msgstr "ユーザーの B<gVim> 初期化ファイル。(最初のものが使われます。)"
+
+#. type: TP
+#: vim.1:565
+#, no-wrap
+msgid "/usr/local/share/vim/vim??/optwin.vim"
+msgstr "/usr/local/share/vim/vim??/optwin.vim"
+
+#. type: Plain text
+#: vim.1:568
+msgid ""
+"Script used for the \":options\" command, a nice way to view and set options."
+msgstr ""
+"\":options\" コマンドで使われるファイル。 オプションを表示したり設定したりで"
+"きます。"
+
+#. type: TP
+#: vim.1:568
+#, no-wrap
+msgid "/usr/local/share/vim/vim??/menu.vim"
+msgstr "/usr/local/share/vim/vim??/menu.vim"
+
+#. type: Plain text
+#: vim.1:572
+msgid "System wide menu initializations for B<gVim.>"
+msgstr "システムのメニュー初期化ファイル。 B<gVim> で使います。"
+
+#. type: TP
+#: vim.1:572
+#, no-wrap
+msgid "/usr/local/share/vim/vim??/bugreport.vim"
+msgstr "/usr/local/share/vim/vim??/bugreport.vim"
+
+#. type: Plain text
+#: vim.1:575
+msgid "Script to generate a bug report.  See \":help bugs\"."
+msgstr "バグレポートを生成するスクリプト。\":help bugs\" 参照。"
+
+#. type: TP
+#: vim.1:575
+#, no-wrap
+msgid "/usr/local/share/vim/vim??/filetype.vim"
+msgstr "/usr/local/share/vim/vim??/filetype.vim"
+
+#. type: Plain text
+#: vim.1:578
+msgid ""
+"Script to detect the type of a file by its name.  See \":help 'filetype'\"."
+msgstr ""
+"ファイル名からファイルタイプを判定するスクリプト。\":help 'filetype'\" 参照。"
+
+#. type: TP
+#: vim.1:578
+#, no-wrap
+msgid "/usr/local/share/vim/vim??/scripts.vim"
+msgstr "/usr/local/share/vim/vim??/scripts.vim"
+
+#. type: Plain text
+#: vim.1:581
+msgid ""
+"Script to detect the type of a file by its contents.  See \":help "
+"'filetype'\"."
+msgstr ""
+"ファイルの内容からファイルタイプを判定するスクリプト。\":help 'filetype'\" 参"
+"照。"
+
+#. type: TP
+#: vim.1:581
+#, no-wrap
+msgid "/usr/local/share/vim/vim??/print/*.ps"
+msgstr "/usr/local/share/vim/vim??/print/*.ps"
+
+#. type: Plain text
+#: vim.1:584
+msgid "Files used for PostScript printing."
+msgstr "PostScript 印刷に使われるファイル。"
+
+#. type: Plain text
+#: vim.1:586
+msgid "For recent info read the VIM home page:"
+msgstr "最新の情報は VIM のホームページを参照してください:"
+
+#. type: Plain text
+#: vim.1:588
+msgid "E<lt>URL:http://www.vim.org/E<gt>"
+msgstr "E<lt>URL:http://www.vim.org/E<gt>"
+
+#. type: Plain text
+#: vim.1:590
+msgid "vimtutor(1)"
+msgstr "vimtutor(1)"
+
+#. type: Plain text
+#: vim.1:596 vimdiff.1:46
+msgid ""
+"Most of B<Vim> was made by Bram Moolenaar, with a lot of help from others.  "
+"See \":help credits\" in B<Vim.>"
+msgstr ""
+"B<Vim> のほとんどの機能は Bram Moolenaar が開発し、多くの人が協力しました。 "
+"\":help credits\" を参照してください。"
+
+#. type: Plain text
+#: vim.1:601
+msgid ""
+"B<Vim> is based on Stevie, worked on by: Tim Thompson, Tony Andrews and G.R. "
+"(Fred) Walter.  Although hardly any of the original code remains."
+msgstr ""
+"B<Vim> は Stevie を基にしています。Stevie は Tim Thompson、Tony Andrews、 G."
+"R. (Fred) Walter によって開発されました。 ただし、オリジナルのコードはもうほ"
+"とんど残っていません。"
+
+#. type: SH
+#: vim.1:601
+#, no-wrap
+msgid "BUGS"
+msgstr "バグ"
+
+#. type: Plain text
+#: vim.1:604
+msgid "Probably.  See \":help todo\" for a list of known problems."
+msgstr "既知のバグは \":help todo\" に記載されています。"
+
+#. type: Plain text
+#: vim.1:610
+msgid ""
+"Note that a number of things that may be regarded as bugs by some, are in "
+"fact caused by a too-faithful reproduction of Vi's behaviour.  And if you "
+"think other things are bugs \"because Vi does it differently\", you should "
+"take a closer look at the vi_diff.txt file (or type :help vi_diff.txt when "
+"in Vim).  Also have a look at the 'compatible' and 'cpoptions' options."
+msgstr ""
+"Vi の動作を忠実に再現した結果、多くの人がバグだと思うような機能もいくつかあり"
+"ます。 \"この動作は Vi と違う\" からバグだと思った場合は、 vi_diff.txt を確認"
+"してみてください (ファイルを開くか、 Vim から \":help vi_diff.txt\" と入"
+"力)。 オプションの 'compatible' と 'cpoptions' も確認してください。"
