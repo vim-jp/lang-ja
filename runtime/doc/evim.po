@@ -1,0 +1,193 @@
+# evimの日本語訳
+# Copyright (C) 2024 Bram Moolenaar.
+# This file is distributed under the same license as the Vim package.
+# K.Takata <kentkt@csc.jp>, 2016, 2018, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Vim\n"
+"POT-Creation-Date: 2025-06-13 22:25+0900\n"
+"PO-Revision-Date: 2025-06-13 22:53+0900\n"
+"Last-Translator: K.Takata <kentkt@csc.jp>\n"
+"Language-Team: vim-jp.org\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: TH
+#: evim.1:1
+#, no-wrap
+msgid "EVIM"
+msgstr "EVIM"
+
+#. type: TH
+#: evim.1:1 vimtutor.1:1
+#, no-wrap
+msgid "2024 August 12"
+msgstr "2024 August 12"
+
+#.  21st May 1996
+#.  Man page author:
+#.     Tony Nugent <tony@sctnugen.ppp.gu.edu.au> <T.Nugent@sct.gu.edu.au>
+#.     Changes by Bram Moolenaar <Bram@vim.org>
+#. type: SH
+#: evim.1:2 vim.1:2 vimdiff.1:2 vimtutor.1:2 xxd.1:7
+#, no-wrap
+msgid "NAME"
+msgstr "名前"
+
+#. type: Plain text
+#: evim.1:4
+msgid "evim - easy Vim, edit a file with Vim and setup for modeless editing"
+msgstr "evim - easy Vim, モードレスエディタ Vim"
+
+#. type: SH
+#: evim.1:4 vim.1:4 vimdiff.1:4 vimtutor.1:4 xxd.1:10
+#, no-wrap
+msgid "SYNOPSIS"
+msgstr "書式"
+
+#. type: Plain text
+#: evim.1:8
+msgid "B<evim> [options] [file ..]"
+msgstr "B<evim> [options] [file ..]"
+
+#. type: Plain text
+#: evim.1:10
+msgid "B<eview>"
+msgstr "B<eview>"
+
+#. type: SH
+#: evim.1:10 vim.1:32 vimdiff.1:10 vimtutor.1:7 xxd.1:19
+#, no-wrap
+msgid "DESCRIPTION"
+msgstr "説明"
+
+#. type: Plain text
+#: evim.1:19
+msgid ""
+"B<eVim> starts B<Vim> and sets options to make it behave like a modeless "
+"editor.  This is still Vim but used as a point-and-click editor.  This feels "
+"a lot like using Notepad on MS-Windows.  B<eVim> will always run in the GUI, "
+"to enable the use of menus and toolbar."
+msgstr ""
+"B<eVim> は B<Vim> を起動して、モードレスエディタとして動作するためのオプショ"
+"ンを設定します。 Vim の動作が point-and-click エディタのような動作になりま"
+"す。 MS-Windows のメモ帳のような動作です。 B<eVim> は常に GUI で起動し、メ"
+"ニューとツールバーを表示します。"
+
+#. type: Plain text
+#: evim.1:22
+msgid ""
+"Only to be used for people who really can't work with Vim in the normal "
+"way.  Editing will be much less efficient."
+msgstr ""
+"どうしても Vim の操作に馴染めない場合に使ってください。 編集効率は下がりま"
+"す。"
+
+#. type: Plain text
+#: evim.1:25
+msgid ""
+"B<eview> is the same, but starts in read-only mode.  It works just like evim "
+"-R."
+msgstr ""
+"B<eview> は同様に、読み込み専用モードで起動します。evim -R と同じです。"
+
+#. type: Plain text
+#: evim.1:27
+msgid "See vim(1) for details about Vim, options, etc."
+msgstr "引数や Vim についての詳細は vim(1) を参照してください。"
+
+#. type: Plain text
+#: evim.1:29
+msgid "The 'insertmode' option is set to be able to type text directly."
+msgstr ""
+"オプション 'insertmode' が設定され、テキストを直接、入力できるようになりま"
+"す。"
+
+#. type: Plain text
+#: evim.1:33
+msgid ""
+"Mappings are setup to make Copy and Paste work with the MS-Windows keys.  "
+"CTRL-X cuts text, CTRL-C copies text and CTRL-V pastes text.  Use CTRL-Q to "
+"obtain the original meaning of CTRL-V."
+msgstr ""
+"コピーとペーストのキー操作が MS-Windows と同じになるように、マップが設定され"
+"ます。 CTRL-X が切り取り、CTRL-C がコピー、CTRL-V がペーストです。 標準の "
+"CTRL-V の操作は CTRL-Q に割り当てられます。"
+
+#. type: SH
+#: evim.1:33 vim.1:129 vimdiff.1:34 xxd.1:30
+#, no-wrap
+msgid "OPTIONS"
+msgstr "オプション"
+
+#. type: Plain text
+#: evim.1:35
+msgid "See vim(1)."
+msgstr "vim(1) を参照してください。"
+
+#. type: SH
+#: evim.1:35 vim.1:527 vimtutor.1:33
+#, no-wrap
+msgid "FILES"
+msgstr "ファイル"
+
+#. type: TP
+#: evim.1:36
+#, no-wrap
+msgid "/usr/local/share/vim/vim??/evim.vim"
+msgstr "/usr/local/share/vim/vim??/evim.vim"
+
+#. type: Plain text
+#: evim.1:39
+msgid "The script loaded to initialize eVim."
+msgstr "eVim の初期化スクリプト。"
+
+#. type: Plain text
+#: evim.1:43 vim.1:538 vimtutor.1:43
+msgid "I<vim??> is short version number, like vim91 for B<Vim 9.1>"
+msgstr "I<vim??> は短いバージョン番号で B<Vim 9.1> では vim91 です。"
+
+#. type: SH
+#: evim.1:43
+#, no-wrap
+msgid "AKA"
+msgstr "別名"
+
+#. type: Plain text
+#: evim.1:47
+msgid ""
+"Also Known As \"Vim for gumbies\".  When using evim you are expected to take "
+"a handkerchief, make a knot in each corner and wear it on your head."
+msgstr ""
+"evim は \"gumbies のための Vim\" とも呼ばれています。 evim を使っているあなた"
+"はきっと、頭にハンカチをかぶっているのです。 (訳注: gumbies は Monty Python "
+"に登場するおもしろ集団。ハンカチをかぶっている。)"
+
+#. type: SH
+#: evim.1:47 vim.1:588 vimdiff.1:39 vimtutor.1:60 xxd.1:388
+#, no-wrap
+msgid "SEE ALSO"
+msgstr "関連項目"
+
+#. type: Plain text
+#: evim.1:49 vimdiff.1:41 vimtutor.1:61
+msgid "vim(1)"
+msgstr "vim(1)"
+
+#. type: SH
+#: evim.1:49 vim.1:590 vimdiff.1:41 vimtutor.1:48 xxd.1:397
+#, no-wrap
+msgid "AUTHOR"
+msgstr "著者"
+
+#. type: Plain text
+#: evim.1:53
+msgid ""
+"Most of B<Vim> was made by Bram Moolenaar, with a lot of help from others.  "
+"See the Help/Credits menu."
+msgstr ""
+"B<Vim> のほとんどの機能は Bram Moolenaar が開発し、多くの人が協力しました。 "
+"メニューの Help/Credits を参照してください。"
