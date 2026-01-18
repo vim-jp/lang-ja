@@ -32,7 +32,7 @@ LangString ^InstallBtn       ${LANG_JAPANESE} \
 ##############################################################################
 
 LicenseLangString page_lic_file 0 "..\lang\LICENSE.nsis.txt"
-#LicenseLangString page_lic_file ${LANG_JAPANESE} "..\lang\LICENSE.ja.nsis.jax"
+#LicenseLangString page_lic_file ${LANG_JAPANESE} "..\lang\LICENSE.ja.txt"
 
 ##############################################################################
 # Translated README.txt file, which is opened after installation          {{{1
