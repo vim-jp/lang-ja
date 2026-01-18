@@ -9462,7 +9462,7 @@ msgstr ""
 
 # No need to translate this.
 msgid "GVim"
-msgstr "Gvim"
+msgstr "GVim"
 
 msgid "Text Editor"
 msgstr "テキストエディタ"
