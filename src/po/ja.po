@@ -5948,7 +5948,7 @@ msgstr "E613: 未知のプリンタオプションです: %s"
 
 #, c-format
 msgid "E616: Object required for argument %d"
-msgstr "E616: 引数 %d にはオブジェクトが必要です"
+msgstr "E616: 引数 %d には Object が必要です"
 
 msgid "E617: Cannot be changed in the GTK GUI"
 msgstr "E617: GTK GUIでは変更できません"
@@ -8419,13 +8419,13 @@ msgid "E1318: Not a valid command in a class: %s"
 msgstr "E1318: クラス内では使えないコマンドです: %s"
 
 msgid "E1320: Using an Object as a Number"
-msgstr "E1320: オブジェクトを数値として扱っています"
+msgstr "E1320: Object を数値として扱っています"
 
 msgid "E1322: Using an Object as a Float"
-msgstr "E1322: オブジェクトを浮動小数点数として扱っています"
+msgstr "E1322: Object を浮動小数点数として扱っています"
 
 msgid "E1324: Using an Object as a String"
-msgstr "E1324: オブジェクトを文字列として扱っています"
+msgstr "E1324: Object を文字列として扱っています"
 
 #, c-format
 msgid "E1325: Method \"%s\" not found in class \"%s\""
@@ -8437,7 +8437,7 @@ msgstr "E1326: 変数 \"%s\" がオブジェクト \"%s\" 内で見つかりま�
 
 #, c-format
 msgid "E1327: Object required, found %s"
-msgstr "E1327: オブジェクトが必要ですが、%s が見つかりました"
+msgstr "E1327: Object が必要ですが、%s が見つかりました"
 
 #, c-format
 msgid "E1328: Constructor default value must be v:none: %s"
@@ -8847,7 +8847,7 @@ msgid "E1436: Interface can only be used in a script"
 msgstr "E1436: インターフェイスはスクリプトの中でのみ使用できます"
 
 msgid "E1437: Can only compare Object with Object"
-msgstr "E1437: オブジェクト型はオブジェクト型としか比較できません"
+msgstr "E1437: Object は Object としか比較できません"
 
 #, c-format
 msgid "E1500: Cannot mix positional and non-positional arguments: %s"
