@@ -72,7 +72,7 @@
 覚え方: (c)hange (i)nner (w)ord with <contents of (r)egister> named (a)
    {訳: (c)変更する (i)内部 (w)単語 <(r)レジスタの内容>で (a)という名前の}
 
-  5. 単語 'cake' 内のどこかに移動し  ciw<CTRL-R><ESC>  とタイプしましょう。
+  5. 単語 'cake' 内のどこかに移動し  ciw<CTRL-R>b<ESC>  とタイプしましょう。
 
 --->  a) Edward will henceforth be in charge of the cookie rations
       b) In this capacity, Vince will have sole cake discretionary powers
