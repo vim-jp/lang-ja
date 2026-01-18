@@ -8842,7 +8842,7 @@ msgstr ""
 "ん"
 
 msgid "E1435: Enum can only be used in a script"
-msgstr "E1435: Enum はスクリプトの中でのみ使用できます"
+msgstr "E1435: 列挙型はスクリプトの中でのみ使用できます"
 
 msgid "E1436: Interface can only be used in a script"
 msgstr "E1436: インターフェイスはスクリプトの中でのみ使用できます"
@@ -9002,7 +9002,7 @@ msgstr "E1540: 可変タプルには連結できません"
 
 msgid "E1541: Value too large, max Unicode codepoint is U+10FFFF"
 msgstr ""
-"E1541: 値が大きすぎます。UNICODEのコードポイントの最大は U+10FFFF です。"
+"E1541: 値が大きすぎます。Unicodeのコードポイントの最大は U+10FFFF です。"
 
 msgid "E1542: Cannot have a negative or zero number of quickfix/location lists"
 msgstr "E1542: quickfixとロケーションのリストの長さは1以上である必要があります"
