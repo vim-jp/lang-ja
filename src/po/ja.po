@@ -8940,7 +8940,7 @@ msgstr "E1523: 文字列型、リスト型、タプル型またはBlob型が必�
 
 #, c-format
 msgid "E1524: Cannot use a tuple with function %s"
-msgstr "E1524: タプルには関数を適用できません: %s"
+msgstr "E1524: タプルには関数 %s を適用できません"
 
 #, c-format
 msgid "E1525: Argument of %s must be a List, Tuple, String, Dictionary or Blob"
