@@ -8822,7 +8822,7 @@ msgid ""
 "E1432: Overriding generic method \"%s\" in class \"%s\" with a concrete "
 "method"
 msgstr ""
-"E1432: 総称メソッド \"%s\" (\"%s\" クラス内) を具象メソッドでオーバーライドし"
+"E1432: ジェネリックメソッド \"%s\" (\"%s\" クラス内) を具象メソッドでオーバーライドし"
 "ようとしました"
 
 #, c-format
@@ -8830,7 +8830,7 @@ msgid ""
 "E1433: Overriding concrete method \"%s\" in class \"%s\" with a generic "
 "method"
 msgstr ""
-"E1433: 総称メソッド \"%s\" (\"%s\" クラス内) を総称メソッドでオーバーライドし"
+"E1433: 具象メソッド \"%s\" (\"%s\" クラス内) をジェネリックメソッドでオーバーライドし"
 "ようとしました"
 
 #, c-format
@@ -8838,7 +8838,7 @@ msgid ""
 "E1434: Mismatched number of type variables for generic method  \"%s\" in "
 "class \"%s\""
 msgstr ""
-"E1434: 総称メソッド \"%s\" (\"%s\" クラス内) の型変数の数が一致しません"
+"E1434: ジェネリックメソッド \"%s\" (\"%s\" クラス内) の型変数の数が一致しません"
 
 msgid "E1435: Enum can only be used in a script"
 msgstr "E1435: Enum はスクリプトの中でのみ使用できます"
