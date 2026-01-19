@@ -3888,7 +3888,7 @@ msgid "Writing viminfo file \"%s\""
 msgstr "viminfoファイル \"%s\" を書込み中"
 
 msgid "wayland protocol error -> "
-msgstr "wayland プロトコルエラー ->"
+msgstr "wayland プロトコルエラー -> "
 
 #, c-format
 msgid "restoring Wayland display %s"
