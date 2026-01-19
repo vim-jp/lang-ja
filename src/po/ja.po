@@ -9473,7 +9473,6 @@ msgstr "テキストファイルを編集します"
 msgid "Text;editor;"
 msgstr "テキスト;エディタ;"
 
-# No need to translate this.
 msgid "Vim"
 msgstr "Vim"
 
