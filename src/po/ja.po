@@ -9461,7 +9461,6 @@ msgstr ""
 "C++ソース (*.cpp, *.hpp)\t*.cpp;*.hpp\n"
 "Vimファイル (*.vim, _vimrc, _gvimrc)\t*.vim;_vimrc;_gvimrc\n"
 
-# No need to translate this.
 msgid "GVim"
 msgstr "GVim"
 
