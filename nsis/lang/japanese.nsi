@@ -31,8 +31,8 @@ LangString ^InstallBtn       ${LANG_JAPANESE} \
 # Translated license file for the license page                            {{{1
 ##############################################################################
 
-LicenseLangString page_lic_file 0 "${VIMRT}\doc\uganda.nsis.txt"
-#LicenseLangString page_lic_file ${LANG_JAPANESE} "${VIMRT}\doc\uganda.nsis.jax"
+LicenseLangString page_lic_file 0 "..\lang\LICENSE.nsis.txt"
+#LicenseLangString page_lic_file ${LANG_JAPANESE} "..\lang\LICENSE.ja.txt"
 
 ##############################################################################
 # Translated README.txt file, which is opened after installation          {{{1

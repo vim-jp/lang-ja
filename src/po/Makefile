@@ -18,6 +18,11 @@ CHECKFILES = ja.ck \
 	     ja.sjis.ck
 
 MSGFMT = OLD_PO_FILE_INPUT=yes msgfmt
+MSGFMT_VER := $(shell msgfmt --version 2>/dev/null | head -n 1 | awk '{print $$NF}')
+MSGFMT_GTE_022 := $(shell printf "$(MSGFMT_VER)\n0.22.0" | sort -V | tail -n 1 | grep -q "^$(MSGFMT_VER)$$" && echo "1" || echo "0")
+ifeq ($(MSGFMT_GTE_022),1)
+  MSGFMT += --no-convert
+endif
 
 VIM = vim
 
@@ -26,7 +31,7 @@ SED = LANG=C sed
 
 .SUFFIXES: .po .mo .ck
 
-test: check $(MOFILES)
+test: check mofiles
 
 release:
 	@rm -rf $(ARCHIVE_DIR) $(ARCHIVE_FILE)
@@ -80,6 +85,9 @@ distclean: clean
 #	rm -f $@.old
 #	mv $@ $@.old
 #	msgmerge $@.old $< -o $@
+
+.PHONY: mo
+mofiles: $(MOFILES)
 
 .po.mo:
 	$(MSGFMT) --check -v -o $@ $<
