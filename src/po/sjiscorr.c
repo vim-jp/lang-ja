@@ -1,16 +1,26 @@
-/*
- * Simplistic program to correct SJIS inside strings.  When a trail byte is a
- * backslash it needs to be doubled.
- * Public domain.
- */
+// Simplistic program to correct SJIS inside strings.  When a trail byte is a
+// backslash it needs to be doubled.
+// Public domain.
+
 #include <stdio.h>
 #include <string.h>
+
+#ifdef _WIN32
+#	include <fcntl.h>
+#	include <io.h>
+#endif
 
 	int
 main(int argc, char **argv)
 {
 	char buffer[BUFSIZ];
 	char *p;
+
+	// Windows only: switch standard output to binary mode, which ensures that
+	// the line endings in ja.sjis.po are LF.
+#ifdef _WIN32
+	_setmode(_fileno(stdout), _O_BINARY);
+#endif
 
 	while (fgets(buffer, BUFSIZ, stdin) != NULL)
 	{
@@ -46,3 +56,5 @@ main(int argc, char **argv)
 		}
 	}
 }
+
+// vim:set ts=4 sts=4 sw=4 noet:
