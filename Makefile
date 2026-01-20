@@ -70,7 +70,7 @@ install: test
 	cp src/po/ja.sjis.mo $(INSTALL_DIR)/lang/ja.sjis/LC_MESSAGES/vim.mo
 	cp runtime/lang/menu_ja*.vim $(INSTALL_DIR)/lang
 	cp runtime/doc/*.UTF-8.1 $(INSTALL_DIR)/doc
-	cp runtime/tutor/tutor*.ja.* $(INSTALL_DIR)/tutor
+	cp runtime/tutor/tutor*.ja $(INSTALL_DIR)/tutor
 
 clean:
 	rm -rf $(ARCHIVE_DIR) $(ARCHIVE_FILE)
@@ -103,7 +103,7 @@ $(ARCHIVE_DIR):
 	cp src/po/*.po $@/src/po
 	cp runtime/lang/menu_ja*.vim $@/runtime/lang
 	cp runtime/doc/*.UTF-8.1 $@/runtime/doc
-	cp runtime/tutor/tutor*.ja.* $@/runtime/tutor
+	cp runtime/tutor/tutor*.ja $@/runtime/tutor
 	cp nsis/lang/japanese.nsi $@/nsis/lang
 
 $(ARCHIVE).tar.gz: $(ARCHIVE_DIR)

@@ -14,8 +14,8 @@ src/po/ja.po                       |Vimのメッセージ翻訳ファイルの�
 runtime/lang/menu\_ja\_jp.utf-8.vim|Vimの日本語メニューファイルのマスター(UTF-8)
 runtime/doc/\*-ja.UTF-8.1          |日本語manファイル(UTF-8)
 runtime/doc/\*.1                   |原文manファイル
-runtime/tutor/tutor.ja.utf-8       |日本語チュートリアルファイル(UTF-8)
-runtime/tutor/tutor                |原文チュートリアルファイル
+runtime/tutor/tutor{1,2}.ja        |日本語チュートリアルファイル(UTF-8)
+runtime/tutor/tutor{1,2}           |原文チュートリアルファイル
 nsis/lang                          |Windows用インストーラーの翻訳ファイル
 
 ## 原文ファイル取り込み手順
@@ -151,14 +151,10 @@ nsis/lang                          |Windows用インストーラーの翻訳フ�
 
         $ git diff | gvim -R -
 
-        $ vim tutor1.ja.utf-8
-        $ vim tutor2.ja.utf-8
+        $ vim tutor1.ja
+        $ vim tutor2.ja
 
-3.  (提出する場合は) SJISとEUC-JPの翻訳ファイルへ変更を反映させる。
-
-        $ make update
-
-4.  コミット
+3.  コミット
 
     原文と日本語訳は常に同じバージョンがコミットされているように注意すること。
 
@@ -232,6 +228,42 @@ nsis/lang                          |Windows用インストーラーの翻訳フ�
     (`VIM_SRC_DIR` で Vim のソースディレクトリを指定)
 
         $ make update-src-dir VIM_SRC_DIR=../vim
+
+    以下のようにファイルが所定のディレクトリへコピーされる。
+
+    ```
+    .\
+      +-- nsis\
+      |   +-- lang\
+      |       +-- japanese.nsi
+      +-- runtime\
+      |   +-- doc\
+      |   |   +-- evim-ja.UTF-8.1
+      |   |   +-- vim-ja.UTF-8.1
+      |   |   +-- vimdiff-ja.UTF-8.1
+      |   |   +-- vimtutor-ja.UTF-8.1
+      |   |   +-- xxd-ja.UTF-8.1
+      |   +-- lang\
+      |   |   +-- menu_ja.cp932.vim
+      |   |   +-- menu_ja.euc-jp.vim
+      |   |   +-- menu_ja.eucjp.vim
+      |   |   +-- menu_ja.ujis.vim
+      |   |   +-- menu_ja.utf-8.vim
+      |   |   +-- menu_ja_jp.cp932.vim
+      |   |   +-- menu_ja_jp.euc-jp.vim
+      |   |   +-- menu_ja_jp.eucjp.vim
+      |   |   +-- menu_ja_jp.ujis.vim
+      |   |   +-- menu_ja_jp.utf-8.vim
+      |   |   +-- menu_japanese_japan.932.vim
+      |   +-- tutor\
+      |       +-- tutor1.ja
+      |       +-- tutor2.ja
+      +-- src\
+          +-- po\
+              +-- ja.euc-jp.po
+              +-- ja.po
+              +-- ja.sjis.po
+    ```
 
 6.  タグを打ち、GitHub Releases を更新する
 
