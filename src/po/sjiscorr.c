@@ -16,9 +16,10 @@ main(int argc, char **argv)
 	char buffer[BUFSIZ];
 	char *p;
 
-	// Windows only: switch standard output to binary mode, which ensures that
-	// the line endings in ja.sjis.po are LF.
+	// Windows only: put standard input and output into binary mode so that the
+	// line endings in the output match those in the input.
 #ifdef _WIN32
+	_setmode(_fileno(stdin), _O_BINARY);
 	_setmode(_fileno(stdout), _O_BINARY);
 #endif
 
@@ -32,11 +33,10 @@ main(int argc, char **argv)
 				fputs("charset=CP932", stdout);
 				p += 12;
 			}
-			else if (strncmp(p, "# Original translations", 23) == 0)
+			else if (strncmp(p, "# Original translations.", 24) == 0)
 			{
+				p += 24 - 1; // subtracting 1 by considering "p++" in the loop.
 				fputs("# Generated from ja.po, DO NOT EDIT.", stdout);
-				while (p[1] != '\n')
-					++p;
 			}
 			else if (*(unsigned char *)p == 0x81 && p[1] == '_')
 			{
