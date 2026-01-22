@@ -7,7 +7,7 @@ VIM_SRC_DIR =
 
 INSTALL_DIR = $(ARCHIVE)-runtime
 
-.PHONY: import-en-files update-src-dir \
+.PHONY: import-en-files import-scripts update-src-dir \
 	archive archive-dir release release-today test install clean distclean \
 	force-update-all force-update-po force-update-lang force-update-tutor
 
@@ -26,6 +26,13 @@ import-en-files:
 	cp "$(VIM_SRC_DIR)"/runtime/tutor/tutor1 runtime/tutor/
 	cp "$(VIM_SRC_DIR)"/runtime/tutor/tutor2 runtime/tutor/
 	cp "$(VIM_SRC_DIR)"/nsis/lang/english.nsi nsis/lang/
+
+# Import and update the .po file management scripts from the Vim source tree.
+import-scripts:
+	@if test ! -d "$(VIM_SRC_DIR)"; then echo VIM_SRC_DIR not specified; exit 1; fi
+	cp "$(VIM_SRC_DIR)"/src/po/check.vim \
+	   "$(VIM_SRC_DIR)"/src/po/cleanup.vim \
+	   src/po/
 
 # Update Vim source directory.
 update-src-dir:
