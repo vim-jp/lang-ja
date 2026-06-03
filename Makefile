@@ -26,6 +26,7 @@ import-en-files:
 	cp "$(VIM_SRC_DIR)"/runtime/tutor/tutor1 runtime/tutor/
 	cp "$(VIM_SRC_DIR)"/runtime/tutor/tutor2 runtime/tutor/
 	cp "$(VIM_SRC_DIR)"/nsis/lang/english.nsi nsis/lang/
+	cp "$(VIM_SRC_DIR)"/LICENSE lang/
 
 # Import and update the .po file management scripts from the Vim source tree.
 import-scripts:
